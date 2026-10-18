@@ -1,8 +1,8 @@
 {
   "_comment": "Settings → General hero card. Edited here and fetched by the app at runtime, so plan copy and sponsors change WITHOUT shipping a build. Data only — every field renders as escaped text, never as markup. Unknown fields are ignored; anything malformed falls back to the app's built-in defaults. URLs must be https.",
   "plan": {
-    "label": "Free · Pro · Team (Included)",
-    "blurb": "100% free and open-source. All capabilities across Free, Pro tools, and Team multi-agent workflows are unlocked on your local machine with zero paywalls."
+    "label": "100% Free",
+    "blurb": "100% free and open-source. Every capability — single agent or full multi-agent floor — is unlocked on your local machine with zero paywalls."
   },
   "sponsor": null,
   "notice": null

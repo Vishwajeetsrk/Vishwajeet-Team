@@ -23,9 +23,9 @@ Messaging, routing, and remembering, coordinated by your orchestrator, who you t
 - **Anonymous, local-first operation.** No telemetry required. All prompts, code, files, and outputs remain strictly local.
 - **The ASK ME card renders markdown.** Questions with emphasis, bullets, `code`, tables and links now render instead of showing raw asterisks.
 
-### 100% Free · Pro · Team (Included)
+### 100% Free
 
-**Vishwajeet Team** is completely free, local-first, and open-source under the MIT License. All Free, Pro, and Team features are unlocked on your local machine with no paywalls, subscriptions, or license keys required.
+**Vishwajeet Team** is completely free, local-first, and open-source under the MIT License. Every capability is unlocked on your local machine with no paywalls, subscriptions, or license keys required.
 
 ---
 

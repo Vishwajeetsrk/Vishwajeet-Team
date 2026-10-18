@@ -46,8 +46,8 @@ export interface HeroPayload {
  *  fails, so the card is never empty and never waits on the network to render. */
 export const DEFAULT_HERO: HeroPayload = {
   plan: {
-    label: 'Free · Pro · Team (Included)',
-    blurb: '100% free and open-source. All capabilities across Free, Pro tools, and Team multi-agent workflows are unlocked on your local machine with zero paywalls.'
+    label: '100% Free',
+    blurb: '100% free and open-source. Every capability — single agent or full multi-agent floor — is unlocked on your local machine with zero paywalls.'
   },
   sponsor: null,
   notice: null

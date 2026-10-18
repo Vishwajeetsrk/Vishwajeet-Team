@@ -10,9 +10,9 @@
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
-  <img alt="Plans: 100% Free (Free · Pro · Team)" src="https://img.shields.io/badge/plans-100%25%20Free%20%7C%20Pro%20%7C%20Team-F4D35E.svg?style=flat-square&labelColor=6E1423">
+  <img alt="Pricing: 100% Free" src="https://img.shields.io/badge/pricing-100%25%20Free%20forever-F4D35E.svg?style=flat-square&labelColor=6E1423">
   <a href="https://github.com/Vishwajeetsrk/Team/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
-  <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
+  <img alt="Status: stable" src="https://img.shields.io/badge/status-stable-F4F1EA.svg?style=flat-square&labelColor=6E1423">
 </p>
 
 <img src="./docs/media/floor.png" alt="The Vishwajeet Team office floor: agents at desks working in parallel, with the Command Center and a live agent terminal on the right" width="1240">
@@ -71,7 +71,7 @@ visualized as avatars at work on a shared office floor.
 ## Contents
 
 - [Downloads & Installers](#-downloads--installers-v055)
-- [Plans: 100% Free (Free · Pro · Team)](#plans-100-free-free--pro--team-included)
+- [Pricing: 100% Free](#pricing-100-free)
 - [Supported agents](#supported-agents)
 - [What it is](#what-it-is)
 - [How it works](#how-it-works)
@@ -85,7 +85,7 @@ visualized as avatars at work on a shared office floor.
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
-## Plans: 100% Free (Free · Pro · Team Included)
+## Pricing: 100% Free
 
 **Vishwajeet Team [AI Company]** is completely free, local-first, and open-source under the MIT License. In the original upstream prototype, a subscription paywall ($150/yr) called "Pro" was planned to restrict features. In **Vishwajeet Team**, every single Pro and Team feature is **100% UNLOCKED BY DEFAULT**.
 
