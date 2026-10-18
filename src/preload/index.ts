@@ -1363,6 +1363,13 @@ const api = {
   /** Atomically remove one named card from the latest main-process ledger. */
   hiveDeleteTask: (id: string): Promise<{ ok: boolean; error?: string }> =>
     ipcRenderer.invoke('hive:deleteTask', id),
+  /** (#713) Deliver a frozen owner-approval payload straight into the named
+   *  agent's session — the owner's own input, no orchestrator relay. The click
+   *  on the ASK ME card is the owner's word; main re-validates, claims the
+   *  single use, and types into the target PTY. */
+  hiveDeliverOwnerApproval: (
+    req: { taskId: string; delivery: import('../shared/ownerApproval').OwnerApprovalAction }
+  ): Promise<{ ok: boolean; error?: string }> => ipcRenderer.invoke('hive:deliverOwnerApproval', req),
 
   // ─── Scheduled missions (recurring auto-dispatch) ──────────────────────────
   listMissions: (): Promise<ScheduledMission[]> => ipcRenderer.invoke('missions:list'),

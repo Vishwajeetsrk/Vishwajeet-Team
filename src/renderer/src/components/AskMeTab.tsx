@@ -7,6 +7,7 @@ import { MarkdownPreview } from '@/markdown/MarkdownPreview';
 import { type HiveTask, type HumanQA, openQuestion, waitsOnHuman } from './TasksKanban';
 import { compareByNewestAsk } from './askMeOrder';
 import { isComposingKey } from '@shared/imeGuard';
+import { liveApproval, type OwnerApprovalAction } from '@shared/ownerApproval';
 import { useRtl } from '@/i18n/useDirection';
 
 /**
@@ -56,6 +57,7 @@ export function AskMeTab() {
   const setAnswerDraft = useStore((s) => s.setAnswerDraft);
   const openTaskDetail = useStore((s) => s.openTaskDetail);
   const [sending, setSending] = useState<string | null>(null);
+  const [delivering, setDelivering] = useState<string | null>(null);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const refresh = useCallback(async () => {
@@ -162,6 +164,36 @@ export function AskMeTab() {
       setAnswerDraft(task.id, '');
     } catch { /* leave the draft so the user can retry */ }
     setSending(null);
+  };
+
+  /**
+   * (#713) Deliver the frozen owner-approval payload on this card.
+   *
+   * The orchestrator prepared a delivery action (one target agent, one exact
+   * sentence, an expiry) on the open question; this button is the owner's own
+   * click. We hand the frozen payload to main, which re-validates, claims the
+   * single use against the on-disk ledger, and types the sentence straight into
+   * the target's live session — no orchestrator relay. Failure and success are
+   * both recorded on the card; we never retry an approval on our own.
+   */
+  const deliverApproval = async (task: HiveTask) => {
+    const open = openQuestion(task);
+    const approval = liveApproval(open);
+    if (!open || !approval || delivering === task.id) return;
+    setDelivering(task.id);
+    try {
+      const result = await window.cth.hiveDeliverOwnerApproval({ taskId: task.id, delivery: approval });
+      if (!result.ok) throw new Error(result.error ?? 'approval delivery failed');
+      // Optimistically reflect the delivered stamp so the button leaves immediately;
+      // the next 5s poll reconciles with main's authoritative ledger write.
+      const next = tasks.map((t) => {
+        if (t.id !== task.id) return t;
+        return { ...t, humanQA: (t.humanQA ?? []).map((e) => (e === open || (e.q === open.q && !e.a)) ? { ...e, delivery: { ...approval, deliveredAt: new Date().toISOString() } } : e) };
+      });
+      setTasks(next);
+      recordLesson(task, `Operator approved and delivered to ${approval.agentId}: ${approval.sentence}`);
+    } catch { /* the card keeps the failed delivery so the user can see and retry */ }
+    setDelivering(null);
   };
 
   // Dismiss the open ask off the ASK ME board WITHOUT answering it. We mark the
@@ -307,6 +339,53 @@ export function AskMeTab() {
                   </button>
                 )}
               </div>
+
+              {/* (#713) Owner-approval delivery — a frozen sentence the
+                  orchestrator prepared for a specific agent's session. The
+                  card shows the exact text, the target, the Enter indicator,
+                  and the expiry; the click is the owner's word. */}
+              {(() => {
+                const approval = liveApproval(open);
+                if (!approval) return null;
+                const expired = Date.now() >= Date.parse(approval.expiresAt);
+                return (
+                  <div style={{
+                    display: 'flex', flexDirection: 'column', gap: 6, padding: '8px 9px',
+                    background: 'var(--cth-paper-200)', boxShadow: 'inset 0 0 0 1px var(--cth-ink-100)'
+                  }}>
+                    <div style={{ fontFamily: 'var(--cth-font-display)', fontSize: 9, color: 'var(--cth-coral)' }}>
+                      {translate('askMe.approvalTitle')}
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: 11, color: 'var(--cth-ink-700)' }}>
+                        {translate('askMe.approvalTarget', { agent: nameFor(approval.agentId) ?? approval.agentId })}
+                      </span>
+                      <PixelBadge status="blocked" label={approval.pressEnter ? translate('askMe.approvalEnterYes') : translate('askMe.approvalEnterNo')} />
+                      <span style={{ fontSize: 10, color: expired ? 'var(--cth-coral)' : 'var(--cth-ink-500)' }}>
+                        {expired
+                          ? translate('askMe.approvalExpired')
+                          : translate('askMe.approvalExpires', { time: new Date(approval.expiresAt).toLocaleTimeString() })}
+                      </span>
+                    </div>
+                    <div style={{
+                      fontSize: 13, lineHeight: '17px', color: 'var(--cth-ink-900)', padding: '5px 7px',
+                      background: 'var(--cth-paper-100)', boxShadow: 'inset 0 0 0 1px var(--cth-ink-100)',
+                      fontFamily: 'var(--cth-font-mono)'
+                    }}>
+                      {approval.sentence}
+                    </div>
+                    <div>
+                      <PixelButton
+                        variant="primary" size="sm"
+                        disabled={expired || delivering === t.id}
+                        onClick={() => void deliverApproval(t)}
+                      >
+                        {delivering === t.id ? translate('askMe.approvalDelivering') : translate('askMe.approveDeliver')}
+                      </PixelButton>
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* the cascade: what's stuck behind this answer */}
               {stuck.length > 0 && (

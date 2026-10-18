@@ -21,6 +21,11 @@ export interface HumanQA {
    *  answering — the question stays on the card (history is preserved) but
    *  openQuestion() stops returning it, so the card leaves ASK ME. */
   dismissedAt?: string;
+  /** (#713) Owner-approval delivery: one target agent, one sentence, an
+   *  expiry. The card shows the exact sentence and an "Approve and deliver"
+   *  button; a click types it directly into the named session. Claimed once,
+   *  atomically; the stamp (deliveredAt / failed) is persisted on the card. */
+  delivery?: import('@shared/ownerApproval').OwnerApprovalAction;
 }
 
 export interface HiveTask {

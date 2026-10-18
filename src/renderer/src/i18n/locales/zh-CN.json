@@ -106,7 +106,17 @@
     "viewAnswersHistory": "打开包含完整问答历史的任务详情",
     "blockingDownstream": "阻塞 {{count}} 个下游任务",
     "blockingDownstreamPlural": "阻塞 {{count}} 个下游任务",
-    "more": "… 还有 {{count}} 个"
+    "more": "… 还有 {{count}} 个",
+    "approvalTitle": "所有者批准 — 交付给智能体",
+    "approvalTarget": "交付给 {{agent}}",
+    "approvalEnterYes": "按 Enter 发送",
+    "approvalEnterNo": "不按 Enter",
+    "approvalExpires": "{{time}} 过期",
+    "approvalExpired": "已过期",
+    "approvalDelivering": "交付中…",
+    "approveDeliver": "批准并交付",
+    "deliveryFailed": "交付失败 — 目标智能体没有活动会话，或批准已过期。请重新向编排器请求新的批准。",
+    "deliveryDone": "已交付。"
   },
   "agentStrip": {
     "privateNote": "私人笔记 · {{name}}",

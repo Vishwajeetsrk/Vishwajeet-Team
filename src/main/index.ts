@@ -25,7 +25,7 @@ import {
   getLogGraph, getCommitFiles, getFileAtRev, compareRefs, listWorktrees, checkoutRef
 } from './git';
 import { linkWorktreeDeps, unlinkWorktreeDeps } from './worktreeDeps';
-import { HiveManager, type AgentMeta, type HiveMessage, type HiveTask } from './hive';
+import { HiveManager, type AgentMeta, type HiveMessage, type HiveTask, type HumanQA } from './hive';
 import { HookServer } from './hooks';
 import { CircuitBreaker, type BreakerInput } from './breaker';
 import { CumulativeSampleGate, type UsageProvider } from './usage';
@@ -131,6 +131,13 @@ import { staffNewAgent } from '../shared/workforce';
 import { listLocalSkills, loadCatalog, installSkill, uninstallSkill, type LocalSkill } from './skills';
 import { loadHero } from './hero';
 import { loadModelCatalog } from './modelCatalog';
+import {
+  claimApproval,
+  failApproval,
+  isApprovalExpired,
+  validateApprovalAction,
+  type OwnerApprovalAction
+} from '../shared/ownerApproval';
 import {
   CODEX_REMOTE_SOCKET_RELATIVE,
   codexRemoteAliasPath,
@@ -4395,6 +4402,109 @@ ipcMain.handle('hive:patchAgentRole', (_evt, id: unknown, role: unknown) => {
   if (typeof role !== 'string') return { ok: false, error: 'invalid role' };
   if (!hive.enabled()) return { ok: false, error: 'hive disabled (no harnessHome)' };
   return hive.patchAgentRole(id, role);
+});
+
+// ─── IPC: owner-approval delivery (#713) ────────────────────────────────────
+/**
+ * Deliver a frozen owner-approval payload straight into the named agent's
+ * session — the owner's own input, no orchestrator relay (#44/#45).
+ *
+ * The click counts as the owner's word because the card showed the full
+ * sentence, the target, and the expiry; there is one action per card; and the
+ * single-use stamp survives a restart (tasks.json is the ledger). This records
+ * approvals made through the app's UI — it is NOT tamper-resistant attribution
+ * and does not isolate agents running under the same OS account.
+ */
+ipcMain.handle('hive:deliverOwnerApproval', async (_evt, req: unknown) => {
+  if (!req || typeof req !== 'object' || Array.isArray(req)) {
+    return { ok: false, error: 'invalid approval request' };
+  }
+  const { taskId, delivery } = req as { taskId?: unknown; delivery?: unknown };
+  if (typeof taskId !== 'string' || !taskId) return { ok: false, error: 'invalid task id' };
+  if (!hive.enabled()) return { ok: false, error: 'hive disabled (no harnessHome)' };
+
+  // Re-validate the payload the CARD displayed. The renderer may have a stale
+  // snapshot; this re-reads the on-disk ledger before anything is typed.
+  const verdict = validateApprovalAction(delivery);
+  if (verdict) return { ok: false, error: `invalid approval payload: ${verdict}` };
+
+  const action = delivery as OwnerApprovalAction;
+
+  // Locate the live open question on the card and freeze its delivery payload
+  // to exactly what the card showed — a later edit to the question can never
+  // change an approved payload.
+  const ledger = hive.tasks() as { tasks?: HiveTask[] };
+  const tasks = Array.isArray(ledger?.tasks) ? ledger.tasks : [];
+  const task = tasks.find((t) => t?.id === taskId);
+  if (!task) return { ok: false, error: 'task not found' };
+  const open = (task.humanQA ?? []).find(
+    (e) => e && !e.a && !e.dismissedAt && !e.delivery?.deliveredAt && !e.delivery?.failed
+  );
+  if (!open) return { ok: false, error: 'no open question on this card' };
+
+  // Atomically claim the single use (deliveredAt stamp persisted via patchTask
+  // below). A second click, a double-mounted component, or a race with a
+  // restore cannot double-send.
+  const claimed = claimApproval(action, undefined, Date.now());
+  if (!claimed.ok) return { ok: false, error: `approval ${claimed.reason}` };
+
+  const stamp = (reason?: string): HumanQA[] =>
+    (task.humanQA ?? []).map((e) =>
+      e === open || (e.q === open.q && !e.a && !e.dismissedAt)
+        ? { ...e, delivery: reason ? failApproval(claimed.action, reason) : claimed.action }
+        : e
+    );
+
+  if (!hive.patchTask(taskId, { humanQA: stamp() })) {
+    return { ok: false, error: 'task changed before approval could be claimed' };
+  }
+
+  // Re-check expiry and the target session one last time, immediately before
+  // the PTY write — the queue drain's gates still apply on the renderer side.
+  if (isApprovalExpired(claimed.action, Date.now())) {
+    hive.patchTask(taskId, { humanQA: stamp('expired before delivery') });
+    return { ok: false, error: 'approval expired before delivery' };
+  }
+  const targetAgentId = claimed.action.agentId;
+  const ptyId = ptyForAgent(targetAgentId);
+  if (!ptyId) {
+    hive.patchTask(taskId, { humanQA: stamp('target agent has no live terminal') });
+    return { ok: false, error: 'target agent has no live terminal' };
+  }
+
+  // Type the sentence into the target's session via the same write path the
+  // renderer's queue-drain uses; Enter is pressed only when the payload says so.
+  const wrote = ptyManager.write(ptyId, claimed.action.sentence);
+  if (!wrote.ok) {
+    hive.patchTask(taskId, { humanQA: stamp(wrote.error ?? 'pty write failed') });
+    return { ok: false, error: wrote.error ?? 'pty write failed' };
+  }
+  if (claimed.action.pressEnter) {
+    await new Promise((r) => setTimeout(r, 140));
+    ptyManager.write(ptyId, '\r');
+  }
+
+  // Record the delivery note on the card and inform the orchestrator.
+  hive.patchTask(taskId, {
+    humanQA: (task.humanQA ?? []).map((e) =>
+      e === open || (e.q === open.q && !e.a && !e.dismissedAt)
+        ? { ...e, delivery: { ...claimed.action, deliveryNote: `delivered to ${targetAgentId} (pty ${ptyId})` } }
+        : e
+    )
+  });
+  hive.send({
+    to: 'god',
+    act: 'inform',
+    subject: `OWNER APPROVAL delivered on task "${task.title}"`,
+    body: [
+      `The human clicked "Approve and deliver" on task ${taskId} ("${task.title}").`,
+      `Q: ${open.q}`,
+      `Sentence delivered to ${targetAgentId}: ${claimed.action.sentence}`,
+      `Enter pressed: ${claimed.action.pressEnter ? 'yes' : 'no'}`,
+      "The delivery is recorded in the card's humanQA.delivery. Act on it and continue the work."
+    ].join('\n')
+  }, 'human');
+  return { ok: true };
 });
 
 // ─── IPC: Settings hero payload (remote data, cached) ───────────────────────

@@ -115,6 +115,13 @@ export interface HumanQA {
   askedAt?: string;
   answeredAt?: string;
   dismissedAt?: string;
+  /** (#713) Optional owner-approval delivery attached to this question by the
+   *  orchestrator: one target agent, one sentence, an expiry. The owner sees
+   *  the exact sentence on the ASK ME card and can click "Approve and
+   *  deliver" to have the app type it directly into that agent's session —
+   *  no orchestrator relay, no copy-paste. Claimed atomically once (the
+   *  single-use stamp survives a restart via tasks.json). */
+  delivery?: import('../shared/ownerApproval').OwnerApprovalAction;
 }
 
 export interface HiveTask {

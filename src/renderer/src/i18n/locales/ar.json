@@ -106,7 +106,17 @@
     "viewAnswersHistory": "افتح تفاصيل المهمة مع سجلّ الأسئلة والأجوبة كاملًا",
     "blockingDownstream": "يعطّل {{count}} مهمة لاحقة",
     "blockingDownstreamPlural": "يعطّل {{count}} مهام لاحقة",
-    "more": "… +{{count}} أخرى"
+    "more": "… +{{count}} أخرى",
+    "approvalTitle": "موافقة المالك — تسليم إلى الوكيل",
+    "approvalTarget": "تسليم إلى {{agent}}",
+    "approvalEnterYes": "يضغط Enter",
+    "approvalEnterNo": "بدون Enter",
+    "approvalExpires": "تنتهي {{time}}",
+    "approvalExpired": "منتهية الصلاحية",
+    "approvalDelivering": "جارٍ التسليم…",
+    "approveDeliver": "موافقة وتسليم",
+    "deliveryFailed": "فشل التسليم — لا يوجد جلسة حية للوكيل المستهدف، أو انتهت صلاحية الموافقة. أعد الطلب من منسّق الموافقة الجديدة.",
+    "deliveryDone": "تم التسليم."
   },
   "agentStrip": {
     "privateNote": "ملاحظة خاصة · {{name}}",

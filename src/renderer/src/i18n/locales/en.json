@@ -106,7 +106,17 @@
     "viewAnswersHistory": "open the task detail with the full Q&A history",
     "blockingDownstream": "BLOCKING {{count}} DOWNSTREAM TASK",
     "blockingDownstreamPlural": "BLOCKING {{count}} DOWNSTREAM TASKS",
-    "more": "… +{{count}} more"
+    "more": "… +{{count}} more",
+    "approvalTitle": "OWNER APPROVAL — DELIVER TO AGENT",
+    "approvalTarget": "Deliver to {{agent}}",
+    "approvalEnterYes": "Presses Enter",
+    "approvalEnterNo": "No Enter",
+    "approvalExpires": "expires {{time}}",
+    "approvalExpired": "expired",
+    "approvalDelivering": "delivering…",
+    "approveDeliver": "Approve & deliver",
+    "deliveryFailed": "Delivery failed — the target agent has no live session, or the approval expired. Re-ask the orchestrator for a fresh approval.",
+    "deliveryDone": "Delivered."
   },
   "agentStrip": {
     "privateNote": "PRIVATE NOTE · {{name}}",
