@@ -1,18 +1,18 @@
 ---
-title: "Launching Munder Difflin v0.4.6: It Speaks Chinese and Arabic Now"
+title: "Launching Vishwajeet Team v0.4.6: It Speaks Chinese and Arabic Now"
 description: "v0.4.6 adds Chinese and Arabic interfaces with right-to-left support, ships its fonts inside the app so nothing is fetched from Google, and makes the updater actually update itself instead of pointing at a download page."
 date: 2026-08-27
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.4.6"
-secondaryKeywords: ["munder difflin release", "claude code chinese interface", "arabic rtl developer tools", "electron auto update", "ai agent telemetry privacy"]
+primaryKeyword: "Vishwajeet Team v0.4.6"
+secondaryKeywords: ["Vishwajeet Team release", "claude code chinese interface", "arabic rtl developer tools", "electron auto update", "ai agent telemetry privacy"]
 tags: ["Story", "Release", "i18n", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What languages does Munder Difflin v0.4.6 support?"
+  - q: "What languages does Vishwajeet Team v0.4.6 support?"
     a: "English, Simplified Chinese and Arabic. English stays the default and nothing changes until you pick another language in Settings under General. The app never guesses from your operating system locale."
   - q: "Is the Arabic translation finished?"
     a: "Every string is translated, with nothing falling back to English, and the terminals read right to left. Some screens still need their padding and icons mirrored, and that is the next piece of work. No Arabic speaker has reviewed the wording yet, so reports are welcome."
@@ -22,7 +22,7 @@ faq:
     a: "Clicking the update badge now runs the real download and restart instead of handing you a disk image and install instructions. The check can no longer hang forever on a stalled connection, and the what's new list shows real features."
 ---
 
-*Newer release: [Munder Difflin 0.5.2](/blog/launching-munder-difflin-v0-5-2/) is out, with Pro and the Stapler.*
+*Newer release: [Vishwajeet Team 0.5.2](/blog/launching-munder-difflin-v0-5-2/) is out, with Pro and the Stapler.*
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>v0.4.6 is the release where the
 app stops assuming everyone reads English left to right.</strong> Simplified Chinese and Arabic
@@ -36,7 +36,7 @@ gets to walk onto it.
 
 ## Chinese and Arabic
 
-Munder Difflin now runs in Simplified Chinese and Arabic. English stays the default and nothing
+Vishwajeet Team now runs in Simplified Chinese and Arabic. English stays the default and nothing
 moves until you pick a language in Settings, under General. The app deliberately does not read
 your operating system locale, because changing somebody's whole interface out from under them on
 an upgrade is rude even when you are right about what they speak.

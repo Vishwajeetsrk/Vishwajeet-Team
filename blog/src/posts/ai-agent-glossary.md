@@ -60,7 +60,7 @@ AutoGen).** A harness wraps agents you have; a framework is how you'd build one.
 
 ### Orchestrator
 **An orchestrator is the coordinator that decomposes your intent and routes work to the right
-agents,** escalating only the critical decisions. In Munder Difflin it's the [GOD agent](/#how) you
+agents,** escalating only the critical decisions. In Vishwajeet Team it's the [GOD agent](/#how) you
 talk to in plain language.
 
 ### Hive
@@ -110,5 +110,5 @@ tools](/blog/best-claude-code-multi-agent-tools/) maps the vocabulary onto real 
 
 ---
 
-Munder Difflin is a harness, a hive, an orchestrator, and shared memory in one local app. [Download
-Munder Difflin](/#install) to see the glossary come to life — free and open source.
+Vishwajeet Team is a harness, a hive, an orchestrator, and shared memory in one local app. [Download
+Vishwajeet Team](/#install) to see the glossary come to life — free and open source.

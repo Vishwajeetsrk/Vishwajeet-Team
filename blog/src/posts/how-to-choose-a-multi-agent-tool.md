@@ -117,6 +117,6 @@ analysis paralysis.
 
 ---
 
-If your scores point at memory + messaging + orchestration, Munder Difflin is built squarely for that
-profile — and it's free to test the thesis. [Download Munder Difflin](/#install); it's open source and
+If your scores point at memory + messaging + orchestration, Vishwajeet Team is built squarely for that
+profile — and it's free to test the thesis. [Download Vishwajeet Team](/#install); it's open source and
 local-first.

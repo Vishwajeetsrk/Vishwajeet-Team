@@ -105,7 +105,7 @@ A practical recipe, drawn from current
 ## Close the loop with observability
 
 A reliability number is only as good as the data behind it, and a [multi-agent harness](/#what) is already
-producing most of it. Munder Difflin records **real token and cost telemetry** from the agents'
+producing most of it. Vishwajeet Team records **real token and cost telemetry** from the agents'
 transcripts, keeps an [append-only event log](/blog/append-only-event-log-agents/) of every action, and
 tracks task outcomes on a board. That's an eval dataset waiting to be used: success rate per *task type*,
 cost per *successful outcome* (a 50x cost spread for similar accuracy is real), and exactly where runs
@@ -126,4 +126,4 @@ number. The agents that earn unattended work are the ones you've actually evalua
 your bar.
 
 Want a hive that already records the cost, outcomes, and event logs an eval loop needs? You can
-[download Munder Difflin](/#install) free — it's open source.
+[download Vishwajeet Team](/#install) free — it's open source.

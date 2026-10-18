@@ -5,18 +5,18 @@ date: 2026-08-19
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin releases"
-secondaryKeywords: ["munder difflin changelog", "shipping velocity open source", "release cadence dev tools", "munder difflin 0.4"]
+primaryKeyword: "Vishwajeet Team releases"
+secondaryKeywords: ["Vishwajeet Team changelog", "shipping velocity open source", "release cadence dev tools", "Vishwajeet Team 0.4"]
 tags: ["Story", "Release", "Open Source", "Changelog"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What shipped in the 0.4.x wave of Munder Difflin?"
+  - q: "What shipped in the 0.4.x wave of Vishwajeet Team?"
     a: "0.3.8 made memory condensation actually work; 0.3.9 added a check-for-updates panel; 0.4.0 rebuilt the brand and landing page with real screenshots; 0.4.1 renamed the GOD agent to your clone and named all ten engines; 0.4.2 added anonymous, opt-out telemetry with a public contract; 0.4.3 made Michael's portrait the logo; and 0.4.4 fixed agent messaging on Windows and added the skills catalog."
   - q: "Why release so often?"
     a: "Launch week. Thousands of new people hit the product at once and found things a small user base never would — Windows messaging, onboarding dead-ends, unreadable dark mode. When feedback arrives that fast, batching fixes into a monthly release just means people churn while the fix sits on a branch."
-  - q: "Is telemetry in Munder Difflin opt-out or opt-in?"
+  - q: "Is telemetry in Vishwajeet Team opt-out or opt-in?"
     a: "Opt-out, anonymous, and governed by a public contract: TELEMETRY.md lists every event and property, the code enforces that list as a hard allowlist, DO_NOT_TRACK is respected unconditionally, and building from source or forking produces a build with no key — the analytics module becomes a no-op."
 ---
 

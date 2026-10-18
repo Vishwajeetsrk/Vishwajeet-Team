@@ -132,4 +132,4 @@ scan and pin them, scope every token to least privilege, sanitize what reaches a
 execution. Do that and MCP is what it should be: a powerful, *bounded* way to give agents real tools.
 
 Want a hive where MCP tools run with least-privilege, human-gated, fully-audited by default? You can
-[download Munder Difflin](/#install) free — it's open source.
+[download Vishwajeet Team](/#install) free — it's open source.

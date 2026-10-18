@@ -1,6 +1,6 @@
 ---
 title: "How to Trigger Your AI Agent Hive from a GitHub Webhook"
-description: "Wire a GitHub webhook to Munder Difflin: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host."
+description: "Wire a GitHub webhook to Vishwajeet Team: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host."
 date: 2026-06-10
 category: guides
 categoryLabel: Guides
@@ -13,14 +13,14 @@ author:
   initials: CG
 faq:
   - q: "Can you trigger an AI agent from a GitHub webhook?"
-    a: "Yes. Munder Difflin runs a small, opt-in local webhook that turns an inbound POST into a task. Point a GitHub webhook (or a one-line curl from a GitHub Action) at the public URL with the shared secret in an x-md-webhook-secret header and a JSON body of { message, title? }, and the GOD orchestrator picks it up, files a kanban card, and routes it to an agent."
-  - q: "Is the Munder Difflin webhook secure?"
+    a: "Yes. Vishwajeet Team runs a small, opt-in local webhook that turns an inbound POST into a task. Point a GitHub webhook (or a one-line curl from a GitHub Action) at the public URL with the shared secret in an x-md-webhook-secret header and a JSON body of { message, title? }, and the GOD orchestrator picks it up, files a kanban card, and routes it to an agent."
+  - q: "Is the Vishwajeet Team webhook secure?"
     a: "It's built to be. Every POST must carry your shared secret in x-md-webhook-secret, compared in constant time, and the secret is verified before the body is even buffered. A 1 MB body cap and a fixed-window rate limit (120 requests/minute) bound abuse ahead of any parsing. The response hands back a 192-bit capability token; a GET reveals only that one task's status — no listing, no enumeration."
   - q: "Do I need to host a public server to receive GitHub webhooks?"
     a: "No. The endpoint runs on your own machine inside the desktop app. A best-effort local tunnel (tunnelmole) gives GitHub a public URL to reach your local port, so there's nothing to deploy. If the tunnel can't start, the local handler still runs — the tunnel is a doorbell, not the security boundary."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin can <strong>turn a GitHub
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team can <strong>turn a GitHub
 webhook into a task for your hive</strong>. Flip on the webhook trigger, copy the public URL it opens via
 a local tunnel, and have GitHub (or a GitHub Action) <strong>POST <code>{ message, title? }</code></strong>
 with your shared secret in an <code>x-md-webhook-secret</code> header. The GOD orchestrator files a kanban
@@ -29,7 +29,7 @@ The endpoint lives <em>on your machine</em>; the tunnel is just a doorbell. Off 
 it on.</p></div>
 
 Most of the time you brief your agents from the app. But a lot of work *starts* in GitHub — a PR opens, an
-issue gets a label, a release tag lands. Munder Difflin's webhook trigger lets you bridge that gap: a GitHub
+issue gets a label, a release tag lands. Vishwajeet Team's webhook trigger lets you bridge that gap: a GitHub
 event becomes a task in your hive's queue, triaged and routed by [the GOD
 orchestrator](/blog/how-the-god-orchestrator-works/) like any other piece of work. This is a hands-on
 walkthrough using GitHub as the concrete example, but the same endpoint accepts a POST from anything that
@@ -56,7 +56,7 @@ not at the keyboard.
 
 ## Step 1 — Enable the webhook trigger and get the public URL
 
-In Munder Difflin, switch on the webhook trigger and set a **shared secret** (treat it like a password — long
+In Vishwajeet Team, switch on the webhook trigger and set a **shared secret** (treat it like a password — long
 and random). When it starts, two things happen:
 
 1. A bare HTTP server binds to a local port inside the app's main process. This is the security boundary, and
@@ -89,7 +89,7 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: POST to Munder Difflin
+      - name: POST to Vishwajeet Team
         run: |
           curl -sS -X POST "$HIVE_URL" \
             -H "x-md-webhook-secret: $HIVE_SECRET" \
@@ -198,7 +198,7 @@ it, and the handler runs even if the tunnel doesn't.
 
 ---
 
-Munder Difflin turns a GitHub event into a remote control for a hive that still lives entirely on your machine
+Vishwajeet Team turns a GitHub event into a remote control for a hive that still lives entirely on your machine
 — [orchestrated by GOD](https://munderdiffl.in/#how), verified at the edge, queued like any other task.
-[Download Munder Difflin](https://munderdiffl.in/#install) to wire your repo into your agents; it's free and
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to wire your repo into your agents; it's free and
 open source.

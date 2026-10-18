@@ -11,7 +11,7 @@ secondaryKeywords: ["best open source ai agents", "open source ai agent", "self 
 tags: ["Comparisons", "AI Agents", "Open Source", "CLI Agents"]
 faq:
   - q: "What is the best open source AI agent?"
-    a: "It depends on the job. OpenClaw is the strongest personal assistant, Munder Difflin runs a team of named agents on your computer, and Hermes Agent is best on memory that grows. For coding alone, OpenCode in the terminal or Cline in your editor."
+    a: "It depends on the job. OpenClaw is the strongest personal assistant, Vishwajeet Team runs a team of named agents on your computer, and Hermes Agent is best on memory that grows. For coding alone, OpenCode in the terminal or Cline in your editor."
   - q: "Are open source AI agents free?"
     a: "The software is. All ten picks here are MIT or Apache 2.0 licensed, checked on 1 Oct 2026. You still pay for the model behind them, unless you run a local one or the agent reuses a subscription you already have."
   - q: "What is a self hosted AI agent?"
@@ -22,7 +22,7 @@ faq:
     a: "Yes, OpenDevin was renamed OpenHands. As of 1 Oct 2026 its README leads with Agent Canvas, a self hosted control center that runs the OpenHands agent or other agents such as Claude Code and Codex."
 ---
 
-The best open source AI agents right now are OpenClaw for a personal assistant, [Munder Difflin](https://harnessmd.com/download) for a team of agents on your computer, Hermes Agent for memory that learns, and OpenCode or Cline for coding. All ten picks below are MIT or Apache 2.0, checked on their repos on 1 Oct 2026.
+The best open source AI agents right now are OpenClaw for a personal assistant, [Vishwajeet Team](https://harnessmd.com/download) for a team of agents on your computer, Hermes Agent for memory that learns, and OpenCode or Cline for coding. All ten picks below are MIT or Apache 2.0, checked on their repos on 1 Oct 2026.
 
 ## What is an open source AI agent?
 
@@ -34,7 +34,7 @@ It is a program that calls a language model in a loop and uses tools to finish a
 
 **1. OpenClaw.** [OpenClaw](https://github.com/openclaw/openclaw) is a personal assistant that runs on your own computer and answers in Discord, iMessage, Slack, Teams, Telegram, WhatsApp and 20+ more channels. Its README says state, memory and credentials live on your hardware, and that it has no paid tier, hosted service or token. Best for: one assistant for your personal life.
 
-**2. Munder Difflin.** [Munder Difflin](https://harnessmd.com/download) is what we make: a free and open source desktop app (MIT) that runs a team of named AI agents on your own computer. Each agent runs on a CLI engine you already use, such as Claude Code, Codex, Gemini CLI, OpenCode or Cursor, and keeps its own `memory.md`, inbox and outbox. You can put missions on schedules, and a Slack trigger feeds requests to Michael, the orchestrator who hands work out. The limits: agents run only while your computer does, you install and sign in to each CLI yourself, and anonymous usage telemetry is on by default (you can turn it off in Settings). Best for: project work spread over several engines. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
+**2. Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download) is what we make: a free and open source desktop app (MIT) that runs a team of named AI agents on your own computer. Each agent runs on a CLI engine you already use, such as Claude Code, Codex, Gemini CLI, OpenCode or Cursor, and keeps its own `memory.md`, inbox and outbox. You can put missions on schedules, and a Slack trigger feeds requests to Michael, the orchestrator who hands work out. The limits: agents run only while your computer does, you install and sign in to each CLI yourself, and anonymous usage telemetry is on by default (you can turn it off in Settings). Best for: project work spread over several engines. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
 
 **3. Hermes Agent.** [Hermes Agent](https://github.com/NousResearch/hermes-agent) from Nous Research is built around a learning loop: it curates its own memory, writes skills after complex tasks and searches its past sessions. It has a built in cron scheduler, talks over Telegram, Slack, Signal and more, and runs on a laptop, a VPS or serverless backends. Best for: a server agent that improves with use. Our [Hermes Agent explainer](/blog/what-is-hermes-agent/) covers the install command, the models it takes and what it costs.
 
@@ -63,7 +63,7 @@ One more for the terminal: Pi, Earendil's MIT licensed agent harness, which leav
 | Agent | Job | Runs on | Licence | Latest release (checked) |
 | --- | --- | --- | --- | --- |
 | OpenClaw | Personal assistant | Your computer or server | MIT | v2026.9.7, 30 Sep 2026. |
-| Munder Difflin | Team of agents | Your computer (macOS, Windows, Linux) | MIT | v0.5.3, 18 Sep 2026. |
+| Vishwajeet Team | Team of agents | Your computer (macOS, Windows, Linux) | MIT | v0.5.3, 18 Sep 2026. |
 | Hermes Agent | Personal assistant | Your computer, a VPS or serverless | MIT | v2026.9.24, 24 Sep 2026. |
 | NanoClaw | Personal assistant | Containers on your computer | MIT | v2.4.0, 23 Sep 2026. |
 | OpenCode | Coding agent | Your terminal | MIT | v1.18.34, 30 Sep 2026. |
@@ -86,7 +86,7 @@ One oddity: GitHub's API labels OpenClaw's licence `NOASSERTION`, but its LICENS
 
 ## Which open source AI agent can I self host?
 
-All ten run on hardware you control; the difference is which hardware. OpenClaw, Hermes Agent and OpenHands are built to live on a server, so they keep working with your laptop shut. Cline, Munder Difflin and Aider expect the machine you work at, and NanoClaw needs Docker. Self hosted is not the same as private: prompts still go to the model provider you pick. Our [ChatGPT dots alternatives](/blog/chatgpt-dots-alternatives/) splits the same field into local and cloud.
+All ten run on hardware you control; the difference is which hardware. OpenClaw, Hermes Agent and OpenHands are built to live on a server, so they keep working with your laptop shut. Cline, Vishwajeet Team and Aider expect the machine you work at, and NanoClaw needs Docker. Self hosted is not the same as private: prompts still go to the model provider you pick. Our [ChatGPT dots alternatives](/blog/chatgpt-dots-alternatives/) splits the same field into local and cloud.
 
 ## Why do other open source AI agent lists look different?
 
@@ -97,7 +97,7 @@ Most top results list frameworks, and some have aged. As of 1 Oct 2026, Modal's 
 Match the agent to the job.
 
 * Pick **OpenClaw** if you want one assistant in your chat apps.
-* Pick **Munder Difflin** if you want several named agents with roles, each on the CLI you already use.
+* Pick **Vishwajeet Team** if you want several named agents with roles, each on the CLI you already use.
 * Pick **Hermes Agent** if you want a server agent whose memory and skills grow.
 * Pick **NanoClaw** if container isolation matters more than features.
 * Pick **OpenCode** or **Cline** if you want one coding agent, in the terminal or the editor.

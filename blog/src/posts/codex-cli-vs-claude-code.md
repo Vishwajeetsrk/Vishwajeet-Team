@@ -21,12 +21,12 @@ faq:
   - q: "Does Codex CLI have computer use?"
     a: "Not in the CLI. OpenAI's docs put Computer Use in the ChatGPT desktop app, with Codex, on macOS and Windows in supported regions, checked 29 Sep 2026. Claude Code has it inside the CLI, but only on macOS, as a research preview on Pro and Max plans."
   - q: "Can I run Codex and Claude Code together?"
-    a: "Yes. Munder Difflin, free and open source, runs Codex and Claude Code agents side by side on one office floor, each in its own terminal, and you choose the CLI per agent."
+    a: "Yes. Vishwajeet Team, free and open source, runs Codex and Claude Code agents side by side on one office floor, each in its own terminal, and you choose the CLI per agent."
 ---
 
 Codex and Claude Code are close enough in September 2026 that your plan should decide: pick Codex for a free desktop tier, limits published per model and background computer use on a Mac; pick Claude Code for Opus 5.5 by default and computer use inside the terminal.
 
-You can also skip the choice: switch between the two by hand, or run both in [Munder Difflin](https://harnessmd.com/download), free and open source, which puts Codex and Claude Code agents side by side on one floor, each in its own terminal. Everything below was checked on 29 Sep 2026 against each vendor's own pricing pages and docs.
+You can also skip the choice: switch between the two by hand, or run both in [Vishwajeet Team](https://harnessmd.com/download), free and open source, which puts Codex and Claude Code agents side by side on one floor, each in its own terminal. Everything below was checked on 29 Sep 2026 against each vendor's own pricing pages and docs.
 
 ## Codex vs Claude Code at a glance (checked 29 Sep 2026)
 
@@ -122,4 +122,4 @@ If you are still choosing between whole categories of tools, not just these two 
 
 ## Can you run Codex and Claude Code together?
 
-Yes, and for a lot of teams that is the honest answer. Munder Difflin (as of 0.5.3) lets you pick the CLI per agent, Claude Code or Codex among others, and runs each one as a real terminal process on the same floor. A Codex agent can take the UI bug while a Claude Code agent takes the refactor. When one plan hits its weekly limit, the other keeps working.
+Yes, and for a lot of teams that is the honest answer. Vishwajeet Team (as of 0.5.3) lets you pick the CLI per agent, Claude Code or Codex among others, and runs each one as a real terminal process on the same floor. A Codex agent can take the UI bug while a Claude Code agent takes the refactor. When one plan hits its weekly limit, the other keeps working.

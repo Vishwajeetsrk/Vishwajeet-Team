@@ -1,5 +1,5 @@
 ---
-title: "Munder Difflin's Architecture: Two Data Planes, One Renderer"
+title: "Vishwajeet Team's Architecture: Two Data Planes, One Renderer"
 description: "A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer."
 date: 2026-06-04
 category: internals
@@ -12,7 +12,7 @@ author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What are the two data planes in Munder Difflin?"
+  - q: "What are the two data planes in Vishwajeet Team?"
     a: "The terminal plane carries raw pseudo-terminal bytes from each agent's shell (node-pty) to an xterm.js view. The event plane carries structured agent state — Claude Code hook events and routed hive messages — to the office-floor visualization. One is byte-for-byte authentic; the other is event-driven."
   - q: "Why separate the terminal stream from the event stream?"
     a: "Each answers a different question. The raw terminal stream shows exactly what the agent output; the event stream tells you which tool is running without parsing that output. Hooks alone miss the stream the user expects to see; the stream alone can't reliably say what's happening. Together they cover both."
@@ -28,7 +28,7 @@ hive messages to a Pixi.js office floor (what's happening, at a glance). Both fl
 into <strong>one React + Pixi renderer</strong>. The terminal plane is the truth; the event plane is
 the story.</p></div>
 
-Most of what Munder Difflin does follows from a single architectural choice, so it's worth walking
+Most of what Vishwajeet Team does follows from a single architectural choice, so it's worth walking
 through. The harness runs many real Claude Code agents and shows you two things about each: the exact
 terminal output, and a live picture of what it's doing. Those are different kinds of data, so they
 travel on **two separate planes** that meet in one renderer. Here's the whole shape.
@@ -150,7 +150,7 @@ streams) rather than needing a new one.
 
 ---
 
-Munder Difflin's two-plane architecture — authentic node-pty terminals plus an event-driven Pixi.js
+Vishwajeet Team's two-plane architecture — authentic node-pty terminals plus an event-driven Pixi.js
 floor, converging in one renderer — is what makes a hive both legible and real.
-[Download Munder Difflin](https://munderdiffl.in/#install) to see the architecture in action; it's
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to see the architecture in action; it's
 free and open source.

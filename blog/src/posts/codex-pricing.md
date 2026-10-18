@@ -23,7 +23,7 @@ faq:
 
 Codex has no price of its own. It comes with every ChatGPT plan, from Free at $0 to Pro at $500 a month, or you pay per token with an API key. Verdict: Plus at $20 a month is the right first plan for most developers. These are US prices, checked 5 Oct 2026.
 
-You can run Codex on its own, or inside [Munder Difflin](https://harnessmd.com/download), which is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup, and the [Guides hub](/blog/topics/guides/) has our other Codex walkthroughs.
+You can run Codex on its own, or inside [Vishwajeet Team](https://harnessmd.com/download), which is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup, and the [Guides hub](/blog/topics/guides/) has our other Codex walkthroughs.
 
 ## How much does Codex cost?
 

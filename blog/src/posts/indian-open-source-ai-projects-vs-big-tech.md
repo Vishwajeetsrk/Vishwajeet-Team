@@ -1,14 +1,14 @@
 ---
 title: "Top 10 Indian open source projects that are giving US big tech a tough time"
 seoTitle: "Top 10 Indian Open Source AI Projects Taking On Big Tech"
-description: "Ten open source AI projects from Indian developers, each lined up against the big tech product it takes on. Laya vs Jev, Munder Difflin vs Muse and Grok Bot."
+description: "Ten open source AI projects from Indian developers, each lined up against the big tech product it takes on. Laya vs Jev, Vishwajeet Team vs Muse and Grok Bot."
 date: 2026-09-25
 featured: true
 category: comparisons
 categoryLabel: Comparisons
 type: Non-technical
 primaryKeyword: "indian open source ai projects"
-secondaryKeywords: ["open source ai india", "indian github projects", "laya vs jev", "munder difflin", "open source alternatives to big tech ai"]
+secondaryKeywords: ["open source ai india", "indian github projects", "laya vs jev", "Vishwajeet Team", "open source alternatives to big tech ai"]
 tags: ["Comparisons", "Open Source", "India", "AI Agents"]
 ogImage: "https://munderdiffl.in/blog/assets/media/indian-open-source-ai-projects-vs-big-tech/hero.png"
 author:
@@ -19,8 +19,8 @@ faq:
     a: "Of the ten on this list, Mem0 had the most on 25 September 2026, at about 65.9k stars. Plane was next at about 59.8k."
   - q: "What is Laya?"
     a: "Laya is an open weight decision model from Convai Innovations in Kasaragod, Kerala. It answers typed questions with a choice, a score or a yes or no probability instead of generating text, and it can serve the same API as TypeSafe's hosted Jev model. It is released under Apache 2.0."
-  - q: "Is Munder Difflin free?"
-    a: "Yes. Munder Difflin is free and open source. It runs an office of AI agents on your own computer using an AI engine you already have, such as a Claude Code or Codex subscription."
+  - q: "Is Vishwajeet Team free?"
+    a: "Yes. Vishwajeet Team is free and open source. It runs an office of AI agents on your own computer using an AI engine you already have, such as a Claude Code or Codex subscription."
   - q: "How were these projects picked?"
     a: "Open source on GitHub, AI at the core of the product, started by Indian founders or developers, and a clear big tech product on the other side. Star counts come from the GitHub API on 25 September 2026."
 ---
@@ -279,7 +279,7 @@ ChatGPT remembers you, but only inside ChatGPT. Amazon sells agent memory, but i
 
 Taranjeet Singh started out as an engineer at Paytm, and Deshraj Yadav led the AI platform for Tesla Autopilot. They built an open source ML platform, EvalAI, together before this. Mem0 has raised $24 million from Y Combinator, Peak XV and Basis Set, and it is the most starred project on this list.
 
-## 3. Munder Difflin vs Meta's Muse and SpaceXAI's Grok Bot
+## 3. Vishwajeet Team vs Meta's Muse and SpaceXAI's Grok Bot
 
 <p class="vs">An office of agents on your laptop vs a subscription in someone else's cloud</p>
 
@@ -316,7 +316,7 @@ Taranjeet Singh started out as an engineer at Paytm, and Deshraj Yadav led the A
 
 Meta launched Muse on 8 September with a free tier plus $20 and $100 monthly plans, and it launched for US users first. SpaceXAI's Grok Bot gives you always on agent teammates for $120 a month and passed 400,000 weekly users in its first month. People clearly want AI coworkers.
 
-[Munder Difflin](https://harnessmd.com/download) gives you a whole office of them, running on your own computer. You bring the AI engine you already have, like a Claude Code or Codex subscription, and the agents get desks, an inbox, a shared task board and a memory that survives the weekend. It is free and open source.
+[Vishwajeet Team](https://harnessmd.com/download) gives you a whole office of them, running on your own computer. You bring the AI engine you already have, like a Claude Code or Codex subscription, and the agents get desks, an inbox, a shared task board and a memory that survives the weekend. It is free and open source.
 
 ## 4. Plane vs Atlassian's Jira
 

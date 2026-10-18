@@ -1,4 +1,4 @@
-# Munder Difflin — landing-remotion
+# Vishwajeet Team — landing-remotion
 
 [Remotion](https://www.remotion.dev/) project that produces the looping "HOW it works"
 clips embedded on the landing page (`../docs/index.html`). The page references the rendered

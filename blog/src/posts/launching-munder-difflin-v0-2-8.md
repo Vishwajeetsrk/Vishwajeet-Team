@@ -1,18 +1,18 @@
 ---
-title: "Launching Munder Difflin v0.2.8: Shareable Hires"
-description: "Munder Difflin v0.2.8 ships Shareable Hires: a one-click, portable agent role manifest + The Hiring Fair gallery. Click a hire link, review every field, then spawn it yourself."
+title: "Launching Vishwajeet Team v0.2.8: Shareable Hires"
+description: "Vishwajeet Team v0.2.8 ships Shareable Hires: a one-click, portable agent role manifest + The Hiring Fair gallery. Click a hire link, review every field, then spawn it yourself."
 date: 2026-06-15
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.2.8"
+primaryKeyword: "Vishwajeet Team v0.2.8"
 secondaryKeywords: ["shareable agent roles", "the hiring fair", "one-click ai agent hire", "munderdifflin deep link", "ai agent role manifest"]
 tags: ["Story", "Release", "Multi-Agent", "Claude Code", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's new in Munder Difflin v0.2.8?"
+  - q: "What's new in Vishwajeet Team v0.2.8?"
     a: "The headline is Shareable Hires. A hire is a portable JSON manifest (format id munder-difflin/hire@1) that captures a fully role-configured agent — name, avatar, provider, model, command flags, a goal, capability tags, and a token budget. You can share it as a link or a file, and the recipient gets the Add-Agent modal pre-filled, ready to review and spawn. It ships alongside a community gallery called The Hiring Fair at munderdiffl.in/hires."
   - q: "What exactly is a 'hire'?"
     a: "Think of it as a job description for an AI coworker. It's a single JSON manifest that describes a role-configured agent: which provider runs it (Claude Code, Antigravity, or Codex), the model, the command flags, a goal/role description, capability tags, and a token budget. Hand it to anyone's office and they can spin up that exact role."
@@ -28,7 +28,7 @@ faq:
     a: "Yes. v0.2.8 includes everything from v0.2.7 (voice dictation, the Knowledge Graph, multi-window floors, the rich composer, session resume) and earlier. Shareable Hires is purely additive."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin v0.2.8</strong> ships <strong>Shareable Hires</strong>. A <strong>hire</strong> is a portable JSON manifest — a job description for an AI coworker (provider, model, flags, goal, capability tags, token budget) — that you can share as a <strong>link</strong> or a <strong>file</strong>. Click a hire, and the Add-Agent modal opens <em>pre-filled</em>. It never spawns anything on its own: <strong>you</strong> review every field and hit spawn. Plus <strong>The Hiring Fair</strong> at <a href="https://munderdiffl.in/hires">munderdiffl.in/hires</a> — a no-login gallery of ready-made roles (Pam writes docs, Dwight does QA, Creed audits security…). Browse → ⚡hire → review → spawn. Free, open source, local-first.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team v0.2.8</strong> ships <strong>Shareable Hires</strong>. A <strong>hire</strong> is a portable JSON manifest — a job description for an AI coworker (provider, model, flags, goal, capability tags, token budget) — that you can share as a <strong>link</strong> or a <strong>file</strong>. Click a hire, and the Add-Agent modal opens <em>pre-filled</em>. It never spawns anything on its own: <strong>you</strong> review every field and hit spawn. Plus <strong>The Hiring Fair</strong> at <a href="https://munderdiffl.in/hires">munderdiffl.in/hires</a> — a no-login gallery of ready-made roles (Pam writes docs, Dwight does QA, Creed audits security…). Browse → ⚡hire → review → spawn. Free, open source, local-first.</p></div>
 
 ok so picture this. you've got a whole floor of pixel coworkers — Claude Code agents, Antigravity (Gemini) workers, Codex CLIs — all run by Michael, the GOD orchestrator who routes work like a slightly unhinged regional manager. it's great. but here's the part nobody tells you about a fresh, empty office:
 
@@ -126,11 +126,11 @@ plus the multi-provider parity (Claude Code + Antigravity + Codex, no second-cla
 
 ## get v0.2.8
 
-Munder Difflin is **free, open source, and local-first** on macOS, Windows, and Linux. no account, no cloud — your machine, your subscriptions, your floor.
+Vishwajeet Team is **free, open source, and local-first** on macOS, Windows, and Linux. no account, no cloud — your machine, your subscriptions, your floor.
 
 [**Download v0.2.8**](https://github.com/chaitanyagiri/munder-difflin/releases/latest), then head over to [**The Hiring Fair**](https://munderdiffl.in/hires), find a coworker, and hit ⚡hire. review the modal. spawn it. watch Pam get to work.
 
-want the why-it's-built-this-way story? read the concept companion on [shareable agent roles](/blog/shareable-agent-roles/). want the trust model and threat surface in detail? that's the [hire manifest security deep-dive](/blog/hire-manifest-untrusted-input/). curious how we even ended up with a Dwight in the first place? the [Office parody behind Munder Difflin](/blog/the-office-parody-behind-munder-difflin/) explains the casting. and if you missed the multi-provider launch, [v0.2.4 is right here](/blog/launching-munder-difflin-v0-2-4/).
+want the why-it's-built-this-way story? read the concept companion on [shareable agent roles](/blog/shareable-agent-roles/). want the trust model and threat surface in detail? that's the [hire manifest security deep-dive](/blog/hire-manifest-untrusted-input/). curious how we even ended up with a Dwight in the first place? the [Office parody behind Vishwajeet Team](/blog/the-office-parody-behind-munder-difflin/) explains the casting. and if you missed the multi-provider launch, [v0.2.4 is right here](/blog/launching-munder-difflin-v0-2-4/).
 
 full release notes live in the [CHANGELOG](https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md).
 

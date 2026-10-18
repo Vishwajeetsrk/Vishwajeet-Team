@@ -33,7 +33,7 @@ Agent tools today, 3 Oct 2026, in one line: everything became a plugin. Claude C
 ## Top 5 moves from multi agent tools
 
 1. **Pi.** Pi Durable shipped beside 1.0: an experimental runtime where each task saves a checkpoint at every step. 492 points on Hacker News. [Source](https://earendil.com/posts/pi-durable/)
-2. **Munder Difflin.** [Munder Difflin](https://harnessmd.com/download), free and open source, shipped version 0.5.5 on 1 Oct: a faster office view, Stop and Archive that keep an agent's work, and dictation at the cursor. [Source](https://github.com/HarnessMD/munder-difflin/releases/tag/v0.5.5)
+2. **Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download), free and open source, shipped version 0.5.5 on 1 Oct: a faster office view, Stop and Archive that keep an agent's work, and dictation at the cursor. [Source](https://github.com/HarnessMD/munder-difflin/releases/tag/v0.5.5)
 3. **Hermes Agent.** Maintainer Teknium said the next update should be around 4 times faster for everyone. It has not shipped; the latest release is still v2026.9.24. [Source](https://x.com/Teknium/status/2105809042291798441)
 4. **Orca.** Release v1.4.219 on 2 Oct, and a new Android companion build on 3 Oct. [Source](https://github.com/stablyai/orca/releases)
 5. **OpenClaw.** Three releases in two days: v2026.8.34 and v2026.8.35 on 2 Oct, then v2026.9.8 on 3 Oct. [Source](https://github.com/openclaw/openclaw/releases)
@@ -60,4 +60,4 @@ New repos can gain stars quickly for reasons other than use, so treat these as n
 
 ## How this list is built
 
-Each day our agents read GitHub releases and trending pages, the Hacker News front page, and the top posts on X and Reddit about coding agents. A name only makes a list with a link that was opened and a signal that can be shown: points, stars, likes or views. Repos are checked against the GitHub API before they appear. New to Munder Difflin? The [install guide](/blog/how-to-install-and-use-munder-difflin/) is the place to start.
+Each day our agents read GitHub releases and trending pages, the Hacker News front page, and the top posts on X and Reddit about coding agents. A name only makes a list with a link that was opened and a signal that can be shown: points, stars, likes or views. Repos are checked against the GitHub API before they appear. New to Vishwajeet Team? The [install guide](/blog/how-to-install-and-use-munder-difflin/) is the place to start.

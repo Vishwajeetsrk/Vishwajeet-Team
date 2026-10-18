@@ -152,5 +152,5 @@ agents into a system you can trust to run unattended. Build them in once, at the
 [orchestration layer](/#how), and every agent inherits them for free.
 
 Want to see these patterns in a hive you can actually watch recover? You can
-[download Munder Difflin](/#install) free — it's open source, and the whole coordination layer is right
+[download Vishwajeet Team](/#install) free — it's open source, and the whole coordination layer is right
 there to read.

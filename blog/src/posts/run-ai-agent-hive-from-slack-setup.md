@@ -1,6 +1,6 @@
 ---
 title: "Run Your AI Agent Hive from Slack: The Complete Setup"
-description: "Step-by-step setup for driving Munder Difflin's AI agent hive from Slack: create the app, set scopes, paste the tunnel Request URL, and @mention your bot to start work — done-summaries post back in-thread."
+description: "Step-by-step setup for driving Vishwajeet Team's AI agent hive from Slack: create the app, set scopes, paste the tunnel Request URL, and @mention your bot to start work — done-summaries post back in-thread."
 date: 2026-06-10
 category: guides
 categoryLabel: Guides
@@ -12,18 +12,18 @@ author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "How do I connect Slack to Munder Difflin?"
-    a: "Create a Slack app at api.slack.com/apps, grant the bot the chat:write, channels:history, and groups:history scopes, install it, then paste the Signing Secret and Bot User OAuth Token into Munder Difflin's Settings. Enable Slack, copy the public tunnel Request URL the app gives you into Slack's Event Subscriptions, and subscribe to app_mention plus message events. @mention the bot in a channel to start work."
+  - q: "How do I connect Slack to Vishwajeet Team?"
+    a: "Create a Slack app at api.slack.com/apps, grant the bot the chat:write, channels:history, and groups:history scopes, install it, then paste the Signing Secret and Bot User OAuth Token into Vishwajeet Team's Settings. Enable Slack, copy the public tunnel Request URL the app gives you into Slack's Event Subscriptions, and subscribe to app_mention plus message events. @mention the bot in a channel to start work."
   - q: "Which Slack scopes does the hive need?"
     a: "Three Bot Token Scopes: chat:write (so the bot can post done-summaries back in-thread), channels:history and groups:history (so Slack delivers the message and thread-reply events the hive listens to). The Signing Secret authenticates every inbound request; the xoxb- Bot User OAuth Token authorizes the bot's replies."
   - q: "Why did Slack stop triggering my agents?"
-    a: "The public Request URL comes from a local tunnel that is ephemeral — it rotates every time you stop and start the app. If triggers go quiet, restart Munder Difflin, copy the new tunnel URL, and re-paste it into Slack's Event Subscriptions → Request URL. Slack re-verifies and triggers resume."
+    a: "The public Request URL comes from a local tunnel that is ephemeral — it rotates every time you stop and start the app. If triggers go quiet, restart Vishwajeet Team, copy the new tunnel URL, and re-paste it into Slack's Event Subscriptions → Request URL. Slack re-verifies and triggers resume."
 ---
 
-<div class="callout note"><span class="ic">0.5.2 update</span><p>On Munder Difflin 0.5.2 or later, Slack connects without a public URL, and the fields have moved. Follow <a href="/blog/connect-slack-to-munder-difflin/">How to Connect Slack to Munder Difflin 0.5.2</a> for the current setup.</p></div>
+<div class="callout note"><span class="ic">0.5.2 update</span><p>On Vishwajeet Team 0.5.2 or later, Slack connects without a public URL, and the fields have moved. Follow <a href="/blog/connect-slack-to-munder-difflin/">How to Connect Slack to Vishwajeet Team 0.5.2</a> for the current setup.</p></div>
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>This is the full, working setup for driving your
-<strong>Munder Difflin</strong> hive from Slack. Create a Slack app, add three bot scopes
+<strong>Vishwajeet Team</strong> hive from Slack. Create a Slack app, add three bot scopes
 (<code>chat:write</code>, <code>channels:history</code>, <code>groups:history</code>), paste the
 <strong>Signing Secret</strong> and <strong>Bot User OAuth Token</strong> into Settings, then drop the
 app's public <strong>tunnel Request URL</strong> into Slack's Event Subscriptions and subscribe to
@@ -31,14 +31,14 @@ app's public <strong>tunnel Request URL</strong> into Slack's Event Subscription
 work; the office replies in-thread, ingests file attachments, and posts a done-summary when the task
 finishes. One quirk to remember: that tunnel URL rotates on restart.</p></div>
 
-Munder Difflin runs a virtual office of AI agents on your own machine. Most days you drive that office
+Vishwajeet Team runs a virtual office of AI agents on your own machine. Most days you drive that office
 from the desktop app. But the request often starts somewhere else — a teammate asks in a channel, or
 you're away from your desk and want to kick off a run from your phone. The Slack integration closes that
 gap: **@mention your bot in Slack, and the message becomes work for your hive.** When the task finishes,
 a summary posts straight back into the same thread.
 
 This is a complete how-to for the setup that's live right now. It has two halves: the Slack app side
-(api.slack.com), and the Munder Difflin side (Settings). Do them in order and you'll be triggering
+(api.slack.com), and the Vishwajeet Team side (Settings). Do them in order and you'll be triggering
 agents from chat in about ten minutes.
 
 ## What you're building
@@ -72,7 +72,7 @@ You'll collect two secrets and set three scopes. Here's exactly where each lives
 ### Signing Secret
 
 In your app's left nav, open **Basic Information** and find **App Credentials**. Copy the **Signing
-Secret**. This is what Munder Difflin uses to verify that every inbound request is genuinely from Slack —
+Secret**. This is what Vishwajeet Team uses to verify that every inbound request is genuinely from Slack —
 it never leaves your machine and is never logged.
 
 ### Bot Token Scopes
@@ -92,14 +92,14 @@ Still on **OAuth & Permissions**, click **Install to Workspace** and approve. Sl
 User OAuth Token** that starts with **`xoxb-`** — copy it. That token authorizes the bot's replies; like
 the signing secret, it stays in the app's main process and is never logged.
 
-> Keep both values handy. You'll paste them into Munder Difflin next, then come back to finish Event
+> Keep both values handy. You'll paste them into Vishwajeet Team next, then come back to finish Event
 > Subscriptions.
 
 {% img "note-1" %}
 
-## Part 2 — Configure Munder Difflin
+## Part 2 — Configure Vishwajeet Team
 
-Open Munder Difflin and go to **Settings**. In the Slack section:
+Open Vishwajeet Team and go to **Settings**. In the Slack section:
 
 1. **Enable Slack.**
 2. Paste the **Signing Secret**.
@@ -120,7 +120,7 @@ Slack to reach it.
 
 Back in your Slack app, open **Event Subscriptions** and toggle **Enable Events** on.
 
-Paste the **Request URL** from Munder Difflin into the **Request URL** field. Slack immediately fires a
+Paste the **Request URL** from Vishwajeet Team into the **Request URL** field. Slack immediately fires a
 one-time `url_verification` handshake at it; the app answers the challenge and Slack shows a green
 **Verified**. (If it doesn't verify, jump to the troubleshooting note below — it's almost always the
 tunnel.)
@@ -164,7 +164,7 @@ restarted and the old URL went stale.
 
 The fix is quick:
 
-1. **Stop and Start** Munder Difflin's Slack integration (or just relaunch the app).
+1. **Stop and Start** Vishwajeet Team's Slack integration (or just relaunch the app).
 2. Copy the **new Request URL** it shows you.
 3. Paste it back into Slack's **Event Subscriptions → Request URL** and let it re-verify.
 
@@ -179,7 +179,7 @@ point. Every request is HMAC-verified against your signing secret in constant ti
 replay guard and a size cap checked first — anything suspicious gets a flat 403. The secrets stay on
 your box. Slack is only a thin remote surface for *starting and watching* work; the office itself —
 agents, memory, git history — never leaves your machine. It's the same
-[local-first philosophy](/blog/local-first-ai-agent-orchestration/) behind everything Munder Difflin
+[local-first philosophy](/blog/local-first-ai-agent-orchestration/) behind everything Vishwajeet Team
 does: keep the control plane on your computer, and let the outside world knock politely at the door.
 
 Pair it with [scheduled missions](/blog/scheduling-autonomous-agent-missions/) and the picture rounds
@@ -188,7 +188,7 @@ runs both — whether or not you're watching.
 
 ## FAQ
 
-**How do I connect Slack to Munder Difflin?** Create a Slack app, add the `chat:write`,
+**How do I connect Slack to Vishwajeet Team?** Create a Slack app, add the `chat:write`,
 `channels:history`, and `groups:history` bot scopes, install it, then paste the Signing Secret and
 `xoxb-` Bot User OAuth Token into Settings. Copy the app's Request URL into Slack's Event Subscriptions,
 subscribe to `app_mention` + message events, and @mention the bot to start work.
@@ -202,7 +202,7 @@ Relaunch the app, copy the new URL, and re-paste it into Event Subscriptions.
 
 ---
 
-Munder Difflin turns a Slack thread into a remote control for an AI office that still lives entirely on
+Vishwajeet Team turns a Slack thread into a remote control for an AI office that still lives entirely on
 your machine — [orchestrated by GOD](https://munderdiffl.in/#how), verified at the edge, and queued like
-any other task. [Download Munder Difflin](https://munderdiffl.in/#install) to run your hive from chat;
+any other task. [Download Vishwajeet Team](https://munderdiffl.in/#install) to run your hive from chat;
 it's free and open source.

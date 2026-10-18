@@ -31,7 +31,7 @@ backlog and routes the next task to whoever's free. They message each other when
 share a memory of the project so nobody re-learns what's already known. You can watch it happen, or
 close the laptop and check the morning's progress over coffee.
 
-That's not a metaphor for Munder Difflin — it's literally [the office floor](/#how). But the picture
+That's not a metaphor for Vishwajeet Team — it's literally [the office floor](/#how). But the picture
 only works because of what's underneath it.
 
 {% img "note-1" %}
@@ -87,6 +87,6 @@ sane to leave running: it's your machine, your files, your rules.
 
 ---
 
-Munder Difflin is exactly this office — roles, shared memory, messaging, a GOD orchestrator, and a
-floor you can watch, all local. [Download Munder Difflin](/#install) and staff your own; it's free and
+Vishwajeet Team is exactly this office — roles, shared memory, messaging, a GOD orchestrator, and a
+floor you can watch, all local. [Download Vishwajeet Team](/#install) and staff your own; it's free and
 open source.

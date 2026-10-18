@@ -62,7 +62,7 @@ notes and let the agent **recall by meaning**, not by filename:
 3. Inject only those into context.
 
 This is what [semantic memory for AI agents](https://munderdiffl.in/#how) buys you: recall stays
-near-instant and the context window stays small, even as the knowledge base grows. In Munder Difflin
+near-instant and the context window stays small, even as the knowledge base grows. In Vishwajeet Team
 this layer is **MemPalace** — a shared, searchable store the whole hive reads, mined automatically
 from each agent's markdown notes.
 
@@ -89,6 +89,6 @@ write get shorter every week — the team stops needing context re-explained.
 
 ---
 
-Munder Difflin ships this memory model out of the box — markdown notes plus a shared semantic
-MemPalace, for a whole hive of agents. [Download Munder Difflin](https://munderdiffl.in/#install)
+Vishwajeet Team ships this memory model out of the box — markdown notes plus a shared semantic
+MemPalace, for a whole hive of agents. [Download Vishwajeet Team](https://munderdiffl.in/#install)
 to try it; it's free and open source.

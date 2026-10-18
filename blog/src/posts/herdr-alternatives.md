@@ -1,6 +1,6 @@
 ---
 title: "Herdr Alternatives: What to Pick and Who Each One Fits"
-description: "Herdr alternatives checked on 14 Sep 2026: tmux, Munder Difflin, Claude Squad, cmux, Orca, Conductor, Superset and Emdash, and who each fits."
+description: "Herdr alternatives checked on 14 Sep 2026: tmux, Vishwajeet Team, Claude Squad, cmux, Orca, Conductor, Superset and Emdash, and who each fits."
 date: 2026-09-14
 category: comparisons
 categoryLabel: Comparisons
@@ -23,7 +23,7 @@ faq:
     a: "Not out of the box. Herdr's English docs, checked on 14 Sep 2026, have no page about shared memory, a task board or scheduling, and coordination happens through its CLI and socket API instead. If you want those parts built in, an orchestrated desktop app is the closer fit."
 ---
 
-The main herdr alternatives are plain tmux or Zellij, Munder Difflin, Claude Squad, cmux, Orca, Conductor, Superset and Emdash. Stay on herdr if you live in a terminal or work over SSH. Switch when you want a desktop window, agents that share memory, or something that hands out the work so you don't have to.
+The main herdr alternatives are plain tmux or Zellij, Vishwajeet Team, Claude Squad, cmux, Orca, Conductor, Superset and Emdash. Stay on herdr if you live in a terminal or work over SSH. Switch when you want a desktop window, agents that share memory, or something that hands out the work so you don't have to.
 
 Herdr is good at its job, so this post sorts the options by why you are leaving. For the wider field, see our roundup of [multi-agent tools built around Claude Code](/blog/best-claude-code-multi-agent-tools/).
 
@@ -67,9 +67,9 @@ What herdr adds is knowing which agent needs you right now. Herdr's [concepts do
 Seven are active, each checked on its own repo or site on 14 Sep 2026. Pick by your reason for leaving.
 
 * **Claude Squad, for something smaller on top of the tmux you already have.** [Claude Squad](https://github.com/smtg-ai/claude-squad) is a terminal UI for Claude Code, Codex, OpenCode and Amp that gives each agent its own tmux session and git worktree. It needs tmux and the GitHub CLI, is AGPL 3.0 licensed, and shipped v1.0.20 on 20 Aug 2026.
-* **[Munder Difflin](https://harnessmd.com/download), for agents that work as a team.** This one is ours: a free and open source desktop app for macOS, Windows and Linux where each agent is a real CLI in a real terminal, from any of twelve CLIs. Michael, your clone, hands out the work, the agents share a long-term memory, and anything waiting on you lands on the ASK ME board. The trade: quitting the app stops every agent terminal, so there is no detach and walk away.
+* **[Vishwajeet Team](https://harnessmd.com/download), for agents that work as a team.** This one is ours: a free and open source desktop app for macOS, Windows and Linux where each agent is a real CLI in a real terminal, from any of twelve CLIs. Michael, your clone, hands out the work, the agents share a long-term memory, and anything waiting on you lands on the ASK ME board. The trade: quitting the app stops every agent terminal, so there is no detach and walk away.
 * **cmux, for a native Mac window.** cmux is a Ghostty based macOS terminal with vertical tabs and notification rings for coding agents. It is Mac only, so no help on a headless Linux box.
-* **Orca, for a full GUI on any desktop.** Orca is an MIT licensed app for macOS, Windows and Linux that runs each agent in its own worktree, with a built-in browser and SSH remote worktrees. It shipped v1.4.201 on 13 Sep 2026, and our [Orca vs Munder Difflin](/blog/orca-vs-munder-difflin/) post goes further.
+* **Orca, for a full GUI on any desktop.** Orca is an MIT licensed app for macOS, Windows and Linux that runs each agent in its own worktree, with a built-in browser and SSH remote worktrees. It shipped v1.4.201 on 13 Sep 2026, and our [Orca vs Vishwajeet Team](/blog/orca-vs-munder-difflin/) post goes further.
 * **Conductor, if agents in the cloud suit you.** Conductor is a Mac app that runs Claude Code, Codex, Cursor and OpenCode agents, and its homepage now leads with Conductor Cloud, where each agent gets an isolated microVM. It was on 0.85.0 as of 9 Sep 2026.
 * **Superset, for an IDE built around parallel agents.** Superset brings Claude Code, Codex, OpenCode or any other coding agent into one workspace, isolates each task's changes and lets you review them in one place. Its license is source available (ELv2), not open source.
 * **Emdash, for the same idea under Apache 2.0.** Emdash is an open source agentic development environment from a YC W26 company that runs several coding agents in parallel with any provider.

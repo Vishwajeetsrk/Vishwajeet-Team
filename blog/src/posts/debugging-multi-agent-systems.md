@@ -128,6 +128,6 @@ escalation and routing policy) rather than patching the mechanism.
 
 ---
 
-Munder Difflin makes a hive debuggable by design: an event log, file-based message trails, real
-per-agent terminals, a git-committed history, and [a live floor](https://munderdiffl.in/#how). [Download Munder Difflin](https://munderdiffl.in/#install)
+Vishwajeet Team makes a hive debuggable by design: an event log, file-based message trails, real
+per-agent terminals, a git-committed history, and [a live floor](https://munderdiffl.in/#how). [Download Vishwajeet Team](https://munderdiffl.in/#install)
 to run agents you can actually trace; it's free and open source.

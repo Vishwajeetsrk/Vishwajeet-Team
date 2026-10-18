@@ -1,6 +1,6 @@
 ---
-title: "How to Install and Use Munder Difflin: A Beginner's Guide"
-description: "A plain language guide to Munder Difflin 0.5.2. What a coding agent is, which AI engine to pick based on what you already pay for, the one terminal command you'll ever run, and how to install and set it up on macOS, Windows or Linux."
+title: "How to Install and Use Vishwajeet Team: A Beginner's Guide"
+description: "A plain language guide to Vishwajeet Team 0.5.2. What a coding agent is, which AI engine to pick based on what you already pay for, the one terminal command you'll ever run, and how to install and set it up on macOS, Windows or Linux."
 date: 2026-06-05
 updated: 2026-09-10
 category: guides
@@ -8,20 +8,20 @@ categoryLabel: Guides
 type: Non-technical
 pinned: true
 pinOrder: 1
-primaryKeyword: "how to install munder difflin"
-secondaryKeywords: ["munder difflin download", "munder difflin setup", "what is a coding agent", "munder difflin windows", "free ai coding agent", "antigravity free", "munder difflin beginner guide"]
+primaryKeyword: "how to install Vishwajeet Team"
+secondaryKeywords: ["Vishwajeet Team download", "Vishwajeet Team setup", "what is a coding agent", "Vishwajeet Team windows", "free ai coding agent", "antigravity free", "Vishwajeet Team beginner guide"]
 tags: ["Guides", "Getting Started", "Tutorial", "Non-Technical", "Automation"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Do I need to know how to code to use Munder Difflin?"
+  - q: "Do I need to know how to code to use Vishwajeet Team?"
     a: "No. The onboarding asks whether you are technical or not on its very first screen, and the non-technical path replaces every piece of jargon with plain language. You will open a terminal exactly once, to install and log into your AI engine, and you can copy and paste those commands."
-  - q: "Does Munder Difflin cost anything?"
+  - q: "Does Vishwajeet Team cost anything?"
     a: "The classic app is free and open source, with unlimited local agents. Pro and Teams are optional paid plans. What you may pay for is the AI engine behind it. Antigravity is available at no charge and OpenCode has a free path, so you can run the whole thing without paying anything. If you already pay for ChatGPT or Claude, you can use those subscriptions instead."
   - q: "Can these agents really change files on my computer?"
     a: "Yes, and that is the point, so it is worth understanding before you start. An agent can read files, write files and run commands in the folders you give it. You choose how much freedom it has during setup, and you can set it to ask permission before every change."
-  - q: "Which operating systems does Munder Difflin run on?"
+  - q: "Which operating systems does Vishwajeet Team run on?"
     a: "macOS, Windows and Linux. macOS ships as one universal .dmg for Apple Silicon and Intel, Windows 10 and 11 as a setup installer or a portable build, and Linux as an AppImage."
   - q: "Is my code or data sent anywhere?"
     a: "The app runs on your machine and stores its files there. Your prompts and the files an agent reads do go to whichever AI engine you picked, the same as if you used that tool directly. Anonymous usage telemetry is opt-out and every event is listed publicly in TELEMETRY.md."
@@ -31,7 +31,7 @@ startOrder: 1
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>Pick an AI engine based on what you
 already pay for (or pick a free one). Install it with one command in the terminal, which is the
-only time you will open a terminal. Download Munder Difflin, answer six onboarding screens, and
+only time you will open a terminal. Download Vishwajeet Team, answer six onboarding screens, and
 you have an office of AI workers you can watch on a screen.</p></div>
 
 If you have never used an AI coding tool, most guides start three steps ahead of you. This one does
@@ -39,9 +39,9 @@ not. It starts with what these things actually are, then walks the whole way to 
 
 You will need about twenty minutes.
 
-## First, what is Munder Difflin?
+## First, what is Vishwajeet Team?
 
-Munder Difflin is a desktop app that runs a small office of AI workers on your computer.
+Vishwajeet Team is a desktop app that runs a small office of AI workers on your computer.
 
 You see an actual office floor on screen, with characters at desks. Each character is an AI agent
 working on something you asked for. One of them is your clone, the boss of the floor, who takes what
@@ -68,7 +68,7 @@ stuck.
 It does this through a program on your computer called a **CLI agent**. CLI stands for command line
 interface, which is the text-only way of controlling a computer that predates windows and buttons.
 Claude Code, Codex, Antigravity and the others in this guide are all CLI agents. They are the engine.
-Munder Difflin is the office that runs a team of them and keeps track of everything around them:
+Vishwajeet Team is the office that runs a team of them and keeps track of everything around them:
 memory, tasks, schedules, files, and when to come ask you something.
 
 **So how does it reach your computer?** When you install one of these engines, it runs as a program
@@ -76,7 +76,7 @@ with your permissions. Anything you can do from your own account, it can technic
 files, edit them, delete them, run software, reach the internet. It is not sandboxed away from your
 machine by default. That is exactly why it is useful, and exactly why you should be deliberate.
 
-Three things keep this sane, and Munder Difflin sets all three up during onboarding:
+Three things keep this sane, and Vishwajeet Team sets all three up during onboarding:
 
 1. **You choose which folders it can work in.** Agents work inside the projects you add. A project
    is just a folder. Do not point your first one at your entire home directory.
@@ -91,7 +91,7 @@ anything you care about.</p></div>
 
 ## Step 1: Which AI engine will you use?
 
-Munder Difflin does not include an AI. It drives one you install. Twelve engines are supported, but
+Vishwajeet Team does not include an AI. It drives one you install. Twelve engines are supported, but
 you only need one, and the right one is usually decided by what you already pay for.
 
 Find yourself below.
@@ -100,7 +100,7 @@ Find yourself below.
 
 **Use Antigravity.** It is Google's agentic development platform and it is
 [available at no charge](https://antigravity.google/). It ships with a command line tool called
-`agy`, which is what Munder Difflin drives. This is the best starting point for most people reading
+`agy`, which is what Vishwajeet Team drives. This is the best starting point for most people reading
 this guide.
 
 **OpenCode** is the other free path. It is open source, and it lets you bring your own model,
@@ -111,7 +111,7 @@ offer that gives eligible users <a href="https://www.jio.com/google-gemini-offer
 free for 18 months</a>. The terms on Jio's page: you must be over 18 and on an active unlimited 5G
 plan of ₹349 or above, prepaid or postpaid, kept active for the whole period, claimable once per
 number. Google AI Pro raises the daily request limits on <strong>Gemini CLI</strong>, which is a
-separate supported engine in Munder Difflin. Note that Jio's page does not mention Antigravity, so
+separate supported engine in Vishwajeet Team. Note that Jio's page does not mention Antigravity, so
 treat this as a boost to the Gemini CLI path rather than to Antigravity. Antigravity is free for
 everyone anyway. Check Jio's page for current terms, offers change.</p></div>
 
@@ -273,10 +273,10 @@ one, and try again.
 
 <div class="callout warn"><span class="ic">The one thing people skip</span><p><strong>You must
 actually sign in.</strong> Installing the tool is not the same as logging into it. Run the command
-once on its own and complete the sign-in before moving on, or Munder Difflin will find the engine
+once on its own and complete the sign-in before moving on, or Vishwajeet Team will find the engine
 and every agent will still fail the moment it starts.</p></div>
 
-## Step 3: Install Munder Difflin
+## Step 3: Install Vishwajeet Team
 
 Go to [munderdiffl.in](https://munderdiffl.in) and download the build for your system, or take it
 straight from the
@@ -285,7 +285,7 @@ straight from the
 {% img "shot-download", "The download page. Pick the file that matches your computer." %}
 
 **macOS.** Download the universal `.dmg`, which runs on Apple Silicon and Intel. Open it and drag
-Munder Difflin into Applications. The app is signed and notarized by Apple, so the first launch only
+Vishwajeet Team into Applications. The app is signed and notarized by Apple, so the first launch only
 shows the usual question about opening an app downloaded from the internet. Click Open.
 
 **Windows.** Download the setup `.exe` and run it. If Windows SmartScreen shows a warning, click
@@ -423,7 +423,7 @@ Good first schedule: every morning, ask an agent to check something and write yo
 
 **Webhooks** let an outside system post work in.
 
-**Organisation** lets a teammate's Munder Difflin send work to yours.
+**Organisation** lets a teammate's Vishwajeet Team send work to yours.
 
 ## Step 8: Context and auto-compaction, briefly
 
@@ -487,7 +487,7 @@ means queued work is being held for every agent, and nothing is lost when you sw
 1. Pick an engine. Antigravity if you want free, Codex if you pay for ChatGPT, Claude Code if you
    pay for Claude.
 2. Install it and sign in. One terminal command. The only one.
-3. Download Munder Difflin and install it.
+3. Download Vishwajeet Team and install it.
 4. Six onboarding screens. Pick the non-technical path, use a new empty folder, start with agents
    asking permission.
 5. Give your clone a real job and watch what happens.

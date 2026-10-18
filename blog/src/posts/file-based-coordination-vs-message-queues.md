@@ -122,7 +122,7 @@ transport without rewriting the agents.
 
 ---
 
-Munder Difflin coordinates a whole [hive of Claude Code agents](https://munderdiffl.in/#how) through plain
+Vishwajeet Team coordinates a whole [hive of Claude Code agents](https://munderdiffl.in/#how) through plain
 files — inboxes, a shared board, an append-only log, and a single committer — so the whole system is
 durable, git-versioned, and debuggable by just looking.
-[Download Munder Difflin](https://munderdiffl.in/#install) to run it locally; it's free and open source.
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to run it locally; it's free and open source.

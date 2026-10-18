@@ -15,18 +15,18 @@ faq:
   - q: "Can I run multiple Claude Code sessions with just tmux and git worktrees?"
     a: "Yes, and it works well at small scale. Give each session its own tmux pane or window and its own git worktree so branches never collide, then detach and reattach as you like. This is a widely used pattern — Claude Code's own creators endorse worktrees for parallel sessions. The pain starts when you go past two or three agents: no routing between sessions, no shared memory, no budgets, and you become the coordination layer."
   - q: "What does an agent harness add over tmux plus shell scripts?"
-    a: "The parts you'd otherwise build by hand: a router that moves messages between agents, an orchestrator that assigns and adjudicates work, shared long-term memory across sessions, per-agent token budgets with a circuit breaker, approval gates for destructive operations, triggers from Slack, webhooks, and schedules, and a live view of every agent instead of scrollback archaeology. Munder Difflin does all of this while still running the same CLI processes you'd run in tmux."
+    a: "The parts you'd otherwise build by hand: a router that moves messages between agents, an orchestrator that assigns and adjudicates work, shared long-term memory across sessions, per-agent token budgets with a circuit breaker, approval gates for destructive operations, triggers from Slack, webhooks, and schedules, and a live view of every agent instead of scrollback archaeology. Vishwajeet Team does all of this while still running the same CLI processes you'd run in tmux."
   - q: "Does using a harness mean giving up the terminal?"
-    a: "No. In Munder Difflin every agent is still a real CLI process — claude, codex, copilot, and others — running in a genuine pseudo-terminal via node-pty. You can open any agent's live terminal and type into it directly, exactly like a tmux pane. The harness sits around the terminals, not instead of them."
+    a: "No. In Vishwajeet Team every agent is still a real CLI process — claude, codex, copilot, and others — running in a genuine pseudo-terminal via node-pty. You can open any agent's live terminal and type into it directly, exactly like a tmux pane. The harness sits around the terminals, not instead of them."
   - q: "Is the DIY tmux approach ever the right choice?"
     a: "Often, yes. If you run one or two parallel sessions, review everything yourself, and don't need triggers or unattended operation, tmux plus worktrees is simple, transparent, and has zero new dependencies. The harness earns its keep when agents need to hand work to each other, run while you're away, remember across sessions, or stay inside a budget."
   - q: "Do tmux-based agents share memory between sessions?"
-    a: "No. Each CLI session starts with a fresh context, and anything one agent learned dies with its scrollback unless you manually paste it into another session or a file. A harness like Munder Difflin gives every agent markdown-first long-term memory plus a shared semantic index, so what one agent learns is recallable by all of them across restarts."
-  - q: "Is Munder Difflin free if I already pay for Claude Code?"
+    a: "No. Each CLI session starts with a fresh context, and anything one agent learned dies with its scrollback unless you manually paste it into another session or a file. A harness like Vishwajeet Team gives every agent markdown-first long-term memory plus a shared semantic index, so what one agent learns is recallable by all of them across restarts."
+  - q: "Is Vishwajeet Team free if I already pay for Claude Code?"
     a: "Yes. It's MIT-licensed and free, and it drives the CLI subscriptions you already have — Claude Code, Codex, Antigravity, OpenCode, Crush, pi.dev, and GitHub Copilot CLI — so there's no extra platform fee on top of your existing model spend."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>tmux + git worktrees + shell scripts is a real, respectable way to run several Claude Code sessions in parallel</strong> — it's the setup half the community uses, and at two or three agents it's genuinely fine. What breaks at scale is everything <em>between</em> the panes: <strong>no routing, no shared memory, no budgets, no crash recovery, coordination via copy-paste, and scrollback archaeology to find out what happened overnight</strong>. An agent harness automates exactly that layer while still running the same CLI processes. <strong>Munder Difflin is, roughly, the tmux setup you would have built yourself after six months</strong> — free, open source, and local-first.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>tmux + git worktrees + shell scripts is a real, respectable way to run several Claude Code sessions in parallel</strong> — it's the setup half the community uses, and at two or three agents it's genuinely fine. What breaks at scale is everything <em>between</em> the panes: <strong>no routing, no shared memory, no budgets, no crash recovery, coordination via copy-paste, and scrollback archaeology to find out what happened overnight</strong>. An agent harness automates exactly that layer while still running the same CLI processes. <strong>Vishwajeet Team is, roughly, the tmux setup you would have built yourself after six months</strong> — free, open source, and local-first.</p></div>
 
 Let's start by giving the DIY path its due, because it deserves it.
 
@@ -54,7 +54,7 @@ None of these are tmux's fault. tmux is a terminal multiplexer, and it's excelle
 
 ## What a harness automates
 
-This is the layer [Munder Difflin](/) is. Our landing page has a [full comparison table](/#compare), but it maps almost one-to-one onto the breakage list:
+This is the layer [Vishwajeet Team](/) is. Our landing page has a [full comparison table](/#compare), but it maps almost one-to-one onto the breakage list:
 
 - **Routing and orchestration.** Agents get mailboxes; a router moves messages between them; a [GOD orchestrator](/blog/how-the-god-orchestrator-works/) assigns work, adjudicates, and escalates only what genuinely needs a human. Coordination by copy-paste becomes envelopes flying between desks — literally, on the office floor.
 - **Worktrees, provisioned for you.** The same git-worktree isolation you'd script by hand is a toggle: each agent gets a dedicated worktree on spawn, torn down on kill. (Deeper dive: [worktrees vs the hive](/blog/claude-code-git-worktrees-vs-hive/).)
@@ -69,6 +69,6 @@ Crucially, the terminals are still terminals. Every agent is the real CLI — Cl
 
 ## The honest framing
 
-The DIY path isn't wrong; it's version one. Every feature above started life as somebody's shell script, and if you kept iterating on your tmux setup — add a router script, a memory file, a budget checker, a Slack bridge, a recovery script — you'd converge on a harness. Munder Difflin is that convergence, already built, MIT-licensed, and local-first, so the six months of scripting goes into your actual work instead.
+The DIY path isn't wrong; it's version one. Every feature above started life as somebody's shell script, and if you kept iterating on your tmux setup — add a router script, a memory file, a budget checker, a Slack bridge, a recovery script — you'd converge on a harness. Vishwajeet Team is that convergence, already built, MIT-licensed, and local-first, so the six months of scripting goes into your actual work instead.
 
 If you're at two panes, enjoy them. If you're at five and tired of being the message bus, [download the latest release](https://github.com/chaitanyagiri/munder-difflin/releases/latest) — and if it saves you a script or two, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) is appreciated.

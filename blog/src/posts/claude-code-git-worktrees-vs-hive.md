@@ -17,7 +17,7 @@ faq:
   - q: "Are git worktrees enough to run parallel Claude Code agents?"
     a: "For independent tasks on separate branches, often yes — worktrees give each agent its own files so they don't collide. What worktrees don't provide is coordination: shared memory, messaging between agents, or an orchestrator that divides one goal across the team."
   - q: "Can I use worktrees and a hive together?"
-    a: "Yes. Worktrees solve workspace isolation; a hive solves coordination. You can run a coordinated hive where each agent works in its own worktree, getting both isolation and shared memory plus messaging. In Munder Difflin v0.1.6 this is built-in — the Git isolation toggle in Add Agent handles it automatically."
+    a: "Yes. Worktrees solve workspace isolation; a hive solves coordination. You can run a coordinated hive where each agent works in its own worktree, getting both isolation and shared memory plus messaging. In Vishwajeet Team v0.1.6 this is built-in — the Git isolation toggle in Add Agent handles it automatically."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Git worktrees</strong> give each
@@ -100,7 +100,7 @@ colliding. Which is exactly where worktrees come back in.
 ## They compose
 
 Here's the punchline the "vs." framing hides: **use both.** Worktrees handle isolation; the hive
-handles coordination. Munder Difflin now ships this combination built-in: the **Git isolation** toggle
+handles coordination. Vishwajeet Team now ships this combination built-in: the **Git isolation** toggle
 in Add Agent provisions a dedicated worktree for each agent on spawn and tears it down on kill — so
 every agent in a shared repo works on its own branch by default, with no manual `git worktree add`
 needed.
@@ -138,7 +138,7 @@ If you've ever wondered whether built-in mechanisms are enough versus an externa
 the same question shows up for [subagents vs a harness](/blog/claude-code-subagents-vs-multi-agent-harness/) —
 and the answer rhymes: native primitives handle the small scale; a coordination layer handles the team
 scale. For a concrete tool-vs-tool take on that coordination layer, see
-[Claude Squad vs Munder Difflin](/blog/claude-squad-vs-munder-difflin/).
+[Claude Squad vs Vishwajeet Team](/blog/claude-squad-vs-munder-difflin/).
 
 ## FAQ
 
@@ -153,7 +153,7 @@ not just isolation — is the thing you're missing.
 
 ---
 
-Munder Difflin is [the coordination layer](https://munderdiffl.in/#how): shared memory, messaging, and a GOD orchestrator for a hive
+Vishwajeet Team is [the coordination layer](https://munderdiffl.in/#how): shared memory, messaging, and a GOD orchestrator for a hive
 of Claude Code agents — and it plays nicely with the git workflow you already use.
-[Download Munder Difflin](https://munderdiffl.in/#install) when isolation isn't enough and you need a
+[Download Vishwajeet Team](https://munderdiffl.in/#install) when isolation isn't enough and you need a
 team; it's free and open source.

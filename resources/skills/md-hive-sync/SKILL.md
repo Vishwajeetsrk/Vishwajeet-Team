@@ -2,7 +2,7 @@
 name: md-hive-sync
 version: 1.0.0
 description: |
-  Munder Difflin hive sync — runs the start-of-task hive protocol steps:
+  Vishwajeet Team hive sync — runs the start-of-task hive protocol steps:
   reads memory.md, checks inbox/ for new messages, and reminds you to record
   durable facts in memory.md and write coordination files before ending.
   Use when asked to "sync with the hive", "check my inbox", "hive status",

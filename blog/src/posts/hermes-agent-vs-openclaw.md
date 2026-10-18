@@ -107,7 +107,7 @@ OpenClaw's README says "Tools run on the host for the main session unless you co
 
 Both are free software, and you pay for the model you connect. The Hermes README offers Nous Portal as an optional subscription that covers the model and hosted tools.
 
-Our view: both are general assistants, not tools for coding work. For that there is [Munder Difflin](https://harnessmd.com/download), free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits coding work, not chat app errands. See [how to install and use Munder Difflin](/blog/how-to-install-and-use-munder-difflin/).
+Our view: both are general assistants, not tools for coding work. For that there is [Vishwajeet Team](https://harnessmd.com/download), free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits coding work, not chat app errands. See [how to install and use Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/).
 
 ## Who should pick which?
 

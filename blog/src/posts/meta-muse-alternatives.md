@@ -17,15 +17,15 @@ faq:
   - q: "Why can't I use Meta Muse?"
     a: "At launch on 8 September 2026 Muse was open only to people in the US aged 18 and over. Meta says more countries will be added over time but has not given dates."
   - q: "Is there an open source alternative to Meta Muse?"
-    a: "Yes. OpenClaw is the closest: an open source personal assistant that runs on your own computer and replies in WhatsApp, Telegram, Slack, iMessage and more. For work agents rather than errands, Munder Difflin is free and open source and runs a team of agents on your machine."
+    a: "Yes. OpenClaw is the closest: an open source personal assistant that runs on your own computer and replies in WhatsApp, Telegram, Slack, iMessage and more. For work agents rather than errands, Vishwajeet Team is free and open source and runs a team of agents on your machine."
   - q: "Does Meta Muse train on my data?"
     a: "By default, yes. Meta's help page says Muse conversations can be used to train its models unless you turn that off in Settings, and that Meta removes details like names, emails and phone numbers first. Meta says Muse does not share your chats or VM data with its ad systems."
   - q: "What is the best free alternative to Meta Muse?"
-    a: "For personal errands, OpenClaw and Hermes Agent are free and open source; you pay only for the AI model, or nothing with a local one. For work agents, Munder Difflin is free and uses the AI engines you already have."
+    a: "For personal errands, OpenClaw and Hermes Agent are free and open source; you pay only for the AI model, or nothing with a local one. For work agents, Vishwajeet Team is free and uses the AI engines you already have."
 thumb: "/blog/assets/media/meta-muse-alternatives/lead-still.png"
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>For a personal assistant you own, try OpenClaw. For a team of work agents on your own computer, try Munder Difflin. For a hosted assistant from a big lab, try ChatGPT Work, Gemini Spark, Grok Bot or Claude Cowork. For memory that grows with you, try Hermes Agent.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>For a personal assistant you own, try OpenClaw. For a team of work agents on your own computer, try Vishwajeet Team. For a hosted assistant from a big lab, try ChatGPT Work, Gemini Spark, Grok Bot or Claude Cowork. For memory that grows with you, try Hermes Agent.</p></div>
 
 Meta Muse is one of the most talked about launches of the year. Within two weeks of its 8 September release, [CNBC reported](https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html) the Muse app ranking ahead of ChatGPT on Apple's App Store.
 
@@ -37,7 +37,7 @@ Plenty of people still can't use it, or don't want to. There are three common re
 
 Here are seven alternatives, and which reason each one solves.
 
-<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/meta-muse-alternatives/lead-still.png" aria-label="A looping animation. A Meta Muse card reads available in US only, 18 and over. Seven alternative cards deal in, tagged by where they run, and the Munder Difflin card flips into real footage of the app."><source src="/blog/assets/media/meta-muse-alternatives/lead.mp4" type="video/mp4"><img src="/blog/assets/media/meta-muse-alternatives/lead.gif" width="1360" height="764" alt="A looping animation. A Meta Muse card reads available in US only, 18 and over. Seven alternative cards deal in, tagged by where they run, and the Munder Difflin card flips into real footage of the app."></video><figcaption>Muse is US only for now. Three of the seven alternatives run on your own computer.</figcaption></figure>
+<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/meta-muse-alternatives/lead-still.png" aria-label="A looping animation. A Meta Muse card reads available in US only, 18 and over. Seven alternative cards deal in, tagged by where they run, and the Vishwajeet Team card flips into real footage of the app."><source src="/blog/assets/media/meta-muse-alternatives/lead.mp4" type="video/mp4"><img src="/blog/assets/media/meta-muse-alternatives/lead.gif" width="1360" height="764" alt="A looping animation. A Meta Muse card reads available in US only, 18 and over. Seven alternative cards deal in, tagged by where they run, and the Vishwajeet Team card flips into real footage of the app."></video><figcaption>Muse is US only for now. Three of the seven alternatives run on your own computer.</figcaption></figure>
 <style>.lead-loop{margin:1.4rem 0 .6rem;border:1px solid #D9CFE0;border-radius:16px;overflow:hidden;background:#FFF8E7}.lead-loop video,.lead-loop img{display:block;width:100%;height:auto;margin:0}.lead-loop figcaption{font:500 13px/1.5 "Space Grotesk",system-ui,sans-serif;color:#6B5878;padding:10px 16px 14px;margin:0;border-top:1px solid #D9CFE0;background:#FCFAF0}</style>
 <script>if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.lead-loop video').forEach(function(v){v.removeAttribute('autoplay');v.pause();v.currentTime=0;v.load()})}</script>
 
@@ -46,7 +46,7 @@ Here are seven alternatives, and which reason each one solves.
 | Alternative | Best for | Where it runs | Cost |
 | --- | --- | --- | --- |
 | OpenClaw | A personal assistant you own | Your computer | Free, open source |
-| Munder Difflin | A team of work agents | Your computer | Free, open source |
+| Vishwajeet Team | A team of work agents | Your computer | Free, open source |
 | ChatGPT Work | Work inside ChatGPT | OpenAI's cloud and your desktop | Part of ChatGPT plans |
 | Gemini Spark | Gmail, Drive and Calendar users | Google's cloud | Google AI Pro and Ultra |
 | Grok Bot | Hosted agent teammates | Cursor's cloud, in the US | Plans from $20 a month |
@@ -62,16 +62,16 @@ Facts for the hosted products and the open source projects were checked on their
 **Solves:** the US only limit and the data worry.
 **The catch:** by default tools run straight on your machine, so set up sandboxing before you hand it your accounts.
 
-## 2. Munder Difflin: a team of work agents on your own computer
+## 2. Vishwajeet Team: a team of work agents on your own computer
 
-[Munder Difflin](https://harnessmd.com/download) is what we make, and it answers the third reason. It will not book your travel. It gives you an office of AI agents for real work, mostly engineering: each agent is a terminal session running an engine you choose, such as Claude Code, Codex, Gemini CLI, Cursor or Grok's own CLI, or a local model through Ollama.
+[Vishwajeet Team](https://harnessmd.com/download) is what we make, and it answers the third reason. It will not book your travel. It gives you an office of AI agents for real work, mostly engineering: each agent is a terminal session running an engine you choose, such as Claude Code, Codex, Gemini CLI, Cursor or Grok's own CLI, or a local model through Ollama.
 
 Each agent gets a desk, an inbox, memory in plain markdown files and a shared task board. You can start work from Slack or a webhook, schedule missions, and talk to one lead agent instead of twelve. A circuit breaker stops any agent that loops or overspends. It runs on macOS, Windows and Linux, in any country, and it is free and open source.
 
 **Solves:** all three reasons, if your need is work rather than errands.
 **The catch:** agents run while your computer runs. For overnight work, keep a machine awake, like a [Mac mini on your desk](/blog/run-munder-difflin-on-a-mac-mini/).
 
-For how it compares with OpenAI's new always on agents, read [ChatGPT dots vs Munder Difflin](/blog/munder-difflin-vs-chatgpt-dots/).
+For how it compares with OpenAI's new always on agents, read [ChatGPT dots vs Vishwajeet Team](/blog/munder-difflin-vs-chatgpt-dots/).
 
 ## 3. ChatGPT Work: the hosted pick for work
 
@@ -114,4 +114,4 @@ Grok Bot from SpaceXAI is the most direct rival to Muse, aimed at work instead o
 
 - **Want Muse, but you are outside the US?** Start with OpenClaw.
 - **Want errands handled but don't trust Meta with your data?** OpenClaw or Hermes Agent, with a local model if you want nothing to leave your machine.
-- **Want agents that do your work, not your shopping?** [Download Munder Difflin](https://harnessmd.com/download). It is free and open source. Our [install guide](/blog/how-to-install-and-use-munder-difflin/) walks you through it.
+- **Want agents that do your work, not your shopping?** [Download Vishwajeet Team](https://harnessmd.com/download). It is free and open source. Our [install guide](/blog/how-to-install-and-use-munder-difflin/) walks you through it.

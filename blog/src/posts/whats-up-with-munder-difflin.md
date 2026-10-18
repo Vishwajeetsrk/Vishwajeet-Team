@@ -1,26 +1,26 @@
 ---
-title: "What's Up With Munder Difflin: Six Weeks, Four Releases, and the Part of the Stack You Actually Own"
+title: "What's Up With Vishwajeet Team: Six Weeks, Four Releases, and the Part of the Stack You Actually Own"
 description: "Everything that shipped between v0.3.3 and v0.3.7 — a Michael who knows the floor and runs the app by voice, a git time-machine in the IDE, nine agent engines, a queue that respects your draft, Node that installs itself, and the auto-update bug that had been silently broken since the day we shipped it."
 date: 2026-08-08
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.3.7"
+primaryKeyword: "Vishwajeet Team v0.3.7"
 secondaryKeywords: ["personal agi harness", "local multi agent harness update", "claude code multi-agent release notes", "voice ai agent orchestration", "electron auto update fix", "open source agent harness"]
 tags: ["Story", "Release", "Multi-Agent", "Voice", "IDE", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's new in Munder Difflin v0.3.7?"
+  - q: "What's new in Vishwajeet Team v0.3.7?"
     a: "v0.3.7 fixes auto-update, which had silently never worked in any packaged build since it shipped in v0.3.4. A CommonJS export vanished across the ESM import boundary, the resulting error was swallowed by a catch block, and the app quietly fell back to just linking you to the releases page. The version number in the toolbar is now the update button — it shows download progress and turns into 'restart to update' — and update failures now reach both the UI and a log file instead of disappearing."
   - q: "What shipped between v0.3.3 and v0.3.7?"
     a: "Four releases in about six weeks. v0.3.4 was the big wave: voice orchestration that opens with a live snapshot of every agent and can run nearly the whole app, markdown previews everywhere, a git time-machine in the built-in IDE (commit history, branch compare, guarded checkout), a six-tab Settings redesign, xAI Grok and Kimi Code engines, and one single delivery gate for every automatic writer. v0.3.5 added a 'send now' escape hatch for a paused queue. v0.3.6 made a machine with nothing installed on it able to run agents — Node and npm install themselves, verified against Apple's published checksums. v0.3.7 fixed auto-update."
   - q: "Do I need to reinstall to get v0.3.7?"
     a: "Yes, once. Every build from v0.3.4 through v0.3.6 carries the broken updater and cannot fetch the fix that repairs it — the one bootstrap problem a self-updating app can't solve for itself. Download v0.3.7 from munderdiffl.in or the GitHub releases page. From v0.3.7 onward, updates download in the background and wait for your restart."
-  - q: "How many agent CLIs does Munder Difflin support?"
+  - q: "How many agent CLIs does Vishwajeet Team support?"
     a: "Nine: Claude Code, OpenAI Codex, Antigravity (Gemini), GitHub Copilot CLI, xAI Grok, Kimi Code, OpenCode, Crush, and pi.dev. Each gets a desk, a mailbox, and shared memory, and most can play the GOD orchestrator role themselves. You can mix engines on the same floor, and bring your own API keys or point them at local models through Ollama, LM Studio, or vLLM."
-  - q: "Is Munder Difflin free?"
+  - q: "Is Vishwajeet Team free?"
     a: "Yes. MIT-licensed, free forever, and local-first. It drives the agent CLI subscriptions you already pay for rather than adding a bill of its own, and your code never leaves your machine."
 ---
 
@@ -38,7 +38,7 @@ last time — isn't for sale at any price, because it only exists in your head.
 
 The harness is the part in the middle. It decides which context reaches which model at which
 step, and then lets the result act on the world. It's the part of the stack you can actually
-own, and it's the part Munder Difflin exists to give away.
+own, and it's the part Vishwajeet Team exists to give away.
 
 So: what have we done to that middle term in the last six weeks?
 

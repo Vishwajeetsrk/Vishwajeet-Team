@@ -31,7 +31,7 @@ ChatGPT dots are always on agents that OpenAI launched on 29 September 2026 at D
 
 The facts below come from [OpenAI's announcement](https://openai.com/index/introducing-dots/), its [getting started help page](https://help.openai.com/en/articles/20001530-getting-started-with-your-dot) and its [Pro tiers page](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers), all checked on 30 Sep 2026. When we read them, the help page noted that DevDay features are rolling out gradually, and on the [ChatGPT pricing page](https://chatgpt.com/pricing) the dot was listed on the Pro card only, not on Free, Go or Plus.
 
-If what you want is a team of agents on your own computer, running the AI engines you already use, you can have that today with [Munder Difflin](https://harnessmd.com/download), free and open source. We put the two side by side in [Munder Difflin vs ChatGPT dots](/blog/munder-difflin-vs-chatgpt-dots/).
+If what you want is a team of agents on your own computer, running the AI engines you already use, you can have that today with [Vishwajeet Team](https://harnessmd.com/download), free and open source. We put the two side by side in [Vishwajeet Team vs ChatGPT dots](/blog/munder-difflin-vs-chatgpt-dots/).
 
 Dots land three weeks after Meta Muse, and [Fortune](https://fortune.com/2026/09/29/openai-takes-on-metas-muse-with-new-dot-agents-and-unveils-a-potential-google-workspace-competitor/) framed the launch as a rival to it. We covered those hosted agents in [Meta Muse alternatives](/blog/meta-muse-alternatives/) and [Grok Bot alternatives](/blog/grok-bot-alternatives/). What sets a dot apart is that it keeps a standing job instead of a single request, the [long running agent](/blog/long-running-agents-the-2026-shift/) pattern.
 

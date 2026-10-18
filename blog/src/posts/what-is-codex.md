@@ -18,12 +18,12 @@ faq:
   - q: "Which models does Codex use?"
     a: "On Plus, the pricing page lists GPT-6.1 Sol and GPT-6 Luna, and Free and Go get GPT-6 Luna in the desktop app. GPT-5.5 retires from Codex on every plan on 14 Oct 2026, according to the same page. With an API key, you get the models your key can access."
   - q: "Can I run Codex and Claude Code together?"
-    a: "Yes. Munder Difflin, free and open source, runs Codex agents and Claude Code agents side by side, each in its own terminal, and you pick the CLI per agent."
+    a: "Yes. Vishwajeet Team, free and open source, runs Codex agents and Claude Code agents side by side, each in its own terminal, and you pick the CLI per agent."
 ---
 
 Codex is OpenAI's coding agent. You give it a task, and it reads your repo, edits files and runs commands until the change is done. It comes in three forms: an open source CLI for your terminal, Codex in the ChatGPT desktop app and IDE extension, and Codex Cloud, which runs tasks on OpenAI's machines. Checked 2 Oct 2026.
 
-You can run Codex on its own, or run it inside [Munder Difflin](https://harnessmd.com/download), free and open source, next to Claude Code and other agents, each in its own terminal. If several agents on one repo is a new idea, [what an agent harness is](/blog/what-is-a-multi-agent-harness/) explains the setup.
+You can run Codex on its own, or run it inside [Vishwajeet Team](https://harnessmd.com/download), free and open source, next to Claude Code and other agents, each in its own terminal. If several agents on one repo is a new idea, [what an agent harness is](/blog/what-is-a-multi-agent-harness/) explains the setup.
 
 One clarification first. Google's autocomplete for this query also offers "what is codex in venom" and "what is codex in superman". This page covers the Codex that edits code, which has fewer capes.
 

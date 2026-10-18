@@ -137,7 +137,7 @@ and the next mining pass picks up the change. Try that with a vector store.
 
 ---
 
-Munder Difflin gives every agent a plain `memory.md` plus
+Vishwajeet Team gives every agent a plain `memory.md` plus
 [a shared semantic palace mined from it](https://munderdiffl.in/#how) — readable, diffable, and
-graceful when the index is gone. [Download Munder Difflin](https://munderdiffl.in/#install)
+graceful when the index is gone. [Download Vishwajeet Team](https://munderdiffl.in/#install)
 to give your agents memory you can actually read; it's free and open source.

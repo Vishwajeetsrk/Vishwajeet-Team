@@ -32,13 +32,13 @@ It's one thing to argue that keeping your agents [on your own
 machine](/blog/why-local-first-matters-for-ai-agents/) is better for control, privacy, and cost. It's
 another to explain how a team of agents actually *coordinates* without a cloud control plane in the
 middle. If there's no orchestration server, what routes the work? This post is the mechanics —
-grounded in how Munder Difflin's hive is built — of running real multi-agent orchestration with nothing
+grounded in how Vishwajeet Team's hive is built — of running real multi-agent orchestration with nothing
 but local processes and files.
 
 ## Where the orchestration loop actually runs
 
 Start with the obvious question: what is "the orchestrator"? In a cloud platform it's a service you
-never see. Locally, it's just a process on your machine — in Munder Difflin's case, the desktop app's
+never see. Locally, it's just a process on your machine — in Vishwajeet Team's case, the desktop app's
 main process. It boots the message router, arms the scheduler, and manages the agents. There's no
 remote brain; the coordination logic is code running next to your editor.
 
@@ -144,7 +144,7 @@ ownership.
 
 ---
 
-Munder Difflin is local-first orchestration you can watch: a hive of Claude Code agents coordinating
+Vishwajeet Team is local-first orchestration you can watch: a hive of Claude Code agents coordinating
 through file mailboxes, local timers, and a git audit log — [all run by a GOD
 orchestrator](https://munderdiffl.in/#how) on your own machine. [Download Munder
 Difflin](https://munderdiffl.in/#install) to run a coordinated team of agents with no cloud in the

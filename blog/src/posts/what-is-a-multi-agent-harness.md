@@ -31,7 +31,7 @@ The term has two meanings in the wild. Anthropic, LangChain and Microsoft use it
 
 If you searched "harness agent" looking for Harness, the CI/CD company, its [Harness Agents](https://developer.harness.io/harness-ai/3.0/use-harness-ai/ai-agents/harness-agents) are, in its own words, "autonomous AI agents that run inside your pipelines". Same word, different office.
 
-You can build a multi agent setup by hand with git worktrees and a few terminals, or use [Munder Difflin](https://harnessmd.com/download), free and open source, which is the multi-agent harness this blog is written by. The [install guide](/blog/how-to-install-and-use-munder-difflin/) gets you from download to a first agent.
+You can build a multi agent setup by hand with git worktrees and a few terminals, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, which is the multi-agent harness this blog is written by. The [install guide](/blog/how-to-install-and-use-munder-difflin/) gets you from download to a first agent.
 
 ## What does an agent harness actually do?
 
@@ -69,9 +69,9 @@ A multi-agent harness runs several single agent harnesses at the same time and m
 
 ## What does a multi-agent harness look like in code?
 
-Mostly files and a router. We read the Munder Difflin source at tag v0.5.3 on 29 Sep 2026, and the coordination layer lives in `src/main/hive.ts`. Every agent gets a folder with an identity, a memory file, an inbox, an outbox and a read cursor. A router in the main process moves each outbox message into the recipient's inbox, and that process is the only one that commits to the hive's git repo, so agents never race on git. The shared plan is `board.md`, and by protocol only the orchestrator (Michael, your clone) edits it; other agents propose changes.
+Mostly files and a router. We read the Vishwajeet Team source at tag v0.5.3 on 29 Sep 2026, and the coordination layer lives in `src/main/hive.ts`. Every agent gets a folder with an identity, a memory file, an inbox, an outbox and a read cursor. A router in the main process moves each outbox message into the recipient's inbox, and that process is the only one that commits to the hive's git repo, so agents never race on git. The shared plan is `board.md`, and by protocol only the orchestrator (Michael, your clone) edits it; other agents propose changes.
 
-This page was refreshed by a Munder Difflin worker. Running this inside its own hive folder on 29 Sep 2026 (the grep hides unrelated files) printed:
+This page was refreshed by a Vishwajeet Team worker. Running this inside its own hive folder on 29 Sep 2026 (the grep hides unrelated files) printed:
 
 ```
 $ ls -1p | grep -E '^(identity\.md|memory\.md|cursor\.json|inbox/|outbox/)$'
@@ -92,12 +92,12 @@ Questions that need a human land on the ASK ME board rather than in a scrollback
 
 ## Which agent harnesses can you use today?
 
-Here is how the main options line up, checked on 29 Sep 2026. Munder Difflin rows come from the v0.5.3 source; the rest from each vendor's own docs.
+Here is how the main options line up, checked on 29 Sep 2026. Vishwajeet Team rows come from the v0.5.3 source; the rest from each vendor's own docs.
 
 | Harness | Kind | What runs | Multi agent support | Source |
 |---|---|---|---|---|
 | Claude Code | Single agent harness, terminal CLI | Claude models | Subagents; agent teams are experimental and off by default | [Anthropic docs](https://code.claude.com/docs/en/agent-teams) |
-| Munder Difflin | Multi-agent harness, desktop app, MIT | Twelve coding CLIs, each in its own terminal | Orchestrator, mailboxes, shared board, per agent memory, circuit breaker | v0.5.3 source, paths above |
+| Vishwajeet Team | Multi-agent harness, desktop app, MIT | Twelve coding CLIs, each in its own terminal | Orchestrator, mailboxes, shared board, per agent memory, circuit breaker | v0.5.3 source, paths above |
 | Claude Agent SDK | Single agent harness as a library, Python and TypeScript | Claude Code's loop in your own process | Subagents; no teammates in SDK sessions | [SDK overview](https://code.claude.com/docs/en/agent-sdk/overview), [agent teams](https://code.claude.com/docs/en/agent-teams) |
 | Claude Code agent teams | Team inside one Claude Code session | Claude Code instances only | Lead plus teammates, shared task list, mailbox; one team per session, no nested teams | [Anthropic docs](https://code.claude.com/docs/en/agent-teams) |
 | Microsoft Agent Framework Harness | Harness as a library, .NET and Python | Your chosen chat client | Optional background agents, experimental in Python | [Microsoft Learn](https://learn.microsoft.com/en-us/agent-framework/concepts/harness) |
@@ -105,7 +105,7 @@ Here is how the main options line up, checked on 29 Sep 2026. Munder Difflin row
 
 {% img "note-2" %}
 
-**Pick Claude Code** if one agent in one terminal does the job. **Pick Munder Difflin** if you run several CLIs at once, want them to message each other and remember across sessions, and would rather watch a floor than tail five terminals. **Pick agent teams** if every worker is Claude Code and the team only needs to last one session. **Pick the Agent SDK, Microsoft Agent Framework or Deep Agents** if you are building an agent into your own application.
+**Pick Claude Code** if one agent in one terminal does the job. **Pick Vishwajeet Team** if you run several CLIs at once, want them to message each other and remember across sessions, and would rather watch a floor than tail five terminals. **Pick agent teams** if every worker is Claude Code and the team only needs to last one session. **Pick the Agent SDK, Microsoft Agent Framework or Deep Agents** if you are building an agent into your own application.
 
 ## Do you need a multi-agent harness?
 
@@ -127,4 +127,4 @@ If none of that sounds familiar, one session is fine.
 
 ---
 
-Munder Difflin is free and open source under the MIT license. [Download it](https://harnessmd.com/download) for macOS, Windows or Linux.
+Vishwajeet Team is free and open source under the MIT license. [Download it](https://harnessmd.com/download) for macOS, Windows or Linux.

@@ -147,7 +147,7 @@ durable memory, context discipline, reliability, and observability stop being op
 will get the most out of long-running agents are the ones who [built for the long
 run](https://munderdiffl.in/#how) before the runs got long.
 
-Munder Difflin is designed for exactly that — persistent memory, reliable-by-design agents, and a
+Vishwajeet Team is designed for exactly that — persistent memory, reliable-by-design agents, and a
 coordinated hive that splits long work across a team. [Download Munder
 Difflin](https://munderdiffl.in/#install) to run agents built for the hours-long era; it's free and open
 source.

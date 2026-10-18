@@ -1,25 +1,25 @@
 ---
-title: "Why We Built Munder Difflin"
-description: "The origin story of Munder Difflin — how the pain of juggling Claude Code terminals led to a coordinated, memory-backed hive of agents you can watch."
+title: "Why We Built Vishwajeet Team"
+description: "The origin story of Vishwajeet Team — how the pain of juggling Claude Code terminals led to a coordinated, memory-backed hive of agents you can watch."
 date: 2026-06-02
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin"
-secondaryKeywords: ["munder difflin github", "multi-agent harness", "why munder difflin"]
+primaryKeyword: "Vishwajeet Team"
+secondaryKeywords: ["Vishwajeet Team github", "multi-agent harness", "why Vishwajeet Team"]
 tags: ["Story", "Multi-Agent", "Claude Code", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>We built <strong>Munder Difflin</strong>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>We built <strong>Vishwajeet Team</strong>
 because running several Claude Code agents at once was powerful and miserable in equal measure — they
 collided, forgot, and turned us into a human message bus. The fix wasn't a better terminal; it was a
 <strong>coordination layer</strong>: roles, shared memory, messaging, and an orchestrator you talk to,
 visualized as an office floor. This is the story of that itch.</p></div>
 
-Every tool starts with an annoyance specific enough to act on. Munder Difflin started with a wall of
+Every tool starts with an annoyance specific enough to act on. Vishwajeet Team started with a wall of
 terminal tabs and the dawning realization that *I* had become the slowest part of my own setup.
 
 ## The itch
@@ -53,7 +53,7 @@ more parallelism — it was the [coordination layer](/blog/what-is-a-multi-agent
 
 ## What we built
 
-So that's what Munder Difflin is: a layer that wraps the Claude Code agents you already run and makes
+So that's what Vishwajeet Team is: a layer that wraps the Claude Code agents you already run and makes
 them a team.
 
 - **Roles** so each agent stays in its lane.
@@ -83,14 +83,14 @@ read, trust, and extend. The code lives on
 
 ## What it's for
 
-Munder Difflin is for the moment you've felt the wall — three or more agents, context evaporating, you
+Vishwajeet Team is for the moment you've felt the wall — three or more agents, context evaporating, you
 alt-tabbing as the message bus. It's the [office of agents](/blog/run-an-office-of-ai-agents/) I wanted
 when I had eight tabs open and no idea what half of them were doing.
 
 If you've been there, you already understand the itch. The rest of the common questions are answered in
-the [Munder Difflin FAQ](/blog/munder-difflin-faq/).
+the [Vishwajeet Team FAQ](/blog/munder-difflin-faq/).
 
 ---
 
 We built it to scratch our own itch, then made it free for everyone with the same one. [Download
-Munder Difflin](/#install) — it's open source and local-first, on macOS, Windows, and Linux.
+Vishwajeet Team](/#install) — it's open source and local-first, on macOS, Windows, and Linux.

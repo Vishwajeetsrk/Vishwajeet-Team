@@ -1,6 +1,6 @@
 ---
 title: "Deploy a Blog Writer Agent: The One That Wrote This Post"
-description: "How the Munder Difflin blog is written by agents in our own office: a brief, a house style, a draft in its own worktree, drawings made in code, a pull request, and one human merge. The pipeline, and how to build your own."
+description: "How the Vishwajeet Team blog is written by agents in our own office: a brief, a house style, a draft in its own worktree, drawings made in code, a pull request, and one human merge. The pipeline, and how to build your own."
 date: 2026-06-10
 updated: 2026-09-10
 category: use-cases
@@ -13,8 +13,8 @@ author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Did an AI actually write the Munder Difflin blog?"
-    a: "Mostly, yes. Agents in our own Munder Difflin office draft posts from a brief and a house style, and the illustrations are drawn in code. The change goes up as a pull request, a person reads it and merges it, and the merge publishes it. This post was rewritten that way in September 2026."
+  - q: "Did an AI actually write the Vishwajeet Team blog?"
+    a: "Mostly, yes. Agents in our own Vishwajeet Team office draft posts from a brief and a house style, and the illustrations are drawn in code. The change goes up as a pull request, a person reads it and merges it, and the merge publishes it. This post was rewritten that way in September 2026."
   - q: "Is the blog writer agent fully autonomous?"
     a: "Everything before publishing is. Research, drafting, checks and the pull request run without a person. Publishing waits for a human merge on purpose, so nothing unreviewed reaches the live site."
   - q: "How do I build my own blog writer agent?"
@@ -32,7 +32,7 @@ style</strong>, drafts in its <strong>own worktree</strong>, the draft gets chec
 it, and the merge publishes it. <em>This post was rewritten exactly that way.</em></p></div>
 
 Here is a fact that is either a confession or a flex: most of this blog is written by agents. Not "AI
-assisted" in the vague marketing sense. Agents in a Munder Difflin office take a brief, write the post and
+assisted" in the vague marketing sense. Agents in a Vishwajeet Team office take a brief, write the post and
 open the pull request. A human does one thing: reads it and merges it.
 
 This post describes that pipeline, and in September 2026 the pipeline rewrote this post, so it doubles as
@@ -98,7 +98,7 @@ Five steps, and none of them needs our exact stack.
 actually care about. Install it as a skill so every draft rereads it. A writer with a sharp reference produces
 something publishable. A writer without one produces beige.
 
-**3. Give the draft its own workspace.** A worktree, a branch or a scratch folder. In Munder Difflin this is the
+**3. Give the draft its own workspace.** A worktree, a branch or a scratch folder. In Vishwajeet Team this is the
 git isolation toggle on the agent.
 
 **4. Check, then gate publishing.** A reviewer agent or a checklist first, then a pull request or an approval that
@@ -133,6 +133,6 @@ a pull request.
 
 ---
 
-Munder Difflin runs an office of agents on twelve terminal CLIs on your own machine, with worktrees, skills, schedules
+Vishwajeet Team runs an office of agents on twelve terminal CLIs on your own machine, with worktrees, skills, schedules
 and an ASK ME board for the decisions that need you. [Download it free](https://munderdiffl.in/) and put a writer, or
 any other worker, on your floor.

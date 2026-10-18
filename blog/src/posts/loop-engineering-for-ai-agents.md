@@ -50,19 +50,19 @@ A runaway loop is just a loop missing one of these — usually the first. The ag
 
 ## The outer-loop toolbox
 
-Here's the toolbox as it actually exists in [Munder Difflin](/), where the design constraint is blunt: a floor of CLI agents has to run for days without a human babysitting it, and without melting.
+Here's the toolbox as it actually exists in [Vishwajeet Team](/), where the design constraint is blunt: a floor of CLI agents has to run for days without a human babysitting it, and without melting.
 
-**Stop conditions.** The naive stop condition is "the model stopped talking." The engineered one checks state: is the task's definition of done verified? In Munder Difflin, workers don't self-certify — the GOD orchestrator reads results, adjudicates, and moves the board (see [how the GOD orchestrator works](/blog/how-the-god-orchestrator-works/)).
+**Stop conditions.** The naive stop condition is "the model stopped talking." The engineered one checks state: is the task's definition of done verified? In Vishwajeet Team, workers don't self-certify — the GOD orchestrator reads results, adjudicates, and moves the board (see [how the GOD orchestrator works](/blog/how-the-god-orchestrator-works/)).
 
 **Drain loops.** The most useful outer-loop pattern in Claude Code is built on the Stop hook: when an agent tries to end its turn, the hook checks its mailbox — and if mail is waiting, it blocks the stop and continues the session with the next message as the prompt. The agent drains its queue instead of dying with a full inbox. Claude Code's own hooks reference builds in the guardrail this pattern needs: a `stop_hook_active` flag, so a blocked stop can't recurse into an infinite forced continuation. That's loop engineering *inside* the primitive — one continuation per real stop, not a hall of mirrors.
 
-**Retry with backoff.** Transient failures (rate limits, flaky network, a wedged terminal) deserve a retry; identical immediate retries deserve suspicion. Munder Difflin's wake-reliability layer takes the same stance at floor scale: revive wedged terminals, catch up missed schedules, re-arm the message router — recover the *loop*, don't just replay the failure. More in [recovering from agent failures](/blog/recovering-from-agent-failures/).
+**Retry with backoff.** Transient failures (rate limits, flaky network, a wedged terminal) deserve a retry; identical immediate retries deserve suspicion. Vishwajeet Team's wake-reliability layer takes the same stance at floor scale: revive wedged terminals, catch up missed schedules, re-arm the message router — recover the *loop*, don't just replay the failure. More in [recovering from agent failures](/blog/recovering-from-agent-failures/).
 
-**Compaction cycles.** Long loops fill context windows, and a full window degrades every subsequent iteration. So compaction has to be part of the cycle, not an emergency. Munder Difflin runs a dedicated auto-compact maintenance schedule, decoupled from missions, and the floor even shows a *compacting* avatar state — because a maintenance pause that looks like a hang gets killed by nervous humans.
+**Compaction cycles.** Long loops fill context windows, and a full window degrades every subsequent iteration. So compaction has to be part of the cycle, not an emergency. Vishwajeet Team runs a dedicated auto-compact maintenance schedule, decoupled from missions, and the floor even shows a *compacting* avatar state — because a maintenance pause that looks like a hang gets killed by nervous humans.
 
-**Breaker escalation: steer → constrain → stop.** Binary kill switches are a bad fit for agents, because most divergence is recoverable. Munder Difflin's circuit breaker is a ladder: first *steer* (a corrective nudge into the session), then *constrain* (tighten what the agent may do), then *stop* — triggered by looping, error storms, or a blown budget. Graduated response preserves the work that a hard kill would throw away.
+**Breaker escalation: steer → constrain → stop.** Binary kill switches are a bad fit for agents, because most divergence is recoverable. Vishwajeet Team's circuit breaker is a ladder: first *steer* (a corrective nudge into the session), then *constrain* (tighten what the agent may do), then *stop* — triggered by looping, error storms, or a blown budget. Graduated response preserves the work that a hard kill would throw away.
 
-**No-progress detection.** The breaker needs a tripwire, and "is it looping?" can't be answered by asking the looper. External signals work: repeated near-identical actions, the same error N times, spend rising while verified state stays flat. There's also a quieter failure — the *silent* stall — which Munder Difflin catches with a PTY-quiescence backstop: an agent pinned `working` but producing no output gets flipped back to idle, where the inbox-wake nudge can restart its drain loop.
+**No-progress detection.** The breaker needs a tripwire, and "is it looping?" can't be answered by asking the looper. External signals work: repeated near-identical actions, the same error N times, spend rising while verified state stays flat. There's also a quieter failure — the *silent* stall — which Vishwajeet Team catches with a PTY-quiescence backstop: an agent pinned `working` but producing no output gets flipped back to idle, where the inbox-wake nudge can restart its drain loop.
 
 **Budgets as loop bounds.** Per-agent token budgets, tracked live against real telemetry, are the guaranteed-termination clause. If every other signal misses, the loop still halts at a ceiling you set while calm.
 
@@ -74,7 +74,7 @@ Here's the toolbox as it actually exists in [Munder Difflin](/), where the desig
 
 The model gives you the inner loop; the outer loop is the product. Verified stop conditions, drain loops with anti-recursion guards, backoff, scheduled compaction, a breaker ladder, progress tripwires, budget bounds, and human exits — stacked together, they're why a floor of agents can run for days and converge on finished work instead of a bill.
 
-Munder Difflin ships this outer loop as a free, MIT-licensed, local-first desktop app for the agent CLIs you already run. [Download it](https://github.com/chaitanyagiri/munder-difflin/releases/latest), and if the loop-nerdery resonates, a [GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.
+Vishwajeet Team ships this outer loop as a free, MIT-licensed, local-first desktop app for the agent CLIs you already run. [Download it](https://github.com/chaitanyagiri/munder-difflin/releases/latest), and if the loop-nerdery resonates, a [GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.
 
 ## FAQ
 

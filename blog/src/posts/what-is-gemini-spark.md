@@ -107,7 +107,7 @@ Turning Spark off stops schedules and deletes the remote browser and remote code
 Spark is better if your work lives in Google apps, and Grok Bot is better if you want several agents with a computer of their own. Spark is one personal agent tied to your Google account. Grok Bot gives you several Bots on a persistent cloud computer and comes bundled with SuperGrok and paid Cursor plans, as our [Grok Bot pricing](/blog/grok-bot-pricing/) breakdown shows.
 
 * **Pick Gemini Spark** for inbox, calendar and document chores, if you are 18 or over and outside the excluded regions.
-* **Pick [Munder Difflin](https://harnessmd.com/download)** if the work is code. It is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
+* **Pick [Vishwajeet Team](https://harnessmd.com/download)** if the work is code. It is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
 * **Pick Grok Bot** for always on work agents that sign into your apps from the cloud.
 
 If Europe rules Spark out for you, [ChatGPT dots alternatives](/blog/chatgpt-dots-alternatives/) lists the options that still work there.

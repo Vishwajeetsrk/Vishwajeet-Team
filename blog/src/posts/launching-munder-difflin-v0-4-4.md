@@ -1,18 +1,18 @@
 ---
-title: "Launching Munder Difflin v0.4.4: Windows Agents Can Finally Talk"
+title: "Launching Vishwajeet Team v0.4.4: Windows Agents Can Finally Talk"
 description: "v0.4.4 fixes the bug that silently broke agent-to-agent messaging on Windows, starts hive services on the very first run, rebuilds dark mode so you can read it, and adds a 227-skill catalog, a Prerequisites page, and designed release notes."
 date: 2026-08-19
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.4.4"
-secondaryKeywords: ["munder difflin release", "claude code multi-agent windows", "windows ai agents", "skills catalog claude code", "electron dark mode contrast"]
+primaryKeyword: "Vishwajeet Team v0.4.4"
+secondaryKeywords: ["Vishwajeet Team release", "claude code multi-agent windows", "windows ai agents", "skills catalog claude code", "electron dark mode contrast"]
 tags: ["Story", "Release", "Windows", "Skills", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's the headline fix in Munder Difflin v0.4.4?"
+  - q: "What's the headline fix in Vishwajeet Team v0.4.4?"
     a: "Agent-to-agent messaging now works on Windows. A cmd.exe quirk was silently cutting the hive protocol out of every agent's startup prompt, so Windows agents booted, looked healthy, and had no idea they could message anyone. v0.4.4 launches the real interpreter directly with a proper argument array, so the full protocol arrives intact."
   - q: "What's new besides the fixes?"
     a: "A browsable catalog of 227 skills you can install across Claude Code, OpenCode and Codex; a Prerequisites page in Settings that shows live status for git, Node, uv, MemPalace and every engine; release notes that can carry their own designed page; an update toast that says what actually changed; and a rebuilt dark mode with readable contrast everywhere."
@@ -29,12 +29,12 @@ a Prerequisites page, and release notes with their own designed pages.</p></div>
 
 Some releases are about new toys. This one is about a hard truth we learned during
 [launch week](/blog/what-reddit-told-us-about-munder-difflin/): a lot of the people who bounced
-off Munder Difflin weren't rejecting the idea — they were hitting bugs we couldn't see from a
+off Vishwajeet Team weren't rejecting the idea — they were hitting bugs we couldn't see from a
 Mac.
 
 ## The Windows bug that looked like nothing
 
-Here's the failure that headlines this release. When Munder Difflin spawns an agent, it hands it
+Here's the failure that headlines this release. When Vishwajeet Team spawns an agent, it hands it
 the hive protocol — a multi-line prompt that tells the agent where its `inbox/` and `outbox/`
 live, how to message other agents, where its memory is. On Windows, any engine installed as an
 npm `.cmd` shim can't go straight to `CreateProcess`, so it ran via `cmd.exe /c "…"`. And cmd.exe

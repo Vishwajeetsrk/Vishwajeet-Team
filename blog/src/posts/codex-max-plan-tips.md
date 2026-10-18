@@ -27,7 +27,7 @@ OpenAI has no plan called Codex Max. The plan people mean is ChatGPT Pro, which 
 
 Three things muddy the name: Anthropic's Claude Max plan, OpenAI's older GPT-5.1-Codex-Max model, and Codex's **Max** reasoning setting, which gives a model more time on one task ([OpenAI, Models](https://learn.chatgpt.com/docs/models)). None is a Codex plan. Still choosing between tools? Our [Codex CLI vs Claude Code comparison](/blog/codex-cli-vs-claude-code/) covers that. The habits in [managing several Claude Code sessions](/blog/manage-multiple-claude-code-sessions/), like one scope per session, carry straight over to Codex.
 
-You can apply every tip below by hand, or use [Munder Difflin](https://harnessmd.com/download), a free and open source desktop app that runs Codex agents next to Claude Code and other CLIs. Each Codex agent signs in with your own Codex login, and you pick its model per agent, from Luna for routine edits to Astra for the hard bug. Our [mixed engine office guide](/blog/run-a-mixed-engine-office/) shows a layout.
+You can apply every tip below by hand, or use [Vishwajeet Team](https://harnessmd.com/download), a free and open source desktop app that runs Codex agents next to Claude Code and other CLIs. Each Codex agent signs in with your own Codex login, and you pick its model per agent, from Luna for routine edits to Astra for the hard bug. Our [mixed engine office guide](/blog/run-a-mixed-engine-office/) shows a layout.
 
 ## Is there a Codex max plan?
 

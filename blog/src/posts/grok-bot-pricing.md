@@ -23,7 +23,7 @@ faq:
   - q: "Does Grok Bot use up my Cursor or SuperGrok usage?"
     a: "No. SpaceXAI says Grok Bot comes with its own usage, separate from your Grok and Cursor plans, so work you hand to a Bot does not count against your existing allowance. Bot usage resets weekly."
   - q: "Is there a free alternative to Grok Bot?"
-    a: "For work agents, Munder Difflin is free and open source. It runs a team of agents on your own computer with engines you already pay for, or with a free local model. OpenClaw and Hermes Agent are free, open source personal assistants."
+    a: "For work agents, Vishwajeet Team is free and open source. It runs a team of agents on your own computer with engines you already pay for, or with a free local model. OpenClaw and Hermes Agent are free, open source personal assistants."
 thumb: "/blog/assets/media/grok-bot-pricing/lead-still.png"
 ---
 
@@ -31,9 +31,9 @@ thumb: "/blog/assets/media/grok-bot-pricing/lead-still.png"
 
 Grok Bot is SpaceXAI's team of always on AI agents, called Bots. They sign into your apps, do the work on a cloud computer and keep going with your laptop shut. It reached [418,000 weekly users](https://www.bloomberg.com/news/articles/2026-09-22/spacexai-s-grok-bot-agent-tops-400-000-users-after-first-month) a month after launch. The pricing confuses a lot of people, because there is no "Grok Bot plan" to buy. It comes inside other subscriptions.
 
-If what you want is agents for your work, there is also a way to pay nothing for the app. [Munder Difflin](https://harnessmd.com/download) runs a team of agents on your own computer using AI engines you already have. It is free and open source. We compare the costs at the end.
+If what you want is agents for your work, there is also a way to pay nothing for the app. [Vishwajeet Team](https://harnessmd.com/download) runs a team of agents on your own computer using AI engines you already have. It is free and open source. We compare the costs at the end.
 
-<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/grok-bot-pricing/lead-still.png" aria-label="A looping animation. A receipt prints the plans that include Grok Bot, from Cursor Pro at 20 dollars to SuperGrok Heavy at 300 dollars, and ends with no Grok Bot plan of its own. It cuts to Munder Difflin's real add agent dialog: a free app that uses the engine you already pay for."><source src="/blog/assets/media/grok-bot-pricing/lead.mp4" type="video/mp4"><img src="/blog/assets/media/grok-bot-pricing/lead.gif" width="1360" height="764" alt="A looping animation. A receipt prints the plans that include Grok Bot, from Cursor Pro at 20 dollars to SuperGrok Heavy at 300 dollars, and ends with no Grok Bot plan of its own. It cuts to Munder Difflin's real add agent dialog: a free app that uses the engine you already pay for."></video><figcaption>Every plan with Grok Bot, then Munder Difflin: a free app that runs on the AI engine you already use.</figcaption></figure>
+<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/grok-bot-pricing/lead-still.png" aria-label="A looping animation. A receipt prints the plans that include Grok Bot, from Cursor Pro at 20 dollars to SuperGrok Heavy at 300 dollars, and ends with no Grok Bot plan of its own. It cuts to Vishwajeet Team's real add agent dialog: a free app that uses the engine you already pay for."><source src="/blog/assets/media/grok-bot-pricing/lead.mp4" type="video/mp4"><img src="/blog/assets/media/grok-bot-pricing/lead.gif" width="1360" height="764" alt="A looping animation. A receipt prints the plans that include Grok Bot, from Cursor Pro at 20 dollars to SuperGrok Heavy at 300 dollars, and ends with no Grok Bot plan of its own. It cuts to Vishwajeet Team's real add agent dialog: a free app that uses the engine you already pay for."></video><figcaption>Every plan with Grok Bot, then Vishwajeet Team: a free app that runs on the AI engine you already use.</figcaption></figure>
 <style>.lead-loop{margin:1.4rem 0 .6rem;border:1px solid #D9CFE0;border-radius:16px;overflow:hidden;background:#FFF8E7}.lead-loop video,.lead-loop img{display:block;width:100%;height:auto;margin:0}.lead-loop figcaption{font:500 13px/1.5 "Space Grotesk",system-ui,sans-serif;color:#6B5878;padding:10px 16px 14px;margin:0;border-top:1px solid #D9CFE0;background:#FCFAF0}</style>
 <script>if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.lead-loop video').forEach(function(v){v.removeAttribute('autoplay');v.pause();v.currentTime=0;v.load()})}</script>
 
@@ -86,11 +86,11 @@ We cover what those limits mean in our [Grok Bot alternatives](/blog/grok-bot-al
 
 If your Bots would mostly do engineering or other work on files, compare the cost of running the agents yourself.
 
-[Munder Difflin](https://harnessmd.com/download) is a free and open source desktop app (MIT licence) for macOS, Windows and Linux. It turns the AI tools you already use into a team: Claude Code, Codex, Gemini CLI, Cursor, OpenCode, Grok's own CLI and six others. Each agent gets a desk, an inbox, long term memory and a shared task board, and you can start work from Slack or a webhook.
+[Vishwajeet Team](https://harnessmd.com/download) is a free and open source desktop app (MIT licence) for macOS, Windows and Linux. It turns the AI tools you already use into a team: Claude Code, Codex, Gemini CLI, Cursor, OpenCode, Grok's own CLI and six others. Each agent gets a desk, an inbox, long term memory and a shared task board, and you can start work from Slack or a webhook.
 
 What it costs:
 
-| | Grok Bot | Munder Difflin |
+| | Grok Bot | Vishwajeet Team |
 | --- | --- | --- |
 | The app | Inside a $20 to $300 plan | Free |
 | The AI | Included, Cursor picks the model | The subscription or API key you already have, or a free local model |
@@ -99,6 +99,6 @@ What it costs:
 
 If you already pay for a Claude or ChatGPT plan, the agents run on that. If you want to spend nothing on tokens, [run it on open models](/blog/run-munder-difflin-on-open-models/) with Ollama, LM Studio or vLLM.
 
-The honest trade: agents run only while your computer is on, and Munder Difflin will not do errands like booking travel. For overnight work, a [Mac mini that stays awake](/blog/run-munder-difflin-on-a-mac-mini/) does the job for a one time cost.
+The honest trade: agents run only while your computer is on, and Vishwajeet Team will not do errands like booking travel. For overnight work, a [Mac mini that stays awake](/blog/run-munder-difflin-on-a-mac-mini/) does the job for a one time cost.
 
 Want to see how Grok Bot stacks up against Meta's new agent? Read [Meta Muse vs Grok Bot](/blog/meta-muse-vs-grok-bot/).

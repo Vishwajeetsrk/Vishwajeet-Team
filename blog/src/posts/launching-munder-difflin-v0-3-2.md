@@ -1,18 +1,18 @@
 ---
-title: "Launching Munder Difflin v0.3.2: Talk to Michael, a Realtime Voice Orchestrator"
-description: "Munder Difflin v0.3.2 adds Realtime Michael — a low-latency voice channel to the GOD orchestrator. Talk to Michael and he listens, answers, and acts: reading the hive and, behind spoken echo-back confirmation, dispatching, spawning, and steering the floor in real time."
+title: "Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator"
+description: "Vishwajeet Team v0.3.2 adds Realtime Michael — a low-latency voice channel to the GOD orchestrator. Talk to Michael and he listens, answers, and acts: reading the hive and, behind spoken echo-back confirmation, dispatching, spawning, and steering the floor in real time."
 date: 2026-06-27
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.3.2"
+primaryKeyword: "Vishwajeet Team v0.3.2"
 secondaryKeywords: ["realtime voice ai orchestrator", "talk to ai agents by voice", "openai realtime api electron", "voice controlled multi-agent", "byok openai key voice agent", "voice action confirmation"]
 tags: ["Story", "Release", "Multi-Agent", "Voice", "Realtime", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's new in Munder Difflin v0.3.2?"
+  - q: "What's new in Vishwajeet Team v0.3.2?"
     a: "The headline is Realtime Michael — a low-latency voice channel to the GOD orchestrator that runs alongside the async terminal floor. Press Talk and Michael listens, answers, and acts in real time over the OpenAI Realtime API (WebRTC): he reads the hive (tasks, board, memory, agents, activity) and — behind spoken echo-back confirmation for anything destructive — creates and assigns work, dispatches agents, spawns and kills workers, and steers the floor, attributed to a distinct michael-voice actor. He greets you on connect, speaks task completions the moment they land ('respond when done'), and runs under a live cost meter with a hard spend cap and idle auto-disconnect. It's bring-your-own OpenAI key, decrypted main-only and minted into short-lived ephemeral session tokens. Plus Slack hardening, a dedicated auto-compact schedule, and per-agent environment metadata."
   - q: "How does talking to Michael actually work?"
     a: "Press the Talk button (on Michael's card, or in any fullscreen terminal). Main mints a short-lived ephemeral token from your OpenAI key and the renderer opens a WebRTC voice session against the OpenAI Realtime API, with echo/noise/gain processing, semantic-VAD turn-taking and barge-in, and a device picker for your mic and speaker. Michael's card shows a live Off → Connecting → Listening → Responding → Working state. He greets you on connect, and from there it's a normal back-and-forth — except he can also act on what you ask."
@@ -26,7 +26,7 @@ faq:
     a: "Yes. v0.3.2 is additive. The three v0.3.1 engines (OpenCode, Crush, pi.dev) with BYOK keys + local LLMs, selectable agent engines, the integrations registry + secret broker, Slack-spawned ephemeral workers, the Agent Gallery, Free Flow voice dictation, the enterprise Knowledge Graph, multi-window floors, observability, the circuit breaker, durable persistence, the Command Center, task kanban, GitHub/CI integration, and the Schedules tab all remain functional and shipping."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin v0.3.2</strong> lets you <strong>talk to Michael</strong>. <strong>Realtime Michael</strong> is a low-latency <strong>voice channel to the GOD orchestrator</strong> (OpenAI Realtime API over WebRTC) that runs next to the async terminal floor. Press <strong>Talk</strong> and Michael listens, answers, and <em>acts</em> — reading the hive and, behind spoken <strong>echo-back confirmation</strong> for anything destructive, creating and assigning work, dispatching, spawning and killing workers, and steering the floor as a distinct <strong>michael-voice</strong> actor. He <strong>greets you on connect</strong>, <strong>speaks completions</strong> the moment they land, and runs under a <strong>live cost meter + spend cap + idle auto-disconnect</strong>. <strong>Bring your own OpenAI key</strong> — decrypted main-only, minted into short-lived ephemeral tokens, never read back to the renderer. Free, open source, local-first.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team v0.3.2</strong> lets you <strong>talk to Michael</strong>. <strong>Realtime Michael</strong> is a low-latency <strong>voice channel to the GOD orchestrator</strong> (OpenAI Realtime API over WebRTC) that runs next to the async terminal floor. Press <strong>Talk</strong> and Michael listens, answers, and <em>acts</em> — reading the hive and, behind spoken <strong>echo-back confirmation</strong> for anything destructive, creating and assigning work, dispatching, spawning and killing workers, and steering the floor as a distinct <strong>michael-voice</strong> actor. He <strong>greets you on connect</strong>, <strong>speaks completions</strong> the moment they land, and runs under a <strong>live cost meter + spend cap + idle auto-disconnect</strong>. <strong>Bring your own OpenAI key</strong> — decrypted main-only, minted into short-lived ephemeral tokens, never read back to the renderer. Free, open source, local-first.</p></div>
 
 for a while now you could *watch* the floor. you could read the board, watch envelopes fly desk-to-desk, type into a terminal, and tell Michael — the GOD orchestrator who runs the office like a regional manager who's read one management book — what to do by typing it. but you couldn't *talk* to him. the office was a thing you operated; not a thing you had a conversation with.
 
@@ -117,7 +117,7 @@ the floor you already run — now with a regional manager you can actually call.
 
 ## get v0.3.2
 
-Munder Difflin is **free, open source, and local-first** on macOS, Windows, and Linux. no account, no cloud for the floor itself — your machine, your subscriptions, your office.
+Vishwajeet Team is **free, open source, and local-first** on macOS, Windows, and Linux. no account, no cloud for the floor itself — your machine, your subscriptions, your office.
 
 [**Download v0.3.2**](https://github.com/chaitanyagiri/munder-difflin/releases/latest), set your OpenAI key under **Settings → AI Engines**, hit **Talk**, and ask Michael what everyone's working on. then — if you're feeling brave — tell him to spawn someone, listen to him read the plan back, and say the magic word.
 

@@ -15,7 +15,7 @@ faq:
   - q: "What does it mean to orchestrate Claude Code agents?"
     a: "Orchestration is the layer that decides which agent does what: it reads your intent, decomposes it into tasks, routes each to the right agent, resolves routine questions between agents, and escalates only the decisions that genuinely need a human."
   - q: "Do I write the orchestration logic myself?"
-    a: "You can, but you don't have to. In Munder Difflin the orchestrator is itself a Claude agent — the GOD agent — so the routing intelligence is a prompt you tune, not code you maintain. The harness provides the mechanism (messaging, git, escalation queue); the agent provides the judgment."
+    a: "You can, but you don't have to. In Vishwajeet Team the orchestrator is itself a Claude agent — the GOD agent — so the routing intelligence is a prompt you tune, not code you maintain. The harness provides the mechanism (messaging, git, escalation queue); the agent provides the judgment."
   - q: "How is an orchestrator different from a task queue?"
     a: "A queue hands out work in order; it doesn't reason about it. An orchestrator reads each request, decides who's best suited, writes a self-contained task spec, and adapts when an agent gets blocked or two agents conflict."
 ---
@@ -24,7 +24,7 @@ faq:
 that turns "a few Claude Code agents" into "a team that finishes a goal." It reads your intent,
 <strong>decomposes</strong> it, <strong>routes</strong> each piece to the right agent, <strong>adjudicates</strong>
 the routine back-and-forth between agents, and <strong>escalates</strong> only the critical calls to
-you. In Munder Difflin that role is played by a GOD orchestrator — a Claude agent whose only job is to
+you. In Vishwajeet Team that role is played by a GOD orchestrator — a Claude agent whose only job is to
 run the floor.</p></div>
 
 Most "multi-agent" setups are really just multiple agents — several sessions running side by side
@@ -59,7 +59,7 @@ The cleanest way to build this is to split it in two:
 - **The intelligence** is an agent — the orchestrator — that reads requests and decides. It must be
   smart, and it's allowed to be imperfect, because the mechanism keeps the system safe.
 
-In Munder Difflin the mechanism is the harness's main process (it runs git, the message router, and
+In Vishwajeet Team the mechanism is the harness's main process (it runs git, the message router, and
 the approvals queue) and the intelligence is the **GOD agent** — an ordinary `claude` process flagged
 as the orchestrator, seated in the corner office. Because the orchestrator is a prompt, not a
 codebase, you tune *how* it routes and *what* it considers critical by editing its instructions, not
@@ -151,7 +151,7 @@ you stop being the router yourself, which is almost always the bigger time sink.
 
 ---
 
-Munder Difflin ships this [orchestration model](https://munderdiffl.in/#how) out of the box: a GOD agent you talk to, a reliable
+Vishwajeet Team ships this [orchestration model](https://munderdiffl.in/#how) out of the box: a GOD agent you talk to, a reliable
 message router, and a human-approval queue for the critical few — all running locally.
-[Download Munder Difflin](https://munderdiffl.in/#install) to orchestrate your own team of Claude Code
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to orchestrate your own team of Claude Code
 agents; it's free and open source.

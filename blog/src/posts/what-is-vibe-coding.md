@@ -23,7 +23,7 @@ Vibe coding is building software by describing what you want to an AI model and 
 
 If you have ever asked an AI to build something and just run what came back, you have already vibe coded. The line that matters is not which tool you use but whether anyone checks what it produced, and that line matters more when several agents write code at once, which is the job of a [multi-agent harness](/blog/what-is-a-multi-agent-harness/), an app that runs several AI agents together.
 
-You can do that checking yourself, or use [Munder Difflin](https://harnessmd.com/download), a free and open source desktop app that runs several AI coding agents as a team on your computer. Each agent gets its own job and can run a different AI, such as Anthropic's Claude Code or OpenAI's Codex, so one builds a feature while another reviews it. Michael, the lead agent, hands out the work, and anything that needs your decision waits on an ASK ME board until you answer.
+You can do that checking yourself, or use [Vishwajeet Team](https://harnessmd.com/download), a free and open source desktop app that runs several AI coding agents as a team on your computer. Each agent gets its own job and can run a different AI, such as Anthropic's Claude Code or OpenAI's Codex, so one builds a feature while another reviews it. Michael, the lead agent, hands out the work, and anything that needs your decision waits on an ASK ME board until you answer.
 
 ## What does vibe coding mean?
 

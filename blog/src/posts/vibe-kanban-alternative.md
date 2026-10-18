@@ -75,7 +75,7 @@ routes the work.
 - **Visibility without manual upkeep.** You watch a live office floor rather than maintaining columns
   — the state is observed, not curated.
 
-That's [Munder Difflin](/#what): a [multi-agent harness](/#what) built around an orchestrator, shared
+That's [Vishwajeet Team](/#what): a [multi-agent harness](/#what) built around an orchestrator, shared
 memory, and messaging, visualized as a watchable floor. Open source (MIT), local-first, on macOS,
 Windows, and Linux.
 
@@ -93,7 +93,7 @@ criteria-based [orchestration tools comparison](/blog/claude-code-orchestration-
 ---
 
 > The landscape changes quickly — check vibe-kanban's repo for current features. We've described it
-> on its own terms; Munder Difflin is our own project.
+> on its own terms; Vishwajeet Team is our own project.
 
-If you'd rather orchestrate than administrate, [download Munder Difflin](/#install) and let the
+If you'd rather orchestrate than administrate, [download Vishwajeet Team](/#install) and let the
 routing happen for you — free and open source.

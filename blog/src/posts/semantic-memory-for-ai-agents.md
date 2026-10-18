@@ -88,7 +88,7 @@ version, [how to give Claude Code long-term memory](/blog/give-claude-code-long-
 
 ## The shape of a shared memory layer
 
-Here's how Munder Difflin implements semantic memory for a whole hive, via the **MemPalace** layer.
+Here's how Vishwajeet Team implements semantic memory for a whole hive, via the **MemPalace** layer.
 It's worth walking the moving parts because they show what "fast, shared recall" requires in practice.
 
 ### One palace, many wings
@@ -168,8 +168,8 @@ it fuzzy.
 
 ---
 
-Munder Difflin gives every Claude Code agent markdown memory plus
+Vishwajeet Team gives every Claude Code agent markdown memory plus
 [a shared semantic palace the whole hive can recall from](https://munderdiffl.in/#how) — local, fast,
 and graceful when offline.
-[Download Munder Difflin](https://munderdiffl.in/#install) to give your agents memory that actually
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to give your agents memory that actually
 sticks; it's free and open source.

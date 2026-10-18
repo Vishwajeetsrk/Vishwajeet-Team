@@ -1,6 +1,6 @@
 ---
 title: "Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace"
-description: "Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here's how we found it, and what v0.3.7 changes."
+description: "Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here's how we found it, and what v0.3.7 changes."
 date: 2026-08-08
 category: internals
 categoryLabel: Internals
@@ -18,13 +18,13 @@ faq:
     a: "The whole updater setup block was behind an `app.isPackaged` check, which is false in dev. Development runs never executed the line that threw, so the bug could only ever appear in a shipped build — and shipped builds have no visible console. It survived three releases that way."
   - q: "How do you debug an Electron app that only misbehaves when packaged?"
     a: "Launch the installed binary directly from a terminal with an isolated data directory: `/Applications/YourApp.app/Contents/MacOS/YourApp --user-data-dir=/tmp/probe`. Electron's single-instance lock is keyed to the user-data directory, so this runs alongside the copy the user already has open, and every console.log and stack trace lands in your terminal instead of disappearing."
-  - q: "Do I need to reinstall Munder Difflin to get v0.3.7?"
+  - q: "Do I need to reinstall Vishwajeet Team to get v0.3.7?"
     a: "Yes, once. Every build from v0.3.4 through v0.3.6 carries the broken updater, so it cannot fetch this fix by itself. Download v0.3.7 manually from munderdiffl.in or the GitHub releases page. From v0.3.7 onward, updates download in the background and wait for your restart."
   - q: "How do you stop a bug like this from hiding again?"
     a: "Three changes. Errors are never swallowed — every updater failure is emitted to the UI and appended to a log file on disk. The notify-only fallback is per-check rather than a permanent latch, so one blip doesn't disable updates for the session. And the state model moved into a plain electron-free module with unit tests, so the rules can be verified without booting the app."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin shipped auto-update in <strong>v0.3.4</strong>. It never ran — not once, in any packaged build, through three releases. The cause was a single destructuring assignment across the CommonJS/ESM boundary that produced <code>undefined</code>, and a <code>catch</code> block that threw away the error message. <strong>v0.3.7</strong> fixes it, turns the toolbar version into the update button, and makes sure the next failure can't hide.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team shipped auto-update in <strong>v0.3.4</strong>. It never ran — not once, in any packaged build, through three releases. The cause was a single destructuring assignment across the CommonJS/ESM boundary that produced <code>undefined</code>, and a <code>catch</code> block that threw away the error message. <strong>v0.3.7</strong> fixes it, turns the toolbar version into the update button, and makes sure the next failure can't hide.</p></div>
 
 A user restarted the app after v0.3.6 went live and reported that auto-update hadn't
 triggered. What they got instead was a toast offering to open the releases page in a
@@ -41,9 +41,9 @@ under a microscope first:
 
 ```bash
 shasum -a 512 Munder-Difflin-0.3.6-mac-universal.zip   # matches latest-mac.yml exactly
-codesign --verify --deep --strict --verbose=2 "Munder Difflin.app"
-xcrun stapler validate "Munder Difflin.app"
-spctl --assess -vv "Munder Difflin.app"
+codesign --verify --deep --strict --verbose=2 "Vishwajeet Team.app"
+xcrun stapler validate "Vishwajeet Team.app"
+spctl --assess -vv "Vishwajeet Team.app"
 ```
 
 All clean. Developer ID signature, notarization ticket stapled, `spctl` accepted, and the
@@ -66,7 +66,7 @@ directory.** Point a second launch at a different one and it runs happily alongs
 copy already open, with stdout wired to your terminal.
 
 ```bash
-"/Applications/Munder Difflin.app/Contents/MacOS/Munder Difflin" \
+"/Applications/Vishwajeet Team.app/Contents/MacOS/Vishwajeet Team" \
   --user-data-dir=/tmp/updater-probe
 ```
 

@@ -28,7 +28,7 @@ Add "explain this in ASD-STE100, about 80% of the way" to a prompt and the answe
 
 The trick comes from [a post by Andrej Karpathy](https://x.com/karpathy/status/2105819303471976479) on 2 Oct 2026. Karpathy helped start OpenAI and [joined Anthropic's pretraining team](https://www.searchenginejournal.com/karpathy-llm-aircraft-manual-writing/591813/) in May 2026. His post had more than 6.7 million views when we checked.
 
-If your AI work is code, [Munder Difflin](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup. More how to posts sit in our [Guides hub](/blog/topics/guides/).
+If your AI work is code, [Vishwajeet Team](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup. More how to posts sit in our [Guides hub](/blog/topics/guides/).
 
 ## What is ASD-STE100?
 

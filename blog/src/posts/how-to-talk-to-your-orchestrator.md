@@ -1,6 +1,6 @@
 ---
 title: "How to Brief Your Orchestrator (So the Floor Actually Ships)"
-description: "A practical guide to briefing Munder Difflin's GOD orchestrator: state the goal not the steps, set constraints and budgets, name the deliverable, and let Michael staff the floor. With bad-vs-good brief examples, mid-run steering, and Talk mode."
+description: "A practical guide to briefing Vishwajeet Team's GOD orchestrator: state the goal not the steps, set constraints and budgets, name the deliverable, and let Michael staff the floor. With bad-vs-good brief examples, mid-run steering, and Talk mode."
 date: 2026-07-03
 category: guides
 categoryLabel: Guides
@@ -15,12 +15,12 @@ faq:
   - q: "What should a brief to an AI orchestrator contain?"
     a: "Four things: the goal (the outcome you want, not the steps), the constraints (what the agents must not touch, which repo, what conventions to follow), the budget (token caps and rough time expectations), and the deliverable (what artifact proves the work is done — a PR, a passing test suite, a document). Everything else — task breakdown, staffing, sequencing — is the orchestrator's job."
   - q: "Why shouldn't I tell the orchestrator the exact steps?"
-    a: "Because step-by-step briefs turn a supervisor into a typist. Munder Difflin's GOD orchestrator exists to decompose work, assign it to the right agents, wire dependencies on the task board, and adjudicate results. If you pre-chew every step, you lose the parallelism and the routing — and you own every mistake in your own plan. State the goal and the definition of done; let it plan."
+    a: "Because step-by-step briefs turn a supervisor into a typist. Vishwajeet Team's GOD orchestrator exists to decompose work, assign it to the right agents, wire dependencies on the task board, and adjudicate results. If you pre-chew every step, you lose the parallelism and the routing — and you own every mistake in your own plan. State the goal and the definition of done; let it plan."
   - q: "How do I steer the orchestrator mid-run without killing agents?"
-    a: "Munder Difflin has a mid-run steer and a graceful stop built on Claude Code hook returns, so you can redirect or halt an agent without killing its session. You can also type directly into any agent's terminal, message the orchestrator to re-plan, or use the circuit breaker's steer-constrain-stop ladder if something is looping or overspending."
+    a: "Vishwajeet Team has a mid-run steer and a graceful stop built on Claude Code hook returns, so you can redirect or halt an agent without killing its session. You can also type directly into any agent's terminal, message the orchestrator to re-plan, or use the circuit breaker's steer-constrain-stop ladder if something is looping or overspending."
   - q: "How do I ask the orchestrator for status?"
     a: "Ask it directly — 'what's the state of the floor?' — in its terminal or over Talk mode, where Michael reads the hive (tasks, board, memory, agents, activity) and answers out loud. Or read the surfaces yourself: the Command Center has a kanban Tasks tab, live fleet monitoring, token and cost telemetry, and an activity log."
-  - q: "What is Talk mode in Munder Difflin?"
+  - q: "What is Talk mode in Vishwajeet Team?"
     a: "Talk mode (Realtime Michael, shipped in v0.3.2) is a low-latency voice channel to the GOD orchestrator over the OpenAI Realtime API. Press Talk and Michael listens, answers, and acts: he creates and assigns tasks, dispatches agents, spawns and kills workers, and speaks task completions the moment they land. Destructive verbs require a spoken echo-back confirmation, and the session runs under a live cost meter with a hard spend cap. It's bring-your-own OpenAI key."
   - q: "Does the orchestrator ask for my approval before risky actions?"
     a: "Yes. The GOD agent resolves routine requests itself and escalates only critical items — spend, destructive operations, scope changes — into a human-in-the-loop approvals queue you act on. In Talk mode, destructive actions additionally require a spoken echo-back confirmation with a distinct confirm token, never a bare yes."
@@ -32,7 +32,7 @@ faq:
   <source src="/media/demo/orchestrator.mp4" type="video/mp4" />
 </video>
 
-Munder Difflin puts one agent between you and the floor: the GOD orchestrator — Michael — who reads every request, decomposes it, routes work to the right agents, and escalates only critical items back to you. (The full mechanics are in [how the GOD orchestrator works](/blog/how-the-god-orchestrator-works/).) That design has one implication people keep missing: **the quality of what the floor ships is mostly the quality of your brief.**
+Vishwajeet Team puts one agent between you and the floor: the GOD orchestrator — Michael — who reads every request, decomposes it, routes work to the right agents, and escalates only critical items back to you. (The full mechanics are in [how the GOD orchestrator works](/blog/how-the-god-orchestrator-works/).) That design has one implication people keep missing: **the quality of what the floor ships is mostly the quality of your brief.**
 
 Here's how to brief well.
 
@@ -50,7 +50,7 @@ State the outcome and the definition of done. Let the plan be his problem.
 
 **2. The constraints.** What must not change, where the work lives, what conventions apply. Which repo (the floor works over your registered repos), which directories are off-limits, "follow the existing design tokens," "don't touch the migration history." Constraints are cheap to write and expensive to omit — this is [context engineering](/blog/context-engineering-for-ai-agents/) at the human layer.
 
-**3. The budget.** Munder Difflin supports per-agent token budgets with live fleet monitoring, backed by a circuit breaker that nudges, constrains, then stops runaways. Say what the work is worth: "keep this under N tokens total" or "this is an overnight job, not a sprint." A budget in the brief becomes a budget on the floor.
+**3. The budget.** Vishwajeet Team supports per-agent token budgets with live fleet monitoring, backed by a circuit breaker that nudges, constrains, then stops runaways. Say what the work is worth: "keep this under N tokens total" or "this is an overnight job, not a sprint." A budget in the brief becomes a budget on the floor.
 
 **4. The deliverable.** Name the artifact that proves completion: a PR against main, a green test suite, a markdown report, a rendered page. "Done" without an artifact is a vibe; agents ship vibes enthusiastically.
 
@@ -80,7 +80,7 @@ Don't specify which agent does what unless you have a real reason. Michael assig
 
 A brief is not a launch-and-pray. Three controls matter while the floor runs:
 
-**Steering.** Munder Difflin has a mid-run steer and a graceful stop driven through Claude Code hook returns — you redirect an agent without killing its session. You can also type into any agent's terminal directly, or message Michael to re-plan: "drop the docs task, the API changed."
+**Steering.** Vishwajeet Team has a mid-run steer and a graceful stop driven through Claude Code hook returns — you redirect an agent without killing its session. You can also type into any agent's terminal directly, or message Michael to re-plan: "drop the docs task, the API changed."
 
 **Status.** Ask Michael in plain language — "what's the state of the floor?" — or read it yourself: the Command Center's Tasks kanban, live fleet monitoring, real token and cost telemetry, and the activity log.
 
@@ -96,4 +96,4 @@ The same brief discipline applies out loud. "Michael, goal: the changelog is upd
 
 Goal, constraints, budget, deliverable. Say it once, let Michael staff it, steer when reality changes, and answer your approvals. That's the whole skill — and it's the difference between a floor that looks busy and a floor that ships.
 
-[Download Munder Difflin](https://github.com/chaitanyagiri/munder-difflin/releases/latest) and brief your first floor — and if it ships something, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) is appreciated.
+[Download Vishwajeet Team](https://github.com/chaitanyagiri/munder-difflin/releases/latest) and brief your first floor — and if it ships something, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) is appreciated.

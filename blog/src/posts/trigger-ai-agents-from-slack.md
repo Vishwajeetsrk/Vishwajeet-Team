@@ -13,16 +13,16 @@ author:
   initials: CG
 faq:
   - q: "Can you trigger AI agents from Slack?"
-    a: "Yes. Munder Difflin can run a small local webhook that listens to a Slack channel and turns each message into a task in the orchestrator's queue. You type in Slack, and an agent picks the work up — without opening the app or sitting at your machine."
+    a: "Yes. Vishwajeet Team can run a small local webhook that listens to a Slack channel and turns each message into a task in the orchestrator's queue. You type in Slack, and an agent picks the work up — without opening the app or sitting at your machine."
   - q: "Is a Slack-to-agent webhook secure?"
     a: "It's built to be. Every request is verified with an HMAC over the raw body using your Slack signing secret, compared in constant time, with a five-minute replay-timestamp guard and a body-size cap checked before anything else. Anything that fails gets a 403. The local handler is the security boundary, not the public tunnel."
   - q: "Do I need to host a public server to trigger agents from Slack?"
     a: "No. The webhook runs on your own machine. A best-effort local tunnel gives Slack a public URL to reach that local port, so there's nothing to deploy or keep online — and if the tunnel can't start, your local handler still runs."
 ---
 
-<div class="callout note"><span class="ic">0.5.2 update</span><p>On Munder Difflin 0.5.2 or later, Slack connects without a public URL, and the fields have moved. Follow <a href="/blog/connect-slack-to-munder-difflin/">How to Connect Slack to Munder Difflin 0.5.2</a> for the current setup.</p></div>
+<div class="callout note"><span class="ic">0.5.2 update</span><p>On Vishwajeet Team 0.5.2 or later, Slack connects without a public URL, and the fields have moved. Follow <a href="/blog/connect-slack-to-munder-difflin/">How to Connect Slack to Vishwajeet Team 0.5.2</a> for the current setup.</p></div>
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin v0.1.7 can <strong>trigger your
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team v0.1.7 can <strong>trigger your
 agent hive from Slack</strong>: a tiny local webhook listens to a channel, <strong>verifies every
 request</strong> with your Slack signing secret (HMAC + replay guard, 403 on anything suspicious), and
 drops the message into the orchestrator's queue as a task. The server runs <em>on your machine</em>; a
@@ -31,7 +31,7 @@ best-effort tunnel just gives Slack a doorbell to ring. You get a remote trigger
 
 Most of the time you drive your agents from the app. But sometimes the work starts somewhere else — a
 teammate drops a request in a channel, or you're away from your desk and want to kick off a long run
-from your phone. Munder Difflin's Slack integration (shipped in v0.1.7) closes that gap: a message in a
+from your phone. Vishwajeet Team's Slack integration (shipped in v0.1.7) closes that gap: a message in a
 watched Slack channel becomes a task in your hive's queue. Here's how it works, and why it stays true
 to a local-first design.
 
@@ -130,7 +130,7 @@ to reach it — nothing to host, and the local handler runs even if the tunnel d
 
 ---
 
-Munder Difflin turns a Slack channel into a remote control for a hive that still lives entirely on your
+Vishwajeet Team turns a Slack channel into a remote control for a hive that still lives entirely on your
 machine — [orchestrated by GOD](https://munderdiffl.in/#how), verified at the edge, queued like any
-other task. [Download Munder Difflin](https://munderdiffl.in/#install) to drive your agents from chat;
+other task. [Download Vishwajeet Team](https://munderdiffl.in/#install) to drive your agents from chat;
 it's free and open source.

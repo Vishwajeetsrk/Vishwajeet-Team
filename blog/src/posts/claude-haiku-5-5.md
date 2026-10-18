@@ -23,7 +23,7 @@ faq:
 
 Claude Haiku 5.5 is Anthropic's new small model: much cheaper than Haiku 4.5 on prompts up to 100,000 tokens, and behind Sonnet 5.5 on every row of Anthropic's own benchmark table. Anthropic released it on 7 October 2026. We have not tried it. Checked 8 Oct 2026.
 
-[Munder Difflin](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. A cheaper small model matters when several agents run at once, which is why we cover it. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup and the [Concepts hub](/blog/topics/concepts/) explains the terms.
+[Vishwajeet Team](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. A cheaper small model matters when several agents run at once, which is why we cover it. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup and the [Concepts hub](/blog/topics/concepts/) explains the terms.
 
 ## What is Claude Haiku 5.5?
 

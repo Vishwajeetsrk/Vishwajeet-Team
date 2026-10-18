@@ -1,36 +1,36 @@
 ---
-title: "Launching Munder Difflin v0.2.4"
-description: "Munder Difflin v0.2.4 is here: Claude Code, OpenAI Codex, and Antigravity (Gemini) agents now run as one hive with full parity — no API keys, no setup. Brief a GOD orchestrator, automate basically anything in one prompt, and close the lid while it keeps working."
+title: "Launching Vishwajeet Team v0.2.4"
+description: "Vishwajeet Team v0.2.4 is here: Claude Code, OpenAI Codex, and Antigravity (Gemini) agents now run as one hive with full parity — no API keys, no setup. Brief a GOD orchestrator, automate basically anything in one prompt, and close the lid while it keeps working."
 date: 2026-06-09
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.2.4"
-secondaryKeywords: ["codex hive parity", "munder difflin release", "multi-provider agents", "codex lifecycle hook bridge", "antigravity gemini agents"]
+primaryKeyword: "Vishwajeet Team v0.2.4"
+secondaryKeywords: ["codex hive parity", "Vishwajeet Team release", "multi-provider agents", "codex lifecycle hook bridge", "antigravity gemini agents"]
 tags: ["Story", "Release", "Multi-Agent", "Claude Code", "Codex", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's new in Munder Difflin v0.2.4?"
+  - q: "What's new in Vishwajeet Team v0.2.4?"
     a: "v0.2.4's headline is full Codex hive parity: Codex now has a lifecycle-hook bridge — the same integration Antigravity has had since v0.2.3. So Claude Code, Antigravity (Gemini), and OpenAI Codex are now equally first-class. It also ships a heartbeat re-engage fix so the GOD orchestrator wakes the moment actionable mail lands, and god now opens to its Terminal sidebar by default."
   - q: "What does Codex full hive parity mean?"
     a: "In v0.2.3, Codex was inbox-capable but not fully hive-aware — it used an idle inbox-wake nudge for delivery. In v0.2.4, Codex has a real lifecycle-hook bridge that unifies agy and Codex dispatch. Both CLIs go through the same hook pipeline: live status, inbox drain, and outbox routing work identically for all three providers."
   - q: "Do I need an API key for Antigravity or Codex?"
-    a: "No. Antigravity runs on your Antigravity subscription (Gemini via the agy CLI). Codex runs on your OpenAI subscription (via the codex CLI). Munder Difflin drives the CLIs you already have — it doesn't replace them or require separate API credentials."
+    a: "No. Antigravity runs on your Antigravity subscription (Gemini via the agy CLI). Codex runs on your OpenAI subscription (via the codex CLI). Vishwajeet Team drives the CLIs you already have — it doesn't replace them or require separate API credentials."
   - q: "Can I mix Claude Code, Antigravity, and Codex in the same hive?"
     a: "Yes. All three are first-class hive participants. You can run Claude Code as the GOD orchestrator while Antigravity and Codex workers handle tasks — all sharing one inbox system, one shared memory, and one coordination layer."
-  - q: "Can I trigger Munder Difflin from Slack or my phone?"
+  - q: "Can I trigger Vishwajeet Team from Slack or my phone?"
     a: "Yes. Send a message in Slack — or POST to a secure, opt-in webhook — and the GOD orchestrator picks it up as a task, routes it, runs it, and replies back in the thread when it's done. It's off by default until you switch it on, so you can kick off a job from your phone mid-commute or wire the hive into CI."
-  - q: "What can I automate in one prompt with Munder Difflin?"
+  - q: "What can I automate in one prompt with Vishwajeet Team?"
     a: "Basically anything you'd otherwise babysit. One prompt to the GOD orchestrator built our own CodeRabbit-style PR reviewer for any repo — review the open PRs and set up an hourly mission to review new ones — and it just kept running. Schedules, monitoring, and a token budget keep it grinding hands-free without burning your bill."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin v0.2.4</strong> closes the loop on multi-provider. <strong>Claude Code, Antigravity (Gemini · <code>agy</code>), and OpenAI Codex</strong> are now equally first-class — three CLIs, one hive, no second-class citizens. No API keys, no setup. Brief a GOD orchestrator like you'd brief a coworker, automate basically anything in one prompt, trigger it from Slack on your phone, and close the lid while a whole floor of agents keeps working. Free, open source, local-first.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team v0.2.4</strong> closes the loop on multi-provider. <strong>Claude Code, Antigravity (Gemini · <code>agy</code>), and OpenAI Codex</strong> are now equally first-class — three CLIs, one hive, no second-class citizens. No API keys, no setup. Brief a GOD orchestrator like you'd brief a coworker, automate basically anything in one prompt, trigger it from Slack on your phone, and close the lid while a whole floor of agents keeps working. Free, open source, local-first.</p></div>
 
 ok so here's the thing. you already have a coding agent in your terminal. it's great. it's also *one* of it, and it stops the second you close the laptop.
 
-now picture a whole **floor** of them — a researcher, a writer, a builder, a reviewer — all talking to each other, sharing memory, and run by one orchestrator you just… talk to. that's Munder Difflin. and as of **v0.2.4**, the floor doesn't care which AI you brought.
+now picture a whole **floor** of them — a researcher, a writer, a builder, a reviewer — all talking to each other, sharing memory, and run by one orchestrator you just… talk to. that's Vishwajeet Team. and as of **v0.2.4**, the floor doesn't care which AI you brought.
 
 ## three CLIs, one hive, zero second-class citizens
 
@@ -40,7 +40,7 @@ Last month we made the floor multi-provider. Claude Code agents got joined by **
 
 That's over. v0.2.4 gives **Codex a full lifecycle-hook bridge** — the exact same integration Antigravity has had since day one. `agy` and `codex` now run down one unified dispatch path. Live status on the floor, inbox drain, outbox routing — all three providers, all identical.
 
-The best part? **you don't pay for any of it twice.** No API keys. Munder Difflin just drives the CLIs you already have:
+The best part? **you don't pay for any of it twice.** No API keys. Vishwajeet Team just drives the CLIs you already have:
 
 - **Claude Code** — your Claude subscription. The OG. Still the recommended pick for the GOD orchestrator (extended context + reasoning depth = good boss energy).
 - **Antigravity** — your Antigravity subscription. Gemini's strengths, full hive participant.
@@ -95,7 +95,7 @@ Recurring missions are the thing you didn't know you needed. "Check for new PRs 
 
 ### 🌙 close the lid, it keeps working
 
-This is the one people don't believe until they see it. When agents are mid-turn and your machine tries to sleep or lock, Munder Difflin holds the line (it blocks app suspension while work is live) so a long mission doesn't get guillotined the moment your screen dims. Start something big, walk away, come back to it done. **Overnight runs are a feature, not a gamble.**
+This is the one people don't believe until they see it. When agents are mid-turn and your machine tries to sleep or lock, Vishwajeet Team holds the line (it blocks app suspension while work is live) so a long mission doesn't get guillotined the moment your screen dims. Start something big, walk away, come back to it done. **Overnight runs are a feature, not a gamble.**
 
 ### 🏢 yes, it really looks like *The Office*
 
@@ -120,7 +120,7 @@ contributor the project ever had. Thank you.
 
 ## get v0.2.4
 
-Munder Difflin is **free, open source, and local-first** on macOS, Windows, and Linux. No account. No cloud. Your machine, your subscriptions, your floor.
+Vishwajeet Team is **free, open source, and local-first** on macOS, Windows, and Linux. No account. No cloud. Your machine, your subscriptions, your floor.
 
 [**Download v0.2.4**](https://github.com/chaitanyagiri/munder-difflin/releases/latest) — install the CLIs you want (`claude`, `agy`, and/or `codex`), add them to the floor, and brief your first GOD orchestrator.
 

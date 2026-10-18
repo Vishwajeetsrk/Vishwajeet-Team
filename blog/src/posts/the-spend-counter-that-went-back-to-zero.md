@@ -12,7 +12,7 @@ author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What was wrong with cost reporting in Munder Difflin?"
+  - q: "What was wrong with cost reporting in Vishwajeet Team?"
     a: "The per-agent spend figure counted from the moment the app process started, not from the moment the agent started. Restarting the app rebuilt the in-memory accumulator empty, so the counter began again at zero under the same session id. Anything reading the latest value read one app session's worth of spend and called it the total. On our own floor that hid 59 percent of it."
   - q: "Why did nobody notice a number that was wrong by more than half?"
     a: "Because it never looked wrong. Inside any single run the counter only climbed, so it behaved exactly like a lifetime total. Nothing threw, nothing went negative, nothing came back NaN. The reset is only visible if you look at the whole history at once, and the number is the kind you glance at rather than reconcile."
@@ -22,7 +22,7 @@ faq:
     a: "We looked at that and rejected it. Real restarts in our own ledger fall from peaks under a dollar straight to zero, so a one dollar threshold would have silently missed them. A cumulative counter has no legitimate reason to fall at all, so the threshold bought tidiness and cost coverage. Any decrease counts, with a float epsilon and nothing more."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin tells you what your
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team tells you what your
 floor of agents costs. That number was wrong by <strong>59 percent</strong>, and it had been
 wrong quietly, because it was a counter that measured from process start while its label said
 lifetime. Restart the app and it began again at zero under the same session id. The fix is not a
@@ -144,7 +144,7 @@ about to type is just a hole.
 
 ## Doing it without freezing the app
 
-Munder Difflin is an Electron app, and the ledger is append-only, which is a polite way of saying
+Vishwajeet Team is an Electron app, and the ledger is append-only, which is a polite way of saying
 it grows forever. A full pass over it is not something you want on the main thread. Block that
 thread and the whole UI stops: the floor, the terminals, the window itself.
 

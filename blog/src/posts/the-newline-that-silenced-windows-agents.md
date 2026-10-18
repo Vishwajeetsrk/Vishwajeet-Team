@@ -27,14 +27,14 @@ and <strong>cmd.exe truncates an argument at its first newline</strong>. Our sta
 multi-line. Every Windows agent got line one and lost the rest. Here's the full anatomy, because
 this bug class is hiding in more codebases than ours.</p></div>
 
-A huge share of the people who install Munder Difflin do it on Windows. For an uncomfortably
+A huge share of the people who install Vishwajeet Team do it on Windows. For an uncomfortably
 long time, the core of the product —
 [agents talking to each other](/blog/can-claude-code-agents-talk-to-each-other/) — did not work
 for those users, and neither they nor we could tell. This is the autopsy.
 
 ## The setup
 
-When Munder Difflin spawns an agent, it passes the **hive protocol** as a command-line argument
+When Vishwajeet Team spawns an agent, it passes the **hive protocol** as a command-line argument
 to the engine CLI: a multi-line block that names the agent, points at its `inbox/` and
 `outbox/` folders, explains the [file-mailbox rules](/blog/atomic-file-mailboxes-for-agents/),
 and tells it where its memory lives. One argument, many lines. On POSIX systems this is

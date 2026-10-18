@@ -27,7 +27,7 @@ the floor, a small <strong>BFS pathfinder</strong> for movement, <strong>sprite-
 <strong>envelopes</strong> for messages — all in Pixi.js. None of it is heavy; it's game craft applied
 to a developer tool.</p></div>
 
-The office floor in Munder Difflin looks like a little workplace sim, and that's on purpose — a
+The office floor in Vishwajeet Team looks like a little workplace sim, and that's on purpose — a
 spatial, game-like view makes a hive of agents legible. Under the hood it's a handful of classic
 game-development techniques, kept deliberately lightweight so they fit inside a dev tool. This post is
 the techniques tour. (For *why* a visualization matters and the Pixi.js plumbing, start with
@@ -157,6 +157,6 @@ techniques — the hard part is wiring them to *real* agent events, not the rend
 
 ---
 
-Munder Difflin's [office floor](https://munderdiffl.in/#how) turns a hive of Claude Code agents into a little workplace you can watch
+Vishwajeet Team's [office floor](https://munderdiffl.in/#how) turns a hive of Claude Code agents into a little workplace you can watch
 — Tiled maps, pathing avatars, and flying envelopes, all driven by real activity.
-[Download Munder Difflin](https://munderdiffl.in/#install) to see it run; it's free and open source.
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to see it run; it's free and open source.

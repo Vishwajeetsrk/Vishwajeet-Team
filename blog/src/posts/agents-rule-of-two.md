@@ -131,7 +131,7 @@ behind human-in-the-loop approval or another reliable validation, as Meta recomm
 
 ---
 
-Munder Difflin is built for the safe side of this rule: a [local-first hive](https://munderdiffl.in/#how)
+Vishwajeet Team is built for the safe side of this rule: a [local-first hive](https://munderdiffl.in/#how)
 where your data stays on your machine and the irreversible waits for a human — so a single session is
 hard-pressed to hold all three legs at once. [Download Munder
 Difflin](https://munderdiffl.in/#install) to run agents that are powerful and scoped; it's free and

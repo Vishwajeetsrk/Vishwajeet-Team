@@ -1,24 +1,24 @@
 ---
-title: "Munder Difflin 0.5.3: Stapler Listens, And It Listens Locally"
+title: "Vishwajeet Team 0.5.3: Stapler Listens, And It Listens Locally"
 description: "0.5.3 turns the Stapler into dictation for any app and a meeting recorder that hears both sides of a call, all on your machine. Plus the new sidebar, a Tasks tab with real ticket keys, two floors on one computer, Opus 5.5 as the default, and a long list of fixes."
 date: 2026-09-26
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin 0.5.3"
-secondaryKeywords: ["munder difflin release notes", "local transcription ai agents", "ai meeting transcription local", "dictate into any app", "opus 5.5", "munder difflin download"]
+primaryKeyword: "Vishwajeet Team 0.5.3"
+secondaryKeywords: ["Vishwajeet Team release notes", "local transcription ai agents", "ai meeting transcription local", "dictate into any app", "opus 5.5", "Vishwajeet Team download"]
 tags: ["Story", "Release", "Local-First", "Transcription"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What is new in Munder Difflin 0.5.3?"
+  - q: "What is new in Vishwajeet Team 0.5.3?"
     a: "Dictation into any app on macOS, Windows and Linux, meeting transcripts that hear both sides of a call and label them You and Them, transcription that runs on your machine, the new agent sidebar in both skins, a Tasks tab with three letter ticket keys, a second floor on the same computer, Opus 5.5 as the default Claude model, automatic compaction every 40 minutes at 30 percent of the context window, and a long list of fixes."
   - q: "Does the transcription send my audio anywhere?"
     a: "Not by default. A Whisper model ships inside the app and runs on your computer, and on macOS 26 dictation can use Apple's on device recogniser. Groq is a fallback that stays off until you paste a key. Your prompts and the files an agent reads still go to whichever AI engine you picked, the same as before."
   - q: "How does it record the other side of a call?"
     a: "Through the system's own audio: screen audio on the Mac, the system loopback on Windows, and the PulseAudio or PipeWire monitor on Linux. Your microphone is written as You and the call's audio as Them. Settings has the switch and a line saying whether it works on this machine."
-  - q: "Is Munder Difflin free?"
+  - q: "Is Vishwajeet Team free?"
     a: "The app is free and open source. What you may pay for is the AI engine behind it, and several engines have a free path. Some features are in the paid Pro build, and this post says which."
   - q: "How do I update?"
     a: "The app checks for updates and offers the new version when one lands. You can also download 0.5.3 directly from the releases page for macOS, Windows or Linux."
@@ -240,7 +240,7 @@ The app updates itself: you will see the new version offered, and the release no
 first launch. To install fresh, the [releases
 page](https://github.com/chaitanyagiri/munder-difflin/releases) has macOS, Windows and Linux builds.
 
-Munder Difflin is free and open source. The Pro annual plan is on a launch offer at $150 USD, adjusted for
+Vishwajeet Team is free and open source. The Pro annual plan is on a launch offer at $150 USD, adjusted for
 purchasing power so it is as low as $100 a year in some countries. If this is your first look, [your first
-hour with Munder Difflin](/blog/your-first-hour-with-munder-difflin/) is the fastest way in, and [why we
+hour with Vishwajeet Team](/blog/your-first-hour-with-munder-difflin/) is the fastest way in, and [why we
 built it](/blog/why-we-built-munder-difflin/) explains the idea behind the floor.

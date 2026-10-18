@@ -6,7 +6,7 @@ category: use-cases
 categoryLabel: Use Cases
 type: Non-technical
 primaryKeyword: "ai agents launch analytics"
-secondaryKeywords: ["analyze reddit comments with ai", "multi-agent research workflow", "launch retrospective automation", "product hunt analysis ai", "munder difflin use case"]
+secondaryKeywords: ["analyze reddit comments with ai", "multi-agent research workflow", "launch retrospective automation", "product hunt analysis ai", "Vishwajeet Team use case"]
 tags: ["Use Cases", "Research", "Launch", "Workflow", "Multi-Agent"]
 author:
   name: Chaitanya Giri

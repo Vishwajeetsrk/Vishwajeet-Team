@@ -17,7 +17,7 @@ faq:
   - q: "What's the difference between MCP and A2A?"
     a: "They solve different problems. The Model Context Protocol (MCP) standardizes how a single agent connects to its tools, APIs, and data — agent-to-tool. The Agent2Agent (A2A) protocol standardizes how separate agents discover and talk to each other — agent-to-agent. Both are now stewarded by the Linux Foundation, and most real systems use them together."
   - q: "Do I need a cloud platform to run AI agents in 2026?"
-    a: "No. Alongside the big enterprise launches, 2026 has a strong local-first, open-source current: self-hosted agent frameworks and skill registries that run on your own machine. A local hive like Munder Difflin gives you coordinated multi-agent work — shared memory, messaging, an orchestrator — without sending your code or context to a SaaS."
+    a: "No. Alongside the big enterprise launches, 2026 has a strong local-first, open-source current: self-hosted agent frameworks and skill registries that run on your own machine. A local hive like Vishwajeet Team gives you coordinated multi-agent work — shared memory, messaging, an orchestrator — without sending your code or context to a SaaS."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>By June 2026, agentic AI matured on
@@ -36,7 +36,7 @@ each item means in practice and how it touches anyone running a local hive of co
 > **A note on sourcing.** This is a time-bound roundup, accurate to the best of our knowledge as of
 > **June 4, 2026**. Every factual claim links to its source — follow them, because this space moves
 > weekly and vendors revise details. Where a figure comes from a secondary aggregator rather than the
-> primary vendor, we say so. Munder Difflin is our own project; we've tried to report the rest straight.
+> primary vendor, we say so. Vishwajeet Team is our own project; we've tried to report the rest straight.
 
 ## At a glance
 
@@ -89,7 +89,7 @@ The clean mental model, as [IBM puts it](https://www.ibm.com/think/topics/agent2
 how an agent talks to tools; A2A is how agents talk to each other.**
 
 **What it means in practice:** the plumbing a hive needs — tool access and inter-agent messaging — is
-becoming portable and vendor-neutral. Munder Difflin already gives agents
+becoming portable and vendor-neutral. Vishwajeet Team already gives agents
 [MCP tools and skills](/blog/mcp-and-skills-in-a-hive/) and direct
 [agent-to-agent mailboxes](/blog/coordinating-ai-coding-agents/); standards mean those patterns aren't
 bespoke anymore, they're the industry default.
@@ -141,7 +141,7 @@ that don't lock your data or your bill into a cloud platform. (Treat the headlin
 sizes in those roundups as directional — they come from aggregators, not audited filings.)
 
 **What it means in practice:** you don't have to choose between "coordinated agents" and "runs on my
-laptop." That's the whole premise of Munder Difflin — a local, open-source hive where a
+laptop." That's the whole premise of Vishwajeet Team — a local, open-source hive where a
 [plain-language orchestrator](/#how) decomposes your intent and routes work across agents that share
 [long-term memory](/blog/give-claude-code-long-term-memory/) and message each other directly, all
 visualized on an office floor you can watch.
@@ -158,5 +158,5 @@ Pulling the threads together, the June 2026 picture is a stack that's **stratify
 The practical takeaway: the building blocks for a serious multi-agent setup are now standard, cheap to
 start, and increasingly self-hostable. If you've been waiting for the space to settle before running a
 real team of agents, mid-2026 is a reasonable moment to start — and you can do it on your own hardware.
-The fastest way to feel the difference is to [download Munder Difflin](/#install) and watch a coordinated
+The fastest way to feel the difference is to [download Vishwajeet Team](/#install) and watch a coordinated
 hive run; it's free and open source.

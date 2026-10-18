@@ -223,7 +223,7 @@ export const DEFAULT_WEBHOOK_SCHEMA = JSON.stringify(DEFAULT_WEBHOOK_SCHEMA_OBJE
 
 /**
  * Peer-to-peer messaging between teammates' installs. Each teammate runs their own
- * Munder Difflin; setting an org key lets their instance address yours.
+ * Vishwajeet Team; setting an org key lets their instance address yours.
  *
  * UI + persistence only for now — the transport service does not exist yet, so
  * nothing reads `apiKey` beyond the settings surfaces that display it.

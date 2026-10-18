@@ -27,7 +27,7 @@ faq:
 
 Claude Code hooks are handlers that Claude Code runs automatically at fixed points in a session: before a tool call (`PreToolUse`), after it succeeds (`PostToolUse`), when Claude finishes a reply (`Stop`) and 30 other events. Each one gets a JSON payload on stdin, and exit code 2 or a JSON reply lets it block or redirect Claude.
 
-You can wire hooks by hand for one session, as this guide shows, or use [Munder Difflin](https://harnessmd.com/download), free and open source, which attaches a hook set to every Claude Code agent it launches and turns the events into a live view of the whole team.
+You can wire hooks by hand for one session, as this guide shows, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, which attaches a hook set to every Claude Code agent it launches and turns the events into a live view of the whole team.
 
 Everything below was checked on 29 Sep 2026 against the official [hooks reference](https://code.claude.com/docs/en/hooks) and Claude Code 2.1.284.
 
@@ -181,13 +181,13 @@ Test a script alone by piping it sample JSON and printing `$?`, then run `claude
 
 {% img "note-2" %}
 
-## How does Munder Difflin use Claude Code hooks?
+## How does Vishwajeet Team use Claude Code hooks?
 
-Munder Difflin launches each Claude Code agent with `--settings` pointing at a per agent `settings.json` in its own hive folder, so your repository never gets a hooks diff. Checked against tag v0.5.3 of the app repo:
+Vishwajeet Team launches each Claude Code agent with `--settings` pointing at a per agent `settings.json` in its own hive folder, so your repository never gets a hooks diff. Checked against tag v0.5.3 of the app repo:
 
 - **Nine events, one shim.** `hookSettings()` in `src/main/hive.ts` registers `Stop`, `SubagentStop`, `PreToolUse` and `PostToolUse` (matcher `*`), `UserPromptSubmit`, `Notification`, `SessionStart`, `PreCompact` and `PostCompact`, all pointing at one small Node shim. The shim forwards each payload over a Unix socket (a named pipe on Windows) and exits 0 on any error, so a dead app never wedges an agent. [The hook shim pattern](/blog/the-hook-shim-pattern/) covers the design.
 - **Pause and gate at `PreToolUse`.** `src/main/hooks.ts` returns `permissionDecision: "deny"` when you pause an agent or gate a tool, and `continue: false` when you halt one from the floor.
 - **Context through `additionalContext`.** At `SessionStart` and `UserPromptSubmit` the same file injects an agent's standing goal and hands Michael, the orchestrator, the live roster; guidance you queue rides in on the next `UserPromptSubmit` or `PostToolUse`. [How the orchestrator works](/blog/how-the-god-orchestrator-works/) explains the routing.
 - **Loop detection at `PostToolUse`.** Repeated identical tool calls feed a circuit breaker.
 
-One correction to the first version of this post: Munder Difflin no longer uses `Stop` to force an agent to keep reading its inbox. In v0.5.3 the Stop handler returns an empty reply and respects `stop_hook_active`; new mail is delivered only once the agent sits idle at its prompt, so it never types over a question you are answering. To try it, follow the [install guide](/blog/how-to-install-and-use-munder-difflin/).
+One correction to the first version of this post: Vishwajeet Team no longer uses `Stop` to force an agent to keep reading its inbox. In v0.5.3 the Stop handler returns an empty reply and respects `stop_hook_active`; new mail is delivered only once the agent sits idle at its prompt, so it never types over a question you are answering. To try it, follow the [install guide](/blog/how-to-install-and-use-munder-difflin/).

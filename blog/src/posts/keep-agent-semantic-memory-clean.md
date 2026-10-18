@@ -154,8 +154,8 @@ prune pass to keep it honest.
 
 ---
 
-Munder Difflin gives every Claude Code agent markdown memory plus
+Vishwajeet Team gives every Claude Code agent markdown memory plus
 [a shared semantic palace the whole hive can recall from](https://munderdiffl.in/#how) — local, fast,
 and clean by default.
-[Download Munder Difflin](https://munderdiffl.in/#install) to give your agents memory that actually
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to give your agents memory that actually
 sticks; it's free and open source.

@@ -74,7 +74,7 @@ hard minority** (and for the orchestrator that has to reason about the whole job
 routine, so this alone typically cuts spend by more than half without hurting quality. The
 [full argument is here](/blog/do-more-with-less-model-routing/).
 
-This is a concrete feature in Munder Difflin, not just advice: the harness's per-agent model selection
+This is a concrete feature in Vishwajeet Team, not just advice: the harness's per-agent model selection
 (`HarnessConfig.defaultModel` in `src/main/config.ts`) lets you assign a Haiku-class model to worker
 agents and an Opus-class model to the GOD orchestrator **today** — the cheap-workers/premium-lead pattern
 configured directly.
@@ -129,8 +129,8 @@ A multi-agent fleet doesn't have to be expensive — it has to be *engineered*. 
 mechanical, documented, and compounding: caching, batching, tiering, context discipline, and local-first.
 Pull them together and you spend less, run faster, and stop paying frontier prices for routine work.
 
-Munder Difflin is built for this: [per-agent model selection, local-first execution, and a usage view
-you can actually watch](https://munderdiffl.in/#how). [Download Munder Difflin](https://munderdiffl.in/#install)
+Vishwajeet Team is built for this: [per-agent model selection, local-first execution, and a usage view
+you can actually watch](https://munderdiffl.in/#how). [Download Vishwajeet Team](https://munderdiffl.in/#install)
 to run a fleet that doesn't bankrupt you — it's free and open source.
 
 Sources: [Anthropic — Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching);

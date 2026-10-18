@@ -1,6 +1,6 @@
 ---
-title: "Your First Hour With Munder Difflin: Onboarding to a Pro Office"
-description: "Munder Difflin 0.5.2 from download to a working Pro office: install Claude Code, Codex or OpenCode, sign in, go Pro, then automate reviews, Slack and email."
+title: "Your First Hour With Vishwajeet Team: Onboarding to a Pro Office"
+description: "Vishwajeet Team 0.5.2 from download to a working Pro office: install Claude Code, Codex or OpenCode, sign in, go Pro, then automate reviews, Slack and email."
 date: 2026-07-03
 updated: 2026-09-14
 category: guides
@@ -8,16 +8,16 @@ categoryLabel: Guides
 type: Non-technical
 pinned: true
 pinOrder: 2
-primaryKeyword: "munder difflin onboarding"
-secondaryKeywords: ["getting started with munder difflin", "munder difflin tutorial", "munder difflin pro", "munder difflin setup", "scheduled agent automations", "munder difflin stapler"]
+primaryKeyword: "Vishwajeet Team onboarding"
+secondaryKeywords: ["getting started with Vishwajeet Team", "Vishwajeet Team tutorial", "Vishwajeet Team pro", "Vishwajeet Team setup", "scheduled agent automations", "Vishwajeet Team stapler"]
 tags: ["Guides", "Onboarding", "Getting Started", "Multi-Agent", "Local-First"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "How long does it take to get Munder Difflin running?"
+  - q: "How long does it take to get Vishwajeet Team running?"
     a: "About ten minutes if Claude Code, Codex or OpenCode is already installed and signed in: download, sign in, answer four setup steps. Allow the rest of the hour to hire a small team and set up your first automations."
-  - q: "Do I need an account to use Munder Difflin?"
+  - q: "Do I need an account to use Vishwajeet Team?"
     a: "Yes, in 0.5.2. The first launch asks you to sign in with an email address in your browser, on the free plan as well. Pro then needs a licence key on top of that account."
   - q: "What does Pro add over the free version?"
     a: "The free version is the classic office. Pro adds a single window workspace with screens for the orchestrator, agents, agent rooms, tasks, inbox, automations, memory, capabilities and temps, plus the Stapler. It runs on one machine at a time; the pricing page has the rest."
@@ -31,11 +31,11 @@ startHere: true
 startOrder: 2
 ---
 
-Your first hour with [Munder Difflin](https://harnessmd.com/download) 0.5.2 goes like this. Download the app, install one coding CLI, sign in and name your orchestrator. Then activate Pro and set the office up to work without you: a mixed team of agents, a pull request reviewer, a Slack responder, a morning email brief and a content agent on a schedule.
+Your first hour with [Vishwajeet Team](https://harnessmd.com/download) 0.5.2 goes like this. Download the app, install one coding CLI, sign in and name your orchestrator. Then activate Pro and set the office up to work without you: a mixed team of agents, a pull request reviewer, a Slack responder, a morning email brief and a content agent on a schedule.
 
 The app screenshots below are the real 0.5.2 Pro app, with personal details blurred. The order follows a new user from the download page to a working office.
 
-## Where do you download Munder Difflin?
+## Where do you download Vishwajeet Team?
 
 Download it from [harnessmd.com/download](https://harnessmd.com/download). You get there from **Download free** on [munderdiffl.in](https://munderdiffl.in/), or from **Download** in its top bar.
 
@@ -53,7 +53,7 @@ Open the file the usual way for your system: drag the app to Applications on a M
 
 ## What do you need installed before the first launch?
 
-You need at least one coding CLI on your path, signed in with your own subscription or key. Munder Difflin supports twelve; this guide uses Claude Code, Codex and OpenCode. The commands below come from each vendor's install docs, checked on 14 Sep 2026.
+You need at least one coding CLI on your path, signed in with your own subscription or key. Vishwajeet Team supports twelve; this guide uses Claude Code, Codex and OpenCode. The commands below come from each vendor's install docs, checked on 14 Sep 2026.
 
 ### Claude Code
 
@@ -78,7 +78,7 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 npm install -g @openai/codex
 ```
 
-Run `codex` and sign in with ChatGPT or an API key. Watch out for `npm install -g codex` without the `@openai/` scope: that is an unrelated package. [How to install Codex CLI](/blog/how-to-install-codex-cli/) covers Windows and updates, and the [Munder Difflin install guide](/blog/how-to-install-and-use-munder-difflin/) has the commands for all twelve CLIs.
+Run `codex` and sign in with ChatGPT or an API key. Watch out for `npm install -g codex` without the `@openai/` scope: that is an unrelated package. [How to install Codex CLI](/blog/how-to-install-codex-cli/) covers Windows and updates, and the [Vishwajeet Team install guide](/blog/how-to-install-and-use-munder-difflin/) has the commands for all twelve CLIs.
 
 ### OpenCode
 
@@ -101,11 +101,11 @@ If you skip this step, the app has a fallback. When you start an agent whose CLI
 
 ## How do you sign in on the first launch?
 
-You sign in through your browser with an email address; 0.5.2 asks for an account even on the free plan. The first screen asks **How are you using Munder Difflin?** Pick **On my own**, or **With my team** if an admin sent you an invite code.
+You sign in through your browser with an email address; 0.5.2 asks for an account even on the free plan. The first screen asks **How are you using Vishwajeet Team?** Pick **On my own**, or **With my team** if an admin sent you an invite code.
 
 {% img "c1-entry" %}
 
-**On my own** leads to **Sign in to continue**, which opens your browser. If your browser does not come back to the app on its own, the screen lets you paste a code instead. New to Munder Difflin? The same sign in page on [harnessmd.com](https://harnessmd.com/signup) creates the account.
+**On my own** leads to **Sign in to continue**, which opens your browser. If your browser does not come back to the app on its own, the screen lets you paste a code instead. New to Vishwajeet Team? The same sign in page on [harnessmd.com](https://harnessmd.com/signup) creates the account.
 
 {% img "c2-signin" %}
 
@@ -169,7 +169,7 @@ Every agent also gets its own room: the live terminal on one side, and its goal,
 
 0.5.2 has no built in GitHub trigger, so use a schedule. In **Automations**, press **New automation**, then **Schedule**. Set the interval (15 minutes up to 24 hours), send it to your reviewer agent, and write the message: run `gh pr list` for the repo, review any pull request opened since the last sweep, and post the review as a comment. The agent needs the GitHub CLI signed in on your machine.
 
-Want reviews the moment a pull request opens? A GitHub Action can post to a Munder Difflin webhook instead; see the webhook use case below.
+Want reviews the moment a pull request opens? A GitHub Action can post to a Vishwajeet Team webhook instead; see the webhook use case below.
 
 {% img "e1-pr-sweep" %}
 
@@ -181,13 +181,13 @@ Your team mentions the bot in a Slack channel, and an agent does the work and re
 2. In **Settings, Connections**, choose **Who answers inbound messages**. The orchestrator is the recommended default.
 3. In the **Slack** card, paste the bot token, press **Test connection**, pick the channel, then press **Turn on**. The card starts on **Check for messages**, the recommended way in, which you can change under **Advanced**.
 
-The full walkthrough, with all three connection modes and the common failures, is [How to Connect Slack to Munder Difflin 0.5.2](/blog/connect-slack-to-munder-difflin/).
+The full walkthrough, with all three connection modes and the common failures, is [How to Connect Slack to Vishwajeet Team 0.5.2](/blog/connect-slack-to-munder-difflin/).
 
 {% img "h3-slack" %}
 
 ### Use case: a morning email and calendar brief
 
-Claude Code has Gmail and Google Calendar connectors. Add them once at [claude.ai/customize/connectors](https://claude.ai/customize/connectors), and every Claude Code session signed in with that claude.ai subscription can use them, which includes your Claude Code agents in Munder Difflin. [Claude Code's MCP docs](https://code.claude.com/docs/en/mcp) note that connectors do not load when an API key is the active login, and `/mcp` in the agent's terminal shows whether they are there.
+Claude Code has Gmail and Google Calendar connectors. Add them once at [claude.ai/customize/connectors](https://claude.ai/customize/connectors), and every Claude Code session signed in with that claude.ai subscription can use them, which includes your Claude Code agents in Vishwajeet Team. [Claude Code's MCP docs](https://code.claude.com/docs/en/mcp) note that connectors do not load when an API key is the active login, and `/mcp` in the agent's terminal shows whether they are there.
 
 Then schedule the brief. **New automation, Schedule**, set **When** to **Weekly**, pick Monday to Friday at 08:30, send it to a Claude Code agent, and write: "Use the Gmail and Google Calendar connectors to summarise unread email and today's meetings. Write it to `brief.md`." Weekly times use your computer's local clock.
 
@@ -286,4 +286,4 @@ Check four defaults before you leave the office alone. Setup turns them on or of
 * **The Hourly ops standup is on.** Keep it if you like the check ins; otherwise switch it off in Automations.
 * **New Claude Code agents default to Fable 5.** The orchestrator starts on Opus 4.8. As of September 2026, [Fable runs on usage credits](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan) on Claude Pro; on Max it can use up to half of your weekly limit at no extra cost, then usage credits. Pick another default under **Settings, Agents & Models** if you run many agents.
 
-That is the hour: download, one CLI, sign in, Pro, a mixed team, and five jobs that keep running while you do something else. Once it runs, [build your personal AGI](/blog/build-your-personal-agi-on-your-computer/) turns that office into a team that briefs you, sweeps pull requests, remembers you and answers from Slack. [Download Munder Difflin](https://harnessmd.com/download), and if the hour earns it, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps other people find it.
+That is the hour: download, one CLI, sign in, Pro, a mixed team, and five jobs that keep running while you do something else. Once it runs, [build your personal AGI](/blog/build-your-personal-agi-on-your-computer/) turns that office into a team that briefs you, sweeps pull requests, remembers you and answers from Slack. [Download Vishwajeet Team](https://harnessmd.com/download), and if the hour earns it, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps other people find it.

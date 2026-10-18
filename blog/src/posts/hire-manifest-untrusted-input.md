@@ -1,6 +1,6 @@
 ---
 title: "Treating a Hire Manifest as Untrusted Input"
-description: "A shareable agent-config manifest is attacker input. How Munder Difflin's import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch."
+description: "A shareable agent-config manifest is attacker input. How Vishwajeet Team's import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch."
 date: 2026-06-15
 category: internals
 categoryLabel: Internals

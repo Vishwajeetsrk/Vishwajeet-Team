@@ -6,7 +6,7 @@ category: comparisons
 categoryLabel: Comparisons
 type: Non-technical
 primaryKeyword: "claude squad alternative"
-secondaryKeywords: ["claude code multi-agent tool", "claude squad vs munder difflin", "claude squad alternative"]
+secondaryKeywords: ["claude code multi-agent tool", "claude squad vs Vishwajeet Team", "claude squad alternative"]
 tags: ["Comparisons", "Multi-Agent", "Claude Code", "Tools"]
 author:
   name: Chaitanya Giri
@@ -77,7 +77,7 @@ that wraps the agents you already run and adds the coordination layer on top.
 - **Visibility.** The whole floor is rendered as avatars at their desks, so "what's everyone doing?"
   has an answer at a glance.
 
-That's [Munder Difflin](/#what): a local, open-source alternative built around coordination rather
+That's [Vishwajeet Team](/#what): a local, open-source alternative built around coordination rather
 than just parallelism. It's the same Claude Code you already run — just wired into a team.
 
 ## Which should you pick?
@@ -94,5 +94,5 @@ multiple Claude Code agents](/blog/best-claude-code-multi-agent-tools/).
 ---
 
 If "agents that remember and coordinate" is the alternative you're after, the quickest way to feel
-the difference is to try it: [download Munder Difflin](/#install) — free, open source, and local-first
+the difference is to try it: [download Vishwajeet Team](/#install) — free, open source, and local-first
 on macOS, Windows, and Linux.

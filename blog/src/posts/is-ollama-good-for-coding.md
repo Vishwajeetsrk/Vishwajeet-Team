@@ -21,7 +21,7 @@ faq:
 
 Ollama is good for coding on scoped, private work if you pull a recent tool calling model that fits your memory and raise its context window. It does not yet replace Claude or GPT on long agent runs. Ollama only runs the model; the model and your memory decide the rest.
 
-You can pick, size and wire local models by hand, or use [Munder Difflin](https://harnessmd.com/download), a free and open source desktop app that runs several coding agents side by side, each on its own engine and model. As of 0.5.2, its Add agent screen offers eight local Ollama models for OpenCode, Crush and Pi agents, each tooltip showing a rough memory figure and the `ollama pull` command, while Claude Code agents stay on your Claude login. It will not pull the model or set Ollama's context for you; the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers the rest of setup.
+You can pick, size and wire local models by hand, or use [Vishwajeet Team](https://harnessmd.com/download), a free and open source desktop app that runs several coding agents side by side, each on its own engine and model. As of 0.5.2, its Add agent screen offers eight local Ollama models for OpenCode, Crush and Pi agents, each tooltip showing a rough memory figure and the `ollama pull` command, while Claude Code agents stay on your Claude login. It will not pull the model or set Ollama's context for you; the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers the rest of setup.
 
 ## Can Ollama write code?
 
@@ -49,7 +49,7 @@ var deprecatedLaunchModels = map[string]struct{}{
 }
 ```
 
-DeepSeek R1 tags up to `32b` are flagged too. The prompt says the model "does not work well with" your tool, then offers "Launch anyway" or "Pick another model". Ollama will not stop you, it just asks if you are sure. Our own list would earn the same warning: Munder Difflin 0.5.2's local picks still include two flagged models, Llama 3.3 70B and DeepSeek R1 32B, so for coding take Qwen3 Coder 30B or gpt-oss 20B from it.
+DeepSeek R1 tags up to `32b` are flagged too. The prompt says the model "does not work well with" your tool, then offers "Launch anyway" or "Pick another model". Ollama will not stop you, it just asks if you are sure. Our own list would earn the same warning: Vishwajeet Team 0.5.2's local picks still include two flagged models, Llama 3.3 70B and DeepSeek R1 32B, so for coding take Qwen3 Coder 30B or gpt-oss 20B from it.
 
 ## How much RAM do you need for Ollama coding models?
 

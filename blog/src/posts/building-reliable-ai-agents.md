@@ -159,7 +159,7 @@ durable on disk, and one agent's bad day stays its own. Build on that foundation
 that actually matters in production — not an agent that never breaks, but one you can trust to finish the
 job anyway.
 
-Munder Difflin is built this way from the ground up — [a replayable log, atomic mailboxes, single-writer
+Vishwajeet Team is built this way from the ground up — [a replayable log, atomic mailboxes, single-writer
 files, and isolated agents](https://munderdiffl.in/#how) — so a hive keeps going when individual agents
-stumble. [Download Munder Difflin](https://munderdiffl.in/#install) to run an agent team that's resilient
+stumble. [Download Vishwajeet Team](https://munderdiffl.in/#install) to run an agent team that's resilient
 by design; it's free and open source.

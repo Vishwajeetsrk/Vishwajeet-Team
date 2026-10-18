@@ -31,7 +31,7 @@ it.</p></div>
 There's a difference between an agent that works *when you ask* and a hive that works *on a schedule*.
 The first still needs you at the keyboard. The second wakes itself up — runs a standup every hour,
 audits the build every night, summarizes new issues every morning — and only pulls you in when
-something actually needs a human. Munder Difflin ships this as **scheduled missions**, and this guide
+something actually needs a human. Vishwajeet Team ships this as **scheduled missions**, and this guide
 walks through how they work, grounded in the real code, plus the patterns that keep them useful instead
 of noisy.
 
@@ -166,7 +166,7 @@ history intact, and you can re-enable it later without rewinding the clock.
 
 ---
 
-Munder Difflin runs exactly this: a local hive of Claude Code agents that picks up recurring work on a
+Vishwajeet Team runs exactly this: a local hive of Claude Code agents that picks up recurring work on a
 schedule, routes it through [a GOD orchestrator](https://munderdiffl.in/#how), and pings you only for
-the calls that matter. [Download Munder Difflin](https://munderdiffl.in/#install) to set your first
+the calls that matter. [Download Vishwajeet Team](https://munderdiffl.in/#install) to set your first
 mission and watch the floor wake itself up; it's free and open source.

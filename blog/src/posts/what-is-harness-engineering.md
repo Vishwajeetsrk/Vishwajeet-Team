@@ -1,6 +1,6 @@
 ---
 title: "What Is Harness Engineering?"
-description: "Harness engineering is the discipline of building everything around the model — PTY plumbing, lifecycle hooks, mailboxes, memory, budgets, human gates, observability — because that's where agent reliability actually comes from. A definition, and four case studies from inside Munder Difflin."
+description: "Harness engineering is the discipline of building everything around the model — PTY plumbing, lifecycle hooks, mailboxes, memory, budgets, human gates, observability — because that's where agent reliability actually comes from. A definition, and four case studies from inside Vishwajeet Team."
 date: 2026-07-03
 category: concepts
 categoryLabel: Concepts
@@ -22,11 +22,11 @@ faq:
     a: "A production harness typically covers: real execution plumbing (PTYs or sandboxes the agent acts through), lifecycle hooks (structured signals for turn start/end and tool use), inter-agent messaging with delivery guarantees, long-term memory, token budgets and cost controls, human-in-the-loop gates for destructive or expensive actions, observability (traces, costs, per-agent telemetry), and session resume so a restart doesn't destroy state."
   - q: "Is harness engineering the same as prompt engineering?"
     a: "No, but it absorbs it. Prompt engineering shapes a single model call; context engineering shapes what the model sees across a task; harness engineering shapes the entire system the model operates inside — including what happens when a call fails, a process dies, a budget is exceeded, or two agents need to hand off work. Prompts are one component of the harness, not a substitute for it."
-  - q: "Is Munder Difflin a harness?"
-    a: "Yes — that's the category. Munder Difflin is a free, MIT-licensed, local-first multi-agent harness: it wraps the agent CLIs you already run (Claude Code, Codex, Antigravity, OpenCode, Crush, pi.dev, GitHub Copilot CLI) in node-pty pseudo-terminals, wires them into a hive with mailboxes, shared memory, budgets, a circuit breaker, human approval gates, and observability, and puts a GOD orchestrator in charge."
+  - q: "Is Vishwajeet Team a harness?"
+    a: "Yes — that's the category. Vishwajeet Team is a free, MIT-licensed, local-first multi-agent harness: it wraps the agent CLIs you already run (Claude Code, Codex, Antigravity, OpenCode, Crush, pi.dev, GitHub Copilot CLI) in node-pty pseudo-terminals, wires them into a hive with mailboxes, shared memory, budgets, a circuit breaker, human approval gates, and observability, and puts a GOD orchestrator in charge."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Harness engineering is the discipline of building everything around the model</strong> — the PTY plumbing, lifecycle hooks, mailboxes, memory, budgets, human gates, observability, and session resume that turn a capable model into a <strong>reliable agent</strong>. The 2026 consensus, popularized by Mitchell Hashimoto: <strong>the model is a commodity; the harness is where reliability comes from</strong>. Every time an agent fails, you engineer the harness so that failure becomes structurally impossible. Munder Difflin is this discipline shipped as a product — and its hook shim, node-pty layer, MemPalace, and circuit breaker are worked examples.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Harness engineering is the discipline of building everything around the model</strong> — the PTY plumbing, lifecycle hooks, mailboxes, memory, budgets, human gates, observability, and session resume that turn a capable model into a <strong>reliable agent</strong>. The 2026 consensus, popularized by Mitchell Hashimoto: <strong>the model is a commodity; the harness is where reliability comes from</strong>. Every time an agent fails, you engineer the harness so that failure becomes structurally impossible. Vishwajeet Team is this discipline shipped as a product — and its hook shim, node-pty layer, MemPalace, and circuit breaker are worked examples.</p></div>
 
 Ask why an agent failed and you'll almost never hear "the model wasn't smart enough." You'll hear: it looped for forty minutes, it forgot what it learned yesterday, it blew the budget overnight, it dropped a message and nobody noticed, the process died and took the session with it.
 
@@ -59,9 +59,9 @@ Notice what's absent: anything about making the model smarter. Harness engineeri
 
 {% img "note-2" %}
 
-## Four case studies from inside Munder Difflin
+## Four case studies from inside Vishwajeet Team
 
-Munder Difflin is this discipline shipped as a product, so its internals make good worked examples.
+Vishwajeet Team is this discipline shipped as a product, so its internals make good worked examples.
 
 **The hook shim — lifecycle truth instead of stdout guessing.** Every provider speaks lifecycle differently: Claude Code has native hooks, Antigravity needed a purpose-built `agy-hook` bridge, Codex gets the protocol injected as its initial prompt. The harness normalizes all of them into one hook server (`hooks.ts`) that receives structured POST payloads — so "the agent finished its turn" is a *signal*, not an inference from a quiet terminal. And where a provider has no bridge at all, the harness engineers around the gap honestly: GitHub Copilot CLI's print mode can't drain an inbox, so routed mail **bounces to the GOD orchestrator** instead of silently dropping. That is Hashimoto's rule applied — the "silently lost message" failure class is closed structurally.
 
@@ -75,7 +75,7 @@ Munder Difflin is this discipline shipped as a product, so its internals make go
 
 The pattern across all four: **reliability was engineered into the environment, not prompted into the model.** Each subsystem exists because a specific failure mode exists, and each closes that failure mode for every model, every provider, permanently. Swap Claude for Codex or a local model tomorrow — the breaker still breaks, the mail still routes, the memory still recalls. That's what "the model is a commodity" means in practice: the harness is the part that compounds.
 
-If you want to see a harness rather than read about one, [download Munder Difflin](https://github.com/chaitanyagiri/munder-difflin/releases/latest) — free, MIT-licensed, local-first — and if the idea resonates, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.
+If you want to see a harness rather than read about one, [download Vishwajeet Team](https://github.com/chaitanyagiri/munder-difflin/releases/latest) — free, MIT-licensed, local-first — and if the idea resonates, [a GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.
 
 Sources: [Mitchell Hashimoto — My AI Adoption Journey](https://mitchellh.com/writing/my-ai-adoption-journey);
 [Faros AI — Harness Engineering: Making AI Coding Agents Work in 2026](https://www.faros.ai/blog/harness-engineering).

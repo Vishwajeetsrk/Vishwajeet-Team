@@ -1,6 +1,6 @@
 ---
 title: "The Best Tools to Run Multiple Claude Code Agents (2026)"
-description: "An honest September 2026 roundup of tools for running several Claude Code agents: Claude Code agent teams, Claude Squad, Conductor, Nimbalyst, Emdash, Vibe Kanban and Munder Difflin, and how to pick one."
+description: "An honest September 2026 roundup of tools for running several Claude Code agents: Claude Code agent teams, Claude Squad, Conductor, Nimbalyst, Emdash, Vibe Kanban and Vishwajeet Team, and how to pick one."
 date: 2026-06-04
 updated: 2026-09-10
 category: comparisons
@@ -14,7 +14,7 @@ author:
   initials: CG
 faq:
   - q: "What is the best tool to run multiple Claude Code agents?"
-    a: "It depends on your bottleneck. Claude Code agent teams are the built in option for a single session. Claude Squad is the leanest terminal manager. Conductor is the polished Mac app, with cloud workspaces on paid plans. Nimbalyst and Emdash are open source desktop apps. Munder Difflin adds long term memory, messaging and an orchestrator across twelve CLIs."
+    a: "It depends on your bottleneck. Claude Code agent teams are the built in option for a single session. Claude Squad is the leanest terminal manager. Conductor is the polished Mac app, with cloud workspaces on paid plans. Nimbalyst and Emdash are open source desktop apps. Vishwajeet Team adds long term memory, messaging and an orchestrator across twelve CLIs."
   - q: "Does Claude Code have a built in way to run multiple agents?"
     a: "Yes, two. Subagents handle short helper jobs inside one session. Agent teams, which are experimental and stay off until you set CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1, let a lead session spawn teammates that share a task list and message each other."
   - q: "What happened to Crystal?"
@@ -22,13 +22,13 @@ faq:
   - q: "Is Vibe Kanban still maintained?"
     a: "Its website says Vibe Kanban is sunsetting and will continue as an open source, community maintained project."
   - q: "Are these tools free?"
-    a: "Most have a free option. Claude Squad (AGPL 3.0), Nimbalyst (MIT), Emdash (Apache 2.0), Vibe Kanban (Apache 2.0) and the Munder Difflin app (MIT) are open source. Conductor has a free plan for local workspaces and paid plans for cloud and team features. Check pricing before you commit, because this space moves fast."
+    a: "Most have a free option. Claude Squad (AGPL 3.0), Nimbalyst (MIT), Emdash (Apache 2.0), Vibe Kanban (Apache 2.0) and the Vishwajeet Team app (MIT) are open source. Conductor has a free plan for local workspaces and paid plans for cloud and team features. Check pricing before you commit, because this space moves fast."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>Tools for running <strong>multiple Claude Code
 agents</strong> come in four shapes: <strong>built in</strong> (Claude Code agent teams),
 <strong>session managers</strong> (Claude Squad), <strong>parallel workspace apps</strong> (Conductor,
-Nimbalyst, Emdash, and Vibe Kanban as a board), and <strong>coordinated offices</strong> (Munder Difflin).
+Nimbalyst, Emdash, and Vibe Kanban as a board), and <strong>coordinated offices</strong> (Vishwajeet Team).
 The first three help you run agents side by side. An office adds shared memory, messaging and an
 orchestrator so they run as a team.</p></div>
 
@@ -36,7 +36,7 @@ A lot changed since we first wrote this in June. Claude Code grew its own agent 
 Nimbalyst, Conductor moved into the cloud, Vibe Kanban announced it is winding down, and Emdash arrived.
 Here is the current picture, checked on 10 September 2026.
 
-<div class="callout note"><span class="ic">Fair warning</span><p>Munder Difflin is our own tool. Everything
+<div class="callout note"><span class="ic">Fair warning</span><p>Vishwajeet Team is our own tool. Everything
 about the others comes from their own sites, READMEs and docs as of 10 September 2026, and every tool is
 linked so you can check it yourself.</p></div>
 
@@ -61,7 +61,7 @@ Four kinds, and knowing which one you need is most of the decision.
 | Nimbalyst | Visual workspace, parallel sessions | Claude Code, Codex | macOS, Windows, Linux | MIT |
 | Emdash | Parallel workspaces | Any provider, including Claude Code, Codex, Amp, Antigravity | macOS, Windows, Linux | Apache 2.0 |
 | Vibe Kanban | Task board, sunsetting | Claude Code, Codex and others | Runs with npx | Apache 2.0 |
-| Munder Difflin | Coordinated office | Twelve CLIs, including Claude Code, Codex, Gemini CLI, Copilot, Cursor | macOS, Windows, Linux | MIT (free app) |
+| Vishwajeet Team | Coordinated office | Twelve CLIs, including Claude Code, Codex, Gemini CLI, Copilot, Cursor | macOS, Windows, Linux | MIT (free app) |
 
 {% img "note-1" %}
 
@@ -90,7 +90,7 @@ including Claude Code, Codex, Gemini and Aider, each in its own workspace. It ne
   messaging each other, so deciding who does what stays with you.
 
 Best for: terminal people running a handful of independent tasks. More in
-[Claude Squad vs Munder Difflin](/blog/claude-squad-vs-munder-difflin/).
+[Claude Squad vs Vishwajeet Team](/blog/claude-squad-vs-munder-difflin/).
 
 ## Conductor: the polished Mac app, now with a cloud
 
@@ -146,9 +146,9 @@ is sunsetting and will continue as open source, maintained by the community.
 Best for: people already on it who are comfortable with a community maintained tool. See
 [a Vibe Kanban alternative](/blog/vibe-kanban-alternative/).
 
-## Munder Difflin: the coordinated office
+## Vishwajeet Team: the coordinated office
 
-[Munder Difflin](https://munderdiffl.in/) is ours, and it lives in the fourth camp. It wraps twelve terminal
+[Vishwajeet Team](https://munderdiffl.in/) is ours, and it lives in the fourth camp. It wraps twelve terminal
 coding CLIs (Claude Code, Codex, Gemini CLI, Antigravity, Grok, Kimi Code, Qwen, OpenCode, Crush, Pi, Copilot
 and Cursor) and runs them as real processes on your machine. Each agent gets a desk on an office floor, a
 mailbox and long term memory. Michael, your clone, turns what you ask for into tasks, hires workers and
@@ -174,7 +174,7 @@ Match the tool to the bottleneck:
 - **"I am on a Mac, I want polish, and I will pay for cloud runs."** Conductor.
 - **"I want an open, visual, cross platform workspace."** Nimbalyst or Emdash.
 - **"My agents need to remember, talk to each other and stop colliding, across more than one vendor."**
-  Munder Difflin.
+  Vishwajeet Team.
 
 For a more structured pass, there is a [buyer's checklist](/blog/how-to-choose-a-multi-agent-tool/) and a
 criteria based [orchestration tools comparison](/blog/claude-code-orchestration-tools-compared/).

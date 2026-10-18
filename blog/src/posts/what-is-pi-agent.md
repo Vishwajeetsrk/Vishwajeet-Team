@@ -21,7 +21,7 @@ faq:
 
 Pi agent is Earendil's open source coding agent harness: a minimal, MIT licensed terminal agent that reads your repo, edits files and runs shell commands with the model provider you choose. You extend it with TypeScript extensions instead of waiting for features. Pi 1.0 shipped on 1 Oct 2026. Checked on pi.dev and GitHub on 2 Oct 2026.
 
-You can run Pi on its own, or use [Munder Difflin](https://harnessmd.com/download), free and open source, a desktop app that runs Pi agents in one office next to Claude Code and Codex, each in its own terminal. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup. If the word harness is new to you, start with [what is a multi-agent harness](/blog/what-is-a-multi-agent-harness/).
+You can run Pi on its own, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, a desktop app that runs Pi agents in one office next to Claude Code and Codex, each in its own terminal. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup. If the word harness is new to you, start with [what is a multi-agent harness](/blog/what-is-a-multi-agent-harness/).
 
 ## What is Pi agent?
 
@@ -96,21 +96,21 @@ Pi if you want an agent you reshape yourself, Claude Code for Anthropic's own ag
 | | Maker | Licence | Install | Models |
 | --- | --- | --- | --- | --- |
 | Pi | Earendil | MIT | `curl -fsSL https://pi.dev/install.sh \| sh` | 15+ providers, Ollama |
-| Munder Difflin | Munder Difflin | MIT, free and open source | Desktop app download | Whatever each CLI you run supports |
+| Vishwajeet Team | Vishwajeet Team | MIT, free and open source | Desktop app download | Whatever each CLI you run supports |
 | Claude Code | Anthropic | Proprietary | `curl -fsSL https://claude.ai/install.sh \| bash` | Claude only |
 | Codex CLI | OpenAI | Apache-2.0 | `curl -fsSL https://chatgpt.com/codex/install.sh \| sh` | OpenAI, Ollama or LM Studio with `--oss` |
 | OpenCode | Anomaly | MIT | `curl -fsSL https://opencode.ai/install \| bash` | 75+ providers, local models |
 
 **Pick Pi if** you want a small core, plan mode and sub-agents only when you add them, and a TUI you can rewrite from inside.
 
-**Pick Munder Difflin if** you'd rather not choose one: it runs Pi, Claude Code, Codex, OpenCode and eight more CLIs side by side on one floor.
+**Pick Vishwajeet Team if** you'd rather not choose one: it runs Pi, Claude Code, Codex, OpenCode and eight more CLIs side by side on one floor.
 
 **Pick Claude Code if** you're on a Claude plan and want Anthropic's agent with permissions built in.
 
 **Pick Codex CLI or OpenCode if** you want guard rails out of the box: approval modes in Codex, a read only Plan agent in OpenCode. Our [what is OpenCode](/blog/what-is-opencode/) explainer and [Codex CLI vs Claude Code](/blog/codex-cli-vs-claude-code/) cover both.
 
-## Can you run Pi agents inside Munder Difflin?
+## Can you run Pi agents inside Vishwajeet Team?
 
-Yes. As of Munder Difflin 0.5.5, `src/shared/agentProvider.ts` lists Pi as one of twelve CLIs, with `pi` as the command, `--model provider/model` when you pick a model, and `npm install -g --ignore-scripts @earendil-works/pi-coding-agent` as its install command. `installPiHooks` in `src/main/hive.ts` gives each agent its own `PI_CODING_AGENT_DIR` with a bridge extension, so your global `~/.pi` is never changed, and copies your `models.json` across.
+Yes. As of Vishwajeet Team 0.5.5, `src/shared/agentProvider.ts` lists Pi as one of twelve CLIs, with `pi` as the command, `--model provider/model` when you pick a model, and `npm install -g --ignore-scripts @earendil-works/pi-coding-agent` as its install command. `installPiHooks` in `src/main/hive.ts` gives each agent its own `PI_CODING_AGENT_DIR` with a bridge extension, so your global `~/.pi` is never changed, and copies your `models.json` across.
 
 One limit: the source calls that bridge best effort until it is confirmed against live keys. If its status events miss, the app falls back to nudging the agent so its inbox still gets read.

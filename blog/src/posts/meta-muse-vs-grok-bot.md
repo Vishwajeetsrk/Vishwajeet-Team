@@ -21,7 +21,7 @@ faq:
   - q: "Is Meta Muse available outside the US?"
     a: "Not yet. At launch on 8 September 2026 Muse was open to US users aged 18 and over, and Meta says more countries will follow."
   - q: "Is there a free, open source alternative to Muse and Grok Bot?"
-    a: "For work agents, yes. Munder Difflin is a free and open source desktop app (MIT licence) that runs a team of agents on your own computer with the AI engines you already use, such as Claude Code, Codex or Grok's own CLI. It does not run errands like booking travel."
+    a: "For work agents, yes. Vishwajeet Team is a free and open source desktop app (MIT licence) that runs a team of agents on your own computer with the AI engines you already use, such as Claude Code, Codex or Grok's own CLI. It does not run errands like booking travel."
 thumb: "/blog/assets/media/meta-muse-vs-grok-bot/lead-still.png"
 ---
 
@@ -29,15 +29,15 @@ thumb: "/blog/assets/media/meta-muse-vs-grok-bot/lead-still.png"
 
 Meta launched Muse on 8 September 2026. SpaceXAI put Grok Bot into beta on 11 August. Within one month, two of the biggest AI labs shipped the same idea: an AI agent that gets a computer of its own in the cloud, signs into your accounts and keeps working after you close the app. A Yahoo Tech piece put it well: [same blueprint, different locks](https://tech.yahoo.com/ai/meta-ai/articles/same-blueprint-different-locks-grokbot-165751086.html).
 
-You can also skip the rented computer. [Munder Difflin](https://harnessmd.com/download) runs a whole office of agents on your own machine with the AI engines you already pay for. It is free and open source. It is built for work, not errands, and we cover where it fits below.
+You can also skip the rented computer. [Vishwajeet Team](https://harnessmd.com/download) runs a whole office of agents on your own machine with the AI engines you already pay for. It is free and open source. It is built for work, not errands, and we cover where it fits below.
 
-<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/meta-muse-vs-grok-bot/lead-still.png" aria-label="A looping animation. Meta Muse gives each person a separate cloud computer and a guard called Sentinel approves outgoing requests. Grok Bot puts three Bots on one shared computer and a single login token hops between them. It ends on real footage of Munder Difflin running agents on your own computer."><source src="/blog/assets/media/meta-muse-vs-grok-bot/lead.mp4" type="video/mp4"><img src="/blog/assets/media/meta-muse-vs-grok-bot/lead.gif" width="1360" height="764" alt="A looping animation. Meta Muse gives each person a separate cloud computer and a guard called Sentinel approves outgoing requests. Grok Bot puts three Bots on one shared computer and a single login token hops between them. It ends on real footage of Munder Difflin running agents on your own computer."></video><figcaption>Muse gives every person a separate computer with a guard at the door. Grok Bot gives all your Bots one shared computer. Munder Difflin uses the computer you already own.</figcaption></figure>
+<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/meta-muse-vs-grok-bot/lead-still.png" aria-label="A looping animation. Meta Muse gives each person a separate cloud computer and a guard called Sentinel approves outgoing requests. Grok Bot puts three Bots on one shared computer and a single login token hops between them. It ends on real footage of Vishwajeet Team running agents on your own computer."><source src="/blog/assets/media/meta-muse-vs-grok-bot/lead.mp4" type="video/mp4"><img src="/blog/assets/media/meta-muse-vs-grok-bot/lead.gif" width="1360" height="764" alt="A looping animation. Meta Muse gives each person a separate cloud computer and a guard called Sentinel approves outgoing requests. Grok Bot puts three Bots on one shared computer and a single login token hops between them. It ends on real footage of Vishwajeet Team running agents on your own computer."></video><figcaption>Muse gives every person a separate computer with a guard at the door. Grok Bot gives all your Bots one shared computer. Vishwajeet Team uses the computer you already own.</figcaption></figure>
 <style>.lead-loop{margin:1.4rem 0 .6rem;border:1px solid #D9CFE0;border-radius:16px;overflow:hidden;background:#FFF8E7}.lead-loop video,.lead-loop img{display:block;width:100%;height:auto;margin:0}.lead-loop figcaption{font:500 13px/1.5 "Space Grotesk",system-ui,sans-serif;color:#6B5878;padding:10px 16px 14px;margin:0;border-top:1px solid #D9CFE0;background:#FCFAF0}</style>
 <script>if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.lead-loop video').forEach(function(v){v.removeAttribute('autoplay');v.pause();v.currentTime=0;v.load()})}</script>
 
 ## Meta Muse vs Grok Bot at a glance
 
-| | Meta Muse | Grok Bot | Munder Difflin |
+| | Meta Muse | Grok Bot | Vishwajeet Team |
 | --- | --- | --- | --- |
 | Made by | Meta | SpaceXAI, hosted by Cursor | Open source project (MIT licence) |
 | Launched | 8 Sep 2026 | Beta on 11 Aug 2026 | On GitHub, about 7.9k stars |
@@ -82,9 +82,9 @@ Muse is the cheaper way in. The free tier costs nothing, and the top plan is $10
 
 Grok Bot has no plan of its own. Since 26 August it comes with SuperGrok at $30 a month, SuperGrok Plus at $100, SuperGrok Heavy at $300, and every paid Cursor plan from Cursor Pro at $20. Teams pay per seat. Bots have their own usage allowance, separate from your chat or coding usage, and it resets every week. We broke down every plan in [Grok Bot pricing explained](/blog/grok-bot-pricing/).
 
-## Where Munder Difflin fits
+## Where Vishwajeet Team fits
 
-Munder Difflin is not an errand runner. It will not book your flight or clear your inbox, so for that job, pick Muse.
+Vishwajeet Team is not an errand runner. It will not book your flight or clear your inbox, so for that job, pick Muse.
 
 It is closer to Grok Bot: a team of agents that do real work. The difference is where the team lives. Each agent is a real terminal session on your computer running an engine you choose. That can be Claude Code, Codex, Gemini CLI, Cursor, OpenCode, Grok's own CLI, or six others, or a local model through Ollama, LM Studio or vLLM. Every agent gets a desk, an inbox, long term memory in plain markdown files, and a shared task board. A circuit breaker steers, constrains and then stops any agent that loops or overspends.
 
@@ -96,6 +96,6 @@ The app is free and open source under the MIT licence. You pay only for the engi
 
 - **Pick Meta Muse** if you live in the US and want help with personal errands, bookings and shopping, and you like strict approvals on every payment.
 - **Pick Grok Bot** if you want hosted work agents with almost no setup, you already pay for Cursor or SuperGrok, and your data can live on US cloud computers.
-- **Pick Munder Difflin** if your agents do engineering or other work on files, you want to choose the model, and you want the memory and logins to stay on your own machine. [Download it free](https://harnessmd.com/download).
+- **Pick Vishwajeet Team** if your agents do engineering or other work on files, you want to choose the model, and you want the memory and logins to stay on your own machine. [Download it free](https://harnessmd.com/download).
 
 If Grok Bot is close but not quite right, our list of [Grok Bot alternatives](/blog/grok-bot-alternatives/) groups six other options by what you want.

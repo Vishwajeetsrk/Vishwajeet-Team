@@ -1,18 +1,18 @@
 ---
-title: "Launching Munder Difflin v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers"
-description: "Munder Difflin v0.3.0 makes every hire — and Michael himself — a pluggable engine, adds an integrations registry with a write-only secret broker, and lets the god orchestrator spawn an ephemeral worker straight from Slack."
+title: "Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers"
+description: "Vishwajeet Team v0.3.0 makes every hire — and Michael himself — a pluggable engine, adds an integrations registry with a write-only secret broker, and lets the god orchestrator spawn an ephemeral worker straight from Slack."
 date: 2026-06-21
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin v0.3.0"
+primaryKeyword: "Vishwajeet Team v0.3.0"
 secondaryKeywords: ["selectable agent engines", "per-hire mcp catalog", "integrations registry secret broker", "slack spawned ai worker", "agent gallery", "local-first ai agents"]
 tags: ["Story", "Release", "Multi-Agent", "Claude Code", "MCP", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's new in Munder Difflin v0.3.0?"
+  - q: "What's new in Vishwajeet Team v0.3.0?"
     a: "The floor stops being Claude-shaped. Three big things: selectable agent engines (every hire — and Michael, the god orchestrator — runs on a pluggable engine: Claude Code, Antigravity, Codex, or a local provider), each carrying its own consented skills + MCP catalog; an integrations registry with a loopback secret broker that keeps secrets write-only; and a god-triggered ephemeral Slack worker loop where Michael spawns an isolated worker straight from a Slack message, replies in-thread, and tears it down safely. Plus temporal date-range skills, a worker capability catalog, a visual Provider/Hive picker, the Agent Gallery (the rebranded Hiring Fair) with six off-the-shelf hires, feature-aware onboarding, and wake-reliability hardening."
   - q: "What does 'selectable agent engines' mean?"
     a: "Until now the runtime behind an agent was effectively fixed. In v0.3.0 the engine is pluggable per hire: you choose Claude Code, Antigravity, OpenAI Codex, or a local provider (a claw/qwen backend proxy) from a visual picker. Even Michael — the god orchestrator you talk to — is swappable, with an engine picker in onboarding and a change-engine flow. Each hire also carries a manifest of allowed skills + MCP servers, surfaced through a consent UI before anything can use them."
@@ -26,7 +26,7 @@ faq:
     a: "Yes. v0.3.0 is additive. Free Flow voice dictation, the enterprise Knowledge Graph, multi-window floors, the rich composer, agent session resume, observability, the circuit breaker, durable persistence, the Command Center, task kanban, GitHub/CI integration, and the Schedules tab all remain functional and shipping."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin v0.3.0</strong> makes the floor <strong>engine-agnostic</strong>. Every hire — and Michael himself — runs on a <strong>pluggable engine</strong> (Claude Code, Antigravity, Codex, or a local provider), each with its own consented <strong>skills + MCP catalog</strong>. A new <strong>integrations registry</strong> connects your tools behind a <strong>write-only secret broker</strong>. And Michael can now <strong>spawn an ephemeral worker straight from Slack</strong> — reply, then tear it down safely (worktree GC + token caps), all visible in a new <strong>Workers tab</strong>. Plus <strong>temporal date-range skills</strong>, a <strong>worker capability catalog</strong>, a visual <strong>Provider/Hive picker</strong>, and the <strong>Agent Gallery</strong> with six off-the-shelf hires. Free, open source, local-first.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team v0.3.0</strong> makes the floor <strong>engine-agnostic</strong>. Every hire — and Michael himself — runs on a <strong>pluggable engine</strong> (Claude Code, Antigravity, Codex, or a local provider), each with its own consented <strong>skills + MCP catalog</strong>. A new <strong>integrations registry</strong> connects your tools behind a <strong>write-only secret broker</strong>. And Michael can now <strong>spawn an ephemeral worker straight from Slack</strong> — reply, then tear it down safely (worktree GC + token caps), all visible in a new <strong>Workers tab</strong>. Plus <strong>temporal date-range skills</strong>, a <strong>worker capability catalog</strong>, a visual <strong>Provider/Hive picker</strong>, and the <strong>Agent Gallery</strong> with six off-the-shelf hires. Free, open source, local-first.</p></div>
 
 for a while now the floor has had a not-so-secret default. Michael — the GOD orchestrator who routes work like a slightly unhinged regional manager — and most of his coworkers were, deep down, *Claude-shaped*. you could bring Antigravity and Codex to the party (and they were first-class), but the orchestrator at the center of it all was wired to one CLI. the team was multi-provider; the brain wasn't.
 
@@ -113,7 +113,7 @@ the floor you already love — now engine-agnostic, with a front door for your t
 
 ## get v0.3.0
 
-Munder Difflin is **free, open source, and local-first** on macOS, Windows, and Linux. no account, no cloud — your machine, your subscriptions, your floor.
+Vishwajeet Team is **free, open source, and local-first** on macOS, Windows, and Linux. no account, no cloud — your machine, your subscriptions, your floor.
 
 [**Download v0.3.0**](https://github.com/chaitanyagiri/munder-difflin/releases/latest), then pick an engine for your first hire, browse the [**Agent Gallery**](https://munderdiffl.in/hires), and — if you're feeling brave — point a Slack channel at Michael and watch him spawn a worker, answer, and tidy up after himself.
 

@@ -26,7 +26,7 @@ The Claude Max plan is worth it today only if Pro's limits stop you most weeks, 
 
 This page is the buying decision. Every way to pay for Claude Code, API keys and Team seats included, is in [what Claude Code costs](/blog/how-much-does-claude-code-cost/), and once you have Max, [getting the most out of your Claude Code Max plan](/blog/claude-code-max-plan-tips/) is about spending it well.
 
-If the reason you want Max is to run several agents at once, you can run them in separate terminals by hand, or use [Munder Difflin](https://harnessmd.com/download), free and open source, which runs several Claude Code agents on one login. As of 0.5.3 each agent gets its own token cap on its card in the Command Center, and the circuit breaker stops an agent that passes it. The cap counts that agent's own work tokens; it does not read your plan's weekly meter.
+If the reason you want Max is to run several agents at once, you can run them in separate terminals by hand, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, which runs several Claude Code agents on one login. As of 0.5.3 each agent gets its own token cap on its card in the Command Center, and the circuit breaker stops an agent that passes it. The cap counts that agent's own work tokens; it does not read your plan's weekly meter.
 
 ## What do you get with Claude Max 5x and 20x compared to Pro?
 
@@ -118,7 +118,7 @@ Watch the credential order, too. Claude Code's authentication docs rank `ANTHROP
 
 Anyone whose weekly bar never fills on Pro. If you open Claude Code a few times a week, if your month at API rates stays under the Pro plus credits line, or if your real work runs in `-p` scripts and CI with an API key set, Max buys headroom you will not touch.
 
-If you only want Fable for one small project, a month of Pro with usage credits under a low monthly spend limit is the cheaper experiment. Munder Difflin 0.5.3 starts hired agents on Fable 5 (the `defaultModel` in `src/main/config.ts`), so on Pro pick another default under Settings, Agents & Models unless you mean to spend credits.
+If you only want Fable for one small project, a month of Pro with usage credits under a low monthly spend limit is the cheaper experiment. Vishwajeet Team 0.5.3 starts hired agents on Fable 5 (the `defaultModel` in `src/main/config.ts`), so on Pro pick another default under Settings, Agents & Models unless you mean to spend credits.
 
 {% img "note-2" %}
 

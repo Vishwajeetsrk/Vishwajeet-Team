@@ -23,7 +23,7 @@ faq:
 
 Hermes Agent is a free, MIT licensed AI agent from Nous Research. It runs on your computer or a server, keeps memory between sessions, writes its own skills, and answers from a terminal or from Telegram, Slack and Discord. Verdict: pick it for an always on personal agent, not as a replacement for your coding CLI. Checked 3 Oct 2026.
 
-Hermes is one agent that lives on a server. If you want a team of coding agents on your desk instead, that is [Munder Difflin](https://harnessmd.com/download), free and open source: a desktop office for coding CLIs such as Claude Code and Codex. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup. Our [open source AI agents](/blog/open-source-ai-agents/) list covers the wider field.
+Hermes is one agent that lives on a server. If you want a team of coding agents on your desk instead, that is [Vishwajeet Team](https://harnessmd.com/download), free and open source: a desktop office for coding CLIs such as Claude Code and Codex. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup. Our [open source AI agents](/blog/open-source-ai-agents/) list covers the wider field.
 
 ## What is Hermes Agent?
 
@@ -92,21 +92,21 @@ MIT 250874 stars
 
 Zero assets is expected: the installer pulls from git, so the release is a tag and notes, with no binaries attached. Releases use a date tag and a version name, and the list shows five in September alone. The [v0.21.5 notes](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24) call it a patch release rolling up about 460 merged pull requests since v0.21.4, and defer the full write up to v0.22.0.
 
-## Hermes Agent vs OpenClaw, Munder Difflin, Claude Code and Pi: which should you use?
+## Hermes Agent vs OpenClaw, Vishwajeet Team, Claude Code and Pi: which should you use?
 
 Hermes or OpenClaw if you want a personal assistant in your chat apps, the other three if the job is code. Our [OpenClaw alternatives](/blog/openclaw-alternatives/) list has more picks. Head to head: [Hermes Agent vs OpenClaw](/blog/hermes-agent-vs-openclaw/). Licences and releases read from each repo through `gh api` on 3 Oct 2026, dates in UTC:
 
 | | Licence | Where it runs | What it is for | Latest release |
 | --- | --- | --- | --- | --- |
 | Hermes Agent | MIT | Your computer, a VPS or serverless | An always on agent that learns | v0.21.5, 24 Sep 2026 |
-| Munder Difflin | MIT, free and open source | Your desktop | An office for a team of coding CLIs | 0.5.5, 1 Oct 2026 |
+| Vishwajeet Team | MIT, free and open source | Your desktop | An office for a team of coding CLIs | 0.5.5, 1 Oct 2026 |
 | OpenClaw | MIT | Your own devices | A personal assistant in your chats | 2026.9.8, 3 Oct 2026 |
 | Claude Code | Proprietary | Your terminal | Anthropic's coding agent | 2.1.288, 2 Oct 2026 |
 | Pi | MIT | Your terminal | A minimal coding agent you extend | 1.0.0, 1 Oct 2026 |
 
 **Pick Hermes Agent if** you want memory and skills that grow, and a server to keep it on.
 
-**Pick Munder Difflin if** the work is a codebase and you want several coding agents side by side on your own machine.
+**Pick Vishwajeet Team if** the work is a codebase and you want several coding agents side by side on your own machine.
 
 **Pick OpenClaw if** you want the larger project. It had 391,210 stars at the same check, and its README lists native apps for macOS, iOS, Android, Windows and Linux. Switching later is cheap, since `hermes claw migrate` imports an OpenClaw setup.
 

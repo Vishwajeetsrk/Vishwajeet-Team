@@ -156,6 +156,6 @@ the tokens it was always going to send. Pair it with [smart model
 routing](/blog/do-more-with-less-model-routing/) and you've pulled the two biggest cost levers an agent
 team has: the right model for the task, and full price for the stable prefix exactly once.
 
-Munder Difflin is built to run [a hive](/#how) efficiently — lean models by default, stable shared scaffolds, and
-work that keeps flowing. [Download Munder Difflin](https://munderdiffl.in/#install) to run an agent team
+Vishwajeet Team is built to run [a hive](/#how) efficiently — lean models by default, stable shared scaffolds, and
+work that keeps flowing. [Download Vishwajeet Team](https://munderdiffl.in/#install) to run an agent team
 that doesn't waste your tokens; it's free and open source.

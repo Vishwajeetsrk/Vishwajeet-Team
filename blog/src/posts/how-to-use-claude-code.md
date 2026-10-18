@@ -23,7 +23,7 @@ faq:
 
 To use Claude Code, install it with one command, run `claude` inside a project folder, log in through your browser, and type what you want in plain English. It reads your code, edits files and runs commands. You need a paid Claude plan or a Console account. Checked 5 Oct 2026.
 
-You can do all of this by hand, or use [Munder Difflin](https://harnessmd.com/download), free and open source, a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It's for the day one Claude Code session is not enough. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers that setup. This post is the single session path, and it sits with the rest of our [guides](/blog/topics/guides/).
+You can do all of this by hand, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It's for the day one Claude Code session is not enough. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers that setup. This post is the single session path, and it sits with the rest of our [guides](/blog/topics/guides/).
 
 ## What do you need before you install Claude Code?
 

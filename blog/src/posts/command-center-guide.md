@@ -1,6 +1,6 @@
 ---
 title: "The Command Center: Kanban, Fleet and Budgets in One Place"
-description: "A guide to Munder Difflin's Command Center in 0.5.2: the kanban with task dependencies, the ask me tab, triggers, memory, live token use against each agent's budget, and when to watch the board instead of the floor."
+description: "A guide to Vishwajeet Team's Command Center in 0.5.2: the kanban with task dependencies, the ask me tab, triggers, memory, live token use against each agent's budget, and when to watch the board instead of the floor."
 date: 2026-07-03
 updated: 2026-09-10
 category: guides
@@ -13,7 +13,7 @@ author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What is the Command Center in Munder Difflin?"
+  - q: "What is the Command Center in Vishwajeet Team?"
     a: "It is the management view of your office, next to the floor. Its tabs are terminal, monitor, tasks, ask me, triggers, history, memory, graph, activity, skills and workers. The floor shows you who is busy. The Command Center shows what is queued, what is blocked, what it costs and what runs next."
   - q: "How does the task kanban work?"
     a: "Tasks move across todo, doing, blocked and done, and each one is assigned to an agent. A task can depend on other tasks, so downstream work waits for its prerequisites and you stop being the one who sequences handoffs."
@@ -38,7 +38,7 @@ the Command Center for the whole fleet over time</strong>.</p></div>
   <source src="/media/demo/features.mp4" type="video/mp4" />
 </video>
 
-Munder Difflin gives you two views of the same office. The **floor** is the ambient one: characters at desks and envelopes
+Vishwajeet Team gives you two views of the same office. The **floor** is the ambient one: characters at desks and envelopes
 flying between them. The **Command Center** is the management one, where you go when the question changes from "what is Dwight
 doing?" to "what is everyone doing, what has it cost, and what happens next?" This guide walks through it as of 0.5.2.
 
@@ -117,5 +117,5 @@ already waiting for you on [the ask me tab](/blog/human-in-the-loop-approving-ai
 
 ## Try it
 
-The Command Center is part of the free classic office. [Download Munder Difflin](https://munderdiffl.in/), and if the board earns a
+The Command Center is part of the free classic office. [Download Vishwajeet Team](https://munderdiffl.in/), and if the board earns a
 place in your morning routine, [a star on GitHub](https://github.com/chaitanyagiri/munder-difflin) helps other people find it.

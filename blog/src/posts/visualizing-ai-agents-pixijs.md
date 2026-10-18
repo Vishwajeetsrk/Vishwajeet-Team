@@ -21,7 +21,7 @@ faq:
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>An <strong>AI agent visualization</strong>
-turns "what is the team doing?" into something you can see. Munder Difflin renders agents as avatars
+turns "what is the team doing?" into something you can see. Vishwajeet Team renders agents as avatars
 on a <strong>Pixi.js</strong> office floor, driven by <strong>real events</strong>: Claude Code hooks
 move an avatar to the station matching its current tool, and routed hive messages fly as envelopes
 desk-to-desk. It's not a simulation — every motion reflects something an agent actually did.</p></div>
@@ -149,6 +149,6 @@ you want it.
 
 ---
 
-Munder Difflin renders your hive of Claude Code agents as a live Pixi.js office floor — real avatars,
-driven by real events, that you can actually watch. [Download Munder Difflin](https://munderdiffl.in/#install)
+Vishwajeet Team renders your hive of Claude Code agents as a live Pixi.js office floor — real avatars,
+driven by real events, that you can actually watch. [Download Vishwajeet Team](https://munderdiffl.in/#install)
 to see your agents at work; it's free and open source.

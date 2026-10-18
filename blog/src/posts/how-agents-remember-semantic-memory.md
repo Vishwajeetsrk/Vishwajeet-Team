@@ -15,7 +15,7 @@ faq:
   - q: "How do AI agents remember between sessions?"
     a: "They write durable facts to a plain-markdown memory file, and the harness mines that file into a shared semantic index — so any agent can recall it by meaning in a later session, even after its context window is wiped."
   - q: "What is MemPalace?"
-    a: "MemPalace is the CLI-driven semantic memory layer Munder Difflin uses: one shared palace on disk, a wing per agent, mined from each agent's memory.md and queried with `mempalace search` and `mempalace wake-up`."
+    a: "MemPalace is the CLI-driven semantic memory layer Vishwajeet Team uses: one shared palace on disk, a wing per agent, mined from each agent's memory.md and queried with `mempalace search` and `mempalace wake-up`."
   - q: "Do agents manage the search index themselves?"
     a: "No. The harness re-mines each changed memory.md every few minutes; agents just write notes and later run `mempalace search` or `wake-up` to recall — there's no database to administer and no MCP server to stand up."
   - q: "What happens if MemPalace isn't installed?"
@@ -151,7 +151,7 @@ recall fuzzily. Good memory hygiene is the one thing that's on you — see
 
 ---
 
-Munder Difflin gives every Claude Code agent plain-markdown memory plus a shared semantic palace the
+Vishwajeet Team gives every Claude Code agent plain-markdown memory plus a shared semantic palace the
 whole [hive can recall from](/#how) — local, fast, and graceful when the index isn't there.
-[Download Munder Difflin](/#install) to give your agents memory that actually sticks; it's free and
+[Download Vishwajeet Team](/#install) to give your agents memory that actually sticks; it's free and
 open source.

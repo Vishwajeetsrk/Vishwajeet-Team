@@ -1,6 +1,6 @@
 ---
 title: "Set Up a Claude Code Multi-Agent Workflow in 10 Minutes"
-description: "A from-zero Claude Code multi-agent setup: install Munder Difflin, onboard, spawn a few agents, and watch the GOD orchestrator route your first task."
+description: "A from-zero Claude Code multi-agent setup: install Vishwajeet Team, onboard, spawn a few agents, and watch the GOD orchestrator route your first task."
 date: 2026-05-24
 category: guides
 categoryLabel: Guides
@@ -13,7 +13,7 @@ author:
   initials: CG
 faq:
   - q: "Do I need anything besides Claude Code to set up a multi-agent workflow?"
-    a: "You need Claude Code installed and on your PATH, plus the Munder Difflin app. The harness spawns real `claude` sessions for you, so your existing Claude plan, MCP servers, and skills come along automatically."
+    a: "You need Claude Code installed and on your PATH, plus the Vishwajeet Team app. The harness spawns real `claude` sessions for you, so your existing Claude plan, MCP servers, and skills come along automatically."
   - q: "How many Claude Code agents can I run at once?"
     a: "Start with two or three so you can follow the work, then add more. Each agent is a real terminal process, so the practical limit is your machine's RAM and your Claude rate limits — not the harness."
   - q: "Is the multi-agent setup local or cloud?"
@@ -21,24 +21,24 @@ faq:
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>A working
-<strong>Claude Code multi-agent setup</strong> takes about ten minutes: install Munder Difflin,
+<strong>Claude Code multi-agent setup</strong> takes about ten minutes: install Vishwajeet Team,
 point onboarding at a repo, let it auto-spawn a <strong>GOD orchestrator</strong>, add a couple of
 worker agents, and describe one task in plain language. The harness handles identity, messaging,
 memory, and git so the agents act like a team instead of a pile of terminal tabs.</p></div>
 
 You can run several Claude Code sessions by hand, but the coordination — who does what, who knows
 what, who's allowed to commit — is the part that eats your afternoon. This guide gets you from zero
-to a coordinated team in about ten minutes, using [Munder Difflin](https://munderdiffl.in/#install)
+to a coordinated team in about ten minutes, using [Vishwajeet Team](https://munderdiffl.in/#install)
 as the harness that does the wiring.
 
 ## Before you start (2 minutes)
 
 You need two things:
 
-1. **Claude Code**, installed and runnable as `claude` in your terminal. Munder Difflin resolves the
+1. **Claude Code**, installed and runnable as `claude` in your terminal. Vishwajeet Team resolves the
    binary against your interactive shell's `PATH` (and common install spots like
    `~/.claude/local/`), so if `claude` works in a normal terminal, the harness will find it.
-2. **The Munder Difflin app** — [download it](https://munderdiffl.in/#install) for macOS, Windows,
+2. **The Vishwajeet Team app** — [download it](https://munderdiffl.in/#install) for macOS, Windows,
    or Linux. It's free and open source.
 
 That's the whole prerequisite list. You don't install a framework, a database, or a server. Every
@@ -139,5 +139,5 @@ gracefully to plain markdown files; the semantic recall layer is an optional upg
 
 ---
 
-Ready to try it? [Download Munder Difflin](https://munderdiffl.in/#install) and run your first
+Ready to try it? [Download Vishwajeet Team](https://munderdiffl.in/#install) and run your first
 coordinated team of Claude Code agents — it's free, local, and open source.

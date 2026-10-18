@@ -97,6 +97,6 @@ Pick by what you already pay for and how much you care about the licence. We thi
 - **Pick OpenCode if** you want MIT code, local models, free models to try, or one agent across several providers.
 - **Pick Claude Code if** you have Claude Pro or Max and want that plan to cover your coding, or you want its web and cloud features.
 
-Or run both. Nothing stops you installing two agents on one computer. [Munder Difflin](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. You still install each CLI and sign in with your own plan or key. Start with [how to install and use it](/blog/how-to-install-and-use-munder-difflin/).
+Or run both. Nothing stops you installing two agents on one computer. [Vishwajeet Team](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. You still install each CLI and sign in with your own plan or key. Start with [how to install and use it](/blog/how-to-install-and-use-munder-difflin/).
 
 <link rel="stylesheet" href="/blog/assets/media/opencode-vs-claude-code/motion.css"><script defer src="/blog/assets/media/opencode-vs-claude-code/motion.js"></script>

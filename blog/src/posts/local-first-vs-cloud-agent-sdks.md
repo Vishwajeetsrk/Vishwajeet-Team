@@ -139,8 +139,8 @@ cost should live, not on the hype cycle. If you're still weighing options,
 
 ---
 
-Munder Difflin is the [local-first](/#why) end of this spectrum — a hive where the orchestrator, agents,
-and memory run on your machine and still speak MCP to your tools. [Download Munder Difflin](/#install)
+Vishwajeet Team is the [local-first](/#why) end of this spectrum — a hive where the orchestrator, agents,
+and memory run on your machine and still speak MCP to your tools. [Download Vishwajeet Team](/#install)
 to run agents on your own terms — free and open source.
 
 <p style="font-size:0.85em;opacity:0.7;margin-top:2rem">Sources: <a href="https://visualstudiomagazine.com/articles/2026/04/06/microsoft-ships-production-ready-agent-framework-1-0-for-net-and-python.aspx">Visual Studio Magazine — Microsoft Agent Framework 1.0 GA</a>; <a href="https://zylos.ai/research/2026-03-26-agent-interoperability-protocols-mcp-a2a-acp-convergence">Zylos — Agent Interoperability Protocols 2026 (MCP/A2A/ACP)</a>; <a href="https://www.morphllm.com/ai-agent-framework">Morph — AI Agent Frameworks in 2026</a>; <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog — Copilot usage-based billing</a>.</p>

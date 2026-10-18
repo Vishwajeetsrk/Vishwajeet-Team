@@ -27,7 +27,7 @@ faq:
 
 A Claude Code subagent is a separate Claude worker that takes one task in its own context window and returns only a summary. You define one as a Markdown file in `.claude/agents/`, and Claude delegates to it when a task matches its `description`. Everything below was checked against Claude Code 2.1.284 on 29 Sep 2026.
 
-You can do all of this by hand with the files below, or use [Munder Difflin](https://harnessmd.com/download), free and open source, when what you need is several long running agents rather than helpers inside one session. The second half of this post shows where that line falls; the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
+You can do all of this by hand with the files below, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, when what you need is several long running agents rather than helpers inside one session. The second half of this post shows where that line falls; the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
 
 ## How do you create a Claude Code subagent?
 
@@ -120,7 +120,7 @@ The documented limits: one team per session, no nested teams, a fixed lead, and 
 
 When the agents should outlive a session. Subagents and agent teams both hang off one lead session: close it and the team goes with it, and a subagent comes back only if you resume that same session. A [multi agent harness](/blog/what-is-a-multi-agent-harness/) runs each agent as its own long lived session and coordinates them from outside.
 
-Munder Difflin is one, and as of v0.5.3 (the ref we read for this) it works like this:
+Vishwajeet Team is one, and as of v0.5.3 (the ref we read for this) it works like this:
 
 - Each agent is a full CLI session, and it does not have to be Claude Code: `AGENT_PROVIDER_PRESETS` in `src/shared/agentProvider.ts` lists Claude Code, Codex, Gemini CLI, Antigravity, Grok, Kimi Code, Qwen, OpenCode, Crush, Pi, Copilot and Cursor.
 - Each agent gets a workspace folder with `identity.md`, `memory.md`, `inbox/` and `outbox/` that survives restarts, and a router in the main process moves outbox messages into the right inboxes (`src/main/hive.ts`).

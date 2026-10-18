@@ -15,14 +15,14 @@ faq:
   - q: "How do you put a human in the loop on AI agent actions?"
     a: "Approve where the work already happens. Modern coding agents (Claude Code among them) already pause and ask permission before risky actions, right in their own session. The reliable pattern is to lean on that native prompt rather than building a separate approval queue — and to route any explicit 'I need a human' decision to a single person or their proxy, so there's one place an answer comes from."
   - q: "Why not build a dedicated approval queue for agents?"
-    a: "Because it duplicates state. A custom queue becomes a second source of truth that can drift from the agent's actual state and adds its own failure modes — Munder Difflin's old in-app queue could even re-queue an item when you approved it. Removing the queue in favor of native permission prompts deleted the bug along with the abstraction."
+    a: "Because it duplicates state. A custom queue becomes a second source of truth that can drift from the agent's actual state and adds its own failure modes — Vishwajeet Team's old in-app queue could even re-queue an item when you approved it. Removing the queue in favor of native permission prompts deleted the bug along with the abstraction."
   - q: "Can you approve an AI agent's action remotely?"
     a: "Yes. Because approval rides on the native permission prompt in the agent's session, it can be approved wherever you can reach that session — including from your phone via /remote-control. A blocking action waits for your yes; you don't have to be at your desk to give it."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>The right way to put a human in the loop on
 agent actions isn't a <strong>custom approval queue</strong> bolted onto your system — it's to
-<strong>approve where the work already happens</strong>. Munder Difflin <em>removed</em> its in-app
+<strong>approve where the work already happens</strong>. Vishwajeet Team <em>removed</em> its in-app
 approval queue in v0.1.7 in favor of <strong>native Claude Code permission prompts</strong>: the agent
 pauses in its own terminal, you approve (even from your phone via <code>/remote-control</code>), and any
 explicit "I need a human" message routes to the <strong>orchestrator — the human's proxy on the
@@ -52,7 +52,7 @@ systems: keeping two sources of truth in sync. They drift. The queue shows an it
 moved past; an approval lands but the agent's context has changed; the panel and the session disagree
 about what "yes" even means.
 
-It also adds its own failure modes. Munder Difflin shipped exactly this at first — a floating approvals
+It also adds its own failure modes. Vishwajeet Team shipped exactly this at first — a floating approvals
 panel — and learned the lesson the hard way: approving an item could **re-queue it**, because resolving
 an approval re-routed the message back into the queue. The
 [v0.1.7 release](https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md) notes it plainly:
@@ -106,7 +106,7 @@ recipient, one source of truth, no parallel inbox to babysit.
 ## Approve from anywhere
 
 A nice property falls out of doing it this way: because approval rides on the native session prompt,
-**you can approve from wherever you can reach the session.** Munder Difflin's `/remote-control` lets the
+**you can approve from wherever you can reach the session.** Vishwajeet Team's `/remote-control` lets the
 human approve a blocking action from their phone — the agent waits, you tap yes on the train, it
 continues. A queue would have forced you to build remote approval as yet another feature; native HITL
 gets it almost for free, because you're just answering the prompt the agent is already blocked on.
@@ -135,4 +135,4 @@ the orchestrator. You get approvals that can't drift, that work remotely, and th
 bugs. The best approval queue is the one you didn't build.
 
 Want to see native, no-queue approvals — and a hive that routes its own escalations to an orchestrator
-you talk to? You can [download Munder Difflin](/#install) free; it's open source.
+you talk to? You can [download Vishwajeet Team](/#install) free; it's open source.

@@ -6,7 +6,7 @@ category: use-cases
 categoryLabel: Use Cases
 type: Non-technical
 primaryKeyword: "ai agents process user feedback"
-secondaryKeywords: ["feedback triage automation", "turn comments into backlog", "user feedback analysis ai", "product feedback workflow", "munder difflin use case"]
+secondaryKeywords: ["feedback triage automation", "turn comments into backlog", "user feedback analysis ai", "product feedback workflow", "Vishwajeet Team use case"]
 tags: ["Use Cases", "Feedback", "Workflow", "Product", "Multi-Agent"]
 author:
   name: Chaitanya Giri
@@ -16,7 +16,7 @@ faq:
     a: "Three passes: bucket every comment (bug, feature ask, objection, praise) with quotes and links preserved; merge duplicates across channels so five phrasings of one problem become one item with five receipts; then rank by evidence — how many distinct people, how serious, how blocked. The output is kanban cards whose descriptions cite the actual users."
   - q: "What's the advantage over just reading the comments yourself?"
     a: "Coverage and honesty. A human skims, remembers the loudest five comments, and calls it the community's opinion. An agent instructed to account for every comment can't skip the boring middle — and the resulting backlog item carries links to every person who reported it, which also gives you a list of exactly who to tell when it ships."
-  - q: "Did this actually change what Munder Difflin shipped?"
+  - q: "Did this actually change what Vishwajeet Team shipped?"
     a: "Directly. The launch-week backlog put the Windows messaging failure and onboarding dead-ends at the top on evidence volume, and both headline v0.4.4. The 'this decision needs your eyes' flag — asked for independently by two users on two different channels — is on the roadmap because cross-channel merging revealed it was one request, not two."
 ---
 

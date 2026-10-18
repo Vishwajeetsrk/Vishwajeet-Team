@@ -124,8 +124,8 @@ fewer tokens billed — compression is one of the cheapest levers on an agent's 
 
 ---
 
-Munder Difflin gives every Claude Code agent markdown memory plus
+Vishwajeet Team gives every Claude Code agent markdown memory plus
 [a shared semantic palace that keeps the lossless original and a compact, recall-fast copy](https://munderdiffl.in/#how)
 — so months of context load in a few thousand tokens, locally.
-[Download Munder Difflin](https://munderdiffl.in/#install) to give your agents memory that compresses
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to give your agents memory that compresses
 without forgetting; it's free and open source.

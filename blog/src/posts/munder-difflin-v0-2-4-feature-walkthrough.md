@@ -1,11 +1,11 @@
 ---
-title: "Munder Difflin v0.2.4 Feature Walkthrough"
-description: "A comprehensive guide to every change in Munder Difflin v0.2.4 — how the Codex lifecycle-hook bridge achieves full hive parity, what the Schedules tab adds, why tunnelmole replaced localtunnel, and what else shipped."
+title: "Vishwajeet Team v0.2.4 Feature Walkthrough"
+description: "A comprehensive guide to every change in Vishwajeet Team v0.2.4 — how the Codex lifecycle-hook bridge achieves full hive parity, what the Schedules tab adds, why tunnelmole replaced localtunnel, and what else shipped."
 date: 2026-06-09
 category: guides
 categoryLabel: Guides
 type: Technical
-primaryKeyword: "munder difflin v0.2.4 features"
+primaryKeyword: "Vishwajeet Team v0.2.4 features"
 secondaryKeywords: ["codex lifecycle hook bridge", "antigravity gemini hive", "agy hook bridge", "claude code multi-provider", "schedules tab command center", "codex full hive parity"]
 tags: ["Release", "Multi-Agent", "Claude Code", "Codex", "Guides", "Internals"]
 author:
@@ -74,7 +74,7 @@ This pattern is honest about what the provider can and cannot do. If a CLI doesn
 
 ## Schedules tab
 
-Scheduled missions have been in Munder Difflin since v0.1.6. The scheduler fires recurring missions on a configurable interval — hourly standups, PR reviews, compaction cycles, re-engagement checks for quiet workers. Until v0.2.3, these lived inside an inline section of the Floor tab.
+Scheduled missions have been in Vishwajeet Team since v0.1.6. The scheduler fires recurring missions on a configurable interval — hourly standups, PR reviews, compaction cycles, re-engagement checks for quiet workers. Until v0.2.3, these lived inside an inline section of the Floor tab.
 
 The move to a **dedicated Schedules tab** in the Command Center is a small surface change with a real day-to-day effect. When you're running a persistent office with multiple recurring missions — and most meaningful setups do — those missions need a place to live that isn't nested inside the agent roster view. The Schedules tab now owns:
 
@@ -123,4 +123,4 @@ Everything from v0.2.0 (observability, circuit breaker, fleet monitoring, persis
 
 To use the new providers: install the relevant CLIs (`agy` for Antigravity, `codex` for OpenAI Codex) and put them on your `PATH`. When you add a worker in the Add Agent dialog, select the provider. The hive handles the rest.
 
-Download v0.2.4 from the [releases page](https://github.com/chaitanyagiri/munder-difflin/releases/latest). Munder Difflin is free, open source, and local-first on macOS, Windows, and Linux.
+Download v0.2.4 from the [releases page](https://github.com/chaitanyagiri/munder-difflin/releases/latest). Vishwajeet Team is free, open source, and local-first on macOS, Windows, and Linux.

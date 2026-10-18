@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS memories (
 
 ## 8. Walkthrough verification record (done before UI changes)
 
-`npm run dev` bounded launch 2026-10-09: main+preload built, dev server up, window **"Munder Difflin"**, 7 stable processes, **zero errors in log**; process tree killed after. Both previously-outstanding walkthroughs (P3 CEO panel, P4 computer tab): launch-level verified; **interactive click-through remains the human review-gate step** — reported here honestly, no failures found to block Phase 5.
+`npm run dev` bounded launch 2026-10-09: main+preload built, dev server up, window **"Vishwajeet Team"**, 7 stable processes, **zero errors in log**; process tree killed after. Both previously-outstanding walkthroughs (P3 CEO panel, P4 computer tab): launch-level verified; **interactive click-through remains the human review-gate step** — reported here honestly, no failures found to block Phase 5.
 
 ## 9. Explicit non-goals
 

@@ -20,7 +20,7 @@ faq:
   - q: "Can I use Claude models without Claude Code?"
     a: "Yes. OpenCode, Cline, Pi and Aider all take an Anthropic API key, per their own sites on 5 Oct 2026. Cursor's model list on the same day included Claude Opus 5.5 and Claude Sonnet 5.5. You are then billed by the token, or through your Cursor plan."
   - q: "Can I run Claude Code and another coding agent together?"
-    a: "Yes. Nothing stops you installing two agents on one computer. Munder Difflin is a free and open source desktop app built for this: it runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer, so you can mix them or switch."
+    a: "Yes. Nothing stops you installing two agents on one computer. Vishwajeet Team is a free and open source desktop app built for this: it runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer, so you can mix them or switch."
 thumb: "/blog/assets/media/claude-code-alternatives/hero.png"
 ---
 
@@ -40,7 +40,7 @@ The Claude Code repo is public, but its licence file says "All rights reserved",
 
 **1. Codex CLI.** [Codex CLI](https://github.com/openai/codex) is OpenAI's "coding agent from OpenAI that runs locally on your computer". The code is Apache 2.0. OpenAI's [pricing page](https://learn.chatgpt.com/docs/pricing) lists the CLI from ChatGPT Plus, which was $20 a month on 5 Oct 2026, or you can use an API key. Its help centre says Codex is included in Free and Go too, but those cards on the pricing page list the desktop app only. Best for: the same way of working, on OpenAI models. More in [Codex vs Claude Code](/blog/codex-cli-vs-claude-code/).
 
-**2. Munder Difflin.** [Munder Difflin](https://harnessmd.com/download) is what we make, and it is not a replacement for Claude Code. It is a different kind of tool: a free and open source desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits you if you want to mix or switch agents without choosing one. You still install each CLI and sign in with your own plan or key. Start with [how to install and use Munder Difflin](/blog/how-to-install-and-use-munder-difflin/).
+**2. Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download) is what we make, and it is not a replacement for Claude Code. It is a different kind of tool: a free and open source desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits you if you want to mix or switch agents without choosing one. You still install each CLI and sign in with your own plan or key. Start with [how to install and use Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/).
 
 **3. OpenCode.** [OpenCode](https://opencode.ai/) is an MIT licensed agent for your terminal, IDE or desktop. Its site says "free models included or connect any model from any provider", with 75+ providers and local models. OpenCode Go was $10 a month on 5 Oct 2026. Best for: model freedom. See [what is OpenCode](/blog/what-is-opencode/).
 
@@ -62,7 +62,7 @@ Every row was checked on 5 Oct 2026 against the tool's own site, pricing page or
 | --- | --- | --- | --- | --- |
 | Claude Code | Terminal, IDE, desktop, web | Proprietary. | Claude Pro, $20 a month. | Claude. |
 | Codex CLI | Terminal | Apache 2.0. | Plus, $20 a month, is the first plan that lists the CLI. | OpenAI. |
-| Munder Difflin | Desktop app for a team of agents | MIT. | Free and open source; you bring your agents' plans. | Whatever your agents run. |
+| Vishwajeet Team | Desktop app for a team of agents | MIT. | Free and open source; you bring your agents' plans. | Whatever your agents run. |
 | OpenCode | Terminal, IDE, desktop | MIT. | Free models; Go, $10 a month. | 75+ providers. |
 | Cursor | Editor and CLI | Proprietary. | Hobby, free; Individual, $20 a month. | OpenAI, Anthropic, Google, SpaceXAI. |
 | Gemini CLI | Terminal | Apache 2.0. | A paid Gemini API key or an enterprise licence. | Gemini. |
@@ -91,7 +91,7 @@ Pick by the reason you are leaving. The coin stacks above are level for a reason
 <figure class="mg" data-scene="pegs"><img src="/blog/assets/media/claude-code-alternatives/pegs.png" width="1600" height="1200" loading="lazy" decoding="async" alt="Animation. A shape sorter with seven tiles, one for each tool. Seven pegs pop up in turn, each standing for a reason to leave, and each one drops into the only tile it fits."><figcaption>Seven reasons, seven tools: each peg fits one hole.</figcaption></figure>
 
 - **You want the same workflow, different lab:** Codex CLI.
-- **You want to keep Claude Code and add others:** Munder Difflin.
+- **You want to keep Claude Code and add others:** Vishwajeet Team.
 - **You want any model, local ones included:** OpenCode.
 - **You want an editor:** Cursor, or Cline if you are staying in VS Code.
 - **You already pay for Gemini API access:** Gemini CLI.

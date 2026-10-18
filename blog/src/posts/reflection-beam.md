@@ -23,7 +23,7 @@ faq:
 
 Reflection AI Beam is a 501 billion parameter open weight AI model for coding, reasoning and agent work, announced on 5 October 2026. You cannot download it yet. Our view: promising on efficiency, unproven until the weights ship, and behind Qwen 3.8 Max on every row in Reflection's own tables where both have a score. Checked 6 Oct 2026.
 
-Open models can drive coding agents, which is why we care. [Munder Difflin](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. We have not tried Beam with it, because there are no weights to try. Our guide to [running Munder Difflin on open models](/blog/run-munder-difflin-on-open-models/) covers the models you can use now, the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup, and the [Concepts hub](/blog/topics/concepts/) explains the terms.
+Open models can drive coding agents, which is why we care. [Vishwajeet Team](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. We have not tried Beam with it, because there are no weights to try. Our guide to [running Vishwajeet Team on open models](/blog/run-munder-difflin-on-open-models/) covers the models you can use now, the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup, and the [Concepts hub](/blog/topics/concepts/) explains the terms.
 
 ## What is Reflection AI Beam?
 

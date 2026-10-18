@@ -6,7 +6,7 @@ category: use-cases
 categoryLabel: Use Cases
 type: Non-technical
 primaryKeyword: "automate releases with ai agents"
-secondaryKeywords: ["release automation workflow", "ai changelog generation", "release notes automation", "ship faster open source", "munder difflin workflow"]
+secondaryKeywords: ["release automation workflow", "ai changelog generation", "release notes automation", "ship faster open source", "Vishwajeet Team workflow"]
 tags: ["Use Cases", "Release", "Workflow", "Automation", "Multi-Agent"]
 author:
   name: Chaitanya Giri

@@ -211,6 +211,6 @@ pseudo-terminal needs a kernel-level allocation.
 
 ---
 
-Munder Difflin runs every Claude Code agent in a real node-pty terminal — authentic shells, streamed
-to a live UI, coordinated as a hive. [Download Munder Difflin](https://munderdiffl.in/#install) to see
+Vishwajeet Team runs every Claude Code agent in a real node-pty terminal — authentic shells, streamed
+to a live UI, coordinated as a hive. [Download Vishwajeet Team](https://munderdiffl.in/#install) to see
 real terminals driving real agents; it's free and open source.

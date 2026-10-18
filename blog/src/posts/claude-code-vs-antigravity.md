@@ -23,7 +23,7 @@ Pick Google Antigravity if you want a free plan that includes its desktop agent 
 
 The Antigravity here is Google's agent platform, not the 360 degree drone that shares its name and has yet to fix a flaky test. It launched as an IDE on 18 Nov 2025. Google I/O on 19 May 2026 added the Antigravity 2.0 desktop app, a terminal CLI called `agy` and an SDK beside that IDE, and extensions for other IDEs followed on 20 Aug 2026.
 
-You can pick one and stop there. Or run both side by side in [Munder Difflin](https://harnessmd.com/download), a free and open source desktop app where every agent picks its own engine: a Claude Code agent at one desk, an Antigravity agent at the next, each a real CLI in its own terminal, signed in with accounts you already have. Our [install guide](/blog/how-to-install-and-use-munder-difflin/) walks through the free Antigravity route.
+You can pick one and stop there. Or run both side by side in [Vishwajeet Team](https://harnessmd.com/download), a free and open source desktop app where every agent picks its own engine: a Claude Code agent at one desk, an Antigravity agent at the next, each a real CLI in its own terminal, signed in with accounts you already have. Our [install guide](/blog/how-to-install-and-use-munder-difflin/) walks through the free Antigravity route.
 
 ## What is the difference between Claude Code and Antigravity?
 
@@ -53,7 +53,7 @@ On [Claude's pricing page](https://claude.com/pricing) on 14 Sep 2026, Free has 
 
 Yes, `agy` is Google's answer to the `claude` command. Google's CLI docs install it with `curl -fsSL https://antigravity.google/cli/install.sh | bash` on macOS and Linux (PowerShell on Windows), and `agy --help` on version 1.2.2 lists a print mode (`-p`), plan and accept-edits modes, `--sandbox` and an `mcp` subcommand. For another terminal rival, read [Codex CLI vs Claude Code](/blog/codex-cli-vs-claude-code/).
 
-## How does Munder Difflin run Claude Code and Antigravity?
+## How does Vishwajeet Team run Claude Code and Antigravity?
 
 As two plain CLIs wired differently, per the 0.5.2 source (`src/shared/agentProvider.ts`, `src/main/hive.ts`) we read on 14 Sep 2026.
 

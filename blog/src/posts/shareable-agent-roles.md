@@ -26,7 +26,7 @@ faq:
     a: "Not yet. Today, curation is a maintainer commit — there is deliberately no public write or submission pipeline. A community submission queue needs its own review-and-trust design, so we scoped it out of this first release rather than ship it half-built."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>A well-configured agent <strong>role</strong> is real work — the right provider, model, flags, goal prompt, capabilities, and budget — and today that knowledge is trapped in one person's setup. Munder Difflin v0.2.8 makes a role a <strong>portable artifact</strong>: a small JSON manifest we call a <strong>hire</strong> (a job description as a file). You hire from a <strong>link</strong> or a <strong>file</strong>, and the Add-Agent modal opens <em>pre-filled</em> — but <strong>import never spawns anything</strong>; you review every field and you press spawn. Browse ready-made roles at <strong>The Hiring Fair</strong> (<a href="https://munderdiffl.in/hires/">munderdiffl.in/hires</a>). The thesis: portable roles create a community growth loop, the way package registries did for libraries.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>A well-configured agent <strong>role</strong> is real work — the right provider, model, flags, goal prompt, capabilities, and budget — and today that knowledge is trapped in one person's setup. Vishwajeet Team v0.2.8 makes a role a <strong>portable artifact</strong>: a small JSON manifest we call a <strong>hire</strong> (a job description as a file). You hire from a <strong>link</strong> or a <strong>file</strong>, and the Add-Agent modal opens <em>pre-filled</em> — but <strong>import never spawns anything</strong>; you review every field and you press spawn. Browse ready-made roles at <strong>The Hiring Fair</strong> (<a href="https://munderdiffl.in/hires/">munderdiffl.in/hires</a>). The thesis: portable roles create a community growth loop, the way package registries did for libraries.</p></div>
 
 There's a moment, the first time you open a fresh agent floor, where the hard part isn't running an agent — it's *configuring* one. Which provider? Which model? What flags? And the question that actually stalls people: what is this thing's *job*? Writing a role from a blank box is a steep first step, and it's the step that stands between a curious newcomer and watching a single agent do a single useful thing.
 
@@ -113,15 +113,15 @@ Here's the thesis. Once a role is a portable artifact, something compounding hap
 
 This is the same move package registries made for code. Before npm or PyPI, reusing a library meant copying files and re-reading install instructions; the registry turned "here's how you set it up" into "here's the artifact, take it." Shareable Hires does that for agent *roles*. "Hire Pam" becomes the easy on-ramp that "write a system prompt" never was — and the floor that the [GOD orchestrator](/blog/how-the-god-orchestrator-works/) coordinates can fill up with proven coworkers instead of guesses.
 
-It also fits the broader bet behind Munder Difflin: **local-first, open-source, you own your floor.** The roles are MIT, the gallery has no login or trackers, the binary that runs an agent is always your own, and the human is always the one who hits spawn. Portability here doesn't mean handing control to a cloud — it means handing a *file* to a person, who stays in charge of what they do with it. (For why we [built it this way](/blog/why-we-built-munder-difflin/) in the first place, the origin story has the rest.)
+It also fits the broader bet behind Vishwajeet Team: **local-first, open-source, you own your floor.** The roles are MIT, the gallery has no login or trackers, the binary that runs an agent is always your own, and the human is always the one who hits spawn. Portability here doesn't mean handing control to a cloud — it means handing a *file* to a person, who stays in charge of what they do with it. (For why we [built it this way](/blog/why-we-built-munder-difflin/) in the first place, the origin story has the rest.)
 
 ## Go browse The Hiring Fair
 
 The fastest way to feel the idea is to use it. Open [The Hiring Fair](https://munderdiffl.in/hires/), pick a role that matches something on your plate, flip it to your provider, and hire it — then read every field in the modal before you spawn, because that review step is the whole point.
 
-- [Launching Munder Difflin v0.2.8: Shareable Hires](/blog/launching-munder-difflin-v0-2-8/) — the release.
+- [Launching Vishwajeet Team v0.2.8: Shareable Hires](/blog/launching-munder-difflin-v0-2-8/) — the release.
 - [The hire manifest as untrusted input](/blog/hire-manifest-untrusted-input/) — the security deep-dive on the trust model.
 - [Inside the GOD orchestrator](/blog/how-the-god-orchestrator-works/) — who coordinates the roles you hire.
 - [The clone army trap](/blog/the-clone-army-trap-mixed-swarm-vs-identical-agents/) — why a *mix* of well-chosen roles beats ten identical agents.
-- [Why we built Munder Difflin](/blog/why-we-built-munder-difflin/) — the origin story.
+- [Why we built Vishwajeet Team](/blog/why-we-built-munder-difflin/) — the origin story.
 - [CHANGELOG](https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md) — everything that shipped.

@@ -22,7 +22,7 @@ faq:
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>AI agents read your code, call tools with your
 keys, and remember your work — so an agent tool asks for an unusual amount of trust. The answer isn't to
-trust harder; it's to make the tool <strong>inspectable</strong>. Munder Difflin is
+trust harder; it's to make the tool <strong>inspectable</strong>. Vishwajeet Team is
 <strong>MIT-licensed and local-first on purpose</strong>: the orchestrator, the agents, and their memory
 all run on your machine, and the code that drives them is code you can read, audit, and fork. For
 software this autonomous, open source isn't ideology — it's how you replace blind trust with
@@ -30,7 +30,7 @@ verification.</p></div>
 
 There's a lot of AI agent tooling being built right now, and a striking amount of it is closed: a cloud
 service you send your code to, a black box that acts on your repo, a "core" that's open while the parts
-that matter sit behind a subscription. [Munder Difflin](https://munderdiffl.in/#opensource) went the
+that matter sit behind a subscription. [Vishwajeet Team](https://munderdiffl.in/#opensource) went the
 other way — MIT-licensed, source-available, local-first — and not as an afterthought. It's a deliberate
 choice about what a tool like this *should* be. Here's the case for building agent tooling in the open,
 on purpose.
@@ -73,7 +73,7 @@ what you can do as a user:
 that actually means something pairs open code with **local-first** execution: the orchestrator, the
 agents, and their memory all run on *your* machine, and your code and notes never have to leave it.
 
-That pairing is deliberate in Munder Difflin, and the two halves reinforce each other. Local-first gives
+That pairing is deliberate in Vishwajeet Team, and the two halves reinforce each other. Local-first gives
 you [control and privacy](/blog/why-local-first-matters-for-ai-agents/); open source lets you *verify*
 that the local-first promise is real rather than taking it on faith. Closed-and-local is unverifiable;
 open-and-cloud still ships your data away. Open-and-local is the only quadrant where you can both keep
@@ -125,7 +125,7 @@ thing runs on your machine, your data stays local, and the orchestration code is
 
 The more an agent can do on your behalf, the more it matters that you can see what it's doing. Open
 source plus local-first is how a tool earns that trust — not by asking for it, but by making itself
-checkable. Munder Difflin is MIT and built in the open [on
+checkable. Vishwajeet Team is MIT and built in the open [on
 purpose](https://munderdiffl.in/#opensource), because that's the only honest way to ship software this
-autonomous. [Download Munder Difflin](https://munderdiffl.in/#install) and read every line you're running
+autonomous. [Download Vishwajeet Team](https://munderdiffl.in/#install) and read every line you're running
 — it's free and open source.

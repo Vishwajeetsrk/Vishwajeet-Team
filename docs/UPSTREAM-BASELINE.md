@@ -1,4 +1,4 @@
-# UPSTREAM BASELINE — Munder Difflin
+# UPSTREAM BASELINE — Vishwajeet Team
 
 **Date:** 2026-10-09
 **Branch:** `feature/ai-company-os-foundation`
@@ -10,7 +10,7 @@
 
 ## 1. What This Is
 
-Munder Difflin is an Electron desktop agent harness that turns terminal coding CLIs (Claude Code, Codex, Grok, Antigravity, Gemini CLI, Kimi, Qwen, OpenCode, Crush, pi, Copilot CLI, Cursor) into a self-coordinating multi-agent office. Each agent is a real PTY process with its own working directory, memory, and mailbox. A GOD agent ("Michael") orchestrates. Avatars on a Pixi.js floor reflect real hook events.
+Vishwajeet Team is an Electron desktop agent harness that turns terminal coding CLIs (Claude Code, Codex, Grok, Antigravity, Gemini CLI, Kimi, Qwen, OpenCode, Crush, pi, Copilot CLI, Cursor) into a self-coordinating multi-agent office. Each agent is a real PTY process with its own working directory, memory, and mailbox. A GOD agent ("Michael") orchestrates. Avatars on a Pixi.js floor reflect real hook events.
 
 **Repository:** https://github.com/HarnessMD/munder-difflin
 **License:** MIT (source code). Pixel-art assets: LimeZu Complete Version licence (requires attribution). See LICENSE and LICENSE-ASSETS.

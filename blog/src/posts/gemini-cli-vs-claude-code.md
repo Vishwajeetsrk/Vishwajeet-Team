@@ -101,6 +101,6 @@ More options are in [Claude Code alternatives](/blog/claude-code-alternatives/) 
 
 ## Can you run both?
 
-Yes. They are separate programs with separate sign ins, so both can live on one machine. To run them side by side there is [Munder Difflin](https://harnessmd.com/download), free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. See [how to install and use Munder Difflin](/blog/how-to-install-and-use-munder-difflin/).
+Yes. They are separate programs with separate sign ins, so both can live on one machine. To run them side by side there is [Vishwajeet Team](https://harnessmd.com/download), free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. See [how to install and use Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/).
 
 <link rel="stylesheet" href="/blog/assets/media/gemini-cli-vs-claude-code/motion.css"><script defer src="/blog/assets/media/gemini-cli-vs-claude-code/motion.js"></script>

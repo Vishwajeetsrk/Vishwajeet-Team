@@ -97,6 +97,6 @@ that keeps shipping](/blog/run-an-office-of-ai-agents/) even after you log off.
 
 ---
 
-Munder Difflin is the coordination layer for the Claude Code agents you already run — roles, shared
-memory, messaging, and an orchestrator, all local. [Download Munder Difflin](/#install) to make the
+Vishwajeet Team is the coordination layer for the Claude Code agents you already run — roles, shared
+memory, messaging, and an orchestrator, all local. [Download Vishwajeet Team](/#install) to make the
 jump; it's free and open source.

@@ -1,6 +1,6 @@
 ---
-title: "Why CLI Agents Are So Powerful — and How Munder Difflin Spends Fewer Tokens Doing the Same Work"
-description: "CLI agents are powerful because they have terminal-level access: they run builds, tests, and git, and verify their own work by executing it. Here's why that matters — and the concrete ways Munder Difflin cuts token consumption while doing it."
+title: "Why CLI Agents Are So Powerful — and How Vishwajeet Team Spends Fewer Tokens Doing the Same Work"
+description: "CLI agents are powerful because they have terminal-level access: they run builds, tests, and git, and verify their own work by executing it. Here's why that matters — and the concrete ways Vishwajeet Team cuts token consumption while doing it."
 date: 2026-06-10
 category: concepts
 categoryLabel: Concepts
@@ -16,20 +16,20 @@ faq:
     a: "Because a CLI agent has terminal-level access to the machine it runs on. It can read and write real files, run the build, run the tests, use git, and call any tool you have installed — then read the actual output and react to it. A chat assistant can only suggest a change; a CLI agent makes the change and proves it works by executing it. That closes the loop between proposing and verifying, which is the whole game in autonomous work."
   - q: "Why does running CLI agents locally matter?"
     a: "Local execution is what makes the terminal-level access real. The agent operates on your actual filesystem, your installed toolchain, and your git history — no upload, no sandbox copy, no round-trip to a vendor's environment. You also get privacy (code and data never leave the machine), and the agents can run 24/7 on hardware you already own instead of metered cloud compute."
-  - q: "How does Munder Difflin reduce token consumption?"
+  - q: "How does Vishwajeet Team reduce token consumption?"
     a: "Four structural levers. A shared memory layer and board so agents read context once instead of re-deriving it per turn. Scoped task contracts so each agent only loads what its job needs, not the whole project. A token-budget steward that paces and caps spend across the hive. And capability routing — sending routine work to a cheaper-tier agent and reserving the expensive orchestrator for reasoning — instead of one giant always-on context carrying everything."
   - q: "Does a shared memory layer actually save tokens?"
     a: "Yes, because the expensive part of an agent isn't the model — it's the context it re-reads every turn, multiplied across a whole team. When agents share a board and a memory layer, the project's facts, decisions, and state are derived once and recalled compactly, instead of each agent re-discovering them by re-reading files into its own window. In a fleet you pay context N times, so removing redundant re-derivation compounds."
-  - q: "Is Munder Difflin local-first and open source?"
-    a: "Yes. Munder Difflin is a local, 24/7 multi-agent CLI harness that runs as an Electron desktop app on your own computer. It drives the CLIs you already have — Claude Code, Codex, Antigravity — so there's no API key and no per-seat platform tax on top of model tokens. It's free and open source."
+  - q: "Is Vishwajeet Team local-first and open source?"
+    a: "Yes. Vishwajeet Team is a local, 24/7 multi-agent CLI harness that runs as an Electron desktop app on your own computer. It drives the CLIs you already have — Claude Code, Codex, Antigravity — so there's no API key and no per-seat platform tax on top of model tokens. It's free and open source."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>CLI agents are powerful for one
 reason: terminal-level access.</strong> They don't just <em>suggest</em> edits — they read and write
 real files, run builds and tests, use git, call any installed tool, and <strong>verify their own work by
-actually executing it</strong>. Running them <strong>locally</strong> (as Munder Difflin does) is what
+actually executing it</strong>. Running them <strong>locally</strong> (as Vishwajeet Team does) is what
 makes that access real: your filesystem, your toolchain, your git history, private and on 24/7. And
-because a whole hive of these agents could get expensive, Munder Difflin cuts token consumption with four
+because a whole hive of these agents could get expensive, Vishwajeet Team cuts token consumption with four
 structural levers: a <strong>shared memory layer + board</strong>, <strong>scoped task contracts</strong>,
 a <strong>token-budget steward</strong>, and <strong>capability routing</strong> — so agents stop
 re-deriving context and stop paying frontier prices for routine work.</p></div>
@@ -91,21 +91,21 @@ Run it locally and the access stops being a sandbox approximation and becomes th
 - **24/7 on hardware you already own.** A local agent doesn't clock out and doesn't bill you for idle
   compute. Close the lid, open it tomorrow, and the floor is still there.
 
-This is the bet **Munder Difflin** makes. It's a local, 24/7 multi-agent CLI harness — an Electron
+This is the bet **Vishwajeet Team** makes. It's a local, 24/7 multi-agent CLI harness — an Electron
 desktop app that runs a whole *virtual office* of Office-themed agents on your computer, collaborating
 through a shared board, inboxes, and memory. It doesn't replace your CLI agents; it **drives the ones you
 already have** — Claude Code, Codex, Antigravity — so the terminal-level access is real, local, and
 private by construction. (For the deeper case, see [why local-first matters for AI
 agents](/blog/why-local-first-matters-for-ai-agents/).)
 
-## But a hive of agents could get expensive — so here's how Munder Difflin doesn't
+## But a hive of agents could get expensive — so here's how Vishwajeet Team doesn't
 
 Everything above is the upside. The honest downside of "run a whole office of agents" is the obvious one:
 **N agents, each running a powerful model, each carrying its own context, is N times the token bill.**
 Power that you can't afford isn't power.
 
 The naive design — one giant, always-on context that every agent shares and everyone re-reads on every
-turn — is exactly the design that bankrupts you. Munder Difflin is built the other way, around four
+turn — is exactly the design that bankrupts you. Vishwajeet Team is built the other way, around four
 structural levers that cut token consumption without dumbing the agents down. None of these are
 benchmark claims; they're architectural choices, and you can reason about why each one bends the curve.
 
@@ -125,7 +125,7 @@ made structural — the harness scopes the context for you rather than relying o
 parts it doesn't need (it won't, and you'd pay for them anyway).
 
 **3. A token-budget steward — so spend is paced and capped, not unbounded.** Autonomy without a budget is
-how you wake up to a surprise bill. Munder Difflin runs the hive against a token budget: a steward that
+how you wake up to a surprise bill. Vishwajeet Team runs the hive against a token budget: a steward that
 paces work and caps consumption across the floor, so a long-running mission grinds along *within a
 ceiling* instead of sprinting until the meter screams. Predictable, attributable cost is part of what
 makes 24/7 operation safe to leave running.
@@ -153,7 +153,7 @@ itself by execution. Local-first is what makes that access real, private, and al
 shared-memory, scoped-contract, budgeted, capability-routed hive is what makes a *floor* of those agents
 something you can actually afford to leave running.
 
-That's Munder Difflin: a virtual office of CLI agents on your own computer — real access, real
+That's Vishwajeet Team: a virtual office of CLI agents on your own computer — real access, real
 verification, fewer tokens. [Download it](https://munderdiffl.in/#install) — it's free, open source, and
 local-first.
 
@@ -166,7 +166,7 @@ loop between proposing and verifying.
 **Why run them locally?** Local execution is what makes the access real — your actual filesystem,
 toolchain, and git history — plus privacy and 24/7 operation on hardware you own.
 
-**How does Munder Difflin cut token use?** Shared memory and a board (don't re-derive context), scoped
+**How does Vishwajeet Team cut token use?** Shared memory and a board (don't re-derive context), scoped
 task contracts (load only what the job needs), a token-budget steward (pace and cap spend), and
 capability routing (right agent, not the priciest one).
 

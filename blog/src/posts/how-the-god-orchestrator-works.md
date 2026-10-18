@@ -28,7 +28,7 @@ single-committer git, and a human-approval queue). Its four jobs: keep the <stro
 <strong>escalate</strong> only the critical few to you.</p></div>
 
 Every multi-agent system eventually needs one agent in charge — not to do the work, but to decide who
-does. In Munder Difflin that's the **GOD orchestrator**. This is a deep dive into how it actually
+does. In Vishwajeet Team that's the **GOD orchestrator**. This is a deep dive into how it actually
 works: the split between intelligence and mechanism, the four jobs it owns, and the rules that keep it
 from looping or going rogue.
 
@@ -188,6 +188,6 @@ another `claude` process — a special one.
 
 ---
 
-Munder Difflin's [GOD orchestrator](https://munderdiffl.in/#how) routes, adjudicates, and escalates for a whole hive of Claude Code
-agents — on your own machine, with a full audit trail. [Download Munder Difflin](https://munderdiffl.in/#install)
+Vishwajeet Team's [GOD orchestrator](https://munderdiffl.in/#how) routes, adjudicates, and escalates for a whole hive of Claude Code
+agents — on your own machine, with a full audit trail. [Download Vishwajeet Team](https://munderdiffl.in/#install)
 to put one in charge of your floor; it's free and open source.

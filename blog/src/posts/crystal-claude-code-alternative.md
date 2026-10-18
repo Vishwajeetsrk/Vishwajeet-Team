@@ -72,7 +72,7 @@ Adding a shared brain to a team of agents is a bigger shift than it sounds:
 
 Layer messaging and an orchestrator on top of that memory and you've crossed from "parallel sessions"
 to a [multi-agent harness](/#what): agents with roles and mailboxes, a [GOD orchestrator](/#how) that
-routes work, and a visual office floor. That's [Munder Difflin](/#what) — open source (MIT), local-first,
+routes work, and a visual office floor. That's [Vishwajeet Team](/#what) — open source (MIT), local-first,
 on macOS, Windows, and Linux.
 
 ## Crystal vs a memory-backed hive
@@ -82,13 +82,13 @@ on macOS, Windows, and Linux.
 - **Move to a hive** if you want shared memory, inter-agent messaging, and an orchestrator — agents
   that act as one team instead of parallel strangers.
 
-See also: a head-to-head [Claude Squad vs Munder Difflin](/blog/claude-squad-vs-munder-difflin/) and
+See also: a head-to-head [Claude Squad vs Vishwajeet Team](/blog/claude-squad-vs-munder-difflin/) and
 the full [roundup of multi-agent Claude Code tools](/blog/best-claude-code-multi-agent-tools/).
 
 ---
 
 > The tooling landscape moves fast — check Crystal's repo for current features. We've described it on
-> its own terms; Munder Difflin is our own project.
+> its own terms; Vishwajeet Team is our own project.
 
-If shared memory is the missing piece, [download Munder Difflin](/#install) and let your agents
+If shared memory is the missing piece, [download Vishwajeet Team](/#install) and let your agents
 actually remember — free and open source.

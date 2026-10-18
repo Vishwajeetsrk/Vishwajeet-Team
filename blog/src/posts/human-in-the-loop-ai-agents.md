@@ -136,7 +136,7 @@ tunable. If the queue is noisy, tighten the policy so more decisions are handled
 
 ---
 
-Munder Difflin ships human-in-the-loop the right way: a [GOD orchestrator](https://munderdiffl.in/#how) that resolves routine traffic
+Vishwajeet Team ships human-in-the-loop the right way: a [GOD orchestrator](https://munderdiffl.in/#how) that resolves routine traffic
 itself and an approvals queue that escalates only the critical few — with your notes relayed straight
-back. [Download Munder Difflin](https://munderdiffl.in/#install) to run agents that stay autonomous
+back. [Download Vishwajeet Team](https://munderdiffl.in/#install) to run agents that stay autonomous
 and ask only when they should; it's free and open source.

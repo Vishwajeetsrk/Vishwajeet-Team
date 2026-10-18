@@ -52,7 +52,7 @@ Claude Code can run in a permission mode that bypasses the approval prompt for r
 effectively "don't ask me before each edit or command." For an unattended run that's not optional;
 it's the difference between an agent that works and one that waits.
 
-In Munder Difflin this is the **auto mode** toggle: when it's on, agents are launched with
+In Vishwajeet Team this is the **auto mode** toggle: when it's on, agents are launched with
 `--permission-mode bypassPermissions` so they proceed without pausing on every step. You'll see the
 exact command in the spawn dialog, so there's no mystery about what's being run.
 
@@ -156,7 +156,7 @@ goals concrete and the guardrails tight, and the overnight shift earns its keep.
 
 ---
 
-Munder Difflin gives you [everything an overnight hive needs](https://munderdiffl.in/#why): an autonomous Stop-hook loop, an auto mode that skips routine
+Vishwajeet Team gives you [everything an overnight hive needs](https://munderdiffl.in/#why): an autonomous Stop-hook loop, an auto mode that skips routine
 approvals, an orchestrator that escalates only the critical few, and a git audit log of the night.
-[Download Munder Difflin](https://munderdiffl.in/#install) to let a hive of Claude Code agents build
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to let a hive of Claude Code agents build
 while you sleep; it's free and open source.

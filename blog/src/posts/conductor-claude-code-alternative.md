@@ -72,7 +72,7 @@ The word *conductor* implies coordination, so it's worth being precise about wha
 - **Adjudication + escalation.** The coordinator resolves the routine and escalates only the
   genuinely critical (spend, destructive ops, scope) for your sign-off.
 
-That's the model behind [Munder Difflin](/#what): a [GOD orchestrator](/#how) you talk to in plain
+That's the model behind [Vishwajeet Team](/#what): a [GOD orchestrator](/#how) you talk to in plain
 language, shared MemPalace memory, inter-agent messaging, and a watchable office floor — open source
 (MIT) and running on macOS, Windows, and Linux.
 
@@ -90,8 +90,8 @@ comparison](/blog/claude-code-orchestration-tools-compared/). To replace the age
 
 ---
 
-> Features and platforms change — check Conductor's site for current details. Munder Difflin is our
+> Features and platforms change — check Conductor's site for current details. Vishwajeet Team is our
 > own tool; we've described Conductor on its own terms.
 
-If real orchestration is what you're missing, [download Munder Difflin](/#install) and run a
+If real orchestration is what you're missing, [download Vishwajeet Team](/#install) and run a
 coordinated team locally — it's free and open source.

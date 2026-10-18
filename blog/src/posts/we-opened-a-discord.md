@@ -1,26 +1,26 @@
 ---
 title: "We Opened a Discord (Merge a PR, Become Employee of the Month)"
-description: "Munder Difflin has a Discord now. Come watch releases land, get help with your floor, and earn the most thematically necessary contributor role in open source."
+description: "Vishwajeet Team has a Discord now. Come watch releases land, get help with your floor, and earn the most thematically necessary contributor role in open source."
 date: 2026-08-19
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin discord"
-secondaryKeywords: ["munder difflin community", "open source discord server", "contribute to munder difflin", "claude code community"]
+primaryKeyword: "Vishwajeet Team discord"
+secondaryKeywords: ["Vishwajeet Team community", "open source discord server", "contribute to Vishwajeet Team", "claude code community"]
 tags: ["Story", "Community", "Discord", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Where is the Munder Difflin Discord?"
+  - q: "Where is the Vishwajeet Team Discord?"
     a: "discord.gg/SEDzP5ZPk5 — also linked from the site nav, the footer, and the README. It's free, it's where release news lands first, and it's the fastest way to get help with a setup problem or show off what your floor is doing."
   - q: "What is the employee of the month role?"
-    a: "Merge a pull request into Munder Difflin and a GitHub workflow automatically grants you the 'employee of the month' role in the Discord. There's an optional Discord field in the PR template so the bot knows who to promote. It's a joke that's also completely sincere."
+    a: "Merge a pull request into Vishwajeet Team and a GitHub workflow automatically grants you the 'employee of the month' role in the Discord. There's an optional Discord field in the PR template so the bot knows who to promote. It's a joke that's also completely sincere."
   - q: "Why a Discord and not GitHub Discussions?"
     a: "GitHub stays the home for issues and PRs — bugs belong where the code is. What launch week showed is that people also want a lower-stakes room: quick setup questions, sharing screenshots of their office floor, and hearing what's shipping before it ships. That's chat-shaped, not issue-shaped."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin has a Discord:
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team has a Discord:
 <a href="https://discord.gg/SEDzP5ZPk5">discord.gg/SEDzP5ZPk5</a>. Release news first, setup
 help fastest, floor screenshots welcome. And a workflow now watches the repo: <strong>merge a
 PR, and you're automatically granted the <em>employee of the month</em> role.</strong> We
@@ -55,7 +55,7 @@ best part of the whole launch. They deserve a wall. This is the wall.
 
 ## Employee of the month
 
-Here's the part we're irrationally proud of. Contributing to Munder Difflin now comes with a
+Here's the part we're irrationally proud of. Contributing to Vishwajeet Team now comes with a
 title: **merge a pull request, and a GitHub workflow automatically grants you the *employee of
 the month* role in the Discord.** The PR template has an optional `Discord:` field so the bot
 knows who to celebrate. No nomination committee, no monthly limit, no plaque in a hallway —

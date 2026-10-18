@@ -1,7 +1,7 @@
 # MASTER PROJECT STATUS — Orbit AI (formerly AI Company OS)
 
 **Date:** 2026-10-10 · **Branch:** `feature/ai-company-os-foundation` (upstream `2c646127`, v0.4.6) · **Work tree:** uncommitted (commit only on request)
-**Product identity (vision, 2026-10-10):** **Orbit AI** — conversational CEO **Dot**, tagline "One command. An entire AI workforce." Brand migration is planned work (ORBIT-EXPANSION-PLAN M10), not yet applied; runtime still ships as "Munder Difflin".
+**Product identity (vision, 2026-10-10):** **Orbit AI** — conversational CEO **Dot**, tagline "One command. An entire AI workforce." Brand migration is planned work (ORBIT-EXPANSION-PLAN M10), not yet applied; runtime still ships as "Vishwajeet Team".
 **Gate state:** Phase 5 (Persistent Scoped Memory) COMPLETE — **stopped at the Phase 5 review gate**. Orbit expansion planned (`docs/ORBIT-EXPANSION-PLAN.md`); **no Orbit milestone work has started.** Next: user review → approve M1 (Security Core & Safety Supervisor).
 
 ---

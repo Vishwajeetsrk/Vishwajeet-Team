@@ -1,18 +1,18 @@
 ---
 title: "Nº 5 Product of the Day: How Our First Product Hunt Launch Went"
-description: "Munder Difflin finished #5 Product of the Day on Product Hunt — ahead of DeepSeek's harness launch that day. The honest retro: who showed up, what they asked, and the two pieces of feedback we're already shipping fixes for."
+description: "Vishwajeet Team finished #5 Product of the Day on Product Hunt — ahead of DeepSeek's harness launch that day. The honest retro: who showed up, what they asked, and the two pieces of feedback we're already shipping fixes for."
 date: 2026-08-19
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin product hunt"
+primaryKeyword: "Vishwajeet Team product hunt"
 secondaryKeywords: ["product hunt launch retrospective", "product of the day", "ai agent harness launch", "launching a dev tool on product hunt"]
 tags: ["Story", "Launch", "Product Hunt", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "How did Munder Difflin do on Product Hunt?"
+  - q: "How did Vishwajeet Team do on Product Hunt?"
     a: "It finished #5 Product of the Day on 2026-08-14 — ahead of DeepSeek's harness, which launched the same day and placed one spot behind on the day's leaderboard. It was a first launch, self-hunted, with no hunter network behind it."
   - q: "Did Product Hunt drive a lot of traffic?"
     a: "Honestly, no. The badge brought credibility, not crowds. What it did bring was a small number of unusually serious evaluators, including a CEO who ran it on a real multi-day task and reviewed it in detail. For a developer tool, that trade is worth knowing about before you launch."
@@ -20,7 +20,7 @@ faq:
     a: "Two things, both already acted on: first-run engine selection could trap you if you picked an engine you didn't have access to (fixed territory in v0.4.4's onboarding work), and people want a visible flag for 'this decision needs your eyes' so they can tell an agent that paused from one that decided on its own. That second one is now on the roadmap."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>On August 14 we launched Munder Difflin
+<div class="callout tldr"><span class="ic">TL;DR</span><p>On August 14 we launched Vishwajeet Team
 on Product Hunt for the first time. It finished <strong>#5 Product of the Day</strong> — ahead of
 DeepSeek's harness, which launched the same day. The honest retro: Product Hunt bought us
 credibility, not traffic, and the handful of people who actually commented gave us better product
@@ -40,7 +40,7 @@ debut. I have screenshotted that leaderboard more times than I will admit.
 
 The comment thread stayed small but ran unusually deep — I answered everything, and most of what
 came in was worth answering. The one full review the launch produced came from Gal Dayan,
-co-founder and CEO of Dial, who didn't skim the landing page — he ran Munder Difflin against his
+co-founder and CEO of Dial, who didn't skim the landing page — he ran Vishwajeet Team against his
 own Claude subscription on a multi-day task before writing a five-dimension review. His
 build-vs-buy verdict was the sentence I'd been trying to write for months, in someone else's
 words:

@@ -1,4 +1,4 @@
-# Munder Difflin — Landing Site Design System
+# Vishwajeet Team — Landing Site Design System
 
 > Source of truth for `docs/index.html` (the marketing site at **munderdiffl.in**).
 > This is **not** the app design system — see the root `DESIGN.md` for the Electron app.
@@ -8,9 +8,9 @@
 > thick black borders, and hard offset shadows. JetBrains Mono carries the type. Playful
 > pastel color-blocks accent the feature cards; one warm **yellow** drives every CTA.
 >
-> We keep Munder Difflin's own identity inside this system: the **maroon brand mark**, the
+> We keep Vishwajeet Team's own identity inside this system: the **maroon brand mark**, the
 > name, the *Office* parody, the **GOD / hive / MemPalace** story, and the real captured
-> product footage. "Munder Difflin is a paper company," so the cream-paper canvas is on-theme.
+> product footage. "Vishwajeet Team is a paper company," so the cream-paper canvas is on-theme.
 >
 > **History:** this replaces the previous *dark, flat, rounded* system. That direction
 > ("no offset shadows, no square corners, dark canvas") is fully retired.
@@ -115,7 +115,7 @@ Inter is fallback only.
 | Body | sans | 14.5–15px | 400 | normal | `--ink-dim` |
 | Button | mono | 13–14px | 700 | normal | |
 | Terminal / code | mono | 13–14px | 400 | normal | on `--ink-band` |
-| Wordmark | mono | 13px | 700 | 0.02em | "MUNDER DIFFLIN" |
+| Wordmark | mono | 13px | 700 | 0.02em | "Vishwajeet Team" |
 
 **Emphasis:** in the big "What" statement, key nouns use `--ink` (bold), `--sky` (hive mind,
 long-term memory) and `--maroon` (GOD orchestrator).

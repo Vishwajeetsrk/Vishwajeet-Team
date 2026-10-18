@@ -67,7 +67,7 @@ Delivered per design §1–§9: `MemoryService` + 5 scopes + ACL/provenance/rete
 - **Gate (pack Ph5):** real terminal/browser event → matching office state change, observed live. **Depends on:** M1/M3 panels, P4 events (done).
 
 ## M10 — Brand & Dot Identity
-- **Scope:** centralized brand config (Orbit AI name, Dot CEO identity, app-owned mascot assets, icon/favicon, color/typography tokens already in `design/tokens.ts`), replace hardcoded "Munder Difflin" strings (package.json, index.html, window title) via config + i18n, retire leftover "Ada" copy, onboarding/tagline. **Brand stays out of DB schemas and runtime contracts** (vision §1). Actual exported assets wired to the UI — no generated mockups as production.
+- **Scope:** centralized brand config (Orbit AI name, Dot CEO identity, app-owned mascot assets, icon/favicon, color/typography tokens already in `design/tokens.ts`), replace hardcoded "Vishwajeet Team" strings (package.json, index.html, window title) via config + i18n, retire leftover "Ada" copy, onboarding/tagline. **Brand stays out of DB schemas and runtime contracts** (vision §1). Actual exported assets wired to the UI — no generated mockups as production.
 - **Gate:** one config change rebrands the app; no hardcoded product-name literals remain outside the brand module. **Depends on:** none (sequenced last per §12 priority 6).
 
 ## M11 — Reliability, Accessibility & Performance
@@ -97,6 +97,6 @@ Delivered per design §1–§9: `MemoryService` + 5 scopes + ACL/provenance/rete
 | Container isolation never added | open deviation — M2 formal defer-or-spike |
 | Scope creep across 12 Orbit milestones | mitigate: strict gates, one milestone at a time |
 | Permission catalog design errors (M1) | mitigate: user-reviewed defaults, default-deny, bypass test suite |
-| "Munder Difflin" → Orbit AI rename touches runtime strings | mitigate: M10 isolated; runtime IDs/schemas untouched |
+| "Vishwajeet Team" → Orbit AI rename touches runtime strings | mitigate: M10 isolated; runtime IDs/schemas untouched |
 
 **Immediate next step:** user review of the four MASTER documents + `ORBIT-EXPANSION-PLAN.md` + Phase 5 manual walkthrough → approve **M1 (Security Core & Safety Supervisor)** scope and its permission-catalog draft.

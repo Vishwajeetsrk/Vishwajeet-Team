@@ -38,7 +38,7 @@ Coding agents ship with a built-in gate: the **permission prompt**. By default C
 a sensitive action and asks. That's great when a human is watching — and useless when the entire premise
 is "run a hive of agents unattended overnight." You can't approve a prompt you're asleep for. If the prompts are wearing you down in the daytime too, see [why Claude Code keeps asking for permission](/blog/why-does-claude-code-keep-asking-for-permission/).
 
-So autonomous setups reach for the other end of the dial. In Munder Difflin that's **auto mode**, which
+So autonomous setups reach for the other end of the dial. In Vishwajeet Team that's **auto mode**, which
 spawns each agent with `--permission-mode bypassPermissions`. The onboarding flow says it plainly:
 
 > Agents in the harness run **unattended**. By default, every agent is spawned with
@@ -66,12 +66,12 @@ turns "the agent broke something" into "the agent's branch is wrong," which is a
 process commits, the [single-committer pattern](/blog/single-committer-git-pattern/). That alone removes
 a whole class of damage: an agent can't force-push, rewrite history, or stomp another agent's branch,
 because it doesn't hold the git hammer at all. The same instinct applies to everything sharp: keep
-production credentials out of the agent's environment, and scope its filesystem access. (Munder Difflin's
+production credentials out of the agent's environment, and scope its filesystem access. (Vishwajeet Team's
 own file IPC is sandboxed to a root path — operations take a root plus a relative path, so a request
 can't wander outside it.)
 
 **3. Keep a programmable gate.** Turning off the *prompt* doesn't mean turning off *policy*. Claude
-Code's **PreToolUse hook** fires before every tool call — Munder Difflin already wires one on every tool
+Code's **PreToolUse hook** fires before every tool call — Vishwajeet Team already wires one on every tool
 (it uses it to animate the live office floor), and that exact hook point is where you can inspect a tool
 call and allow, ask, or **deny** it. A few lines of policy at PreToolUse — "never let `rm -rf` outside
 the worktree," "block writes to `.env`" — is a gate that works even when no human is watching. (More on
@@ -129,4 +129,4 @@ cheap. A good [harness orchestrator](/#how) bakes most of this in — isolated w
 git, lifecycle hooks, and an audit trail — so safe-by-default is the path of least resistance.
 
 Want to see unattended agents that are isolated, observable, and auditable by default? You can
-[download Munder Difflin](/#install) free — it's open source.
+[download Vishwajeet Team](/#install) free — it's open source.

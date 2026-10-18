@@ -140,9 +140,9 @@ isn't a little cheaper — it's *categorically* cheaper, for output that holds u
 **cost per completed task**, and a leaderless clone army that needs a human to merge its contradictions
 isn't cheap on that measure at all.
 
-## How Munder Difflin is built around this
+## How Vishwajeet Team is built around this
 
-This isn't just a thesis — it's the architecture of the product. [Munder Difflin](https://munderdiffl.in)
+This isn't just a thesis — it's the architecture of the product. [Vishwajeet Team](https://munderdiffl.in)
 runs a virtual office where a [god orchestrator](/blog/how-the-god-orchestrator-works/) decomposes your
 intent and delegates to Office-themed worker agents of *varying* capability. The cheap workers handle the
 routine; the orchestrator and any escalated workers handle the hard reasoning — [per-agent model

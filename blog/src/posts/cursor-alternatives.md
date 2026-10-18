@@ -19,7 +19,7 @@ faq:
   - q: "Is there a cheaper alternative to Cursor?"
     a: "Yes, on the first paid plan. On 8 Oct 2026 Cursor's Individual plan was $20 a month. Zed Pro and GitHub Copilot Pro were each $10 per month, and OpenCode Go was $10 a month, per each vendor's own page. Zed Pro includes $5 of tokens and bills by usage beyond that, so a heavy month can cost more."
   - q: "Can I use Cursor and another coding agent together?"
-    a: "Yes. OpenAI's Codex README says its IDE extension installs in Cursor, and Anthropic's overview has an install link for Cursor too. Munder Difflin is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer."
+    a: "Yes. OpenAI's Codex README says its IDE extension installs in Cursor, and Anthropic's overview has an install link for Cursor too. Vishwajeet Team is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer."
 ---
 
 Our picks for a Cursor alternative are Devin Desktop (the new name for Windsurf) if you want the closest swap, Zed if you want an open source editor, and Claude Code or Codex if you would rather hand work to an agent. Checked 8 Oct 2026.
@@ -40,7 +40,7 @@ The Best for lines are our view.
 
 **1. Claude Code.** [Claude Code](https://code.claude.com/docs/en/overview) is, in Anthropic's words, "an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools". Its licence file says "All rights reserved". [Anthropic's pricing page](https://claude.com/pricing) includes it in Pro, $20 if billed monthly. Best for: handing over whole tasks. See [Claude Code pricing](/blog/how-much-does-claude-code-cost/).
 
-**2. Munder Difflin.** [Munder Difflin](https://harnessmd.com/download) is what we make, and it is not a replacement for Cursor. It is a different kind of tool: a free and open source desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits you if you want several agents working at once. Start with [how to install and use Munder Difflin](/blog/how-to-install-and-use-munder-difflin/).
+**2. Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download) is what we make, and it is not a replacement for Cursor. It is a different kind of tool: a free and open source desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits you if you want several agents working at once. Start with [how to install and use Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/).
 
 **3. Codex.** [Codex CLI](https://github.com/openai/codex) is "a coding agent from OpenAI that runs locally on your computer", with an IDE extension too. The CLI code is Apache 2.0. On OpenAI's [pricing page](https://learn.chatgpt.com/docs/pricing), Plus, $20 a month, is the first plan that lists the CLI and IDE extension. Best for: OpenAI models in the editor you already have. See [what is Codex](/blog/what-is-codex/).
 
@@ -62,7 +62,7 @@ Each row comes from the tool's own site or GitHub repo. The prices are our selec
 | --- | --- | --- | --- | --- |
 | Cursor | Editor | None on its repo. | Hobby, free; Individual, $20 a month. | OpenAI, Anthropic, Google, SpaceXAI, and more. |
 | Claude Code | Terminal, IDE, desktop, browser | All rights reserved. | Claude Pro, $20 if billed monthly. | Claude. |
-| Munder Difflin | Desktop app for a team of agents | Open source. | Free and open source. | Whatever your agents run. |
+| Vishwajeet Team | Desktop app for a team of agents | Open source. | Free and open source. | Whatever your agents run. |
 | Codex | Terminal and IDE extension | Apache 2.0 (CLI). | Plus, $20 a month, for the CLI and IDE extension. | OpenAI. |
 | Cline | IDE extension and CLI | Apache 2.0. | Free; pay for inference. | Your keys, or Cline's provider. |
 | OpenCode | Coding agent | MIT. | Free models; Go, $10 a month. | Any provider. |
@@ -95,7 +95,7 @@ Our view: pick by the reason you are leaving. Price alone rarely settles it: thr
 <figure class="mg" data-scene="board"><img src="/blog/assets/media/cursor-alternatives/board.png" width="1600" height="1200" loading="lazy" decoding="async" alt="Animation. A train departure board with seven rows. The letter tiles flip and settle row by row, each row showing a reason to leave on the left and the tool or tools for it on the right."><figcaption>Seven reasons, seven rows: read your row.</figcaption></figure>
 
 - **You want the same kind of editor:** Devin Desktop.
-- **You want several agents working as a team:** Munder Difflin.
+- **You want several agents working as a team:** Vishwajeet Team.
 - **You want an open source editor:** Zed.
 - **You want to stay in VS Code:** Cline, or the Codex IDE extension.
 - **You want any model:** OpenCode.

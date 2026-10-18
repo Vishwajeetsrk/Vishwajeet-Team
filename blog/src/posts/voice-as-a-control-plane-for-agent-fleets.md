@@ -1,6 +1,6 @@
 ---
 title: "Voice Is a Control Plane, Not a Gimmick"
-description: "Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Munder Difflin's Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study."
+description: "Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Vishwajeet Team's Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study."
 date: 2026-07-03
 category: concepts
 categoryLabel: Concepts
@@ -14,7 +14,7 @@ author:
 faq:
   - q: "Why is voice bad for writing code but good for orchestrating agents?"
     a: "Because the bandwidth is mismatched in one direction and matched in the other. Code is dense, precise, and positional — dictating a diff by voice is slower and more error-prone than typing it. Orchestration commands are the opposite: short, intent-shaped utterances like assign this, what's the status, kill that worker. A sentence of intent fans out into minutes of agent work, so voice carries the command and the agents carry the density."
-  - q: "What can you actually do by voice in Munder Difflin's Talk mode?"
+  - q: "What can you actually do by voice in Vishwajeet Team's Talk mode?"
     a: "Press Talk and you get a low-latency voice channel to the GOD orchestrator over the OpenAI Realtime API. Michael reads the hive — tasks, board, memory, agents, activity, cost — and can create and assign tasks, dispatch agents, pause, steer, halt, spawn or hire workers, kill them, and edit schedules. Destructive verbs are gated behind spoken echo-back confirmation, and completions are spoken back the moment they land."
   - q: "How does Talk mode prevent a misheard command from killing the wrong agent?"
     a: "Every destructive verb is held behind a spoken echo-back confirmation: Michael repeats the exact action back and requires a distinct confirm token, never a bare yes. There are also hard refusals — he will not kill the GOD agent or target all agents at once, no matter what he heard. Task matching by voice is normalized and scored, and close matches trigger a spoken which-one disambiguation instead of silently mutating the wrong card."
@@ -26,7 +26,7 @@ faq:
     a: "Your own OpenAI key with Realtime API access — it's bring-your-own-key, set in Settings → AI Engines. The key is decrypted only in the Electron main process and minted into short-lived ephemeral session tokens; it never reaches the renderer. Without a key the Talk button stays visibly disabled with a needs-OpenAI-key cue rather than failing silently."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Voice is a terrible interface for writing code and a genuinely good interface for running a fleet.</strong> The trick is bandwidth: code is high-bandwidth and precise, but orchestration — <strong>delegation, status, approvals</strong> — is a stream of short, intent-shaped commands that fan out into minutes of agent work. Munder Difflin's <strong>Talk mode</strong> (v0.3.2) is the case study: a realtime voice channel to the GOD orchestrator with <strong>spoken echo-back confirmation</strong> for destructive verbs, a distinct <strong>michael-voice</strong> audit identity, a <strong>hard spend cap</strong>, <strong>idle auto-disconnect</strong>, and <strong>completions spoken back</strong> the moment they land. Voice done as a control plane, not a party trick.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Voice is a terrible interface for writing code and a genuinely good interface for running a fleet.</strong> The trick is bandwidth: code is high-bandwidth and precise, but orchestration — <strong>delegation, status, approvals</strong> — is a stream of short, intent-shaped commands that fan out into minutes of agent work. Vishwajeet Team's <strong>Talk mode</strong> (v0.3.2) is the case study: a realtime voice channel to the GOD orchestrator with <strong>spoken echo-back confirmation</strong> for destructive verbs, a distinct <strong>michael-voice</strong> audit identity, a <strong>hard spend cap</strong>, <strong>idle auto-disconnect</strong>, and <strong>completions spoken back</strong> the moment they land. Voice done as a control plane, not a party trick.</p></div>
 
 Every few months someone demos "coding by voice" and the reaction is always the same: neat, and nobody wants it. Dictating a diff is strictly worse than typing one. So the whole category gets filed under gimmick, and that's a mistake — because the demo was testing voice against the wrong workload.
 
@@ -50,7 +50,7 @@ The other half of the fit: orchestration is naturally *ambient*. You're across t
 
 ## Case study: Talk mode
 
-Munder Difflin shipped this thesis as a feature in v0.3.2 (the [launch post](/blog/launching-munder-difflin-v0-3-2/) has the full tour). Press **Talk** and you get a low-latency voice channel — OpenAI Realtime API over WebRTC, bring-your-own key — to Michael, the GOD orchestrator, running *alongside* the async terminal floor, not replacing it.
+Vishwajeet Team shipped this thesis as a feature in v0.3.2 (the [launch post](/blog/launching-munder-difflin-v0-3-2/) has the full tour). Press **Talk** and you get a low-latency voice channel — OpenAI Realtime API over WebRTC, bring-your-own key — to Michael, the GOD orchestrator, running *alongside* the async terminal floor, not replacing it.
 
 Michael listens, answers, and acts. The read side covers the hive: tasks, board, memory, agents, activity, cost. The action side is the full orchestration verb set: create and assign tasks, dispatch agents, pause / steer / halt, spawn and hire workers, kill them, edit schedules. Notice what's *not* in that list: writing code. The voice channel never touches an editor. It only moves work around — exactly the payload the channel can carry.
 
@@ -76,4 +76,4 @@ None of these guardrails would matter for a demo. All of them matter for a contr
 
 Judge voice by the payload you put on it. As an authoring channel for code, it loses to a keyboard every time. As a **control plane** for a fleet — delegation, status, approvals, completions — it's the natural interface, *provided* it's built like infrastructure: confirmations for anything destructive, a distinct audit identity, caps on spend, and a timeout on silence. That's the difference between a gimmick and a plane you'd actually fly.
 
-If you want to try the case study, [download Munder Difflin](https://github.com/chaitanyagiri/munder-difflin/releases/latest) — free, MIT-licensed, local-first — and if the idea resonates, a [star on GitHub](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.
+If you want to try the case study, [download Vishwajeet Team](https://github.com/chaitanyagiri/munder-difflin/releases/latest) — free, MIT-licensed, local-first — and if the idea resonates, a [star on GitHub](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.

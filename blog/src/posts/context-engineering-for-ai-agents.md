@@ -169,8 +169,8 @@ window raises the ceiling on what you *can* hold; it does nothing to change the 
 volume. The teams that get the most out of agents — single or swarm — are the ones who treat the context
 window as the scarce, high-value resource it is and engineer what goes into it deliberately.
 
-Munder Difflin is built around exactly these moves: [isolated per-agent windows](https://munderdiffl.in/#what),
+Vishwajeet Team is built around exactly these moves: [isolated per-agent windows](https://munderdiffl.in/#what),
 [semantic memory](https://munderdiffl.in/#how) that recalls the relevant few, file-based mailboxes and an
 event log that keep shared state out of context, and standups that compact the long tail.
-[Download Munder Difflin](https://munderdiffl.in/#install) to run a hive that stays sharp for hours —
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to run a hive that stays sharp for hours —
 it's free and open source.

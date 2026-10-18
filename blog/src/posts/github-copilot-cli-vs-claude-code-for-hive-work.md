@@ -105,7 +105,7 @@ Copilot can use Claude models and hand work to a Claude agent on GitHub, but nei
 
 ## Can you run Claude Code and Copilot CLI side by side?
 
-Yes, and because Copilot CLI reads `CLAUDE.md`, both agents see the same project rules. You can do it by hand with two terminals and a git worktree each, or use [Munder Difflin](https://harnessmd.com/download), free and open source, which hires both as agents on one floor.
+Yes, and because Copilot CLI reads `CLAUDE.md`, both agents see the same project rules. You can do it by hand with two terminals and a git worktree each, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, which hires both as agents on one floor.
 
 Checked against tag v0.5.3 of the app repo: `src/shared/agentProvider.ts` lists twelve CLIs, Claude Code and Copilot among them. Claude Code can run Michael, the orchestrator, and takes messages between turns. Copilot is driven in print mode, `copilot -p "<prompt>" -s --allow-all-tools --no-ask-user`, with the autonomy flags added only when the floor's auto mode is on. That process exits after each prompt, so the Copilot entry sets `canReceiveInbox: false`: mail for a Copilot worker goes to Michael instead, and `modelProvidersForAgent` in `src/renderer/src/store/config.ts` keeps Copilot off the orchestrator list. That is a real limit, so give Copilot workers self-contained tasks. [The Copilot agent setup guide](/blog/how-to-add-a-github-copilot-cli-agent/) walks through hiring one, and [what a multi-agent harness is](/blog/what-is-a-multi-agent-harness/) explains the rest of the floor.
 

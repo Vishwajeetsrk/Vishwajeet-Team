@@ -1,20 +1,20 @@
 ---
-title: "What Reddit Told Us About Munder Difflin"
+title: "What Reddit Told Us About Vishwajeet Team"
 description: "We launched across ten subreddits and then read every single comment. What landed, what got roasted, and what we shipped because of it."
 date: 2026-08-19
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin reddit launch"
+primaryKeyword: "Vishwajeet Team reddit launch"
 secondaryKeywords: ["reddit launch retrospective", "launching dev tools on reddit", "r/ClaudeCode", "ai agent tool feedback"]
 tags: ["Story", "Launch", "Reddit", "Community", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "How did the Munder Difflin Reddit launch go?"
+  - q: "How did the Vishwajeet Team Reddit launch go?"
     a: "Ten posts across ten subreddits, and the response was lopsided in an instructive way: r/ClaudeCode alone delivered close to half of all the engagement, while r/OpenAI and r/selfhosted barely registered. The audience that already runs Claude Code all day understood the product instantly; everyone else needed more explaining than a screenshot can do."
-  - q: "What did Reddit criticize about Munder Difflin?"
+  - q: "What did Reddit criticize about Vishwajeet Team?"
     a: "Three things, honestly: skepticism that a visual layer adds real utility over raw terminals, worry about token costs when running many agents, and fatigue with the orchestration-tool category in general. All three are fair, and two of them shaped what we shipped next — clearer budget controls and less theater, more control."
   - q: "What did people like most?"
     a: "Visibility. The most-upvoted comments were about glancing at the floor and knowing who's stuck versus who's working, watching envelopes move between agents' inboxes and outboxes, and the fact that the whole thing runs locally on files you can read yourself."
@@ -26,7 +26,7 @@ engagement came from one community — r/ClaudeCode — and two communities igno
 read every comment and sorted them into what resonated, what got roasted, and what got fixed.
 This is that sorting, published.</p></div>
 
-Launch week, we posted Munder Difflin to ten subreddits over a few days. Not the same post ten
+Launch week, we posted Vishwajeet Team to ten subreddits over a few days. Not the same post ten
 times — each one angled for its community — and then the comments started, and did not stop for
 a week.
 
@@ -66,7 +66,7 @@ answer their own question by reading the source, and several did exactly that be
 anything nice.
 
 The best moment of the week wasn't a compliment, though. Another builder took a feature from his
-own rival project, **forked Munder Difflin, and sent us a pull request the same day**. That's
+own rival project, **forked Vishwajeet Team, and sent us a pull request the same day**. That's
 the open-source version of a standing ovation.
 
 {% img "note-2", "The best compliment of launch week arrived as a pull request from a rival project, the same day." %}
@@ -94,7 +94,7 @@ enough that it's become an internal design test.
 **And the bugs.** Windows users showed up, tried it, and hit real walls — which fed directly
 into [v0.4.4](/blog/launching-munder-difflin-v0-4-4/), the release where Windows agents can
 finally talk to each other. Several onboarding dead-ends reported in those threads are fixed in
-the same release. If you bounced off Munder Difflin in launch week on Windows: it's worth a
+the same release. If you bounced off Vishwajeet Team in launch week on Windows: it's worth a
 second look now.
 
 ## What we're taking away

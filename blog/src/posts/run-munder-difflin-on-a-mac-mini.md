@@ -1,21 +1,21 @@
 ---
-title: "Run Munder Difflin Locally on a Mac Mini"
-description: "Run a whole Munder Difflin office offline on an Apple silicon Mac mini: size the model to your unified memory, install Ollama or LM Studio, and wire OpenCode, Crush, Qwen and Pi to it. Current as of Munder Difflin 0.5.2 and the M6 and M5 Pro Mac mini."
+title: "Run Vishwajeet Team Locally on a Mac Mini"
+description: "Run a whole Vishwajeet Team office offline on an Apple silicon Mac mini: size the model to your unified memory, install Ollama or LM Studio, and wire OpenCode, Crush, Qwen and Pi to it. Current as of Vishwajeet Team 0.5.2 and the M6 and M5 Pro Mac mini."
 date: 2026-06-22
 updated: 2026-09-10
 category: guides
 categoryLabel: Guides
 type: Technical
 draft: false
-primaryKeyword: "run munder difflin on a mac mini"
+primaryKeyword: "run Vishwajeet Team on a mac mini"
 secondaryKeywords: ["local llm mac mini", "ollama mac mini", "apple silicon unified memory llm", "offline ai agents mac", "lm studio mac mini agents", "m6 mac mini local llm"]
 tags: ["Guides", "Local-First", "Mac Mini", "Ollama", "LM Studio", "BYOK"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Can a Mac mini run a Munder Difflin office offline?"
-    a: "Yes. The Mac mini serves an open model through Ollama or LM Studio, and OpenCode, Crush, Qwen and Pi agents point at that local server. Munder Difflin's routing, mailboxes, memory and schedules already run on your machine, so once the model is local, the agents' work loop does not need the internet."
+  - q: "Can a Mac mini run a Vishwajeet Team office offline?"
+    a: "Yes. The Mac mini serves an open model through Ollama or LM Studio, and OpenCode, Crush, Qwen and Pi agents point at that local server. Vishwajeet Team's routing, mailboxes, memory and schedules already run on your machine, so once the model is local, the agents' work loop does not need the internet."
   - q: "How much memory does a Mac mini need for local AI agents?"
     a: "It depends on the size of the model, not the number of agents, because every agent shares one model server. As a rule of thumb for 4 bit models: 16 GB runs about 8B comfortably, 24 GB up to about 14B, 32 GB up to about 32B, and 64 GB runs a 70B class model."
   - q: "Which Mac mini should I buy for local models?"
@@ -23,11 +23,11 @@ faq:
   - q: "Ollama or LM Studio on a Mac mini?"
     a: "Either works. Both serve an OpenAI compatible endpoint the engines can use. Ollama is a light background service that suits an always on box, and LM Studio is an app with a model browser and a one click local server. You can run both on different ports."
   - q: "How does Pi use a local model?"
-    a: "Through Pi's own config. Add the local server to ~/.pi/agent/models.json, and Munder Difflin copies that file into every Pi agent it starts."
+    a: "Through Pi's own config. Add the local server to ~/.pi/agent/models.json, and Vishwajeet Team copies that file into every Pi agent it starts."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>An Apple silicon <strong>Mac mini</strong> can run
-a whole <strong>Munder Difflin</strong> office offline. Serve an open model with <strong>Ollama</strong> or
+a whole <strong>Vishwajeet Team</strong> office offline. Serve an open model with <strong>Ollama</strong> or
 <strong>LM Studio</strong>, size it to your <strong>unified memory</strong> (16 GB about 8B, 24 GB about 14B, 32 GB
 about 32B, 64 GB a 70B class model at 4 bit), then point <strong>OpenCode</strong>, <strong>Crush</strong> and
 <strong>Qwen</strong> at it in <strong>Settings → AI Engines</strong> and add it to <strong>Pi</strong>'s own models file.
@@ -35,12 +35,12 @@ The office's routing, mailboxes and schedules are <a href="/blog/local-first-ai-
 first</a>.</p></div>
 
 Running one local model in a chat window is a hobby. Putting a whole team of agents to work on your own hardware, with no
-API bill and nothing leaving the room, is a different project. Munder Difflin's plumbing already runs on your machine: message
+API bill and nothing leaving the room, is a different project. Vishwajeet Team's plumbing already runs on your machine: message
 routing, mailboxes, memory, schedules and git history. The one piece that usually calls out to the internet is the model. Move
 that onto the Mac mini and the agents' whole loop stays in the room.
 
 This guide covers picking a Mac mini, sizing a model to its memory, installing a model server and wiring each engine, checked
-against Munder Difflin 0.5.2 and Apple's Mac mini lineup on 10 September 2026.
+against Vishwajeet Team 0.5.2 and Apple's Mac mini lineup on 10 September 2026.
 
 ## Why is a Mac mini a good box for local agents?
 
@@ -131,7 +131,7 @@ Set Qwen's local base URL and default model in the same panel. Qwen uses the sam
 
 ### Pi
 
-Pi reads local models from its own file, `~/.pi/agent/models.json`, and Munder Difflin copies that file into every Pi agent it
+Pi reads local models from its own file, `~/.pi/agent/models.json`, and Vishwajeet Team copies that file into every Pi agent it
 starts. The app's base URL field for Pi stays reserved. Add Ollama like this, then pick `ollama/gpt-oss:20b`:
 
 ```json
@@ -161,13 +161,13 @@ A few notes for an always on Mac mini:
 
 - **One model, many workers.** Every agent shares the model server, so the limit is the chip's speed, not memory per agent. Watch
   tokens per second under load, and keep contexts trim on 16 and 24 GB.
-- **Keep it awake.** Set the Mac mini not to sleep, or run `caffeinate`, so schedules keep firing. Munder Difflin also holds the
+- **Keep it awake.** Set the Mac mini not to sleep, or run `caffeinate`, so schedules keep firing. Vishwajeet Team also holds the
   machine awake while at least one agent is running.
 - **Quantization is your lever.** If a model does not fit, try a smaller quantization before you try a smaller model.
 - **Mix engines freely.** OpenCode, Crush, Qwen and Pi can all share the same local server, so choose per agent.
 
 ## Where to go next
 
-- [Run Munder Difflin on open models](/blog/run-munder-difflin-on-open-models/) adds the provider route and the full list of quick picks.
+- [Run Vishwajeet Team on open models](/blog/run-munder-difflin-on-open-models/) adds the provider route and the full list of quick picks.
 - [Why local first matters for AI agents](/blog/why-local-first-matters-for-ai-agents/), for the reasoning behind all of this.
-- New to the app? Start with [how to install and use Munder Difflin](/blog/how-to-install-and-use-munder-difflin/).
+- New to the app? Start with [how to install and use Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/).

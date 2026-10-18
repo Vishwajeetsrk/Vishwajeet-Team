@@ -128,7 +128,7 @@ pty exit: noteSessionExit → active tasks BLOCKED + event, sessionState 'offlin
 | 1 | crashed at `PersistStore.open` (better-sqlite3 ABI) — repaired per table above |
 | 2 | exited immediately — cause not reproduced (see flake note) |
 | 3 | **stable**: 4 electron processes sustained 40 s, no errors |
-| 4, 5 | **stable**: 4 electron processes for 30 s each, `MainWindowTitle = "Munder Difflin"` — main + preload + renderer loaded with all Phase 3 wiring |
+| 4, 5 | **stable**: 4 electron processes for 30 s each, `MainWindowTitle = "Vishwajeet Team"` — main + preload + renderer loaded with all Phase 3 wiring |
 
 Flake note (observed, not fully diagnosed): occasional immediate exit coincided with `com.docker.backend` (Docker Desktop) listening on port 5173, the vite dev-server port — recorded as an environmental contention suspicion, not a product bug.
 
@@ -176,7 +176,7 @@ Flake note (observed, not fully diagnosed): occasional immediate exit coincided 
 - [x] 7 IPC channels validated; no arbitrary message/shell IPC
 - [x] i18n in en/ar/zh-CN with enforced key + placeholder parity
 - [x] CEO-focused tests **46/46**; full suite **1040/1004/22/14** (zero new failures); typecheck:node **0**; typecheck:web 33 pre-existing; `npm run build` exit 0
-- [x] App launched and verified (main+preload+renderer, window "Munder Difflin") — 4 stable runs
+- [x] App launched and verified (main+preload+renderer, window "Vishwajeet Team") — 4 stable runs
 - [x] No `package.json`/`package-lock.json` changes; 7 upstream files modified additively only
 - [ ] Manual interactive demo (goal → reply → accept → restart) — **pending review gate**
 

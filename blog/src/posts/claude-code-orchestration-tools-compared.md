@@ -45,7 +45,7 @@ We'll fold it into the verdict.
 Scored as ●●● strong · ●●○ partial · ●○○ minimal, to the best of our knowledge at the time of writing.
 Tools evolve — verify against each project's current docs.
 
-| Criterion | Claude Squad | Conductor | Crystal | vibe-kanban | Munder Difflin |
+| Criterion | Claude Squad | Conductor | Crystal | vibe-kanban | Vishwajeet Team |
 |---|---|---|---|---|---|
 | Shared memory | ●○○ | ●○○ | ●○○ | ●○○ | ●●● |
 | Inter-agent messaging | ●○○ | ●○○ | ●○○ | ●●○ | ●●● |
@@ -55,7 +55,7 @@ Tools evolve — verify against each project's current docs.
 | Footprint | tiny | medium | medium | medium | larger |
 
 Read the table as a fit, not a scoreboard. The tools clustered on the left optimize for **control and
-simplicity**; Munder Difflin optimizes for **coordination** (memory + messaging + a routing
+simplicity**; Vishwajeet Team optimizes for **coordination** (memory + messaging + a routing
 orchestrator). Both are legitimate.
 
 {% img "note-2" %}
@@ -74,7 +74,7 @@ goes further with agent-to-agent mailboxes so findings flow without a human cour
 
 ### Visibility takes different forms
 A TUI list (Claude Squad), a diff-review GUI (Conductor, Crystal), a board (vibe-kanban), or a live
-office floor (Munder Difflin) — all "visible," but they answer different questions. A floor answers
+office floor (Vishwajeet Team) — all "visible," but they answer different questions. A floor answers
 "what's everyone doing *right now*?"; a board answers "what's the state of the backlog?"
 
 ### Control is a preference, not a ranking
@@ -93,7 +93,7 @@ each one runs before you assume.
 - **Prioritize Mac-native parallel review** → Conductor.
 - **Prioritize open-source parallel experiments** → Crystal.
 - **Prioritize a task-board workflow** → vibe-kanban.
-- **Prioritize memory + messaging + delegated routing** → Munder Difflin.
+- **Prioritize memory + messaging + delegated routing** → Vishwajeet Team.
 
 If you want a structured way to apply this to your own situation, the [buyer's
 checklist](/blog/how-to-choose-a-multi-agent-tool/) turns these criteria into a scoring rubric, and a
@@ -103,5 +103,5 @@ should mean.
 ---
 
 If memory, messaging, and delegated orchestration top your list, the fastest way to judge is to run
-one: [download Munder Difflin](/#install) — free, open source, and local-first on macOS, Windows, and
+one: [download Vishwajeet Team](/#install) — free, open source, and local-first on macOS, Windows, and
 Linux.

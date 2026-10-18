@@ -1,22 +1,22 @@
 ---
 title: "How to Hire From the Agent Gallery"
-description: "A practical guide to Munder Difflin's Agent Gallery: pick one of 80 ready made roles, download its manifest, import it with Add agent, review every field, customise identity, workspace, engine and briefing, then spawn it yourself."
+description: "A practical guide to Vishwajeet Team's Agent Gallery: pick one of 80 ready made roles, download its manifest, import it with Add agent, review every field, customise identity, workspace, engine and briefing, then spawn it yourself."
 date: 2026-07-03
 updated: 2026-09-10
 category: guides
 categoryLabel: Guides
 type: Non-technical
 primaryKeyword: "agent gallery"
-secondaryKeywords: ["hire an ai agent", "ready made ai agent roles", "import agent manifest", "munder difflin hires", "ai coworker templates"]
+secondaryKeywords: ["hire an ai agent", "ready made ai agent roles", "import agent manifest", "Vishwajeet Team hires", "ai coworker templates"]
 tags: ["Guides", "Multi-Agent", "Agent Design", "Getting Started", "Security"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
   - q: "What is the Agent Gallery?"
-    a: "A free gallery of ready made agent roles for Munder Difflin at munderdiffl.in/hires. Each role, called a hire, is one JSON file describing a configured agent: its name and avatar, engine and model, flags, goal, skills and token budget. As of September 2026 it lists 80 roles."
+    a: "A free gallery of ready made agent roles for Vishwajeet Team at munderdiffl.in/hires. Each role, called a hire, is one JSON file describing a configured agent: its name and avatar, engine and model, flags, goal, skills and token budget. As of September 2026 it lists 80 roles."
   - q: "How do I import a hire?"
-    a: "Download the role's .json from its card, open Munder Difflin, click Add agent, then import hire, and pick the file. The form fills in with every field from the manifest."
+    a: "Download the role's .json from its card, open Vishwajeet Team, click Add agent, then import hire, and pick the file. The form fills in with every field from the manifest."
   - q: "Does importing a hire start an agent?"
     a: "No. Importing only fills in the Add agent form for you to review. Nothing spawns until you click spawn yourself."
   - q: "Is it safe to import a manifest someone sent me?"
@@ -28,7 +28,7 @@ faq:
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>The <strong>Agent Gallery</strong> at
-<a href="https://munderdiffl.in/hires/">munderdiffl.in/hires</a> holds <strong>80 ready made roles</strong> for Munder Difflin.
+<a href="https://munderdiffl.in/hires/">munderdiffl.in/hires</a> holds <strong>80 ready made roles</strong> for Vishwajeet Team.
 Download a role's <code>.json</code>, click <strong>Add agent</strong>, then <strong>import hire</strong>, and the form fills in
 for you. <strong>Nothing runs on import.</strong> You review every field, customise the <strong>identity, workspace, engine and
 briefing</strong>, and you click spawn. About five minutes from browsing to a working agent on your floor.</p></div>
@@ -37,7 +37,7 @@ The slowest part of running an office of agents is not the agents. It is the bla
 flags, and the question that really stalls people, what is this agent's job? The gallery exists so you never start from a blank
 form. You start from a role somebody already got right, and you edit it.
 
-This is the walkthrough as of Munder Difflin 0.5.2: browse, import, review, customise, spawn. Not installed yet?
+This is the walkthrough as of Vishwajeet Team 0.5.2: browse, import, review, customise, spawn. Not installed yet?
 [Do that first](/blog/how-to-install-and-use-munder-difflin/), because the gallery assumes you have a floor to hire onto.
 
 ## Where is the Agent Gallery, and what is in it?
@@ -55,7 +55,7 @@ Do not overthink the choice. You are picking a starting point, not signing a con
 Three steps:
 
 1. On the role's card, click **download** to save its `.json`.
-2. In Munder Difflin, click **Add agent**, then **import hire**.
+2. In Vishwajeet Team, click **Add agent**, then **import hire**.
 3. Pick the file you just downloaded.
 
 The Add agent form opens with every field filled in from the manifest. Because a hire is just a file, a teammate can also send you one

@@ -1,18 +1,18 @@
 ---
-title: "Munder Difflin 0.5.2: Pro, the Stapler and Everything Since 0.4.6"
-description: "Munder Difflin 0.5.2 is out: how to install it, how to start Pro, what Pro adds, what changed since 0.4.6, and the end of signed Community builds."
+title: "Vishwajeet Team 0.5.2: Pro, the Stapler and Everything Since 0.4.6"
+description: "Vishwajeet Team 0.5.2 is out: how to install it, how to start Pro, what Pro adds, what changed since 0.4.6, and the end of signed Community builds."
 date: 2026-09-10
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin 0.5.2"
-secondaryKeywords: ["munder difflin pro", "install munder difflin pro", "munder difflin stapler", "munder difflin release notes", "munder difflin community build"]
+primaryKeyword: "Vishwajeet Team 0.5.2"
+secondaryKeywords: ["Vishwajeet Team pro", "install Vishwajeet Team pro", "Vishwajeet Team stapler", "Vishwajeet Team release notes", "Vishwajeet Team community build"]
 tags: ["Story", "Release", "Pro"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Is Munder Difflin 0.5.2 free?"
+  - q: "Is Vishwajeet Team 0.5.2 free?"
     a: "Yes. The 0.5.2 download runs the classic office for free after you sign in to your harnessMD account, and your work stays on your machine. Pro and Teams are optional paid plans on the same download."
   - q: "Do I need a different download for Pro?"
     a: "No. The free classic office, Pro and Teams all run on the same 0.5.2 download. Buying Pro or entering a licence key switches that machine to Pro."
@@ -24,13 +24,13 @@ faq:
     a: "A Pro plan, and you turn it on from Stapler in the Pro sidebar. On macOS the first screenshot asks for Screen Recording permission. Spoken messages and meeting transcripts need a free Groq API key, which you add under Voice."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin 0.5.2 is the version to
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team 0.5.2 is the version to
 install today.</strong> One download runs the free classic office, Pro and Teams. Pro adds a sidebar workspace
 and the Stapler, a small helper that floats over your screen. We shipped eight versions between 0.4.6 and 0.5.2,
 in thirteen days. One change to know first: <strong>Community builds are no longer signed or notarized.</strong>
 The build we sign, notarize and maintain is the Pro build.</p></div>
 
-Munder Difflin 0.5.2 came out on 9 September 2026. It is one download for macOS, Windows and Linux that runs the
+Vishwajeet Team 0.5.2 came out on 9 September 2026. It is one download for macOS, Windows and Linux that runs the
 free classic office, Pro and Teams. This post covers how to install it, how to start Pro, what Pro adds, and what
 happened between 0.4.6 and 0.5.2.
 
@@ -52,13 +52,13 @@ The source on GitHub stays MIT licensed. 0.5.2 itself is a binaries only release
 [GitHub release](https://github.com/chaitanyagiri/munder-difflin/releases/tag/v0.5.2) carries the installers, not
 the 0.5.2 source.
 
-## How do I install Munder Difflin 0.5.2?
+## How do I install Vishwajeet Team 0.5.2?
 
 Download it from the [download page](https://harnessmd.com/download), pick your system, and install it like any
 other app. You need one supported coding CLI installed and signed in first, such as Claude Code, Codex or
 Antigravity.
 
-1. **macOS**, Apple silicon and Intel in one universal build: open the `.dmg` and drag Munder Difflin into
+1. **macOS**, Apple silicon and Intel in one universal build: open the `.dmg` and drag Vishwajeet Team into
    Applications.
 2. **Windows** 10 and 11, 64 bit: run the setup `.exe`. A portable `.exe` is on the release too.
 3. **Linux**, x86_64: mark the `.AppImage` as executable, then run it.
@@ -83,7 +83,7 @@ install 0.5.2 from the download page over your current copy. The
 
 {% img "note-1" %}
 
-## What is Munder Difflin Pro?
+## What is Vishwajeet Team Pro?
 
 Pro is the professional workspace for one person, on the same download as the free office. In the app's own
 words, your agents run as a company, with an orchestrator, a task board, an inbox and a memory, all on your
@@ -209,5 +209,5 @@ worktrees, hooks, the terminal, the circuit breaker and the sandbox. Thank you:
 * Download 0.5.2: [harnessmd.com/download](https://harnessmd.com/download)
 * Plans and prices: [munderdiffl.in/#pricing](https://munderdiffl.in/#pricing)
 * The release on GitHub, with checksums: [v0.5.2](https://github.com/chaitanyagiri/munder-difflin/releases/tag/v0.5.2)
-* New here? Start with [your first hour with Munder Difflin](/blog/your-first-hour-with-munder-difflin/).
-* The previous release: [Munder Difflin v0.4.6](/blog/launching-munder-difflin-v0-4-6/).
+* New here? Start with [your first hour with Vishwajeet Team](/blog/your-first-hour-with-munder-difflin/).
+* The previous release: [Vishwajeet Team v0.4.6](/blog/launching-munder-difflin-v0-4-6/).

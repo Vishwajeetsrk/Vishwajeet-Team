@@ -102,6 +102,6 @@ Pick by where you like to work. Our view:
 - **You want Claude, Gemini and GPT models in one picker:** Cursor.
 - **You want both:** Cursor with the Codex extension.
 
-There is also a different kind of tool. [Munder Difflin](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits if you want several agents on one job, and the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
+There is also a different kind of tool. [Vishwajeet Team](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. It fits if you want several agents on one job, and the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
 
 <link rel="stylesheet" href="/blog/assets/media/codex-vs-cursor/motion.css"><script defer src="/blog/assets/media/codex-vs-cursor/motion.js"></script>

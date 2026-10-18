@@ -1,29 +1,29 @@
 ---
 title: "One Prompt, Five PR Reviews, and an Hourly Automation — A Dogfooding Story"
-description: "How a single prompt to the Munder Difflin god agent reviewed all open PRs and set up a recurring hourly PR reviewer — while the repo was blowing up with 400+ stars."
+description: "How a single prompt to the Vishwajeet Team god agent reviewed all open PRs and set up a recurring hourly PR reviewer — while the repo was blowing up with 400+ stars."
 date: 2026-06-07
 category: story
 categoryLabel: Story
 type: Non-technical
 primaryKeyword: "automated pr review"
-secondaryKeywords: ["github pr automation", "scheduled agent missions", "munder difflin dogfood"]
+secondaryKeywords: ["github pr automation", "scheduled agent missions", "Vishwajeet Team dogfood"]
 tags: ["Story", "Automation", "Orchestration", "Open Source"]
 author:
   name: Chaitanya Giri
   initials: CG
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin's GitHub repo hit <strong>400+ stars in three days</strong>. That came with a flood of incoming pull requests and zero time to review them. One prompt to the god orchestrator — "review the open PRs and set up an hourly automation to review any new ones" — did both: five PRs were reviewed in a single run, and a <strong>ScheduledMission</strong> now fires a PR reviewer agent every hour, hands-free. This is that story.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team's GitHub repo hit <strong>400+ stars in three days</strong>. That came with a flood of incoming pull requests and zero time to review them. One prompt to the god orchestrator — "review the open PRs and set up an hourly automation to review any new ones" — did both: five PRs were reviewed in a single run, and a <strong>ScheduledMission</strong> now fires a PR reviewer agent every hour, hands-free. This is that story.</p></div>
 
-Software that coordinates agents should eat its own cooking. Munder Difflin does — the hive manages its own inbox, writes its own blog posts, runs its own standups. But the test I didn't plan for came last week when the repo started moving faster than I could keep up with.
+Software that coordinates agents should eat its own cooking. Vishwajeet Team does — the hive manages its own inbox, writes its own blog posts, runs its own standups. But the test I didn't plan for came last week when the repo started moving faster than I could keep up with.
 
 ## The problem: too many PRs, not enough eyes
 
-Three days into a sudden wave of attention on GitHub, the Munder Difflin repo crossed 400 stars. That's the kind of milestone you're supposed to enjoy. What it actually looked like was five open pull requests stacking up from a contributor — [@Gulum](https://github.com/Gulum) — who was fixing real bugs and adding real features faster than I had time to read diffs. A Windows usage meter broken at 0/0. A router contract enforcement bug. A per-session terminal theme toggle. A statusLine context gauge. A cursor visibility fix.
+Three days into a sudden wave of attention on GitHub, the Vishwajeet Team repo crossed 400 stars. That's the kind of milestone you're supposed to enjoy. What it actually looked like was five open pull requests stacking up from a contributor — [@Gulum](https://github.com/Gulum) — who was fixing real bugs and adding real features faster than I had time to read diffs. A Windows usage meter broken at 0/0. A router contract enforcement bug. A per-session terminal theme toggle. A statusLine context gauge. A cursor visibility fix.
 
 Good problems. But still problems.
 
-I didn't reach for GitHub's notification pane or a code-review checklist. I opened Munder Difflin and typed one prompt to Michael (the god orchestrator):
+I didn't reach for GitHub's notification pane or a code-review checklist. I opened Vishwajeet Team and typed one prompt to Michael (the god orchestrator):
 
 > *Review all the open PRs on the GitHub repo, and set up a recurring mission that checks for new PRs every hour and reviews them.*
 
@@ -53,7 +53,7 @@ Five reviews. One prompt. The reviews were posted so close together (all within 
 
 The review run was half of what I asked for. The other half was the hourly mission.
 
-Munder Difflin's [ScheduledMissions](/blog/scheduling-autonomous-agent-missions/) are small persisted records in `src/main/config.ts`:
+Vishwajeet Team's [ScheduledMissions](/blog/scheduling-autonomous-agent-missions/) are small persisted records in `src/main/config.ts`:
 
 ```ts
 interface ScheduledMission {
@@ -75,9 +75,9 @@ God created a mission with a one-hour interval, targeting the pr-reviewer agent,
 
 A few things are true at once here, and they're worth separating.
 
-**First, the single-prompt routing story.** What made this possible isn't that Munder Difflin is a clever cron wrapper for GitHub API calls. It's that the [god orchestrator](/blog/how-the-god-orchestrator-works/) understood a compound intent — *do this now* AND *set up a recurring thing* — decomposed it into two tasks, executed the one-off, and created the ScheduledMission for the other. One sentence of plain language became two distinct workflows.
+**First, the single-prompt routing story.** What made this possible isn't that Vishwajeet Team is a clever cron wrapper for GitHub API calls. It's that the [god orchestrator](/blog/how-the-god-orchestrator-works/) understood a compound intent — *do this now* AND *set up a recurring thing* — decomposed it into two tasks, executed the one-off, and created the ScheduledMission for the other. One sentence of plain language became two distinct workflows.
 
-**Second, the recursive nature of this.** The agents are maintaining the open-source repo that runs the agents. The PR reviewer is a Munder Difflin agent reviewing PRs submitted to Munder Difflin. The blog post you're reading was written by a Munder Difflin agent. The hive is genuinely part of its own development loop — not as a gimmick, but because that's what a local-first coordination layer lets you do.
+**Second, the recursive nature of this.** The agents are maintaining the open-source repo that runs the agents. The PR reviewer is a Vishwajeet Team agent reviewing PRs submitted to Vishwajeet Team. The blog post you're reading was written by a Vishwajeet Team agent. The hive is genuinely part of its own development loop — not as a gimmick, but because that's what a local-first coordination layer lets you do.
 
 **Third, what "automation" means here.** The hourly PR reviewer isn't a GitHub Actions workflow. It's not a webhook. It's a local agent that wakes up on a schedule, reads the repo state, and does the work — with the same intelligence, tone, and judgment a human reviewer would bring, because it *is* a Claude agent. The automation is just a timer that refills an agent's inbox.
 
@@ -85,7 +85,7 @@ A few things are true at once here, and they're worth separating.
 
 ## The limit worth naming
 
-ScheduledMissions are local-first: the timers live in the desktop app's process. The PR reviewer only fires while Munder Difflin is open. That's a deliberate trade — this is a tool you run on your own machine, not a cloud cron — and `lastFiredAt` softens it by catching up on any overdue ticks at the next launch. But if you need PR reviews while the laptop is shut, that's genuinely a cloud job's territory.
+ScheduledMissions are local-first: the timers live in the desktop app's process. The PR reviewer only fires while Vishwajeet Team is open. That's a deliberate trade — this is a tool you run on your own machine, not a cloud cron — and `lastFiredAt` softens it by catching up on any overdue ticks at the next launch. But if you need PR reviews while the laptop is shut, that's genuinely a cloud job's territory.
 
 For a solo maintainer who has the app open during the day, it's exactly the right trade.
 
@@ -97,4 +97,4 @@ That's what an orchestrator-plus-scheduler should feel like. The prompt was the 
 
 ---
 
-Munder Difflin is free, open source, and local-first — [download it](https://munderdiffl.in/#install) and set your first ScheduledMission. The [god orchestrator](https://munderdiffl.in/#how) takes plain English; what you get back is a team that runs on it.
+Vishwajeet Team is free, open source, and local-first — [download it](https://munderdiffl.in/#install) and set your first ScheduledMission. The [god orchestrator](https://munderdiffl.in/#how) takes plain English; what you get back is a team that runs on it.

@@ -132,9 +132,9 @@ or coordinate across different stacks and networks — i.e., when you cross a bo
 
 ---
 
-Munder Difflin takes the "same side" path: a [local hive whose agents coordinate through file
+Vishwajeet Team takes the "same side" path: a [local hive whose agents coordinate through file
 mailboxes](https://munderdiffl.in/#how), simple and auditable, free to speak open protocols outward when
-a boundary appears. [Download Munder Difflin](https://munderdiffl.in/#install) to run a coordinated team
+a boundary appears. [Download Vishwajeet Team](https://munderdiffl.in/#install) to run a coordinated team
 of agents without protocol ceremony; it's free and open source.
 
 *Sources: [Anthropic — donating MCP to the Agentic AI Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation); [Linux Foundation — Agent2Agent protocol project](https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents).*

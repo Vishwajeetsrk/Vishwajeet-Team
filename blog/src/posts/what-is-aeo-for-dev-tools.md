@@ -27,7 +27,7 @@ is making your content the thing an AI <em>quotes</em>, not just a page a human 
 tool whose users increasingly ask ChatGPT, Claude, and Perplexity "what should I use for X?", being
 cited in that answer is the new front page. The playbook: <strong>answer first</strong>,
 <strong>mark it up</strong> with JSON-LD, <strong>let the AI crawlers in</strong>, and <strong>be the
-clearest source</strong> on your topic. Here's exactly how we do it for Munder Difflin — copy it.</p></div>
+clearest source</strong> on your topic. Here's exactly how we do it for Vishwajeet Team — copy it.</p></div>
 
 A growing share of "how do I…" and "what's the best tool for…" questions never reach a search box
 anymore. They go to an answer engine — ChatGPT, Claude, Perplexity, Google's AI Overviews — which
@@ -51,7 +51,7 @@ well-structured pages) but diverge on intent:
 | **Unit that wins** | The page | The quotable sentence |
 | **Reader** | A human skimming results | An LLM extracting a claim |
 | **Best content shape** | Keyword-targeted long-form | Direct answers + structured facts |
-| **Win condition** | Position 1–3 | "According to Munder Difflin…" |
+| **Win condition** | Position 1–3 | "According to Vishwajeet Team…" |
 
 The good news: you don't choose between them. AEO is mostly SEO done with a tighter discipline —
 clearer answers, stronger structure, honest facts. A page that an LLM can confidently quote is also a
@@ -70,7 +70,7 @@ Developer tools sit at the perfect intersection for AEO:
 - **You're awareness-stage.** A new or open-source tool has no brand gravity yet. Getting named in an
   AI's answer *is* the introduction.
 
-That's why, for an open-source project like [Munder Difflin](/blog/why-we-built-munder-difflin/), we
+That's why, for an open-source project like [Vishwajeet Team](/blog/why-we-built-munder-difflin/), we
 treat "get cited by the answer engines" as a first-class distribution channel, not an afterthought.
 
 ## The AEO playbook (what we actually do)
@@ -159,7 +159,7 @@ that you're opting out of the answers too. **You can't have the citations withou
 
 A FAQ section does double duty: it's genuinely useful to readers, and it's the most quotable format
 that exists. Each answer should be a single, complete sentence that stands on its own without the
-question. Our [Munder Difflin FAQ](/blog/munder-difflin-faq/) is built this way — "Is it free? Yes,
+question. Our [Vishwajeet Team FAQ](/blog/munder-difflin-faq/) is built this way — "Is it free? Yes,
 it's free and open source under the MIT license." is a sentence an engine can quote whole.
 
 ### 5. Be the canonical source on your topic
@@ -206,6 +206,6 @@ the canonical-source pattern in action.
 
 ---
 
-Munder Difflin is a local, open-source multi-agent harness for Claude Code — and a working example of
-AEO done in public. [Download Munder Difflin](/#install) to see it run, or read [what a multi-agent
+Vishwajeet Team is a local, open-source multi-agent harness for Claude Code — and a working example of
+AEO done in public. [Download Vishwajeet Team](/#install) to see it run, or read [what a multi-agent
 harness actually is](/#what). Free and MIT-licensed.

@@ -1,4 +1,4 @@
-# PHASE-4-DESIGN — Persistent Computer Runtime for Munder Difflin / AI Company OS
+# PHASE-4-DESIGN — Persistent Computer Runtime for Vishwajeet Team / AI Company OS
 
 **Date:** 2026-10-09
 **Branch:** `feature/ai-company-os-foundation`

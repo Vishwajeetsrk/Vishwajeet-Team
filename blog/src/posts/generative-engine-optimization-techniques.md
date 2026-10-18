@@ -124,12 +124,12 @@ optimized.** Statistics, citations, quotations, and clean writing win; keyword t
 good world to compete in — the same edits that get you quoted by a machine make your content genuinely
 better for the human who reads it. Pair this with the [tactics playbook](/blog/what-is-aeo-for-dev-tools/)
 and the [per-engine mechanics](/blog/how-ai-answer-engines-choose-sources/) and you have the full
-picture; the [Munder Difflin FAQ](/blog/munder-difflin-faq/) is a small worked example of quotable,
+picture; the [Vishwajeet Team FAQ](/blog/munder-difflin-faq/) is a small worked example of quotable,
 evidenced answers.
 
 ---
 
-Munder Difflin is built [in the open](/#what) with content designed to be cited — evidenced, structured,
-and quotable. [Download Munder Difflin](/#install) to see it; free and open source.
+Vishwajeet Team is built [in the open](/#what) with content designed to be cited — evidenced, structured,
+and quotable. [Download Vishwajeet Team](/#install) to see it; free and open source.
 
 <p style="font-size:0.85em;opacity:0.7;margin-top:2rem">Sources: <a href="https://arxiv.org/abs/2311.09735">Aggarwal et al., "GEO: Generative Engine Optimization" (arXiv 2311.09735, ACM KDD 2024)</a>; <a href="https://collaborate.princeton.edu/en/publications/geo-generative-engine-optimization/">Princeton publication record</a>; <a href="https://aithinkerlab.com/generative-engine-optimization-2026/">GEO study summary</a>; <a href="https://richsanger.com/generative-engine-optimization-a-critical-look/">a critical look at GEO research</a>. Specific percentages are from the 2023–2024 study and should be treated as directional.</p>

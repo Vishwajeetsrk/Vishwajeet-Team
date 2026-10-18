@@ -10,7 +10,7 @@
 
 ## Guiding Principles
 
-1. **Preserve upstream functionality** — never break existing Munder Difflin features
+1. **Preserve upstream functionality** — never break existing Vishwajeet Team features
 2. **Extend, don't replace** — build on existing systems (hive, pty, hooks, breaker)
 3. **Real events only** — office visualization reflects actual runtime state
 4. **Small, testable phases** — each phase has a review gate
@@ -20,7 +20,7 @@
 
 ## Phase 1: Baseline Verification (current)
 
-**Goal:** Get the unmodified Munder Difflin running locally.
+**Goal:** Get the unmodified Vishwajeet Team running locally.
 
 - [x] Clone repository
 - [x] Create feature branch
@@ -29,7 +29,7 @@
 - [x] Install dependencies (`npm install`) — with recorded environment repairs (VS C++ Build Tools absent; prebuilds used)
 - [x] Run tests (`npm run test:focused`) — 1040/1004/22/14; the 22 are upstream baseline-B environmental failures
 - [x] Type check (`npm run typecheck`) — typecheck:node 0; typecheck:web 33 pre-existing in `realtime/*`
-- [x] Launch app (`npm run dev`) — verified: main+preload+renderer, window "Munder Difflin"
+- [x] Launch app (`npm run dev`) — verified: main+preload+renderer, window "Vishwajeet Team"
 - [ ] Verify one agent can start and show terminal output — manual gate item
 - [ ] Verify office reflects real agent state — manual gate item
 

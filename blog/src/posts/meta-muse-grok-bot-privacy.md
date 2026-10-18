@@ -21,7 +21,7 @@ faq:
   - q: "Can one Grok Bot see another Bot's logins?"
     a: "Yes. All the Bots on one account share a single cloud computer, including files, browser sessions and logins. SpaceXAI's security FAQ says not to treat separate Bots as a security boundary, and not to put a credential or file on that computer if another Bot should not be able to use it."
   - q: "Is there an AI agent that keeps my data on my own computer?"
-    a: "Yes. Open source agents such as OpenClaw, Hermes Agent and Munder Difflin run on your own hardware. Munder Difflin keeps each agent's memory in plain markdown files on your disk, stores API keys in a write only broker, and its official builds send only anonymous usage events, never prompts, code, file paths or agent output."
+    a: "Yes. Open source agents such as OpenClaw, Hermes Agent and Vishwajeet Team run on your own hardware. Vishwajeet Team keeps each agent's memory in plain markdown files on your disk, stores API keys in a write only broker, and its official builds send only anonymous usage events, never prompts, code, file paths or agent output."
 thumb: "/blog/assets/media/meta-muse-grok-bot-privacy/lead-still.png"
 ---
 
@@ -29,15 +29,15 @@ thumb: "/blog/assets/media/meta-muse-grok-bot-privacy/lead-still.png"
 
 A personal AI agent is only useful if it can act for you. To act for you, it needs your logins. Meta Muse and SpaceXAI's Grok Bot both ask for them, and both keep them on a cloud computer the company runs.
 
-We read the security pages of both, [Meta's Muse privacy page](https://www.meta.com/help/artificial-intelligence/1047255454427887/) and [SpaceXAI's Grok Bot security FAQ](https://docs.x.ai/grok-bot/security-faq), and put the answers side by side. We also cover the third option: [Munder Difflin](https://harnessmd.com/download), which runs a team of work agents on your own computer so the logins never leave it. It is free and open source.
+We read the security pages of both, [Meta's Muse privacy page](https://www.meta.com/help/artificial-intelligence/1047255454427887/) and [SpaceXAI's Grok Bot security FAQ](https://docs.x.ai/grok-bot/security-faq), and put the answers side by side. We also cover the third option: [Vishwajeet Team](https://harnessmd.com/download), which runs a team of work agents on your own computer so the logins never leave it. It is free and open source.
 
-<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/meta-muse-grok-bot-privacy/lead-still.png" aria-label="A looping animation that follows one login token. In Muse it goes into a password store the model cannot read. In Grok Bot it lands on a computer shared by three Bots. In Munder Difflin it goes into a write only secret broker on your laptop, then the real Memory screen shows memory stored in files you can read."><source src="/blog/assets/media/meta-muse-grok-bot-privacy/lead.mp4" type="video/mp4"><img src="/blog/assets/media/meta-muse-grok-bot-privacy/lead.gif" width="1360" height="764" alt="A looping animation that follows one login token. In Muse it goes into a password store the model cannot read. In Grok Bot it lands on a computer shared by three Bots. In Munder Difflin it goes into a write only secret broker on your laptop, then the real Memory screen shows memory stored in files you can read."></video><figcaption>Where your logins live: in Meta's vault, on one computer shared by all your Bots, or on your own machine.</figcaption></figure>
+<figure class="lead-loop"><video autoplay muted loop playsinline preload="metadata" width="1360" height="764" poster="/blog/assets/media/meta-muse-grok-bot-privacy/lead-still.png" aria-label="A looping animation that follows one login token. In Muse it goes into a password store the model cannot read. In Grok Bot it lands on a computer shared by three Bots. In Vishwajeet Team it goes into a write only secret broker on your laptop, then the real Memory screen shows memory stored in files you can read."><source src="/blog/assets/media/meta-muse-grok-bot-privacy/lead.mp4" type="video/mp4"><img src="/blog/assets/media/meta-muse-grok-bot-privacy/lead.gif" width="1360" height="764" alt="A looping animation that follows one login token. In Muse it goes into a password store the model cannot read. In Grok Bot it lands on a computer shared by three Bots. In Vishwajeet Team it goes into a write only secret broker on your laptop, then the real Memory screen shows memory stored in files you can read."></video><figcaption>Where your logins live: in Meta's vault, on one computer shared by all your Bots, or on your own machine.</figcaption></figure>
 <style>.lead-loop{margin:1.4rem 0 .6rem;border:1px solid #D9CFE0;border-radius:16px;overflow:hidden;background:#FFF8E7}.lead-loop video,.lead-loop img{display:block;width:100%;height:auto;margin:0}.lead-loop figcaption{font:500 13px/1.5 "Space Grotesk",system-ui,sans-serif;color:#6B5878;padding:10px 16px 14px;margin:0;border-top:1px solid #D9CFE0;background:#FCFAF0}</style>
 <script>if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.lead-loop video').forEach(function(v){v.removeAttribute('autoplay');v.pause();v.currentTime=0;v.load()})}</script>
 
 ## Side by side
 
-| Question | Meta Muse | Grok Bot | Munder Difflin |
+| Question | Meta Muse | Grok Bot | Vishwajeet Team |
 | --- | --- | --- | --- |
 | Where does the agent run? | An isolated cloud computer per person | One cloud computer per account, shared by all your Bots | Your own computer |
 | Can the AI see your passwords? | No, they sit in a store the model cannot read | Logins on the shared computer are usable by every Bot | Keys go into a write only broker on your machine |
@@ -46,7 +46,7 @@ We read the security pages of both, [Meta's Muse privacy page](https://www.meta.
 | Where is your data? | Meta's cloud | Cursor's cloud, in the US | Your disk |
 | Can you run it yourself? | No | No | Yes, it is open source (MIT) |
 
-Checked on 26 September 2026 against Meta's help page, SpaceXAI's security FAQ and the [Munder Difflin repo](https://github.com/chaitanyagiri/munder-difflin).
+Checked on 26 September 2026 against Meta's help page, SpaceXAI's security FAQ and the [Vishwajeet Team repo](https://github.com/chaitanyagiri/munder-difflin).
 
 ## How Meta Muse protects you, and where it asks for a lot
 
@@ -80,7 +80,7 @@ An agent that reads the open web, holds your logins and can send messages has al
 
 ## The third option: keep the agents on your own computer
 
-If you would rather no company holds your agents' logins and memory, run the agents yourself. For personal errands, open source assistants like OpenClaw and Hermes Agent do this. For work, [Munder Difflin](https://harnessmd.com/download) runs a team of agents on your own computer.
+If you would rather no company holds your agents' logins and memory, run the agents yourself. For personal errands, open source assistants like OpenClaw and Hermes Agent do this. For work, [Vishwajeet Team](https://harnessmd.com/download) runs a team of agents on your own computer.
 
 What that changes:
 
@@ -94,6 +94,6 @@ The honest part: an agent on your computer can do whatever the tool you run it w
 
 ## So, is Meta Muse safe?
 
-Safe enough for many errands, if you switch off training and connect only what each task needs. Its locks are some of the best any hosted agent has. Grok Bot is fine for work where every Bot may share the same access, and risky where they should not. If you want your agents' memory, logins and model choice to stay yours, run them on your own machine. [Munder Difflin is free to download](https://harnessmd.com/download).
+Safe enough for many errands, if you switch off training and connect only what each task needs. Its locks are some of the best any hosted agent has. Grok Bot is fine for work where every Bot may share the same access, and risky where they should not. If you want your agents' memory, logins and model choice to stay yours, run them on your own machine. [Vishwajeet Team is free to download](https://harnessmd.com/download).
 
 For a full feature and price comparison, read [Meta Muse vs Grok Bot](/blog/meta-muse-vs-grok-bot/).

@@ -27,7 +27,7 @@ To get the most out of Claude Max in Claude Code, spend the plan on work, not on
 
 Prices are in our post on [what Claude Code costs](/blog/how-much-does-claude-code-cost/), and whether to upgrade at all is in [is it worth paying for Claude Code Max](/blog/is-claude-code-max-worth-it/), so this one sticks to using the plan well. If you already run more than one terminal, read [how to manage multiple Claude Code sessions](/blog/manage-multiple-claude-code-sessions/) too, because every extra session draws from the same allowance.
 
-You can do all of this by hand, or use [Munder Difflin](https://harnessmd.com/download), a free and open source desktop app that runs your Claude Code agents on the login you already have. Give each agent its own model and token cap, schedule long jobs for when you are away, and watch every session from one screen. One tip first: in 0.5.2 the default agent model is Fable 5, which on Max can use at most half your weekly limit, so pick another default under Settings > Agents & Models.
+You can do all of this by hand, or use [Vishwajeet Team](https://harnessmd.com/download), a free and open source desktop app that runs your Claude Code agents on the login you already have. Give each agent its own model and token cap, schedule long jobs for when you are away, and watch every session from one screen. One tip first: in 0.5.2 the default agent model is Fable 5, which on Max can use at most half your weekly limit, so pick another default under Settings > Agents & Models.
 
 ## How do Claude Max usage limits work in Claude Code?
 

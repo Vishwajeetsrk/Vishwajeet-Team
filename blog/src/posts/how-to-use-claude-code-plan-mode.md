@@ -26,7 +26,7 @@ faq:
 
 Claude Code planning mode (plan mode in the docs) is the permission mode where Claude reads your code, runs exploratory commands and writes a plan, but cannot edit your source until you approve it. Enter it with Shift+Tab, the `/plan` prefix, or `claude --permission-mode plan`, and make it the default with `"defaultMode": "plan"`.
 
-You can do all of this by hand, or use [Munder Difflin](https://harnessmd.com/download), free and open source, to run several Claude Code agents side by side and choose which ones plan first. The last section shows how.
+You can do all of this by hand, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, to run several Claude Code agents side by side and choose which ones plan first. The last section shows how.
 
 Everything below was checked against Claude Code's official docs and changelog on 29 Sep 2026, with Claude Code 2.1.284 installed:
 
@@ -146,8 +146,8 @@ The mechanics held steady; the names and defaults around them moved. From the [C
 | 2.1.283 | 25 Sep 2026 | Auto start extended to third party providers and telemetry off sessions |
 | 2.1.284 | 28 Sep 2026 | Auto start on every plan and provider |
 
-## Does plan mode work with Munder Difflin?
+## Does plan mode work with Vishwajeet Team?
 
-Yes, once you stop Munder Difflin from skipping permissions for that agent. We read this in the source at tag v0.5.3 of the app repo. Auto Mode is on by default (`autoMode: true` in `src/main/config.ts`), and with it on, Claude Code agents launch with `--permission-mode bypassPermissions` (`src/shared/agentProvider.ts`). Each agent is an interactive `claude` in its own terminal, which is exactly the case where Claude Code doesn't enforce plan mode's blocks: Claude is told to plan, but an edit it attempts runs without asking.
+Yes, once you stop Vishwajeet Team from skipping permissions for that agent. We read this in the source at tag v0.5.3 of the app repo. Auto Mode is on by default (`autoMode: true` in `src/main/config.ts`), and with it on, Claude Code agents launch with `--permission-mode bypassPermissions` (`src/shared/agentProvider.ts`). Each agent is an interactive `claude` in its own terminal, which is exactly the case where Claude Code doesn't enforce plan mode's blocks: Claude is told to plan, but an edit it attempts runs without asking.
 
-Two ways around it. In the Add Agent dialog the command field is editable (`src/renderer/src/components/AddAgentModal.tsx`), so replace the prefilled flag with `--permission-mode plan` for the agents you want planning first. Or switch Auto Mode off in Settings, start the agent again, and cycle into plan mode with Shift+Tab in its terminal. Worker requests that already name a `--permission-mode` keep it (`src/main/workerLaunch.ts`). What Munder Difflin doesn't have yet is its own plan review screen: approval happens in Claude Code's prompt, inside the agent's terminal. Running several sessions at once is where a plan per agent pays off, as covered in [managing multiple Claude Code sessions](/blog/manage-multiple-claude-code-sessions/).
+Two ways around it. In the Add Agent dialog the command field is editable (`src/renderer/src/components/AddAgentModal.tsx`), so replace the prefilled flag with `--permission-mode plan` for the agents you want planning first. Or switch Auto Mode off in Settings, start the agent again, and cycle into plan mode with Shift+Tab in its terminal. Worker requests that already name a `--permission-mode` keep it (`src/main/workerLaunch.ts`). What Vishwajeet Team doesn't have yet is its own plan review screen: approval happens in Claude Code's prompt, inside the agent's terminal. Running several sessions at once is where a plan per agent pays off, as covered in [managing multiple Claude Code sessions](/blog/manage-multiple-claude-code-sessions/).

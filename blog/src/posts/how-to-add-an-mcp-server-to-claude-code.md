@@ -26,7 +26,7 @@ faq:
 
 You add Claude Code MCP servers with `claude mcp add`: a name, then a URL for a hosted server or a launch command for a local one. The server lands in one of three scopes, and `claude mcp list` tells you whether it connected.
 
-You can do all of this by hand, or use [Munder Difflin](https://harnessmd.com/download), free and open source, which writes a default set of MCP servers into every Claude Code agent it starts ([install guide](/blog/how-to-install-and-use-munder-difflin/)). The rest of this guide is the by hand route, checked against [Anthropic's MCP docs](https://code.claude.com/docs/en/mcp) on 29 Sep 2026. If you want the concept first, read [what an MCP server is](/blog/what-is-an-mcp-server/).
+You can do all of this by hand, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, which writes a default set of MCP servers into every Claude Code agent it starts ([install guide](/blog/how-to-install-and-use-munder-difflin/)). The rest of this guide is the by hand route, checked against [Anthropic's MCP docs](https://code.claude.com/docs/en/mcp) on 29 Sep 2026. If you want the concept first, read [what an MCP server is](/blog/what-is-an-mcp-server/).
 
 ## Claude Code MCP commands at a glance
 
@@ -164,7 +164,7 @@ Mostly connection status and sign in. From the [Claude Code changelog](https://c
 | 2.1.121 (28 Apr 2026) | `alwaysLoad` server option |
 | 2.1.91 (2 Apr 2026) | `anthropic/maxResultSizeChars` per tool override |
 
-## Can Munder Difflin set up MCP servers for every agent?
+## Can Vishwajeet Team set up MCP servers for every agent?
 
 Yes, for a default set. In the v0.5.3 release, Settings, Connections has a Default MCP servers list (`src/renderer/src/components/McpDefaultsSettings.tsx`). Six servers from the safe tier are on by default: Sequential Thinking, Time, Fetch, Context7, and Filesystem and Git limited to the agent's own folder. GitHub, Database, Email & Calendar and Web Search need a key and stay off until you turn them on (`src/shared/mcpCatalog.ts`).
 

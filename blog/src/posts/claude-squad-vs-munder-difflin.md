@@ -1,29 +1,29 @@
 ---
-title: "Claude Squad vs Munder Difflin: Which Should You Use?"
-description: "Claude Squad vs Munder Difflin: a lean terminal session manager against a memory-backed, orchestrated, visual hive. Feature table and an honest verdict."
+title: "Claude Squad vs Vishwajeet Team: Which Should You Use?"
+description: "Claude Squad vs Vishwajeet Team: a lean terminal session manager against a memory-backed, orchestrated, visual hive. Feature table and an honest verdict."
 date: 2026-06-04
 category: comparisons
 categoryLabel: Comparisons
 type: Non-technical
-primaryKeyword: "claude squad vs munder difflin"
-secondaryKeywords: ["claude squad vs munder difflin", "claude code multi-agent tool", "claude squad alternative"]
+primaryKeyword: "claude squad vs Vishwajeet Team"
+secondaryKeywords: ["claude squad vs Vishwajeet Team", "claude code multi-agent tool", "claude squad alternative"]
 tags: ["Comparisons", "Multi-Agent", "Claude Code", "Tools"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "What's the main difference between Claude Squad and Munder Difflin?"
-    a: "Claude Squad is a lightweight terminal session manager that runs agents in parallel using tmux and git worktrees. Munder Difflin is a coordinated hive that adds shared long-term memory, inter-agent messaging, a GOD orchestrator, and a visual office floor — so the agents act as one team, not just parallel sessions."
-  - q: "Is Munder Difflin heavier than Claude Squad?"
-    a: "Yes. Claude Squad is a minimal terminal tool; Munder Difflin is a desktop app with a visual floor and a coordination layer. For one or two quick parallel tasks, Claude Squad is less to think about. For a real team of agents that need to coordinate, Munder Difflin's extra weight earns its keep."
+  - q: "What's the main difference between Claude Squad and Vishwajeet Team?"
+    a: "Claude Squad is a lightweight terminal session manager that runs agents in parallel using tmux and git worktrees. Vishwajeet Team is a coordinated hive that adds shared long-term memory, inter-agent messaging, a GOD orchestrator, and a visual office floor — so the agents act as one team, not just parallel sessions."
+  - q: "Is Vishwajeet Team heavier than Claude Squad?"
+    a: "Yes. Claude Squad is a minimal terminal tool; Vishwajeet Team is a desktop app with a visual floor and a coordination layer. For one or two quick parallel tasks, Claude Squad is less to think about. For a real team of agents that need to coordinate, Vishwajeet Team's extra weight earns its keep."
   - q: "Are both free and open source?"
-    a: "Yes — both are open source. Munder Difflin is MIT-licensed and runs on macOS, Windows, and Linux. Always check each project's current license before you rely on it."
+    a: "Yes — both are open source. Vishwajeet Team is MIT-licensed and runs on macOS, Windows, and Linux. Always check each project's current license before you rely on it."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Claude Squad</strong> wins on
 minimalism — a fast, terminal-native way to run parallel Claude Code agents. <strong>Munder
 Difflin</strong> wins on coordination — shared memory, inter-agent messaging, an orchestrator, and a
-visual floor. Choose Claude Squad for a few independent tasks in the terminal; choose Munder Difflin
+visual floor. Choose Claude Squad for a few independent tasks in the terminal; choose Vishwajeet Team
 when coordination, not just parallelism, is the problem.</p></div>
 
 These two tools are often compared, but they're solving different problems. This is the honest
@@ -32,7 +32,7 @@ head-to-head: where each is genuinely better, and how to decide.
 ## The one-line difference
 
 - **Claude Squad** runs agents *in parallel*. It's a terminal session manager.
-- **Munder Difflin** runs agents *as a team*. It's a [multi-agent harness](/#what).
+- **Vishwajeet Team** runs agents *as a team*. It's a [multi-agent harness](/#what).
 
 Everything below is detail on that distinction.
 
@@ -40,7 +40,7 @@ Everything below is detail on that distinction.
 
 ## Feature comparison
 
-| | Claude Squad | Munder Difflin |
+| | Claude Squad | Vishwajeet Team |
 |---|---|---|
 | Form factor | Terminal UI (TUI) | Desktop app (Electron) |
 | Parallelism | tmux sessions + git worktrees | Roles + mailboxes + orchestrator |
@@ -54,7 +54,7 @@ Everything below is detail on that distinction.
 | License | Open source | Open source (MIT) |
 
 No row makes one "win" outright — they reflect two philosophies. Claude Squad optimizes for *less*;
-Munder Difflin optimizes for *coordination*.
+Vishwajeet Team optimizes for *coordination*.
 
 ## Where Claude Squad is the better pick
 
@@ -70,7 +70,7 @@ about your workload before you reach for more.
 
 {% img "note-2" %}
 
-## Where Munder Difflin is the better pick
+## Where Vishwajeet Team is the better pick
 
 - **Your agents need to share what they learn.** [Long-term
   memory](/blog/give-claude-code-long-term-memory/) (MemPalace) means knowledge compounds instead of
@@ -89,7 +89,7 @@ In short: when *coordination* is the cost, the coordination layer pays for itsel
 There's no universal winner — there's a right tool for your workload:
 
 - **A few independent tasks, terminal-first, minimal:** Claude Squad.
-- **A coordinated team that remembers, messages, and routes:** Munder Difflin.
+- **A coordinated team that remembers, messages, and routes:** Vishwajeet Team.
 
 Many people start on Claude Squad and move to a hive exactly when they hit the coordination wall —
 the same arc as [going from one terminal to a team](/blog/from-one-terminal-to-a-team/). If you're
@@ -99,8 +99,8 @@ agents](/blog/best-claude-code-multi-agent-tools/), or if you've already outgrow
 
 ---
 
-> Both tools evolve quickly — check each project's repo for current details. Munder Difflin is our own
+> Both tools evolve quickly — check each project's repo for current details. Vishwajeet Team is our own
 > tool; we've tried to give Claude Squad a fair shake.
 
-Curious how a coordinated hive feels? [Download Munder Difflin](/#install) — free, open source, and
+Curious how a coordinated hive feels? [Download Vishwajeet Team](/#install) — free, open source, and
 local-first.

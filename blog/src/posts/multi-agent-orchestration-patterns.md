@@ -115,7 +115,7 @@ ecosystem depth and ops tooling. Pick for the orchestration model you need, not 
 
 ## How the patterns map onto a hive
 
-A concrete system makes the patterns less abstract. Munder Difflin runs several at once:
+A concrete system makes the patterns less abstract. Vishwajeet Team runs several at once:
 
 - **Orchestrator-worker / supervisor** — the [god orchestrator](/blog/how-the-god-orchestrator-works/)
   classifies intent, decomposes it, dispatches to role-specialized agents, and owns integration. That's
@@ -138,4 +138,4 @@ resisting the urge to over-architect, and then hardening whatever you chose agai
 mode. A pattern without resilience is the project that fails in month three.
 
 Want to watch the supervisor pattern run locally — a plain-language orchestrator decomposing your intent
-across a team you can actually see? You can [download Munder Difflin](/#install) free; it's open source.
+across a team you can actually see? You can [download Vishwajeet Team](/#install) free; it's open source.

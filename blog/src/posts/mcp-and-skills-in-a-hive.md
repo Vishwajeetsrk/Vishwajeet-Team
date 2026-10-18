@@ -149,6 +149,6 @@ constrain what each agent can do *within* its own session.
 
 ---
 
-Munder Difflin runs your real Claude Code — your MCP servers, your skills, your tools — just
-orchestrated into a hive. [Download Munder Difflin](https://munderdiffl.in/#install) to bring your
+Vishwajeet Team runs your real Claude Code — your MCP servers, your skills, your tools — just
+orchestrated into a hive. [Download Vishwajeet Team](https://munderdiffl.in/#install) to bring your
 existing setup into a coordinated team of agents; it's free and open source.

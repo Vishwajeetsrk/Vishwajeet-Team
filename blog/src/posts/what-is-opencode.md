@@ -23,7 +23,7 @@ faq:
 
 OpenCode is an open source AI coding agent made by Anomaly, the company behind the SST framework, released under the MIT licence. It reads your repo, edits files and runs commands from your terminal, a desktop app or your IDE, using any of 75+ model providers, local models included. Checked on opencode.ai and GitHub on 29 Sep 2026.
 
-You can run OpenCode on its own, or use [Munder Difflin](https://harnessmd.com/download), free and open source, a desktop app that runs OpenCode agents next to Claude Code and Codex, each in its own terminal. What the code does with OpenCode is further down, and the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
+You can run OpenCode on its own, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source, a desktop app that runs OpenCode agents next to Claude Code and Codex, each in its own terminal. What the code does with OpenCode is further down, and the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup.
 
 ## What is OpenCode?
 
@@ -111,7 +111,7 @@ OpenCode if you want to choose the model, Claude Code if you want Anthropic's ow
 
 **Pick OpenCode if** you want to switch models per task, run local models, or reuse a Copilot or ChatGPT subscription.
 
-**Pick Munder Difflin if** you'd rather not choose: it runs all three side by side, each agent a real CLI in its own terminal.
+**Pick Vishwajeet Team if** you'd rather not choose: it runs all three side by side, each agent a real CLI in its own terminal.
 
 **Pick Claude Code if** you're on a Claude plan and want Anthropic's agent. Anthropic's gateway docs say it doesn't support routing Claude Code to non Claude models.
 
@@ -121,10 +121,10 @@ Our [Codex CLI vs Claude Code](/blog/codex-cli-vs-claude-code/) comparison goes 
 
 {% img "note-2" %}
 
-## Does Munder Difflin run OpenCode?
+## Does Vishwajeet Team run OpenCode?
 
-Yes. In Munder Difflin 0.5.3, `src/shared/agentProvider.ts` lists OpenCode as an engine, with a comment naming anomalyco/opencode and ruling out the archived Go project. It starts the normal `opencode` interface in the agent's terminal and passes the brief with `--prompt`.
+Yes. In Vishwajeet Team 0.5.3, `src/shared/agentProvider.ts` lists OpenCode as an engine, with a comment naming anomalyco/opencode and ruling out the archived Go project. It starts the normal `opencode` interface in the agent's terminal and passes the brief with `--prompt`.
 
 It picks no model for you. `--model provider/model` goes on the command only when you choose one, so otherwise OpenCode uses whatever you configured. If `opencode` is missing, the app runs `npm install -g opencode-ai@latest` in that terminal, installing Node first when npm is absent and falling back to the official script, or Chocolatey on Windows, then relaunches the agent. Each agent gets an `OPENCODE_CONFIG_CONTENT` value that turns auto update off, and edit, bash and webfetch are set to allow only when the floor's Auto Mode is on.
 
-One limit: the code does not resume an OpenCode session after a respawn, it starts a fresh one. To run OpenCode on local models inside the app, see [run Munder Difflin on open models](/blog/run-munder-difflin-on-open-models/).
+One limit: the code does not resume an OpenCode session after a respawn, it starts a fresh one. To run OpenCode on local models inside the app, see [run Vishwajeet Team on open models](/blog/run-munder-difflin-on-open-models/).

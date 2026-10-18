@@ -23,7 +23,7 @@ faq:
 
 Our view: Mistral Large 4, nicknamed Le Chonk, is a serious open weight coding model that you can only rent for now. Mistral launched it as a public preview on 6 October 2026, with about 1 trillion parameters, a 1M token context window, an API you can call today and weights promised this month. Checked 6 Oct 2026.
 
-Open models can drive coding agents, which is why we care. [Munder Difflin](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. We have not tried Mistral Large 4 with it. Our guide to [running Munder Difflin on open models](/blog/run-munder-difflin-on-open-models/) covers the models you can use now, the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup, and the [Concepts hub](/blog/topics/concepts/) explains the terms.
+Open models can drive coding agents, which is why we care. [Vishwajeet Team](https://harnessmd.com/download) is free and open source: a desktop app that runs a team of coding agents such as Claude Code, Codex and Gemini CLI on your own computer. We have not tried Mistral Large 4 with it. Our guide to [running Vishwajeet Team on open models](/blog/run-munder-difflin-on-open-models/) covers the models you can use now, the [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup, and the [Concepts hub](/blog/topics/concepts/) explains the terms.
 
 ## What is Mistral Large 4?
 

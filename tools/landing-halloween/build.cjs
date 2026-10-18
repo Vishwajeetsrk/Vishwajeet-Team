@@ -114,15 +114,15 @@ for (const v of VERSIONS) {
   const vid = h.match(/<video id="launchVideo"[\s\S]*?<\/video>/);
   if (!vid) throw new Error('no launch video');
   h = h.replace(vid[0], `<video id="launchVideo" poster="media/office-halloween-poster.jpg" data-office="media/office-halloween.mp4" data-office-poster="media/office-halloween-poster.jpg" data-film="./media/munder-difflin-053.mp4" data-film-poster="./media/munder-difflin-053-poster.jpg" preload="auto" autoplay playsinline muted loop
-               aria-label="The Munder Difflin office after dark, recorded in the app with the Halloween season on: the whole cast in costume at their desks, red wall lamps, pumpkins and cobwebs">
+               aria-label="The Vishwajeet Team office after dark, recorded in the app with the Halloween season on: the whole cast in costume at their desks, red wall lamps, pumpkins and cobwebs">
           <source src="media/office-halloween.mp4" type="video/mp4">
         </video>`);
   h = must(h, `<link rel="preload" as="image" href="./media/munder-difflin-053-poster.jpg">`, '<link rel="preload" as="image" href="media/office-halloween-poster.jpg">');
   h = must(h, '<div class="screen" id="screen">', '<div class="screen hw-office" id="screen">');
   h = must(h, '<span class="vl-t">Loading the launch video</span>', '<span class="vl-t">Opening the office</span>');
   h = must(h, '<span>Watch with sound</span><small>0:54</small>', '<span class="hw-x">Watch launch video</span><span class="hw-n">Watch with sound</span><small>0:54</small>');
-  h = must(h, '<figcaption>The 0.5.3 launch video. One shotted with Munder Difflin and Opus 5.5.</figcaption>',
-    '<figcaption><span class="hw-x">Launching Halloween theme in the office, characters</span><span class="hw-n">The 0.5.3 launch video. One shotted with Munder Difflin and Opus 5.5.</span></figcaption>');
+  h = must(h, '<figcaption>The 0.5.3 launch video. One shotted with Vishwajeet Team and Opus 5.5.</figcaption>',
+    '<figcaption><span class="hw-x">Launching Halloween theme in the office, characters</span><span class="hw-n">The 0.5.3 launch video. One shotted with Vishwajeet Team and Opus 5.5.</span></figcaption>');
 
   // no Pro trial on this page: the pricing line, the FAQ answer and its copy in the search data
   // no Pro trial anywhere on the page (founder, 1 Oct)

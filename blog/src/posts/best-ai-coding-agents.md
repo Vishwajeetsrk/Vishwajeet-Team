@@ -22,7 +22,7 @@ faq:
   - q: "What is the difference between an AI coding agent and an AI coding assistant?"
     a: "An assistant suggests code and waits for you. An agent takes a task, then reads files, edits them, runs commands and tests, and repeats until the task is done or it needs a decision. Most tools now do both: Copilot and Cursor still autocomplete, and both also run agent sessions."
   - q: "Can I run Claude Code and Codex at the same time?"
-    a: "Yes. Run each in its own git worktree so they never edit the same checkout. You can do that by hand with git worktree add and a few terminal tabs, or use Munder Difflin, which gives every agent its own worktree and supports twelve coding CLIs."
+    a: "Yes. Run each in its own git worktree so they never edit the same checkout. You can do that by hand with git worktree add and a few terminal tabs, or use Vishwajeet Team, which gives every agent its own worktree and supports twelve coding CLIs."
 ---
 
 As of 29 Sep 2026, the best AI coding agents are Claude Code for terminal work, Cursor for work inside an editor, Codex if you already pay for ChatGPT, GitHub Copilot for teams that live on GitHub, and OpenCode or Cline if you want open source with your own model keys.
@@ -61,7 +61,7 @@ Aider deserves a flag. Its last release is 0.86.2, published to PyPI on 12 Feb 2
 Pick by where you work and what you already pay for, not by a leaderboard.
 
 1. **Pick Claude Code if** you work in the terminal and hand the agent long, multi file tasks. [Codex CLI vs Claude Code](/blog/codex-cli-vs-claude-code/) covers the head to head.
-2. **Pick [Munder Difflin](https://harnessmd.com/download) if** you want to run several of these at once, free and open source. It is not a coding agent itself. It is a desktop app that runs seven of the ten tools in this table side by side (all but Cline, Aider and Devin), with an orchestrator you brief, and it is MIT licensed.
+2. **Pick [Vishwajeet Team](https://harnessmd.com/download) if** you want to run several of these at once, free and open source. It is not a coding agent itself. It is a desktop app that runs seven of the ten tools in this table side by side (all but Cline, Aider and Devin), with an orchestrator you brief, and it is MIT licensed.
 3. **Pick Cursor if** you want the agent inside your editor with the least setup. See [Claude Code vs Cursor](/blog/claude-code-vs-cursor/).
 4. **Pick Codex if** you already have ChatGPT. Every plan includes it, even Free.
 5. **Pick GitHub Copilot if** your team's issues and reviews already live on GitHub.
@@ -132,10 +132,10 @@ Google replaced Gemini CLI with Antigravity CLI for individual users on 18 Jun 2
 
 Yes, and plenty of people do: Claude Code on one feature, Codex reviewing another, Copilot's cloud agent on a bug. The rule is one git worktree per agent, or two agents will edit the same file and one of them loses.
 
-You can do this by hand with `git worktree add` and a terminal tab per agent. Munder Difflin does the same thing for you. As of 0.5.3 (checked in `src/shared/agentProvider.ts` at the `v0.5.3` tag), it runs twelve CLIs: Claude Code, Codex, Gemini CLI, Antigravity, Grok, Kimi Code, Qwen, OpenCode, Crush, Pi, Copilot and Cursor. Each worker gets its own worktree (`src/main/git.ts`), and Michael, the orchestrator you brief, hands out the tasks.
+You can do this by hand with `git worktree add` and a terminal tab per agent. Vishwajeet Team does the same thing for you. As of 0.5.3 (checked in `src/shared/agentProvider.ts` at the `v0.5.3` tag), it runs twelve CLIs: Claude Code, Codex, Gemini CLI, Antigravity, Grok, Kimi Code, Qwen, OpenCode, Crush, Pi, Copilot and Cursor. Each worker gets its own worktree (`src/main/git.ts`), and Michael, the orchestrator you brief, hands out the tasks.
 
 {% img "note-2" %}
 
-It does not replace any agent above. You still install each CLI and sign in with your own plan or key, and it will not make a weak model write better code. If you only ever run one agent, you do not need it. For setup, start with [how to install and use Munder Difflin](/blog/how-to-install-and-use-munder-difflin/); for other ways to run agents in parallel, see [the best multi-agent tools for Claude Code](/blog/best-claude-code-multi-agent-tools/).
+It does not replace any agent above. You still install each CLI and sign in with your own plan or key, and it will not make a weak model write better code. If you only ever run one agent, you do not need it. For setup, start with [how to install and use Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/); for other ways to run agents in parallel, see [the best multi-agent tools for Claude Code](/blog/best-claude-code-multi-agent-tools/).
 
 <p style="font-size:0.85em;opacity:0.7;margin-top:2rem">Sources, all checked 29 Sep 2026: <a href="https://claude.com/pricing">Claude pricing</a> (Anthropic); <a href="https://learn.chatgpt.com/docs/pricing">ChatGPT and Codex pricing</a> (OpenAI); <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">Copilot usage based billing</a> (GitHub, 27 Apr 2026); <a href="https://github.com/google-gemini/gemini-cli/discussions/27274">Transitioning Gemini CLI to Antigravity CLI</a> (Google, 19 May 2026); Cursor's sale to SpaceX, closed 14 Aug 2026 per SpaceX's Form 8-K as reported by Investing.com. Also the Claude Code docs and the pricing pages for Cursor, Devin, OpenCode, Cline and Antigravity, and each open source project's GitHub repo and releases.</p>

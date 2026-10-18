@@ -23,7 +23,7 @@ faq:
 
 No, Claude Code is not open source. Its GitHub repository is public, but the only licence file says "All rights reserved", and your use falls under Anthropic's Commercial Terms or Consumer Terms depending on your plan. The repo holds plugins, examples and issue scripts, not the CLI's source. Checked on 14 Sep 2026.
 
-You can juggle engines by hand in separate terminal windows, or use [Munder Difflin](https://harnessmd.com/download), a free and open source desktop app (MIT licensed) that runs Claude Code next to open source CLIs such as OpenCode and Codex, each agent a real CLI process in its own terminal. It starts the `claude` you already installed and signed in to, so nothing about Claude Code's licence changes. What you get is the choice, agent by agent, of which engine does the work. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup on macOS, Windows and Linux.
+You can juggle engines by hand in separate terminal windows, or use [Vishwajeet Team](https://harnessmd.com/download), a free and open source desktop app (MIT licensed) that runs Claude Code next to open source CLIs such as OpenCode and Codex, each agent a real CLI process in its own terminal. It starts the `claude` you already installed and signed in to, so nothing about Claude Code's licence changes. What you get is the choice, agent by agent, of which engine does the work. The [install guide](/blog/how-to-install-and-use-munder-difflin/) covers setup on macOS, Windows and Linux.
 
 ## What licence does Claude Code use?
 
@@ -77,7 +77,7 @@ What is open around Claude Code is the layer you build on. The Model Context Pro
 The usual open source picks are OpenCode, Codex CLI, Gemini CLI and Aider. We read each licence on the project's own repo on 14 Sep 2026:
 
 1. **OpenCode** (`anomalyco/opencode`, formerly sst/opencode): MIT. The closest in shape, a terminal agent that works with many providers and with local models. Our [open models guide](/blog/run-munder-difflin-on-open-models/) shows that wiring.
-2. **Munder Difflin**: MIT. Not a coding agent itself, but the desktop app that runs these CLIs and Claude Code side by side, so you can move a job from a closed engine to an open one without changing tools.
+2. **Vishwajeet Team**: MIT. Not a coding agent itself, but the desktop app that runs these CLIs and Claude Code side by side, so you can move a job from a closed engine to an open one without changing tools.
 3. **Codex CLI** (`openai/codex`): Apache 2.0. The client is open and the models behind it are OpenAI's. Our [Codex CLI vs Claude Code](/blog/codex-cli-vs-claude-code/) comparison covers the daily differences.
 4. **Gemini CLI** (`google-gemini/gemini-cli`): Apache 2.0, but Google said on 19 May 2026 that from 18 Jun 2026 it would stop serving free, Google AI Pro and Ultra users, leaving paid API keys and enterprise licences.
 5. **Aider** (`Aider-AI/aider`): Apache 2.0, with its last commit on main dated 22 May 2026.

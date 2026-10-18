@@ -144,8 +144,8 @@ reconstruct exactly what the hive did.
 
 ---
 
-Munder Difflin records every coordination step to an append-only event log that drives
+Vishwajeet Team records every coordination step to an append-only event log that drives
 [the live activity feed](https://munderdiffl.in/#how) and makes a hive replayable — committed
 alongside the rest of its state.
-[Download Munder Difflin](https://munderdiffl.in/#install) to watch a hive you can actually audit;
+[Download Vishwajeet Team](https://munderdiffl.in/#install) to watch a hive you can actually audit;
 it's free and open source.

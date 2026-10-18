@@ -17,7 +17,7 @@ faq:
   - q: "What's the difference between an agent and a subagent in Claude Code?"
     a: "An agent is a top-level session you drive. A subagent is a helper the main agent spawns inside its own run to fan out a piece of work — short-lived and scoped to that parent. Subagents are great for parallel sub-tasks but don't persist or share memory across your whole workflow."
   - q: "How do I use multiple Claude Code agents at once?"
-    a: "Open several sessions, give each a clear role, and coordinate them — ideally with shared memory and messaging so they don't collide or forget. A multi-agent harness like Munder Difflin automates that coordination so the sessions act as one team."
+    a: "Open several sessions, give each a clear role, and coordinate them — ideally with shared memory and messaging so they don't collide or forget. A multi-agent harness like Vishwajeet Team automates that coordination so the sessions act as one team."
 ---
 
 <div class="callout tldr"><span class="ic">TL;DR</span><p>A <strong>Claude Code agent</strong> is a
@@ -99,6 +99,6 @@ When you wrap your agents in that layer, you've got a [multi-agent harness](/blo
 
 ---
 
-Munder Difflin is the team layer for the Claude Code agents you already run — roles, shared memory,
-messaging, and an orchestrator, all local. [Download Munder Difflin](/#install) to turn your agents
+Vishwajeet Team is the team layer for the Claude Code agents you already run — roles, shared memory,
+messaging, and an orchestrator, all local. [Download Vishwajeet Team](/#install) to turn your agents
 into an office; it's free and open source.

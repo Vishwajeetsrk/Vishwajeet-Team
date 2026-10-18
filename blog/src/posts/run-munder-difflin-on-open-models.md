@@ -1,6 +1,6 @@
 ---
-title: "Run Munder Difflin on Open Source Models: Fully Local or Through a Provider"
-description: "Munder Difflin can run your whole agent floor on open weight models like gpt-oss, Qwen3, DeepSeek, Llama, GLM and Kimi: fully local with Ollama, LM Studio or vLLM, or through a provider with your own key. The wiring for each engine, current as of 0.5.2."
+title: "Run Vishwajeet Team on Open Source Models: Fully Local or Through a Provider"
+description: "Vishwajeet Team can run your whole agent floor on open weight models like gpt-oss, Qwen3, DeepSeek, Llama, GLM and Kimi: fully local with Ollama, LM Studio or vLLM, or through a provider with your own key. The wiring for each engine, current as of 0.5.2."
 date: 2026-06-22
 updated: 2026-09-10
 category: guides
@@ -13,7 +13,7 @@ author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Can Munder Difflin run entirely on open source models?"
+  - q: "Can Vishwajeet Team run entirely on open source models?"
     a: "Yes. OpenCode, Crush, Qwen and Pi can all run open weight models, either on your own machine or through a provider with your own API key. You can put open models in every seat on the floor, including Michael's."
   - q: "What is the difference between running local and using a provider?"
     a: "Local means Ollama, LM Studio or vLLM runs the weights on your machine: private, no per token bill, and limited by your memory. A provider such as OpenRouter or Groq hosts the same open weights on its hardware and bills your own key per token, so you can reach models far too big for a laptop."
@@ -22,21 +22,21 @@ faq:
   - q: "Does each engine need a different model name?"
     a: "The model id stays the same and only the prefix changes. A local model is local/<tag> on OpenCode and ollama/<tag> on Crush and Pi, and a provider model carries the provider first, like openrouter/openai/gpt-oss-120b."
   - q: "How do I run Pi on a local model?"
-    a: "Add your local server to Pi's own config file, ~/.pi/agent/models.json. Munder Difflin copies that file into every Pi agent it starts, so the models you define there are available to your Pi agents. The Pi base URL field in the app stays reserved."
+    a: "Add your local server to Pi's own config file, ~/.pi/agent/models.json. Vishwajeet Team copies that file into every Pi agent it starts, so the models you define there are available to your Pi agents. The Pi base URL field in the app stays reserved."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin can run on open models
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team can run on open models
 end to end.</strong> Two routes: <strong>fully local</strong> with Ollama, LM Studio or vLLM (private, no per
 token bill, limited by your memory), or a <strong>provider</strong> such as OpenRouter or Groq (their hardware,
 your key, much bigger models). Four engines do the wiring: <strong>OpenCode</strong>, <strong>Crush</strong> and
 <strong>Qwen</strong> take a local base URL in <strong>Settings → AI Engines</strong>, and <strong>Pi</strong> reads
 your own <code>~/.pi/agent/models.json</code>. Keys go in the same panel and are stored write only.</p></div>
 
-Munder Difflin started out wrapping the closed frontier CLIs. Today it supports twelve, and several of them will
+Vishwajeet Team started out wrapping the closed frontier CLIs. Today it supports twelve, and several of them will
 point at any model you like. That means a whole office of agents can run on models whose weights anyone can download.
 
 There are two honest ways to do it, and they trade off differently. This guide walks through both, then gives the exact
-wiring for each engine, checked against Munder Difflin 0.5.2 on 10 September 2026. (For the why, see
+wiring for each engine, checked against Vishwajeet Team 0.5.2 on 10 September 2026. (For the why, see
 [why local first matters for AI agents](/blog/why-local-first-matters-for-ai-agents/).)
 
 ## Should you run open models locally or through a provider?
@@ -107,7 +107,7 @@ instead:
 }
 ```
 
-Munder Difflin copies that file into each Pi agent when it starts, so start the Pi agent again after you edit it.
+Vishwajeet Team copies that file into each Pi agent when it starts, so start the Pi agent again after you edit it.
 
 **3. Hire an agent on that model.** In **Add agent**, choose the engine and pick one of the open model quick picks, or type
 the slug yourself: `local/gpt-oss:20b` on OpenCode, `ollama/gpt-oss:20b` on Crush and Pi. Keep the colon in the tag. That
@@ -174,9 +174,9 @@ workers and thin orchestrators.
 
 ## The bottom line
 
-Open weights turn Munder Difflin from a harness for a few vendors' CLIs into a harness for the whole open ecosystem. Go local
+Open weights turn Vishwajeet Team from a harness for a few vendors' CLIs into a harness for the whole open ecosystem. Go local
 when privacy and a fixed cost matter, use a provider when you want the biggest models, and mix both across your floor, agent
 by agent.
 
-[Download Munder Difflin](https://munderdiffl.in/), free and open source, and point your favourite open model at it. On a Mac
+[Download Vishwajeet Team](https://munderdiffl.in/), free and open source, and point your favourite open model at it. On a Mac
 and want the sizing walkthrough? Read the [Mac mini guide](/blog/run-munder-difflin-on-a-mac-mini/).

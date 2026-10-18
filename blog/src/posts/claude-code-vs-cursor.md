@@ -24,7 +24,7 @@ faq:
 
 Pick Cursor if you want an AI editor where you steer agents across models from several labs, and pick Claude Code if you want Anthropic's terminal agent to take whole tasks on the Claude plan you already pay for.
 
-There is a third answer: run both. [Munder Difflin](https://harnessmd.com/download), free and open source, runs a Claude Code agent and a Cursor Agent side by side in one desktop app, each in its own terminal on your machine. More on that below. If you already pay for Max, our [Claude Code Max plan tips](/blog/claude-code-max-plan-tips/) cover how the limits behave.
+There is a third answer: run both. [Vishwajeet Team](https://harnessmd.com/download), free and open source, runs a Claude Code agent and a Cursor Agent side by side in one desktop app, each in its own terminal on your machine. More on that below. If you already pay for Max, our [Claude Code Max plan tips](/blog/claude-code-max-plan-tips/) cover how the limits behave.
 
 ## Claude Code vs Cursor at a glance
 
@@ -89,14 +89,14 @@ Both do, and Cursor's run further from your machine. Cursor's Cloud Agents run i
 Yes, and there are three sensible ways to do it.
 
 1. **Claude Code inside Cursor.** Anthropic's overview has an "Install for Cursor" link for the Claude Code extension. You keep Cursor's editor and bill the agent work to your Claude plan.
-2. **Munder Difflin, both CLIs from one app.** Every agent you hire picks its own engine and model, so a Claude Code agent and a Cursor Agent (say on `composer-2.5`) work side by side, each in a real terminal, optionally in its own git worktree, on subscriptions you already pay for. If Cursor's CLI is missing, the app installs it with Cursor's own script. Checked in the v0.5.3 release source (`src/shared/agentProvider.ts`, `src/shared/hire.ts`). One honest limit: there is no Cursor hook bridge yet, so a Cursor agent gets messages typed into its terminal when it goes quiet, while Claude Code reports live status through hooks. It drives Cursor's CLI, not its editor or cloud agents.
+2. **Vishwajeet Team, both CLIs from one app.** Every agent you hire picks its own engine and model, so a Claude Code agent and a Cursor Agent (say on `composer-2.5`) work side by side, each in a real terminal, optionally in its own git worktree, on subscriptions you already pay for. If Cursor's CLI is missing, the app installs it with Cursor's own script. Checked in the v0.5.3 release source (`src/shared/agentProvider.ts`, `src/shared/hire.ts`). One honest limit: there is no Cursor hook bridge yet, so a Cursor agent gets messages typed into its terminal when it goes quiet, while Claude Code reports live status through hooks. It drives Cursor's CLI, not its editor or cloud agents.
 3. **By hand.** Open two terminals and give each agent its own worktree, for example `claude -w auth` in one and `agent -w ui` in the other. Two agents in one checkout is how you get a merge conflict with yourself.
 
 Weighing Codex too? Read [Codex CLI vs Claude Code](/blog/codex-cli-vs-claude-code/), or see [the best AI coding agents](/blog/best-ai-coding-agents/) sorted by category.
 
 ## Is Claude Code or Cursor open source?
 
-Neither is. The [anthropics/claude-code repository](https://github.com/anthropics/claude-code) holds issues, plugins and examples, but its licence file reads "All rights reserved" under Anthropic's Commercial Terms (checked 29 Sep 2026). Cursor's editor, CLI and cloud agents are proprietary. If an open licence matters to you, the orchestration layer can be open even when the agents are not: Munder Difflin's classic office is MIT licensed.
+Neither is. The [anthropics/claude-code repository](https://github.com/anthropics/claude-code) holds issues, plugins and examples, but its licence file reads "All rights reserved" under Anthropic's Commercial Terms (checked 29 Sep 2026). Cursor's editor, CLI and cloud agents are proprietary. If an open licence matters to you, the orchestration layer can be open even when the agents are not: Vishwajeet Team's classic office is MIT licensed.
 
 ## Claude Code or Cursor for beginners?
 

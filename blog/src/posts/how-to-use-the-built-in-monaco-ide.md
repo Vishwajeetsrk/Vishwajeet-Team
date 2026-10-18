@@ -1,18 +1,18 @@
 ---
 title: "How to Use the Built-in Monaco IDE"
-description: "A practical walkthrough of Munder Difflin v0.3.3's built-in Monaco IDE: the title-bar IDE button, the git CHANGES rail with side-by-side diffs vs HEAD, the file tree, tabs, Cmd/Ctrl+S save — and the agent review workflow it enables."
+description: "A practical walkthrough of Vishwajeet Team v0.3.3's built-in Monaco IDE: the title-bar IDE button, the git CHANGES rail with side-by-side diffs vs HEAD, the file tree, tabs, Cmd/Ctrl+S save — and the agent review workflow it enables."
 date: 2026-07-03
 category: guides
 categoryLabel: Guides
 type: Technical
 primaryKeyword: "built-in monaco ide"
-secondaryKeywords: ["review ai agent code changes", "monaco editor electron app", "side-by-side git diff vs head", "munder difflin ide walkthrough", "human review workflow for ai agents"]
+secondaryKeywords: ["review ai agent code changes", "monaco editor electron app", "side-by-side git diff vs head", "Vishwajeet Team ide walkthrough", "human review workflow for ai agents"]
 tags: ["Guides", "IDE", "Git", "Human-in-the-Loop", "Local-First"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "How do I open the built-in IDE in Munder Difflin?"
+  - q: "How do I open the built-in IDE in Vishwajeet Team?"
     a: "Click the IDE button in the title bar. It toggles a full-window Monaco editor overlay on top of the office floor — the floor, terminals, and voice UX keep running underneath, untouched. Click the button again to drop back to the floor. It shipped in v0.3.3."
   - q: "How do I see what an agent changed?"
     a: "Open the IDE and look at the git CHANGES rail on the left. It lists every file with uncommitted changes in the workspace; click a file and you get a read-only side-by-side diff against HEAD, so you see exactly what the agent wrote next to what was there before."
@@ -26,7 +26,7 @@ faq:
     a: "Because the review loop is faster when it lives where the agents live. An agent finishes, you click IDE, read the side-by-side diff vs HEAD, fix small things in place, and go approve — no context switch to another app, no hunting for the right worktree. For heavy editing sessions your regular editor is still there; the built-in IDE is optimized for reviewing agent output."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin v0.3.3 ships a <strong>built-in Monaco IDE</strong> — the VS&nbsp;Code editor engine, fully self-hosted, no CDN. A title-bar <strong>IDE</strong> button toggles a full-window overlay above the office floor: a <strong>git CHANGES rail</strong> where clicking a file opens a <strong>side-by-side diff vs HEAD</strong>, a workspace <strong>file tree</strong>, <strong>editor tabs with dirty-state dots</strong>, and <strong>Cmd/Ctrl+S</strong> save. The workspace root snapshots from the <strong>selected → god → first agent's cwd</strong>, and <strong>all fs/git access goes through main-process IPC</strong> — the renderer never touches disk. The point: <em>agent finishes → open IDE → read the diff → tweak → approve</em>, without leaving the app.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team v0.3.3 ships a <strong>built-in Monaco IDE</strong> — the VS&nbsp;Code editor engine, fully self-hosted, no CDN. A title-bar <strong>IDE</strong> button toggles a full-window overlay above the office floor: a <strong>git CHANGES rail</strong> where clicking a file opens a <strong>side-by-side diff vs HEAD</strong>, a workspace <strong>file tree</strong>, <strong>editor tabs with dirty-state dots</strong>, and <strong>Cmd/Ctrl+S</strong> save. The workspace root snapshots from the <strong>selected → god → first agent's cwd</strong>, and <strong>all fs/git access goes through main-process IPC</strong> — the renderer never touches disk. The point: <em>agent finishes → open IDE → read the diff → tweak → approve</em>, without leaving the app.</p></div>
 
 You hired a floor of agents, one of them just announced it's done, and now comes the part that actually matters: **reading what it changed before you bless it.** Until v0.3.3, that meant alt-tabbing to your editor, finding the right directory, and running `git diff` by hand. Now the review surface is built in. This is a practical walkthrough of the Monaco IDE that shipped in [v0.3.3](/blog/launching-munder-difflin-v0-3-3/) — what each piece does and the workflow it's designed around.
 

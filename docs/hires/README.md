@@ -1,7 +1,7 @@
 # Agent Gallery
 
 A community gallery of **shareable hires** — portable agent role templates for the
-[Munder Difflin](https://munderdiffl.in) multi-agent harness. Browse a role, download
+[Vishwajeet Team](https://munderdiffl.in) multi-agent harness. Browse a role, download
 its manifest, and import it in the app — its goal, model, flags, and token budget land
 pre-filled (you always review before it spawns).
 
@@ -66,5 +66,5 @@ auto-spawns — a human reviews the final command and clicks spawn.
 
 ## License
 
-MIT. Not affiliated with NBC's *The Office*, Dunder Mifflin, or (yet) the Munder Difflin
+MIT. Not affiliated with NBC's *The Office*, Dunder Mifflin, or (yet) the Vishwajeet Team
 project — the integration PR lives in [`../app-pr`](../app-pr).

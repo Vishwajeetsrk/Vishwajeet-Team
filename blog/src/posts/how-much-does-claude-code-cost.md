@@ -26,7 +26,7 @@ faq:
 
 As of 29 Sep 2026, Claude Code pricing starts at $20 a month with Claude Pro ($17 a month billed annually), and every paid plan above it includes Claude Code too. The free Claude plan does not. For light use, the cheapest way in is an API key billed per token.
 
-Anthropic changed limits, models or local pricing at least five times between May and September 2026, so every figure here names its source and the date it was checked. If you run more than one Claude Code session at a time, you can track spend by hand, or use [Munder Difflin](https://harnessmd.com/download), free and open source: it runs every agent on the Claude subscription or API key you already pay for, and adds per agent token caps on top.
+Anthropic changed limits, models or local pricing at least five times between May and September 2026, so every figure here names its source and the date it was checked. If you run more than one Claude Code session at a time, you can track spend by hand, or use [Vishwajeet Team](https://harnessmd.com/download), free and open source: it runs every agent on the Claude subscription or API key you already pay for, and adds per agent token caps on top.
 
 ## What are all the ways to pay for Claude Code?
 
@@ -118,6 +118,6 @@ Claude Code has one guard of its own. On 29 Sep 2026, `claude --help` on Claude 
                                       calls (only works with --print)
 ```
 
-So it applies to scripted runs, not interactive sessions. Munder Difflin adds the guard across a whole floor. As of Munder Difflin 0.5.3, its circuit breaker (`src/main/breaker.ts`) checks each agent against its own token cap, checks the whole floor against a total cap (blaming the biggest spender), and watches for loops and error storms. When one trips, it steers the agent with a message first, then constrains it; it only stops an agent if you turn hard stop on, which is off by default. None of this changes what Anthropic charges you. Our [multi agent cost playbook](/blog/the-multi-agent-cost-playbook/) covers the other levers for a fleet.
+So it applies to scripted runs, not interactive sessions. Vishwajeet Team adds the guard across a whole floor. As of Vishwajeet Team 0.5.3, its circuit breaker (`src/main/breaker.ts`) checks each agent against its own token cap, checks the whole floor against a total cap (blaming the biggest spender), and watches for loops and error storms. When one trips, it steers the agent with a message first, then constrains it; it only stops an agent if you turn hard stop on, which is off by default. None of this changes what Anthropic charges you. Our [multi agent cost playbook](/blog/the-multi-agent-cost-playbook/) covers the other levers for a fleet.
 
 Anthropic revises these numbers without much notice. Check [claude.com/pricing](https://claude.com/pricing) before you commit a team to a plan; this page is correct as of 29 Sep 2026.

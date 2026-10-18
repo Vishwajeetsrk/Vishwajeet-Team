@@ -1,42 +1,42 @@
 ---
-title: "The Office Parody Behind Munder Difflin (and Why It Helps)"
-description: "Why Munder Difflin is a loving parody of The Office — and how the office metaphor makes a hive of AI agents genuinely easier to understand and trust."
+title: "The Office Parody Behind Vishwajeet Team (and Why It Helps)"
+description: "Why Vishwajeet Team is a loving parody of The Office — and how the office metaphor makes a hive of AI agents genuinely easier to understand and trust."
 date: 2026-06-04
 category: story
 categoryLabel: Story
 type: Non-technical
-primaryKeyword: "munder difflin"
-secondaryKeywords: ["munder difflin app", "munder difflin claude code", "the office ai agents"]
-tags: ["Story", "Brand", "The Office", "Munder Difflin"]
+primaryKeyword: "Vishwajeet Team"
+secondaryKeywords: ["Vishwajeet Team app", "Vishwajeet Team claude code", "the office ai agents"]
+tags: ["Story", "Brand", "The Office", "Vishwajeet Team"]
 author:
   name: Chaitanya Giri
   initials: CG
 faq:
-  - q: "Why is it called Munder Difflin?"
+  - q: "Why is it called Vishwajeet Team?"
     a: "It's an affectionate parody of Dunder Mifflin, the fictional paper company from The Office. The tagline says it best: 'the world's best agents, the world's worst paper company.' The joke also does real work — an office is the most intuitive way to picture a team of AI agents coordinating."
   - q: "Are the agents really named after The Office characters?"
     a: "Yes. The avatars are the cast of The Office, each differentiated by its own look, working at desks on a visual office floor — with Michael running the room as the orchestrator."
-  - q: "Is Munder Difflin affiliated with The Office or NBC?"
+  - q: "Is Vishwajeet Team affiliated with The Office or NBC?"
     a: "No. It's an affectionate, unaffiliated parody — not associated with NBC's The Office or Dunder Mifflin. The homage is a tribute, not a partnership."
   - q: "Is the parody just a gimmick?"
     a: "No — the office metaphor is a teaching tool. Organizations already solved how many workers coordinate (roles, a manager who routes work, mailboxes, shared knowledge), so mapping a multi-agent system onto an office makes it instantly legible."
 ---
 
-<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Munder Difflin</strong> is a loving
+<div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Vishwajeet Team</strong> is a loving
 parody of <em>Dunder Mifflin</em> from <em>The Office</em> — "the world's best agents, the world's
 worst paper company." But the joke isn't only a joke. An <strong>office</strong> is the most intuitive
 mental model humans have for "a group of workers coordinating toward a goal," which is exactly what a
 hive of AI agents is. So the metaphor does real work: it makes an otherwise abstract multi-agent system
 something you can <em>see</em>, reason about, and trust at a glance.</p></div>
 
-Plenty of AI tools take themselves very seriously. Munder Difflin opens with a paper-company pun. That's
+Plenty of AI tools take themselves very seriously. Vishwajeet Team opens with a paper-company pun. That's
 a deliberate choice, and it goes deeper than a punchline — the parody is also the product's best
 explanation of itself. Here's the story behind the name, and why a sitcom about a failing paper company
 turned out to be the perfect frame for a serious piece of agent infrastructure.
 
 ## The joke, briefly
 
-[Munder Difflin](/) is an [open-source multi-agent harness](/#what) for Claude Code — and it's dressed
+[Vishwajeet Team](/) is an [open-source multi-agent harness](/#what) for Claude Code — and it's dressed
 as a parody of *Dunder Mifflin*, the fictional paper company from *The Office*. The tagline sets the
 tone: **"The world's best agents. The world's worst paper company."** The avatars are the show's cast,
 each with its own look, working at desks on a visual office floor rendered in a friendly pixel
@@ -117,5 +117,5 @@ the bit is how we make it make sense.
 
 ---
 
-Come meet the team. [Download Munder Difflin](/#install) to run your own office of Claude Code agents —
+Come meet the team. [Download Vishwajeet Team](/#install) to run your own office of Claude Code agents —
 Michael's already at his desk. Free and open source.

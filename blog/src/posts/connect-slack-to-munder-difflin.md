@@ -1,18 +1,18 @@
 ---
-title: "How to Connect Slack to Munder Difflin 0.5.2"
-description: "Connect Slack to Munder Difflin 0.5.2: create the Slack app, add the bot scopes, pick one of three connection modes, and get answers in the thread."
+title: "How to Connect Slack to Vishwajeet Team 0.5.2"
+description: "Connect Slack to Vishwajeet Team 0.5.2: create the Slack app, add the bot scopes, pick one of three connection modes, and get answers in the thread."
 date: 2026-09-14
 category: guides
 categoryLabel: Guides
 type: Technical
-primaryKeyword: "connect slack to munder difflin"
-secondaryKeywords: ["munder difflin slack", "slack bot token scopes for ai agents", "slack socket mode ai agent", "run ai agents from slack", "slack polling vs socket mode"]
+primaryKeyword: "connect slack to Vishwajeet Team"
+secondaryKeywords: ["Vishwajeet Team slack", "slack bot token scopes for ai agents", "slack socket mode ai agent", "run ai agents from slack", "slack polling vs socket mode"]
 tags: ["Guides", "Slack", "Integrations", "Getting Started"]
 faq:
   - q: "Do I need Pro to connect Slack?"
     a: "No. Slack lives under Settings, Connections, which every plan has. Pro adds a Slack view to the Inbox, where you can see what came in and reply in the thread."
   - q: "Can I turn on more than one Slack mode at once?"
-    a: "No. Munder Difflin 0.5.2 runs one mode at a time. Switching stops the current one, and you press Turn on (or start, for Let Slack call the office) for the new mode."
+    a: "No. Vishwajeet Team 0.5.2 runs one mode at a time. Switching stops the current one, and you press Turn on (or start, for Let Slack call the office) for the new mode."
   - q: "Do my agents get the Slack bot token?"
     a: "Agents are never handed it. They reply through a small helper that sends the reply to a local endpoint inside the app, and the endpoint holds the token; the agent only passes the channel, the thread and the text. The token is still saved in the app's config file on your machine, which an agent with full file access could read."
   - q: "Does the bot answer direct messages?"
@@ -21,9 +21,9 @@ faq:
     a: "Check for messages picks them up on its next check. Stay connected picks them up with its catch up check if you picked a channel. Let Slack call the office loses them."
 ---
 
-To connect Slack to [Munder Difflin](https://harnessmd.com/download) 0.5.2, create a Slack app with four bot scopes (six to list channels), paste the bot token under Settings, Connections, Slack, press Test connection, pick the channel and press Turn on. Then mention the bot in that channel, and your orchestrator or the agent you chose answers in the thread.
+To connect Slack to [Vishwajeet Team](https://harnessmd.com/download) 0.5.2, create a Slack app with four bot scopes (six to list channels), paste the bot token under Settings, Connections, Slack, press Test connection, pick the channel and press Turn on. Then mention the bot in that channel, and your orchestrator or the agent you chose answers in the thread.
 
-Slack is on every plan, free included. If the app is not installed yet, start with [how to install Munder Difflin](/blog/how-to-install-and-use-munder-difflin/). Every mode needs the app open and the laptop awake, because the connection runs on your machine. This guide was checked against the 0.5.2 source and its Settings screens on 14 Sep 2026. Our [older Slack guides](/blog/run-ai-agent-hive-from-slack-setup/) cover the ideas, and this page covers the current setup.
+Slack is on every plan, free included. If the app is not installed yet, start with [how to install Vishwajeet Team](/blog/how-to-install-and-use-munder-difflin/). Every mode needs the app open and the laptop awake, because the connection runs on your machine. This guide was checked against the 0.5.2 source and its Settings screens on 14 Sep 2026. Our [older Slack guides](/blog/run-ai-agent-hive-from-slack-setup/) cover the ideas, and this page covers the current setup.
 
 ## Which Slack mode should you pick?
 
@@ -43,7 +43,7 @@ The first two need no public URL. The app itself calls the third one Advanced, f
 
 These steps are for Check for messages, the recommended mode. Slack's own [app settings quickstart](https://docs.slack.dev/app-management/quickstart-app-settings) covers the same screens.
 
-1. Go to [api.slack.com/apps](https://api.slack.com/apps), choose **Create New App** and start from a blank app (older Slack screens say **From scratch**). Name it Munder Difflin and pick your workspace.
+1. Go to [api.slack.com/apps](https://api.slack.com/apps), choose **Create New App** and start from a blank app (older Slack screens say **From scratch**). Name it Vishwajeet Team and pick your workspace.
 2. Open **OAuth & Permissions** and add these **Bot Token Scopes**: `channels:history`, `groups:history`, `chat:write` and `files:read`. Also add `channels:read` and `groups:read`, so the app can list the channels the bot is in instead of asking you for an id.
 3. Choose **Install to Workspace**. If your workspace needs admin approval, this is where you wait for it.
 4. Copy the **Bot User OAuth Token**. It starts with `xoxb-`.
@@ -58,7 +58,7 @@ For **Stay connected**, do two more things in the same Slack app:
 * Turn on **Socket Mode**. Under **Basic Information**, **App-Level Tokens**, generate a token with the `connections:write` scope. It starts with `xapp-`; Slack's [token docs](https://docs.slack.dev/authentication/tokens) explain the difference between bot and app-level tokens.
 * Under **Event Subscriptions**, enable events and subscribe to the bot events `message.channels` and `message.groups`. No Request URL is needed. Reinstall if Slack asks.
 
-## Where do the tokens go in Munder Difflin?
+## Where do the tokens go in Vishwajeet Team?
 
 Open **Settings**, then **Connections**.
 
@@ -99,4 +99,4 @@ Check these first: a missing scope, a missing invite, or a sleeping laptop.
 * **A private channel stays silent.** The bot needs `groups:history` and has to be invited to that channel.
 * **Let Slack call the office stopped after a restart.** The Request URL changed. Paste the new one into Event Subscriptions.
 
-Once Slack works, point it at real work. [Your First Hour With Munder Difflin](/blog/your-first-hour-with-munder-difflin/) shows where a Slack agent fits beside scheduled automations, webhooks and the rest of a Pro office. [Get Munder Difflin](https://harnessmd.com/download).
+Once Slack works, point it at real work. [Your First Hour With Vishwajeet Team](/blog/your-first-hour-with-munder-difflin/) shows where a Slack agent fits beside scheduled automations, webhooks and the rest of a Pro office. [Get Vishwajeet Team](https://harnessmd.com/download).

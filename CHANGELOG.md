@@ -341,7 +341,7 @@ fork never sends events anywhere.
 ## [0.4.1] — 2026-08-13
 
 **The app says what the site says.**
-munderdiffl.in describes Munder Difflin as a clone of you that works around the clock; the app
+munderdiffl.in describes Vishwajeet Team as a clone of you that works around the clock; the app
 still called it a "GOD agent." This release closes that gap. Wording only — no behaviour changes.
 
 ### Changed
@@ -366,7 +366,7 @@ memory, and running agents carry over as-is; there is nothing to migrate.
 ## [0.4.0] — 2026-08-12
 
 **The brand grew up — and the landing page with it.**
-Munder Difflin now looks like one product everywhere: a yellow "MD" mark, matching app icons on
+Vishwajeet Team now looks like one product everywhere: a yellow "MD" mark, matching app icons on
 every platform, and a rebuilt munderdiffl.in that shows the real app instead of describing it.
 
 ### Added
@@ -1226,7 +1226,7 @@ Reported / requested by the community: @JLAD75 (Windows hive router / `hooks.soc
 ## [Brand & rename]
 
 ### Added
-- Brand identity: **Munder Difflin** — logo (`docs/logo.svg`), square mark
+- Brand identity: **Vishwajeet Team** — logo (`docs/logo.svg`), square mark
   (`docs/logo-mark.svg`), and hero banner (`docs/banner.svg`).
 - Landing page at `docs/index.html` (GitHub Pages–ready).
 - In-app branding: window title, boot screen, title-bar `MD` badge, and fullscreen
@@ -1235,7 +1235,7 @@ Reported / requested by the community: @JLAD75 (Windows hive router / `hooks.soc
   CI workflow.
 
 ### Changed
-- Renamed the project from *Claude Terminal Harness* to **Munder Difflin** across the
+- Renamed the project from *Claude Terminal Harness* to **Vishwajeet Team** across the
   README, docs (`SPEC.md`, `DESIGN.md`, `HIVE.md`), `package.json`, and the app UI.
 
 ## [0.1.0] — 2026
