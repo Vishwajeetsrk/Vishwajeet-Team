@@ -2534,12 +2534,19 @@ export class HiveManager {
       const shim = join(root, 'bin', 'grok-hook.cjs');
       mkdirSync(join(root, 'bin'), { recursive: true });
       writeFileSync(shim, GROK_HOOK_SHIM, 'utf8');
+      // Grok 1.0.52+ runs hook commands in PowerShell on Windows, which
+      // rejects a bare two-quoted-path command ("a" "b") with ParserError.
+      // PowerShell's call operator & makes it valid. cmd.exe would treat &
+      // as a command separator, so only add it on win32 where Grok uses pwsh.
+      const grokCmd = process.platform === 'win32'
+        ? `& ${this.nodeRun(shim)}`
+        : this.nodeRun(shim);
       const tool = (matcher?: string) => ({
         ...(matcher ? { matcher } : {}),
         // Let Grok apply its event-aware defaults (5s normally, 600s for Stop).
         // Grok is a HOOK bridge (not a proxy sidecar), so it is hit by the same
         // `node: command not found` 127 — bundled node here too.
-        hooks: [{ type: 'command', command: this.nodeRun(shim) }]
+        hooks: [{ type: 'command', command: grokCmd }]
       });
       const hooks = {
         PreToolUse: [tool('.*')],
