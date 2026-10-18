@@ -422,6 +422,9 @@ export function useHive(config: HarnessConfig | null): void {
         command: exe,
         provider: godProvider,
         args,
+        // OpenCode takes its model via config, not argv (#703) — the pick rides
+        // this field so main can scope BYOK keys and deliver it.
+        model: godModel,
         cols: 100,
         rows: 30,
         // Restore Michael's prior conversation across an app restart. His session
@@ -1310,6 +1313,7 @@ export function useHive(config: HarnessConfig | null): void {
           command: exe,
           provider,
           args,
+          model: a.model,
           cols,
           rows,
           // The worktree (if any) already exists on disk — re-enter it, do NOT

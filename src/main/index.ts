@@ -6253,6 +6253,10 @@ async function processSpawnRequest(filePath: string): Promise<void> {
   const spawnOpts: AgentSpawnOptions = {
     id: workerId, cwd, command: bin, cols: 120, rows: 32,
     args: launch.args,
+    // A config-delivered engine (OpenCode) never carries --model on argv (#703);
+    // the pick rides here so spawnAgentCore can scope BYOK keys and deliver it
+    // through OPENCODE_CONFIG_CONTENT.
+    ...(launch.model ? { model: launch.model } : {}),
     hive: meta, isolate, provider: raw.provider, env: brokerEnv
   };
 

@@ -125,3 +125,20 @@ test('main and renderer split with the SAME tokenizer (shared module)', () => {
   // renderer's. One example locks the routing through the shared function.
   assert.deepEqual(tokenizeCommand(`a "b c" 'd e' f`), ['a', 'b c', 'd e', 'f']);
 });
+
+test('OpenCode: the model NEVER lands on argv — it rides on launch.model (#703)', () => {
+  // OpenCode's interactive TUI exits 1 on `--model` ("Unrecognized flag"), so
+  // for years every model pick was a kill switch. The preset's modelFlag is
+  // undefined, which keeps the pick off argv; spawnAgentCore delivers it
+  // through OPENCODE_CONFIG_CONTENT instead.
+  const l = launch({ requestCommand: 'opencode', requestModel: 'openrouter/anthropic/claude-sonnet-4-5' });
+  assert.equal(l.bin, 'opencode');
+  assert.deepEqual(l.args, [], 'no --model on argv');
+  assert.equal(l.model, 'openrouter/anthropic/claude-sonnet-4-5', 'the pick still reaches the spawn core');
+});
+
+test('flag-delivered engines keep --model on argv AND expose launch.model', () => {
+  const l = launch({ requestCommand: 'claude', requestModel: 'opus' });
+  assert.deepEqual(l.args, ['--model', 'opus']);
+  assert.equal(l.model, 'opus', 'main can scope BYOK keys off launch.model regardless of argv');
+});

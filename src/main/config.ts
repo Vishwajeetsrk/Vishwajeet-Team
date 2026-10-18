@@ -653,13 +653,13 @@ export function readConfig(): HarnessConfig {
   // No file yet = a first run with nothing to migrate; the defaults ARE the
   // post-migration shape. Deliberately does not persist — a bare read must not
   // conjure a config.json before onboarding has written one.
-  if (!existsSync(p)) return withTriggerDefaults({ ...DEFAULTS });
+  if (!existsSync(p)) return dropUnusableGodModel(withTriggerDefaults({ ...DEFAULTS }));
   try {
     const raw = readFileSync(p, 'utf8');
     const parsed = JSON.parse(raw);
-    return normalizeStoredHomes(migrateTriggersV1(withTriggerDefaults({ ...DEFAULTS, ...parsed })));
+    return dropUnusableGodModel(normalizeStoredHomes(migrateTriggersV1(withTriggerDefaults({ ...DEFAULTS, ...parsed }))));
   } catch {
-    return withTriggerDefaults({ ...DEFAULTS });
+    return dropUnusableGodModel(withTriggerDefaults({ ...DEFAULTS }));
   }
 }
 
@@ -867,13 +867,33 @@ export function modelForRole(
 ): string | undefined {
   if (meta.isGod) {
     // GOD engine is selectable: an explicit godModel wins, else the chosen
-    // provider's recommended orchestrator model, else the legacy Opus default.
+    // provider's recommended orchestrator model, else the legacy Opus default —
+    // but ONLY for engines that take the model on argv. A config-delivered
+    // engine (#703, OpenCode) has no --model flag and no meaningful Claude
+    // tier to fall back to: undefined tells the spawn core to let the
+    // engine boot on its own default model instead.
     const preset = providerPreset(config?.godProvider ?? 'claude');
-    return config?.godModel ?? preset.recommendedOrchestratorModel ?? MODEL_GOD;
+    const picked = config?.godModel ?? preset.recommendedOrchestratorModel;
+    if (picked) return picked;
+    return preset.modelViaConfig ? undefined : MODEL_GOD;
   }
   const hay = `${meta.role ?? ''} ${(meta.capabilities ?? []).join(' ')}`.toLowerCase();
   if (/\b(triage|rout|verif|lint|format|summar|classif|label)/.test(hay)) return MODEL_HELPER;
   return MODEL_WORKER;
+}
+
+/** A godModel left over from a Claude-era config cannot be valid for a
+ *  config-delivered engine (#703): those take provider/model slugs, and a
+ *  bare Claude id (claude-opus-4-8) resolves to nothing there — the pick
+ *  would be silently dropped at spawn and the Settings UI would still show
+ *  a model that never applies. Drop it on READ (never rewrite the file) so
+ *  an already-broken pairing lands on the engine's own default and boots
+ *  instead of needing the user to hunt the one dropdown that fixes it. */
+function dropUnusableGodModel(cfg: HarnessConfig): HarnessConfig {
+  if (typeof cfg.godModel !== 'string' || !cfg.godModel.trim()) return cfg;
+  if (!providerPreset(cfg.godProvider ?? 'claude').modelViaConfig) return cfg;
+  if (cfg.godModel.includes('/')) return cfg; // provider/model slug — usable
+  return { ...cfg, godModel: undefined };
 }
 
 /** Ensure harnessHome exists on disk. Expands `~` first — the onboarding wizard

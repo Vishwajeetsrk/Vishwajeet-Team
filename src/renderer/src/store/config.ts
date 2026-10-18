@@ -430,6 +430,9 @@ export function buildSpawnCommand(
         ? config.defaultCommand || ''
         : preset.defaultCommand;
   let cmd = base;
+  // The modelFlag gate is load-bearing for config-delivered engines: OpenCode's
+  // TUI exits 1 on `--model` (#703), and its preset's undefined modelFlag keeps
+  // the pick off argv — main delivers it via the spawn's `model` field instead.
   if (preset.supportsModel && model && preset.modelFlag) {
     // Quote model values that contain whitespace (agy labels like
     // "Gemini 3.1 Pro (High)") so the command tokenizer keeps them one arg.

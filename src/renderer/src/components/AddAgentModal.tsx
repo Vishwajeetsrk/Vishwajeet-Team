@@ -452,6 +452,9 @@ export function AddAgentModal({ onClose, config, onConfigChange }: AddAgentModal
       command: exe,
       provider,
       args,
+      // Config-delivered engines (OpenCode, #703) never carry --model on argv;
+      // main delivers the pick through the engine's config env instead.
+      model,
       cols: 100,
       rows: 30,
       // When set, the main process spawns this agent in its own git worktree.

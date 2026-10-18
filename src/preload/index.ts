@@ -246,6 +246,11 @@ export interface SpawnPtyOptions {
    *  main process seeds that session's `.jsonl` into the target cwd's project dir
    *  (copying it from wherever it lives) and launches `claude --resume <id>`. */
   resumeSessionId?: string;
+  /** The picked session model. Flag-delivered CLIs already carry it on `args`
+   *  (--model); config-delivered engines (OpenCode — #703, whose TUI rejects
+   *  --model) receive it ONLY through this field, which main routes into the
+   *  engine's config env. */
+  model?: string;
 }
 
 export interface PtyExit { exitCode: number; signal?: number | undefined }

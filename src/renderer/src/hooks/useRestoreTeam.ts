@@ -135,6 +135,9 @@ export function useRestoreTeam(config?: HarnessConfig | null): RestoreTeamState 
             command: exe,
             provider,
             args,
+            // Restores the agent's recorded pick even for engines that take the
+            // model via config rather than argv (OpenCode — #703).
+            model: a.model,
             cols: 100,
             rows: 30,
             // Worktree (if any) already exists on disk — cd into it, don't create a

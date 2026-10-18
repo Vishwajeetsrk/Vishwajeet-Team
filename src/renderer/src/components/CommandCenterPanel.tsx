@@ -517,6 +517,9 @@ function FloorTab({ seed }: { seed: { text: string; seq: number } }) {
         command: exe,
         args,
         provider,
+        // The restarted pick — OpenCode's TUI has no --model flag (#703), so it
+        // reaches main through this field, not argv.
+        model,
         cols,
         rows,
         hive,
