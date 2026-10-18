@@ -84,21 +84,35 @@ test('Antigravity fallback preserves spaces and Unicode in LOCALAPPDATA', () => 
 
 test('resolveCommand finds agy in its Windows LOCALAPPDATA install location', { skip: process.platform !== 'win32' }, (t) => {
   const localAppData = fs.mkdtempSync(path.join(os.tmpdir(), 'munder-agy-'));
+  const appData = fs.mkdtempSync(path.join(os.tmpdir(), 'munder-agy-appdata-'));
+  const userProfile = fs.mkdtempSync(path.join(os.tmpdir(), 'munder-agy-home-'));
   const executable = path.join(localAppData, 'agy', 'bin', 'agy.exe');
   const previousLocalAppData = process.env.LOCALAPPDATA;
+  const previousAppData = process.env.APPDATA;
+  const previousUserProfile = process.env.USERPROFILE;
   const previousPath = process.env.PATH;
 
   t.after(() => {
     if (previousLocalAppData === undefined) delete process.env.LOCALAPPDATA;
     else process.env.LOCALAPPDATA = previousLocalAppData;
+    if (previousAppData === undefined) delete process.env.APPDATA;
+    else process.env.APPDATA = previousAppData;
+    if (previousUserProfile === undefined) delete process.env.USERPROFILE;
+    else process.env.USERPROFILE = previousUserProfile;
     if (previousPath === undefined) delete process.env.PATH;
     else process.env.PATH = previousPath;
     fs.rmSync(localAppData, { recursive: true, force: true });
+    fs.rmSync(appData, { recursive: true, force: true });
+    fs.rmSync(userProfile, { recursive: true, force: true });
   });
 
   fs.mkdirSync(path.dirname(executable), { recursive: true });
   fs.writeFileSync(executable, '');
+  // Isolate every env root the fallback list consults, so a real agy install on
+  // the host (e.g. %APPDATA%\npm\agy.cmd) cannot shadow the LOCALAPPDATA target.
   process.env.LOCALAPPDATA = localAppData;
+  process.env.APPDATA = appData;
+  process.env.USERPROFILE = userProfile;
   process.env.PATH = path.join(process.env.SystemRoot ?? 'C:\\Windows', 'System32');
 
   assert.equal(resolveCommand('agy'), executable);
