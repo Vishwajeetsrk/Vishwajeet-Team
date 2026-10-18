@@ -185,12 +185,21 @@ terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
 <tr>
 <td width="48%" valign="top">
 
-### 🎙️ Dictation, Free & Local
-`Local Audio` · `Groq Whisper` · `Zero Telemetry` · `Free`
+### 🎙️ Dictate into Any App & Stapler Meetings
+`Local Audio` · `On-Device Whisper` · `Dual-Channel Meetings` · `100% Free & Pro Unlocked`
 
-Hold the push-to-talk key and speak into the message box mic — your words land instantly in the queue for the floor. Groq transcription stays completely off unless you opt-in with a key. 
+**Dictate into any app.** Hold Option on the Mac, or Control+Alt+Space on Windows and Linux (X11), talk, and let go. The words land in whatever field is in front of you, and in every text box inside Munder Difflin. The message box mic works in the free build too.
 
-> *No meeting recorder, no paywalled Stapler, and no Pro tier — 100% free by design.*
+**Meetings hear both sides**, in Stapler, part of Pro. Your microphone is written as You and the call's audio as Them, on Mac, Windows and Linux. Shift+Command+Space starts and stops a meeting on the Mac, Control+Shift+Space on Windows and Linux. Correct the transcript, add a description, and send it to any of your agents.
+
+**Transcription on your machine.** A Whisper model ships inside the app and is the default engine. A larger model is one download away, Apple's on device recogniser works on macOS 26, and Groq stays off unless you add a key. 126 built in technical names plus your own words. English for now.
+
+<br>
+
+<div align="center">
+  <img src="./docs/media/stapler-053.png" alt="Stapler, the yellow puck, with its ring open and Record meeting ready" width="340">
+  <br><sub>Stapler, the yellow puck, with its ring open and Record meeting ready</sub>
+</div>
 
 </td>
 <td width="52%" align="center">
@@ -198,6 +207,11 @@ Hold the push-to-talk key and speak into the message box mic — your words land
 <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
   <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.gif" alt="Push-to-talk dictation demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
+<br><br>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/pro-stapler.mp4">
+  <img src="./docs/media/stapler-settings.png" alt="Stapler HUD settings and meeting controls" width="90%">
+  <br><sub>▶ Click to watch Stapler floating companion walkthrough</sub>
 </a>
 
 </td>
@@ -361,7 +375,7 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 - **Enterprise Knowledge Graph**: your own documents and policies, queryable by any agent.
 
 **Capabilities & Desktop HUD**
-- **Stapler Floating Desktop Companion**: A customizable HUD creature (`orchid 67`) that floats above every application on your OS, follows your cursor, captures one-click screenshots, and records voice messages and meeting transcripts directly for agents.
+- **Stapler Floating Desktop Companion**: A customizable HUD creature (`orchid 67`) that floats above every application on your OS. Follows your cursor, snaps to screen edges, and captures one-click screenshots. Listens to meetings and separates speakers into **You** (microphone) and **Them** (system audio loopback) with global hotkeys (`Shift+Command+Space` on Mac, `Control+Shift+Space` on Windows/Linux). Correct transcripts, add descriptions, and send directly to your agents.
 - **Capabilities & Extensions Marketplace**: Direct in-app access to 2,347+ catalog items (1,000 MCP servers, 554 plugins, 421 tools, 201 skills) and 36 ready-to-run agent templates.
 - **Hot Integrations & Secrets Broker**: Save OpenAI, Google Gemini, OpenRouter, Groq, and Anthropic API keys with zero restarts needed, plus connect 12+ third-party tools (Slack, GitHub, Linear, Jira, Stripe, HubSpot, Razorpay, Webhooks).
 
@@ -381,7 +395,7 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 **Getting work in and out**
 - **Slack & webhooks**: message a channel or POST a webhook; Michael can spawn an ephemeral worker, reply in-thread, and tear it down.
 - **Shareable hires + Agent Gallery**: import a role from a `munderdifflin://hire` link; import only pre-fills the form, a human still spawns it. Browse roles in [`docs/hires/`](./docs/hires/).
-- **Local transcription and dictation**: push-to-talk into the message box mic or Stapler, with Groq transcription and Whisper large-v3-turbo support.
+- **Dictate into any app**: Push-to-talk anywhere on your system by holding `Option` (Mac) or `Control+Alt+Space` (Windows/Linux X11). The transcribed text lands automatically at your active cursor and inside every input in Munder Difflin. Powered by an on-device Whisper model, with Whisper large-v3-turbo, Apple on-device speech (macOS 26), 126 built-in tech vocabulary names, and optional Groq cloud fallback.
 - **BYOK keys + local LLMs**: per-provider keys in a write-only secret broker, plus Ollama / LM Studio / vLLM base URLs.
 - **Updates in one click**: the title-bar badge runs the real update. Downloads the build for your machine, then restarts and installs it.
 - **Your language**: English, Simplified Chinese and Arabic, with right to left layout for Arabic. All three app fonts ship inside the bundle, so nothing is fetched at boot.
