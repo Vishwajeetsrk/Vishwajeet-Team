@@ -3754,6 +3754,11 @@ async function spawnAgentCore(opts: AgentSpawnOptions, owner: Electron.WebConten
     if (provider === 'opencode') {
       const oc: Record<string, unknown> = { autoupdate: false };
       if (autoApproveEnv(cfg.autoMode, cfg.security?.autoApproveInternal)) oc.permission = { edit: 'allow', bash: 'allow', webfetch: 'allow' };
+      // The model reaches OpenCode HERE, not on argv — its interactive TUI has no
+      // --model flag and exits 1 on it (#703). Only a scoped provider/model slug
+      // is delivered: a bare Claude-era id (claude-opus-5-5) resolves to nothing
+      // in OpenCode, so it is dropped and the CLI's own default boots instead.
+      if (isProviderScopedModel(modelSlug)) oc.model = modelSlug;
       const baseUrl = cfg.providerBaseUrls?.opencode;
       if (baseUrl) {
         // Register the model id the user actually selects (the part after 'local/')
