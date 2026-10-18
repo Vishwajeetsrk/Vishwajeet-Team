@@ -8,7 +8,7 @@
 
 <p>
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
+  <a href="./CHANGELOG.md"><img alt="Version: 0.6.0" src="https://img.shields.io/badge/version-0.6.0-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Pricing: 100% Free" src="https://img.shields.io/badge/pricing-100%25%20Free%20forever-F4D35E.svg?style=flat-square&labelColor=6E1423">
   <a href="https://github.com/Vishwajeetsrk/Team/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
@@ -45,16 +45,16 @@ visualized as avatars at work on a shared office floor.
   <sub>▶ Vishwajeet Team — 1080p 60fps video walkthrough</sub>
 </div>
 
-### ⬇ Downloads & Installers (v0.5.5)
+### ⬇ Downloads & Installers (v0.6.0)
 
 | Platform | Format | Direct Download |
 |:---|:---|:---|
-| 🍏 **macOS** | Universal DMG (Apple Silicon + Intel) | [macOS Universal DMG](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-mac-universal.dmg) |
-| 🪟 **Windows** | Setup Installer (x64) | [Windows x64 Setup Installer](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-setup.exe) |
-| 🪟 **Windows** | Portable (.exe, no install) | [Windows x64 Portable (.exe)](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-portable.exe) |
-| 🐧 **Linux** | AppImage (x86_64) | [Linux AppImage](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-linux-x86_64.AppImage) |
+| 🍏 **macOS** | Universal DMG (Apple Silicon + Intel) | [macOS Universal DMG](https://github.com/Vishwajeetsrk/Team/releases/download/v0.6.0/Vishwajeet-Team-0.6.0-mac-universal.dmg) |
+| 🪟 **Windows** | Setup Installer (x64) | [Windows x64 Setup Installer](https://github.com/Vishwajeetsrk/Team/releases/download/v0.6.0/Vishwajeet-Team-0.6.0-win-x64-setup.exe) |
+| 🪟 **Windows** | Portable (.exe, no install) | [Windows x64 Portable (.exe)](https://github.com/Vishwajeetsrk/Team/releases/download/v0.6.0/Vishwajeet-Team-0.6.0-win-x64-portable.exe) |
+| 🐧 **Linux** | AppImage (x86_64) | [Linux AppImage](https://github.com/Vishwajeetsrk/Team/releases/download/v0.6.0/Vishwajeet-Team-0.6.0-linux-x86_64.AppImage) |
 
-<sub>100% Free · Local-First · No Account · No Paywall · [All Release Assets & Checksums](https://github.com/Vishwajeetsrk/Team/releases/tag/v0.5.5)</sub>
+<sub>100% Free · Local-First · No Account · No Paywall · [All Release Assets & Checksums](https://github.com/Vishwajeetsrk/Team/releases/tag/v0.6.0)</sub>
 
 </div>
 
@@ -474,7 +474,7 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 - **Your language**: English, Simplified Chinese and Arabic, with right to left layout for Arabic. All three app fonts ship inside the bundle, so nothing is fetched at boot.
 
 > [!NOTE]
-> **Status: v0.5.5 — local-first, no account, no paywall.**
+> **Status: v0.6.0 — local-first, no account, no paywall.**
 > Everything runs on your machine — agents, memory, triggers,
 > integrations, skills. Updates never apply unless you turn them on in
 > Settings → General.
