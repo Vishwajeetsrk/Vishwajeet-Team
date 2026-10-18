@@ -188,17 +188,28 @@ terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
 ### 🎙️ Dictate into Any App & Stapler Meetings
 `Local Audio` · `On-Device Whisper` · `Dual-Channel Meetings` · `100% Free & Pro Unlocked`
 
-**Dictate into any app.** Hold Option on the Mac, or Control+Alt+Space on Windows and Linux (X11), talk, and let go. The words land in whatever field is in front of you, and in every text box inside Munder Difflin. The message box mic works in the free build too.
+<p>
+  <kbd>🎙️ Local Whisper Engine</kbd> 
+  <kbd>⚡ Zero Latency Push-to-Talk</kbd> 
+  <kbd>👥 Dual-Channel Recording</kbd> 
+  <kbd>🔒 100% Private (No Cloud)</kbd>
+</p>
 
-**Meetings hear both sides**, in Stapler, part of Pro. Your microphone is written as You and the call's audio as Them, on Mac, Windows and Linux. Shift+Command+Space starts and stops a meeting on the Mac, Control+Shift+Space on Windows and Linux. Correct the transcript, add a description, and send it to any of your agents.
+* **🗣️ Dictate into any app.** Hold Option on the Mac, or Control+Alt+Space on Windows and Linux (X11), talk, and let go. The words land in whatever field is in front of you, and in every text box inside Munder Difflin. The message box mic works in the free build too.
+  * 🍏 **macOS:** Hold <kbd>⌥ Option</kbd>
+  * 🪟 **Windows & Linux (X11):** Hold <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
 
-**Transcription on your machine.** A Whisper model ships inside the app and is the default engine. A larger model is one download away, Apple's on device recogniser works on macOS 26, and Groq stays off unless you add a key. 126 built in technical names plus your own words. English for now.
+* **🎧 Meetings hear both sides**, in Stapler, part of Pro. Your microphone is written as You and the call's audio as Them, on Mac, Windows and Linux. Shift+Command+Space starts and stops a meeting on the Mac, Control+Shift+Space on Windows and Linux. Correct the transcript, add a description, and send it to any of your agents.
+  * 🍏 **macOS:** <kbd>⇧ Shift</kbd> + <kbd>⌘ Cmd</kbd> + <kbd>Space</kbd> to start/stop
+  * 🪟 **Windows & Linux:** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd> to start/stop
+
+* **⚡ Transcription on your machine.** A Whisper model ships inside the app and is the default engine. A larger model is one download away, Apple's on device recogniser works on macOS 26, and Groq stays off unless you add a key. 126 built in technical names plus your own words. English for now.
 
 <br>
 
 <div align="center">
   <img src="./docs/media/stapler-053.png" alt="Stapler, the yellow puck, with its ring open and Record meeting ready" width="340">
-  <br><sub>Stapler, the yellow puck, with its ring open and Record meeting ready</sub>
+  <br><sub><b>Stapler:</b> The yellow puck, with its ring open and Record meeting ready.</sub>
 </div>
 
 </td>
