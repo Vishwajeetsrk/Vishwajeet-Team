@@ -34,12 +34,16 @@ visualized as avatars at work on a shared office floor.
 
 <br>
 
-<p align="center">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.gif" alt="Vishwajeet Team running a hive of Claude Code agents" width="820">
-    <br><sub>▶ Click to watch full 1080p 60fps video walkthrough</sub>
-  </a>
-</p>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_HERO"
+    width="820"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Vishwajeet Team — 1080p 60fps video walkthrough</sub>
+</div>
 
 ### ⬇ Downloads & Installers (v0.5.5)
 
@@ -215,15 +219,16 @@ terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.gif" alt="Push-to-talk dictation demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
-<br><br>
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/pro-stapler.mp4">
-  <img src="./docs/media/stapler-settings.png" alt="Stapler HUD settings and meeting controls" width="90%">
-  <br><sub>▶ Click to watch Stapler floating companion walkthrough</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_DICTATION"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Push-to-talk dictation demo</sub>
+</div>
 
 </td>
 </tr>
@@ -240,10 +245,16 @@ Agent cards display status, engine, model, a real-time context gauge, active tic
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.gif" alt="Agent cards HUD demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_AGENT_CARDS"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Agent cards HUD demo</sub>
+</div>
 
 </td>
 </tr>
@@ -260,10 +271,16 @@ Michael is your direct clone and the single agent you brief. He breaks down goal
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.gif" alt="Orchestrator agent briefing demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_ORCHESTRATOR"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Orchestrator agent briefing demo</sub>
+</div>
 
 </td>
 </tr>
@@ -280,10 +297,16 @@ Pick your provider (Claude, Grok, Codex, Gemini, DeepSeek, or local Ollama), con
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.gif" alt="Hiring agents demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_HIRE_AGENT"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Hiring agents demo</sub>
+</div>
 
 </td>
 </tr>
@@ -300,10 +323,16 @@ Every agent logs structured Markdown memory continuously indexed into a shared, 
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.gif" alt="Shared memory palace demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_MEMORY"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Shared memory palace demo</sub>
+</div>
 
 </td>
 </tr>
@@ -320,10 +349,16 @@ Control the autonomy perimeter for every desk. Scope increases, API spend thresh
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.gif" alt="Autonomy leash and circuit breaker demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_AUTONOMY"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Autonomy leash and circuit breaker demo</sub>
+</div>
 
 </td>
 </tr>
@@ -340,10 +375,16 @@ Agents walk between desks, workstations, and meeting rooms as they execute tasks
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.gif" alt="Live agent floor demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_AGENTS"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Live agent floor demo</sub>
+</div>
 
 </td>
 </tr>
@@ -360,10 +401,16 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.gif" alt="First-run setup wizard demo" width="100%">
-  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
-</a>
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_SETUP"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ First-run setup wizard demo</sub>
+</div>
 
 </td>
 </tr>
