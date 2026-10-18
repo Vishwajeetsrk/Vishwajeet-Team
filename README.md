@@ -83,12 +83,26 @@ visualized as avatars at work on a shared office floor.
 
 ## Plans: 100% Free (Free · Pro · Team Included)
 
-**Vishwajeet Team [AI Company]** is completely free, local-first, and open-source under the MIT License. All features across Free, Pro, and Team are unlocked:
+**Vishwajeet Team [AI Company]** is completely free, local-first, and open-source under the MIT License. In the original upstream prototype, a subscription paywall ($150/yr) called "Pro" was planned to restrict features. In **Vishwajeet Team**, every single Pro and Team feature is **100% UNLOCKED BY DEFAULT**.
+
+### ⚡ Why Is There No "Pro Switch" or "Team Switch"?
+* **Zero Paywalls & No License Keys:** There is NO switch, license key prompt, or paywall gate because you are never locked out of anything. You never need to enter a credit card, activate a key, or upgrade a tier.
+* **All Features Enabled Out-of-the-Box:** Unlimited agents, multi-agent floor orchestration, the hive memory palace, autonomous mode, Stapler desktop companion, and all integrations are completely free and permanently enabled.
+* **The "Classic" Button is a View Switcher:** The toggle at the top right labeled **`Classic`** is an **Interface Mode Switch**, not a license gate. It lets you instantly switch between the **2D Pixel-Art Office Floor** (with desks, avatars, and real-time movement) and the **Modern Workspace Dashboard** (Capabilities catalog, Automations, Memory Palace, Integrations, and Stapler settings).
+
+| Feature Tier | Upstream Prototype | Vishwajeet Team (Your Build) |
+| :--- | :--- | :--- |
+| **Price** | $150 / year | **$0 / Free Forever** |
+| **Agent Capacity** | Capped on Free tier | **Unlimited parallel agents** |
+| **Orchestration** | Single agent | **Multi-agent autonomous floor** |
+| **Capabilities** | Limited access | **2,347+ MCP servers, skills & plugins** |
+| **Stapler Desktop HUD** | Paywalled | **100% Unlocked & customizable** |
+| **Integrations Hub** | Restricted | **Zero-restart hot keys for all providers** |
 
 - **Free Core**: All terminal-agent CLIs, BYOK keys, local LLMs (Ollama / LM Studio / vLLM), and persistent computers.
 - **Pro Features**: Unlimited parallel agents, autonomous execution mode, Monaco IDE, voice dictation & speech orchestration, context auto-compacting, and circuit breakers.
 - **Team Capabilities**: Multi-agent delegation, agent-to-agent mailboxes, shared blackboard, scheduled triggers, and job ledgers.
-- **Zero Paywalls**: No subscriptions, no license keys, no credit card required, and no telemetry required. Everything stays on your computer.
+- **Zero Telemetry**: Everything stays on your computer. All prompts, code, keys, and outputs remain strictly local.
 
 ## Supported agents
 
@@ -332,35 +346,42 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 
 ## Features
 
-**The floor**
+**The floor & workspace modes**
+- **Dual Interface Modes**: Switch instantly between the retro **2D Pixel-Art Office Floor** (with desks, walking agents, and animated envelope routing) and the full-page **Modern Workspace Dashboard** with the `Classic` toggle.
 - **Every terminal is a real agent.** Claude Code, Antigravity (Gemini), OpenAI Codex, xAI Grok, Kimi Code, Gemini CLI, Qwen, OpenCode, Crush, pi.dev, GitHub Copilot CLI, Cursor, or a custom command, each in its own `node-pty` PTY, rendered with xterm.js.
 - **Every agent is an avatar.** A Pixi.js office floor where agents walk to stations, envelopes fly desk to desk, and avatar state reflects real work.
 - **A GOD orchestrator you talk to.** It routes tasks, adjudicates traffic, and escalates only what needs a human. Or press **Talk** and run the floor by voice.
 - **Per-agent git worktrees.** Optional isolation so parallel agents never collide on branches.
 - **More than one floor**. File → New Floor opens another office on its own folder, in its own window, with its own agents, board and memory. A folder only ever opens in one floor, and one licence covers them all.
+- **Seasonal Themes**: Full Halloween office decoration support with pumpkins and ambient lanterns, toggled via Settings → General.
 
 **Memory & coordination**
 - **The hive**: per-agent memory, atomic-file mailboxes, a shared blackboard, an append-only event log, single-committer git.
 - **Semantic recall**: markdown memory mined into a shared palace, searchable from the UI, with condensation so it doesn't grow forever.
 - **Enterprise Knowledge Graph**: your own documents and policies, queryable by any agent.
 
+**Capabilities & Desktop HUD**
+- **Stapler Floating Desktop Companion**: A customizable HUD creature (`orchid 67`) that floats above every application on your OS, follows your cursor, captures one-click screenshots, and records voice messages and meeting transcripts directly for agents.
+- **Capabilities & Extensions Marketplace**: Direct in-app access to 2,347+ catalog items (1,000 MCP servers, 554 plugins, 421 tools, 201 skills) and 36 ready-to-run agent templates.
+- **Hot Integrations & Secrets Broker**: Save OpenAI, Google Gemini, OpenRouter, Groq, and Anthropic API keys with zero restarts needed, plus connect 12+ third-party tools (Slack, GitHub, Linear, Jira, Stripe, HubSpot, Razorpay, Webhooks).
+
 **Control & safety**
 - **Human gates**: spend, scope, and destructive ops escalate to you. Steer mid-run or stop gracefully.
 - **Circuit breaker**: a steer → constrain → stop ladder for agents that loop, storm errors, or blow their budget.
 - **Budgets & telemetry**: per-agent token budgets, real cost from transcripts, a durable ledger, OTel spans, and a tool waterfall.
 
-**Command Center**
+**Command Center & IDE**
 - **Tasks with history**: kanban cards carry Q&A history, each agent has a detail sheet with what it did and when.
 - Kanban tasks with dependencies, scheduled missions + heartbeat, durable job runs, live fleet monitoring, memory search, activity log, and a CI watcher.
 - **Skills**: what every agent can already do across Claude Code, OpenCode and Codex — installed, project and bundled — with agent bindings, plus a browsable catalog with search, filters, install and uninstall.
 - **Workforce**: every roster agent read as a specialist profile — staffed or listed inert with its gap named — plus a skill matcher that names its pick.
 - **Workers**: live temp workers with one-job spawn, and a job history where every run is accounted for.
-- **Built-in Monaco IDE**: file tree, editor tabs, save, plus CHANGES · HISTORY · COMPARE git rails with commit graph, diffs, branch compare, and guarded checkout.
+- **Built-in Monaco IDE & Detachable Window**: File tree, editor tabs, syntax highlighting, plus CHANGES · HISTORY · COMPARE git rails. Pop it out into its own standalone window via the `<> IDE` button while keeping the live office visible.
 
 **Getting work in and out**
 - **Slack & webhooks**: message a channel or POST a webhook; Michael can spawn an ephemeral worker, reply in-thread, and tear it down.
 - **Shareable hires + Agent Gallery**: import a role from a `munderdifflin://hire` link; import only pre-fills the form, a human still spawns it. Browse roles in [`docs/hires/`](./docs/hires/).
-- **Local transcription and dictation**: push-to-talk into the message box mic, with Groq transcription only if you add a key.
+- **Local transcription and dictation**: push-to-talk into the message box mic or Stapler, with Groq transcription and Whisper large-v3-turbo support.
 - **BYOK keys + local LLMs**: per-provider keys in a write-only secret broker, plus Ollama / LM Studio / vLLM base URLs.
 - **Updates in one click**: the title-bar badge runs the real update. Downloads the build for your machine, then restarts and installs it.
 - **Your language**: English, Simplified Chinese and Arabic, with right to left layout for Arabic. All three app fonts ship inside the bundle, so nothing is fetched at boot.
@@ -401,8 +422,12 @@ Everything below is for developers and for people who want to run an unreleased 
   (`claude`, the default), **Antigravity** (`agy`), **OpenAI Codex** (`codex`), **xAI Grok** (`grok`),
   **Kimi Code** (`kimi`), **Gemini CLI** (`gemini`), **Qwen** (`qwen`), **OpenCode** (`opencode`),
   **Crush** (`crush`), **pi.dev** (`pi`), **GitHub Copilot** (`copilot`), or **Cursor** (`cursor-agent`).
-  Most missing CLIs self-heal: the harness runs the installer in the
+  Most missing CLIs self-heal: the harness runs the installer directly in the
   terminal and continues into the new binary.
+  * For **Antigravity / Gemini CLI** on Windows:
+    ```powershell
+    powershell -c "irm https://antigravity.google/cli/install.ps1 | iex"
+    ```
 - *Optional:* **your own API keys and local LLMs** in **Settings → AI Engines** (Ollama / LM Studio / vLLM).
 - *Optional:* the semantic memory index for instant cross-session recall. Markdown memory works without it.
 
@@ -410,7 +435,7 @@ Everything below is for developers and for people who want to run an unreleased 
 
 ```bash
 git clone https://github.com/Vishwajeetsrk/Vishwajeet-Team.git
-cd Team
+cd Vishwajeet-Team
 npm install        # postinstall rebuilds node-pty against Electron's ABI
 npm run dev        # launches the Electron app with hot reload
 ```
