@@ -161,133 +161,179 @@ terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
 
 <table>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 🎙️ Dictation, free and local
+### 🎙️ Dictation, Free & Local
+`Local Audio` · `Groq Whisper` · `Zero Telemetry` · `Free`
 
-Hold the push-to-talk key and speak into the message box mic — your words land
-in the queue for the floor. Groq transcription stays off unless you add a key.
-No meeting recorder here: this build has no Stapler and no Pro tier, by design.
+Hold the push-to-talk key and speak into the message box mic — your words land instantly in the queue for the floor. Groq transcription stays completely off unless you opt-in with a key. 
+
+> *No meeting recorder, no paywalled Stapler, and no Pro tier — 100% free by design.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
-    <img src="./docs/media/demo/dictation-poster.jpg" alt="Push-to-talk dictation into the message box" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation-poster.jpg" alt="Push-to-talk dictation demo" width="100%">
+    <br><sub>▶ Click to play dictation demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 🃏 One row per agent, and it tells you everything
+### 🃏 One Row Per Agent, Live Visibility
+`Agent HUD` · `Context Gauge` · `Real-time Activity` · `Command Center`
 
-Agent cards carry status, engine, model, a context gauge, the ticket it is on
-and the action it is taking right now, a crash strip instead of a silent
-terminal, and a right click menu for the common jobs.
+Agent cards display status, engine, model, a real-time context gauge, active tickets, and immediate actions. Features an inline crash strip instead of a silent terminal, and right-click actions for common jobs.
 
-The Command Center tabs cover the rest: Tasks, Ask Me, Triggers and
-Automations, Memory, Skills, Workers and Workforce — every surface free,
-nothing tiered.
+> *Command Center tabs cover Tasks, Ask Me, Triggers, Memory, Skills, and Workforce — fully unlocked.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4">
-    <img src="./docs/media/demo/agent-cards-poster.jpg" alt="Agent cards showing status, engine, model, context gauge and current action" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards-poster.jpg" alt="Agent cards HUD demo" width="100%">
+    <br><sub>▶ Click to play agent cards demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 🧠 Talk to one agent, not twelve
+### 🧠 Talk to One Agent, Not Twelve
+`Orchestrator Clone` · `Autonomous Delegation` · `Traffic Routing`
 
-Michael is your clone and the only agent you brief. He assigns the work, routes
-the traffic, and escalates the few things that actually need you.
+Michael is your direct clone and the single agent you brief. He breaks down goals, assigns tasks, coordinates the workforce, routes message traffic, and only escalates what truly requires your approval.
+
+> *Delegate complex multi-repo goals with a single sentence.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4">
-    <img src="./docs/media/demo/orchestrator-poster.jpg" alt="Briefing Michael, the orchestrator agent, from the Command Center" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator-poster.jpg" alt="Orchestrator agent briefing demo" width="100%">
+    <br><sub>▶ Click to play orchestrator demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### ➕ Hire an agent in a few clicks
+### ➕ Hire an Agent in a Few Clicks
+`Multi-Model Picker` · `Custom Personas` · `Agent Gallery`
 
-Pick the CLI, the model and the autonomy, give it a desk, and it starts working.
-Import a ready-made role from the [Agent Gallery](https://github.com/Vishwajeetsrk/Team/tree/main/docs/hires)
-if you would rather not start from scratch.
+Pick your provider (Claude, Grok, Codex, Gemini, DeepSeek, or local Ollama), configure the autonomy leash, assign a desk, and work begins. Import roles directly from the [Agent Gallery](https://github.com/Vishwajeetsrk/Team/tree/main/docs/hires).
+
+> *Instant spawn with preconfigured system prompts, tools, and skills.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
-    <img src="./docs/media/demo/hire-agent-poster.jpg" alt="The add agent dialog: choosing a provider, model and role" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent-poster.jpg" alt="Hiring agents demo" width="100%">
+    <br><sub>▶ Click to play hire agent demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 🧩 Memory that survives the session
+### 🧩 Memory That Survives the Session
+`Shared Knowledge Base` · `Markdown Palace` · `Cross-Agent Recall`
 
-Every agent keeps markdown memory that is mined into a shared, searchable
-palace. Close the app, come back tomorrow, and they still know what they
-learned.
+Every agent logs structured Markdown memory continuously indexed into a shared, searchable Knowledge Palace. Close the app, restart tomorrow, and your entire workforce remembers what they built and learned.
+
+> *Zero context rot across projects and long-running development sprints.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
-    <img src="./docs/media/demo/memory-poster.jpg" alt="Searching the shared memory palace across every agent" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory-poster.jpg" alt="Shared memory palace demo" width="100%">
+    <br><sub>▶ Click to play memory demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 🔒 Autonomy with a leash
+### 🔒 Autonomy With a Leash
+`Circuit Breaker` · `Spend Caps` · `Human-in-the-Loop`
 
-Set how far each agent may go on its own. Spend, scope and destructive
-operations come back to you, and a circuit breaker steers, constrains, then
-stops anything that loops or runs away.
+Control the autonomy perimeter for every desk. Scope increases, API spend thresholds, and destructive file operations pause for your approval. Built-in circuit breakers halt runaway loops automatically.
+
+> *True autonomy with complete peace of mind and strict safety guardrails.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
-    <img src="./docs/media/demo/autonomy-poster.jpg" alt="Per agent autonomy and approval settings" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy-poster.jpg" alt="Autonomy leash and circuit breaker demo" width="100%">
+    <br><sub>▶ Click to play autonomy demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 👀 Watch the whole floor work
+### 👀 Watch the Whole Floor Work
+`Spatial Canvas` · `Pixel Art Office` · `Live Terminals` · `Two-Way I/O`
 
-Agents walk to stations as they work and envelopes fly desk to desk when they
-message each other. Click any desk to read that terminal live, and type straight
-back into it.
+Agents walk between desks, workstations, and meeting rooms as they execute tasks. Message envelopes fly between colleagues in real time. Click any desk to inspect that terminal live and send keystrokes directly into its session.
+
+> *Spatial workplace visualization brings your agent team to life.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4">
-    <img src="./docs/media/demo/agents-poster.jpg" alt="Agents working in parallel on the office floor" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents-poster.jpg" alt="Live agent floor demo" width="100%">
+    <br><sub>▶ Click to play live floor demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 <tr>
-<td width="50%" valign="middle">
+<td width="48%" valign="top">
 
-### 🚀 Set up once
+### 🚀 Set Up Once
+`Zero Config` · `Self-Healing Doctor` · `One-Click Dependency Fixes`
 
-The onboarding wizard checks what you already have, and offers to install what
-is missing rather than sending you to a docs page.
+The onboarding wizard automatically audits your local environment (Node, Git, Python, LLM CLIs) and offers one-click automated installation for missing dependencies instead of redirecting you to external documentation.
+
+> *From git clone to a buzzing office of AI employees in under 2 minutes.*
 
 </td>
-<td width="50%">
+<td width="52%" align="center">
+
+<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup-poster.jpg" controls playsinline width="100%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4">
-    <img src="./docs/media/demo/setup-poster.jpg" alt="The first run setup wizard" width="100%">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup-poster.jpg" alt="First-run setup wizard demo" width="100%">
+    <br><sub>▶ Click to play setup wizard demo video</sub>
   </a>
+</video>
+
 </td>
 </tr>
 </table>

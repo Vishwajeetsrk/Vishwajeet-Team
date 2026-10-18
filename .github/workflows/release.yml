@@ -57,48 +57,17 @@ jobs:
           POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
 
       - name: Package installers
-        # GH_TOKEN lets electron-builder skip its own publish; we upload via the
-        # release step below for full control over the asset set.
-        run: npx electron-builder ${{ matrix.args }} --publish never
+        # tools/package.cjs sanitizes code-signing environment variables, unsets empty values,
+        # and disables auto-discovery on unsigned runs to guarantee clean, green builds on all OSes.
+        run: node tools/package.cjs ${{ matrix.args }} --publish never
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Verbose electron-builder logging; keeps a full stack trace for any
-          # packaging failure in the job log (visible text only, no secrets at
-          # this verbosity).
           DEBUG: electron-builder
-          # macOS code signing + notarization — MUST be macOS-only. CSC_LINK is the
-          # Apple Developer ID .p12; if it leaks into the Windows/Linux runners,
-          # electron-builder tries to sign those targets with the mac cert and the
-          # build hard-fails ("cannot extract publisher name"). So gate on the OS.
-          #   APPLE_CERTIFICATE_P12       = base64 of the "Developer ID Application" .p12
-          #   APPLE_CERTIFICATE_PASSWORD  = that .p12's export password (REQUIRED if P12 set,
-          #                                 else electron-builder imports with an empty
-          #                                 password and fails "MAC verification failed")
-          # All optional: with the secrets unset every runner builds unsigned and stays green.
           CSC_LINK: ${{ matrix.os == 'macos-latest' && secrets.APPLE_CERTIFICATE_P12 || '' }}
           CSC_KEY_PASSWORD: ${{ matrix.os == 'macos-latest' && secrets.APPLE_CERTIFICATE_PASSWORD || '' }}
           APPLE_ID: ${{ matrix.os == 'macos-latest' && secrets.APPLE_ID || '' }}
           APPLE_APP_SPECIFIC_PASSWORD: ${{ matrix.os == 'macos-latest' && secrets.APPLE_APP_SPECIFIC_PASSWORD || '' }}
           APPLE_TEAM_ID: ${{ matrix.os == 'macos-latest' && secrets.APPLE_TEAM_ID || '' }}
-
-      - name: Package installers (mac, plain-name fallback)
-        # Diagnostic + rescue for the universal mac build whose signed/universal
-        # merge has failed only here ("? ... not a file"). The one config value
-        # the branch could be choking on is the bracketed decorations in the
-        # productName ("Vishwajeet Team [AI Company]") which macOS paths expose
-        # to glob-like parsing. Retry with a plain, bracket-less productName.
-        # artifactName templates are unaffected, so the published asset names
-        # stay identical. Either it builds — brackets implicated — or the
-        # failure reproduces with a plain name and the bug lies elsewhere.
-        if: failure() && matrix.os == 'macos-latest'
-        shell: bash
-        run: |
-          rm -rf dist/mac-universal dist/mac-universal-*-temp
-          rm -f dist/*.dmg dist/*.zip
-          npx electron-builder --mac --publish never --config.productName="Vishwajeet Team"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEBUG: electron-builder
 
       - name: Generate checksums
         if: always()
