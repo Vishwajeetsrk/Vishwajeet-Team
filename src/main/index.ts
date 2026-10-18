@@ -114,8 +114,10 @@ import {
 import { ClosingTimeController } from './closingTime';
 import {
   argsWithAutoModeFlag,
+  deliversModelViaConfig,
   inferAgentProvider,
   isClaudeProvider,
+  isProviderScopedModel,
   nonInteractiveEnvForProvider,
   normalizeAgentProvider,
   providerPreset,
@@ -3305,8 +3307,10 @@ function findCodexHomeForSession(sessionId: string, siblingsRoot: string): strin
 }
 
 /** Spawn options shared by the `pty:spawn` IPC handler and the god-triggered
- *  ephemeral-worker watcher. */
-type AgentSpawnOptions = SpawnOptions & { hive?: AgentMeta; isolate?: boolean; resume?: boolean; requireResume?: boolean; resumeSessionId?: string; provider?: AgentProvider; noAutoInstall?: boolean };
+ *  ephemeral-worker watcher. `model` is the side-channel for engines that take
+ *  their model via CONFIG rather than an argv flag (OpenCode — #703: its TUI
+ *  rejects `--model`, so the pick can never ride on args). */
+type AgentSpawnOptions = SpawnOptions & { hive?: AgentMeta; isolate?: boolean; resume?: boolean; requireResume?: boolean; resumeSessionId?: string; provider?: AgentProvider; noAutoInstall?: boolean; model?: string };
 
 /** Map a `ptyManager.spawn` failure string to the closed `agent_spawn_failed.reason`
  *  enum (analytics.ts). The two known strings come from PtyManager.spawn; anything
@@ -3718,8 +3722,15 @@ async function spawnAgentCore(opts: AgentSpawnOptions, owner: Electron.WebConten
     //    spawned model's provider prefix when we can identify it; fall back to all
     //    stored keys when the model/prefix is unknown (default model, qwen slugs,
     //    custom). Reduces the blast radius vs handing every CLI all keys.
+    //    The model itself may arrive on argv (--model) OR on the spawn's `model`
+    //    field — OpenCode's TUI has no --model flag, so its pick rides the
+    //    side-channel (#703); reading argv alone silently emptied the prefix and
+    //    handed over every stored key. The god role model is the last resort so
+    //    a config-only pick still scopes.
     const modelIdx = (opts.args ?? []).indexOf('--model');
-    const modelSlug = modelIdx >= 0 ? (opts.args?.[modelIdx + 1] ?? '') : '';
+    const argvModel = modelIdx >= 0 ? (opts.args?.[modelIdx + 1] ?? '') : '';
+    const roleModel = opts.hive?.isGod ? modelForRole(opts.hive, cfg) ?? '' : '';
+    const modelSlug = argvModel || opts.model || roleModel || '';
     const prefix = modelSlug.includes('/') ? modelSlug.split('/')[0].toLowerCase() : '';
     const PREFIX_BACKEND: Record<string, string> = {
       anthropic: 'anthropic', openai: 'openai', google: 'google', gemini: 'google', groq: 'groq', openrouter: 'openrouter'

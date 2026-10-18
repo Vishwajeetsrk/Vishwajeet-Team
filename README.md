@@ -450,6 +450,21 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 - **Workers**: live temp workers with one-job spawn, and a job history where every run is accounted for.
 - **Built-in Monaco IDE & Detachable Window**: File tree, editor tabs, syntax highlighting, plus CHANGES · HISTORY · COMPARE git rails. Pop it out into its own standalone window via the `<> IDE` button while keeping the live office visible.
 
+**Interactive Agent Computers & Live Screen Takeover**
+- **Per-Agent Isolated Environments**: Every agent runs with an isolated persistent Chromium partition (`persist:computer-<id>`), dedicated workspace directory (`workspaces/agent-<id>`), and private terminal PTY. Cookies, session logins, and files persist across app restarts.
+- **Real-Time Visual Canvas & Screen Viewing**: Live screen capture and rendering from the agent's Electron browser session in `ComputerPanel`. Inspect the agent's actual browser state in real time as it navigates documentation, searches web pages, or tests web interfaces.
+- **Interactive Human Takeover (`/take` and `/release`)**: Click **"Take Control"** when an agent encounters CAPTCHAs, 2FA challenges, or complex authentication. Click directly on the live canvas (coordinates map to the real browser viewport), type text, press keys (`Enter`, `Tab`, `Escape`), and hand control back with active session cookies preserved.
+- **Fail-Closed Security Matrix**: Granular per-agent capability gates (`terminalExec`, `browserNav`, `browserDownloads`, `screenView`, `screenControl`). Browser network egress is bounded by loopback-only allowlists (`loopbackOnlyAllowed`) unless explicitly granted.
+
+**OmniRoute Universal AI Gateway & 150+ Free Tiers**
+- **Unified Local Gateway (`http://localhost:20128/v1`)**: Connects your agents to 358 AI providers and 150+ free tiers, supplying **~1.62 Billion free tokens per month**.
+- **4-Tier Self-Healing Fallback Cascade**: Automatically cascades from subscriptions → paid API keys → cheap frontier models → 100% free tiers on rate limits (429) or quota errors with zero downtime.
+- **Token Compression Engine (RTK + Caveman)**: Compresses verbose compiler outputs, terminal logs, and system context by 15%–95% (~89% average), avoiding context window blowouts.
+
+**The Replica Clean-Room Engineering Suite (11 Skills)**
+- **Full App Reverse-Engineering & Rebuilding Pipeline**: Installed in `.agents/skills/`, `~/.gemini/config/skills/`, and `~/.claude/skills/`. Includes `/replica-recon` (screen & flow mapping), `/replica-architect` (stack & schemas), `/replica-design` (tokens & WCAG contrast), `/replica-build`, `/replica-backend`, `/replica-test`, `/replica-diff` (parity scoring), `/replica-entrepreneur` (mining 1-star competitor reviews to turn user complaints into selling points), `/replica-brand`, `/replica-launch`, and `/replica-deploy`.
+- **Zero-Argument CLI Automation**: Direct terminal execution of `python .agents/skills/replica-diff/parity.py` and `python .agents/skills/replica-design/contrast.py` with automatic matrix/token discovery.
+
 **Getting work in and out**
 - **Slack & webhooks**: message a channel or POST a webhook; Michael can spawn an ephemeral worker, reply in-thread, and tear it down.
 - **Shareable hires + Agent Gallery**: import a role from a `munderdifflin://hire` link; import only pre-fills the form, a human still spawns it. Browse roles in [`docs/hires/`](./docs/hires/).
@@ -490,16 +505,19 @@ Everything below is for developers and for people who want to run an unreleased 
   ```bash
   xcode-select --install
   ```
-- At least one supported agent CLI on your `PATH`, one of **[Claude Code](https://claude.com/claude-code)**
-  (`claude`, the default), **Antigravity** (`agy`), **OpenAI Codex** (`codex`), **xAI Grok** (`grok`),
-  **Kimi Code** (`kimi`), **Gemini CLI** (`gemini`), **Qwen** (`qwen`), **OpenCode** (`opencode`),
-  **Crush** (`crush`), **pi.dev** (`pi`), **GitHub Copilot** (`copilot`), or **Cursor** (`cursor-agent`).
-  Most missing CLIs self-heal: the harness runs the installer directly in the
-  terminal and continues into the new binary.
-  * For **Antigravity / Gemini CLI** on Windows:
-    ```powershell
-    powershell -c "irm https://antigravity.google/cli/install.ps1 | iex"
-    ```
+- At least one supported agent CLI on your `PATH`. The intelligent missing-CLI ladder automatically detects and provisions missing binaries directly inside the terminal:
+  | Engine | Binary | Command / One-Line Install |
+  | :--- | :--- | :--- |
+  | **Claude Code** | `claude` | `npm install -g @anthropic-ai/claude-code` |
+  | **Antigravity** | `agy` | `powershell -c "irm https://antigravity.google/cli/install.ps1 \| iex"` |
+  | **REA Agents** | `rea` | `npm install -g rea-agents && npx rea-agents setup --yes --all-detected` |
+  | **Gemini CLI** | `gemini` | `npm install -g @google/gemini-cli` |
+  | **OpenAI Codex** | `codex` | `npm install -g @openai/codex` |
+  | **GitHub Copilot** | `copilot` | `npm install -g @github/copilot` |
+  | **Cursor Agent** | `cursor-agent` | Official installer (`cursor.com/docs/cli`) |
+  | **OmniRoute Gateway** | `omniroute` | `npm install -g omniroute` (`http://localhost:20128/v1` for 150+ free tiers) |
+  | **OpenCode** | `opencode` | Interactive TUI with config-delivered model routing |
+- *Optional:* **Python 3.8+** for running Replica skills tools (`parity.py`, `contrast.py`, `sweep.py`).
 - *Optional:* **your own API keys and local LLMs** in **Settings → AI Engines** (Ollama / LM Studio / vLLM).
 - *Optional:* the semantic memory index for instant cross-session recall. Markdown memory works without it.
 

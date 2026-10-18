@@ -8,6 +8,7 @@ import {
   defaultCommandForProvider,
   hasAutoModeStance,
   inferAgentProvider,
+  modelFlagForProvider,
   normalizeAgentProvider
 } from '../shared/agentProvider';
 import { tokenizeCommand } from '../shared/commandLine';
@@ -15,10 +16,14 @@ import { tokenizeCommand } from '../shared/commandLine';
 export interface WorkerLaunch {
   /** The executable name alone — what the PTY layer resolves and spawns. */
   bin: string;
-  /** Everything else, in argv form, model flag included when applicable. */
+  /** Everything else, in argv form, model flag included when the preset has one. */
   args: string[];
   /** The full effective command line, for display and floor cards. */
   command: string;
+  /** The requested model, whether or not it made it onto argv — a config-
+   *  delivered engine (OpenCode, #703) has no --model flag, but the spawn
+   *  core still needs the pick to deliver it via the engine's config. */
+  model?: string;
 }
 
 export function buildWorkerLaunch(opts: {
@@ -69,9 +74,16 @@ export function buildWorkerLaunch(opts: {
   const flags = tokens.slice(1);
   // A separate `model` field only applies when the command line didn't pick a
   // model itself (spawnAgentCore likewise skips its default-model injection
-  // when argv already carries --model).
+  // when argv already carries --model). AND the preset must actually HAVE a
+  // model flag: OpenCode's TUI rejects `--model` outright (exit 1 — #703), so
+  // its pick is never placed on argv; it rides on `model` instead and the
+  // spawn core delivers it through the engine's config.
   const model =
     typeof opts.requestModel === 'string' && opts.requestModel.trim() ? opts.requestModel.trim() : '';
-  const args = [...flags, ...(model && !flags.includes('--model') ? ['--model', model] : [])];
-  return { bin, args, command };
+  const modelFlag = modelFlagForProvider(provider);
+  const args = [
+    ...flags,
+    ...(model && modelFlag && !flags.includes(modelFlag) ? [modelFlag, model] : [])
+  ];
+  return { bin, args, command, ...(model ? { model } : {}) };
 }
