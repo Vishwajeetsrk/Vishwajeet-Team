@@ -74,8 +74,14 @@ export interface AgentProviderPreset {
   autoModeFlag: string;
   /** Show a model picker and splice the model into the command. */
   supportsModel: boolean;
-  /** Flag that selects the session model, e.g. `--model`. */
+  /** Flag that selects the session model, e.g. `--model`. undefined means the
+   *  CLI has NO argv model flag — the pick must be delivered via its config
+   *  file instead (see modelViaConfig). Never append a model to argv from
+   *  supportsModel alone: OpenCode's TUI exits 1 on `--model` (#703). */
   modelFlag?: string;
+  /** True when the model reaches the CLI through its config file rather than
+   *  an argv flag (OpenCode: OPENCODE_CONFIG_CONTENT.model). */
+  modelViaConfig?: boolean;
   /** Flag appended when the floor is in auto (skip-permissions) mode.
    *  PR #54 consumers read this; mirrors `autoModeFlag`. */
   autoFlag?: string;
@@ -362,7 +368,13 @@ export const AGENT_PROVIDER_PRESETS: AgentProviderPreset[] = [
     autoModeFlag: '',
     autoFlag: '',
     supportsModel: true,
-    modelFlag: '--model', // value form: provider/model, e.g. anthropic/claude-sonnet-4-5
+    // NO --model FLAG. The interactive TUI rejects it outright
+    // ("Unrecognized flag: --model in command opencode" → usage screen → exit 1),
+    // so for years every model pick was a kill switch (#703). The TUI reads its
+    // model from config instead, so the pick is delivered via
+    // OPENCODE_CONFIG_CONTENT (spawnAgentCore) — modelViaConfig marks that route.
+    modelFlag: undefined,
+    modelViaConfig: true,
     hiveAware: false, // no --append-system-prompt/--settings; protocol rides in via --prompt
     // NATIVE PLUGIN bridge (god Decision 1): OpenCode has no Claude-shaped Stop hook,
     // but its plugin API DOES expose a real lifecycle event (session.idle). A bundled
@@ -673,6 +685,28 @@ export function defaultCommandForProvider(provider: AgentProvider, fallback = ''
 /** Returns the preset's auto-mode CLI flag for the given provider. Empty string = no flag. */
 export function autoModeFlagForProvider(provider: AgentProvider): string {
   return providerPreset(provider).autoModeFlag ?? '';
+}
+
+/** The argv model flag for a provider, or undefined when it has none. Every
+ *  model-appending site must consult THIS rather than supportsModel: a provider
+ *  can show a model picker while having no argv flag (OpenCode delivers via
+ *  config — #703). */
+export function modelFlagForProvider(provider: AgentProvider): string | undefined {
+  return providerPreset(provider).modelFlag;
+}
+
+/** True when the provider's model reaches its CLI via config file, not argv
+ *  (OpenCode's TUI has no --model flag; it reads OPENCODE_CONFIG_CONTENT). */
+export function deliversModelViaConfig(provider: AgentProvider): boolean {
+  return !!providerPreset(provider).modelViaConfig;
+}
+
+/** True when a model id is scoped to a known provider slug (`openai/gpt-4o`,
+ *  `anthropic/claude-…`, `local/llama3` — i.e. contains a slash). Bare ids
+ *  (claude-opus-5-5) are NOT scoped: they are Claude-era leftovers that resolve
+ *  to nothing in a config-delivered engine (#703's second layer). */
+export function isProviderScopedModel(model: string | undefined): boolean {
+  return !!model && model.includes('/');
 }
 
 /** Idempotently append a provider's auto-mode flag to an args array, honoring the
