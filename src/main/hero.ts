@@ -13,7 +13,7 @@ import { getText } from './fetchText';
 import { parseHeroPayload, DEFAULT_HERO, type HeroPayload } from '../shared/heroPayload';
 
 const HERO_URL =
-  'https://raw.githubusercontent.com/Vishwajeetsrk/Vishwajeet-Team/main/docs/hero.json';
+  'https://raw.githubusercontent.com/Vishwajeetsrk/Team/main/docs/hero.json';
 /** Plan copy and sponsors change on a human timescale. */
 const TTL_MS = 6 * 60 * 60 * 1000;
 

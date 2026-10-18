@@ -33,7 +33,7 @@ export type UpdateStatus =
 
 export type UpdateAction = 'none' | 'check' | 'download' | 'restart' | 'open-release' | 'manual';
 
-export const REPO = 'Vishwajeetsrk/Vishwajeet-Team';
+export const REPO = 'Vishwajeetsrk/Team';
 
 /** The installer for THIS machine in the release tagged v{version}, by the
  *  names electron-builder.yml produces. Used when a status carries no

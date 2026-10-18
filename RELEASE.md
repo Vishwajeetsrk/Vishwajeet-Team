@@ -3,7 +3,7 @@
 **A local hive of Claude Code, Antigravity, Codex, Gemini, Cursor, Grok & Copilot agents that run themselves.**
 Messaging, routing, and remembering, coordinated by your orchestrator, who you talk to. Local-first and 100% free open source.
 
-### → [**Vishwajeet Team on GitHub**](https://github.com/Vishwajeetsrk/Vishwajeet-Team)
+### → [**Vishwajeet Team on GitHub**](https://github.com/Vishwajeetsrk/Team)
 
 ---
 
@@ -31,26 +31,26 @@ Messaging, routing, and remembering, coordinated by your orchestrator, who you t
 
 ## ⤓ Downloads
 
-Latest builds for every platform from [Releases](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases):
+Latest builds for every platform from [Releases](https://github.com/Vishwajeetsrk/Team/releases):
 
 ### 🍎 macOS
 | Build | File |
 |---|---|
-| Universal (Apple Silicon + Intel) | [`Vishwajeet-Team-0.5.5-mac-universal.dmg`](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest/download/Vishwajeet-Team-0.5.5-mac-universal.dmg) |
+| Universal (Apple Silicon + Intel) | [`Vishwajeet-Team-0.5.5-mac-universal.dmg`](https://github.com/Vishwajeetsrk/Team/releases/latest/download/Vishwajeet-Team-0.5.5-mac-universal.dmg) |
 
 ### 🪟 Windows
 | Build | File |
 |---|---|
-| Installer (x64), *recommended* | [`Vishwajeet-Team-0.5.5-win-x64-setup.exe`](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest/download/Vishwajeet-Team-0.5.5-win-x64-setup.exe) |
-| Portable (x64, no install) | [`Vishwajeet-Team-0.5.5-win-x64-portable.exe`](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest/download/Vishwajeet-Team-0.5.5-win-x64-portable.exe) |
+| Installer (x64), *recommended* | [`Vishwajeet-Team-0.5.5-win-x64-setup.exe`](https://github.com/Vishwajeetsrk/Team/releases/latest/download/Vishwajeet-Team-0.5.5-win-x64-setup.exe) |
+| Portable (x64, no install) | [`Vishwajeet-Team-0.5.5-win-x64-portable.exe`](https://github.com/Vishwajeetsrk/Team/releases/latest/download/Vishwajeet-Team-0.5.5-win-x64-portable.exe) |
 
 ### 🐧 Linux
 | Build | File |
 |---|---|
-| AppImage (x86_64) | [`Vishwajeet-Team-0.5.5-linux-x86_64.AppImage`](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest/download/Vishwajeet-Team-0.5.5-linux-x86_64.AppImage) |
+| AppImage (x86_64) | [`Vishwajeet-Team-0.5.5-linux-x86_64.AppImage`](https://github.com/Vishwajeetsrk/Team/releases/latest/download/Vishwajeet-Team-0.5.5-linux-x86_64.AppImage) |
 
 ### 📦 Source
-[Source code (zip)](https://github.com/Vishwajeetsrk/Vishwajeet-Team/archive/refs/tags/v0.5.5.zip) · [Source code (tar.gz)](https://github.com/Vishwajeetsrk/Vishwajeet-Team/archive/refs/tags/v0.5.5.tar.gz)
+[Source code (zip)](https://github.com/Vishwajeetsrk/Team/archive/refs/tags/v0.5.5.zip) · [Source code (tar.gz)](https://github.com/Vishwajeetsrk/Team/archive/refs/tags/v0.5.5.tar.gz)
 
 ---
 

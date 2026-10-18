@@ -11,7 +11,7 @@
   <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Plans: 100% Free (Free · Pro · Team)" src="https://img.shields.io/badge/plans-100%25%20Free%20%7C%20Pro%20%7C%20Team-F4D35E.svg?style=flat-square&labelColor=6E1423">
-  <a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Vishwajeet-Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
+  <a href="https://github.com/Vishwajeetsrk/Team/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
   <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
 </p>
 
@@ -35,8 +35,8 @@ visualized as avatars at work on a shared office floor.
 <br>
 
 <p align="center">
-  <a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/hero.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/hero.gif" alt="Vishwajeet Team running a hive of Claude Code agents" width="820">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.mp4">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.gif" alt="Vishwajeet Team running a hive of Claude Code agents" width="820">
     <br><sub>▶ Click to watch full 1080p 60fps video walkthrough</sub>
   </a>
 </p>
@@ -45,12 +45,12 @@ visualized as avatars at work on a shared office floor.
 
 | Platform | Format | Direct Download |
 |:---|:---|:---|
-| 🍏 **macOS** | Universal DMG (Apple Silicon + Intel) | [macOS Universal DMG](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-mac-universal.dmg) |
-| 🪟 **Windows** | Setup Installer (x64) | [Windows x64 Setup Installer](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-setup.exe) |
-| 🪟 **Windows** | Portable (.exe, no install) | [Windows x64 Portable (.exe)](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-portable.exe) |
-| 🐧 **Linux** | AppImage (x86_64) | [Linux AppImage](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-linux-x86_64.AppImage) |
+| 🍏 **macOS** | Universal DMG (Apple Silicon + Intel) | [macOS Universal DMG](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-mac-universal.dmg) |
+| 🪟 **Windows** | Setup Installer (x64) | [Windows x64 Setup Installer](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-setup.exe) |
+| 🪟 **Windows** | Portable (.exe, no install) | [Windows x64 Portable (.exe)](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-portable.exe) |
+| 🐧 **Linux** | AppImage (x86_64) | [Linux AppImage](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-linux-x86_64.AppImage) |
 
-<sub>100% Free · Local-First · No Account · No Paywall · [All Release Assets & Checksums](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/tag/v0.5.5)</sub>
+<sub>100% Free · Local-First · No Account · No Paywall · [All Release Assets & Checksums](https://github.com/Vishwajeetsrk/Team/releases/tag/v0.5.5)</sub>
 
 </div>
 
@@ -195,8 +195,8 @@ Hold the push-to-talk key and speak into the message box mic — your words land
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/dictation.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/dictation.gif" alt="Push-to-talk dictation demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.gif" alt="Push-to-talk dictation demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -215,8 +215,8 @@ Agent cards display status, engine, model, a real-time context gauge, active tic
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/agent-cards.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/agent-cards.gif" alt="Agent cards HUD demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.gif" alt="Agent cards HUD demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -235,8 +235,8 @@ Michael is your direct clone and the single agent you brief. He breaks down goal
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/orchestrator.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/orchestrator.gif" alt="Orchestrator agent briefing demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.gif" alt="Orchestrator agent briefing demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -248,15 +248,15 @@ Michael is your direct clone and the single agent you brief. He breaks down goal
 ### ➕ Hire an Agent in a Few Clicks
 `Multi-Model Picker` · `Custom Personas` · `Agent Gallery`
 
-Pick your provider (Claude, Grok, Codex, Gemini, DeepSeek, or local Ollama), configure the autonomy leash, assign a desk, and work begins. Import roles directly from the [Agent Gallery](https://github.com/Vishwajeetsrk/Vishwajeet-Team/tree/main/docs/hires).
+Pick your provider (Claude, Grok, Codex, Gemini, DeepSeek, or local Ollama), configure the autonomy leash, assign a desk, and work begins. Import roles directly from the [Agent Gallery](https://github.com/Vishwajeetsrk/Team/tree/main/docs/hires).
 
 > *Instant spawn with preconfigured system prompts, tools, and skills.*
 
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/hire-agent.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/hire-agent.gif" alt="Hiring agents demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.gif" alt="Hiring agents demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -275,8 +275,8 @@ Every agent logs structured Markdown memory continuously indexed into a shared, 
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/memory.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/memory.gif" alt="Shared memory palace demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.gif" alt="Shared memory palace demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -295,8 +295,8 @@ Control the autonomy perimeter for every desk. Scope increases, API spend thresh
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/autonomy.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/autonomy.gif" alt="Autonomy leash and circuit breaker demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.gif" alt="Autonomy leash and circuit breaker demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -315,8 +315,8 @@ Agents walk between desks, workstations, and meeting rooms as they execute tasks
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/agents.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/agents.gif" alt="Live agent floor demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.gif" alt="Live agent floor demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -335,8 +335,8 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 </td>
 <td width="52%" align="center">
 
-<a href="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/setup.mp4">
-  <img src="https://github.com/Vishwajeetsrk/Vishwajeet-Team/raw/main/docs/media/demo/setup.gif" alt="First-run setup wizard demo" width="100%">
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.gif" alt="First-run setup wizard demo" width="100%">
   <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
 </a>
 
@@ -399,7 +399,7 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 ### Download the app
 
 **Most people want this one.** This fork is free and local-first: no account, no paywall.
-Grab a build from the [releases page](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest),
+Grab a build from the [releases page](https://github.com/Vishwajeetsrk/Team/releases/latest),
 open it, and the wizard takes you the rest of the way. You do not need Node, a toolchain, or this
 repository.
 
@@ -434,7 +434,7 @@ Everything below is for developers and for people who want to run an unreleased 
 ### Install & run
 
 ```bash
-git clone https://github.com/Vishwajeetsrk/Vishwajeet-Team.git
+git clone https://github.com/Vishwajeetsrk/Team.git
 cd Vishwajeet-Team
 npm install        # postinstall rebuilds node-pty against Electron's ABI
 npm run dev        # launches the Electron app with hot reload
@@ -505,7 +505,7 @@ first areas: wiring real hook events, the add-agent flow, the config drawer, and
 > just changes what the evidence looks like. See
 > [Evidence is mandatory](./CONTRIBUTING.md#evidence-is-mandatory).
 
-Questions or bugs? Open an issue: **<https://github.com/Vishwajeetsrk/Vishwajeet-Team/issues>**
+Questions or bugs? Open an issue: **<https://github.com/Vishwajeetsrk/Team/issues>**
 
 **Looking for somewhere to start?** Browse the open issues — small, self-contained
 work with a clear finish line is marked for newcomers.

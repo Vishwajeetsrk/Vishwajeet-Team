@@ -9,7 +9,7 @@ copyright: Copyright © 2026 Vishwajeet
 publish:
   provider: github
   owner: Vishwajeetsrk
-  repo: Vishwajeet-Team
+  repo: Team
 
 # Bake the update toast's "What's new" list straight into latest*.yml.
 #
