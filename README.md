@@ -464,7 +464,8 @@ and agent output remain strictly on your machine. No account, no tracking, no op
 
 The **source code** is licensed under the **MIT License** by **Vishwajeet**. See [`LICENSE`](./LICENSE). The MIT grant
 covers the code only; the bundled pixel art is licensed separately from LimeZu and is carved out in
-[`LICENSE-ASSETS`](./LICENSE-ASSETS).
+[`LICENSE-ASSETS`](./LICENSE-ASSETS). *Munder Difflin* is an affectionate parody and is **not
+affiliated** with NBC's *The Office* or Dunder Mifflin.
 
 ## Acknowledgements
 
