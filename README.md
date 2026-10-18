@@ -34,16 +34,23 @@ visualized as avatars at work on a shared office floor.
 
 <br>
 
-<!-- Inline player renders on github.com (raw URL required; relative paths only link). -->
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.mp4" controls muted loop playsinline width="820">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.mp4">▶ Watch the floor: Vishwajeet Team running a hive of Claude Code agents</a>
-</video>
+<p align="center">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.mp4">
+    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/hero.gif" alt="Vishwajeet Team running a hive of Claude Code agents" width="820">
+    <br><sub>▶ Click to watch full 1080p 60fps video walkthrough</sub>
+  </a>
+</p>
 
-<br><br>
+### ⬇ Downloads & Installers (v0.5.5)
 
-**[⬇ Download 0.5.5 for macOS, Windows or Linux](https://github.com/Vishwajeetsrk/Team/releases/latest)**
+| Platform | Format | Direct Download |
+|:---|:---|:---|
+| 🍏 **macOS** | Universal DMG (Apple Silicon + Intel) | [macOS Universal DMG](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-mac-universal.dmg) |
+| 🪟 **Windows** | Setup Installer (x64) | [Windows x64 Setup Installer](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-setup.exe) |
+| 🪟 **Windows** | Portable (.exe, no install) | [Windows x64 Portable (.exe)](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-win-x64-portable.exe) |
+| 🐧 **Linux** | AppImage (x86_64) | [Linux AppImage](https://github.com/Vishwajeetsrk/Team/releases/download/v0.5.5/Vishwajeet-Team-0.5.5-linux-x86_64.AppImage) |
 
-<sub>Free and local-first, no account, no paywall. Build from source below or grab a release above.</sub>
+<sub>100% Free · Local-First · No Account · No Paywall · [All Release Assets & Checksums](https://github.com/Vishwajeetsrk/Team/releases/tag/v0.5.5)</sub>
 
 </div>
 
@@ -59,6 +66,7 @@ visualized as avatars at work on a shared office floor.
 
 ## Contents
 
+- [Downloads & Installers](#-downloads--installers-v055)
 - [Plans: 100% Free (Free · Pro · Team)](#plans-100-free-free--pro--team-included)
 - [Supported agents](#supported-agents)
 - [What it is](#what-it-is)
@@ -173,12 +181,10 @@ Hold the push-to-talk key and speak into the message box mic — your words land
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation-poster.jpg" alt="Push-to-talk dictation demo" width="100%">
-    <br><sub>▶ Click to play dictation demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.gif" alt="Push-to-talk dictation demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -195,12 +201,10 @@ Agent cards display status, engine, model, a real-time context gauge, active tic
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards-poster.jpg" alt="Agent cards HUD demo" width="100%">
-    <br><sub>▶ Click to play agent cards demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.gif" alt="Agent cards HUD demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -217,12 +221,10 @@ Michael is your direct clone and the single agent you brief. He breaks down goal
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator-poster.jpg" alt="Orchestrator agent briefing demo" width="100%">
-    <br><sub>▶ Click to play orchestrator demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.gif" alt="Orchestrator agent briefing demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -239,12 +241,10 @@ Pick your provider (Claude, Grok, Codex, Gemini, DeepSeek, or local Ollama), con
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent-poster.jpg" alt="Hiring agents demo" width="100%">
-    <br><sub>▶ Click to play hire agent demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.gif" alt="Hiring agents demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -261,12 +261,10 @@ Every agent logs structured Markdown memory continuously indexed into a shared, 
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory-poster.jpg" alt="Shared memory palace demo" width="100%">
-    <br><sub>▶ Click to play memory demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.gif" alt="Shared memory palace demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -283,12 +281,10 @@ Control the autonomy perimeter for every desk. Scope increases, API spend thresh
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy-poster.jpg" alt="Autonomy leash and circuit breaker demo" width="100%">
-    <br><sub>▶ Click to play autonomy demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.gif" alt="Autonomy leash and circuit breaker demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -305,12 +301,10 @@ Agents walk between desks, workstations, and meeting rooms as they execute tasks
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents-poster.jpg" alt="Live agent floor demo" width="100%">
-    <br><sub>▶ Click to play live floor demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.gif" alt="Live agent floor demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
@@ -327,12 +321,10 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 </td>
 <td width="52%" align="center">
 
-<video src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4" poster="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup-poster.jpg" controls playsinline width="100%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4">
-    <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup-poster.jpg" alt="First-run setup wizard demo" width="100%">
-    <br><sub>▶ Click to play setup wizard demo video</sub>
-  </a>
-</video>
+<a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4">
+  <img src="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.gif" alt="First-run setup wizard demo" width="100%">
+  <br><sub>▶ Click to watch full 1080p MP4 recording</sub>
+</a>
 
 </td>
 </tr>
