@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/logo.png" alt="Vishwajeet Team, the agent harness to run an office of your clones" width="180">
+<img src="./docs/logo.png" alt="Vishwajeet Team — Agent harness to run an office of your clones" width="180">
 
 # Vishwajeet Team [AI Company]
 
@@ -11,6 +11,8 @@
   <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Plans: 100% Free (Free · Pro · Team)" src="https://img.shields.io/badge/plans-100%25%20Free%20%7C%20Pro%20%7C%20Team-F4D35E.svg?style=flat-square&labelColor=6E1423">
+  <a href="https://github.com/Vishwajeetsrk/Team/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
+  <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
 </p>
 
 <img src="./docs/media/floor.png" alt="The Vishwajeet Team office floor: agents at desks working in parallel, with the Command Center and a live agent terminal on the right" width="1240">
@@ -28,15 +30,6 @@ visualized as avatars at work on a shared office floor.
 
 <p>
   <em>Electron · React · TypeScript · Pixi.js · xterm.js · node-pty</em>
-</p>
-
-<p>
-  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="https://github.com/Vishwajeetsrk/Team/releases"><img alt="Downloads across all releases" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
-  <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
-  <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
-  <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
 </p>
 
 <br>
@@ -57,7 +50,7 @@ visualized as avatars at work on a shared office floor.
 ---
 
 > [!NOTE]
-> **The world's best agents. The world's worst paper company.**
+> **The world's best agents. One office. One boss.**
 > Vishwajeet Team takes the terminal-agent CLIs you already run (`claude`, `agy`, `codex`, `grok`,
 > `kimi`, `qwen`, `opencode`, `crush`, `pi`, and `copilot`) and turns them
 > into a self-coordinating team: each agent gets long-term memory, a mailbox, and a desk on a 2D
@@ -70,6 +63,7 @@ visualized as avatars at work on a shared office floor.
 - [Supported agents](#supported-agents)
 - [What it is](#what-it-is)
 - [How it works](#how-it-works)
+- [Features showcase](#features-showcase)
 - [Features](#features)
 - [Getting started](#getting-started)
 - [Architecture & project structure](./docs/ARCHITECTURE.md)
@@ -161,22 +155,31 @@ world** so every agent remembers what it learns and recalls it instantly.
 See [`HIVE.md`](./HIVE.md) for the full multi-agent design, [`SPEC.md`](./SPEC.md) for the
 terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
 
-## Features
+## Features Showcase
+
+> Real screen recordings of every feature — click any thumbnail to watch.
 
 <table>
 <tr>
 <td width="50%" valign="middle">
 
-### Dictation, free and local
+### 🎙️ Dictation, free and local
 
 Hold the push-to-talk key and speak into the message box mic — your words land
 in the queue for the floor. Groq transcription stays off unless you add a key.
 No meeting recorder here: this build has no Stapler and no Pro tier, by design.
 
 </td>
+<td width="50%">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/dictation.mp4">
+    <img src="./docs/media/demo/dictation-poster.jpg" alt="Push-to-talk dictation into the message box" width="100%">
+  </a>
+</td>
+</tr>
+<tr>
 <td width="50%" valign="middle">
 
-### One row per agent, and it tells you everything
+### 🃏 One row per agent, and it tells you everything
 
 Agent cards carry status, engine, model, a context gauge, the ticket it is on
 and the action it is taking right now, a crash strip instead of a silent
@@ -187,94 +190,116 @@ Automations, Memory, Skills, Workers and Workforce — every surface free,
 nothing tiered.
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="middle">
-
-### Talk to one agent, not twelve
-
-Michael is your clone and the only agent you brief. He assigns the work, routes the traffic, and
-escalates the few things that actually need you.
-
-</td>
 <td width="50%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4"><img src="./docs/media/demo/orchestrator-poster.jpg" alt="Briefing Michael, the orchestrator agent, from the Command Center" width="100%"></a>
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agent-cards.mp4">
+    <img src="./docs/media/demo/agent-cards-poster.jpg" alt="Agent cards showing status, engine, model, context gauge and current action" width="100%">
+  </a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="middle">
 
-### Hire an agent in a few clicks
+### 🧠 Talk to one agent, not twelve
 
-Pick the CLI, the model and the autonomy, give it a desk, and it starts working. Import a
-ready made role from the [Agent Gallery](https://github.com/Vishwajeetsrk/Team/tree/main/docs/hires) if you would rather not
-start from scratch.
+Michael is your clone and the only agent you brief. He assigns the work, routes
+the traffic, and escalates the few things that actually need you.
 
 </td>
 <td width="50%">
-  <img src="./docs/screenshots/add-agent.png" alt="The add agent dialog: choosing a provider, model and role" width="100%">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/orchestrator.mp4">
+    <img src="./docs/media/demo/orchestrator-poster.jpg" alt="Briefing Michael, the orchestrator agent, from the Command Center" width="100%">
+  </a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="middle">
 
-### Memory that survives the session
+### ➕ Hire an agent in a few clicks
 
-Every agent keeps markdown memory that is mined into a shared, searchable palace. Close the app,
-come back tomorrow, and they still know what they learned.
+Pick the CLI, the model and the autonomy, give it a desk, and it starts working.
+Import a ready-made role from the [Agent Gallery](https://github.com/Vishwajeetsrk/Team/tree/main/docs/hires)
+if you would rather not start from scratch.
 
 </td>
 <td width="50%">
-  <img src="./docs/screenshots/memory.png" alt="Searching the shared memory palace across every agent" width="100%">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
+    <img src="./docs/screenshots/add-agent.png" alt="The add agent dialog: choosing a provider, model and role" width="100%">
+  </a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="middle">
 
-### Autonomy with a leash
+### 🧩 Memory that survives the session
 
-Set how far each agent may go on its own. Spend, scope and destructive operations come back to
-you, and a circuit breaker steers, constrains, then stops anything that loops or runs away.
+Every agent keeps markdown memory that is mined into a shared, searchable
+palace. Close the app, come back tomorrow, and they still know what they
+learned.
 
 </td>
 <td width="50%">
-  <img src="./docs/screenshots/autonomy.png" alt="Per agent autonomy and approval settings" width="100%">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
+    <img src="./docs/screenshots/memory.png" alt="Searching the shared memory palace across every agent" width="100%">
+  </a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="middle">
 
-### Watch the whole floor work
+### 🔒 Autonomy with a leash
 
-Agents walk to stations as they work and envelopes fly desk to desk when they message each other.
-Click any desk to read that terminal live, and type straight back into it.
+Set how far each agent may go on its own. Spend, scope and destructive
+operations come back to you, and a circuit breaker steers, constrains, then
+stops anything that loops or runs away.
 
 </td>
 <td width="50%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4"><img src="./docs/media/demo/agents-poster.jpg" alt="Agents working in parallel on the office floor" width="100%"></a>
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
+    <img src="./docs/screenshots/autonomy.png" alt="Per agent autonomy and approval settings" width="100%">
+  </a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="middle">
 
-### Set up once
+### 👀 Watch the whole floor work
 
-The onboarding wizard checks what you already have, and offers to install what is missing rather
-than sending you to a docs page.
+Agents walk to stations as they work and envelopes fly desk to desk when they
+message each other. Click any desk to read that terminal live, and type straight
+back into it.
 
 </td>
 <td width="50%">
-  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4"><img src="./docs/media/demo/setup-poster.jpg" alt="The first run setup wizard" width="100%"></a>
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/agents.mp4">
+    <img src="./docs/media/demo/agents-poster.jpg" alt="Agents working in parallel on the office floor" width="100%">
+  </a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="middle">
+
+### 🚀 Set up once
+
+The onboarding wizard checks what you already have, and offers to install what
+is missing rather than sending you to a docs page.
+
+</td>
+<td width="50%">
+  <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/setup.mp4">
+    <img src="./docs/media/demo/setup-poster.jpg" alt="The first run setup wizard" width="100%">
+  </a>
 </td>
 </tr>
 </table>
+
+## Features
 
 **The floor**
 - **Every terminal is a real agent.** Claude Code, Antigravity (Gemini), OpenAI Codex, xAI Grok, Kimi Code, Gemini CLI, Qwen, OpenCode, Crush, pi.dev, GitHub Copilot CLI, Cursor, or a custom command, each in its own `node-pty` PTY, rendered with xterm.js.
 - **Every agent is an avatar.** A Pixi.js office floor where agents walk to stations, envelopes fly desk to desk, and avatar state reflects real work.
 - **A GOD orchestrator you talk to.** It routes tasks, adjudicates traffic, and escalates only what needs a human. Or press **Talk** and run the floor by voice.
 - **Per-agent git worktrees.** Optional isolation so parallel agents never collide on branches.
-- **More than one floor**. File, New Floor opens another office on its own folder, in its own window, with its own agents, board and memory. A folder only ever opens in one floor, and one licence covers them all.
+- **More than one floor**. File → New Floor opens another office on its own folder, in its own window, with its own agents, board and memory. A folder only ever opens in one floor, and one licence covers them all.
 
 **Memory & coordination**
 - **The hive**: per-agent memory, atomic-file mailboxes, a shared blackboard, an append-only event log, single-committer git.
@@ -292,23 +317,23 @@ than sending you to a docs page.
 - **Skills**: what every agent can already do across Claude Code, OpenCode and Codex — installed, project and bundled — with agent bindings, plus a browsable catalog with search, filters, install and uninstall.
 - **Workforce**: every roster agent read as a specialist profile — staffed or listed inert with its gap named — plus a skill matcher that names its pick.
 - **Workers**: live temp workers with one-job spawn, and a job history where every run is accounted for.
-- **Built-in Monaco IDE**: file tree, editor tabs, save, plus CHANGES · HISTORY · COMPARE git rails with commit graph, diffs, branch compare, and guarded checkout. All fs/git access brokered through main.
+- **Built-in Monaco IDE**: file tree, editor tabs, save, plus CHANGES · HISTORY · COMPARE git rails with commit graph, diffs, branch compare, and guarded checkout.
 
 **Getting work in and out**
 - **Slack & webhooks**: message a channel or POST a webhook; Michael can spawn an ephemeral worker, reply in-thread, and tear it down.
 - **Shareable hires + Agent Gallery**: import a role from a `munderdifflin://hire` link; import only pre-fills the form, a human still spawns it. Browse roles in [`docs/hires/`](./docs/hires/).
-- **Local transcription and dictation**: push-to-talk into the message box mic, with Groq transcription only if you add a key. No meeting recorder, no Stapler — this fork has no Pro tier.
-- **BYOK keys + local LLMs**: per-provider keys in a write-only secret broker, plus Ollama / LM Studio / vLLM base URLs. Guides: [open models](https://munderdiffl.in/blog/run-munder-difflin-on-open-models/) · [Mac Mini](https://munderdiffl.in/blog/run-munder-difflin-on-a-mac-mini/).
-- **Updates in one click**: the title-bar badge runs the real update. It downloads the build for your machine, then restarts and installs it, and it reads `latest` once a check confirms you are current. A manual download is the fallback for when the updater cannot fetch the build itself. The first run afterwards opens that release's notes as a designed page rather than a version number.
-- **Your language**: English, Simplified Chinese and Arabic, with right to left layout for Arabic. English is the default and nothing changes until you pick another one in Settings. The app does not read your OS locale. All three app fonts ship inside the bundle, so nothing is fetched at boot.
-> [!NOTE]
-> **Status: v0.4.6 — this fork.** Free and local-first: no account, no paywall,
-> no Pro tier. Everything runs on your machine — agents, memory, triggers,
-> integrations, skills. Updates never apply unless you turn them on in
-> Settings → General (upstream releases are a different product and are never
-> offered by default).
+- **Local transcription and dictation**: push-to-talk into the message box mic, with Groq transcription only if you add a key.
+- **BYOK keys + local LLMs**: per-provider keys in a write-only secret broker, plus Ollama / LM Studio / vLLM base URLs.
+- **Updates in one click**: the title-bar badge runs the real update. Downloads the build for your machine, then restarts and installs it.
+- **Your language**: English, Simplified Chinese and Arabic, with right to left layout for Arabic. All three app fonts ship inside the bundle, so nothing is fetched at boot.
 
-<div align="right">(<a href="#munder-difflin">↑ back to top</a>)</div>
+> [!NOTE]
+> **Status: v0.5.5 — local-first, no account, no paywall.**
+> Everything runs on your machine — agents, memory, triggers,
+> integrations, skills. Updates never apply unless you turn them on in
+> Settings → General.
+
+<div align="right">(<a href="#vishwajeet-team-ai-company">↑ back to top</a>)</div>
 
 ## Getting started
 
@@ -347,7 +372,7 @@ Everything below is for developers and for people who want to run an unreleased 
 
 ```bash
 git clone https://github.com/Vishwajeetsrk/Team.git
-cd munder-difflin
+cd Team
 npm install        # postinstall rebuilds node-pty against Electron's ABI
 npm run dev        # launches the Electron app with hot reload
 ```
@@ -378,23 +403,21 @@ the product rather than the codebase. Also see [`HIVE.md`](./HIVE.md) for the mu
 [`SPEC.md`](./SPEC.md) for the terminal and event plane, and [`DESIGN.md`](./DESIGN.md) for the
 visual system.
 
-<div align="right">(<a href="#munder-difflin">↑ back to top</a>)</div>
+<div align="right">(<a href="#vishwajeet-team-ai-company">↑ back to top</a>)</div>
 
 ## Roadmap
 
-Shipped in **this fork (v0.4.6 + local lanes)**: push-to-talk dictation into the
-message box, agent cards with status/engine/model/context gauge, missing-CLI
-help from inside the app, Ask Me on every inbox, more than one floor on one
-machine, twelve agent engines with BYOK keys and local LLMs, voice
-orchestration, the hive (memory · mailboxes · blackboard · event log), Command
-Center with kanban and weekday schedules plus triggers, jobs ledger, workforce
-and workers tabs, a built-in Monaco IDE with git rails, integrations registry
-+ secret broker with free and approval-gated connectors, Slack-spawned and
-operator-spawned temp workers, shareable hires, observability and the circuit
-breaker, durable persistence, session resume, one-click updates (opt-in only),
-a Skills browser with agent bindings, a live Prerequisites check, cost
-reporting folded from the ledger, semantic memory, and a learn loop that turns
-your answers into agent preferences. Full history in [`CHANGELOG.md`](./CHANGELOG.md).
+Shipped in **v0.5.5**: push-to-talk dictation into the message box, agent cards with
+status/engine/model/context gauge, missing-CLI help from inside the app, Ask Me on every inbox,
+more than one floor on one machine, twelve agent engines with BYOK keys and local LLMs, voice
+orchestration, the hive (memory · mailboxes · blackboard · event log), Command Center with kanban
+and weekday schedules plus triggers, jobs ledger, workforce and workers tabs, a built-in Monaco IDE
+with git rails, integrations registry + secret broker with free and approval-gated connectors,
+Slack-spawned and operator-spawned temp workers, shareable hires, observability and the circuit
+breaker, durable persistence, session resume, one-click updates (opt-in only), a Skills browser
+with agent bindings, a live Prerequisites check, cost reporting folded from the ledger, semantic
+memory, and a learn loop that turns your answers into agent preferences.
+Full history in [`CHANGELOG.md`](./CHANGELOG.md).
 
 Next up:
 
@@ -419,18 +442,15 @@ first areas: wiring real hook events, the add-agent flow, the config drawer, and
 > just changes what the evidence looks like. See
 > [Evidence is mandatory](./CONTRIBUTING.md#evidence-is-mandatory).
 
-Questions or bugs? Open an issue: **<https://github.com/Vishwajeetsrk/Team/issues>**.
+Questions or bugs? Open an issue: **<https://github.com/Vishwajeetsrk/Team/issues>**
 
 **Looking for somewhere to start?** Browse the open issues — small, self-contained
 work with a clear finish line is marked for newcomers.
 
 ## Telemetry
 
-Official builds send a **small set of anonymous usage events** (app opened, agent spawned, feature
-used), never prompts, code, file paths, or agent output. The complete event list, the anonymity
-guarantees, and the three ways to opt out (Settings toggle, `DO_NOT_TRACK`, or building from
-source, forks compile with no key and send nothing) are documented in
-[`TELEMETRY.md`](./TELEMETRY.md).
+This build compiles with **no telemetry key** and sends nothing. All prompts, code, file paths,
+and agent output remain strictly on your machine. No account, no tracking, no opt-out needed.
 
 ## License
 
@@ -444,9 +464,7 @@ source, forks compile with no key and send nothing) are documented in
 
 The **source code** is licensed under the **MIT License** by **Vishwajeet**. See [`LICENSE`](./LICENSE). The MIT grant
 covers the code only; the bundled pixel art is licensed separately from LimeZu and is carved out in
-[`LICENSE-ASSETS`](./LICENSE-ASSETS). *Vishwajeet Team* is an independent, local-first multi-agent OS,
-namechecked above for searchability only. *Munder Difflin* is an affectionate parody and is not
-affiliated with NBC's *The Office* or Dunder Mifflin.
+[`LICENSE-ASSETS`](./LICENSE-ASSETS).
 
 ## Acknowledgements
 
@@ -454,4 +472,3 @@ affiliated with NBC's *The Office* or Dunder Mifflin.
 - [`shahar061/the-office`](https://github.com/shahar061/the-office) for the office tileset/map vendoring.
 - [Pixi.js](https://pixijs.com/) · [xterm.js](https://xtermjs.org/) · [node-pty](https://github.com/microsoft/node-pty) · [electron-vite](https://electron-vite.org/) · [CodeMirror](https://codemirror.net/) for the libraries this is built on.
 - [Remotion](https://www.remotion.dev/) for the landing page's animated "how it works" clips (`landing-remotion/`).
-- *The Office* (US) for Munder Difflin, Inc.
