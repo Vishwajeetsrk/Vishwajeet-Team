@@ -8,7 +8,7 @@
 
 <p>
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="./CHANGELOG.md"><img alt="Version: 0.4.6" src="https://img.shields.io/badge/version-0.4.6-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
+  <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Plans: 100% Free (Free · Pro · Team)" src="https://img.shields.io/badge/plans-100%25%20Free%20%7C%20Pro%20%7C%20Team-F4D35E.svg?style=flat-square&labelColor=6E1423">
 </p>
@@ -32,7 +32,7 @@ visualized as avatars at work on a shared office floor.
 
 <p>
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="./CHANGELOG.md"><img alt="Version: 0.4.6" src="https://img.shields.io/badge/version-0.4.6-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
+  <a href="./CHANGELOG.md"><img alt="Version: 0.5.5" src="https://img.shields.io/badge/version-0.5.5-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <a href="https://github.com/Vishwajeetsrk/Team/releases"><img alt="Downloads across all releases" src="https://img.shields.io/github/downloads/Vishwajeetsrk/Team/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
   <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
@@ -48,7 +48,7 @@ visualized as avatars at work on a shared office floor.
 
 <br><br>
 
-**[⬇ Download 0.4.6 for macOS, Windows or Linux](https://github.com/Vishwajeetsrk/Team/releases/latest)**
+**[⬇ Download 0.5.5 for macOS, Windows or Linux](https://github.com/Vishwajeetsrk/Team/releases/latest)**
 
 <sub>Free and local-first, no account, no paywall. Build from source below or grab a release above.</sub>
 
