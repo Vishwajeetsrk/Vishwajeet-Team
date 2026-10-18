@@ -35,10 +35,10 @@
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/connect-slack-to-munder-difflin/hero.png" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
-<meta property="og:image:alt" content="The Slack card in Vishwajeet Team 0.5.2 settings, with the bot token field, required scopes and Test connection" />
+<meta property="og:image:alt" content="The Slack card in Munder Difflin 0.5.2 settings, with the bot token field, required scopes and Test connection" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-09-14T00:00:00.000Z" />
-<meta property="article:author" content="Chaitanya Giri" />
+<meta property="article:author" content="Vishwajeet" />
 <meta property="article:tag" content="Guides" />
 <meta property="article:tag" content="Slack" />
 <meta property="article:tag" content="Integrations" />
@@ -50,7 +50,7 @@
 <meta name="twitter:title" content="How to Connect Slack to Vishwajeet Team 0.5.2 — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Connect Slack to Vishwajeet Team 0.5.2: create the Slack app, add the bot scopes, pick one of three connection modes, and get answers in the thread." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/connect-slack-to-munder-difflin/hero.png" />
-<meta name="twitter:image:alt" content="The Slack card in Vishwajeet Team 0.5.2 settings, with the bot token field, required scopes and Test connection" />
+<meta name="twitter:image:alt" content="The Slack card in Munder Difflin 0.5.2 settings, with the bot token field, required scopes and Test connection" />
 
 <link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,7 +67,7 @@
   "image": ["https://munderdiffl.in/blog/assets/media/connect-slack-to-munder-difflin/hero.png"],
   "datePublished": "2026-09-14T00:00:00.000Z",
   "dateModified": "2026-09-14T00:00:00.000Z",
-  "author": { "@type": "Person", "name": "Chaitanya Giri" },
+  "author": { "@type": "Person", "name": "Vishwajeet" },
   "publisher": {
     "@type": "Organization",
     "name": "Vishwajeet Team",
@@ -174,7 +174,7 @@
     <p class="dek">Connect Slack to Vishwajeet Team 0.5.2: create the Slack app, add the bot scopes, pick one of three connection modes, and get answers in the thread.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">MD</span>
-      <strong>Chaitanya Giri</strong>
+      <strong>Vishwajeet</strong>
       <span class="dot" aria-hidden="true">·</span>
       <time datetime="2026-09-14">Sep 14, 2026</time>
       <span class="dot" aria-hidden="true">·</span>
@@ -183,7 +183,7 @@
     </div>
   </header>
 
-  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/connect-slack-to-munder-difflin/hero.png" alt="The Slack card in Vishwajeet Team 0.5.2 settings, with the bot token field, required scopes and Test connection" loading="lazy" decoding="async" /></figure></div>
+  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/connect-slack-to-munder-difflin/hero.png" alt="The Slack card in Munder Difflin 0.5.2 settings, with the bot token field, required scopes and Test connection" loading="lazy" decoding="async" /></figure></div>
 
   <div class="post-wrap wrap">
     <div class="prose">
@@ -241,7 +241,7 @@
 <li>Turn on <strong>Socket Mode</strong>. Under <strong>Basic Information</strong>, <strong>App-Level Tokens</strong>, generate a token with the <code>connections:write</code> scope. It starts with <code>xapp-</code>; Slack’s <a href="https://docs.slack.dev/authentication/tokens">token docs</a> explain the difference between bot and app-level tokens.</li>
 <li>Under <strong>Event Subscriptions</strong>, enable events and subscribe to the bot events <code>message.channels</code> and <code>message.groups</code>. No Request URL is needed. Reinstall if Slack asks.</li>
 </ul>
-<h2 id="where-do-the-tokens-go-in-munder-difflin" tabindex="-1">Where do the tokens go in Vishwajeet Team? <a class="anchor" href="#where-do-the-tokens-go-in-munder-difflin" aria-hidden="true">#</a></h2>
+<h2 id="where-do-the-tokens-go-in-vishwajeet-team" tabindex="-1">Where do the tokens go in Vishwajeet Team? <a class="anchor" href="#where-do-the-tokens-go-in-vishwajeet-team" aria-hidden="true">#</a></h2>
 <p>Open <strong>Settings</strong>, then <strong>Connections</strong>.</p>
 <ol>
 <li>At the top, <strong>Who answers inbound messages</strong> decides who gets Slack requests. The default is your orchestrator, Michael unless you renamed him, and the app recommends keeping it. You can pick any agent instead. If that agent is not running, the orchestrator takes the request.</li>
@@ -320,7 +320,7 @@
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#which-slack-mode-should-you-pick">Which Slack mode should you pick?</a></li><li class="lvl-2"><a href="#how-do-you-create-the-slack-app">How do you create the Slack app?</a></li><li class="lvl-2"><a href="#where-do-the-tokens-go-in-munder-difflin">Where do the tokens go in Vishwajeet Team?</a></li><li class="lvl-2"><a href="#what-happens-when-someone-mentions-the-bot">What happens when someone mentions the bot?</a></li><li class="lvl-2"><a href="#what-goes-wrong-most-often">What goes wrong most often?</a></li>
+        <li class="lvl-2"><a href="#which-slack-mode-should-you-pick">Which Slack mode should you pick?</a></li><li class="lvl-2"><a href="#how-do-you-create-the-slack-app">How do you create the Slack app?</a></li><li class="lvl-2"><a href="#where-do-the-tokens-go-in-vishwajeet-team">Where do the tokens go in Vishwajeet Team?</a></li><li class="lvl-2"><a href="#what-happens-when-someone-mentions-the-bot">What happens when someone mentions the bot?</a></li><li class="lvl-2"><a href="#what-goes-wrong-most-often">What goes wrong most often?</a></li>
       </ol>
     </aside>
     

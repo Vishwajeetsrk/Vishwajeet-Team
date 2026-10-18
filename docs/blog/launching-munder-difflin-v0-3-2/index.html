@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/launching-munder-difflin-v0-3-2/hero.png" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
-<meta property="og:image:alt" content="Illustration: Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator" />
+<meta property="og:image:alt" content="Illustration: Launching Munder Difflin v0.3.2: Talk to Michael, a Realtime Voice Orchestrator" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-06-27T00:00:00.000Z" />
 <meta property="article:author" content="Chaitanya Giri" />
@@ -52,7 +52,7 @@
 <meta name="twitter:title" content="Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Vishwajeet Team v0.3.2 adds Realtime Michael — a low-latency voice channel to the GOD orchestrator. Talk to Michael and he listens, answers, and acts: reading the hive and, behind spoken echo-back confirmation, dispatching, spawning, and steering the floor in real time." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/launching-munder-difflin-v0-3-2/hero.png" />
-<meta name="twitter:image:alt" content="Illustration: Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator" />
+<meta name="twitter:image:alt" content="Illustration: Launching Munder Difflin v0.3.2: Talk to Michael, a Realtime Voice Orchestrator" />
 
 <link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -186,7 +186,7 @@
     </div>
   </header>
 
-  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/launching-munder-difflin-v0-3-2/hero.png" alt="Illustration: Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator" loading="lazy" decoding="async" /></figure></div>
+  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/launching-munder-difflin-v0-3-2/hero.png" alt="Illustration: Launching Munder Difflin v0.3.2: Talk to Michael, a Realtime Voice Orchestrator" loading="lazy" decoding="async" /></figure></div>
 
   <div class="post-wrap wrap">
     <div class="prose">
@@ -214,7 +214,7 @@
 <p>a main-process <strong>completion watcher</strong> notices when the dispatched task actually finishes — the card flips to <em>done</em>, or a done reply lands in the inbox — and <strong>pushes that straight into the live session so Michael speaks it, unprompted</strong>. “Pam finished the changelog.” an on-screen <strong>toast</strong> shows it too, so it’s there whether or not you caught the audio.</p>
 <p>and if you’ve already closed the session? the completion isn’t lost. it <strong>queues to a desktop notification</strong>, and the next time you connect, Michael <strong>warm-starts with the completions since you last talked</strong>. there’s also a <code>wait_for</code> tool for when you explicitly want him to block until a specific task lands.</p>
 <p>fire-and-forget by default; tell-me-the-second-it’s-done without you asking. that’s the loop.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-2/note-1.png" alt="Hand-drawn sketch from “Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-2/note-1.png" alt="Hand-drawn sketch from “Launching Munder Difflin v0.3.2: Talk to Michael, a Realtime Voice Orchestrator”" loading="lazy" decoding="async" /></figure>
 <h2 id="it-stays-on-a-budget" tabindex="-1">it stays on a budget <a class="anchor" href="#it-stays-on-a-budget" aria-hidden="true">#</a></h2>
 <p>a live voice session is a meter running. so v0.3.2 keeps it honest:</p>
 <ul>
@@ -231,7 +231,7 @@
 </blockquote>
 <p>the renderer’s content-security policy is opened <em>just</em> enough to let the WebRTC handshake reach <code>api.openai.com</code>, and nothing more. it’s the same write-only-secrets posture the <a href="/blog/launching-munder-difflin-v0-3-0/">integrations broker</a> uses, applied to voice. (local-first people: the audio goes to OpenAI’s Realtime API because that’s what’s doing the speech — everything else stays on your machine. that’s <a href="/blog/why-local-first-matters-for-ai-agents/">why local-first still matters</a> for the rest of the floor.)</p>
 <p>the whole loop is <strong>human-verified end-to-end</strong> — connect, mic, answer, <em>and</em> the full spawn / kill / dispatch action path, exercised live on a real key.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-2/note-2.png" alt="Hand-drawn sketch from “Launching Vishwajeet Team v0.3.2: Talk to Michael, a Realtime Voice Orchestrator”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-2/note-2.png" alt="Hand-drawn sketch from “Launching Munder Difflin v0.3.2: Talk to Michael, a Realtime Voice Orchestrator”" loading="lazy" decoding="async" /></figure>
 <h2 id="the-smaller-things-that-add-up" tabindex="-1">the smaller things that add up <a class="anchor" href="#the-smaller-things-that-add-up" aria-hidden="true">#</a></h2>
 <p>a release with a headline this big still has a tail of quality-of-life wins:</p>
 <ul>

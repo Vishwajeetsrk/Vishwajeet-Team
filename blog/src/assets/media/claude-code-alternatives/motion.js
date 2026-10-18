@@ -209,7 +209,7 @@
       txt(svg, 756, 62, "tap a tile", { "text-anchor": "end", "font-size": 20, fill: MUTE, "font-weight": 500 });
       const PICK = [
         ["Codex CLI", "You want the same workflow, different lab", "Codex CLI"],
-        ["Munder Difflin", "You want to keep Claude Code and add others", "Munder Difflin"],
+        ["Vishwajeet Team", "You want to keep Claude Code and add others", "Vishwajeet Team"],
         ["OpenCode", "You want any model, local ones included", "OpenCode"],
         ["Cursor", "You want an editor", "Cursor, or Cline if you are staying in VS Code"],
         ["Gemini CLI", "You already pay for Gemini API access", "Gemini CLI"],

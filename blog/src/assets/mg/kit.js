@@ -1,4 +1,4 @@
-/* Munder Difflin blog scene kit. One script for every post. No dependencies.
+/* Vishwajeet Team blog scene kit. One script for every post. No dependencies.
    A post ships <figure class="mg" data-scene="NAME"> holding a still <img> and, for kit scenes, a
    <script type="application/json"> with the page's own data. This script swaps the still for a live SVG
    scene (viewBox 960 by 540) that plays only while on screen. Reduced motion keeps one drawn frame.

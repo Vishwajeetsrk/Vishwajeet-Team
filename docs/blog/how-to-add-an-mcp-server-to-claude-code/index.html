@@ -38,7 +38,7 @@
 <meta property="og:image:alt" content="Illustration: How to Add an MCP Server to Claude Code" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-09-10T00:00:00.000Z" />
-<meta property="article:author" content="Chaitanya Giri" />
+<meta property="article:author" content="Vishwajeet" />
 <meta property="article:tag" content="Guides" />
 <meta property="article:tag" content="MCP" />
 <meta property="article:tag" content="Claude Code" />
@@ -67,7 +67,7 @@
   "image": ["https://munderdiffl.in/blog/assets/media/how-to-add-an-mcp-server-to-claude-code/hero.png"],
   "datePublished": "2026-09-10T00:00:00.000Z",
   "dateModified": "2026-09-29T00:00:00.000Z",
-  "author": { "@type": "Person", "name": "Chaitanya Giri" },
+  "author": { "@type": "Person", "name": "Vishwajeet" },
   "publisher": {
     "@type": "Organization",
     "name": "Vishwajeet Team",
@@ -174,7 +174,7 @@
     <p class="dek">Add Claude Code MCP servers with claude mcp add: transports, scopes, --env and --header, .mcp.json, OAuth sign in and output limits. Checked 29 Sep 2026.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">MD</span>
-      <strong>Chaitanya Giri</strong>
+      <strong>Vishwajeet</strong>
       <span class="dot" aria-hidden="true">·</span>
       <time datetime="2026-09-10">Sep 10, 2026</time>
       <span class="dot" aria-hidden="true">·</span>
@@ -393,7 +393,7 @@ File modified: <span class="token operator">&lt;</span>your folder<span class="t
 </tbody>
 </table>
 </div>
-<h2 id="can-munder-difflin-set-up-mcp-servers-for-every-agent" tabindex="-1">Can Vishwajeet Team set up MCP servers for every agent? <a class="anchor" href="#can-munder-difflin-set-up-mcp-servers-for-every-agent" aria-hidden="true">#</a></h2>
+<h2 id="can-vishwajeet-team-set-up-mcp-servers-for-every-agent" tabindex="-1">Can Vishwajeet Team set up MCP servers for every agent? <a class="anchor" href="#can-vishwajeet-team-set-up-mcp-servers-for-every-agent" aria-hidden="true">#</a></h2>
 <p>Yes, for a default set. In the v0.5.3 release, Settings, Connections has a Default MCP servers list (<code>src/renderer/src/components/McpDefaultsSettings.tsx</code>). Six servers from the safe tier are on by default: Sequential Thinking, Time, Fetch, Context7, and Filesystem and Git limited to the agent’s own folder. GitHub, Database, Email &amp; Calendar and Web Search need a key and stay off until you turn them on (<code>src/shared/mcpCatalog.ts</code>).</p>
 <p>When an agent starts, <code>buildDefaultMcpServers</code> in <code>src/main/hive.ts</code> writes the enabled ones into that agent’s own session settings file as <code>munder-&lt;id&gt;</code> and passes it with <code>--settings</code>. It never edits your <code>~/.claude.json</code> or <code>.mcp.json</code>, and changes apply at the next spawn, not to running agents. The honest limit: in v0.5.3 that list is one switchboard for all agents, not a per-agent grant. Each agent is still a normal <code>claude</code> session, so your user and project servers load as usual. <a href="/blog/manage-multiple-claude-code-sessions/">Running several sessions at once</a> covers why the per session file matters.</p>
 
@@ -443,7 +443,7 @@ File modified: <span class="token operator">&lt;</span>your folder<span class="t
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#claude-code-mcp-commands-at-a-glance">Claude Code MCP commands at a glance</a></li><li class="lvl-2"><a href="#how-do-you-add-an-mcp-server-to-claude-code">How do you add an MCP server to Claude Code?</a></li><li class="lvl-2"><a href="#which-transport-should-you-use-stdio-http-or-sse">Which transport should you use: stdio, HTTP or SSE?</a></li><li class="lvl-2"><a href="#where-does-claude-code-store-mcp-servers">Where does Claude Code store MCP servers?</a></li><li class="lvl-2"><a href="#how-do-you-pass-an-api-key-or-a-header">How do you pass an API key or a header?</a></li><li class="lvl-2"><a href="#how-do-you-edit-mcpjson-by-hand">How do you edit .mcp.json by hand?</a></li><li class="lvl-2"><a href="#how-do-you-sign-in-to-a-remote-mcp-server-with-oauth">How do you sign in to a remote MCP server with OAuth?</a></li><li class="lvl-2"><a href="#how-much-output-can-an-mcp-tool-return">How much output can an MCP tool return?</a></li><li class="lvl-2"><a href="#what-changed-for-mcp-in-claude-code-in-the-last-six-months">What changed for MCP in Claude Code in the last six months?</a></li><li class="lvl-2"><a href="#can-munder-difflin-set-up-mcp-servers-for-every-agent">Can Vishwajeet Team set up MCP servers for every agent?</a></li>
+        <li class="lvl-2"><a href="#claude-code-mcp-commands-at-a-glance">Claude Code MCP commands at a glance</a></li><li class="lvl-2"><a href="#how-do-you-add-an-mcp-server-to-claude-code">How do you add an MCP server to Claude Code?</a></li><li class="lvl-2"><a href="#which-transport-should-you-use-stdio-http-or-sse">Which transport should you use: stdio, HTTP or SSE?</a></li><li class="lvl-2"><a href="#where-does-claude-code-store-mcp-servers">Where does Claude Code store MCP servers?</a></li><li class="lvl-2"><a href="#how-do-you-pass-an-api-key-or-a-header">How do you pass an API key or a header?</a></li><li class="lvl-2"><a href="#how-do-you-edit-mcpjson-by-hand">How do you edit .mcp.json by hand?</a></li><li class="lvl-2"><a href="#how-do-you-sign-in-to-a-remote-mcp-server-with-oauth">How do you sign in to a remote MCP server with OAuth?</a></li><li class="lvl-2"><a href="#how-much-output-can-an-mcp-tool-return">How much output can an MCP tool return?</a></li><li class="lvl-2"><a href="#what-changed-for-mcp-in-claude-code-in-the-last-six-months">What changed for MCP in Claude Code in the last six months?</a></li><li class="lvl-2"><a href="#can-vishwajeet-team-set-up-mcp-servers-for-every-agent">Can Vishwajeet Team set up MCP servers for every agent?</a></li>
       </ol>
     </aside>
     

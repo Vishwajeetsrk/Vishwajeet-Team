@@ -2,8 +2,8 @@
 // Kevin's SEO_METADATA.md flows in here (site-level) and into each post's
 // frontmatter (per-page). Keep absolute origin in one place.
 export default {
-  name: "Munder Difflin",
-  blogName: "Munder Difflin Blog",
+  name: "Vishwajeet Team",
+  blogName: "Vishwajeet Team Blog",
   // Origin with no trailing slash; pathPrefix (/blog/) is applied by Eleventy.
   origin: "https://munderdiffl.in",
   baseUrl: "https://munderdiffl.in/blog/",
@@ -14,7 +14,7 @@ export default {
   lang: "en",
   locale: "en_US",
   author: {
-    name: "Chaitanya Giri",
+    name: "Vishwajeet",
     twitter: "",
     url: "https://munderdiffl.in",
   },
@@ -28,7 +28,7 @@ export default {
     opensource: "https://munderdiffl.in/#opensource",
   },
   social: {
-    github: "https://github.com/chaitanyagiri/munder-difflin",
+    github: "https://github.com/Vishwajeetsrk/Team",
     site: "https://munderdiffl.in",
   },
   // Default OG image (absolute). Per-post `ogImage` overrides this.

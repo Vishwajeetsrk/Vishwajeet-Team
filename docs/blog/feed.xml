@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>Munder Difflin Blog</title>
+  <title>Vishwajeet Team Blog</title>
   <subtitle>Guides, deep dives, and comparisons on running multi-agent Claude Code: orchestration, agent memory, automation, and the tooling landscape.</subtitle>
   <link href="https://munderdiffl.in/blog/feed.xml" rel="self" />
   <link href="https://munderdiffl.in/blog/" />
   <updated>2026-10-08T00:00:00.000Z</updated>
   <id>https://munderdiffl.in/blog/</id>
-  <author><name>Chaitanya Giri</name><uri>https://munderdiffl.in</uri></author>
+  <author><name>Vishwajeet</name><uri>https://munderdiffl.in</uri></author>
   <entry>
     <title>Agent Tools Today, 8 Oct 2026: Claude Haiku 5.5, GPT-6 Intelligent UI, Docker Agent</title>
     <link href="https://munderdiffl.in/blog/agent-tools-today-2026-10-08/" />
@@ -173,7 +173,7 @@
     <id>https://munderdiffl.in/blog/openclaw-alternatives/</id>
     <published>2026-10-05T00:00:00.000Z</published>
     <updated>2026-10-05T00:00:00.000Z</updated><category term="Comparisons" />
-    <summary>Seven OpenClaw alternatives sorted by job: Hermes Agent, Munder Difflin, NanoClaw, ZeroClaw, nanobot, Goose and Claude. Licences and prices checked 5 Oct 2026.</summary>
+    <summary>Seven OpenClaw alternatives sorted by job: Hermes Agent, Vishwajeet Team, NanoClaw, ZeroClaw, nanobot, Goose and Claude. Licences and prices checked 5 Oct 2026.</summary>
   </entry>
   <entry>
     <title>Agent Tools Today, 4 Oct 2026: You should Know, OpenClaw&#39;s Android Wait, Codex Wish List</title>
@@ -248,12 +248,12 @@
     <summary>Personal ChatGPT dots need Pro from $100 a month and skip the UK and EU. Seven alternatives, sorted by where they run: your computer or a vendor&#39;s cloud.</summary>
   </entry>
   <entry>
-    <title>ChatGPT Dots vs Munder Difflin: One Cloud Agent or a Team on Your Computer</title>
+    <title>ChatGPT Dots vs Vishwajeet Team: One Cloud Agent or a Team on Your Computer</title>
     <link href="https://munderdiffl.in/blog/munder-difflin-vs-chatgpt-dots/" />
     <id>https://munderdiffl.in/blog/munder-difflin-vs-chatgpt-dots/</id>
     <published>2026-09-30T00:00:00.000Z</published>
     <updated>2026-09-30T00:00:00.000Z</updated><category term="Comparisons" />
-    <summary>ChatGPT dots vs Munder Difflin: one hosted agent on OpenAI&#39;s cloud, or a free, open source team of agents on your own computer. Checked 30 Sep 2026.</summary>
+    <summary>ChatGPT dots vs Vishwajeet Team: one hosted agent on OpenAI&#39;s cloud, or a free, open source team of agents on your own computer. Checked 30 Sep 2026.</summary>
   </entry>
   <entry>
     <title>What Is ChatGPT Dots? OpenAI&#39;s Always On Agents Explained</title>
@@ -304,7 +304,7 @@
     <summary>Meta Muse and Grok Bot both give an AI agent its own cloud computer. We compared price, security, platforms and who each one is for, plus the free option that runs on your own machine.</summary>
   </entry>
   <entry>
-    <title>Munder Difflin 0.5.3: Stapler Listens, And It Listens Locally</title>
+    <title>Vishwajeet Team 0.5.3: Stapler Listens, And It Listens Locally</title>
     <link href="https://munderdiffl.in/blog/munder-difflin-0-5-3/" />
     <id>https://munderdiffl.in/blog/munder-difflin-0-5-3/</id>
     <published>2026-09-26T00:00:00.000Z</published>
@@ -317,7 +317,7 @@
     <id>https://munderdiffl.in/blog/indian-open-source-ai-projects-vs-big-tech/</id>
     <published>2026-09-25T00:00:00.000Z</published>
     <updated>2026-09-25T00:00:00.000Z</updated><category term="Comparisons" />
-    <summary>Ten open source AI projects from Indian developers, each lined up against the big tech product it takes on. Laya vs Jev, Munder Difflin vs Muse and Grok Bot.</summary>
+    <summary>Ten open source AI projects from Indian developers, each lined up against the big tech product it takes on. Laya vs Jev, Vishwajeet Team vs Muse and Grok Bot.</summary>
   </entry>
   <entry>
     <title>Aider vs Claude Code in 2026: Which Should You Use?</title>
@@ -328,12 +328,12 @@
     <summary>Aider vs Claude Code, checked 15 Sep 2026: how each edits code, which models it runs, what it costs, MCP, and Aider&#39;s stalled releases.</summary>
   </entry>
   <entry>
-    <title>Build Your Personal AGI on Your Computer Using Claude Code and Munder Difflin</title>
+    <title>Build Your Personal AGI on Your Computer Using Claude Code and Vishwajeet Team</title>
     <link href="https://munderdiffl.in/blog/build-your-personal-agi-on-your-computer/" />
     <id>https://munderdiffl.in/blog/build-your-personal-agi-on-your-computer/</id>
     <published>2026-09-15T00:00:00.000Z</published>
     <updated>2026-09-15T00:00:00.000Z</updated><category term="Guides" />
-    <summary>Turn Claude Code into a personal AGI on your own computer: agents with memory, schedules, Gmail, Calendar, voice and Slack, set up in Munder Difflin 0.5.2.</summary>
+    <summary>Turn Claude Code into a personal AGI on your own computer: agents with memory, schedules, Gmail, Calendar, voice and Slack, set up in Vishwajeet Team 0.5.2.</summary>
   </entry>
   <entry>
     <title>How to Install Gemini CLI, and Can It Use Gemini 4 Yet?</title>
@@ -384,12 +384,12 @@
     <summary>There is no Codex Max plan. What ChatGPT Pro 5x and 20x give you in Codex, how the weekly limit works, and how to stretch it.</summary>
   </entry>
   <entry>
-    <title>How to Connect Slack to Munder Difflin 0.5.2</title>
+    <title>How to Connect Slack to Vishwajeet Team 0.5.2</title>
     <link href="https://munderdiffl.in/blog/connect-slack-to-munder-difflin/" />
     <id>https://munderdiffl.in/blog/connect-slack-to-munder-difflin/</id>
     <published>2026-09-14T00:00:00.000Z</published>
     <updated>2026-09-14T00:00:00.000Z</updated><category term="Guides" />
-    <summary>Connect Slack to Munder Difflin 0.5.2: create the Slack app, add the bot scopes, pick one of three connection modes, and get answers in the thread.</summary>
+    <summary>Connect Slack to Vishwajeet Team 0.5.2: create the Slack app, add the bot scopes, pick one of three connection modes, and get answers in the thread.</summary>
   </entry>
   <entry>
     <title>Grok Bot Alternatives: 9 Picks, Hosted or on Your Computer</title>
@@ -405,7 +405,7 @@
     <id>https://munderdiffl.in/blog/herdr-alternatives/</id>
     <published>2026-09-14T00:00:00.000Z</published>
     <updated>2026-09-14T00:00:00.000Z</updated><category term="Comparisons" />
-    <summary>Herdr alternatives checked on 14 Sep 2026: tmux, Munder Difflin, Claude Squad, cmux, Orca, Conductor, Superset and Emdash, and who each fits.</summary>
+    <summary>Herdr alternatives checked on 14 Sep 2026: tmux, Vishwajeet Team, Claude Squad, cmux, Orca, Conductor, Superset and Emdash, and who each fits.</summary>
   </entry>
   <entry>
     <title>How to Connect Ollama to Claude Code</title>

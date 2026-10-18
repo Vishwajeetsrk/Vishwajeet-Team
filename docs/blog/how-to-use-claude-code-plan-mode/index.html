@@ -38,7 +38,7 @@
 <meta property="og:image:alt" content="Illustration: How to Use Claude Code Plan Mode" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-09-11T00:00:00.000Z" />
-<meta property="article:author" content="Chaitanya Giri" />
+<meta property="article:author" content="Vishwajeet" />
 <meta property="article:tag" content="Guides" />
 <meta property="article:tag" content="Claude Code" />
 <meta property="article:tag" content="Getting Started" />
@@ -67,7 +67,7 @@
   "image": ["https://munderdiffl.in/blog/assets/media/how-to-use-claude-code-plan-mode/hero.png"],
   "datePublished": "2026-09-11T00:00:00.000Z",
   "dateModified": "2026-09-29T00:00:00.000Z",
-  "author": { "@type": "Person", "name": "Chaitanya Giri" },
+  "author": { "@type": "Person", "name": "Vishwajeet" },
   "publisher": {
     "@type": "Organization",
     "name": "Vishwajeet Team",
@@ -175,7 +175,7 @@
     <p class="dek">Claude Code plan mode, checked 29 Sep 2026: the Shift+Tab shortcut, --permission-mode plan, defaultMode, what it blocks, the approval options and opusplan.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">MD</span>
-      <strong>Chaitanya Giri</strong>
+      <strong>Vishwajeet</strong>
       <span class="dot" aria-hidden="true">·</span>
       <time datetime="2026-09-11">Sep 11, 2026</time>
       <span class="dot" aria-hidden="true">·</span>
@@ -344,7 +344,7 @@ The user wants a `multiply` function in `hello.py`, next to the existing `add` a
 </tbody>
 </table>
 </div>
-<h2 id="does-plan-mode-work-with-munder-difflin" tabindex="-1">Does plan mode work with Vishwajeet Team? <a class="anchor" href="#does-plan-mode-work-with-munder-difflin" aria-hidden="true">#</a></h2>
+<h2 id="does-plan-mode-work-with-vishwajeet-team" tabindex="-1">Does plan mode work with Vishwajeet Team? <a class="anchor" href="#does-plan-mode-work-with-vishwajeet-team" aria-hidden="true">#</a></h2>
 <p>Yes, once you stop Vishwajeet Team from skipping permissions for that agent. We read this in the source at tag v0.5.3 of the app repo. Auto Mode is on by default (<code>autoMode: true</code> in <code>src/main/config.ts</code>), and with it on, Claude Code agents launch with <code>--permission-mode bypassPermissions</code> (<code>src/shared/agentProvider.ts</code>). Each agent is an interactive <code>claude</code> in its own terminal, which is exactly the case where Claude Code doesn’t enforce plan mode’s blocks: Claude is told to plan, but an edit it attempts runs without asking.</p>
 <p>Two ways around it. In the Add Agent dialog the command field is editable (<code>src/renderer/src/components/AddAgentModal.tsx</code>), so replace the prefilled flag with <code>--permission-mode plan</code> for the agents you want planning first. Or switch Auto Mode off in Settings, start the agent again, and cycle into plan mode with Shift+Tab in its terminal. Worker requests that already name a <code>--permission-mode</code> keep it (<code>src/main/workerLaunch.ts</code>). What Vishwajeet Team doesn’t have yet is its own plan review screen: approval happens in Claude Code’s prompt, inside the agent’s terminal. Running several sessions at once is where a plan per agent pays off, as covered in <a href="/blog/manage-multiple-claude-code-sessions/">managing multiple Claude Code sessions</a>.</p>
 
@@ -399,7 +399,7 @@ The user wants a `multiply` function in `hello.py`, next to the existing `add` a
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#what-is-the-claude-code-plan-mode-shortcut">What is the Claude Code plan mode shortcut?</a></li><li class="lvl-2"><a href="#how-do-you-make-plan-mode-the-default">How do you make plan mode the default?</a></li><li class="lvl-2"><a href="#what-can-claude-do-in-plan-mode">What can Claude do in plan mode?</a></li><li class="lvl-2"><a href="#what-does-a-plan-mode-run-actually-print">What does a plan mode run actually print?</a></li><li class="lvl-2"><a href="#how-do-you-exit-plan-mode-in-claude-code">How do you exit plan mode in Claude Code?</a></li><li class="lvl-2"><a href="#which-model-does-claude-code-use-for-planning">Which model does Claude Code use for planning?</a></li><li class="lvl-2"><a href="#plan-mode-vs-auto-mode-vs-accept-edits-which-should-you-use">Plan mode vs auto mode vs accept edits: which should you use?</a></li><li class="lvl-2"><a href="#what-changed-in-plan-mode-in-the-last-six-months">What changed in plan mode in the last six months?</a></li><li class="lvl-2"><a href="#does-plan-mode-work-with-munder-difflin">Does plan mode work with Vishwajeet Team?</a></li>
+        <li class="lvl-2"><a href="#what-is-the-claude-code-plan-mode-shortcut">What is the Claude Code plan mode shortcut?</a></li><li class="lvl-2"><a href="#how-do-you-make-plan-mode-the-default">How do you make plan mode the default?</a></li><li class="lvl-2"><a href="#what-can-claude-do-in-plan-mode">What can Claude do in plan mode?</a></li><li class="lvl-2"><a href="#what-does-a-plan-mode-run-actually-print">What does a plan mode run actually print?</a></li><li class="lvl-2"><a href="#how-do-you-exit-plan-mode-in-claude-code">How do you exit plan mode in Claude Code?</a></li><li class="lvl-2"><a href="#which-model-does-claude-code-use-for-planning">Which model does Claude Code use for planning?</a></li><li class="lvl-2"><a href="#plan-mode-vs-auto-mode-vs-accept-edits-which-should-you-use">Plan mode vs auto mode vs accept edits: which should you use?</a></li><li class="lvl-2"><a href="#what-changed-in-plan-mode-in-the-last-six-months">What changed in plan mode in the last six months?</a></li><li class="lvl-2"><a href="#does-plan-mode-work-with-vishwajeet-team">Does plan mode work with Vishwajeet Team?</a></li>
       </ol>
     </aside>
     

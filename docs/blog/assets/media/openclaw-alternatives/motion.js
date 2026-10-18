@@ -27,7 +27,7 @@
   /* ---- the seven picks, in the post's order: name, colour, the post's "Best for" line ---- */
   const PICKS = [
     ["Hermes Agent", LIL, "the same job, with memory that grows"],
-    ["Munder Difflin", YEL, "people who used OpenClaw mostly to get code written"],
+    ["Vishwajeet Team", YEL, "people who used OpenClaw mostly to get code written"],
     ["NanoClaw", SKY, "isolation first"],
     ["ZeroClaw", BLUE, "a small always on service"],
     ["nanobot", MINT, "Python people who want to read the core"],
@@ -168,7 +168,7 @@
     build(svg, api) {
       txt(svg, 44, 62, "What it costs to start", { "font-size": 32, "font-weight": 700 });
       txt(svg, 756, 60, "tap the Claude tag", { "text-anchor": "end", "font-size": 20, fill: MUTE, "font-weight": 500 });
-      const names = ["OpenClaw", "Hermes Agent", "Munder Difflin", "NanoClaw", "ZeroClaw", "nanobot", "Goose", "Claude"];
+      const names = ["OpenClaw", "Hermes Agent", "Vishwajeet Team", "NanoClaw", "ZeroClaw", "nanobot", "Goose", "Claude"];
       const lines = [112, 296], xs = [112, 304, 496, 688];
       lines.forEach((y) => el("path", { d: `M24 ${y} Q400 ${y + 18} 776 ${y}`, stroke: INK, "stroke-width": 3, fill: "none", "stroke-linecap": "round" }, svg));
       let max = false, flipAt = -9;
@@ -217,7 +217,7 @@
       txt(svg, 756, 60, "tap to flip", { "text-anchor": "end", "font-size": 20, fill: MUTE, "font-weight": 500 });
       const combos = [
         { a: 0, b: 0, dim: 0, pick: "Hermes Agent", col: LIL, why: "OpenClaw's job with a learning loop and an import command" },
-        { a: 1, b: 0, dim: 0, pick: "Munder Difflin", col: YEL, why: "The work is code and you want several agents on it at once" },
+        { a: 1, b: 0, dim: 0, pick: "Vishwajeet Team", col: YEL, why: "The work is code and you want several agents on it at once" },
         { a: 1, b: 1, dim: 1, pick: "Claude", col: SKY, why: "You would rather pay than host" },
       ];
       let cur = 0;

@@ -74,7 +74,7 @@ Here's the toolbox as it actually exists in [Vishwajeet Team](/), where the desi
 
 The model gives you the inner loop; the outer loop is the product. Verified stop conditions, drain loops with anti-recursion guards, backoff, scheduled compaction, a breaker ladder, progress tripwires, budget bounds, and human exits — stacked together, they're why a floor of agents can run for days and converge on finished work instead of a bill.
 
-Vishwajeet Team ships this outer loop as a free, MIT-licensed, local-first desktop app for the agent CLIs you already run. [Download it](https://github.com/chaitanyagiri/munder-difflin/releases/latest), and if the loop-nerdery resonates, a [GitHub star](https://github.com/chaitanyagiri/munder-difflin) helps more people find it.
+Vishwajeet Team ships this outer loop as a free, MIT-licensed, local-first desktop app for the agent CLIs you already run. [Download it](https://github.com/Vishwajeetsrk/Team/releases/latest), and if the loop-nerdery resonates, a [GitHub star](https://github.com/Vishwajeetsrk/Team) helps more people find it.
 
 ## FAQ
 

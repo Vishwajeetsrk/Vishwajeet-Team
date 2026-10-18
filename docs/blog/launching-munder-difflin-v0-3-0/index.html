@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/launching-munder-difflin-v0-3-0/hero.png" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
-<meta property="og:image:alt" content="Illustration: Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations &amp; Slack-Spawned Workers" />
+<meta property="og:image:alt" content="Illustration: Launching Munder Difflin v0.3.0: Selectable Engines, Integrations &amp; Slack-Spawned Workers" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-06-21T00:00:00.000Z" />
 <meta property="article:author" content="Chaitanya Giri" />
@@ -52,7 +52,7 @@
 <meta name="twitter:title" content="Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations &amp; Slack-Spawned Workers — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Vishwajeet Team v0.3.0 makes every hire — and Michael himself — a pluggable engine, adds an integrations registry with a write-only secret broker, and lets the god orchestrator spawn an ephemeral worker straight from Slack." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/launching-munder-difflin-v0-3-0/hero.png" />
-<meta name="twitter:image:alt" content="Illustration: Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations &amp; Slack-Spawned Workers" />
+<meta name="twitter:image:alt" content="Illustration: Launching Munder Difflin v0.3.0: Selectable Engines, Integrations &amp; Slack-Spawned Workers" />
 
 <link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -186,7 +186,7 @@
     </div>
   </header>
 
-  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/launching-munder-difflin-v0-3-0/hero.png" alt="Illustration: Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers" loading="lazy" decoding="async" /></figure></div>
+  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/launching-munder-difflin-v0-3-0/hero.png" alt="Illustration: Launching Munder Difflin v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers" loading="lazy" decoding="async" /></figure></div>
 
   <div class="post-wrap wrap">
     <div class="prose">
@@ -213,7 +213,7 @@
 <p><strong>secrets are write-only.</strong> you set a credential once. it’s reached only through a loopback broker. it is <em>never read back</em> into the renderer.</p>
 </blockquote>
 <p>so the UI can let you configure an integration without the secret ever round-tripping through the part of the app that draws windows. and the connectivity-<strong>test</strong> path — the “is this hooked up right?” button — is <strong>confined</strong>, so it can’t be bent into a secret-exfiltration or <a href="/blog/agent-security-and-sandboxing/">SSRF</a> trick. write-only in, brokered access out.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-0/note-1.png" alt="Hand-drawn sketch from “Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-0/note-1.png" alt="Hand-drawn sketch from “Launching Munder Difflin v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers”" loading="lazy" decoding="async" /></figure>
 <h2 id="slack-spawn-reply-safe-teardown" tabindex="-1">Slack → spawn → reply → safe teardown <a class="anchor" href="#slack-spawn-reply-safe-teardown" aria-hidden="true">#</a></h2>
 <p>the third headline is the one that feels like magic the first time: <strong>Michael can spawn a worker straight from Slack.</strong></p>
 <p>here’s the loop. a request lands in Slack. Michael spins up an <strong>isolated, ephemeral worker</strong> to handle it. the worker does the job and <strong>posts its reply back into the thread itself</strong>. then — and this is the whole trick — it gets <strong>torn down safely</strong>.</p>
@@ -235,7 +235,7 @@
 <li>🧭 <strong>feature-aware onboarding</strong> — first-run setup adapts to what you actually have available, with an explicit permissions &amp; reliability step.</li>
 <li>🔧 <strong>a visible engine-CLI installer</strong> — if the engine binary for your chosen provider is missing, the installer runs <em>visibly</em> and self-heals instead of failing in silence.</li>
 </ul>
-<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-0/note-2.png" alt="Hand-drawn sketch from “Launching Vishwajeet Team v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/launching-munder-difflin-v0-3-0/note-2.png" alt="Hand-drawn sketch from “Launching Munder Difflin v0.3.0: Selectable Engines, Integrations & Slack-Spawned Workers”" loading="lazy" decoding="async" /></figure>
 <h2 id="reliability-the-floor-survives-a-closed-lid" tabindex="-1">reliability: the floor survives a closed lid <a class="anchor" href="#reliability-the-floor-survives-a-closed-lid" aria-hidden="true">#</a></h2>
 <p>if you run agents overnight, two fixes are for you:</p>
 <ul>

@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/hero.png" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
-<meta property="og:image:alt" content="Illustration: Vishwajeet Team v0.2.4 Feature Walkthrough" />
+<meta property="og:image:alt" content="Illustration: Munder Difflin v0.2.4 Feature Walkthrough" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-06-09T00:00:00.000Z" />
 <meta property="article:author" content="Chaitanya Giri" />
@@ -52,7 +52,7 @@
 <meta name="twitter:title" content="Vishwajeet Team v0.2.4 Feature Walkthrough — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="A comprehensive guide to every change in Vishwajeet Team v0.2.4 — how the Codex lifecycle-hook bridge achieves full hive parity, what the Schedules tab adds, why tunnelmole replaced localtunnel, and what else shipped." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/hero.png" />
-<meta name="twitter:image:alt" content="Illustration: Vishwajeet Team v0.2.4 Feature Walkthrough" />
+<meta name="twitter:image:alt" content="Illustration: Munder Difflin v0.2.4 Feature Walkthrough" />
 
 <link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -184,7 +184,7 @@
     </div>
   </header>
 
-  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/hero.png" alt="Illustration: Vishwajeet Team v0.2.4 Feature Walkthrough" loading="lazy" decoding="async" /></figure></div>
+  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/hero.png" alt="Illustration: Munder Difflin v0.2.4 Feature Walkthrough" loading="lazy" decoding="async" /></figure></div>
 
   <div class="post-wrap wrap">
     <div class="prose">
@@ -211,7 +211,7 @@
 <li>Outbox messages are picked up by the provider-agnostic router, same as before.</li>
 </ul>
 <p>Codex is no longer the third provider with an asterisk. It’s a full hive participant.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/note-1.png" alt="Hand-drawn sketch from “Vishwajeet Team v0.2.4 Feature Walkthrough”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/note-1.png" alt="Hand-drawn sketch from “Munder Difflin v0.2.4 Feature Walkthrough”" loading="lazy" decoding="async" /></figure>
 <h2 id="terminal-work-orders-the-work-order-from-hive-pattern" tabindex="-1">Terminal work orders: the WORK ORDER FROM HIVE pattern <a class="anchor" href="#terminal-work-orders-the-work-order-from-hive-pattern" aria-hidden="true">#</a></h2>
 <p>Both Antigravity and Codex now have full hook bridges. But the multi-provider work raised a broader question: what should happen when a future provider has <em>no</em> inbox-drain path at all — no hook bridge, no idle-wake nudge — and you still need to get hive mail to it?</p>
 <p>The answer is a structured fallback: the hive types a <code>WORK ORDER FROM HIVE</code> message directly into the agent’s terminal. The message is clearly labeled, delivered as terminal input, and actionable by any CLI that can read what’s in its terminal. If the renderer is unavailable at the time mail arrives, the router bounces the message to the GOD agent rather than dropping it silently.</p>
@@ -230,7 +230,7 @@
 <p>The fix is straightforward: the heartbeat checks for unread actionable inbox items before cycling, and re-engages if it finds any. GOD no longer needs an external trigger to notice mail that arrived between heartbeat cycles.</p>
 <h2 id="terminal-sidebar-open-by-default" tabindex="-1">Terminal sidebar open by default <a class="anchor" href="#terminal-sidebar-open-by-default" aria-hidden="true">#</a></h2>
 <p>The GOD orchestrator now opens with the Terminal sidebar visible from the start. You’ve always been able to open it — now you don’t have to remember to. For most workflows, seeing god’s terminal output immediately is the right default.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/note-2.png" alt="Hand-drawn sketch from “Vishwajeet Team v0.2.4 Feature Walkthrough”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/munder-difflin-v0-2-4-feature-walkthrough/note-2.png" alt="Hand-drawn sketch from “Munder Difflin v0.2.4 Feature Walkthrough”" loading="lazy" decoding="async" /></figure>
 <h2 id="slack-webhook-tunnelmole-replaces-localtunnel" tabindex="-1">Slack + webhook: tunnelmole replaces localtunnel <a class="anchor" href="#slack-webhook-tunnelmole-replaces-localtunnel" aria-hidden="true">#</a></h2>
 <p>The Slack and webhook ingress paths used <code>localtunnel</code> / <code>loca.lt</code> to expose the local server to the public internet. This allowed Slack’s URL verification handshake to succeed and kept incoming webhook deliveries working.</p>
 <p>The problem: <code>loca.lt</code> began serving a browser interstitial on all outbound requests. For a human browsing a URL, an interstitial is annoying but navigable. For Slack’s <code>url_verification</code> POST — a machine-to-machine request with a specific payload and a strict response format — it is fatal. The handshake fails silently. Saved webhook URLs break. And critically, the app reported “tunnel started” with no indication that the URL it gave you would reject all incoming requests.</p>

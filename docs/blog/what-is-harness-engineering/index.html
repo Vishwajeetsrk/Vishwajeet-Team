@@ -211,7 +211,7 @@
 </ul>
 <p>Notice what’s absent: anything about making the model smarter. Harness engineering takes model capability as given and engineers everything else. (For how this differs from a single-agent wrapper, see <a href="/blog/what-is-a-multi-agent-harness/">what a multi-agent harness is</a>.)</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/what-is-harness-engineering/note-2.png" alt="Hand-drawn sketch from “What Is Harness Engineering?”" loading="lazy" decoding="async" /></figure>
-<h2 id="four-case-studies-from-inside-munder-difflin" tabindex="-1">Four case studies from inside Vishwajeet Team <a class="anchor" href="#four-case-studies-from-inside-munder-difflin" aria-hidden="true">#</a></h2>
+<h2 id="four-case-studies-from-inside-vishwajeet-team" tabindex="-1">Four case studies from inside Vishwajeet Team <a class="anchor" href="#four-case-studies-from-inside-vishwajeet-team" aria-hidden="true">#</a></h2>
 <p>Vishwajeet Team is this discipline shipped as a product, so its internals make good worked examples.</p>
 <p><strong>The hook shim — lifecycle truth instead of stdout guessing.</strong> Every provider speaks lifecycle differently: Claude Code has native hooks, Antigravity needed a purpose-built <code>agy-hook</code> bridge, Codex gets the protocol injected as its initial prompt. The harness normalizes all of them into one hook server (<code>hooks.ts</code>) that receives structured POST payloads — so “the agent finished its turn” is a <em>signal</em>, not an inference from a quiet terminal. And where a provider has no bridge at all, the harness engineers around the gap honestly: GitHub Copilot CLI’s print mode can’t drain an inbox, so routed mail <strong>bounces to the GOD orchestrator</strong> instead of silently dropping. That is Hashimoto’s rule applied — the “silently lost message” failure class is closed structurally.</p>
 <p><strong>node-pty — real terminals, not string simulations.</strong> Each agent is a real CLI process in its own pseudo-terminal, byte-for-byte authentic, with full read/write/resize/kill — paired with per-agent git worktrees so agents never collide on branches. The unglamorous plumbing (a <code>PtyManager</code>, per-id IPC streams, a postinstall that rebuilds the native addon against Electron’s ABI) is exactly the kind of work the model can never do for you, and exactly what makes the agent’s terminal access <em>real</em>.</p>
@@ -274,7 +274,7 @@
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#the-term-and-where-it-came-from">The term, and where it came from</a></li><li class="lvl-2"><a href="#what-a-harness-actually-contains">What a harness actually contains</a></li><li class="lvl-2"><a href="#four-case-studies-from-inside-munder-difflin">Four case studies from inside Vishwajeet Team</a></li><li class="lvl-2"><a href="#why-this-is-a-discipline-not-a-feature-list">Why this is a discipline, not a feature list</a></li>
+        <li class="lvl-2"><a href="#the-term-and-where-it-came-from">The term, and where it came from</a></li><li class="lvl-2"><a href="#what-a-harness-actually-contains">What a harness actually contains</a></li><li class="lvl-2"><a href="#four-case-studies-from-inside-vishwajeet-team">Four case studies from inside Vishwajeet Team</a></li><li class="lvl-2"><a href="#why-this-is-a-discipline-not-a-feature-list">Why this is a discipline, not a feature list</a></li>
       </ol>
     </aside>
     

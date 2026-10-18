@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/architecture-two-planes-one-renderer/hero.png" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
-<meta property="og:image:alt" content="Illustration: Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer" />
+<meta property="og:image:alt" content="Illustration: Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-06-04T00:00:00.000Z" />
 <meta property="article:author" content="Chaitanya Giri" />
@@ -50,7 +50,7 @@
 <meta name="twitter:title" content="Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/architecture-two-planes-one-renderer/hero.png" />
-<meta name="twitter:image:alt" content="Illustration: Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer" />
+<meta name="twitter:image:alt" content="Illustration: Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer" />
 
 <link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -181,7 +181,7 @@
     </div>
   </header>
 
-  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/architecture-two-planes-one-renderer/hero.png" alt="Illustration: Vishwajeet Team's Architecture: Two Data Planes, One Renderer" loading="lazy" decoding="async" /></figure></div>
+  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/architecture-two-planes-one-renderer/hero.png" alt="Illustration: Munder Difflin's Architecture: Two Data Planes, One Renderer" loading="lazy" decoding="async" /></figure></div>
 
   <div class="post-wrap wrap">
     <div class="prose">
@@ -227,7 +227,7 @@ behind <a href="/blog/rendering-many-live-terminals-performance/">rendering many
 <p>What the terminal plane gives you: the unfiltered truth of what each agent did. What it <em>can’t</em> easily
 give you: a reliable “which tool is running right now?” without scraping and guessing at output. That’s
 the other plane’s job.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-1.png" alt="Hand-drawn sketch from “Vishwajeet Team's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-1.png" alt="Hand-drawn sketch from “Munder Difflin's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
 <h2 id="the-event-plane-hooks-hive" tabindex="-1">The event plane (hooks + hive) <a class="anchor" href="#the-event-plane-hooks-hive" aria-hidden="true">#</a></h2>
 <p>The event plane is about <em>structure</em>. It has two sources, both feeding the main process:</p>
 <p><strong>Claude Code hooks.</strong> Each agent is launched with lifecycle hooks wired through a tiny shim that
@@ -252,7 +252,7 @@ you’d see bytes but have to guess at meaning.</li>
 <p>Together they’re complementary: the office floor is <strong>event-driven</strong> (precise, structured, cheap to
 render), and the terminal view is <strong>byte-for-byte authentic</strong> (the full detail when you want it). Two
 planes, two questions, both answered well.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-2.png" alt="Hand-drawn sketch from “Vishwajeet Team's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-2.png" alt="Hand-drawn sketch from “Munder Difflin's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
 <h2 id="one-renderer-convergence" tabindex="-1">One renderer convergence <a class="anchor" href="#one-renderer-convergence" aria-hidden="true">#</a></h2>
 <p>Both planes terminate in a single Electron renderer running React and Pixi.js:</p>
 <ul>

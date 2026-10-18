@@ -33,7 +33,7 @@ Agent tools today, 5 Oct 2026, in one line: the defaults moved toward letting ag
 ## Top 4 moves from multi agent tools
 
 1. **Paperclip.** Version v2026.1001.0 reached GitHub on 2 Oct with 77 commits. Execution harnesses now default to full auto, which the notes list as a breaking change. Agents can also review GitHub pull requests as scheduled review bots. MIT, 97,247 stars. [Source](https://github.com/paperclipai/paperclip/releases/tag/v2026.1001.0)
-2. **Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download), free and open source: no new release today. The latest is v0.5.5, from 1 Oct. [Source](https://github.com/HarnessMD/munder-difflin/releases)
+2. **Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download), free and open source: no new release today. The latest is v0.5.5, from 1 Oct. [Source](https://github.com/Vishwajeetsrk/Team/releases)
 3. **Superset.** Desktop v1.35.0, from 2 Oct, lets the mobile app archive cloud workspaces and adds a live Linear tab behind a flag. 14,873 stars. [Source](https://github.com/superset-sh/superset/releases/tag/desktop-v1.35.0)
 4. **hello-cc.** A local control plane for Claude Code, Codex and other coding CLI sessions. Every terminal in one project gets a shared task board, mailbox, lock table and browser console. Apache 2.0, 17 stars, so it is early. [Source](https://github.com/Dullne/hello-cc)
 

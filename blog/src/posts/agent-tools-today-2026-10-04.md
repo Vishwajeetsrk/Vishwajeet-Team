@@ -33,7 +33,7 @@ Agent tools today, 4 Oct 2026, in one line: the builders asked in public. Tibo, 
 ## Top 5 moves from multi agent tools
 
 1. **OpenClaw.** Creator Peter Steinberger said the OpenClaw Android app has been in review for over a week, and asked if anyone at Google could help. 7,314 likes and 1,273,032 views. [Source](https://x.com/steipete/status/2106446147791597774)
-2. **Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download), free and open source: no new release today. The latest is v0.5.5, from 1 Oct. [Source](https://github.com/HarnessMD/munder-difflin/releases)
+2. **Vishwajeet Team.** [Vishwajeet Team](https://harnessmd.com/download), free and open source: no new release today. The latest is v0.5.5, from 1 Oct. [Source](https://github.com/Vishwajeetsrk/Team/releases)
 3. **Pi.** Two patch releases after 1.0: v1.0.1 on 3 Oct added a Nix flake and per project overrides for MCP servers, and v1.0.2 on 4 Oct added sampling settings per thinking level. Background: [what is Pi agent](/blog/what-is-pi-agent/). [Source](https://github.com/earendil-works/pi/releases)
 4. **Orca.** Release v1.4.220 on 4 Oct. In the experimental native chat, the Stop button now ends Claude's process, including background commands and subagents. [Source](https://github.com/stablyai/orca/releases/tag/v1.4.220)
 5. **Cline.** Cline said Ling 3.1 Flash is now available in Cline and free until 13 Oct. 346 likes. [Source](https://x.com/cline/status/2106470199415456151)

@@ -38,7 +38,7 @@
 <meta property="og:image:alt" content="Hand drawn sketch: a lightning bolt wired through a bell to a yellow character at a terminal, labelled 75+ providers, local too, and one agent, any model" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-09-29T00:00:00.000Z" />
-<meta property="article:author" content="Chaitanya Giri" />
+<meta property="article:author" content="Vishwajeet" />
 <meta property="article:tag" content="Concepts" />
 <meta property="article:tag" content="Open Source" />
 <meta property="article:tag" content="CLI Agents" />
@@ -67,7 +67,7 @@
   "image": ["https://munderdiffl.in/blog/assets/media/what-is-opencode/hero.png"],
   "datePublished": "2026-09-29T00:00:00.000Z",
   "dateModified": "2026-09-29T00:00:00.000Z",
-  "author": { "@type": "Person", "name": "Chaitanya Giri" },
+  "author": { "@type": "Person", "name": "Vishwajeet" },
   "publisher": {
     "@type": "Organization",
     "name": "Vishwajeet Team",
@@ -174,7 +174,7 @@
     <p class="dek">OpenCode is Anomaly&#39;s MIT licensed coding agent for the terminal. What it is, how to install it, what it costs, and how it compares with Claude Code and Codex.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">MD</span>
-      <strong>Chaitanya Giri</strong>
+      <strong>Vishwajeet</strong>
       <span class="dot" aria-hidden="true">·</span>
       <time datetime="2026-09-29">Sep 29, 2026</time>
       <span class="dot" aria-hidden="true">·</span>
@@ -345,7 +345,7 @@ It prints `Hello, Scranton`.
 <p><strong>Pick Codex CLI if</strong> you pay for ChatGPT and want OpenAI’s agent with an open source client.</p>
 <p>Our <a href="/blog/codex-cli-vs-claude-code/">Codex CLI vs Claude Code</a> comparison goes further on those two, and <a href="/blog/best-ai-coding-agents/">best AI coding agents</a> covers the wider field. For the two tool version with prices, see <a href="/blog/opencode-vs-claude-code/">OpenCode vs Claude Code</a>.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/what-is-opencode/note-2.png" alt="Hand drawn sketch: a yellow character at a desk typing into a terminal" loading="lazy" decoding="async" /></figure>
-<h2 id="does-munder-difflin-run-opencode" tabindex="-1">Does Vishwajeet Team run OpenCode? <a class="anchor" href="#does-munder-difflin-run-opencode" aria-hidden="true">#</a></h2>
+<h2 id="does-vishwajeet-team-run-opencode" tabindex="-1">Does Vishwajeet Team run OpenCode? <a class="anchor" href="#does-vishwajeet-team-run-opencode" aria-hidden="true">#</a></h2>
 <p>Yes. In Vishwajeet Team 0.5.3, <code>src/shared/agentProvider.ts</code> lists OpenCode as an engine, with a comment naming anomalyco/opencode and ruling out the archived Go project. It starts the normal <code>opencode</code> interface in the agent’s terminal and passes the brief with <code>--prompt</code>.</p>
 <p>It picks no model for you. <code>--model provider/model</code> goes on the command only when you choose one, so otherwise OpenCode uses whatever you configured. If <code>opencode</code> is missing, the app runs <code>npm install -g opencode-ai@latest</code> in that terminal, installing Node first when npm is absent and falling back to the official script, or Chocolatey on Windows, then relaunches the agent. Each agent gets an <code>OPENCODE_CONFIG_CONTENT</code> value that turns auto update off, and edit, bash and webfetch are set to allow only when the floor’s Auto Mode is on.</p>
 <p>One limit: the code does not resume an OpenCode session after a respawn, it starts a fresh one. To run OpenCode on local models inside the app, see <a href="/blog/run-munder-difflin-on-open-models/">run Vishwajeet Team on open models</a>.</p>
@@ -396,7 +396,7 @@ It prints `Hello, Scranton`.
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#what-is-opencode">What is OpenCode?</a></li><li class="lvl-2"><a href="#is-opencode-the-same-as-crush">Is OpenCode the same as Crush?</a></li><li class="lvl-2"><a href="#how-do-i-install-opencode">How do I install OpenCode?</a></li><li class="lvl-2"><a href="#does-opencode-work-without-an-api-key">Does OpenCode work without an API key?</a></li><li class="lvl-2"><a href="#is-opencode-free">Is OpenCode free?</a></li><li class="lvl-2"><a href="#can-opencode-use-my-claude-subscription">Can OpenCode use my Claude subscription?</a></li><li class="lvl-2"><a href="#opencode-vs-claude-code-vs-codex-cli-which-should-you-use">OpenCode vs Claude Code vs Codex CLI: which should you use?</a></li><li class="lvl-2"><a href="#does-munder-difflin-run-opencode">Does Vishwajeet Team run OpenCode?</a></li>
+        <li class="lvl-2"><a href="#what-is-opencode">What is OpenCode?</a></li><li class="lvl-2"><a href="#is-opencode-the-same-as-crush">Is OpenCode the same as Crush?</a></li><li class="lvl-2"><a href="#how-do-i-install-opencode">How do I install OpenCode?</a></li><li class="lvl-2"><a href="#does-opencode-work-without-an-api-key">Does OpenCode work without an API key?</a></li><li class="lvl-2"><a href="#is-opencode-free">Is OpenCode free?</a></li><li class="lvl-2"><a href="#can-opencode-use-my-claude-subscription">Can OpenCode use my Claude subscription?</a></li><li class="lvl-2"><a href="#opencode-vs-claude-code-vs-codex-cli-which-should-you-use">OpenCode vs Claude Code vs Codex CLI: which should you use?</a></li><li class="lvl-2"><a href="#does-vishwajeet-team-run-opencode">Does Vishwajeet Team run OpenCode?</a></li>
       </ol>
     </aside>
     
