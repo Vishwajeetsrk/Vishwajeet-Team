@@ -1,0 +1,29 @@
+---
+layout: base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "/tags/{{ tag.slug }}/index.html"
+# Tag pages are thin listings (87 of 137 under 150 words, site audit 2026-09-28).
+# Keep them for readers, keep their links followed, keep them out of the index.
+noindex: true
+eleventyComputed:
+  title: "#{{ tag.name }}"
+  description: "Munder Difflin blog posts tagged {{ tag.name }}."
+  seoTitle: "{{ tag.name }} — Munder Difflin Blog"
+  canonicalUrl: "{{ site.origin }}/blog/tags/{{ tag.slug }}/"
+---
+{% block content %}
+{%- set matches = collections.posts | byTag(tag.name) -%}
+<header class="page-head wrap">
+  <p class="eyebrow">Tag</p>
+  <h1>#{{ tag.name }}</h1>
+  <p class="lead">{{ matches.length }} post{{ "s" if matches.length != 1 }} tagged <strong>{{ tag.name }}</strong>.</p>
+</header>
+<section class="wrap">
+  <div class="post-grid">
+    {% for p in matches %}{% include "card.njk" %}{% endfor %}
+  </div>
+</section>
+{% endblock %}

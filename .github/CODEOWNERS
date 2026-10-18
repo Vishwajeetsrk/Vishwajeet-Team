@@ -1,0 +1,21 @@
+# Every pull request gets a review request automatically, so nothing sits waiting
+# for someone to notice it. Ownership here is about routing, not permission.
+#
+# Last match wins, so the specific rules below override the catch-all.
+
+* @Vishwajeetsrk
+
+# Release, signing and CI plumbing. Breaking these breaks shipping for everyone.
+/.github/workflows/    @Vishwajeetsrk
+/electron-builder.yml  @Vishwajeetsrk
+/RELEASE.md            @Vishwajeetsrk
+/RELEASE-CHECKLIST.md  @Vishwajeetsrk
+
+# Licensing and attribution. Changes here have legal weight.
+/LICENSE                                  @Vishwajeetsrk
+/LICENSE-ASSETS                           @Vishwajeetsrk
+/src/renderer/src/assets/ATTRIBUTION.md    @Vishwajeetsrk
+
+# Security and privacy surface.
+/SECURITY.md   @Vishwajeetsrk
+/TELEMETRY.md  @Vishwajeetsrk
