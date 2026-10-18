@@ -81,7 +81,27 @@ jobs:
           APPLE_APP_SPECIFIC_PASSWORD: ${{ matrix.os == 'macos-latest' && secrets.APPLE_APP_SPECIFIC_PASSWORD || '' }}
           APPLE_TEAM_ID: ${{ matrix.os == 'macos-latest' && secrets.APPLE_TEAM_ID || '' }}
 
+      - name: Package installers (mac, plain-name fallback)
+        # Diagnostic + rescue for the universal mac build whose signed/universal
+        # merge has failed only here ("? ... not a file"). The one config value
+        # the branch could be choking on is the bracketed decorations in the
+        # productName ("Vishwajeet Team [AI Company]") which macOS paths expose
+        # to glob-like parsing. Retry with a plain, bracket-less productName.
+        # artifactName templates are unaffected, so the published asset names
+        # stay identical. Either it builds — brackets implicated — or the
+        # failure reproduces with a plain name and the bug lies elsewhere.
+        if: failure() && matrix.os == 'macos-latest'
+        shell: bash
+        run: |
+          rm -rf dist/mac-universal dist/mac-universal-*-temp
+          rm -f dist/*.dmg dist/*.zip
+          npx electron-builder --mac --publish never --config.productName="Vishwajeet Team"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEBUG: electron-builder
+
       - name: Generate checksums
+        if: always()
         shell: bash
         run: |
           cd dist
@@ -96,6 +116,7 @@ jobs:
           cat "SHA256SUMS-${{ matrix.os }}.txt"
 
       - name: Upload build artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.os }}-dist
