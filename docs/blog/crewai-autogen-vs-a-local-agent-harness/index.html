@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CrewAI and AutoGen vs a Local Agent Harness: Framework or App? — Munder Difflin Blog</title>
+<title>CrewAI and AutoGen vs a Local Agent Harness: Framework or App? — Vishwajeet Team Blog</title>
 <meta name="description" content="CrewAI, AutoGen (now Microsoft Agent Framework), and LangGraph are frameworks — Python you write to build your own agent system. A multi-agent harness is an app you download that runs a team on your repos today. Here&#39;s how to tell which one you actually need." />
 <link rel="canonical" href="https://munderdiffl.in/blog/crewai-autogen-vs-a-local-agent-harness/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="CrewAI and AutoGen vs a Local Agent Harness: Framework or App? — Munder Difflin Blog" />
+<meta property="og:title" content="CrewAI and AutoGen vs a Local Agent Harness: Framework or App? — Vishwajeet Team Blog" />
 <meta property="og:description" content="CrewAI, AutoGen (now Microsoft Agent Framework), and LangGraph are frameworks — Python you write to build your own agent system. A multi-agent harness is an app you download that runs a team on your repos today. Here&#39;s how to tell which one you actually need." />
 <meta property="og:url" content="https://munderdiffl.in/blog/crewai-autogen-vs-a-local-agent-harness/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/crewai-autogen-vs-a-local-agent-harness/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="CrewAI and AutoGen vs a Local Agent Harness: Framework or App? — Munder Difflin Blog" />
+<meta name="twitter:title" content="CrewAI and AutoGen vs a Local Agent Harness: Framework or App? — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="CrewAI, AutoGen (now Microsoft Agent Framework), and LangGraph are frameworks — Python you write to build your own agent system. A multi-agent harness is an app you download that runs a team on your repos today. Here&#39;s how to tell which one you actually need." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/crewai-autogen-vs-a-local-agent-harness/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: CrewAI and AutoGen vs a Local Agent Harness: Framework or App?" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/crewai-autogen-vs-a-local-agent-harness/" },
@@ -101,9 +101,9 @@
     { "@type": "Question", "name": "What's the difference between a multi-agent framework and a multi-agent harness?", "acceptedAnswer": { "@type": "Answer", "text": "A framework is a library — CrewAI, Microsoft Agent Framework, and LangGraph are Python (and .NET/JS) packages you import to build your own agent system, which means you also build the UI, guardrails, memory, and triggers around it. A harness is a finished application: you download it, point it at your repos, and a coordinated team of agents runs with orchestration, approvals, budgets, and memory already built in. Same underlying idea, opposite division of labor." } },
     { "@type": "Question", "name": "Is CrewAI free and open source?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The CrewAI Python framework is MIT-licensed and open source, with agents organized into Crews (autonomous role-based teams) and Flows (event-driven workflows with precise control). You bring an LLM API key — OpenAI by default, with local models via Ollama supported — and CrewAI also sells an enterprise platform (AMP) for managed deployment, observability, and governance." } },
     { "@type": "Question", "name": "What happened to Microsoft AutoGen?", "acceptedAnswer": { "@type": "Answer", "text": "Microsoft merged AutoGen with Semantic Kernel into the Microsoft Agent Framework, which reached its production-ready 1.0 release in April 2026 for Python and .NET. AutoGen and Semantic Kernel are now in maintenance mode — bug fixes and security patches, but new feature work happens in Agent Framework. It combines AutoGen's agent abstractions with Semantic Kernel's enterprise features plus graph-based workflows." } },
-    { "@type": "Question", "name": "Do frameworks like CrewAI or LangGraph require API keys?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes — they call model provider APIs directly, so you supply keys (or point at a local model server). A harness like Munder Difflin instead drives the agent CLIs you already run — Claude Code, Codex, Copilot CLI and others — so it can ride the subscriptions you already pay for, with BYO keys and local LLMs as options rather than requirements." } },
+    { "@type": "Question", "name": "Do frameworks like CrewAI or LangGraph require API keys?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes — they call model provider APIs directly, so you supply keys (or point at a local model server). A harness like Vishwajeet Team instead drives the agent CLIs you already run — Claude Code, Codex, Copilot CLI and others — so it can ride the subscriptions you already pay for, with BYO keys and local LLMs as options rather than requirements." } },
     { "@type": "Question", "name": "When should I pick a framework instead of a harness?", "acceptedAnswer": { "@type": "Answer", "text": "Pick a framework when the agent system is a component of your product: a support pipeline inside your SaaS, a document-processing workflow, anything that needs custom logic, your own deployment, and tight integration with your stack. CrewAI, Agent Framework, and LangGraph are excellent at exactly that. Pick a harness when the goal is a team of coding agents working your repos today, with no code to write." } },
-    { "@type": "Question", "name": "Is Munder Difflin a framework I can import into my own app?", "acceptedAnswer": { "@type": "Answer", "text": "No. It's a local-first, MIT-licensed Electron desktop app for macOS, Windows, and Linux — the harness itself is the product. You download it, spawn agents that run as real CLI processes in isolated git worktrees, and a GOD orchestrator routes work between them while you watch, with approvals, budgets, a circuit breaker, and shared memory already wired in." } }
+    { "@type": "Question", "name": "Is Vishwajeet Team a framework I can import into my own app?", "acceptedAnswer": { "@type": "Answer", "text": "No. It's a local-first, MIT-licensed Electron desktop app for macOS, Windows, and Linux — the harness itself is the product. You download it, spawn agents that run as real CLI processes in isolated git worktrees, and a GOD orchestrator routes work between them while you watch, with approvals, budgets, a circuit breaker, and shared memory already wired in." } }
     
   ]
 }
@@ -147,8 +147,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -189,9 +189,9 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>CrewAI, AutoGen (now Microsoft Agent Framework), and LangGraph are frameworks</strong> — Python you import to <em>build</em> a multi-agent system, which means you also build the UI, guardrails, memory, and triggers yourself. <strong>A multi-agent harness is the finished app</strong>: Munder Difflin is a free, local-first desktop app that drives the agent CLIs you already have — Claude Code, Codex, Copilot CLI — as a coordinated team, with an orchestrator, approval gates, budgets, and shared memory built in. <strong>Frameworks win when agents are a component of your product. A harness wins when you want a team working your repos today, with no code.</strong></p></div>
+      <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>CrewAI, AutoGen (now Microsoft Agent Framework), and LangGraph are frameworks</strong> — Python you import to <em>build</em> a multi-agent system, which means you also build the UI, guardrails, memory, and triggers yourself. <strong>A multi-agent harness is the finished app</strong>: Vishwajeet Team is a free, local-first desktop app that drives the agent CLIs you already have — Claude Code, Codex, Copilot CLI — as a coordinated team, with an orchestrator, approval gates, budgets, and shared memory built in. <strong>Frameworks win when agents are a component of your product. A harness wins when you want a team working your repos today, with no code.</strong></p></div>
 <p>“Which multi-agent framework should I use?” is usually the wrong first question. The right first question is: <strong>are you building an agent system, or do you want to use one?</strong></p>
-<p>Those are different jobs, and the tools for them belong to different categories. CrewAI, Microsoft’s Agent Framework, and LangGraph sit in one; a multi-agent harness like Munder Difflin sits in the other. This post draws the line honestly, because both sides of it are good at what they’re for.</p>
+<p>Those are different jobs, and the tools for them belong to different categories. CrewAI, Microsoft’s Agent Framework, and LangGraph sit in one; a multi-agent harness like Vishwajeet Team sits in the other. This post draws the line honestly, because both sides of it are good at what they’re for.</p>
 <h2 id="what-the-frameworks-actually-are" tabindex="-1">What the frameworks actually are <a class="anchor" href="#what-the-frameworks-actually-are" aria-hidden="true">#</a></h2>
 <p><strong>CrewAI</strong> is an MIT-licensed Python framework for orchestrating role-based agents. You define agents, tasks, and workflows in code: <em>Crews</em> for autonomous collaborative teams, <em>Flows</em> for event-driven workflows with conditional branching and state management. You bring an LLM API key (OpenAI by default; local models via Ollama work too), and there’s a commercial platform (AMP) layered on top for managed deployment, observability, and governance. It’s a genuinely well-designed library with serious enterprise adoption.</p>
 <p><strong>AutoGen</strong> — the Microsoft research project that popularized conversational multi-agent patterns — has been merged with Semantic Kernel into the <strong>Microsoft Agent Framework</strong>, which shipped its production-ready 1.0 in April 2026 for Python and .NET. AutoGen and Semantic Kernel themselves are in maintenance mode; Agent Framework carries the torch, combining AutoGen’s agent abstractions with Semantic Kernel’s enterprise plumbing (state management, middleware, telemetry) plus graph-based workflows. If you’re on Azure and building agents into a product, it’s the obvious pick.</p>
@@ -209,9 +209,9 @@
 </ul>
 <p>Frameworks are adding pieces of this (LangGraph’s interrupts, CrewAI’s memory and tracing, Agent Framework’s telemetry), and their commercial platforms sell more of it. But the assembled, running system is still your project. That’s a great deal if the agent system <em>is</em> your product. It’s a terrible deal if what you wanted was help with your repos this afternoon.</p>
 <h2 id="what-a-harness-is-instead" tabindex="-1">What a harness is instead <a class="anchor" href="#what-a-harness-is-instead" aria-hidden="true">#</a></h2>
-<p>A <a href="/blog/what-is-a-multi-agent-harness/">multi-agent harness</a> is the other answer: the system, already assembled, as an app. Munder Difflin is a free, MIT-licensed, local-first desktop app (macOS/Windows/Linux) where every agent is a <strong>real CLI process</strong> — Claude Code, OpenAI Codex, Antigravity, OpenCode, Crush, pi.dev, GitHub Copilot CLI — running in its own pseudo-terminal and its own isolated git worktree. A <a href="/blog/how-the-god-orchestrator-works/">GOD orchestrator</a> routes work between them; agents share long-term memory; triggers include typing, Slack, webhooks, schedules, and voice.</p>
+<p>A <a href="/blog/what-is-a-multi-agent-harness/">multi-agent harness</a> is the other answer: the system, already assembled, as an app. Vishwajeet Team is a free, MIT-licensed, local-first desktop app (macOS/Windows/Linux) where every agent is a <strong>real CLI process</strong> — Claude Code, OpenAI Codex, Antigravity, OpenCode, Crush, pi.dev, GitHub Copilot CLI — running in its own pseudo-terminal and its own isolated git worktree. A <a href="/blog/how-the-god-orchestrator-works/">GOD orchestrator</a> routes work between them; agents share long-term memory; triggers include typing, Slack, webhooks, schedules, and voice.</p>
 <p>The pieces you’d have built around a framework are already there: <a href="/blog/human-in-the-loop-approving-ai-agents/">human approval gates</a> on spend, scope, and destructive ops; a circuit breaker with a steer → constrain → stop ladder; per-agent token budgets; OpenTelemetry observability; a Command Center with a kanban board and live fleet monitoring. And because it drives CLIs rather than calling model APIs, it rides the <strong>subscriptions you already pay for</strong> — no mandatory API key, with BYO keys and local LLMs as options.</p>
-<p>The honest flip side: you can’t <code>import</code> Munder Difflin into your SaaS. It won’t run your custom document pipeline inside your product. It’s an app for a specific job — a team of agents working your repositories, visible on one screen — not a toolkit for arbitrary agent systems. Server based meta harnesses such as Databricks’ Omnigent sit in between, which our <a href="/blog/omniagent-alternatives/">OmniAgent alternatives</a> post covers.</p>
+<p>The honest flip side: you can’t <code>import</code> Vishwajeet Team into your SaaS. It won’t run your custom document pipeline inside your product. It’s an app for a specific job — a team of agents working your repositories, visible on one screen — not a toolkit for arbitrary agent systems. Server based meta harnesses such as Databricks’ Omnigent sit in between, which our <a href="/blog/omniagent-alternatives/">OmniAgent alternatives</a> post covers.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/crewai-autogen-vs-a-local-agent-harness/note-2.png" alt="Hand-drawn sketch from “CrewAI and AutoGen vs a Local Agent Harness: Framework or App?”" loading="lazy" decoding="async" /></figure>
 <h2 id="the-honest-decision-rule" tabindex="-1">The honest decision rule <a class="anchor" href="#the-honest-decision-rule" aria-hidden="true">#</a></h2>
 <p><strong>Choose a framework (CrewAI, Agent Framework, LangGraph) when:</strong></p>
@@ -220,7 +220,7 @@
 <li>You need custom orchestration logic, your own deployment story, or deep integration with your stack (Azure, LangSmith, your data layer).</li>
 <li>You have engineering time to build and maintain the surrounding harness, and that investment pays off because the system is core to your business.</li>
 </ul>
-<p><strong>Choose a harness (Munder Difflin) when:</strong></p>
+<p><strong>Choose a harness (Vishwajeet Team) when:</strong></p>
 <ul>
 <li>The goal is “a team working my repos today” — coding, reviewing, fixing issues — with zero glue code.</li>
 <li>You want guardrails, memory, isolation, and a UI on day one, not as a Q3 project.</li>
@@ -228,7 +228,7 @@
 </ul>
 <p>There’s no loser here. It’s the same distinction as Rails vs. a deployed app: nobody asks which is “better,” because one is for builders of systems and the other is a system. If you’re still weighing categories, <a href="/blog/how-to-choose-a-multi-agent-tool/">how to choose a multi-agent tool</a> walks the wider field, and <a href="/blog/local-first-vs-cloud-agent-sdks/">local-first vs cloud agent SDKs</a> covers the deployment axis.</p>
 <h2 id="try-the-harness-side-in-five-minutes" tabindex="-1">Try the harness side in five minutes <a class="anchor" href="#try-the-harness-side-in-five-minutes" aria-hidden="true">#</a></h2>
-<p>If your answer was “I just want the team,” that’s the job Munder Difflin exists for. <a href="https://github.com/chaitanyagiri/munder-difflin/releases/latest">Download the latest release</a> — free, open source, local-first — and if it earns it, <a href="https://github.com/chaitanyagiri/munder-difflin">a GitHub star</a> helps more people find it.</p>
+<p>If your answer was “I just want the team,” that’s the job Vishwajeet Team exists for. <a href="https://github.com/Vishwajeetsrk/Team/releases/latest">Download the latest release</a> — free, open source, local-first — and if it earns it, <a href="https://github.com/Vishwajeetsrk/Team">a GitHub star</a> helps more people find it.</p>
 <p>Sources: <a href="https://github.com/crewAIInc/crewAI">CrewAI on GitHub</a>; <a href="https://learn.microsoft.com/en-us/agent-framework/overview/">Microsoft Agent Framework overview</a>; <a href="https://devblogs.microsoft.com/agent-framework/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/">Migrating Semantic Kernel and AutoGen to Agent Framework</a>; <a href="https://www.langchain.com/langgraph">LangGraph</a>.</p>
 
 
@@ -253,7 +253,7 @@
         
         <div class="qa">
           <p class="q">Do frameworks like CrewAI or LangGraph require API keys?</p>
-          <p class="a">Generally yes — they call model provider APIs directly, so you supply keys (or point at a local model server). A harness like Munder Difflin instead drives the agent CLIs you already run — Claude Code, Codex, Copilot CLI and others — so it can ride the subscriptions you already pay for, with BYO keys and local LLMs as options rather than requirements.</p>
+          <p class="a">Generally yes — they call model provider APIs directly, so you supply keys (or point at a local model server). A harness like Vishwajeet Team instead drives the agent CLIs you already run — Claude Code, Codex, Copilot CLI and others — so it can ride the subscriptions you already pay for, with BYO keys and local LLMs as options rather than requirements.</p>
         </div>
         
         <div class="qa">
@@ -262,7 +262,7 @@
         </div>
         
         <div class="qa">
-          <p class="q">Is Munder Difflin a framework I can import into my own app?</p>
+          <p class="q">Is Vishwajeet Team a framework I can import into my own app?</p>
           <p class="a">No. It&#39;s a local-first, MIT-licensed Electron desktop app for macOS, Windows, and Linux — the harness itself is the product. You download it, spawn agents that run as real CLI processes in isolated git worktrees, and a GOD orchestrator routes work between them while you watch, with approvals, budgets, a circuit breaker, and shared memory already wired in.</p>
         </div>
         
@@ -354,20 +354,20 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

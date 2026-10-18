@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Approving AI Agents: Human-in-the-Loop Without a Queue — Munder Difflin Blog</title>
+<title>Approving AI Agents: Human-in-the-Loop Without a Queue — Vishwajeet Team Blog</title>
 <meta name="description" content="How to approve what AI agents do without a parallel approval queue: native permission prompts, routing &#39;to: human&#39; to the orchestrator, remote approval." />
 <link rel="canonical" href="https://munderdiffl.in/blog/human-in-the-loop-approving-ai-agents/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Approving AI Agents: Human-in-the-Loop Without a Queue — Munder Difflin Blog" />
+<meta property="og:title" content="Approving AI Agents: Human-in-the-Loop Without a Queue — Vishwajeet Team Blog" />
 <meta property="og:description" content="How to approve what AI agents do without a parallel approval queue: native permission prompts, routing &#39;to: human&#39; to the orchestrator, remote approval." />
 <meta property="og:url" content="https://munderdiffl.in/blog/human-in-the-loop-approving-ai-agents/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/human-in-the-loop-approving-ai-agents/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Approving AI Agents: Human-in-the-Loop Without a Queue — Munder Difflin Blog" />
+<meta name="twitter:title" content="Approving AI Agents: Human-in-the-Loop Without a Queue — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="How to approve what AI agents do without a parallel approval queue: native permission prompts, routing &#39;to: human&#39; to the orchestrator, remote approval." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/human-in-the-loop-approving-ai-agents/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Approving AI Agents: Human-in-the-Loop Without a Queue" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/human-in-the-loop-approving-ai-agents/" },
@@ -98,7 +98,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "How do you put a human in the loop on AI agent actions?", "acceptedAnswer": { "@type": "Answer", "text": "Approve where the work already happens. Modern coding agents (Claude Code among them) already pause and ask permission before risky actions, right in their own session. The reliable pattern is to lean on that native prompt rather than building a separate approval queue — and to route any explicit 'I need a human' decision to a single person or their proxy, so there's one place an answer comes from." } },
-    { "@type": "Question", "name": "Why not build a dedicated approval queue for agents?", "acceptedAnswer": { "@type": "Answer", "text": "Because it duplicates state. A custom queue becomes a second source of truth that can drift from the agent's actual state and adds its own failure modes — Munder Difflin's old in-app queue could even re-queue an item when you approved it. Removing the queue in favor of native permission prompts deleted the bug along with the abstraction." } },
+    { "@type": "Question", "name": "Why not build a dedicated approval queue for agents?", "acceptedAnswer": { "@type": "Answer", "text": "Because it duplicates state. A custom queue becomes a second source of truth that can drift from the agent's actual state and adds its own failure modes — Vishwajeet Team's old in-app queue could even re-queue an item when you approved it. Removing the queue in favor of native permission prompts deleted the bug along with the abstraction." } },
     { "@type": "Question", "name": "Can you approve an AI agent's action remotely?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Because approval rides on the native permission prompt in the agent's session, it can be approved wherever you can reach that session — including from your phone via /remote-control. A blocking action waits for your yes; you don't have to be at your desk to give it." } }
     
   ]
@@ -143,8 +143,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -187,7 +187,7 @@
     <div class="prose">
       <div class="callout tldr"><span class="ic">TL;DR</span><p>The right way to put a human in the loop on
 agent actions isn't a <strong>custom approval queue</strong> bolted onto your system — it's to
-<strong>approve where the work already happens</strong>. Munder Difflin <em>removed</em> its in-app
+<strong>approve where the work already happens</strong>. Vishwajeet Team <em>removed</em> its in-app
 approval queue in v0.1.7 in favor of <strong>native Claude Code permission prompts</strong>: the agent
 pauses in its own terminal, you approve (even from your phone via <code>/remote-control</code>), and any
 explicit "I need a human" message routes to the <strong>orchestrator — the human's proxy on the
@@ -210,10 +210,10 @@ the queue has a <em>representation</em> of that situation in a panel. Now you ow
 systems: keeping two sources of truth in sync. They drift. The queue shows an item the agent already
 moved past; an approval lands but the agent’s context has changed; the panel and the session disagree
 about what “yes” even means.</p>
-<p>It also adds its own failure modes. Munder Difflin shipped exactly this at first — a floating approvals
+<p>It also adds its own failure modes. Vishwajeet Team shipped exactly this at first — a floating approvals
 panel — and learned the lesson the hard way: approving an item could <strong>re-queue it</strong>, because resolving
 an approval re-routed the message back into the queue. The
-<a href="https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md">v0.1.7 release</a> notes it plainly:
+<a href="https://github.com/Vishwajeetsrk/Team/blob/main/CHANGELOG.md">v0.1.7 release</a> notes it plainly:
 “Moving to native HITL removes the panel and the bug.” Deleting the abstraction deleted the class of bug
 with it.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/human-in-the-loop-approving-ai-agents/note-1.png" alt="Hand-drawn sketch from “Approving AI Agents: Human-in-the-Loop Without a Queue”" loading="lazy" decoding="async" /></figure>
@@ -250,7 +250,7 @@ recipient, one source of truth, no parallel inbox to babysit.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/human-in-the-loop-approving-ai-agents/note-2.png" alt="Hand-drawn sketch from “Approving AI Agents: Human-in-the-Loop Without a Queue”" loading="lazy" decoding="async" /></figure>
 <h2 id="approve-from-anywhere" tabindex="-1">Approve from anywhere <a class="anchor" href="#approve-from-anywhere" aria-hidden="true">#</a></h2>
 <p>A nice property falls out of doing it this way: because approval rides on the native session prompt,
-<strong>you can approve from wherever you can reach the session.</strong> Munder Difflin’s <code>/remote-control</code> lets the
+<strong>you can approve from wherever you can reach the session.</strong> Vishwajeet Team’s <code>/remote-control</code> lets the
 human approve a blocking action from their phone — the agent waits, you tap yes on the train, it
 continues. A queue would have forced you to build remote approval as yet another feature; native HITL
 gets it almost for free, because you’re just answering the prompt the agent is already blocked on.</p>
@@ -274,7 +274,7 @@ blocks — the native permission prompt — and route genuine “I need a person
 the orchestrator. You get approvals that can’t drift, that work remotely, and that don’t carry their own
 bugs. The best approval queue is the one you didn’t build.</p>
 <p>Want to see native, no-queue approvals — and a hive that routes its own escalations to an orchestrator
-you talk to? You can <a href="/#install">download Munder Difflin</a> free; it’s open source.</p>
+you talk to? You can <a href="/#install">download Vishwajeet Team</a> free; it’s open source.</p>
 
 
       
@@ -288,7 +288,7 @@ you talk to? You can <a href="/#install">download Munder Difflin</a> free; it’
         
         <div class="qa">
           <p class="q">Why not build a dedicated approval queue for agents?</p>
-          <p class="a">Because it duplicates state. A custom queue becomes a second source of truth that can drift from the agent&#39;s actual state and adds its own failure modes — Munder Difflin&#39;s old in-app queue could even re-queue an item when you approved it. Removing the queue in favor of native permission prompts deleted the bug along with the abstraction.</p>
+          <p class="a">Because it duplicates state. A custom queue becomes a second source of truth that can drift from the agent&#39;s actual state and adds its own failure modes — Vishwajeet Team&#39;s old in-app queue could even re-queue an item when you approved it. Removing the queue in favor of native permission prompts deleted the bug along with the abstraction.</p>
         </div>
         
         <div class="qa">
@@ -384,20 +384,20 @@ you talk to? You can <a href="/#install">download Munder Difflin</a> free; it’
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

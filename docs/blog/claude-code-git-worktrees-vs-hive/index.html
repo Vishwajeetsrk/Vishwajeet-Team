@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code — Munder Difflin Blog</title>
+<title>Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code — Vishwajeet Team Blog</title>
 <meta name="description" content="Claude Code git worktrees vs a hive: when isolated worktrees suffice for parallel agents, and when you need memory, messaging, and an orchestrator on top." />
 <link rel="canonical" href="https://munderdiffl.in/blog/claude-code-git-worktrees-vs-hive/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code — Munder Difflin Blog" />
+<meta property="og:title" content="Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code — Vishwajeet Team Blog" />
 <meta property="og:description" content="Claude Code git worktrees vs a hive: when isolated worktrees suffice for parallel agents, and when you need memory, messaging, and an orchestrator on top." />
 <meta property="og:url" content="https://munderdiffl.in/blog/claude-code-git-worktrees-vs-hive/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/claude-code-git-worktrees-vs-hive/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code — Munder Difflin Blog" />
+<meta name="twitter:title" content="Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Claude Code git worktrees vs a hive: when isolated worktrees suffice for parallel agents, and when you need memory, messaging, and an orchestrator on top." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/claude-code-git-worktrees-vs-hive/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Git Worktrees vs a Hive: Two Ways to Parallelize Claude Code" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/claude-code-git-worktrees-vs-hive/" },
@@ -99,7 +99,7 @@
   "mainEntity": [
     { "@type": "Question", "name": "What is a git worktree?", "acceptedAnswer": { "@type": "Answer", "text": "A git worktree is an additional working directory attached to one repository. Each worktree has its own checked-out branch and its own index, but they share the same object store and refs — so you can have several branches checked out at once without cloning the repo multiple times." } },
     { "@type": "Question", "name": "Are git worktrees enough to run parallel Claude Code agents?", "acceptedAnswer": { "@type": "Answer", "text": "For independent tasks on separate branches, often yes — worktrees give each agent its own files so they don't collide. What worktrees don't provide is coordination: shared memory, messaging between agents, or an orchestrator that divides one goal across the team." } },
-    { "@type": "Question", "name": "Can I use worktrees and a hive together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Worktrees solve workspace isolation; a hive solves coordination. You can run a coordinated hive where each agent works in its own worktree, getting both isolation and shared memory plus messaging. In Munder Difflin v0.1.6 this is built-in — the Git isolation toggle in Add Agent handles it automatically." } }
+    { "@type": "Question", "name": "Can I use worktrees and a hive together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Worktrees solve workspace isolation; a hive solves coordination. You can run a coordinated hive where each agent works in its own worktree, getting both isolation and shared memory plus messaging. In Vishwajeet Team v0.1.6 this is built-in — the Git isolation toggle in Add Agent handles it automatically." } }
     
   ]
 }
@@ -143,8 +143,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -251,7 +251,7 @@ directory, you need a discipline (single-writer files, single-committer git) to 
 colliding. Which is exactly where worktrees come back in.</p>
 <h2 id="they-compose" tabindex="-1">They compose <a class="anchor" href="#they-compose" aria-hidden="true">#</a></h2>
 <p>Here’s the punchline the “vs.” framing hides: <strong>use both.</strong> Worktrees handle isolation; the hive
-handles coordination. Munder Difflin now ships this combination built-in: the <strong>Git isolation</strong> toggle
+handles coordination. Vishwajeet Team now ships this combination built-in: the <strong>Git isolation</strong> toggle
 in Add Agent provisions a dedicated worktree for each agent on spawn and tears it down on kill — so
 every agent in a shared repo works on its own branch by default, with no manual <code>git worktree add</code>
 needed.</p>
@@ -281,7 +281,7 @@ steering wheel.</p>
 the same question shows up for <a href="/blog/claude-code-subagents-vs-multi-agent-harness/">subagents vs a harness</a> —
 and the answer rhymes: native primitives handle the small scale; a coordination layer handles the team
 scale. For a concrete tool-vs-tool take on that coordination layer, see
-<a href="/blog/claude-squad-vs-munder-difflin/">Claude Squad vs Munder Difflin</a>.</p>
+<a href="/blog/claude-squad-vs-munder-difflin/">Claude Squad vs Vishwajeet Team</a>.</p>
 <h2 id="faq" tabindex="-1">FAQ <a class="anchor" href="#faq" aria-hidden="true">#</a></h2>
 <p><strong>Do worktrees prevent all git conflicts?</strong> They prevent index and working-directory collisions, which
 are the common ones. Shared refs and the object store are still common, so concurrent operations that
@@ -291,9 +291,9 @@ repo even when agents work in separate worktrees.</p>
 truly independent, worktrees alone are the lighter, correct choice. Add the hive when coordination —
 not just isolation — is the thing you’re missing.</p>
 <hr>
-<p>Munder Difflin is <a href="https://munderdiffl.in/#how">the coordination layer</a>: shared memory, messaging, and a GOD orchestrator for a hive
+<p>Vishwajeet Team is <a href="https://munderdiffl.in/#how">the coordination layer</a>: shared memory, messaging, and a GOD orchestrator for a hive
 of Claude Code agents — and it plays nicely with the git workflow you already use.
-<a href="https://munderdiffl.in/#install">Download Munder Difflin</a> when isolation isn’t enough and you need a
+<a href="https://munderdiffl.in/#install">Download Vishwajeet Team</a> when isolation isn’t enough and you need a
 team; it’s free and open source.</p>
 
 
@@ -313,7 +313,7 @@ team; it’s free and open source.</p>
         
         <div class="qa">
           <p class="q">Can I use worktrees and a hive together?</p>
-          <p class="a">Yes. Worktrees solve workspace isolation; a hive solves coordination. You can run a coordinated hive where each agent works in its own worktree, getting both isolation and shared memory plus messaging. In Munder Difflin v0.1.6 this is built-in — the Git isolation toggle in Add Agent handles it automatically.</p>
+          <p class="a">Yes. Worktrees solve workspace isolation; a hive solves coordination. You can run a coordinated hive where each agent works in its own worktree, getting both isolation and shared memory plus messaging. In Vishwajeet Team v0.1.6 this is built-in — the Git isolation toggle in Add Agent handles it automatically.</p>
         </div>
         
       </section>
@@ -354,7 +354,7 @@ team; it’s free and open source.</p>
       <span>7 min</span>
     </div>
     <h3><a href="/blog/deploy-automated-pr-reviewer-agent/">Deploy a PR Reviewer That Never Sleeps — In About One Prompt</a></h3>
-    <p class="dek">A how-to for standing up a fully automated PR-reviewing agent in Munder Difflin — one that reads your real source (not just the PR description), de-dupes noise, and only escalates what matters. With a real triage run that turned 22 duplicate firings into a clean v0.2.5 patch queue.</p>
+    <p class="dek">A how-to for standing up a fully automated PR-reviewing agent in Vishwajeet Team — one that reads your real source (not just the PR description), de-dupes noise, and only escalates what matters. With a real triage run that turned 22 duplicate firings into a clean v0.2.5 patch queue.</p>
     <div class="foot">
       <span class="tag kind">Orchestration</span>
       <a class="more" href="/blog/deploy-automated-pr-reviewer-agent/" aria-label="Read: Deploy a PR Reviewer That Never Sleeps — In About One Prompt">Read →</a>
@@ -404,20 +404,20 @@ team; it’s free and open source.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>How to Add a GitHub Copilot CLI Agent to Your Floor — Munder Difflin Blog</title>
+<title>How to Add a GitHub Copilot CLI Agent to Your Floor — Vishwajeet Team Blog</title>
 <meta name="description" content="A step-by-step v0.3.3 walkthrough: install GitHub Copilot CLI (or let the harness install it for you), hire a Copilot worker, pick a model, and know exactly what print mode can and can&#39;t do." />
 <link rel="canonical" href="https://munderdiffl.in/blog/how-to-add-a-github-copilot-cli-agent/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="How to Add a GitHub Copilot CLI Agent to Your Floor — Munder Difflin Blog" />
+<meta property="og:title" content="How to Add a GitHub Copilot CLI Agent to Your Floor — Vishwajeet Team Blog" />
 <meta property="og:description" content="A step-by-step v0.3.3 walkthrough: install GitHub Copilot CLI (or let the harness install it for you), hire a Copilot worker, pick a model, and know exactly what print mode can and can&#39;t do." />
 <meta property="og:url" content="https://munderdiffl.in/blog/how-to-add-a-github-copilot-cli-agent/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/how-to-add-a-github-copilot-cli-agent/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="How to Add a GitHub Copilot CLI Agent to Your Floor — Munder Difflin Blog" />
+<meta name="twitter:title" content="How to Add a GitHub Copilot CLI Agent to Your Floor — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="A step-by-step v0.3.3 walkthrough: install GitHub Copilot CLI (or let the harness install it for you), hire a Copilot worker, pick a model, and know exactly what print mode can and can&#39;t do." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/how-to-add-a-github-copilot-cli-agent/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: How to Add a GitHub Copilot CLI Agent to Your Floor" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,11 +71,11 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/how-to-add-a-github-copilot-cli-agent/" },
-  "keywords": "github copilot cli agent, add github copilot cli agent, copilot cli multi-agent, copilot -p print mode, github copilot cli munder difflin, copilot cli model picker",
+  "keywords": "github copilot cli agent, add github copilot cli agent, copilot cli multi-agent, copilot -p print mode, github copilot cli Vishwajeet Team, copilot cli model picker",
   "articleSection": "Guides",
   "inLanguage": "en-US",
   "url": "https://munderdiffl.in/blog/how-to-add-a-github-copilot-cli-agent/"
@@ -98,12 +98,12 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do I need a new API key to run a GitHub Copilot CLI agent in Munder Difflin?", "acceptedAnswer": { "@type": "Answer", "text": "No. The Copilot engine authenticates through your existing GitHub Copilot login — the same auth the copilot CLI uses in a plain terminal. There is no BYOK key to paste into Settings for this engine; if you can run copilot in your shell, you can hire it on the floor." } },
+    { "@type": "Question", "name": "Do I need a new API key to run a GitHub Copilot CLI agent in Vishwajeet Team?", "acceptedAnswer": { "@type": "Answer", "text": "No. The Copilot engine authenticates through your existing GitHub Copilot login — the same auth the copilot CLI uses in a plain terminal. There is no BYOK key to paste into Settings for this engine; if you can run copilot in your shell, you can hire it on the floor." } },
     { "@type": "Question", "name": "What models can a Copilot CLI agent use?", "acceptedAnswer": { "@type": "Answer", "text": "The Add Agent flow includes a model picker for the Copilot engine with three options: Claude Sonnet 4.5 (the default), GPT-5.4, and auto, which lets Copilot choose. Your selection is passed to the CLI via the --model flag on every turn." } },
     { "@type": "Question", "name": "Why does my Copilot agent's inbox mail go to the orchestrator instead?", "acceptedAnswer": { "@type": "Answer", "text": "By design. Copilot CLI runs in non-interactive print mode, which exits after each turn and exposes no hook bridge, so a Copilot worker cannot sit idle and drain a mailbox. Rather than letting routed mail silently drop, the harness bounces it to the GOD orchestrator, which handles or re-routes it. Use Copilot workers for dispatched, self-contained tasks and they work great." } },
     { "@type": "Question", "name": "What does the auto-mode toggle change for Copilot agents?", "acceptedAnswer": { "@type": "Answer", "text": "In auto mode the harness adds Copilot's auto-approval flags (-s --allow-all-tools --no-ask-user) so the agent can use tools without stopping to ask. With auto mode off, those flags are omitted and Copilot runs more conservatively — the same gating every other engine on the floor gets." } },
     { "@type": "Question", "name": "Does a Copilot agent keep context between turns if print mode exits every time?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, best-effort. The engine uses Copilot CLI's --resume flag to reattach the previous session on the next turn, so follow-up prompts land in the same conversation rather than starting cold. It is session continuity, not a persistent process." } },
-    { "@type": "Question", "name": "Who built the Copilot engine?", "acceptedAnswer": { "@type": "Answer", "text": "It's the first community-contributed provider in Munder Difflin — PR #101 by @anxkhn, shipped in v0.3.3. The engine registers Copilot as a provider preset alongside Claude Code, Codex, Antigravity, OpenCode, Crush, and pi.dev, and comes with a self-contained registry test asserting the command shape." } }
+    { "@type": "Question", "name": "Who built the Copilot engine?", "acceptedAnswer": { "@type": "Answer", "text": "It's the first community-contributed provider in Vishwajeet Team — PR #101 by @anxkhn, shipped in v0.3.3. The engine registers Copilot as a provider preset alongside Claude Code, Codex, Antigravity, OpenCode, Crush, and pi.dev, and comes with a self-contained registry test asserting the command shape." } }
     
   ]
 }
@@ -147,8 +147,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -189,16 +189,16 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout tldr"><span class="ic">TL;DR</span><p>As of <strong>v0.3.3</strong>, GitHub Copilot CLI is a first-class agent engine in Munder Difflin — the project's <strong>first community-contributed provider</strong> (PR #101 by @anxkhn). Install <code>@github/copilot</code> (or let the harness's missing-CLI installer do it), hit <strong>Add Agent</strong>, pick the Copilot engine, choose a model (<strong>Claude Sonnet 4.5 default, GPT-5.4, or auto</strong>), and it authenticates with your <strong>existing Copilot login — no new keys</strong>. One honest caveat: Copilot runs in <strong>print mode</strong> (<code>copilot -p</code>), which exits per turn, so its workers can't drain inbox mail — routed mail <strong>bounces to the orchestrator</strong> instead of dropping. Use Copilot workers for <strong>dispatched, self-contained tasks</strong>.</p></div>
-<p>If you already pay for GitHub Copilot, you have an agent engine sitting in your subscription that most people only ever use as autocomplete. Copilot CLI is the terminal version — a real coding agent you run with <code>copilot</code> — and since <a href="/blog/launching-munder-difflin-v0-3-3/">v0.3.3</a>, Munder Difflin can hire it onto the floor next to your Claude Code, Codex, and OpenCode workers.</p>
+      <div class="callout tldr"><span class="ic">TL;DR</span><p>As of <strong>v0.3.3</strong>, GitHub Copilot CLI is a first-class agent engine in Vishwajeet Team — the project's <strong>first community-contributed provider</strong> (PR #101 by @anxkhn). Install <code>@github/copilot</code> (or let the harness's missing-CLI installer do it), hit <strong>Add Agent</strong>, pick the Copilot engine, choose a model (<strong>Claude Sonnet 4.5 default, GPT-5.4, or auto</strong>), and it authenticates with your <strong>existing Copilot login — no new keys</strong>. One honest caveat: Copilot runs in <strong>print mode</strong> (<code>copilot -p</code>), which exits per turn, so its workers can't drain inbox mail — routed mail <strong>bounces to the orchestrator</strong> instead of dropping. Use Copilot workers for <strong>dispatched, self-contained tasks</strong>.</p></div>
+<p>If you already pay for GitHub Copilot, you have an agent engine sitting in your subscription that most people only ever use as autocomplete. Copilot CLI is the terminal version — a real coding agent you run with <code>copilot</code> — and since <a href="/blog/launching-munder-difflin-v0-3-3/">v0.3.3</a>, Vishwajeet Team can hire it onto the floor next to your Claude Code, Codex, and OpenCode workers.</p>
 <p>This guide walks the whole path: install, hire, model choice, what auto-mode changes, and the one behavioral caveat you should understand before you assign work.</p>
 <h2 id="step-0-have-the-floor-running" tabindex="-1">Step 0: have the floor running <a class="anchor" href="#step-0-have-the-floor-running" aria-hidden="true">#</a></h2>
-<p>You need Munder Difflin itself first — if you don’t, <a href="/blog/how-to-install-and-use-munder-difflin/">the install guide</a> covers it in a few minutes. Everything below assumes you’re looking at the office floor with Michael seated in his office.</p>
+<p>You need Vishwajeet Team itself first — if you don’t, <a href="/blog/how-to-install-and-use-munder-difflin/">the install guide</a> covers it in a few minutes. Everything below assumes you’re looking at the office floor with Michael seated in his office.</p>
 <h2 id="step-1-install-copilot-cli-or-dont-the-harness-will-offer" tabindex="-1">Step 1: install Copilot CLI (or don’t — the harness will offer) <a class="anchor" href="#step-1-install-copilot-cli-or-dont-the-harness-will-offer" aria-hidden="true">#</a></h2>
 <p>The engine drives the official npm package:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> @github/copilot</code></pre>
 <p>Then log in once with your GitHub account if you haven’t (<code>copilot</code> walks you through it on first run). That’s the entire auth story: <strong>the engine uses your existing GitHub Copilot login, no new keys</strong>, nothing to paste into Settings → AI Engines.</p>
-<p>You can also skip this step entirely. Munder Difflin has a self-healing installer for missing engine CLIs: if you pick Copilot in Add Agent and the <code>copilot</code> binary isn’t on your <code>PATH</code>, the harness offers the official <code>npm install -g @github/copilot</code>, runs it in the terminal, then auto restarts-and-continues into the freshly installed binary. No dead end, no manual retry.</p>
+<p>You can also skip this step entirely. Vishwajeet Team has a self-healing installer for missing engine CLIs: if you pick Copilot in Add Agent and the <code>copilot</code> binary isn’t on your <code>PATH</code>, the harness offers the official <code>npm install -g @github/copilot</code>, runs it in the terminal, then auto restarts-and-continues into the freshly installed binary. No dead end, no manual retry.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/how-to-add-a-github-copilot-cli-agent/note-1.png" alt="Hand-drawn sketch from “How to Add a GitHub Copilot CLI Agent to Your Floor”" loading="lazy" decoding="async" /></figure>
 <h2 id="step-2-add-agent-pick-copilot" tabindex="-1">Step 2: Add Agent, pick Copilot <a class="anchor" href="#step-2-add-agent-pick-copilot" aria-hidden="true">#</a></h2>
 <p>Click <strong>Add Agent</strong> on the floor. The visual provider picker now lists GitHub Copilot CLI alongside the other six engines. Pick it, name your hire, choose a working directory — and if you flip the git-isolation toggle, the agent gets its own dedicated worktree so it never collides with other agents on branches (more on why that matters in <a href="/blog/claude-code-git-worktrees-vs-hive/">worktrees vs the hive</a>).</p>
@@ -235,7 +235,7 @@
 </ol>
 <p>That’s a seventh engine on your floor, powered by a subscription you already have.</p>
 <h2 id="try-it" tabindex="-1">Try it <a class="anchor" href="#try-it" aria-hidden="true">#</a></h2>
-<p>Grab the latest build from <a href="https://github.com/chaitanyagiri/munder-difflin/releases/latest">the releases page</a> — and if the Copilot engine saves you a hire, a <a href="https://github.com/chaitanyagiri/munder-difflin">star on GitHub</a> is how community contributions like PR #101 keep coming.</p>
+<p>Grab the latest build from <a href="https://github.com/Vishwajeetsrk/Team/releases/latest">the releases page</a> — and if the Copilot engine saves you a hire, a <a href="https://github.com/Vishwajeetsrk/Team">star on GitHub</a> is how community contributions like PR #101 keep coming.</p>
 
 
       
@@ -243,7 +243,7 @@
         <h2 id="faq">FAQ</h2>
         
         <div class="qa">
-          <p class="q">Do I need a new API key to run a GitHub Copilot CLI agent in Munder Difflin?</p>
+          <p class="q">Do I need a new API key to run a GitHub Copilot CLI agent in Vishwajeet Team?</p>
           <p class="a">No. The Copilot engine authenticates through your existing GitHub Copilot login — the same auth the copilot CLI uses in a plain terminal. There is no BYOK key to paste into Settings for this engine; if you can run copilot in your shell, you can hire it on the floor.</p>
         </div>
         
@@ -269,7 +269,7 @@
         
         <div class="qa">
           <p class="q">Who built the Copilot engine?</p>
-          <p class="a">It&#39;s the first community-contributed provider in Munder Difflin — PR #101 by @anxkhn, shipped in v0.3.3. The engine registers Copilot as a provider preset alongside Claude Code, Codex, Antigravity, OpenCode, Crush, and pi.dev, and comes with a self-contained registry test asserting the command shape.</p>
+          <p class="a">It&#39;s the first community-contributed provider in Vishwajeet Team — PR #101 by @anxkhn, shipped in v0.3.3. The engine registers Copilot as a provider preset alongside Claude Code, Codex, Antigravity, OpenCode, Crush, and pi.dev, and comes with a self-contained registry test asserting the command shape.</p>
         </div>
         
       </section>
@@ -360,20 +360,20 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

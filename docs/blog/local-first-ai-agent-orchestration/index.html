@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud — Munder Difflin Blog</title>
+<title>Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud — Vishwajeet Team Blog</title>
 <meta name="description" content="How local-first AI agent orchestration works under the hood — the loop, mailboxes, scheduler, and audit log that coordinate a hive on one machine." />
 <link rel="canonical" href="https://munderdiffl.in/blog/local-first-ai-agent-orchestration/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud — Munder Difflin Blog" />
+<meta property="og:title" content="Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud — Vishwajeet Team Blog" />
 <meta property="og:description" content="How local-first AI agent orchestration works under the hood — the loop, mailboxes, scheduler, and audit log that coordinate a hive on one machine." />
 <meta property="og:url" content="https://munderdiffl.in/blog/local-first-ai-agent-orchestration/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/local-first-ai-agent-orchestration/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud — Munder Difflin Blog" />
+<meta name="twitter:title" content="Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="How local-first AI agent orchestration works under the hood — the loop, mailboxes, scheduler, and audit log that coordinate a hive on one machine." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/local-first-ai-agent-orchestration/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Local-First AI Agent Orchestration: How a Hive Runs Without a Cloud" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/local-first-ai-agent-orchestration/" },
@@ -143,8 +143,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -196,11 +196,11 @@ control-plane server. This is the <em>how</em>; for the <em>why</em>, see <a hre
 machine</a> is better for control, privacy, and cost. It’s
 another to explain how a team of agents actually <em>coordinates</em> without a cloud control plane in the
 middle. If there’s no orchestration server, what routes the work? This post is the mechanics —
-grounded in how Munder Difflin’s hive is built — of running real multi-agent orchestration with nothing
+grounded in how Vishwajeet Team’s hive is built — of running real multi-agent orchestration with nothing
 but local processes and files.</p>
 <h2 id="where-the-orchestration-loop-actually-runs" tabindex="-1">Where the orchestration loop actually runs <a class="anchor" href="#where-the-orchestration-loop-actually-runs" aria-hidden="true">#</a></h2>
 <p>Start with the obvious question: what is “the orchestrator”? In a cloud platform it’s a service you
-never see. Locally, it’s just a process on your machine — in Munder Difflin’s case, the desktop app’s
+never see. Locally, it’s just a process on your machine — in Vishwajeet Team’s case, the desktop app’s
 main process. It boots the message router, arms the scheduler, and manages the agents. There’s no
 remote brain; the coordination logic is code running next to your editor.</p>
 <p>The agents themselves are equally concrete. Each one is a <strong>local child process</strong> — the harness spawns
@@ -285,7 +285,7 @@ no queue service, no daemon.</p>
 your hardware. In exchange you get no infrastructure, a full local audit trail, and complete data
 ownership.</p>
 <hr>
-<p>Munder Difflin is local-first orchestration you can watch: a hive of Claude Code agents coordinating
+<p>Vishwajeet Team is local-first orchestration you can watch: a hive of Claude Code agents coordinating
 through file mailboxes, local timers, and a git audit log — <a href="https://munderdiffl.in/#how">all run by a GOD
 orchestrator</a> on your own machine. <a href="https://munderdiffl.in/#install">Download Munder
 Difflin</a> to run a coordinated team of agents with no cloud in the
@@ -349,7 +349,7 @@ loop; it’s free and open source.</p>
       <span>7 min</span>
     </div>
     <h3><a href="/blog/deploy-automated-pr-reviewer-agent/">Deploy a PR Reviewer That Never Sleeps — In About One Prompt</a></h3>
-    <p class="dek">A how-to for standing up a fully automated PR-reviewing agent in Munder Difflin — one that reads your real source (not just the PR description), de-dupes noise, and only escalates what matters. With a real triage run that turned 22 duplicate firings into a clean v0.2.5 patch queue.</p>
+    <p class="dek">A how-to for standing up a fully automated PR-reviewing agent in Vishwajeet Team — one that reads your real source (not just the PR description), de-dupes noise, and only escalates what matters. With a real triage run that turned 22 duplicate firings into a clean v0.2.5 patch queue.</p>
     <div class="foot">
       <span class="tag kind">Orchestration</span>
       <a class="more" href="/blog/deploy-automated-pr-reviewer-agent/" aria-label="Read: Deploy a PR Reviewer That Never Sleeps — In About One Prompt">Read →</a>
@@ -399,20 +399,20 @@ loop; it’s free and open source.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

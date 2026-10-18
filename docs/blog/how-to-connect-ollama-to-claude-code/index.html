@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>How to Connect Ollama to Claude Code — Munder Difflin Blog</title>
+<title>How to Connect Ollama to Claude Code — Vishwajeet Team Blog</title>
 <meta name="description" content="Point Claude Code at Ollama with ollama launch claude or three environment variables, give the model 64K of context, and know what stops working." />
 <link rel="canonical" href="https://munderdiffl.in/blog/how-to-connect-ollama-to-claude-code/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="How to Connect Ollama to Claude Code — Munder Difflin Blog" />
+<meta property="og:title" content="How to Connect Ollama to Claude Code — Vishwajeet Team Blog" />
 <meta property="og:description" content="Point Claude Code at Ollama with ollama launch claude or three environment variables, give the model 64K of context, and know what stops working." />
 <meta property="og:url" content="https://munderdiffl.in/blog/how-to-connect-ollama-to-claude-code/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/how-to-connect-ollama-to-claude-code/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="How to Connect Ollama to Claude Code — Munder Difflin Blog" />
+<meta name="twitter:title" content="How to Connect Ollama to Claude Code — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Point Claude Code at Ollama with ollama launch claude or three environment variables, give the model 64K of context, and know what stops working." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/how-to-connect-ollama-to-claude-code/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: How to Connect Ollama to Claude Code" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/how-to-connect-ollama-to-claude-code/" },
@@ -101,7 +101,7 @@
     { "@type": "Question", "name": "Is Claude Code with Ollama free?", "acceptedAnswer": { "@type": "Answer", "text": "With a local model, yes. Ollama accepts the token without validating it, and while ANTHROPIC_AUTH_TOKEN is set Claude Code does not use your claude.ai subscription, so nothing in that session is billed by Anthropic. You pay in hardware and electricity instead." } },
     { "@type": "Question", "name": "Can I use Ollama cloud models with Claude Code?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with an ollama.com account: run ollama signin first. Cloud tags such as kimi-k2.7-code:cloud and glm-5.1:cloud need no download and run at full context, but each model's library page lists a per token cost, and your prompts and code are processed on Ollama's servers." } },
     { "@type": "Question", "name": "How do I use Ollama with the Claude Code extension in VS Code?", "acceptedAnswer": { "@type": "Answer", "text": "Put ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN in claudeCode.environmentVariables in your VS Code user settings JSON. Anthropic's gateway docs say the extension checks credentials from that setting before it starts, while values in ~/.claude/settings.json reach the process but not that login check." } },
-    { "@type": "Question", "name": "Can Munder Difflin run Claude Code agents on Ollama?", "acceptedAnswer": { "@type": "Answer", "text": "Not as a built in setting in 0.5.2. Its local Ollama model picks are for OpenCode, Crush and Pi agents, and Claude Code agents keep using their own Claude login. You still pull the model yourself. OpenCode and Crush need your Ollama address in Settings, AI Engines, and Pi reads your `~/.pi/agent/models.json`." } },
+    { "@type": "Question", "name": "Can Vishwajeet Team run Claude Code agents on Ollama?", "acceptedAnswer": { "@type": "Answer", "text": "Not as a built in setting in 0.5.2. Its local Ollama model picks are for OpenCode, Crush and Pi agents, and Claude Code agents keep using their own Claude login. You still pull the model yourself. OpenCode and Crush need your Ollama address in Settings, AI Engines, and Pi reads your `~/.pi/agent/models.json`." } },
     { "@type": "Question", "name": "What context length does Claude Code need on Ollama?", "acceptedAnswer": { "@type": "Answer", "text": "Ollama's docs say coding tools should get at least 64,000 tokens, and under 24 GiB of VRAM the default is only 4k. Start the server with OLLAMA_CONTEXT_LENGTH=64000, then set CLAUDE_CODE_MAX_CONTEXT_TOKENS to the same number, because Claude Code otherwise assumes a 200K window for a model it does not recognize." } }
     
   ]
@@ -146,8 +146,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -189,7 +189,7 @@
   <div class="post-wrap wrap">
     <div class="prose">
       <p>Install Ollama 0.15.0 or newer and run <code>ollama launch claude</code>: it asks for a model, configures Claude Code and starts it. By hand, on Ollama 0.14.0 or newer, set <code>ANTHROPIC_BASE_URL=http://localhost:11434</code>, <code>ANTHROPIC_AUTH_TOKEN=ollama</code> and an empty <code>ANTHROPIC_API_KEY</code>, then run <code>claude --model qwen3-coder</code> or another Ollama tag.</p>
-<p>That gives you one Claude Code session on a local model. If you want local models working next to Claude Code rather than instead of it, you can wire each agent by hand, or use <a href="https://harnessmd.com/download">Munder Difflin</a>, a free and open source desktop app that runs a floor of CLI agents on your machine. As of 0.5.2, its Add agent screen lists eight local Ollama models for OpenCode, Crush and Pi agents, alongside Claude Code agents on your normal Claude login. Picking one sets the model name only: you still pull the weights (the tooltip shows the <code>ollama pull</code> command), OpenCode and Crush need your Ollama address in Settings, AI Engines, and Pi agents read your <code>~/.pi/agent/models.json</code>. Claude Code agents get no Ollama setting, so for those, use the steps below.</p>
+<p>That gives you one Claude Code session on a local model. If you want local models working next to Claude Code rather than instead of it, you can wire each agent by hand, or use <a href="https://harnessmd.com/download">Vishwajeet Team</a>, a free and open source desktop app that runs a floor of CLI agents on your machine. As of 0.5.2, its Add agent screen lists eight local Ollama models for OpenCode, Crush and Pi agents, alongside Claude Code agents on your normal Claude login. Picking one sets the model name only: you still pull the weights (the tooltip shows the <code>ollama pull</code> command), OpenCode and Crush need your Ollama address in Settings, AI Engines, and Pi agents read your <code>~/.pi/agent/models.json</code>. Claude Code agents get no Ollama setting, so for those, use the steps below.</p>
 <p>If you are here because a Pro or Max plan keeps running dry rather than for privacy, <a href="/blog/claude-code-max-plan-tips/">getting more out of a Claude Code Max plan</a> may fix it without changing models.</p>
 <h2 id="can-claude-code-use-ollama-models" tabindex="-1">Can Claude Code use Ollama models? <a class="anchor" href="#can-claude-code-use-ollama-models" aria-hidden="true">#</a></h2>
 <p>Yes, because Ollama speaks the API Claude Code expects. Ollama 0.14.0, released in January 2026, added the Anthropic Messages endpoint, <code>/v1/messages</code>, and Ollama documents the setup on its <a href="https://docs.ollama.com/integrations/claude-code">Claude Code integration page</a>.</p>
@@ -259,7 +259,7 @@ API Error: Connection refused — a firewall or proxy may be blocking it (Connec
         </div>
         
         <div class="qa">
-          <p class="q">Can Munder Difflin run Claude Code agents on Ollama?</p>
+          <p class="q">Can Vishwajeet Team run Claude Code agents on Ollama?</p>
           <p class="a">Not as a built in setting in 0.5.2. Its local Ollama model picks are for OpenCode, Crush and Pi agents, and Claude Code agents keep using their own Claude login. You still pull the model yourself. OpenCode and Crush need your Ollama address in Settings, AI Engines, and Pi reads your `~/.pi/agent/models.json`.</p>
         </div>
         
@@ -356,20 +356,20 @@ API Error: Connection refused — a firewall or proxy may be blocking it (Connec
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

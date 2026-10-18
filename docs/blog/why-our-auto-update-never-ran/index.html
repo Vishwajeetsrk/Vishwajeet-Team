@@ -18,8 +18,8 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace — Munder Difflin Blog</title>
-<meta name="description" content="Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes." />
+<title>Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace — Vishwajeet Team Blog</title>
+<meta name="description" content="Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes." />
 <link rel="canonical" href="https://munderdiffl.in/blog/why-our-auto-update-never-ran/" />
 
 <link rel="icon" type="image/png" href="https://munderdiffl.in/logo.png" />
@@ -27,10 +27,10 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace — Munder Difflin Blog" />
-<meta property="og:description" content="Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes." />
+<meta property="og:title" content="Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace — Vishwajeet Team Blog" />
+<meta property="og:description" content="Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes." />
 <meta property="og:url" content="https://munderdiffl.in/blog/why-our-auto-update-never-ran/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/why-our-auto-update-never-ran/hero.png" />
 <meta property="og:image:width" content="1600" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace — Munder Difflin Blog" />
-<meta name="twitter:description" content="Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes." />
+<meta name="twitter:title" content="Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace — Vishwajeet Team Blog" />
+<meta name="twitter:description" content="Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/why-our-auto-update-never-ran/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -64,14 +64,14 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace",
-  "description": "Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here's how we found it, and what v0.3.7 changes.",
+  "description": "Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here's how we found it, and what v0.3.7 changes.",
   "image": ["https://munderdiffl.in/blog/assets/media/why-our-auto-update-never-ran/hero.png"],
   "datePublished": "2026-08-08T00:00:00.000Z",
   "dateModified": "2026-08-08T00:00:00.000Z",
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/why-our-auto-update-never-ran/" },
@@ -101,7 +101,7 @@
     { "@type": "Question", "name": "Why was electron-updater's autoUpdater undefined?", "acceptedAnswer": { "@type": "Answer", "text": "electron-updater is a CommonJS package that attaches autoUpdater to its exports through a lazy Object.defineProperty getter. Node's cjs-module-lexer detects named exports by static analysis, and it cannot see through a getter defined at runtime. So the ESM namespace produced by `await import('electron-updater')` has no autoUpdater key at all — it only exists on the namespace's `.default`. Destructuring `const { autoUpdater } = await import('electron-updater')` therefore yields undefined. Use `ns.autoUpdater ?? ns.default?.autoUpdater`, or plain `require()`, instead." } },
     { "@type": "Question", "name": "Why didn't this show up in development?", "acceptedAnswer": { "@type": "Answer", "text": "The whole updater setup block was behind an `app.isPackaged` check, which is false in dev. Development runs never executed the line that threw, so the bug could only ever appear in a shipped build — and shipped builds have no visible console. It survived three releases that way." } },
     { "@type": "Question", "name": "How do you debug an Electron app that only misbehaves when packaged?", "acceptedAnswer": { "@type": "Answer", "text": "Launch the installed binary directly from a terminal with an isolated data directory: `/Applications/YourApp.app/Contents/MacOS/YourApp --user-data-dir=/tmp/probe`. Electron's single-instance lock is keyed to the user-data directory, so this runs alongside the copy the user already has open, and every console.log and stack trace lands in your terminal instead of disappearing." } },
-    { "@type": "Question", "name": "Do I need to reinstall Munder Difflin to get v0.3.7?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, once. Every build from v0.3.4 through v0.3.6 carries the broken updater, so it cannot fetch this fix by itself. Download v0.3.7 manually from munderdiffl.in or the GitHub releases page. From v0.3.7 onward, updates download in the background and wait for your restart." } },
+    { "@type": "Question", "name": "Do I need to reinstall Vishwajeet Team to get v0.3.7?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, once. Every build from v0.3.4 through v0.3.6 carries the broken updater, so it cannot fetch this fix by itself. Download v0.3.7 manually from munderdiffl.in or the GitHub releases page. From v0.3.7 onward, updates download in the background and wait for your restart." } },
     { "@type": "Question", "name": "How do you stop a bug like this from hiding again?", "acceptedAnswer": { "@type": "Answer", "text": "Three changes. Errors are never swallowed — every updater failure is emitted to the UI and appended to a log file on disk. The notify-only fallback is per-check rather than a permanent latch, so one blip doesn't disable updates for the session. And the state model moved into a plain electron-free module with unit tests, so the rules can be verified without booting the app." } }
     
   ]
@@ -146,8 +146,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -172,7 +172,7 @@
       <a href="/blog/topics/internals/">Internals</a>
     </nav>
     <h1>Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace</h1>
-    <p class="dek">Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
+    <p class="dek">Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">CG</span>
       <strong>Chaitanya Giri</strong>
@@ -188,7 +188,7 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin shipped auto-update in <strong>v0.3.4</strong>. It never ran — not once, in any packaged build, through three releases. The cause was a single destructuring assignment across the CommonJS/ESM boundary that produced <code>undefined</code>, and a <code>catch</code> block that threw away the error message. <strong>v0.3.7</strong> fixes it, turns the toolbar version into the update button, and makes sure the next failure can't hide.</p></div>
+      <div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team shipped auto-update in <strong>v0.3.4</strong>. It never ran — not once, in any packaged build, through three releases. The cause was a single destructuring assignment across the CommonJS/ESM boundary that produced <code>undefined</code>, and a <code>catch</code> block that threw away the error message. <strong>v0.3.7</strong> fixes it, turns the toolbar version into the update button, and makes sure the next failure can't hide.</p></div>
 <p>A user restarted the app after v0.3.6 went live and reported that auto-update hadn’t
 triggered. What they got instead was a toast offering to open the releases page in a
 browser — the fallback path, meant for installs that genuinely can’t update themselves.</p>
@@ -199,9 +199,9 @@ was a new version. It found the release. It just refused to install it.</p>
 stapled gets refused by Gatekeeper, and the failure is quiet. So the published asset went
 under a microscope first:</p>
 <pre class="language-bash"><code class="language-bash">shasum <span class="token parameter variable">-a</span> <span class="token number">512</span> Munder-Difflin-0.3.6-mac-universal.zip   <span class="token comment"># matches latest-mac.yml exactly</span>
-codesign <span class="token parameter variable">--verify</span> <span class="token parameter variable">--deep</span> <span class="token parameter variable">--strict</span> <span class="token parameter variable">--verbose</span><span class="token operator">=</span><span class="token number">2</span> <span class="token string">"Munder Difflin.app"</span>
-xcrun stapler validate <span class="token string">"Munder Difflin.app"</span>
-spctl <span class="token parameter variable">--assess</span> <span class="token parameter variable">-vv</span> <span class="token string">"Munder Difflin.app"</span></code></pre>
+codesign <span class="token parameter variable">--verify</span> <span class="token parameter variable">--deep</span> <span class="token parameter variable">--strict</span> <span class="token parameter variable">--verbose</span><span class="token operator">=</span><span class="token number">2</span> <span class="token string">"Vishwajeet Team.app"</span>
+xcrun stapler validate <span class="token string">"Vishwajeet Team.app"</span>
+spctl <span class="token parameter variable">--assess</span> <span class="token parameter variable">-vv</span> <span class="token string">"Vishwajeet Team.app"</span></code></pre>
 <p>All clean. Developer ID signature, notarization ticket stapled, <code>spctl</code> accepted, and the
 SHA-512 matching the update feed byte for byte. The release was fine.</p>
 <p>Next suspect: the feed. Running <code>electron-updater</code> directly against the live GitHub release
@@ -215,7 +215,7 @@ The bug could only exist in a build with no visible console.</p>
 <p>The trick that cracked it: <strong>Electron’s single-instance lock is keyed to the user-data
 directory.</strong> Point a second launch at a different one and it runs happily alongside the
 copy already open, with stdout wired to your terminal.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token string">"/Applications/Munder Difflin.app/Contents/MacOS/Munder Difflin"</span> <span class="token punctuation">\</span>
+<pre class="language-bash"><code class="language-bash"><span class="token string">"/Applications/Vishwajeet Team.app/Contents/MacOS/Vishwajeet Team"</span> <span class="token punctuation">\</span>
   --user-data-dir<span class="token operator">=</span>/tmp/updater-probe</code></pre>
 <p>Thirty seconds later, the first check fired and printed the thing the app had been
 swallowing for three releases:</p>
@@ -282,7 +282,7 @@ ask.</p>
 <p>You’ll need to install v0.3.7 by hand, once. Your current build carries the broken updater,
 so it can’t fetch the fix that repairs it — the one bootstrap problem a self-updating app
 can’t solve for itself. Grab it from <a href="https://munderdiffl.in/">munderdiffl.in</a> or the
-<a href="https://github.com/chaitanyagiri/munder-difflin/releases/latest">releases page</a>.</p>
+<a href="https://github.com/Vishwajeetsrk/Team/releases/latest">releases page</a>.</p>
 <p>After that, it updates itself. For real this time — and if it ever doesn’t, it’ll tell you
 why.</p>
 
@@ -307,7 +307,7 @@ why.</p>
         </div>
         
         <div class="qa">
-          <p class="q">Do I need to reinstall Munder Difflin to get v0.3.7?</p>
+          <p class="q">Do I need to reinstall Vishwajeet Team to get v0.3.7?</p>
           <p class="a">Yes, once. Every build from v0.3.4 through v0.3.6 carries the broken updater, so it cannot fetch this fix by itself. Download v0.3.7 manually from munderdiffl.in or the GitHub releases page. From v0.3.7 onward, updates download in the background and wait for your restart.</p>
         </div>
         
@@ -339,8 +339,8 @@ why.</p>
   </div>
 
   <footer class="post-foot wrap"><div class="prevnext">
-      <a class="pn prev" href="/blog/launching-munder-difflin-v0-3-5/"><span class="k">← Older</span><span class="t">Launching Munder Difflin v0.3.5: A Michael Who Knows the Floor, a Git Time-Machine, and an App That Updates Itself</span></a>
-      <a class="pn next" href="/blog/whats-up-with-munder-difflin/"><span class="k">Newer →</span><span class="t">What&#39;s Up With Munder Difflin: Six Weeks, Four Releases, and the Part of the Stack You Actually Own</span></a>
+      <a class="pn prev" href="/blog/launching-munder-difflin-v0-3-5/"><span class="k">← Older</span><span class="t">Launching Vishwajeet Team v0.3.5: A Michael Who Knows the Floor, a Git Time-Machine, and an App That Updates Itself</span></a>
+      <a class="pn next" href="/blog/whats-up-with-munder-difflin/"><span class="k">Newer →</span><span class="t">What&#39;s Up With Vishwajeet Team: Six Weeks, Four Releases, and the Part of the Stack You Actually Own</span></a>
     </div>
     <section class="related">
       <h2>Related in Internals</h2>
@@ -386,7 +386,7 @@ why.</p>
       <span>12 min</span>
     </div>
     <h3><a href="/blog/hire-manifest-untrusted-input/">Treating a Hire Manifest as Untrusted Input</a></h3>
-    <p class="dek">A shareable agent-config manifest is attacker input. How Munder Difflin&#39;s import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch.</p>
+    <p class="dek">A shareable agent-config manifest is attacker input. How Vishwajeet Team&#39;s import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/hire-manifest-untrusted-input/" aria-label="Read: Treating a Hire Manifest as Untrusted Input">Read →</a>
@@ -404,20 +404,20 @@ why.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

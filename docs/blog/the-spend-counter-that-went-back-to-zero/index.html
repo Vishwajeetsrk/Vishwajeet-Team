@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Spend Counter That Went Back to Zero — Munder Difflin Blog</title>
+<title>The Spend Counter That Went Back to Zero — Vishwajeet Team Blog</title>
 <meta name="description" content="Our own floor was under reporting what it cost by 59 percent. The counter was cumulative since process start, the app restarts, and the session id stayed the same. Here is how a monotonic invariant let us recover the real number from an append-only log." />
 <link rel="canonical" href="https://munderdiffl.in/blog/the-spend-counter-that-went-back-to-zero/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="The Spend Counter That Went Back to Zero — Munder Difflin Blog" />
+<meta property="og:title" content="The Spend Counter That Went Back to Zero — Vishwajeet Team Blog" />
 <meta property="og:description" content="Our own floor was under reporting what it cost by 59 percent. The counter was cumulative since process start, the app restarts, and the session id stayed the same. Here is how a monotonic invariant let us recover the real number from an append-only log." />
 <meta property="og:url" content="https://munderdiffl.in/blog/the-spend-counter-that-went-back-to-zero/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/the-spend-counter-that-went-back-to-zero/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The Spend Counter That Went Back to Zero — Munder Difflin Blog" />
+<meta name="twitter:title" content="The Spend Counter That Went Back to Zero — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Our own floor was under reporting what it cost by 59 percent. The counter was cumulative since process start, the app restarts, and the session id stayed the same. Here is how a monotonic invariant let us recover the real number from an append-only log." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/the-spend-counter-that-went-back-to-zero/hero.png" />
 <meta name="twitter:image:alt" content="A yellow bean stands beside a desk where a spend meter&#39;s needle has swung back to zero, holding up a long paper log, while a whiteboard shows a sawtooth counter under a steadily climbing total." />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/the-spend-counter-that-went-back-to-zero/" },
@@ -98,7 +98,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What was wrong with cost reporting in Munder Difflin?", "acceptedAnswer": { "@type": "Answer", "text": "The per-agent spend figure counted from the moment the app process started, not from the moment the agent started. Restarting the app rebuilt the in-memory accumulator empty, so the counter began again at zero under the same session id. Anything reading the latest value read one app session's worth of spend and called it the total. On our own floor that hid 59 percent of it." } },
+    { "@type": "Question", "name": "What was wrong with cost reporting in Vishwajeet Team?", "acceptedAnswer": { "@type": "Answer", "text": "The per-agent spend figure counted from the moment the app process started, not from the moment the agent started. Restarting the app rebuilt the in-memory accumulator empty, so the counter began again at zero under the same session id. Anything reading the latest value read one app session's worth of spend and called it the total. On our own floor that hid 59 percent of it." } },
     { "@type": "Question", "name": "Why did nobody notice a number that was wrong by more than half?", "acceptedAnswer": { "@type": "Answer", "text": "Because it never looked wrong. Inside any single run the counter only climbed, so it behaved exactly like a lifetime total. Nothing threw, nothing went negative, nothing came back NaN. The reset is only visible if you look at the whole history at once, and the number is the kind you glance at rather than reconcile." } },
     { "@type": "Question", "name": "How do you recover a total from a counter that resets?", "acceptedAnswer": { "@type": "Answer", "text": "You use the invariant the counter already gives you. Within one agent and one session the value can only go up, so any decrease is a restart and nothing else. Lifetime is the sum of the high-water mark of each segment that a reset closed, plus the high-water mark of the segment still open. Every sample was already on disk in an append-only ledger, so the past was recoverable without a migration." } },
     { "@type": "Question", "name": "Why not ignore small drops as noise?", "acceptedAnswer": { "@type": "Answer", "text": "We looked at that and rejected it. Real restarts in our own ledger fall from peaks under a dollar straight to zero, so a one dollar threshold would have silently missed them. A cumulative counter has no legitimate reason to fall at all, so the threshold bought tidiness and cost coverage. Any decrease counts, with a float epsilon and nothing more." } }
@@ -145,8 +145,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -187,7 +187,7 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin tells you what your
+      <div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team tells you what your
 floor of agents costs. That number was wrong by <strong>59 percent</strong>, and it had been
 wrong quietly, because it was a counter that measured from process start while its label said
 lifetime. Restart the app and it began again at zero under the same session id. The fix is not a
@@ -273,7 +273,7 @@ number bought tidiness and cost coverage, and coverage was the entire point.</p>
 legitimate instances at all. If it does not, the right threshold is zero and the number you were
 about to type is just a hole.</p>
 <h2 id="doing-it-without-freezing-the-app" tabindex="-1">Doing it without freezing the app <a class="anchor" href="#doing-it-without-freezing-the-app" aria-hidden="true">#</a></h2>
-<p>Munder Difflin is an Electron app, and the ledger is append-only, which is a polite way of saying
+<p>Vishwajeet Team is an Electron app, and the ledger is append-only, which is a polite way of saying
 it grows forever. A full pass over it is not something you want on the main thread. Block that
 thread and the whole UI stops: the floor, the terminals, the window itself.</p>
 <p>So the fold is async and incremental. It keeps a byte offset and reads only what has been
@@ -353,7 +353,7 @@ watchdog behind it and bounces mail to a missing inbox instead of dropping it. P
 scheduling for triggers, clickable paths everywhere in terminal output, one editor instead of
 two, one click updates, and 23 community pull requests.</p>
 <p>The full notes are on the
-<a href="https://github.com/chaitanyagiri/munder-difflin/releases/latest">releases page</a>, and if you want
+<a href="https://github.com/Vishwajeetsrk/Team/releases/latest">releases page</a>, and if you want
 the wider version of this argument, the
 <a href="/blog/the-multi-agent-cost-playbook/">multi-agent cost playbook</a> is about spending less rather
 than counting it correctly. Both matter. Counting it correctly comes first, because you cannot
@@ -365,7 +365,7 @@ manage a number you are not actually reading.</p>
         <h2 id="faq">FAQ</h2>
         
         <div class="qa">
-          <p class="q">What was wrong with cost reporting in Munder Difflin?</p>
+          <p class="q">What was wrong with cost reporting in Vishwajeet Team?</p>
           <p class="a">The per-agent spend figure counted from the moment the app process started, not from the moment the agent started. Restarting the app rebuilt the in-memory accumulator empty, so the counter began again at zero under the same session id. Anything reading the latest value read one app session&#39;s worth of spend and called it the total. On our own floor that hid 59 percent of it.</p>
         </div>
         
@@ -408,7 +408,7 @@ manage a number you are not actually reading.</p>
 
   <footer class="post-foot wrap"><div class="prevnext">
       <a class="pn prev" href="/blog/agents-ran-our-launch-week-analytics/"><span class="k">← Older</span><span class="t">Our Agents Ran Our Launch-Week Analytics</span></a>
-      <a class="pn next" href="/blog/launching-munder-difflin-v0-4-6/"><span class="k">Newer →</span><span class="t">Launching Munder Difflin v0.4.6: It Speaks Chinese and Arabic Now</span></a>
+      <a class="pn next" href="/blog/launching-munder-difflin-v0-4-6/"><span class="k">Newer →</span><span class="t">Launching Vishwajeet Team v0.4.6: It Speaks Chinese and Arabic Now</span></a>
     </div>
     <section class="related">
       <h2>Related in Internals</h2>
@@ -438,7 +438,7 @@ manage a number you are not actually reading.</p>
       <span>5 min</span>
     </div>
     <h3><a href="/blog/why-our-auto-update-never-ran/">Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace</a></h3>
-    <p class="dek">Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
+    <p class="dek">Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/why-our-auto-update-never-ran/" aria-label="Read: Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace">Read →</a>
@@ -454,7 +454,7 @@ manage a number you are not actually reading.</p>
       <span>12 min</span>
     </div>
     <h3><a href="/blog/hire-manifest-untrusted-input/">Treating a Hire Manifest as Untrusted Input</a></h3>
-    <p class="dek">A shareable agent-config manifest is attacker input. How Munder Difflin&#39;s import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch.</p>
+    <p class="dek">A shareable agent-config manifest is attacker input. How Vishwajeet Team&#39;s import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/hire-manifest-untrusted-input/" aria-label="Read: Treating a Hire Manifest as Untrusted Input">Read →</a>
@@ -472,20 +472,20 @@ manage a number you are not actually reading.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

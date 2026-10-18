@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Claude Code Hooks Explained: PreToolUse, PostToolUse, Stop and Exit Codes — Munder Difflin Blog</title>
+<title>Claude Code Hooks Explained: PreToolUse, PostToolUse, Stop and Exit Codes — Vishwajeet Team Blog</title>
 <meta name="description" content="How Claude Code hooks work in 2026: the 33 events, where settings go, matcher syntax, exit code 2, and tested PreToolUse and Stop hook examples." />
 <link rel="canonical" href="https://munderdiffl.in/blog/claude-code-hooks-explained/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Claude Code Hooks Explained: PreToolUse, PostToolUse, Stop and Exit Codes — Munder Difflin Blog" />
+<meta property="og:title" content="Claude Code Hooks Explained: PreToolUse, PostToolUse, Stop and Exit Codes — Vishwajeet Team Blog" />
 <meta property="og:description" content="How Claude Code hooks work in 2026: the 33 events, where settings go, matcher syntax, exit code 2, and tested PreToolUse and Stop hook examples." />
 <meta property="og:url" content="https://munderdiffl.in/blog/claude-code-hooks-explained/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/claude-code-hooks-explained/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Claude Code Hooks Explained: PreToolUse, PostToolUse, Stop and Exit Codes — Munder Difflin Blog" />
+<meta name="twitter:title" content="Claude Code Hooks Explained: PreToolUse, PostToolUse, Stop and Exit Codes — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="How Claude Code hooks work in 2026: the 33 events, where settings go, matcher syntax, exit code 2, and tested PreToolUse and Stop hook examples." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/claude-code-hooks-explained/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Claude Code Hooks, Explained (PreToolUse, PostToolUse, Stop)" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/claude-code-hooks-explained/" },
@@ -145,8 +145,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -188,7 +188,7 @@
   <div class="post-wrap wrap">
     <div class="prose">
       <p>Claude Code hooks are handlers that Claude Code runs automatically at fixed points in a session: before a tool call (<code>PreToolUse</code>), after it succeeds (<code>PostToolUse</code>), when Claude finishes a reply (<code>Stop</code>) and 30 other events. Each one gets a JSON payload on stdin, and exit code 2 or a JSON reply lets it block or redirect Claude.</p>
-<p>You can wire hooks by hand for one session, as this guide shows, or use <a href="https://harnessmd.com/download">Munder Difflin</a>, free and open source, which attaches a hook set to every Claude Code agent it launches and turns the events into a live view of the whole team.</p>
+<p>You can wire hooks by hand for one session, as this guide shows, or use <a href="https://harnessmd.com/download">Vishwajeet Team</a>, free and open source, which attaches a hook set to every Claude Code agent it launches and turns the events into a live view of the whole team.</p>
 <p>Everything below was checked on 29 Sep 2026 against the official <a href="https://code.claude.com/docs/en/hooks">hooks reference</a> and Claude Code 2.1.284.</p>
 <h2 id="what-are-claude-code-hooks" tabindex="-1">What are Claude Code hooks? <a class="anchor" href="#what-are-claude-code-hooks" aria-hidden="true">#</a></h2>
 <p>A hook is a rule that says “when this event fires, run this handler”. Most handlers are shell commands (<code>type: &quot;command&quot;</code>), but the reference now lists five types: <code>command</code>, <code>http</code>, <code>mcp_tool</code>, <code>prompt</code> and <code>agent</code>. As the <a href="https://code.claude.com/docs/en/hooks-guide">hooks guide</a> says, hooks give you deterministic control: a guard runs every time, not when the model remembers.</p>
@@ -363,15 +363,15 @@
 </ul>
 <p>Test a script alone by piping it sample JSON and printing <code>$?</code>, then run <code>claude --debug</code> and read the log in <code>~/.claude/debug/</code>.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/claude-code-hooks-explained/note-2.png" alt="Hand-drawn sketch from “Claude Code Hooks, Explained (PreToolUse, PostToolUse, Stop)”" loading="lazy" decoding="async" /></figure>
-<h2 id="how-does-munder-difflin-use-claude-code-hooks" tabindex="-1">How does Munder Difflin use Claude Code hooks? <a class="anchor" href="#how-does-munder-difflin-use-claude-code-hooks" aria-hidden="true">#</a></h2>
-<p>Munder Difflin launches each Claude Code agent with <code>--settings</code> pointing at a per agent <code>settings.json</code> in its own hive folder, so your repository never gets a hooks diff. Checked against tag v0.5.3 of the app repo:</p>
+<h2 id="how-does-munder-difflin-use-claude-code-hooks" tabindex="-1">How does Vishwajeet Team use Claude Code hooks? <a class="anchor" href="#how-does-munder-difflin-use-claude-code-hooks" aria-hidden="true">#</a></h2>
+<p>Vishwajeet Team launches each Claude Code agent with <code>--settings</code> pointing at a per agent <code>settings.json</code> in its own hive folder, so your repository never gets a hooks diff. Checked against tag v0.5.3 of the app repo:</p>
 <ul>
 <li><strong>Nine events, one shim.</strong> <code>hookSettings()</code> in <code>src/main/hive.ts</code> registers <code>Stop</code>, <code>SubagentStop</code>, <code>PreToolUse</code> and <code>PostToolUse</code> (matcher <code>*</code>), <code>UserPromptSubmit</code>, <code>Notification</code>, <code>SessionStart</code>, <code>PreCompact</code> and <code>PostCompact</code>, all pointing at one small Node shim. The shim forwards each payload over a Unix socket (a named pipe on Windows) and exits 0 on any error, so a dead app never wedges an agent. <a href="/blog/the-hook-shim-pattern/">The hook shim pattern</a> covers the design.</li>
 <li><strong>Pause and gate at <code>PreToolUse</code>.</strong> <code>src/main/hooks.ts</code> returns <code>permissionDecision: &quot;deny&quot;</code> when you pause an agent or gate a tool, and <code>continue: false</code> when you halt one from the floor.</li>
 <li><strong>Context through <code>additionalContext</code>.</strong> At <code>SessionStart</code> and <code>UserPromptSubmit</code> the same file injects an agent’s standing goal and hands Michael, the orchestrator, the live roster; guidance you queue rides in on the next <code>UserPromptSubmit</code> or <code>PostToolUse</code>. <a href="/blog/how-the-god-orchestrator-works/">How the orchestrator works</a> explains the routing.</li>
 <li><strong>Loop detection at <code>PostToolUse</code>.</strong> Repeated identical tool calls feed a circuit breaker.</li>
 </ul>
-<p>One correction to the first version of this post: Munder Difflin no longer uses <code>Stop</code> to force an agent to keep reading its inbox. In v0.5.3 the Stop handler returns an empty reply and respects <code>stop_hook_active</code>; new mail is delivered only once the agent sits idle at its prompt, so it never types over a question you are answering. To try it, follow the <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a>.</p>
+<p>One correction to the first version of this post: Vishwajeet Team no longer uses <code>Stop</code> to force an agent to keep reading its inbox. In v0.5.3 the Stop handler returns an empty reply and respects <code>stop_hook_active</code>; new mail is delivered only once the agent sits idle at its prompt, so it never types over a question you are answering. To try it, follow the <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a>.</p>
 
 
       
@@ -419,7 +419,7 @@
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#what-are-claude-code-hooks">What are Claude Code hooks?</a></li><li class="lvl-2"><a href="#which-hook-events-does-claude-code-have">Which hook events does Claude Code have?</a></li><li class="lvl-2"><a href="#where-do-claude-code-hooks-go">Where do Claude Code hooks go?</a></li><li class="lvl-2"><a href="#how-does-the-hook-matcher-work">How does the hook matcher work?</a></li><li class="lvl-2"><a href="#what-do-hook-exit-codes-mean">What do hook exit codes mean?</a></li><li class="lvl-2"><a href="#what-does-a-pretooluse-hook-look-like">What does a PreToolUse hook look like?</a></li><li class="lvl-2"><a href="#what-is-a-posttooluse-hook-for">What is a PostToolUse hook for?</a></li><li class="lvl-2"><a href="#how-does-the-claude-code-stop-hook-work">How does the Claude Code Stop hook work?</a></li><li class="lvl-2"><a href="#why-is-my-claude-code-hook-not-working">Why is my Claude Code hook not working?</a></li><li class="lvl-2"><a href="#how-does-munder-difflin-use-claude-code-hooks">How does Munder Difflin use Claude Code hooks?</a></li>
+        <li class="lvl-2"><a href="#what-are-claude-code-hooks">What are Claude Code hooks?</a></li><li class="lvl-2"><a href="#which-hook-events-does-claude-code-have">Which hook events does Claude Code have?</a></li><li class="lvl-2"><a href="#where-do-claude-code-hooks-go">Where do Claude Code hooks go?</a></li><li class="lvl-2"><a href="#how-does-the-hook-matcher-work">How does the hook matcher work?</a></li><li class="lvl-2"><a href="#what-do-hook-exit-codes-mean">What do hook exit codes mean?</a></li><li class="lvl-2"><a href="#what-does-a-pretooluse-hook-look-like">What does a PreToolUse hook look like?</a></li><li class="lvl-2"><a href="#what-is-a-posttooluse-hook-for">What is a PostToolUse hook for?</a></li><li class="lvl-2"><a href="#how-does-the-claude-code-stop-hook-work">How does the Claude Code Stop hook work?</a></li><li class="lvl-2"><a href="#why-is-my-claude-code-hook-not-working">Why is my Claude Code hook not working?</a></li><li class="lvl-2"><a href="#how-does-munder-difflin-use-claude-code-hooks">How does Vishwajeet Team use Claude Code hooks?</a></li>
       </ol>
     </aside>
     
@@ -473,7 +473,7 @@
       <span>5 min</span>
     </div>
     <h3><a href="/blog/why-our-auto-update-never-ran/">Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace</a></h3>
-    <p class="dek">Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
+    <p class="dek">Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/why-our-auto-update-never-ran/" aria-label="Read: Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace">Read →</a>
@@ -491,20 +491,20 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

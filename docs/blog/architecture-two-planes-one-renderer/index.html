@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer — Munder Difflin Blog</title>
+<title>Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer — Vishwajeet Team Blog</title>
 <meta name="description" content="A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer." />
 <link rel="canonical" href="https://munderdiffl.in/blog/architecture-two-planes-one-renderer/" />
 
@@ -27,15 +27,15 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer — Munder Difflin Blog" />
+<meta property="og:title" content="Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer — Vishwajeet Team Blog" />
 <meta property="og:description" content="A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer." />
 <meta property="og:url" content="https://munderdiffl.in/blog/architecture-two-planes-one-renderer/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/architecture-two-planes-one-renderer/hero.png" />
 <meta property="og:image:width" content="1600" />
 <meta property="og:image:height" content="900" />
-<meta property="og:image:alt" content="Illustration: Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer" />
+<meta property="og:image:alt" content="Illustration: Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-06-04T00:00:00.000Z" />
 <meta property="article:author" content="Chaitanya Giri" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer — Munder Difflin Blog" />
+<meta name="twitter:title" content="Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/architecture-two-planes-one-renderer/hero.png" />
-<meta name="twitter:image:alt" content="Illustration: Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer" />
+<meta name="twitter:image:alt" content="Illustration: Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -62,7 +62,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Munder Difflin's Architecture: Two Data Planes, One Renderer",
+  "headline": "Vishwajeet Team's Architecture: Two Data Planes, One Renderer",
   "description": "A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer.",
   "image": ["https://munderdiffl.in/blog/assets/media/architecture-two-planes-one-renderer/hero.png"],
   "datePublished": "2026-06-04T00:00:00.000Z",
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/architecture-two-planes-one-renderer/" },
@@ -87,7 +87,7 @@
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://munderdiffl.in/" },
     { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://munderdiffl.in/blog/" },
-    { "@type": "ListItem", "position": 3, "name": "Munder Difflin's Architecture: Two Data Planes, One Renderer", "item": "https://munderdiffl.in/blog/architecture-two-planes-one-renderer/" }
+    { "@type": "ListItem", "position": 3, "name": "Vishwajeet Team's Architecture: Two Data Planes, One Renderer", "item": "https://munderdiffl.in/blog/architecture-two-planes-one-renderer/" }
   ]
 }
 </script>
@@ -97,7 +97,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What are the two data planes in Munder Difflin?", "acceptedAnswer": { "@type": "Answer", "text": "The terminal plane carries raw pseudo-terminal bytes from each agent's shell (node-pty) to an xterm.js view. The event plane carries structured agent state — Claude Code hook events and routed hive messages — to the office-floor visualization. One is byte-for-byte authentic; the other is event-driven." } },
+    { "@type": "Question", "name": "What are the two data planes in Vishwajeet Team?", "acceptedAnswer": { "@type": "Answer", "text": "The terminal plane carries raw pseudo-terminal bytes from each agent's shell (node-pty) to an xterm.js view. The event plane carries structured agent state — Claude Code hook events and routed hive messages — to the office-floor visualization. One is byte-for-byte authentic; the other is event-driven." } },
     { "@type": "Question", "name": "Why separate the terminal stream from the event stream?", "acceptedAnswer": { "@type": "Answer", "text": "Each answers a different question. The raw terminal stream shows exactly what the agent output; the event stream tells you which tool is running without parsing that output. Hooks alone miss the stream the user expects to see; the stream alone can't reliably say what's happening. Together they cover both." } },
     { "@type": "Question", "name": "How do the planes reach the UI?", "acceptedAnswer": { "@type": "Answer", "text": "Through Electron IPC. The main process owns the PTYs, a hook socket, and the hive; it forwards terminal bytes and structured events to the renderer, where React and Pixi.js draw the terminals and the office floor." } }
     
@@ -143,8 +143,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -168,7 +168,7 @@
       <span>/</span>
       <a href="/blog/topics/internals/">Internals</a>
     </nav>
-    <h1>Munder Difflin&#39;s Architecture: Two Data Planes, One Renderer</h1>
+    <h1>Vishwajeet Team&#39;s Architecture: Two Data Planes, One Renderer</h1>
     <p class="dek">A walkthrough of the multi-agent harness architecture: a node-pty terminal plane and a hooks/hive event plane feeding one React + Pixi.js renderer.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">CG</span>
@@ -181,7 +181,7 @@
     </div>
   </header>
 
-  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/architecture-two-planes-one-renderer/hero.png" alt="Illustration: Munder Difflin's Architecture: Two Data Planes, One Renderer" loading="lazy" decoding="async" /></figure></div>
+  <div class="hero-wrap wrap"><figure class="fig fig-hero"><img src="/blog/assets/media/architecture-two-planes-one-renderer/hero.png" alt="Illustration: Vishwajeet Team's Architecture: Two Data Planes, One Renderer" loading="lazy" decoding="async" /></figure></div>
 
   <div class="post-wrap wrap">
     <div class="prose">
@@ -192,7 +192,7 @@ shells), and an <strong>event plane</strong> carries structured Claude Code hook
 hive messages to a Pixi.js office floor (what's happening, at a glance). Both flow over Electron IPC
 into <strong>one React + Pixi renderer</strong>. The terminal plane is the truth; the event plane is
 the story.</p></div>
-<p>Most of what Munder Difflin does follows from a single architectural choice, so it’s worth walking
+<p>Most of what Vishwajeet Team does follows from a single architectural choice, so it’s worth walking
 through. The harness runs many real Claude Code agents and shows you two things about each: the exact
 terminal output, and a live picture of what it’s doing. Those are different kinds of data, so they
 travel on <strong>two separate planes</strong> that meet in one renderer. Here’s the whole shape.</p>
@@ -227,7 +227,7 @@ behind <a href="/blog/rendering-many-live-terminals-performance/">rendering many
 <p>What the terminal plane gives you: the unfiltered truth of what each agent did. What it <em>can’t</em> easily
 give you: a reliable “which tool is running right now?” without scraping and guessing at output. That’s
 the other plane’s job.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-1.png" alt="Hand-drawn sketch from “Munder Difflin's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-1.png" alt="Hand-drawn sketch from “Vishwajeet Team's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
 <h2 id="the-event-plane-hooks-hive" tabindex="-1">The event plane (hooks + hive) <a class="anchor" href="#the-event-plane-hooks-hive" aria-hidden="true">#</a></h2>
 <p>The event plane is about <em>structure</em>. It has two sources, both feeding the main process:</p>
 <p><strong>Claude Code hooks.</strong> Each agent is launched with lifecycle hooks wired through a tiny shim that
@@ -252,7 +252,7 @@ you’d see bytes but have to guess at meaning.</li>
 <p>Together they’re complementary: the office floor is <strong>event-driven</strong> (precise, structured, cheap to
 render), and the terminal view is <strong>byte-for-byte authentic</strong> (the full detail when you want it). Two
 planes, two questions, both answered well.</p>
-<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-2.png" alt="Hand-drawn sketch from “Munder Difflin's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
+<figure class="fig fig-inline"><img src="/blog/assets/media/architecture-two-planes-one-renderer/note-2.png" alt="Hand-drawn sketch from “Vishwajeet Team's Architecture: Two Data Planes, One Renderer”" loading="lazy" decoding="async" /></figure>
 <h2 id="one-renderer-convergence" tabindex="-1">One renderer convergence <a class="anchor" href="#one-renderer-convergence" aria-hidden="true">#</a></h2>
 <p>Both planes terminate in a single Electron renderer running React and Pixi.js:</p>
 <ul>
@@ -289,9 +289,9 @@ the agents themselves — it’s part of the coordination mechanism, not a third
 signals usually fit the event plane (more structured events) or the terminal plane (more byte
 streams) rather than needing a new one.</p>
 <hr>
-<p>Munder Difflin’s two-plane architecture — authentic node-pty terminals plus an event-driven Pixi.js
+<p>Vishwajeet Team’s two-plane architecture — authentic node-pty terminals plus an event-driven Pixi.js
 floor, converging in one renderer — is what makes a hive both legible and real.
-<a href="https://munderdiffl.in/#install">Download Munder Difflin</a> to see the architecture in action; it’s
+<a href="https://munderdiffl.in/#install">Download Vishwajeet Team</a> to see the architecture in action; it’s
 free and open source.</p>
 
 
@@ -300,7 +300,7 @@ free and open source.</p>
         <h2 id="faq">FAQ</h2>
         
         <div class="qa">
-          <p class="q">What are the two data planes in Munder Difflin?</p>
+          <p class="q">What are the two data planes in Vishwajeet Team?</p>
           <p class="a">The terminal plane carries raw pseudo-terminal bytes from each agent&#39;s shell (node-pty) to an xterm.js view. The event plane carries structured agent state — Claude Code hook events and routed hive messages — to the office-floor visualization. One is byte-for-byte authentic; the other is event-driven.</p>
         </div>
         
@@ -384,7 +384,7 @@ free and open source.</p>
       <span>5 min</span>
     </div>
     <h3><a href="/blog/why-our-auto-update-never-ran/">Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace</a></h3>
-    <p class="dek">Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
+    <p class="dek">Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/why-our-auto-update-never-ran/" aria-label="Read: Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace">Read →</a>
@@ -402,20 +402,20 @@ free and open source.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

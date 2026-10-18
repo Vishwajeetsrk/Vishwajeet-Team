@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Loop Engineering: Designing Agent Loops That Converge — Munder Difflin Blog</title>
+<title>Loop Engineering: Designing Agent Loops That Converge — Vishwajeet Team Blog</title>
 <meta name="description" content="Everyone engineers the prompt; almost nobody engineers the loop around it. Stop conditions, drain loops, retry with backoff, compaction cycles, breaker escalation, budgets, and human gates — the outer-loop mechanics that make an agent converge instead of run away." />
 <link rel="canonical" href="https://munderdiffl.in/blog/loop-engineering-for-ai-agents/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Loop Engineering: Designing Agent Loops That Converge — Munder Difflin Blog" />
+<meta property="og:title" content="Loop Engineering: Designing Agent Loops That Converge — Vishwajeet Team Blog" />
 <meta property="og:description" content="Everyone engineers the prompt; almost nobody engineers the loop around it. Stop conditions, drain loops, retry with backoff, compaction cycles, breaker escalation, budgets, and human gates — the outer-loop mechanics that make an agent converge instead of run away." />
 <meta property="og:url" content="https://munderdiffl.in/blog/loop-engineering-for-ai-agents/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/loop-engineering-for-ai-agents/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Loop Engineering: Designing Agent Loops That Converge — Munder Difflin Blog" />
+<meta name="twitter:title" content="Loop Engineering: Designing Agent Loops That Converge — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Everyone engineers the prompt; almost nobody engineers the loop around it. Stop conditions, drain loops, retry with backoff, compaction cycles, breaker escalation, budgets, and human gates — the outer-loop mechanics that make an agent converge instead of run away." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/loop-engineering-for-ai-agents/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Loop Engineering: Designing Agent Loops That Converge" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/loop-engineering-for-ai-agents/" },
@@ -147,8 +147,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -204,19 +204,19 @@
 <p>A runaway loop is just a loop missing one of these — usually the first. The agent is <em>doing things</em>, tokens are flowing, avatars are walking around, and nothing external is changing. Motion without progress.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/loop-engineering-for-ai-agents/note-1.png" alt="Hand-drawn sketch from “Loop Engineering: Designing Agent Loops That Converge”" loading="lazy" decoding="async" /></figure>
 <h2 id="the-outer-loop-toolbox" tabindex="-1">The outer-loop toolbox <a class="anchor" href="#the-outer-loop-toolbox" aria-hidden="true">#</a></h2>
-<p>Here’s the toolbox as it actually exists in <a href="/">Munder Difflin</a>, where the design constraint is blunt: a floor of CLI agents has to run for days without a human babysitting it, and without melting.</p>
-<p><strong>Stop conditions.</strong> The naive stop condition is “the model stopped talking.” The engineered one checks state: is the task’s definition of done verified? In Munder Difflin, workers don’t self-certify — the GOD orchestrator reads results, adjudicates, and moves the board (see <a href="/blog/how-the-god-orchestrator-works/">how the GOD orchestrator works</a>).</p>
+<p>Here’s the toolbox as it actually exists in <a href="/">Vishwajeet Team</a>, where the design constraint is blunt: a floor of CLI agents has to run for days without a human babysitting it, and without melting.</p>
+<p><strong>Stop conditions.</strong> The naive stop condition is “the model stopped talking.” The engineered one checks state: is the task’s definition of done verified? In Vishwajeet Team, workers don’t self-certify — the GOD orchestrator reads results, adjudicates, and moves the board (see <a href="/blog/how-the-god-orchestrator-works/">how the GOD orchestrator works</a>).</p>
 <p><strong>Drain loops.</strong> The most useful outer-loop pattern in Claude Code is built on the Stop hook: when an agent tries to end its turn, the hook checks its mailbox — and if mail is waiting, it blocks the stop and continues the session with the next message as the prompt. The agent drains its queue instead of dying with a full inbox. Claude Code’s own hooks reference builds in the guardrail this pattern needs: a <code>stop_hook_active</code> flag, so a blocked stop can’t recurse into an infinite forced continuation. That’s loop engineering <em>inside</em> the primitive — one continuation per real stop, not a hall of mirrors.</p>
-<p><strong>Retry with backoff.</strong> Transient failures (rate limits, flaky network, a wedged terminal) deserve a retry; identical immediate retries deserve suspicion. Munder Difflin’s wake-reliability layer takes the same stance at floor scale: revive wedged terminals, catch up missed schedules, re-arm the message router — recover the <em>loop</em>, don’t just replay the failure. More in <a href="/blog/recovering-from-agent-failures/">recovering from agent failures</a>.</p>
-<p><strong>Compaction cycles.</strong> Long loops fill context windows, and a full window degrades every subsequent iteration. So compaction has to be part of the cycle, not an emergency. Munder Difflin runs a dedicated auto-compact maintenance schedule, decoupled from missions, and the floor even shows a <em>compacting</em> avatar state — because a maintenance pause that looks like a hang gets killed by nervous humans.</p>
-<p><strong>Breaker escalation: steer → constrain → stop.</strong> Binary kill switches are a bad fit for agents, because most divergence is recoverable. Munder Difflin’s circuit breaker is a ladder: first <em>steer</em> (a corrective nudge into the session), then <em>constrain</em> (tighten what the agent may do), then <em>stop</em> — triggered by looping, error storms, or a blown budget. Graduated response preserves the work that a hard kill would throw away.</p>
-<p><strong>No-progress detection.</strong> The breaker needs a tripwire, and “is it looping?” can’t be answered by asking the looper. External signals work: repeated near-identical actions, the same error N times, spend rising while verified state stays flat. There’s also a quieter failure — the <em>silent</em> stall — which Munder Difflin catches with a PTY-quiescence backstop: an agent pinned <code>working</code> but producing no output gets flipped back to idle, where the inbox-wake nudge can restart its drain loop.</p>
+<p><strong>Retry with backoff.</strong> Transient failures (rate limits, flaky network, a wedged terminal) deserve a retry; identical immediate retries deserve suspicion. Vishwajeet Team’s wake-reliability layer takes the same stance at floor scale: revive wedged terminals, catch up missed schedules, re-arm the message router — recover the <em>loop</em>, don’t just replay the failure. More in <a href="/blog/recovering-from-agent-failures/">recovering from agent failures</a>.</p>
+<p><strong>Compaction cycles.</strong> Long loops fill context windows, and a full window degrades every subsequent iteration. So compaction has to be part of the cycle, not an emergency. Vishwajeet Team runs a dedicated auto-compact maintenance schedule, decoupled from missions, and the floor even shows a <em>compacting</em> avatar state — because a maintenance pause that looks like a hang gets killed by nervous humans.</p>
+<p><strong>Breaker escalation: steer → constrain → stop.</strong> Binary kill switches are a bad fit for agents, because most divergence is recoverable. Vishwajeet Team’s circuit breaker is a ladder: first <em>steer</em> (a corrective nudge into the session), then <em>constrain</em> (tighten what the agent may do), then <em>stop</em> — triggered by looping, error storms, or a blown budget. Graduated response preserves the work that a hard kill would throw away.</p>
+<p><strong>No-progress detection.</strong> The breaker needs a tripwire, and “is it looping?” can’t be answered by asking the looper. External signals work: repeated near-identical actions, the same error N times, spend rising while verified state stays flat. There’s also a quieter failure — the <em>silent</em> stall — which Vishwajeet Team catches with a PTY-quiescence backstop: an agent pinned <code>working</code> but producing no output gets flipped back to idle, where the inbox-wake nudge can restart its drain loop.</p>
 <p><strong>Budgets as loop bounds.</strong> Per-agent token budgets, tracked live against real telemetry, are the guaranteed-termination clause. If every other signal misses, the loop still halts at a ceiling you set while calm.</p>
 <p><strong>Human gates as loop exits.</strong> The final exit isn’t a dead process; it’s a person. Spend, scope changes, and destructive operations escalate into an approvals queue rather than resolving inside the loop — the human is a designed exit condition, not an interrupt handler. That’s the heart of <a href="/blog/human-in-the-loop-approving-ai-agents/">human-in-the-loop agent design</a>.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/loop-engineering-for-ai-agents/note-2.png" alt="Hand-drawn sketch from “Loop Engineering: Designing Agent Loops That Converge”" loading="lazy" decoding="async" /></figure>
 <h2 id="the-bottom-line" tabindex="-1">The bottom line <a class="anchor" href="#the-bottom-line" aria-hidden="true">#</a></h2>
 <p>The model gives you the inner loop; the outer loop is the product. Verified stop conditions, drain loops with anti-recursion guards, backoff, scheduled compaction, a breaker ladder, progress tripwires, budget bounds, and human exits — stacked together, they’re why a floor of agents can run for days and converge on finished work instead of a bill.</p>
-<p>Munder Difflin ships this outer loop as a free, MIT-licensed, local-first desktop app for the agent CLIs you already run. <a href="https://github.com/chaitanyagiri/munder-difflin/releases/latest">Download it</a>, and if the loop-nerdery resonates, a <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub star</a> helps more people find it.</p>
+<p>Vishwajeet Team ships this outer loop as a free, MIT-licensed, local-first desktop app for the agent CLIs you already run. <a href="https://github.com/Vishwajeetsrk/Team/releases/latest">Download it</a>, and if the loop-nerdery resonates, a <a href="https://github.com/Vishwajeetsrk/Team">GitHub star</a> helps more people find it.</p>
 <h2 id="faq" tabindex="-1">FAQ <a class="anchor" href="#faq" aria-hidden="true">#</a></h2>
 <p><strong>What is an agentic loop?</strong> The cycle an agent runs each turn: gather context, act, verify, repeat. The outer loop is everything the harness wraps around it — continue, retry, escalate, stop.</p>
 <p><strong>What makes a loop converge?</strong> A verified progress measure, hard bounds, and designed exits. Missing any one of the three, you’ve built a runaway.</p>
@@ -284,8 +284,8 @@
   </div>
 
   <footer class="post-foot wrap"><div class="prevnext">
-      <a class="pn prev" href="/blog/orca-vs-munder-difflin/"><span class="k">← Older</span><span class="t">Orca vs Munder Difflin: Agent IDE or Agent Office?</span></a>
-      <a class="pn next" href="/blog/launching-munder-difflin-v0-3-3/"><span class="k">Newer →</span><span class="t">Launching Munder Difflin v0.3.3: A Built-in Monaco IDE and GitHub Copilot CLI Support</span></a>
+      <a class="pn prev" href="/blog/orca-vs-munder-difflin/"><span class="k">← Older</span><span class="t">Orca vs Vishwajeet Team: Agent IDE or Agent Office?</span></a>
+      <a class="pn next" href="/blog/launching-munder-difflin-v0-3-3/"><span class="k">Newer →</span><span class="t">Launching Vishwajeet Team v0.3.3: A Built-in Monaco IDE and GitHub Copilot CLI Support</span></a>
     </div>
     <section class="related">
       <h2>Related in Concepts</h2>
@@ -349,20 +349,20 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

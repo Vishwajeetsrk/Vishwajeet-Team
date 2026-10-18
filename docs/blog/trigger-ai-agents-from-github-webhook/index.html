@@ -18,8 +18,8 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>How to Trigger Your AI Agent Hive from a GitHub Webhook — Munder Difflin Blog</title>
-<meta name="description" content="Wire a GitHub webhook to Munder Difflin: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host." />
+<title>How to Trigger Your AI Agent Hive from a GitHub Webhook — Vishwajeet Team Blog</title>
+<meta name="description" content="Wire a GitHub webhook to Vishwajeet Team: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host." />
 <link rel="canonical" href="https://munderdiffl.in/blog/trigger-ai-agents-from-github-webhook/" />
 
 <link rel="icon" type="image/png" href="https://munderdiffl.in/logo.png" />
@@ -27,10 +27,10 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="How to Trigger Your AI Agent Hive from a GitHub Webhook — Munder Difflin Blog" />
-<meta property="og:description" content="Wire a GitHub webhook to Munder Difflin: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host." />
+<meta property="og:title" content="How to Trigger Your AI Agent Hive from a GitHub Webhook — Vishwajeet Team Blog" />
+<meta property="og:description" content="Wire a GitHub webhook to Vishwajeet Team: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host." />
 <meta property="og:url" content="https://munderdiffl.in/blog/trigger-ai-agents-from-github-webhook/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/trigger-ai-agents-from-github-webhook/hero.png" />
 <meta property="og:image:width" content="1600" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="How to Trigger Your AI Agent Hive from a GitHub Webhook — Munder Difflin Blog" />
-<meta name="twitter:description" content="Wire a GitHub webhook to Munder Difflin: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host." />
+<meta name="twitter:title" content="How to Trigger Your AI Agent Hive from a GitHub Webhook — Vishwajeet Team Blog" />
+<meta name="twitter:description" content="Wire a GitHub webhook to Vishwajeet Team: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/trigger-ai-agents-from-github-webhook/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: How to Trigger Your AI Agent Hive from a GitHub Webhook" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -64,14 +64,14 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Trigger Your AI Agent Hive from a GitHub Webhook",
-  "description": "Wire a GitHub webhook to Munder Difflin: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host.",
+  "description": "Wire a GitHub webhook to Vishwajeet Team: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host.",
   "image": ["https://munderdiffl.in/blog/assets/media/trigger-ai-agents-from-github-webhook/hero.png"],
   "datePublished": "2026-06-10T00:00:00.000Z",
   "dateModified": "2026-06-10T00:00:00.000Z",
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/trigger-ai-agents-from-github-webhook/" },
@@ -98,8 +98,8 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Can you trigger an AI agent from a GitHub webhook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Munder Difflin runs a small, opt-in local webhook that turns an inbound POST into a task. Point a GitHub webhook (or a one-line curl from a GitHub Action) at the public URL with the shared secret in an x-md-webhook-secret header and a JSON body of { message, title? }, and the GOD orchestrator picks it up, files a kanban card, and routes it to an agent." } },
-    { "@type": "Question", "name": "Is the Munder Difflin webhook secure?", "acceptedAnswer": { "@type": "Answer", "text": "It's built to be. Every POST must carry your shared secret in x-md-webhook-secret, compared in constant time, and the secret is verified before the body is even buffered. A 1 MB body cap and a fixed-window rate limit (120 requests/minute) bound abuse ahead of any parsing. The response hands back a 192-bit capability token; a GET reveals only that one task's status — no listing, no enumeration." } },
+    { "@type": "Question", "name": "Can you trigger an AI agent from a GitHub webhook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Vishwajeet Team runs a small, opt-in local webhook that turns an inbound POST into a task. Point a GitHub webhook (or a one-line curl from a GitHub Action) at the public URL with the shared secret in an x-md-webhook-secret header and a JSON body of { message, title? }, and the GOD orchestrator picks it up, files a kanban card, and routes it to an agent." } },
+    { "@type": "Question", "name": "Is the Vishwajeet Team webhook secure?", "acceptedAnswer": { "@type": "Answer", "text": "It's built to be. Every POST must carry your shared secret in x-md-webhook-secret, compared in constant time, and the secret is verified before the body is even buffered. A 1 MB body cap and a fixed-window rate limit (120 requests/minute) bound abuse ahead of any parsing. The response hands back a 192-bit capability token; a GET reveals only that one task's status — no listing, no enumeration." } },
     { "@type": "Question", "name": "Do I need to host a public server to receive GitHub webhooks?", "acceptedAnswer": { "@type": "Answer", "text": "No. The endpoint runs on your own machine inside the desktop app. A best-effort local tunnel (tunnelmole) gives GitHub a public URL to reach your local port, so there's nothing to deploy. If the tunnel can't start, the local handler still runs — the tunnel is a doorbell, not the security boundary." } }
     
   ]
@@ -144,8 +144,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -170,7 +170,7 @@
       <a href="/blog/topics/guides/">Guides</a>
     </nav>
     <h1>How to Trigger Your AI Agent Hive from a GitHub Webhook</h1>
-    <p class="dek">Wire a GitHub webhook to Munder Difflin: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host.</p>
+    <p class="dek">Wire a GitHub webhook to Vishwajeet Team: a secret-gated local endpoint turns each repo event into a task for your GOD orchestrator — POST a message, get a token, poll the result. No server to host.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">CG</span>
       <strong>Chaitanya Giri</strong>
@@ -186,7 +186,7 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin can <strong>turn a GitHub
+      <div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team can <strong>turn a GitHub
 webhook into a task for your hive</strong>. Flip on the webhook trigger, copy the public URL it opens via
 a local tunnel, and have GitHub (or a GitHub Action) <strong>POST <code>{ message, title? }</code></strong>
 with your shared secret in an <code>x-md-webhook-secret</code> header. The GOD orchestrator files a kanban
@@ -194,7 +194,7 @@ card, routes it to an agent, and hands back a <strong>capability token</strong> 
 The endpoint lives <em>on your machine</em>; the tunnel is just a doorbell. Off by default until you switch
 it on.</p></div>
 <p>Most of the time you brief your agents from the app. But a lot of work <em>starts</em> in GitHub — a PR opens, an
-issue gets a label, a release tag lands. Munder Difflin’s webhook trigger lets you bridge that gap: a GitHub
+issue gets a label, a release tag lands. Vishwajeet Team’s webhook trigger lets you bridge that gap: a GitHub
 event becomes a task in your hive’s queue, triaged and routed by <a href="/blog/how-the-god-orchestrator-works/">the GOD
 orchestrator</a> like any other piece of work. This is a hands-on
 walkthrough using GitHub as the concrete example, but the same endpoint accepts a POST from anything that
@@ -216,7 +216,7 @@ into the routed message, the card, or the response — so it can’t leak downst
 person mid-run. One starts work remotely; the other checks with you. Together they let a hive run while you’re
 not at the keyboard.</p>
 <h2 id="step-1-enable-the-webhook-trigger-and-get-the-public-url" tabindex="-1">Step 1 — Enable the webhook trigger and get the public URL <a class="anchor" href="#step-1-enable-the-webhook-trigger-and-get-the-public-url" aria-hidden="true">#</a></h2>
-<p>In Munder Difflin, switch on the webhook trigger and set a <strong>shared secret</strong> (treat it like a password — long
+<p>In Vishwajeet Team, switch on the webhook trigger and set a <strong>shared secret</strong> (treat it like a password — long
 and random). When it starts, two things happen:</p>
 <ol>
 <li>A bare HTTP server binds to a local port inside the app’s main process. This is the security boundary, and
@@ -242,7 +242,7 @@ exactly the body the endpoint expects. Drop this in <code>.github/workflows/noti
   <span class="token key atrule">ping</span><span class="token punctuation">:</span>
     <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
     <span class="token key atrule">steps</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> POST to Munder Difflin
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> POST to Vishwajeet Team
         <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
           curl -sS -X POST "$HIVE_URL" \
             -H "x-md-webhook-secret: $HIVE_SECRET" \
@@ -321,9 +321,9 @@ that one task. The secret is never logged or forwarded.</p>
 <p><strong>Do I need a public server?</strong> No. The endpoint runs locally; a best-effort tunnel gives GitHub a URL to reach
 it, and the handler runs even if the tunnel doesn’t.</p>
 <hr>
-<p>Munder Difflin turns a GitHub event into a remote control for a hive that still lives entirely on your machine
+<p>Vishwajeet Team turns a GitHub event into a remote control for a hive that still lives entirely on your machine
 — <a href="https://munderdiffl.in/#how">orchestrated by GOD</a>, verified at the edge, queued like any other task.
-<a href="https://munderdiffl.in/#install">Download Munder Difflin</a> to wire your repo into your agents; it’s free and
+<a href="https://munderdiffl.in/#install">Download Vishwajeet Team</a> to wire your repo into your agents; it’s free and
 open source.</p>
 
 
@@ -333,11 +333,11 @@ open source.</p>
         
         <div class="qa">
           <p class="q">Can you trigger an AI agent from a GitHub webhook?</p>
-          <p class="a">Yes. Munder Difflin runs a small, opt-in local webhook that turns an inbound POST into a task. Point a GitHub webhook (or a one-line curl from a GitHub Action) at the public URL with the shared secret in an x-md-webhook-secret header and a JSON body of { message, title? }, and the GOD orchestrator picks it up, files a kanban card, and routes it to an agent.</p>
+          <p class="a">Yes. Vishwajeet Team runs a small, opt-in local webhook that turns an inbound POST into a task. Point a GitHub webhook (or a one-line curl from a GitHub Action) at the public URL with the shared secret in an x-md-webhook-secret header and a JSON body of { message, title? }, and the GOD orchestrator picks it up, files a kanban card, and routes it to an agent.</p>
         </div>
         
         <div class="qa">
-          <p class="q">Is the Munder Difflin webhook secure?</p>
+          <p class="q">Is the Vishwajeet Team webhook secure?</p>
           <p class="a">It&#39;s built to be. Every POST must carry your shared secret in x-md-webhook-secret, compared in constant time, and the secret is verified before the body is even buffered. A 1 MB body cap and a fixed-window rate limit (120 requests/minute) bound abuse ahead of any parsing. The response hands back a 192-bit capability token; a GET reveals only that one task&#39;s status — no listing, no enumeration.</p>
         </div>
         
@@ -369,7 +369,7 @@ open source.</p>
   </div>
 
   <footer class="post-foot wrap"><div class="prevnext">
-      <a class="pn prev" href="/blog/why-cli-agents-are-powerful/"><span class="k">← Older</span><span class="t">Why CLI Agents Are So Powerful — and How Munder Difflin Spends Fewer Tokens Doing the Same Work</span></a>
+      <a class="pn prev" href="/blog/why-cli-agents-are-powerful/"><span class="k">← Older</span><span class="t">Why CLI Agents Are So Powerful — and How Vishwajeet Team Spends Fewer Tokens Doing the Same Work</span></a>
       <a class="pn next" href="/blog/the-clone-army-trap-mixed-swarm-vs-identical-agents/"><span class="k">Newer →</span><span class="t">The Clone Army Is a Trap: Why a Mixed Swarm Beats Ten Identical Agents</span></a>
     </div>
     <section class="related">
@@ -434,20 +434,20 @@ open source.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

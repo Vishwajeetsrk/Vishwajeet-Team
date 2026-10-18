@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Claude Code Subagents: How to Create and Use Them (vs Agent Teams) — Munder Difflin Blog</title>
+<title>Claude Code Subagents: How to Create and Use Them (vs Agent Teams) — Vishwajeet Team Blog</title>
 <meta name="description" content="Claude Code subagents in 2026: the .claude/agents file, built-in Explore and Plan, models, nesting, and when agent teams or a harness fit better." />
 <link rel="canonical" href="https://munderdiffl.in/blog/claude-code-subagents-vs-multi-agent-harness/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Claude Code Subagents: How to Create and Use Them (vs Agent Teams) — Munder Difflin Blog" />
+<meta property="og:title" content="Claude Code Subagents: How to Create and Use Them (vs Agent Teams) — Vishwajeet Team Blog" />
 <meta property="og:description" content="Claude Code subagents in 2026: the .claude/agents file, built-in Explore and Plan, models, nesting, and when agent teams or a harness fit better." />
 <meta property="og:url" content="https://munderdiffl.in/blog/claude-code-subagents-vs-multi-agent-harness/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/claude-code-subagents-vs-multi-agent-harness/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Claude Code Subagents: How to Create and Use Them (vs Agent Teams) — Munder Difflin Blog" />
+<meta name="twitter:title" content="Claude Code Subagents: How to Create and Use Them (vs Agent Teams) — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Claude Code subagents in 2026: the .claude/agents file, built-in Explore and Plan, models, nesting, and when agent teams or a harness fit better." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/claude-code-subagents-vs-multi-agent-harness/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Claude Code Subagents vs a Multi-Agent Harness" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/claude-code-subagents-vs-multi-agent-harness/" },
@@ -145,8 +145,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -188,7 +188,7 @@
   <div class="post-wrap wrap">
     <div class="prose">
       <p>A Claude Code subagent is a separate Claude worker that takes one task in its own context window and returns only a summary. You define one as a Markdown file in <code>.claude/agents/</code>, and Claude delegates to it when a task matches its <code>description</code>. Everything below was checked against Claude Code 2.1.284 on 29 Sep 2026.</p>
-<p>You can do all of this by hand with the files below, or use <a href="https://harnessmd.com/download">Munder Difflin</a>, free and open source, when what you need is several long running agents rather than helpers inside one session. The second half of this post shows where that line falls; the <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> covers setup.</p>
+<p>You can do all of this by hand with the files below, or use <a href="https://harnessmd.com/download">Vishwajeet Team</a>, free and open source, when what you need is several long running agents rather than helpers inside one session. The second half of this post shows where that line falls; the <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> covers setup.</p>
 <h2 id="how-do-you-create-a-claude-code-subagent" tabindex="-1">How do you create a Claude Code subagent? <a class="anchor" href="#how-do-you-create-a-claude-code-subagent" aria-hidden="true">#</a></h2>
 <p>You save a Markdown file with YAML front matter in <code>.claude/agents/</code> for one project, or in <code>~/.claude/agents/</code> for every project on your machine. Only <code>name</code> and <code>description</code> are required, and the body under the front matter becomes the subagent’s system prompt. This one runs tests on Haiku and has no Edit or Write tool:</p>
 <pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
@@ -269,7 +269,7 @@ reports only failures. No Edit or Write tools, and use Haiku.</code></pre>
 <figure class="fig fig-inline"><img src="/blog/assets/media/claude-code-subagents-vs-multi-agent-harness/note-2.png" alt="Hand-drawn sketch from “Claude Code Subagents vs a Multi-Agent Harness”" loading="lazy" decoding="async" /></figure>
 <h2 id="when-do-you-need-a-multi-agent-harness-instead" tabindex="-1">When do you need a multi agent harness instead? <a class="anchor" href="#when-do-you-need-a-multi-agent-harness-instead" aria-hidden="true">#</a></h2>
 <p>When the agents should outlive a session. Subagents and agent teams both hang off one lead session: close it and the team goes with it, and a subagent comes back only if you resume that same session. A <a href="/blog/what-is-a-multi-agent-harness/">multi agent harness</a> runs each agent as its own long lived session and coordinates them from outside.</p>
-<p>Munder Difflin is one, and as of v0.5.3 (the ref we read for this) it works like this:</p>
+<p>Vishwajeet Team is one, and as of v0.5.3 (the ref we read for this) it works like this:</p>
 <ul>
 <li>Each agent is a full CLI session, and it does not have to be Claude Code: <code>AGENT_PROVIDER_PRESETS</code> in <code>src/shared/agentProvider.ts</code> lists Claude Code, Codex, Gemini CLI, Antigravity, Grok, Kimi Code, Qwen, OpenCode, Crush, Pi, Copilot and Cursor.</li>
 <li>Each agent gets a workspace folder with <code>identity.md</code>, <code>memory.md</code>, <code>inbox/</code> and <code>outbox/</code> that survives restarts, and a router in the main process moves outbox messages into the right inboxes (<code>src/main/hive.ts</code>).</li>
@@ -400,20 +400,20 @@ reports only failures. No Edit or Write tools, and use Haiku.</code></pre>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

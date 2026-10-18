@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do — Munder Difflin Blog</title>
+<title>Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do — Vishwajeet Team Blog</title>
 <meta name="description" content="Ollama only runs the model, so the answer depends on which one you pull and your memory. What local models do well, where Claude wins, and a verdict." />
 <link rel="canonical" href="https://munderdiffl.in/blog/is-ollama-good-for-coding/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do — Munder Difflin Blog" />
+<meta property="og:title" content="Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do — Vishwajeet Team Blog" />
 <meta property="og:description" content="Ollama only runs the model, so the answer depends on which one you pull and your memory. What local models do well, where Claude wins, and a verdict." />
 <meta property="og:url" content="https://munderdiffl.in/blog/is-ollama-good-for-coding/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/is-ollama-good-for-coding/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do — Munder Difflin Blog" />
+<meta name="twitter:title" content="Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Ollama only runs the model, so the answer depends on which one you pull and your memory. What local models do well, where Claude wins, and a verdict." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/is-ollama-good-for-coding/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Is Ollama Good for Coding? What Local Models Can and Can&#39;t Do" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/is-ollama-good-for-coding/" },
@@ -145,8 +145,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -188,7 +188,7 @@
   <div class="post-wrap wrap">
     <div class="prose">
       <p>Ollama is good for coding on scoped, private work if you pull a recent tool calling model that fits your memory and raise its context window. It does not yet replace Claude or GPT on long agent runs. Ollama only runs the model; the model and your memory decide the rest.</p>
-<p>You can pick, size and wire local models by hand, or use <a href="https://harnessmd.com/download">Munder Difflin</a>, a free and open source desktop app that runs several coding agents side by side, each on its own engine and model. As of 0.5.2, its Add agent screen offers eight local Ollama models for OpenCode, Crush and Pi agents, each tooltip showing a rough memory figure and the <code>ollama pull</code> command, while Claude Code agents stay on your Claude login. It will not pull the model or set Ollama’s context for you; the <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> covers the rest of setup.</p>
+<p>You can pick, size and wire local models by hand, or use <a href="https://harnessmd.com/download">Vishwajeet Team</a>, a free and open source desktop app that runs several coding agents side by side, each on its own engine and model. As of 0.5.2, its Add agent screen offers eight local Ollama models for OpenCode, Crush and Pi agents, each tooltip showing a rough memory figure and the <code>ollama pull</code> command, while Claude Code agents stay on your Claude login. It will not pull the model or set Ollama’s context for you; the <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> covers the rest of setup.</p>
 <h2 id="can-ollama-write-code" tabindex="-1">Can Ollama write code? <a class="anchor" href="#can-ollama-write-code" aria-hidden="true">#</a></h2>
 <p>Not on its own: Ollama is a model runner, and the model you load writes the code. It downloads open weight models, serves them on <code>localhost:11434</code>, and gives coding tools an API to call.</p>
 <p>One recent change blurs that. Since 0.32.0 (11 July 2026), typing <code>ollama</code> opens an agent that helps you code, and the release notes show it on <code>glm-5.2:cloud</code>, a model on Ollama’s servers rather than yours. Any tag with cloud in it, such as <code>gpt-oss:120b-cloud</code>, sends your prompts off the machine.</p>
@@ -206,7 +206,7 @@
 	<span class="token string">"mistral"</span><span class="token punctuation">:</span>       <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
 	<span class="token string">"starcoder"</span><span class="token punctuation">:</span>     <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span></code></pre>
-<p>DeepSeek R1 tags up to <code>32b</code> are flagged too. The prompt says the model “does not work well with” your tool, then offers “Launch anyway” or “Pick another model”. Ollama will not stop you, it just asks if you are sure. Our own list would earn the same warning: Munder Difflin 0.5.2’s local picks still include two flagged models, Llama 3.3 70B and DeepSeek R1 32B, so for coding take Qwen3 Coder 30B or gpt-oss 20B from it.</p>
+<p>DeepSeek R1 tags up to <code>32b</code> are flagged too. The prompt says the model “does not work well with” your tool, then offers “Launch anyway” or “Pick another model”. Ollama will not stop you, it just asks if you are sure. Our own list would earn the same warning: Vishwajeet Team 0.5.2’s local picks still include two flagged models, Llama 3.3 70B and DeepSeek R1 32B, so for coding take Qwen3 Coder 30B or gpt-oss 20B from it.</p>
 <h2 id="how-much-ram-do-you-need-for-ollama-coding-models" tabindex="-1">How much RAM do you need for Ollama coding models? <a class="anchor" href="#how-much-ram-do-you-need-for-ollama-coding-models" aria-hidden="true">#</a></h2>
 <p>Enough to hold the model plus its context window: by our estimate 16GB for the small picks and 32GB for 24B to 30B coding models. The only primary figures for these models are on Ollama’s <a href="https://ollama.com/library/gpt-oss">gpt-oss page</a>, where the 20B model runs in as little as 16GB of memory and the 120B model fits on a single 80GB GPU. Quantization stores each weight in fewer bits, which is why one model comes in several sizes: on Ollama’s <a href="https://ollama.com/library/qwen3-coder/tags">qwen3-coder tags page</a>, the 30B model is 19GB at 4 bit, 32GB at 8 bit and 61GB at 16 bit.</p>
 <p>These all list tool calling on their Ollama library pages, checked 15 Sep 2026. The gpt-oss memory figures are Ollama’s; the rest are our estimates from download size plus context:</p>
@@ -390,20 +390,20 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

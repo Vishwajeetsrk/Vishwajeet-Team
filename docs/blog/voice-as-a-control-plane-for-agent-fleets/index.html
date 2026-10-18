@@ -18,8 +18,8 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Voice Is a Control Plane, Not a Gimmick — Munder Difflin Blog</title>
-<meta name="description" content="Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Munder Difflin&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study." />
+<title>Voice Is a Control Plane, Not a Gimmick — Vishwajeet Team Blog</title>
+<meta name="description" content="Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Vishwajeet Team&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study." />
 <link rel="canonical" href="https://munderdiffl.in/blog/voice-as-a-control-plane-for-agent-fleets/" />
 
 <link rel="icon" type="image/png" href="https://munderdiffl.in/logo.png" />
@@ -27,10 +27,10 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Voice Is a Control Plane, Not a Gimmick — Munder Difflin Blog" />
-<meta property="og:description" content="Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Munder Difflin&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study." />
+<meta property="og:title" content="Voice Is a Control Plane, Not a Gimmick — Vishwajeet Team Blog" />
+<meta property="og:description" content="Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Vishwajeet Team&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study." />
 <meta property="og:url" content="https://munderdiffl.in/blog/voice-as-a-control-plane-for-agent-fleets/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/voice-as-a-control-plane-for-agent-fleets/hero.png" />
 <meta property="og:image:width" content="1600" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Voice Is a Control Plane, Not a Gimmick — Munder Difflin Blog" />
-<meta name="twitter:description" content="Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Munder Difflin&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study." />
+<meta name="twitter:title" content="Voice Is a Control Plane, Not a Gimmick — Vishwajeet Team Blog" />
+<meta name="twitter:description" content="Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Vishwajeet Team&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/voice-as-a-control-plane-for-agent-fleets/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Voice Is a Control Plane, Not a Gimmick" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -64,14 +64,14 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Voice Is a Control Plane, Not a Gimmick",
-  "description": "Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Munder Difflin's Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study.",
+  "description": "Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Vishwajeet Team's Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study.",
   "image": ["https://munderdiffl.in/blog/assets/media/voice-as-a-control-plane-for-agent-fleets/hero.png"],
   "datePublished": "2026-07-03T00:00:00.000Z",
   "dateModified": "2026-07-03T00:00:00.000Z",
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/voice-as-a-control-plane-for-agent-fleets/" },
@@ -99,7 +99,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Why is voice bad for writing code but good for orchestrating agents?", "acceptedAnswer": { "@type": "Answer", "text": "Because the bandwidth is mismatched in one direction and matched in the other. Code is dense, precise, and positional — dictating a diff by voice is slower and more error-prone than typing it. Orchestration commands are the opposite: short, intent-shaped utterances like assign this, what's the status, kill that worker. A sentence of intent fans out into minutes of agent work, so voice carries the command and the agents carry the density." } },
-    { "@type": "Question", "name": "What can you actually do by voice in Munder Difflin's Talk mode?", "acceptedAnswer": { "@type": "Answer", "text": "Press Talk and you get a low-latency voice channel to the GOD orchestrator over the OpenAI Realtime API. Michael reads the hive — tasks, board, memory, agents, activity, cost — and can create and assign tasks, dispatch agents, pause, steer, halt, spawn or hire workers, kill them, and edit schedules. Destructive verbs are gated behind spoken echo-back confirmation, and completions are spoken back the moment they land." } },
+    { "@type": "Question", "name": "What can you actually do by voice in Vishwajeet Team's Talk mode?", "acceptedAnswer": { "@type": "Answer", "text": "Press Talk and you get a low-latency voice channel to the GOD orchestrator over the OpenAI Realtime API. Michael reads the hive — tasks, board, memory, agents, activity, cost — and can create and assign tasks, dispatch agents, pause, steer, halt, spawn or hire workers, kill them, and edit schedules. Destructive verbs are gated behind spoken echo-back confirmation, and completions are spoken back the moment they land." } },
     { "@type": "Question", "name": "How does Talk mode prevent a misheard command from killing the wrong agent?", "acceptedAnswer": { "@type": "Answer", "text": "Every destructive verb is held behind a spoken echo-back confirmation: Michael repeats the exact action back and requires a distinct confirm token, never a bare yes. There are also hard refusals — he will not kill the GOD agent or target all agents at once, no matter what he heard. Task matching by voice is normalized and scored, and close matches trigger a spoken which-one disambiguation instead of silently mutating the wrong card." } },
     { "@type": "Question", "name": "Can a forgotten-open voice session run up a bill?", "acceptedAnswer": { "@type": "Answer", "text": "No — that failure mode is engineered out. Voice sessions run under a live cost meter with a hard spend cap that auto-disconnects when hit, plus a configurable idle auto-disconnect (default 3 minutes) so an open mic in an empty room shuts itself off. Realtime voice is metered, so both guards exist precisely because the channel costs money while it is open." } },
     { "@type": "Question", "name": "Are voice-issued actions auditable?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every action taken by voice is attributed to a distinct michael-voice actor in messages, the board, and the activity log, and it notifies the GOD terminal. A voice-driven dispatch never silently impersonates a worker or blends into typed commands — you can always tell, after the fact, which changes to the floor came in through the microphone." } },
@@ -147,8 +147,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -173,7 +173,7 @@
       <a href="/blog/topics/concepts/">Concepts</a>
     </nav>
     <h1>Voice Is a Control Plane, Not a Gimmick</h1>
-    <p class="dek">Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Munder Difflin&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study.</p>
+    <p class="dek">Voice is a terrible way to write code and a great way to run a fleet. Why low-bandwidth commands over high-bandwidth work is the right split — with Vishwajeet Team&#39;s Talk mode (echo-back confirmation, spend caps, michael-voice attribution) as the case study.</p>
     <div class="byline">
       <span class="av" aria-hidden="true">CG</span>
       <strong>Chaitanya Giri</strong>
@@ -189,7 +189,7 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Voice is a terrible interface for writing code and a genuinely good interface for running a fleet.</strong> The trick is bandwidth: code is high-bandwidth and precise, but orchestration — <strong>delegation, status, approvals</strong> — is a stream of short, intent-shaped commands that fan out into minutes of agent work. Munder Difflin's <strong>Talk mode</strong> (v0.3.2) is the case study: a realtime voice channel to the GOD orchestrator with <strong>spoken echo-back confirmation</strong> for destructive verbs, a distinct <strong>michael-voice</strong> audit identity, a <strong>hard spend cap</strong>, <strong>idle auto-disconnect</strong>, and <strong>completions spoken back</strong> the moment they land. Voice done as a control plane, not a party trick.</p></div>
+      <div class="callout tldr"><span class="ic">TL;DR</span><p><strong>Voice is a terrible interface for writing code and a genuinely good interface for running a fleet.</strong> The trick is bandwidth: code is high-bandwidth and precise, but orchestration — <strong>delegation, status, approvals</strong> — is a stream of short, intent-shaped commands that fan out into minutes of agent work. Vishwajeet Team's <strong>Talk mode</strong> (v0.3.2) is the case study: a realtime voice channel to the GOD orchestrator with <strong>spoken echo-back confirmation</strong> for destructive verbs, a distinct <strong>michael-voice</strong> audit identity, a <strong>hard spend cap</strong>, <strong>idle auto-disconnect</strong>, and <strong>completions spoken back</strong> the moment they land. Voice done as a control plane, not a party trick.</p></div>
 <p>Every few months someone demos “coding by voice” and the reaction is always the same: neat, and nobody wants it. Dictating a diff is strictly worse than typing one. So the whole category gets filed under gimmick, and that’s a mistake — because the demo was testing voice against the wrong workload.</p>
 <h2 id="the-bandwidth-argument" tabindex="-1">The bandwidth argument <a class="anchor" href="#the-bandwidth-argument" aria-hidden="true">#</a></h2>
 <p>Think of any interface as a channel, and ask whether the channel’s bandwidth matches the payload.</p>
@@ -204,7 +204,7 @@
 <p>The other half of the fit: orchestration is naturally <em>ambient</em>. You’re across the room while an overnight mission grinds. A status question shouldn’t cost you a walk to the desk, and a completion shouldn’t wait until you happen to glance at a terminal.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/voice-as-a-control-plane-for-agent-fleets/note-1.png" alt="Hand-drawn sketch from “Voice Is a Control Plane, Not a Gimmick”" loading="lazy" decoding="async" /></figure>
 <h2 id="case-study-talk-mode" tabindex="-1">Case study: Talk mode <a class="anchor" href="#case-study-talk-mode" aria-hidden="true">#</a></h2>
-<p>Munder Difflin shipped this thesis as a feature in v0.3.2 (the <a href="/blog/launching-munder-difflin-v0-3-2/">launch post</a> has the full tour). Press <strong>Talk</strong> and you get a low-latency voice channel — OpenAI Realtime API over WebRTC, bring-your-own key — to Michael, the GOD orchestrator, running <em>alongside</em> the async terminal floor, not replacing it.</p>
+<p>Vishwajeet Team shipped this thesis as a feature in v0.3.2 (the <a href="/blog/launching-munder-difflin-v0-3-2/">launch post</a> has the full tour). Press <strong>Talk</strong> and you get a low-latency voice channel — OpenAI Realtime API over WebRTC, bring-your-own key — to Michael, the GOD orchestrator, running <em>alongside</em> the async terminal floor, not replacing it.</p>
 <p>Michael listens, answers, and acts. The read side covers the hive: tasks, board, memory, agents, activity, cost. The action side is the full orchestration verb set: create and assign tasks, dispatch agents, pause / steer / halt, spawn and hire workers, kill them, edit schedules. Notice what’s <em>not</em> in that list: writing code. The voice channel never touches an editor. It only moves work around — exactly the payload the channel can carry.</p>
 <p>And the loop closes in both directions. Voice-dispatched work reports back on its own: a completion watcher detects when a task lands and pushes the event into the live session so <strong>Michael speaks it unprompted</strong> — “respond when done” as a first-class behavior, with an on-screen toast, and a queue-to-notification path if the session is already closed. That’s the ambient half delivered: you delegated by sentence, and the result comes back as a sentence.</p>
 <figure class="fig fig-inline"><img src="/blog/assets/media/voice-as-a-control-plane-for-agent-fleets/note-2.png" alt="Hand-drawn sketch from “Voice Is a Control Plane, Not a Gimmick”" loading="lazy" decoding="async" /></figure>
@@ -217,7 +217,7 @@
 <p>None of these guardrails would matter for a demo. All of them matter for a control plane you use daily — and the whole path (connect, ask, confirm, spawn, kill, dispatch, completion spoken back) was human-verified end-to-end on a real key before it shipped.</p>
 <h2 id="the-takeaway" tabindex="-1">The takeaway <a class="anchor" href="#the-takeaway" aria-hidden="true">#</a></h2>
 <p>Judge voice by the payload you put on it. As an authoring channel for code, it loses to a keyboard every time. As a <strong>control plane</strong> for a fleet — delegation, status, approvals, completions — it’s the natural interface, <em>provided</em> it’s built like infrastructure: confirmations for anything destructive, a distinct audit identity, caps on spend, and a timeout on silence. That’s the difference between a gimmick and a plane you’d actually fly.</p>
-<p>If you want to try the case study, <a href="https://github.com/chaitanyagiri/munder-difflin/releases/latest">download Munder Difflin</a> — free, MIT-licensed, local-first — and if the idea resonates, a <a href="https://github.com/chaitanyagiri/munder-difflin">star on GitHub</a> helps more people find it.</p>
+<p>If you want to try the case study, <a href="https://github.com/Vishwajeetsrk/Team/releases/latest">download Vishwajeet Team</a> — free, MIT-licensed, local-first — and if the idea resonates, a <a href="https://github.com/Vishwajeetsrk/Team">star on GitHub</a> helps more people find it.</p>
 
 
       
@@ -230,7 +230,7 @@
         </div>
         
         <div class="qa">
-          <p class="q">What can you actually do by voice in Munder Difflin&#39;s Talk mode?</p>
+          <p class="q">What can you actually do by voice in Vishwajeet Team&#39;s Talk mode?</p>
           <p class="a">Press Talk and you get a low-latency voice channel to the GOD orchestrator over the OpenAI Realtime API. Michael reads the hive — tasks, board, memory, agents, activity, cost — and can create and assign tasks, dispatch agents, pause, steer, halt, spawn or hire workers, kill them, and edit schedules. Destructive verbs are gated behind spoken echo-back confirmation, and completions are spoken back the moment they land.</p>
         </div>
         
@@ -342,20 +342,20 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

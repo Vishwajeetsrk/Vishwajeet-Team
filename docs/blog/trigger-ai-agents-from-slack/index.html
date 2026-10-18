@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Trigger Your AI Agent Hive from Slack — Munder Difflin Blog</title>
+<title>Trigger Your AI Agent Hive from Slack — Vishwajeet Team Blog</title>
 <meta name="description" content="Trigger an AI agent hive from Slack: a local webhook verifies each message and drops it into your orchestrator&#39;s queue as a task — no server to host." />
 <link rel="canonical" href="https://munderdiffl.in/blog/trigger-ai-agents-from-slack/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Trigger Your AI Agent Hive from Slack — Munder Difflin Blog" />
+<meta property="og:title" content="Trigger Your AI Agent Hive from Slack — Vishwajeet Team Blog" />
 <meta property="og:description" content="Trigger an AI agent hive from Slack: a local webhook verifies each message and drops it into your orchestrator&#39;s queue as a task — no server to host." />
 <meta property="og:url" content="https://munderdiffl.in/blog/trigger-ai-agents-from-slack/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/trigger-ai-agents-from-slack/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Trigger Your AI Agent Hive from Slack — Munder Difflin Blog" />
+<meta name="twitter:title" content="Trigger Your AI Agent Hive from Slack — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Trigger an AI agent hive from Slack: a local webhook verifies each message and drops it into your orchestrator&#39;s queue as a task — no server to host." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/trigger-ai-agents-from-slack/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: Trigger Your AI Agent Hive from Slack" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/trigger-ai-agents-from-slack/" },
@@ -97,7 +97,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Can you trigger AI agents from Slack?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Munder Difflin can run a small local webhook that listens to a Slack channel and turns each message into a task in the orchestrator's queue. You type in Slack, and an agent picks the work up — without opening the app or sitting at your machine." } },
+    { "@type": "Question", "name": "Can you trigger AI agents from Slack?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Vishwajeet Team can run a small local webhook that listens to a Slack channel and turns each message into a task in the orchestrator's queue. You type in Slack, and an agent picks the work up — without opening the app or sitting at your machine." } },
     { "@type": "Question", "name": "Is a Slack-to-agent webhook secure?", "acceptedAnswer": { "@type": "Answer", "text": "It's built to be. Every request is verified with an HMAC over the raw body using your Slack signing secret, compared in constant time, with a five-minute replay-timestamp guard and a body-size cap checked before anything else. Anything that fails gets a 403. The local handler is the security boundary, not the public tunnel." } },
     { "@type": "Question", "name": "Do I need to host a public server to trigger agents from Slack?", "acceptedAnswer": { "@type": "Answer", "text": "No. The webhook runs on your own machine. A best-effort local tunnel gives Slack a public URL to reach that local port, so there's nothing to deploy or keep online — and if the tunnel can't start, your local handler still runs." } }
     
@@ -143,8 +143,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -185,8 +185,8 @@
 
   <div class="post-wrap wrap">
     <div class="prose">
-      <div class="callout note"><span class="ic">0.5.2 update</span><p>On Munder Difflin 0.5.2 or later, Slack connects without a public URL, and the fields have moved. Follow <a href="/blog/connect-slack-to-munder-difflin/">How to Connect Slack to Munder Difflin 0.5.2</a> for the current setup.</p></div>
-<div class="callout tldr"><span class="ic">TL;DR</span><p>Munder Difflin v0.1.7 can <strong>trigger your
+      <div class="callout note"><span class="ic">0.5.2 update</span><p>On Vishwajeet Team 0.5.2 or later, Slack connects without a public URL, and the fields have moved. Follow <a href="/blog/connect-slack-to-munder-difflin/">How to Connect Slack to Vishwajeet Team 0.5.2</a> for the current setup.</p></div>
+<div class="callout tldr"><span class="ic">TL;DR</span><p>Vishwajeet Team v0.1.7 can <strong>trigger your
 agent hive from Slack</strong>: a tiny local webhook listens to a channel, <strong>verifies every
 request</strong> with your Slack signing secret (HMAC + replay guard, 403 on anything suspicious), and
 drops the message into the orchestrator's queue as a task. The server runs <em>on your machine</em>; a
@@ -194,7 +194,7 @@ best-effort tunnel just gives Slack a doorbell to ring. You get a remote trigger
 — start work from your phone, no servers to host.</p></div>
 <p>Most of the time you drive your agents from the app. But sometimes the work starts somewhere else — a
 teammate drops a request in a channel, or you’re away from your desk and want to kick off a long run
-from your phone. Munder Difflin’s Slack integration (shipped in v0.1.7) closes that gap: a message in a
+from your phone. Vishwajeet Team’s Slack integration (shipped in v0.1.7) closes that gap: a message in a
 watched Slack channel becomes a task in your hive’s queue. Here’s how it works, and why it stays true
 to a local-first design.</p>
 <h2 id="what-trigger-from-slack-actually-does" tabindex="-1">What “trigger from Slack” actually does <a class="anchor" href="#what-trigger-from-slack-actually-does" aria-hidden="true">#</a></h2>
@@ -269,9 +269,9 @@ and the secret is never logged.</p>
 <p><strong>Do I need a public server?</strong> No. The webhook runs locally and a best-effort tunnel gives Slack a URL
 to reach it — nothing to host, and the local handler runs even if the tunnel doesn’t.</p>
 <hr>
-<p>Munder Difflin turns a Slack channel into a remote control for a hive that still lives entirely on your
+<p>Vishwajeet Team turns a Slack channel into a remote control for a hive that still lives entirely on your
 machine — <a href="https://munderdiffl.in/#how">orchestrated by GOD</a>, verified at the edge, queued like any
-other task. <a href="https://munderdiffl.in/#install">Download Munder Difflin</a> to drive your agents from chat;
+other task. <a href="https://munderdiffl.in/#install">Download Vishwajeet Team</a> to drive your agents from chat;
 it’s free and open source.</p>
 
 
@@ -281,7 +281,7 @@ it’s free and open source.</p>
         
         <div class="qa">
           <p class="q">Can you trigger AI agents from Slack?</p>
-          <p class="a">Yes. Munder Difflin can run a small local webhook that listens to a Slack channel and turns each message into a task in the orchestrator&#39;s queue. You type in Slack, and an agent picks the work up — without opening the app or sitting at your machine.</p>
+          <p class="a">Yes. Vishwajeet Team can run a small local webhook that listens to a Slack channel and turns each message into a task in the orchestrator&#39;s queue. You type in Slack, and an agent picks the work up — without opening the app or sitting at your machine.</p>
         </div>
         
         <div class="qa">
@@ -318,7 +318,7 @@ it’s free and open source.</p>
 
   <footer class="post-foot wrap"><div class="prevnext">
       <a class="pn prev" href="/blog/what-is-aeo-for-dev-tools/"><span class="k">← Older</span><span class="t">AEO for Dev Tools: Getting Cited by ChatGPT and Claude</span></a>
-      <a class="pn next" href="/blog/the-office-parody-behind-munder-difflin/"><span class="k">Newer →</span><span class="t">The Office Parody Behind Munder Difflin (and Why It Helps)</span></a>
+      <a class="pn next" href="/blog/the-office-parody-behind-munder-difflin/"><span class="k">Newer →</span><span class="t">The Office Parody Behind Vishwajeet Team (and Why It Helps)</span></a>
     </div>
     <section class="related">
       <h2>Related in Guides</h2>
@@ -382,20 +382,20 @@ it’s free and open source.</p>
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

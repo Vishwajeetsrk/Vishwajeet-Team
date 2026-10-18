@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>What is Pi agent? The open source coding agent harness, explained — Munder Difflin Blog</title>
+<title>What is Pi agent? The open source coding agent harness, explained — Vishwajeet Team Blog</title>
 <meta name="description" content="Pi agent is Earendil&#39;s MIT licensed coding agent harness. What it is, how to install it, what Pi 1.0 and Pi Durable add, and how it compares." />
 <link rel="canonical" href="https://munderdiffl.in/blog/what-is-pi-agent/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="What is Pi agent? The open source coding agent harness, explained — Munder Difflin Blog" />
+<meta property="og:title" content="What is Pi agent? The open source coding agent harness, explained — Vishwajeet Team Blog" />
 <meta property="og:description" content="Pi agent is Earendil&#39;s MIT licensed coding agent harness. What it is, how to install it, what Pi 1.0 and Pi Durable add, and how it compares." />
 <meta property="og:url" content="https://munderdiffl.in/blog/what-is-pi-agent/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/what-is-pi-agent/hero.png" />
@@ -47,12 +47,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="What is Pi agent? The open source coding agent harness, explained — Munder Difflin Blog" />
+<meta name="twitter:title" content="What is Pi agent? The open source coding agent harness, explained — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="Pi agent is Earendil&#39;s MIT licensed coding agent harness. What it is, how to install it, what Pi 1.0 and Pi Durable add, and how it compares." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/what-is-pi-agent/hero.png" />
 <meta name="twitter:image:alt" content="Hand drawn sketch: a yellow character at a desk points into a terminal window, labelled small core, your extensions, and pi 1.0, MIT" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/what-is-pi-agent/" },
@@ -144,8 +144,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -187,7 +187,7 @@
   <div class="post-wrap wrap">
     <div class="prose">
       <p>Pi agent is Earendil’s open source coding agent harness: a minimal, MIT licensed terminal agent that reads your repo, edits files and runs shell commands with the model provider you choose. You extend it with TypeScript extensions instead of waiting for features. Pi 1.0 shipped on 1 Oct 2026. Checked on pi.dev and GitHub on 2 Oct 2026.</p>
-<p>You can run Pi on its own, or use <a href="https://harnessmd.com/download">Munder Difflin</a>, free and open source, a desktop app that runs Pi agents in one office next to Claude Code and Codex, each in its own terminal. The <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> covers setup. If the word harness is new to you, start with <a href="/blog/what-is-a-multi-agent-harness/">what is a multi-agent harness</a>.</p>
+<p>You can run Pi on its own, or use <a href="https://harnessmd.com/download">Vishwajeet Team</a>, free and open source, a desktop app that runs Pi agents in one office next to Claude Code and Codex, each in its own terminal. The <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> covers setup. If the word harness is new to you, start with <a href="/blog/what-is-a-multi-agent-harness/">what is a multi-agent harness</a>.</p>
 <h2 id="what-is-pi-agent" tabindex="-1">What is Pi agent? <a class="anchor" href="#what-is-pi-agent" aria-hidden="true">#</a></h2>
 <p>Pi is a coding agent built to stay small. Its <a href="https://github.com/earendil-works/pi">README</a> says it “ships with powerful defaults but skips features like sub-agents and plan mode”, and asks you to build what you want or install a package that does it. Extensions are TypeScript modules that can add tools, commands and UI. Skills, prompt templates and themes bundle into Pi packages you share through npm or git.</p>
 <p>It has four modes: the interactive TUI, <code>pi -p &quot;query&quot;</code> for scripts (with <code>--mode json</code> for event streams), an RPC protocol over stdin and stdout, and a TypeScript SDK. It loads <code>AGENTS.md</code> from <code>~/.pi/agent/</code>, parent folders and the current folder, and stores each session as a tree you can rewind with <code>/tree</code>.</p>
@@ -271,8 +271,8 @@ SHA256SUMS
 <td>15+ providers, Ollama</td>
 </tr>
 <tr>
-<td>Munder Difflin</td>
-<td>Munder Difflin</td>
+<td>Vishwajeet Team</td>
+<td>Vishwajeet Team</td>
 <td>MIT, free and open source</td>
 <td>Desktop app download</td>
 <td>Whatever each CLI you run supports</td>
@@ -302,11 +302,11 @@ SHA256SUMS
 </table>
 </div>
 <p><strong>Pick Pi if</strong> you want a small core, plan mode and sub-agents only when you add them, and a TUI you can rewrite from inside.</p>
-<p><strong>Pick Munder Difflin if</strong> you’d rather not choose one: it runs Pi, Claude Code, Codex, OpenCode and eight more CLIs side by side on one floor.</p>
+<p><strong>Pick Vishwajeet Team if</strong> you’d rather not choose one: it runs Pi, Claude Code, Codex, OpenCode and eight more CLIs side by side on one floor.</p>
 <p><strong>Pick Claude Code if</strong> you’re on a Claude plan and want Anthropic’s agent with permissions built in.</p>
 <p><strong>Pick Codex CLI or OpenCode if</strong> you want guard rails out of the box: approval modes in Codex, a read only Plan agent in OpenCode. Our <a href="/blog/what-is-opencode/">what is OpenCode</a> explainer and <a href="/blog/codex-cli-vs-claude-code/">Codex CLI vs Claude Code</a> cover both.</p>
-<h2 id="can-you-run-pi-agents-inside-munder-difflin" tabindex="-1">Can you run Pi agents inside Munder Difflin? <a class="anchor" href="#can-you-run-pi-agents-inside-munder-difflin" aria-hidden="true">#</a></h2>
-<p>Yes. As of Munder Difflin 0.5.5, <code>src/shared/agentProvider.ts</code> lists Pi as one of twelve CLIs, with <code>pi</code> as the command, <code>--model provider/model</code> when you pick a model, and <code>npm install -g --ignore-scripts @earendil-works/pi-coding-agent</code> as its install command. <code>installPiHooks</code> in <code>src/main/hive.ts</code> gives each agent its own <code>PI_CODING_AGENT_DIR</code> with a bridge extension, so your global <code>~/.pi</code> is never changed, and copies your <code>models.json</code> across.</p>
+<h2 id="can-you-run-pi-agents-inside-munder-difflin" tabindex="-1">Can you run Pi agents inside Vishwajeet Team? <a class="anchor" href="#can-you-run-pi-agents-inside-munder-difflin" aria-hidden="true">#</a></h2>
+<p>Yes. As of Vishwajeet Team 0.5.5, <code>src/shared/agentProvider.ts</code> lists Pi as one of twelve CLIs, with <code>pi</code> as the command, <code>--model provider/model</code> when you pick a model, and <code>npm install -g --ignore-scripts @earendil-works/pi-coding-agent</code> as its install command. <code>installPiHooks</code> in <code>src/main/hive.ts</code> gives each agent its own <code>PI_CODING_AGENT_DIR</code> with a bridge extension, so your global <code>~/.pi</code> is never changed, and copies your <code>models.json</code> across.</p>
 <p>One limit: the source calls that bridge best effort until it is confirmed against live keys. If its status events miss, the app falls back to nudging the agent so its inbox still gets read.</p>
 
 
@@ -350,7 +350,7 @@ SHA256SUMS
     <aside class="toc-rail" aria-label="Table of contents">
       <div class="tt">On this page</div>
       <ol>
-        <li class="lvl-2"><a href="#what-is-pi-agent">What is Pi agent?</a></li><li class="lvl-2"><a href="#how-do-i-install-pi-agent">How do I install Pi agent?</a></li><li class="lvl-2"><a href="#which-model-providers-does-pi-support">Which model providers does Pi support?</a></li><li class="lvl-2"><a href="#what-does-pi-10-add">What does Pi 1.0 add?</a></li><li class="lvl-2"><a href="#what-is-pi-durable">What is Pi Durable?</a></li><li class="lvl-2"><a href="#what-did-the-10-release-ship">What did the 1.0 release ship?</a></li><li class="lvl-2"><a href="#is-pi-agent-safe-to-use">Is Pi agent safe to use?</a></li><li class="lvl-2"><a href="#pi-vs-claude-code-vs-codex-cli-vs-opencode-which-should-you-use">Pi vs Claude Code vs Codex CLI vs OpenCode: which should you use?</a></li><li class="lvl-2"><a href="#can-you-run-pi-agents-inside-munder-difflin">Can you run Pi agents inside Munder Difflin?</a></li>
+        <li class="lvl-2"><a href="#what-is-pi-agent">What is Pi agent?</a></li><li class="lvl-2"><a href="#how-do-i-install-pi-agent">How do I install Pi agent?</a></li><li class="lvl-2"><a href="#which-model-providers-does-pi-support">Which model providers does Pi support?</a></li><li class="lvl-2"><a href="#what-does-pi-10-add">What does Pi 1.0 add?</a></li><li class="lvl-2"><a href="#what-is-pi-durable">What is Pi Durable?</a></li><li class="lvl-2"><a href="#what-did-the-10-release-ship">What did the 1.0 release ship?</a></li><li class="lvl-2"><a href="#is-pi-agent-safe-to-use">Is Pi agent safe to use?</a></li><li class="lvl-2"><a href="#pi-vs-claude-code-vs-codex-cli-vs-opencode-which-should-you-use">Pi vs Claude Code vs Codex CLI vs OpenCode: which should you use?</a></li><li class="lvl-2"><a href="#can-you-run-pi-agents-inside-munder-difflin">Can you run Pi agents inside Vishwajeet Team?</a></li>
       </ol>
     </aside>
     
@@ -422,20 +422,20 @@ SHA256SUMS
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

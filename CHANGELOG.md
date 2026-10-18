@@ -87,22 +87,22 @@ hardened.
 16 community pull requests from 13 contributors landed in this release, one of them (#213)
 re-implemented rather than merged:
 
-- [#156](https://github.com/chaitanyagiri/munder-difflin/pull/156) [@gpechieu](https://github.com/gpechieu): the roster empty-write guard stays armed after a refused write
-- [#205](https://github.com/chaitanyagiri/munder-difflin/pull/205) [@Schopenhauer-loves-Hegel](https://github.com/Schopenhauer-loves-Hegel): the react-i18next multilingual UI foundation, shipping the Chinese translation
-- [#213](https://github.com/chaitanyagiri/munder-difflin/pull/213) [@abo123v-glitch](https://github.com/abo123v-glitch): the Arabic/RTL terminal rendering recipe (re-implemented into this release)
-- [#225](https://github.com/chaitanyagiri/munder-difflin/pull/225) [@jhinzzz](https://github.com/jhinzzz): Codex hive sessions are visible to usage scanners
-- [#242](https://github.com/chaitanyagiri/munder-difflin/pull/242) [@raifemre](https://github.com/raifemre): the localStorage roster fallback is scoped to the hive that wrote it
-- [#243](https://github.com/chaitanyagiri/munder-difflin/pull/243) [@L422Y](https://github.com/L422Y): the ASK ME question renders as markdown
-- [#248](https://github.com/chaitanyagiri/munder-difflin/pull/248) [@djbiz](https://github.com/djbiz): a floor rebuild that cannot get a WebGL context retries instead of failing
-- [#270](https://github.com/chaitanyagiri/munder-difflin/pull/270) [@BUGHUNTER-SACHIN](https://github.com/BUGHUNTER-SACHIN): /compact is not enqueued for an undeliverable agent
-- [#271](https://github.com/chaitanyagiri/munder-difflin/pull/271) [@HsienW](https://github.com/HsienW): a typed hook-event payload contract
-- [#282](https://github.com/chaitanyagiri/munder-difflin/pull/282) [@savvaskoualis](https://github.com/savvaskoualis): a renamed god identity no longer reverts to "Michael"
-- [#284](https://github.com/chaitanyagiri/munder-difflin/pull/284) [@HundredBillion](https://github.com/HundredBillion): the Settings save button moves into the modal footer
-- [#286](https://github.com/chaitanyagiri/munder-difflin/pull/286) [@HundredBillion](https://github.com/HundredBillion): every config write is announced so Settings stops going stale
-- [#310](https://github.com/chaitanyagiri/munder-difflin/pull/310) [@LavaDMan](https://github.com/LavaDMan): the hive-hook-node test no longer races its own stdin write
-- [#317](https://github.com/chaitanyagiri/munder-difflin/pull/317) [@aaroncoville](https://github.com/aaroncoville): usage resets when a PTY exits
-- [#323](https://github.com/chaitanyagiri/munder-difflin/pull/323) [@aaroncoville](https://github.com/aaroncoville): the WebGL context is released when a terminal's renderer tears down
-- [#339](https://github.com/chaitanyagiri/munder-difflin/pull/339) [@aaroncoville](https://github.com/aaroncoville): the model catalog is brought up to date
+- [#156](https://github.com/Vishwajeetsrk/Team/pull/156) [@gpechieu](https://github.com/gpechieu): the roster empty-write guard stays armed after a refused write
+- [#205](https://github.com/Vishwajeetsrk/Team/pull/205) [@Schopenhauer-loves-Hegel](https://github.com/Schopenhauer-loves-Hegel): the react-i18next multilingual UI foundation, shipping the Chinese translation
+- [#213](https://github.com/Vishwajeetsrk/Team/pull/213) [@abo123v-glitch](https://github.com/abo123v-glitch): the Arabic/RTL terminal rendering recipe (re-implemented into this release)
+- [#225](https://github.com/Vishwajeetsrk/Team/pull/225) [@jhinzzz](https://github.com/jhinzzz): Codex hive sessions are visible to usage scanners
+- [#242](https://github.com/Vishwajeetsrk/Team/pull/242) [@raifemre](https://github.com/raifemre): the localStorage roster fallback is scoped to the hive that wrote it
+- [#243](https://github.com/Vishwajeetsrk/Team/pull/243) [@L422Y](https://github.com/L422Y): the ASK ME question renders as markdown
+- [#248](https://github.com/Vishwajeetsrk/Team/pull/248) [@djbiz](https://github.com/djbiz): a floor rebuild that cannot get a WebGL context retries instead of failing
+- [#270](https://github.com/Vishwajeetsrk/Team/pull/270) [@BUGHUNTER-SACHIN](https://github.com/BUGHUNTER-SACHIN): /compact is not enqueued for an undeliverable agent
+- [#271](https://github.com/Vishwajeetsrk/Team/pull/271) [@HsienW](https://github.com/HsienW): a typed hook-event payload contract
+- [#282](https://github.com/Vishwajeetsrk/Team/pull/282) [@savvaskoualis](https://github.com/savvaskoualis): a renamed god identity no longer reverts to "Michael"
+- [#284](https://github.com/Vishwajeetsrk/Team/pull/284) [@HundredBillion](https://github.com/HundredBillion): the Settings save button moves into the modal footer
+- [#286](https://github.com/Vishwajeetsrk/Team/pull/286) [@HundredBillion](https://github.com/HundredBillion): every config write is announced so Settings stops going stale
+- [#310](https://github.com/Vishwajeetsrk/Team/pull/310) [@LavaDMan](https://github.com/LavaDMan): the hive-hook-node test no longer races its own stdin write
+- [#317](https://github.com/Vishwajeetsrk/Team/pull/317) [@aaroncoville](https://github.com/aaroncoville): usage resets when a PTY exits
+- [#323](https://github.com/Vishwajeetsrk/Team/pull/323) [@aaroncoville](https://github.com/aaroncoville): the WebGL context is released when a terminal's renderer tears down
+- [#339](https://github.com/Vishwajeetsrk/Team/pull/339) [@aaroncoville](https://github.com/aaroncoville): the model catalog is brought up to date
 
 ## [0.4.5] — 2026-08-22
 
@@ -177,29 +177,29 @@ clickable paths in terminal output, one editor instead of two, and 23 community 
 
 All 23 of these community pull requests landed in this release:
 
-- [#157](https://github.com/chaitanyagiri/munder-difflin/pull/157) [@gpechieu](https://github.com/gpechieu): inherited Claude Code session markers are stripped from an agent's PTY env
-- [#158](https://github.com/chaitanyagiri/munder-difflin/pull/158) [@gpechieu](https://github.com/gpechieu): semantic memory works on Apple Silicon again: embeddings are pinned to CPU on macOS
-- [#159](https://github.com/chaitanyagiri/munder-difflin/pull/159) [@gpechieu](https://github.com/gpechieu): reliable spawn, teardown and floor cards for the workers Michael hires
-- [#165](https://github.com/chaitanyagiri/munder-difflin/pull/165) [@rajpreetcodes](https://github.com/rajpreetcodes): a `~` in the harness home folder resolves, so setup cannot die on ENOENT
-- [#171](https://github.com/chaitanyagiri/munder-difflin/pull/171) [@KrushanPatel](https://github.com/KrushanPatel): CONTRIBUTING.md matches the platforms the app actually supports
-- [#175](https://github.com/chaitanyagiri/munder-difflin/pull/175) [@rekcilyssup](https://github.com/rekcilyssup): a main-process watchdog wakes an idle worker sitting on an undrained inbox
-- [#176](https://github.com/chaitanyagiri/munder-difflin/pull/176) [@FenjuFu](https://github.com/FenjuFu): Gemini CLI joins the engine list
-- [#177](https://github.com/chaitanyagiri/munder-difflin/pull/177) [@TTAWDTT](https://github.com/TTAWDTT): each agent's live context-window occupancy shows in the roster
-- [#178](https://github.com/chaitanyagiri/munder-difflin/pull/178) [@gpechieu](https://github.com/gpechieu): a god-hired worker gets a floor card, and it archives when the worker dies
-- [#179](https://github.com/chaitanyagiri/munder-difflin/pull/179) [@kdahal7](https://github.com/kdahal7): `statAbs` expands `~`, so a path resolves the same way on every platform
-- [#181](https://github.com/chaitanyagiri/munder-difflin/pull/181) [@TTAWDTT](https://github.com/TTAWDTT): webhook dispatch goes through an atomic add, so a stale ledger cannot overwrite it
-- [#184](https://github.com/chaitanyagiri/munder-difflin/pull/184) [@TTAWDTT](https://github.com/TTAWDTT): the per-agent steer queue is capped, which bounds memory on a stalled agent
-- [#185](https://github.com/chaitanyagiri/munder-difflin/pull/185) [@hyperstream-pro](https://github.com/hyperstream-pro): mail to an id with no inbox is bounced and logged instead of dropped
-- [#186](https://github.com/chaitanyagiri/munder-difflin/pull/186) [@BUGHUNTER-SACHIN](https://github.com/BUGHUNTER-SACHIN): tests cover the Notifications and Stop idle-detection branches
-- [#187](https://github.com/chaitanyagiri/munder-difflin/pull/187) [@hyperstream-pro](https://github.com/hyperstream-pro): a stale inbox nudge no longer wakes an agent against an inbox that is already empty
-- [#190](https://github.com/chaitanyagiri/munder-difflin/pull/190) [@swarnendu19](https://github.com/swarnendu19): agent names can be edited after spin-up
-- [#199](https://github.com/chaitanyagiri/munder-difflin/pull/199) [@amey-op](https://github.com/amey-op): the Antigravity queue no longer wedges for 30 seconds
-- [#203](https://github.com/chaitanyagiri/munder-difflin/pull/203) [@lifelmy](https://github.com/lifelmy): the Crush config env points at the agent's own directory
-- [#210](https://github.com/chaitanyagiri/munder-difflin/pull/210) [@chaitanyagiri](https://github.com/chaitanyagiri): the art licence claims are true again, Modern Interiors is bought
-- [#214](https://github.com/chaitanyagiri/munder-difflin/pull/214) [@pontusm](https://github.com/pontusm): Windows agent processes quit when the app does
-- [#219](https://github.com/chaitanyagiri/munder-difflin/pull/219) [@chaitanyagiri](https://github.com/chaitanyagiri): engine availability is checked before Michael's engine is committed
-- [#226](https://github.com/chaitanyagiri/munder-difflin/pull/226) [@chaitanyagiri](https://github.com/chaitanyagiri): the floor reports lifetime spend, not spend since the last app restart
-- [#227](https://github.com/chaitanyagiri/munder-difflin/pull/227) [@scy73](https://github.com/scy73): the renderer runs inside Chromium's sandbox
+- [#157](https://github.com/Vishwajeetsrk/Team/pull/157) [@gpechieu](https://github.com/gpechieu): inherited Claude Code session markers are stripped from an agent's PTY env
+- [#158](https://github.com/Vishwajeetsrk/Team/pull/158) [@gpechieu](https://github.com/gpechieu): semantic memory works on Apple Silicon again: embeddings are pinned to CPU on macOS
+- [#159](https://github.com/Vishwajeetsrk/Team/pull/159) [@gpechieu](https://github.com/gpechieu): reliable spawn, teardown and floor cards for the workers Michael hires
+- [#165](https://github.com/Vishwajeetsrk/Team/pull/165) [@rajpreetcodes](https://github.com/rajpreetcodes): a `~` in the harness home folder resolves, so setup cannot die on ENOENT
+- [#171](https://github.com/Vishwajeetsrk/Team/pull/171) [@KrushanPatel](https://github.com/KrushanPatel): CONTRIBUTING.md matches the platforms the app actually supports
+- [#175](https://github.com/Vishwajeetsrk/Team/pull/175) [@rekcilyssup](https://github.com/rekcilyssup): a main-process watchdog wakes an idle worker sitting on an undrained inbox
+- [#176](https://github.com/Vishwajeetsrk/Team/pull/176) [@FenjuFu](https://github.com/FenjuFu): Gemini CLI joins the engine list
+- [#177](https://github.com/Vishwajeetsrk/Team/pull/177) [@TTAWDTT](https://github.com/TTAWDTT): each agent's live context-window occupancy shows in the roster
+- [#178](https://github.com/Vishwajeetsrk/Team/pull/178) [@gpechieu](https://github.com/gpechieu): a god-hired worker gets a floor card, and it archives when the worker dies
+- [#179](https://github.com/Vishwajeetsrk/Team/pull/179) [@kdahal7](https://github.com/kdahal7): `statAbs` expands `~`, so a path resolves the same way on every platform
+- [#181](https://github.com/Vishwajeetsrk/Team/pull/181) [@TTAWDTT](https://github.com/TTAWDTT): webhook dispatch goes through an atomic add, so a stale ledger cannot overwrite it
+- [#184](https://github.com/Vishwajeetsrk/Team/pull/184) [@TTAWDTT](https://github.com/TTAWDTT): the per-agent steer queue is capped, which bounds memory on a stalled agent
+- [#185](https://github.com/Vishwajeetsrk/Team/pull/185) [@hyperstream-pro](https://github.com/hyperstream-pro): mail to an id with no inbox is bounced and logged instead of dropped
+- [#186](https://github.com/Vishwajeetsrk/Team/pull/186) [@BUGHUNTER-SACHIN](https://github.com/BUGHUNTER-SACHIN): tests cover the Notifications and Stop idle-detection branches
+- [#187](https://github.com/Vishwajeetsrk/Team/pull/187) [@hyperstream-pro](https://github.com/hyperstream-pro): a stale inbox nudge no longer wakes an agent against an inbox that is already empty
+- [#190](https://github.com/Vishwajeetsrk/Team/pull/190) [@swarnendu19](https://github.com/swarnendu19): agent names can be edited after spin-up
+- [#199](https://github.com/Vishwajeetsrk/Team/pull/199) [@amey-op](https://github.com/amey-op): the Antigravity queue no longer wedges for 30 seconds
+- [#203](https://github.com/Vishwajeetsrk/Team/pull/203) [@lifelmy](https://github.com/lifelmy): the Crush config env points at the agent's own directory
+- [#210](https://github.com/Vishwajeetsrk/Team/pull/210) [@Vishwajeetsrk](https://github.com/Vishwajeetsrk): the art licence claims are true again, Modern Interiors is bought
+- [#214](https://github.com/Vishwajeetsrk/Team/pull/214) [@pontusm](https://github.com/pontusm): Windows agent processes quit when the app does
+- [#219](https://github.com/Vishwajeetsrk/Team/pull/219) [@Vishwajeetsrk](https://github.com/Vishwajeetsrk): engine availability is checked before Michael's engine is committed
+- [#226](https://github.com/Vishwajeetsrk/Team/pull/226) [@Vishwajeetsrk](https://github.com/Vishwajeetsrk): the floor reports lifetime spend, not spend since the last app restart
+- [#227](https://github.com/Vishwajeetsrk/Team/pull/227) [@scy73](https://github.com/scy73): the renderer runs inside Chromium's sandbox
 
 ## [0.4.4] — 2026-08-18
 
@@ -594,10 +594,10 @@ release your installed app can pick up on its own — 0.3.4 installs get the
 **The queue you can trust, a Michael who actually knows the floor, and an IDE that shows
 you everything.** A community release: the headline terminal/queue/roster reliability wave
 is by [@gts-47](https://github.com/gts-47) (Vyapak Goyal), with major fixes by
-[@qschmick](https://github.com/qschmick) ([#110](https://github.com/chaitanyagiri/munder-difflin/pull/110),
-[#111](https://github.com/chaitanyagiri/munder-difflin/pull/111),
-[#112](https://github.com/chaitanyagiri/munder-difflin/pull/112),
-[#114](https://github.com/chaitanyagiri/munder-difflin/pull/114)). Plus four new
+[@qschmick](https://github.com/qschmick) ([#110](https://github.com/Vishwajeetsrk/Team/pull/110),
+[#111](https://github.com/Vishwajeetsrk/Team/pull/111),
+[#112](https://github.com/Vishwajeetsrk/Team/pull/112),
+[#114](https://github.com/Vishwajeetsrk/Team/pull/114)). Plus four new
 first-party features — **voice Michael with live floor context + full app control**,
 **markdown previews** (IDE and ⌘-click in any terminal), **git history / branch compare /
 safe checkout** in the IDE, and a **redesigned six-tab Settings** — alongside **xAI Grok
@@ -659,7 +659,7 @@ auto-compact switch (default off)**.
 - **Fullscreen agent roster rail.** The horizontal tab bar ran out of room past a handful of agents and hid the operator controls; it's replaced by a left rail — `+ agent` pinned at the top, god agents ungrouped above everything, workers bucketed under repository headers, restore-team and its dismiss chips pinned at the bottom. An isolated agent's cwd is its own git worktree, so a new `mainRepoRoot` helper follows a linked worktree back to its main checkout (cached per cwd) and groups key on the absolute repo root, so two checkouts with the same name stay separate. Notes render on the row (one line per bullet) instead of behind a hover popover, the note editor becomes a textarea so Enter makes a new bullet instead of dropping every bullet but the first, pause/halt/steer come back in fullscreen, god agents render the full Command Center, and drag-to-reorder carries over (confined to an agent's own repository group). The destructive kill button is gone.
 - **`typing` badge — see why a queue is held.** A message queue held by your own unsent text on an agent's prompt used to look identical to an idle agent with nothing to do. Agent cards and the fullscreen roster now show a **"your draft"** badge whenever you have unsubmitted text on that agent's prompt. It's derived at render from the same check the delivery gate uses, so the badge can never disagree with the reason nothing is being delivered.
 - **[`docs/message-queue.md`](./docs/message-queue.md)** — the delivery contract: who may type into an agent's terminal, when, and what automation is never allowed to do to your text.
-- **Remote Control sessions are named after the agent** ([#81](https://github.com/chaitanyagiri/munder-difflin/pull/81)). claude.ai / the mobile app now shows "Michael", "Jim", … instead of `<hostname>-<random>`, so a floor full of RC sessions is finally tellable-apart. *(gts-47)*
+- **Remote Control sessions are named after the agent** ([#81](https://github.com/Vishwajeetsrk/Team/pull/81)). claude.ai / the mobile app now shows "Michael", "Jim", … instead of `<hostname>-<random>`, so a floor full of RC sessions is finally tellable-apart. *(gts-47)*
 - **Roster shared between dev and a packaged build.** The roster (agents + notes + queues + selection) mirrors to a file beside the hive (`src/main/roster.ts`), so the dev build and the installed app see the same team; localStorage remains the per-origin fallback. Restore-team also runs **in parallel**, fires **on open**, and each restorable agent gets its own ✕ dismiss. *(gts-47)*
 - **Fable 5 + Sonnet 5** in the Claude model picker (Fable 5 is the new default model). The two "default" entries — the harness's configured default vs the CLI's own — are now labeled distinctly in every picker, and every Claude option names a real model. *(gts-47)*
 - **New test suites** — queue delivery, terminal automation + recovery, roster persistence, provider config/automation, codex remote, agent env, and PID release (`npm run test:focused` + `test/proc-kill.test.cjs`). *(gts-47, qschmick)*
@@ -679,14 +679,14 @@ auto-compact switch (default off)**.
 - **A queued message could be typed into an open picker and acked as delivered.** Clearing the input line no longer clears the picker latch — Ctrl-U kills the input line, it does not close a menu — so automation is no longer told the prompt is free while a picker still owns it.
 - **A model or command change died on reload.** `updateAgent` now persists when a durable field changes (volatile run-state fields — status, action, progress, context counters — still skip the write, so a burst of terminal output doesn't rewrite storage).
 - **The roster stopped spawning `git rev-parse` on every chunk of terminal output** — failed and in-flight repo lookups are cached, so an agent outside a repo is looked up once.
-- **Killed processes actually die** ([#110](https://github.com/chaitanyagiri/munder-difflin/pull/110)). Every explicit kill was a bare node-pty `proc.kill()` — one SIGHUP to the direct child only, so a TUI that traps SIGHUP lived on and its children (MCP servers, helper daemons) reparented to PID 1 and kept running for the machine's uptime. Every kill path now routes through `ensureKilled`: a grace signal, then SIGKILL of the whole process group (POSIX) / `taskkill /T /F` (Windows). *(qschmick)*
-- **Circuit-breaker false-positive storm on idle/compacting agents** ([#109](https://github.com/chaitanyagiri/munder-difflin/issues/109) → [#112](https://github.com/chaitanyagiri/munder-difflin/pull/112)). Compaction and inbox-ack token bursts no longer read as looping. *(qschmick)*
+- **Killed processes actually die** ([#110](https://github.com/Vishwajeetsrk/Team/pull/110)). Every explicit kill was a bare node-pty `proc.kill()` — one SIGHUP to the direct child only, so a TUI that traps SIGHUP lived on and its children (MCP servers, helper daemons) reparented to PID 1 and kept running for the machine's uptime. Every kill path now routes through `ensureKilled`: a grace signal, then SIGKILL of the whole process group (POSIX) / `taskkill /T /F` (Windows). *(qschmick)*
+- **Circuit-breaker false-positive storm on idle/compacting agents** ([#109](https://github.com/Vishwajeetsrk/Team/issues/109) → [#112](https://github.com/Vishwajeetsrk/Team/pull/112)). Compaction and inbox-ack token bursts no longer read as looping. *(qschmick)*
 - **Shell-capture fencing.** The interactive login shell used for PATH/`which` capture runs the user's rc files, which are free to print (zsh's "Restored session: …" plugin chatter was being prepended to every agent's PATH). Capture output is now fenced between markers, with a multi-line sanity check before a PATH is trusted. *(gts-47)*
 - **Fullscreen surfaces notes and modals** (they stacked under the overlay); **an un-echoed keystroke no longer reads as an empty prompt**; **expired automation blocks are acted on** instead of typed through. *(gts-47)*
 
 ### Performance
-- **~350× faster warm usage reads** — an incremental per-file transcript cache replaces re-reading every transcript on each poll ([#111](https://github.com/chaitanyagiri/munder-difflin/pull/111)). *(qschmick)*
-- **Spawns stopped freezing the app.** Command resolution is memoized (with on-disk revalidation) and the login-shell PATH is captured once per session — each interactive-shell launch cost ~1s of blocked main thread, paid twice per spawn, ×N on a team restore ([#114](https://github.com/chaitanyagiri/munder-difflin/pull/114) + gts-47's equivalent, merged). *(qschmick + gts-47)*
+- **~350× faster warm usage reads** — an incremental per-file transcript cache replaces re-reading every transcript on each poll ([#111](https://github.com/Vishwajeetsrk/Team/pull/111)). *(qschmick)*
+- **Spawns stopped freezing the app.** Command resolution is memoized (with on-disk revalidation) and the login-shell PATH is captured once per session — each interactive-shell launch cost ~1s of blocked main thread, paid twice per spawn, ×N on a team restore ([#114](https://github.com/Vishwajeetsrk/Team/pull/114) + gts-47's equivalent, merged). *(qschmick + gts-47)*
 
 ## [0.3.3] — 2026-07-03
 
@@ -694,7 +694,7 @@ auto-compact switch (default off)**.
 VS Code editor engine in a full-window overlay, with a git CHANGES rail, side-by-side diffs vs
 HEAD, a file tree, editor tabs, and Cmd/Ctrl+S save — and **GitHub Copilot CLI** as a first-class
 agent engine, the project's **first community-contributed provider**
-([PR #101](https://github.com/chaitanyagiri/munder-difflin/pull/101) by
+([PR #101](https://github.com/Vishwajeetsrk/Team/pull/101) by
 [@anxkhn](https://github.com/anxkhn)).
 
 ### Added
@@ -1256,4 +1256,4 @@ Initial working prototype.
 - Onboarding wizard, safe-quit guard, and a tokenized SNES/Animal-Crossing design
   system.
 
-[0.1.0]: https://github.com/chaitanyagiri/munder-difflin/releases/tag/v0.1.0
+[0.1.0]: https://github.com/Vishwajeetsrk/Team/releases/tag/v0.1.0

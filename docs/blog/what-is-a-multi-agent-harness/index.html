@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>What Is an AI Agent Harness? Single vs Multi-Agent Harness Explained — Munder Difflin Blog</title>
+<title>What Is an AI Agent Harness? Single vs Multi-Agent Harness Explained — Vishwajeet Team Blog</title>
 <meta name="description" content="An agent harness is the code around an AI model that runs its tool loop, memory and permissions. Single vs multi-agent harnesses, compared and dated." />
 <link rel="canonical" href="https://munderdiffl.in/blog/what-is-a-multi-agent-harness/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="What Is an AI Agent Harness? Single vs Multi-Agent Harness Explained — Munder Difflin Blog" />
+<meta property="og:title" content="What Is an AI Agent Harness? Single vs Multi-Agent Harness Explained — Vishwajeet Team Blog" />
 <meta property="og:description" content="An agent harness is the code around an AI model that runs its tool loop, memory and permissions. Single vs multi-agent harnesses, compared and dated." />
 <meta property="og:url" content="https://munderdiffl.in/blog/what-is-a-multi-agent-harness/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/what-is-a-multi-agent-harness/hero.png" />
@@ -46,12 +46,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="What Is an AI Agent Harness? Single vs Multi-Agent Harness Explained — Munder Difflin Blog" />
+<meta name="twitter:title" content="What Is an AI Agent Harness? Single vs Multi-Agent Harness Explained — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="An agent harness is the code around an AI model that runs its tool loop, memory and permissions. Single vs multi-agent harnesses, compared and dated." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/what-is-a-multi-agent-harness/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: What Is a Multi-Agent Harness? (Plain-English Guide)" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -69,7 +69,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/what-is-a-multi-agent-harness/" },
@@ -144,8 +144,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -189,7 +189,7 @@
       <p>An agent harness is the software around an AI model that turns it into an agent: it calls the model, runs the tools the model asks for, feeds the results back, and keeps track of memory, permissions and the workspace. The model thinks. The harness does everything else.</p>
 <p>The term has two meanings in the wild. Anthropic, LangChain and Microsoft use it for the loop around one model, so Claude Code is a harness. Others, us included, also use it for the layer that runs several of those agents as one team: a <strong>multi-agent harness</strong>. This page covers both, then what the multi agent version adds.</p>
 <p>If you searched “harness agent” looking for Harness, the CI/CD company, its <a href="https://developer.harness.io/harness-ai/3.0/use-harness-ai/ai-agents/harness-agents">Harness Agents</a> are, in its own words, “autonomous AI agents that run inside your pipelines”. Same word, different office.</p>
-<p>You can build a multi agent setup by hand with git worktrees and a few terminals, or use <a href="https://harnessmd.com/download">Munder Difflin</a>, free and open source, which is the multi-agent harness this blog is written by. The <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> gets you from download to a first agent.</p>
+<p>You can build a multi agent setup by hand with git worktrees and a few terminals, or use <a href="https://harnessmd.com/download">Vishwajeet Team</a>, free and open source, which is the multi-agent harness this blog is written by. The <a href="/blog/how-to-install-and-use-munder-difflin/">install guide</a> gets you from download to a first agent.</p>
 <h2 id="what-does-an-agent-harness-actually-do" tabindex="-1">What does an agent harness actually do? <a class="anchor" href="#what-does-an-agent-harness-actually-do" aria-hidden="true">#</a></h2>
 <p>It runs the loop the model cannot run by itself. A language model only produces text, so something has to notice a tool call in that text, execute it, and hand back the result. LangChain’s <a href="https://www.langchain.com/blog/the-anatomy-of-an-agent-harness">anatomy of an agent harness</a> (10 Mar 2026) puts it bluntly: a harness is “every piece of code, configuration, and execution logic that isn’t the model itself.” In practice that covers:</p>
 <ul>
@@ -217,8 +217,8 @@
 </ul>
 <figure class="fig fig-inline"><img src="/blog/assets/media/what-is-a-multi-agent-harness/note-1.png" alt="Hand-drawn sketch from “What Is a Multi-Agent Harness? (Plain-English Guide)”" loading="lazy" decoding="async" /></figure>
 <h2 id="what-does-a-multi-agent-harness-look-like-in-code" tabindex="-1">What does a multi-agent harness look like in code? <a class="anchor" href="#what-does-a-multi-agent-harness-look-like-in-code" aria-hidden="true">#</a></h2>
-<p>Mostly files and a router. We read the Munder Difflin source at tag v0.5.3 on 29 Sep 2026, and the coordination layer lives in <code>src/main/hive.ts</code>. Every agent gets a folder with an identity, a memory file, an inbox, an outbox and a read cursor. A router in the main process moves each outbox message into the recipient’s inbox, and that process is the only one that commits to the hive’s git repo, so agents never race on git. The shared plan is <code>board.md</code>, and by protocol only the orchestrator (Michael, your clone) edits it; other agents propose changes.</p>
-<p>This page was refreshed by a Munder Difflin worker. Running this inside its own hive folder on 29 Sep 2026 (the grep hides unrelated files) printed:</p>
+<p>Mostly files and a router. We read the Vishwajeet Team source at tag v0.5.3 on 29 Sep 2026, and the coordination layer lives in <code>src/main/hive.ts</code>. Every agent gets a folder with an identity, a memory file, an inbox, an outbox and a read cursor. A router in the main process moves each outbox message into the recipient’s inbox, and that process is the only one that commits to the hive’s git repo, so agents never race on git. The shared plan is <code>board.md</code>, and by protocol only the orchestrator (Michael, your clone) edits it; other agents propose changes.</p>
+<p>This page was refreshed by a Vishwajeet Team worker. Running this inside its own hive folder on 29 Sep 2026 (the grep hides unrelated files) printed:</p>
 <pre><code>$ ls -1p | grep -E '^(identity\.md|memory\.md|cursor\.json|inbox/|outbox/)$'
 cursor.json
 identity.md
@@ -234,7 +234,7 @@ outbox/
 </ul>
 <p>Questions that need a human land on the ASK ME board rather than in a scrollback. What it does not do: it is a desktop app, not a library, so it will not help you ship an agent inside your own product.</p>
 <h2 id="which-agent-harnesses-can-you-use-today" tabindex="-1">Which agent harnesses can you use today? <a class="anchor" href="#which-agent-harnesses-can-you-use-today" aria-hidden="true">#</a></h2>
-<p>Here is how the main options line up, checked on 29 Sep 2026. Munder Difflin rows come from the v0.5.3 source; the rest from each vendor’s own docs.</p>
+<p>Here is how the main options line up, checked on 29 Sep 2026. Vishwajeet Team rows come from the v0.5.3 source; the rest from each vendor’s own docs.</p>
 <div class="table-scroll">
 <table>
 <thead>
@@ -255,7 +255,7 @@ outbox/
 <td><a href="https://code.claude.com/docs/en/agent-teams">Anthropic docs</a></td>
 </tr>
 <tr>
-<td>Munder Difflin</td>
+<td>Vishwajeet Team</td>
 <td>Multi-agent harness, desktop app, MIT</td>
 <td>Twelve coding CLIs, each in its own terminal</td>
 <td>Orchestrator, mailboxes, shared board, per agent memory, circuit breaker</td>
@@ -293,7 +293,7 @@ outbox/
 </table>
 </div>
 <figure class="fig fig-inline"><img src="/blog/assets/media/what-is-a-multi-agent-harness/note-2.png" alt="Hand-drawn sketch from “What Is a Multi-Agent Harness? (Plain-English Guide)”" loading="lazy" decoding="async" /></figure>
-<p><strong>Pick Claude Code</strong> if one agent in one terminal does the job. <strong>Pick Munder Difflin</strong> if you run several CLIs at once, want them to message each other and remember across sessions, and would rather watch a floor than tail five terminals. <strong>Pick agent teams</strong> if every worker is Claude Code and the team only needs to last one session. <strong>Pick the Agent SDK, Microsoft Agent Framework or Deep Agents</strong> if you are building an agent into your own application.</p>
+<p><strong>Pick Claude Code</strong> if one agent in one terminal does the job. <strong>Pick Vishwajeet Team</strong> if you run several CLIs at once, want them to message each other and remember across sessions, and would rather watch a floor than tail five terminals. <strong>Pick agent teams</strong> if every worker is Claude Code and the team only needs to last one session. <strong>Pick the Agent SDK, Microsoft Agent Framework or Deep Agents</strong> if you are building an agent into your own application.</p>
 <h2 id="do-you-need-a-multi-agent-harness" tabindex="-1">Do you need a multi-agent harness? <a class="anchor" href="#do-you-need-a-multi-agent-harness" aria-hidden="true">#</a></h2>
 <p>Only when coordinating your agents costs more time than they save you. The usual signs:</p>
 <ul>
@@ -311,7 +311,7 @@ outbox/
 <li><a href="/blog/best-claude-code-multi-agent-tools/">The best tools to run multiple Claude Code agents</a>, compared.</li>
 </ul>
 <hr>
-<p>Munder Difflin is free and open source under the MIT license. <a href="https://harnessmd.com/download">Download it</a> for macOS, Windows or Linux.</p>
+<p>Vishwajeet Team is free and open source under the MIT license. <a href="https://harnessmd.com/download">Download it</a> for macOS, Windows or Linux.</p>
 
 
       
@@ -431,20 +431,20 @@ outbox/
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>

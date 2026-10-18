@@ -18,7 +18,7 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Newline That Silenced Every Windows Agent — Munder Difflin Blog</title>
+<title>The Newline That Silenced Every Windows Agent — Vishwajeet Team Blog</title>
 <meta name="description" content="A cmd.exe parsing rule from the 1980s meant Windows agents received exactly one line of their multi-line startup protocol — and nothing errored. The anatomy of our worst silent failure, and the fix." />
 <link rel="canonical" href="https://munderdiffl.in/blog/the-newline-that-silenced-windows-agents/" />
 
@@ -27,9 +27,9 @@
 <meta name="theme-color" content="#F5F2E8" />
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Munder Difflin Blog" />
+<meta property="og:site_name" content="Vishwajeet Team Blog" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="The Newline That Silenced Every Windows Agent — Munder Difflin Blog" />
+<meta property="og:title" content="The Newline That Silenced Every Windows Agent — Vishwajeet Team Blog" />
 <meta property="og:description" content="A cmd.exe parsing rule from the 1980s meant Windows agents received exactly one line of their multi-line startup protocol — and nothing errored. The anatomy of our worst silent failure, and the fix." />
 <meta property="og:url" content="https://munderdiffl.in/blog/the-newline-that-silenced-windows-agents/" />
 <meta property="og:image" content="https://munderdiffl.in/blog/assets/media/the-newline-that-silenced-windows-agents/hero.png" />
@@ -48,12 +48,12 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The Newline That Silenced Every Windows Agent — Munder Difflin Blog" />
+<meta name="twitter:title" content="The Newline That Silenced Every Windows Agent — Vishwajeet Team Blog" />
 <meta name="twitter:description" content="A cmd.exe parsing rule from the 1980s meant Windows agents received exactly one line of their multi-line startup protocol — and nothing errored. The anatomy of our worst silent failure, and the fix." />
 <meta name="twitter:image" content="https://munderdiffl.in/blog/assets/media/the-newline-that-silenced-windows-agents/hero.png" />
 <meta name="twitter:image:alt" content="Illustration: The Newline That Silenced Every Windows Agent" />
 
-<link rel="alternate" type="application/atom+xml" title="Munder Difflin Blog" href="https://munderdiffl.in/blog/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Vishwajeet Team Blog" href="https://munderdiffl.in/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
   "author": { "@type": "Person", "name": "Chaitanya Giri" },
   "publisher": {
     "@type": "Organization",
-    "name": "Munder Difflin",
+    "name": "Vishwajeet Team",
     "logo": { "@type": "ImageObject", "url": "https://munderdiffl.in/logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://munderdiffl.in/blog/the-newline-that-silenced-windows-agents/" },
@@ -144,8 +144,8 @@
 <body class="theme-press">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav id="nav">
-  <a class="brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+  <a class="brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+    <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
   </a>
   <span class="spacer"></span>
   <div class="links">
@@ -192,12 +192,12 @@ CLIs as <code>.cmd</code> shims, <code>.cmd</code> files must run through <code>
 and <strong>cmd.exe truncates an argument at its first newline</strong>. Our startup protocol is
 multi-line. Every Windows agent got line one and lost the rest. Here's the full anatomy, because
 this bug class is hiding in more codebases than ours.</p></div>
-<p>A huge share of the people who install Munder Difflin do it on Windows. For an uncomfortably
+<p>A huge share of the people who install Vishwajeet Team do it on Windows. For an uncomfortably
 long time, the core of the product —
 <a href="/blog/can-claude-code-agents-talk-to-each-other/">agents talking to each other</a> — did not work
 for those users, and neither they nor we could tell. This is the autopsy.</p>
 <h2 id="the-setup" tabindex="-1">The setup <a class="anchor" href="#the-setup" aria-hidden="true">#</a></h2>
-<p>When Munder Difflin spawns an agent, it passes the <strong>hive protocol</strong> as a command-line argument
+<p>When Vishwajeet Team spawns an agent, it passes the <strong>hive protocol</strong> as a command-line argument
 to the engine CLI: a multi-line block that names the agent, points at its <code>inbox/</code> and
 <code>outbox/</code> folders, explains the <a href="/blog/atomic-file-mailboxes-for-agents/">file-mailbox rules</a>,
 and tells it where its memory lives. One argument, many lines. On POSIX systems this is
@@ -329,7 +329,7 @@ the target is a <code>.cmd</code>. We’ll wait. It’s probably ten minutes and
       <span>5 min</span>
     </div>
     <h3><a href="/blog/why-our-auto-update-never-ran/">Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace</a></h3>
-    <p class="dek">Munder Difflin shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
+    <p class="dek">Vishwajeet Team shipped auto-update in v0.3.4 and it silently never worked in a single packaged build. The cause was one destructuring assignment across the CommonJS/ESM boundary — and a catch block that threw the evidence away. Here&#39;s how we found it, and what v0.3.7 changes.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/why-our-auto-update-never-ran/" aria-label="Read: Our Auto-Update Never Ran Once: A CommonJS Export That Vanished Into an ESM Namespace">Read →</a>
@@ -345,7 +345,7 @@ the target is a <code>.cmd</code>. We’ll wait. It’s probably ten minutes and
       <span>12 min</span>
     </div>
     <h3><a href="/blog/hire-manifest-untrusted-input/">Treating a Hire Manifest as Untrusted Input</a></h3>
-    <p class="dek">A shareable agent-config manifest is attacker input. How Munder Difflin&#39;s import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch.</p>
+    <p class="dek">A shareable agent-config manifest is attacker input. How Vishwajeet Team&#39;s import pipeline stays inert: no auto-spawn, default-deny flags, and an SSRF-safe bounded fetch.</p>
     <div class="foot">
       <span class="tag kind">Internals</span>
       <a class="more" href="/blog/hire-manifest-untrusted-input/" aria-label="Read: Treating a Hire Manifest as Untrusted Input">Read →</a>
@@ -363,20 +363,20 @@ the target is a <code>.cmd</code>. We’ll wait. It’s probably ten minutes and
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Munder Difflin home">
-        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Munder Difflin, Inc. — Multi-Agent Harness" />
+      <a class="foot-brand brand" href="https://munderdiffl.in" aria-label="Vishwajeet Team home">
+        <img class="brand-logo" src="https://munderdiffl.in/logo.png" width="1318" height="840" alt="Vishwajeet Team, Inc. — Multi-Agent Harness" />
       </a>
       <div class="foot-links">
         <a href="/blog/">Latest</a>
         <a href="/blog/topics/">Topics</a>
         <a href="/blog/about/">About</a>
         <a href="https://munderdiffl.in/blog/feed.xml">RSS</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team">GitHub</a>
         <a href="https://munderdiffl.in">munderdiffl.in ↗</a>
       </div>
     </div>
     <div class="foot-meta">
-      © 2026 Munder Difflin · Local-first · MIT-licensed ·
+      © 2026 Vishwajeet Team · Local-first · MIT-licensed ·
       Built on <a href="https://munderdiffl.in">Electron, React, Pixi.js, xterm.js &amp; node-pty</a>.
       Run an office of agents while you sleep.
     </div>
