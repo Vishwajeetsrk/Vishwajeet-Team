@@ -223,7 +223,7 @@ if you would rather not start from scratch.
 </td>
 <td width="50%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/hire-agent.mp4">
-    <img src="./docs/screenshots/add-agent.png" alt="The add agent dialog: choosing a provider, model and role" width="100%">
+    <img src="./docs/media/demo/hire-agent-poster.jpg" alt="The add agent dialog: choosing a provider, model and role" width="100%">
   </a>
 </td>
 </tr>
@@ -239,7 +239,7 @@ learned.
 </td>
 <td width="50%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/memory.mp4">
-    <img src="./docs/screenshots/memory.png" alt="Searching the shared memory palace across every agent" width="100%">
+    <img src="./docs/media/demo/memory-poster.jpg" alt="Searching the shared memory palace across every agent" width="100%">
   </a>
 </td>
 </tr>
@@ -255,7 +255,7 @@ stops anything that loops or runs away.
 </td>
 <td width="50%">
   <a href="https://github.com/Vishwajeetsrk/Team/raw/main/docs/media/demo/autonomy.mp4">
-    <img src="./docs/screenshots/autonomy.png" alt="Per agent autonomy and approval settings" width="100%">
+    <img src="./docs/media/demo/autonomy-poster.jpg" alt="Per agent autonomy and approval settings" width="100%">
   </a>
 </td>
 </tr>
