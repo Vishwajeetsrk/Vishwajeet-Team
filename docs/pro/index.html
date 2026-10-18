@@ -805,23 +805,19 @@ kbd{font-family:var(--mono);font-size:.78em;padding:1px 6px;border:1px solid var
 <footer>
   <div class="foot">
     <div class="foot-row">
-      <span>© 2026 Munder Difflin. Free and open source. <span id="fontCheck"></span></span>
+      <span>© 2026 Vishwajeet Team. 100% Free and open source. <span id="fontCheck"></span></span>
       <div class="foot-links">
-        <a href="https://github.com/chaitanyagiri/munder-difflin" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://munderdiffl.in/blog/" target="_blank" rel="noopener">Blog</a>
-        <a href="https://discord.gg/SEDzP5ZPk5" target="_blank" rel="noopener">Discord</a>
-        <a href="/#pricing">Pricing</a>
-        <a href="https://munderdiffl.in/wall.html" target="_blank" rel="noopener">Founders' Wall</a>
-        <a href="mailto:girichaitanya11@gmail.com">Contact</a>
-        <a href="https://harnessmd.com/download">Download</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a>
-        <a href="https://github.com/chaitanyagiri/munder-difflin/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
-        <a href="https://munderdiffl.in/terms.html" target="_blank" rel="noopener">Terms</a>
-        <a href="https://munderdiffl.in/privacy.html" target="_blank" rel="noopener">Privacy</a>
+        <a href="https://github.com/Vishwajeetsrk/Team" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Vishwajeetsrk/Team/releases" target="_blank" rel="noopener">Releases</a>
+        <a href="https://github.com/Vishwajeetsrk/Team/issues" target="_blank" rel="noopener">Support</a>
+        <a href="https://github.com/Vishwajeetsrk/Team/blob/main/SECURITY.md" target="_blank" rel="noopener">Security</a>
+        <a href="https://github.com/Vishwajeetsrk/Team/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+        <a href="/terms.html" target="_blank" rel="noopener">Terms</a>
+        <a href="/privacy.html" target="_blank" rel="noopener">Privacy</a>
       </div>
     </div>
     <!-- The LimeZu credit is required by the tileset licence and stays on the site as well as in the README. -->
-    <p class="credit">The pixel art tilesets in the app are <a href="https://limezu.itch.io/moderninteriors" target="_blank" rel="noopener">Modern Interiors by LimeZu</a>, used under the Complete Version licence. The Office cast is drawn by the app itself. Stapler's face is a <a href="https://blobatar.dev" target="_blank" rel="noopener">Blobatar</a>, MIT. Munder Difflin is an affectionate parody and is not affiliated with NBC's The Office or Dunder Mifflin.</p>
+    <p class="credit">The pixel art tilesets in the app are <a href="https://limezu.itch.io/moderninteriors" target="_blank" rel="noopener">Modern Interiors by LimeZu</a>, used under the Complete Version licence. The Office cast is drawn by the app itself. Stapler's face is a <a href="https://blobatar.dev" target="_blank" rel="noopener">Blobatar</a>, MIT. Parody attribution is preserved.</p>
   </div>
 </footer>
 
@@ -833,8 +829,8 @@ kbd{font-family:var(--mono);font-size:.78em;padding:1px 6px;border:1px solid var
   var burger = document.getElementById('navBurger'), drawer = document.getElementById('navDrawer');
   if (burger && drawer) burger.addEventListener('click', function () { var o = drawer.classList.toggle('open'); burger.classList.toggle('open', o); burger.setAttribute('aria-expanded', o ? 'true' : 'false'); });
 
-  /* the live star count, as on the landing page */
-  try { fetch('https://api.github.com/repos/chaitanyagiri/munder-difflin').then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+  /* the live star count */
+  try { fetch('https://api.github.com/repos/Vishwajeetsrk/Team').then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
     if (!j || !j.stargazers_count) return; var n = j.stargazers_count, t = n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(n);
     document.querySelectorAll('.starct').forEach(function (el) { el.textContent = t; }); }).catch(function () {}); } catch (e) {}
 
