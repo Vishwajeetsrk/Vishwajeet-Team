@@ -72,6 +72,7 @@ visualized as avatars at work on a shared office floor.
 
 - [Downloads & Installers](#-downloads--installers-v060)
 - [Pricing: 100% Free](#pricing-100-free)
+- [Interface & Screen Gallery](#-interface--screen-gallery-100-free--unlocked)
 - [Supported agents](#supported-agents)
 - [What it is](#what-it-is)
 - [How it works](#how-it-works)
@@ -107,6 +108,54 @@ visualized as avatars at work on a shared office floor.
 - **Pro Features**: Unlimited parallel agents, autonomous execution mode, Monaco IDE, voice dictation & speech orchestration, context auto-compacting, and circuit breakers.
 - **Team Capabilities**: Multi-agent delegation, agent-to-agent mailboxes, shared blackboard, scheduled triggers, and job ledgers.
 - **Zero Telemetry**: Everything stays on your computer. All prompts, code, keys, and outputs remain strictly local.
+
+## 📸 Interface & Screen Gallery (100% Free & Unlocked)
+
+> All 4 primary workspace screens, interfaces, and control dashboards are 100% unlocked out-of-the-box with zero license walls or subscription restrictions.
+
+### 1. Classic Mode — 2D Retro Pixel Office & Docked Command Center
+*Interactive 2D spatial canvas with live avatar pathfinding, desk monitors, local memory indicator (`minilm`), and docked Command Center with live xterm.js PTY terminal, 10 control tabs, and multi-modal audio/file composer.*
+
+<div align="center">
+  <img src="./docs/screenshots/classic-office-command-center.png" alt="Classic Mode: Retro 2D Pixel Office Floor & Command Center" width="100%">
+  <br>
+  <sub><b>Classic View:</b> Vishwajeet avatar running the floor, live PTY terminal with Antigravity Gemini installer, 10 command tabs, and queue composer.</sub>
+</div>
+
+<br>
+
+### 2. Capabilities & Extensions Marketplace (2,347 Tools & 36 Agent Templates)
+*Full browsable catalog with 1-click installation for 1,000 MCP servers, 554 plugins, 421 tools, 201 skills, and 36 pre-configured agent templates.*
+
+<div align="center">
+  <img src="./docs/screenshots/capabilities-marketplace.png" alt="Capabilities & Extensions Marketplace" width="100%">
+  <br>
+  <sub><b>Capabilities Hub:</b> 2,347 catalog entries, 18 featured tools (Animeblip, REA, Graphify, Superpowers, Headroom, HyperFrames), search, purpose/engine filters, and 36 ready-to-run agent templates.</sub>
+</div>
+
+<br>
+
+### 3. Integrations Hub & Zero-Restart Secrets Broker
+*Zero-restart hot key injection for Anthropic, OpenAI, Google Gemini, OpenRouter, and Groq, plus 13 connected app connectors (Slack, GitHub, Linear, Jira, Notion, Stripe, Confluence, Sentry, HubSpot, Razorpay, Webhooks).*
+
+<div align="center">
+  <img src="./docs/screenshots/integrations-secrets.png" alt="Integrations Hub and Zero-Restart Secrets Broker" width="100%">
+  <br>
+  <sub><b>Integrations & Keys:</b> Running agents pick up updated keys and secrets immediately with no process restarts. Stored locally encrypted via OS DPAPI.</sub>
+</div>
+
+<br>
+
+### 4. Stapler Floating Companion & Meeting Transcriber HUD
+*Always-on-top desktop companion with interactive eye-tracking physics, 12 geometric/organic shapes, 14 emotional expressions, custom color picker, local Whisper speech-to-text, push-to-talk dictation, and dual-channel meeting recordings.*
+
+<div align="center">
+  <img src="./docs/screenshots/stapler-companion-customizer.png" alt="Stapler Floating Companion & Meeting Transcriber HUD" width="100%">
+  <br>
+  <sub><b>Stapler Customizer:</b> Floating companion with Blobatar physics, seed generator, ring buttons for screenshots/dictation, and meeting transcript manager.</sub>
+</div>
+
+<br>
 
 ## Supported agents
 
