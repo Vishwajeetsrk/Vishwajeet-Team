@@ -214,6 +214,15 @@ terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
 <div align="center">
   <img src="./docs/media/stapler-053.png" alt="Stapler, the yellow puck, with its ring open and Record meeting ready" width="340">
   <br><sub><b>Stapler:</b> The yellow puck, with its ring open and Record meeting ready.</sub>
+  <br><br>
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_PRO_STAPLER"
+    width="100%"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Stapler Dual-Channel Meeting Recording Demo</sub>
 </div>
 
 </td>
@@ -416,6 +425,17 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 </tr>
 </table>
 
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_FEATURES"
+    width="820"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Complete Vishwajeet Team Features Walkthrough</sub>
+</div>
+
 ## Features
 
 **The floor & workspace modes**
@@ -455,6 +475,17 @@ The onboarding wizard automatically audits your local environment (Node, Git, Py
 - **Real-Time Visual Canvas & Screen Viewing**: Live screen capture and rendering from the agent's Electron browser session in `ComputerPanel`. Inspect the agent's actual browser state in real time as it navigates documentation, searches web pages, or tests web interfaces.
 - **Interactive Human Takeover (`/take` and `/release`)**: Click **"Take Control"** when an agent encounters CAPTCHAs, 2FA challenges, or complex authentication. Click directly on the live canvas (coordinates map to the real browser viewport), type text, press keys (`Enter`, `Tab`, `Escape`), and hand control back with active session cookies preserved.
 - **Fail-Closed Security Matrix**: Granular per-agent capability gates (`terminalExec`, `browserNav`, `browserDownloads`, `screenView`, `screenControl`). Browser network egress is bounded by loopback-only allowlists (`loopbackOnlyAllowed`) unless explicitly granted.
+
+<div align="center">
+  <video
+    src="YOUR_GITHUB_USER_ATTACHMENT_URL_AGENT_CARDS"
+    width="820"
+    controls
+    preload="metadata">
+  </video>
+  <br>
+  <sub>▶ Live Virtual Computer Canvas & Human Screen Takeover</sub>
+</div>
 
 **OmniRoute Universal AI Gateway & 150+ Free Tiers**
 - **Unified Local Gateway (`http://localhost:20128/v1`)**: Connects your agents to 358 AI providers and 150+ free tiers, supplying **~1.62 Billion free tokens per month**.
