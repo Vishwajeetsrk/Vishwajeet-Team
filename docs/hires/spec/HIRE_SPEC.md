@@ -1,7 +1,7 @@
 # Hire manifest spec — `munder-difflin/hire@1`
 
 A **hire manifest** is a small JSON document describing a role-configured agent for the
-[Vishwajeet Team](https://github.com/Vishwajeetsrk/Team) multi-agent harness:
+[Vishwajeet Team](https://github.com/Vishwajeetsrk/Vishwajeet-Team) multi-agent harness:
 its name, sprite, provider, model, command flags, goal, capability tags, and token budget.
 Because it's just JSON, a role can be shared as a file, hosted in a community gallery,
 and imported into anyone's office with one click.

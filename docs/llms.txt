@@ -18,9 +18,9 @@
 ## Product
 
 - [Homepage](https://munderdiffl.in/): features, download links, FAQ
-- [GitHub repository](https://github.com/Vishwajeetsrk/Team): source, issues, releases
-- [Latest release](https://github.com/Vishwajeetsrk/Team/releases/latest): macOS dmg, Windows setup, Linux AppImage
-- [Changelog](https://github.com/Vishwajeetsrk/Team/blob/main/CHANGELOG.md)
+- [GitHub repository](https://github.com/Vishwajeetsrk/Vishwajeet-Team): source, issues, releases
+- [Latest release](https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest): macOS dmg, Windows setup, Linux AppImage
+- [Changelog](https://github.com/Vishwajeetsrk/Vishwajeet-Team/blob/main/CHANGELOG.md)
 
 ## Key guides
 

@@ -79,9 +79,9 @@ const faq = [
   ['Can I run agents on more than one project at once?', 'Yes. Each project gets its own floor: File, New Floor opens a second office in its own window, on its own folder, with its own agents, board and memory. Floors run side by side, one folder only ever opens in one floor, and one licence covers every floor on your machine.'],
   ['Does my code ever leave my laptop?', 'No. Your node runs on your machine. Code, keys and personal context stay there. The only thing that travels is clone to clone messages, sealed on your machine and opened only on your teammate\'s.'],
   ['Can the Stapler replace Granola and Wispr Flow?', 'That is what it is built for. It takes dictation in any app and writes down your meetings, both sides of the call, with transcription running on your machine. Then it hands the text to your agents.'],
-  ['Is the Stapler free?', 'The Stapler is part of Pro. Dictation in the Vishwajeet Team message box works in the free version too.'],
-  ['What does it cost?', 'Free is free, forever. Pro is $150 for 365 days with the launch offer, down from $200, or $20 for 30 days. The 365 day price is adjusted for purchasing power in different countries and can be as low as $100. Teams is priced with you on a call.'],
-  ['How do I get Teams?', 'On a call. Teams is set up with us, one team at a time. Book a thirty minute slot, and on the call we size the team with you, make the organisation and hand you the invite codes.'],
+  ['Is the Stapler free?', 'Yes. The Stapler is 100% free and unlocked. Dictation across any app and dual-channel meeting recordings run locally on your machine with zero subscriptions.'],
+  ['What does it cost?', 'Free, Pro & Team Features are 100% Free and Unlocked under the MIT License. Zero paywalls, zero subscriptions, zero license keys, and zero seat limits.'],
+  ['How do I get Teams?', 'Team features are included by default! Just run Vishwajeet Team on your machine. You can connect peer nodes, share boards, and run multi-agent workflows out of the box.'],
   ['Does my laptop need to stay on?', 'Yes. The clone runs on your machine and stops when the machine does. Sandboxes on machines we host, so a job keeps running after the lid closes, are coming.'],
 ];
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
