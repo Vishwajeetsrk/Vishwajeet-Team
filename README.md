@@ -70,7 +70,7 @@ visualized as avatars at work on a shared office floor.
 
 ## Contents
 
-- [Downloads & Installers](#-downloads--installers-v055)
+- [Downloads & Installers](#-downloads--installers-v060)
 - [Pricing: 100% Free](#pricing-100-free)
 - [Supported agents](#supported-agents)
 - [What it is](#what-it-is)
