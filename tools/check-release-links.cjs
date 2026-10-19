@@ -108,7 +108,7 @@ async function head(url, label) {
 }
 
 async function checkLive() {
-  const base = 'https://github.com/Vishwajeetsrk/Team/releases/latest/download/';
+  const base = 'https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest/download/';
   for (const name of [...assets, 'SHA256SUMS.txt']) await head(base + name, name);
   for (const url of siteAssets) await head(url, url);
 }

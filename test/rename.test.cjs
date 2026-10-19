@@ -20,7 +20,7 @@ test('package identity carries the new name', () => {
   assert.equal(pkg.name, 'vishwajeet-team');
   assert.equal(pkg.productName, FULL);
   assert.equal(pkg.author, 'Vishwajeet');
-  assert.equal(pkg.homepage, 'https://github.com/Vishwajeetsrk/Team');
+  assert.equal(pkg.homepage, 'https://github.com/Vishwajeetsrk/Vishwajeet-Team');
 });
 
 test('installer metadata carries the new name and clean artifact names', () => {
@@ -32,7 +32,7 @@ test('installer metadata carries the new name and clean artifact names', () => {
   assert.ok(yml.includes('artifactName: Vishwajeet-Team-${version}-win-x64-portable.exe'));
   assert.ok(yml.includes('Vishwajeet-Team-${version}-mac-${arch}'));
   assert.ok(yml.includes('Vishwajeet-Team-${version}-linux-x86_64.AppImage'));
-  assert.ok(yml.includes('owner: Vishwajeetsrk') && yml.includes('repo: Team'),
+  assert.ok(yml.includes('owner: Vishwajeetsrk') && yml.includes('repo: Vishwajeet-Team'),
     'publish still points at your repo');
   // Scheme stays for back-compat with existing munderdifflin:// deep links.
   assert.ok(yml.includes('- munderdifflin'), 'URL scheme unchanged');
@@ -51,12 +51,12 @@ test('window title and splash carry the new name', () => {
 
 test('updater polls YOUR repo and names YOUR artifacts', () => {
   const upd = read('src/shared/updateState.ts');
-  assert.ok(upd.includes("REPO = 'Vishwajeetsrk/Team'"), 'shared REPO');
+  assert.ok(upd.includes("REPO = 'Vishwajeetsrk/Vishwajeet-Team'"), 'shared REPO');
   assert.ok(upd.includes('Vishwajeet-Team-${v}-win-x64-setup.exe'), 'installerUrl');
   assert.ok(upd.includes('Vishwajeet-Team-${v}-mac-${arch}.dmg'));
   assert.ok(upd.includes('Vishwajeet-Team-${v}-linux-x86_64.AppImage'));
   const main = read('src/main/updater.ts');
-  assert.ok(main.includes("const REPO = 'Vishwajeetsrk/Team'"), 'main-side REPO aligned');
+  assert.ok(main.includes("const REPO = 'Vishwajeetsrk/Vishwajeet-Team'"), 'main-side REPO aligned');
   assert.ok(!upd.includes('chaitanyagiri') && !main.includes('chaitanyagiri'),
     'no upstream repo left in the update path');
 });

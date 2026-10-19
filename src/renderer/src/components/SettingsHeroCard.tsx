@@ -29,7 +29,7 @@ import { Icon } from './Icon';
 import { DEFAULT_HERO, type HeroPayload } from '@shared/heroPayload';
 import { manualDownloadUrl, pendingVersion, reduceStatus, type UpdateStatus } from '@shared/updateState';
 
-const GITHUB_REPO_URL = 'https://github.com/Vishwajeetsrk/Team';
+const GITHUB_REPO_URL = 'https://github.com/Vishwajeetsrk/Vishwajeet-Team';
 const DISCORD_URL = 'https://discord.gg/SEDzP5ZPk5';
 
 export function SettingsHeroCard() {

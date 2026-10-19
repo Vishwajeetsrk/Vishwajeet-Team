@@ -2,7 +2,7 @@
 
 > **Author:** Kevin (SEO strategist) · **Status:** v1 · **Scope:** marketing site
 > (`https://munderdiffl.in/`) **and** the blog (`https://munderdiffl.in/blog/`, GitHub Pages).
-> **Repo:** `https://github.com/Vishwajeetsrk/Team`
+> **Repo:** `https://github.com/Vishwajeetsrk/Vishwajeet-Team`
 >
 > This file is copy-paste-ready. Titles, descriptions, JSON-LD, robots, and sitemap entries are
 > real values, not placeholders. Where a fact is genuinely unknowable (e.g. patron URL, GA ID),
@@ -266,9 +266,9 @@ URL key: `/` = home, `#x` = home anchor, `/blog/...` = blog post (see BLOG_IDEAS
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "macOS, Windows, Linux",
   "softwareVersion": "0.1.3",
-  "downloadUrl": "https://github.com/Vishwajeetsrk/Team/releases/latest",
-  "softwareHelp": "https://github.com/Vishwajeetsrk/Team#readme",
-  "license": "https://github.com/Vishwajeetsrk/Team/blob/main/LICENSE",
+  "downloadUrl": "https://github.com/Vishwajeetsrk/Vishwajeet-Team/releases/latest",
+  "softwareHelp": "https://github.com/Vishwajeetsrk/Vishwajeet-Team#readme",
+  "license": "https://github.com/Vishwajeetsrk/Vishwajeet-Team/blob/main/LICENSE",
   "isAccessibleForFree": true,
   "offers": {
     "@type": "Offer",
@@ -302,7 +302,7 @@ URL key: `/` = home, `#x` = home anchor, `/blog/...` = blog post (see BLOG_IDEAS
   "logo": "https://munderdiffl.in/logo.png",
   "description": "Open-source local multi-agent harness for Claude Code.",
   "sameAs": [
-    "https://github.com/Vishwajeetsrk/Team"
+    "https://github.com/Vishwajeetsrk/Vishwajeet-Team"
   ]
 }
 ```
