@@ -203,7 +203,7 @@ terminal/event plane, and [`DESIGN.md`](./DESIGN.md) for the visual system.
   * 🍏 **macOS:** Hold <kbd>⌥ Option</kbd>
   * 🪟 **Windows & Linux (X11):** Hold <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
 
-* **🎧 Meetings hear both sides**, in Stapler, part of Pro. Your microphone is written as You and the call's audio as Them, on Mac, Windows and Linux. Shift+Command+Space starts and stops a meeting on the Mac, Control+Shift+Space on Windows and Linux. Correct the transcript, add a description, and send it to any of your agents.
+* **🎧 Meetings hear both sides**, in Stapler (100% free & unlocked). Your microphone is written as You and the call's audio as Them, on Mac, Windows and Linux. Shift+Command+Space starts and stops a meeting on the Mac, Control+Shift+Space on Windows and Linux. Correct the transcript, add a description, and send it to any of your agents.
   * 🍏 **macOS:** <kbd>⇧ Shift</kbd> + <kbd>⌘ Cmd</kbd> + <kbd>Space</kbd> to start/stop
   * 🪟 **Windows & Linux:** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd> to start/stop
 
