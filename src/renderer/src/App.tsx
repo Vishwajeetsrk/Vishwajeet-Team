@@ -367,7 +367,7 @@ export function App() {
         </button>
         {/* v0.3.4: the IDE button moved to agent level — every agent's header
             (sidebar detail, god Command Center, fullscreen) carries it. */}
-        {/* Computer Screen HUD (matches OpenMausBot & media_1792401361294.png) */}
+        {/* Computer Screen HUD (Per-Agent Virtual Desktop) */}
         <button
           className="cth-titlebar-nodrag cth-tip"
           onClick={() => {
