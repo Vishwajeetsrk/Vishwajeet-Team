@@ -243,6 +243,18 @@ export function CommandCenterPanel({ agent, fullscreen = false }: { agent: Agent
               <Icon name="code" /> {t('commandCenter.ide')}
             </span>
           </PixelButton>
+          <PixelButton variant="secondary" size="sm" onClick={() => {
+            window.dispatchEvent(new CustomEvent('cth:open-computer', { detail: { agentId: agent.id } }));
+          }}>
+            <span
+              className="cth-tip cth-tip-wrap"
+              data-tip={`Open ${agent.name}'s computer screen`}
+              aria-label="Open Agent Computer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}
+            >
+              💻 {t('commandCenter.tabs.computer', 'Computer')}
+            </span>
+          </PixelButton>
         </div>
       </div>
 

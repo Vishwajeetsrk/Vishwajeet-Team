@@ -11,6 +11,7 @@ import { OfficeCharacterName } from '@/scene/office/cast';
 import { AgentNameEditor } from './AgentNameEditor';
 
 export interface AgentCardProps {
+  id?: string;
   name: string;
   character: OfficeCharacterName;
   accent: AccentColorName;
@@ -55,7 +56,7 @@ const fmtK = (n: number): string => `${Math.round(n / 1000)}k`;
  * and a slim gauge pinned to the bottom edge. Nothing overlaps anything.
  */
 export function AgentCard({
-  name, character, accent, status, ptyId, project, action, progress = 0,
+  id, name, character, accent, status, ptyId, project, action, progress = 0,
   contextTokens, contextLimit, selected, isGod, onClick, onRename,
   doingCount = 0, onTaskNoteClick, draggable, note, onEditNote
 }: AgentCardProps) {
@@ -227,7 +228,29 @@ export function AgentCard({
                   it was allowed to shrink, the browser resolved the overflow by
                   eating the NAME instead. Truncation should land on the longest,
                   most redundant thing, not on the identity. */}
-              <PixelBadge status={typing ? 'typing' : status} style={{ flexShrink: 0 }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4, flexShrink: 0 }}>
+                <span
+                  role="button"
+                  tabIndex={0}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.dispatchEvent(new CustomEvent('cth:open-computer', { detail: { agentId: id } }));
+                  }}
+                  title={`Open ${name}'s computer screen`}
+                  style={{
+                    cursor: 'pointer',
+                    fontSize: 11,
+                    opacity: hover ? 1 : 0.6,
+                    transition: 'opacity 0.15s ease',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    padding: '0 2px'
+                  }}
+                >
+                  💻
+                </span>
+                <PixelBadge status={typing ? 'typing' : status} />
+              </div>
             </div>
 
             {/* Context line: action while working, repo while idle. */}

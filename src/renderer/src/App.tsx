@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useStore, selectedAgent } from '@/store/store';
+import { useStore, selectedAgent, type Agent } from '@/store/store';
 import { startMockLoop, stopMockLoop } from '@/store/mockEvents';
 import type { HarnessConfig } from '@/store/config';
 import { DEFAULT_ORG_TRIGGER } from '@shared/triggers';
@@ -31,6 +31,8 @@ import { FullscreenTerminal } from '@/components/FullscreenTerminal';
 import { TaskDetailOverlay } from '@/components/TaskDetailOverlay';
 import { IdePanel } from '@/ide/IdePanel';
 import { useHoldOptionToTalk } from '@/freeflow/holdOption';
+import { AgentComputerModal } from '@/components/AgentComputerModal';
+import { StaplerCompanion } from '@/components/StaplerCompanion';
 import brandLogo from '@brand/logo.png?url';
 
 // Injected at build time from package.json (see electron.vite.config.ts).
@@ -79,6 +81,8 @@ export function App() {
   const [quitWarn, setQuitWarn] = useState<{ ptyCount: number } | null>(null);
   const [closing, setClosing] = useState<ClosingTimeState | null>(null);
   const [vpWidth, setVpWidth] = useState<number>(window.innerWidth);
+  const [computerAgent, setComputerAgent] = useState<Agent | null>(null);
+  const [staplerOpen, setStaplerOpen] = useState(false);
 
   // Deep link into Settings from anywhere in the tree. Settings' open state is
   // local to App, so a nested control (e.g. "set it now" beside a disabled Talk
@@ -91,8 +95,25 @@ export function App() {
       setSettingsSection(section);
       setSettingsOpen(true);
     };
+    const onOpenComputer = (e: Event): void => {
+      const targetId = (e as CustomEvent<{ agentId?: string }>).detail?.agentId;
+      const all = useStore.getState().agents;
+      const target = targetId
+        ? all.find((a) => a.id === targetId)
+        : (useStore.getState().selectedId ? all.find((a) => a.id === useStore.getState().selectedId) : all[0]);
+      if (target) setComputerAgent(target);
+    };
+    const onToggleStapler = (): void => {
+      setStaplerOpen((prev) => !prev);
+    };
     window.addEventListener('cth:open-settings', onOpenSettings);
-    return () => window.removeEventListener('cth:open-settings', onOpenSettings);
+    window.addEventListener('cth:open-computer', onOpenComputer);
+    window.addEventListener('cth:toggle-stapler', onToggleStapler);
+    return () => {
+      window.removeEventListener('cth:open-settings', onOpenSettings);
+      window.removeEventListener('cth:open-computer', onOpenComputer);
+      window.removeEventListener('cth:toggle-stapler', onToggleStapler);
+    };
   }, []);
 
   // Initial config load
@@ -346,6 +367,44 @@ export function App() {
         </button>
         {/* v0.3.4: the IDE button moved to agent level — every agent's header
             (sidebar detail, god Command Center, fullscreen) carries it. */}
+        {/* Computer Screen HUD (matches OpenMausBot & media_1792401361294.png) */}
+        <button
+          className="cth-titlebar-nodrag cth-tip"
+          onClick={() => {
+            const all = useStore.getState().agents;
+            const target = all.find((x) => x.id === useStore.getState().selectedId) ?? all[0];
+            if (target) setComputerAgent(target);
+          }}
+          data-tip="Agent Computer (Live Screen HUD)"
+          aria-label="Open Agent Computer"
+          style={{
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            width: 28, height: 28, padding: 0,
+            background: computerAgent ? 'var(--cth-sky)' : 'var(--cth-paper-100)',
+            boxShadow: 'inset 0 0 0 1px var(--cth-ink-300)',
+            border: 'none', borderRadius: 2, cursor: 'pointer',
+            color: 'var(--cth-ink-900)', fontSize: 13
+          }}
+        >
+          💻
+        </button>
+        {/* Stapler Floating Companion & Meeting Transcriber HUD */}
+        <button
+          className="cth-titlebar-nodrag cth-tip"
+          onClick={() => setStaplerOpen(!staplerOpen)}
+          data-tip="Stapler Companion HUD"
+          aria-label="Toggle Stapler Companion"
+          style={{
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            width: 28, height: 28, padding: 0,
+            background: staplerOpen ? 'var(--cth-lemon)' : 'var(--cth-paper-100)',
+            boxShadow: 'inset 0 0 0 1px var(--cth-ink-300)',
+            border: 'none', borderRadius: 2, cursor: 'pointer',
+            color: 'var(--cth-ink-900)', fontSize: 13
+          }}
+        >
+          📎
+        </button>
         <button
           className="cth-titlebar-nodrag cth-settings-btn cth-tip"
           onClick={() => { setSettingsSection(undefined); setSettingsOpen(true); }}
@@ -512,6 +571,17 @@ export function App() {
       {fullscreenAgentId && <FullscreenTerminal config={config} />}
       {ideOpen && <IdePanel />}
       <TaskDetailOverlay />
+      {computerAgent && (
+        <AgentComputerModal
+          agent={computerAgent}
+          onClose={() => setComputerAgent(null)}
+        />
+      )}
+      {staplerOpen && (
+        <StaplerCompanion
+          onClose={() => setStaplerOpen(false)}
+        />
+      )}
     </div>
   );
 }
