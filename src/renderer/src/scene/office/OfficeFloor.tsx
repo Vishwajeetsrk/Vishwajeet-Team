@@ -1382,8 +1382,7 @@ export function OfficeFloor() {
         const member = theme.cast.byName[charName];
         const seatIndex = claimSeat(agent);
         const seatTile: Tile = (seatIndex != null ? seatTiles[seatIndex] : undefined)
-          ?? mapRenderer.getSpawnPoint('entrance')
-          ?? { x: 2, y: 2 };
+          ?? entrance;
         const waitTile = waitTiles[(seatIndex ?? 0) % waitTiles.length];
         const frames = await theme.cast.getFrames(charName);
         // Bail if the agent was removed (or scene torn down) while loading.

@@ -217,8 +217,8 @@ export function describeUpdate(status: UpdateStatus | null, currentVersion: stri
       return { label: 'checking…', action: 'none', tone: 'busy', busy: true, title: `Checking for updates (you're on v${v})` };
     case 'error':
       return {
-        label: 'update check failed', action: 'check', tone: 'warn', busy: false,
-        title: `${status.message} — click to try again`
+        label: null, action: 'check', tone: 'idle', busy: false,
+        title: `${status.message || 'Update check failed'} — click to try again`
       };
     case 'not-available':
     case 'just-updated':

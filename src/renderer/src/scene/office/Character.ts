@@ -66,6 +66,21 @@ const NAME_TAG_PAD_X = 2;
 const NAME_TAG_PAD_Y = 1;
 const NAME_TAG_RADIUS = 2;
 const NAME_TAG_PLATE_ALPHA = 0.82;
+const MAX_NAME_TAG_WIDTH = 46;
+
+/** Truncate names cleanly for the tiny in-world floor plate so they never
+ *  spill across neighbouring desks or through office walls. Long titles
+ *  like "User researcher 1 and full stack engineer" become "User Res…",
+ *  preserving the character's clean footprint. */
+function formatFloorName(name: string): string {
+  const trimmed = (name || '').trim();
+  if (!trimmed) return '';
+  if (trimmed.length > 10) {
+    return trimmed.slice(0, 9) + '…';
+  }
+  return trimmed;
+}
+
 /** Nameplates sort ABOVE every avatar (whose zIndex is its world y, bounded by
  *  the map height in px) and below the thought bubbles at 100000. Riding the
  *  sprite container instead would have been cheaper, but it put a name at the
@@ -191,9 +206,11 @@ export class Character {
     this.nameTag = new Container();
     this.nameTag.zIndex = NAME_TAG_Z;
     this.nameTag.eventMode = 'none';
+    this.nameTag.visible = false;
+    this.nameTag.alpha = 0;
     this.nameTagPlate = new Graphics();
     this.nameTagText = new Text({
-      text: options.displayName,
+      text: formatFloorName(options.displayName),
       style: {
         fontSize: NAME_TAG_FONT_SIZE,
         fontWeight: 'bold',
@@ -207,6 +224,8 @@ export class Character {
     this.nameTag.addChild(this.nameTagPlate);
     this.nameTag.addChild(this.nameTagText);
     this.drawNameTagPlate();
+    this.nameTag.x = Math.round(this.px);
+    this.nameTag.y = Math.round(this.py + NAME_TAG_OFFSET_Y);
 
     this.workGlow = new Graphics();
     this.workGlow.circle(0, 0, 14);
@@ -430,15 +449,17 @@ export class Character {
    *  when unchanged — cheap to call on every store tick, and the plate is only
    *  repainted when the text it has to cover actually changed. */
   setName(displayName: string): void {
-    if (this.nameTagText.text === displayName) return;
-    this.nameTagText.text = displayName;
+    const formatted = formatFloorName(displayName);
+    if (this.nameTagText.text === formatted) return;
+    this.nameTagText.text = formatted;
     this.drawNameTagPlate();
   }
 
   /** Repaint the backing plate to the text's measured width. Sized here rather
    *  than at a fixed width because names run from "QA" to "Architect". */
   private drawNameTagPlate(): void {
-    const w = this.nameTagText.width + NAME_TAG_PAD_X * 2;
+    const rawW = this.nameTagText.width + NAME_TAG_PAD_X * 2;
+    const w = Math.min(rawW, MAX_NAME_TAG_WIDTH);
     const h = this.nameTagText.height + NAME_TAG_PAD_Y * 2;
     this.nameTagPlate
       .clear()
@@ -585,6 +606,8 @@ export class Character {
     parent.addChild(this.nameTag);
     parent.addChild(this.deskCup);
     parent.addChild(this.thoughtBubble.container);
+    this.nameTag.visible = false;
+    this.nameTag.alpha = 0;
     this.enableClick();
     this.fadeDirection = 'in';
     this.fadeDuration = 0.5;
@@ -592,6 +615,8 @@ export class Character {
   }
 
   hide(delay = 0): void {
+    this.nameTag.visible = false;
+    this.nameTag.alpha = 0;
     if (this.hideTimer) { clearTimeout(this.hideTimer); this.hideTimer = null; }
     const begin = () => {
       this.hideTimer = null;
@@ -645,10 +670,19 @@ export class Character {
     // Follow the avatar by hand — the price of sorting above every sprite
     // rather than riding one. zIndex keeps tags y-sorted among THEMSELVES, so
     // the nearer agent's name wins the overlap instead of the two interleaving.
-    this.nameTag.x = Math.round(this.px);
-    this.nameTag.y = Math.round(this.py + NAME_TAG_OFFSET_Y);
+    const mapW = this.mapRenderer.width * this.mapRenderer.tileSize;
+    const mapH = this.mapRenderer.height * this.mapRenderer.tileSize;
+    const tagX = Math.round(this.px);
+    const tagY = Math.round(this.py + NAME_TAG_OFFSET_Y);
+    // Never render if unplaced, near (0,0), outside room, or faded out.
+    const isValidPos = this.px >= 24 && this.px <= mapW - 24 && this.py >= 24 && this.py <= mapH - 16;
+    const shouldShow = this.isVisible && this.sprite.container.alpha > 0.05 && isValidPos;
+
+    this.nameTag.x = Math.max(24, Math.min(mapW - 24, tagX));
+    this.nameTag.y = Math.max(16, Math.min(mapH - 12, tagY));
     this.nameTag.zIndex = NAME_TAG_Z + this.py;
-    this.nameTag.alpha = this.sprite.container.alpha;
+    this.nameTag.alpha = shouldShow ? this.sprite.container.alpha : 0;
+    this.nameTag.visible = shouldShow;
 
     // work glow
     const ts = this.mapRenderer.tileSize;
@@ -959,6 +993,7 @@ export class Character {
 
   destroy(): void {
     if (this.hideTimer) { clearTimeout(this.hideTimer); this.hideTimer = null; }
+    this.nameTag.visible = false;
     this.thoughtBubble.destroy();
     this.sprite.destroy();
     this.workGlow.destroy();
