@@ -1,5 +1,5 @@
-- **The interface speaks Chinese and Arabic.** Set it in Settings.
-- **Updates install themselves.** Download, restart, done.
-- **Fonts ship inside the app.** No Google Fonts fetch on launch.
-- **Hardened how engine commands launch.**
-- **Settings has one Save button.** Connections get their own tab.
+- **Agent Computer HUD:** Watch agents type & browse live.
+- **Interactive Takeover:** One-click desktop keyboard control.
+- **Sleep & Wake Lifecycle:** Instant SQLite power state freeze.
+- **Stapler Companion:** On-device Whisper voice dictation.
+- **Zero Cloud Egress:** 100% sandboxed workspace isolation.

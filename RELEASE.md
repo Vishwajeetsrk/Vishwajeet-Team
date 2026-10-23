@@ -9,8 +9,12 @@ Messaging, routing, and remembering, coordinated by your orchestrator, who you t
 
 ## What's new in 0.6.0
 
-**Owner approvals, and a clearer free story.** This release lands one-click approvals for the owner's own words, hardens how a model chosen in Settings reaches OpenCode's session, and removes the last stale "pre-release / Pro · Team" wording so the app reads as what it is: one product, 100% free, no tiers.
+**Agent Computer Mode, owner approvals, and local-first sovereignty.** This release introduces dedicated virtual computer monitors for every agent, on-device Whisper voice dictation via the Stapler companion, one-click owner approvals, and zero-cloud-egress sandboxing.
 
+- **Agent Computer HUD & Live Canvas:** Watch your agents type in bash, navigate documentation in Chromium, and move their cursors with real-time thought and action badges.
+- **Interactive Human Takeover:** Click `[↗ Open desktop]` anytime to take over keyboard and mouse control, unstick loops or fix errors, and seamlessly hand control back to the agent.
+- **Sleep & Wake Power Lifecycle:** Click `[☾ Sleep]` to freeze agent memory and terminal processes to local SQLite, and `[⚡ Wake]` to resume instantly.
+- **Stapler Floating Companion:** An animated companion with physics-based eye tracking, mood expressions, and local Whisper push-to-talk voice dictation without audio cloud egress.
 - **Approve and deliver, from the card.** An orchestrator can attach a frozen sentence — one target agent, one line, an expiry — to an ASK ME card. You see the exact text, the target, whether Enter is pressed, and when it expires, then click once to have the app type it straight into that agent's own session. No orchestrator relay, no copy-paste. Delivered once, stamped on the card, and a failure stays visible instead of silently retrying. (#713)
 - **OpenCode models stop crashing on spawn.** Settings-delivered models are plumbed through every spawn path the same way Claude's are — god, revive, new agent, command center, and team restore — instead of only some of them. A model that OpenCode reads from config is no longer also forced onto a flag that doesn't exist for it. (#703)
 - **Windows: installing Grok hooks no longer mangles the command.** On Windows the hook installer now invokes through the shell correctly, so `grok` resolves instead of failing to launch. (#749)
