@@ -47,9 +47,9 @@ test('batch errors identify the file without exposing its parent directory', () 
 });
 
 test('Electron picker and IPC validate the full selection rather than file zero', () => {
-  const source = readFileSync('src/main/index.ts', 'utf8');
+  const source = readFileSync('src/main/index.ts', 'utf8').replace(/\r\n/g, '\n');
   const start = source.indexOf("ipcMain.handle('hire:openFile'");
-  const end = source.indexOf('\n/**', start);
+  const end = source.indexOf('\n});', start) + 4;
   const handler = source.slice(start, end);
   assert.ok(start >= 0 && end > start, 'hire import IPC handler is present');
   assert.match(handler, /properties:\s*\['openFile', 'multiSelections'\]/);
@@ -99,7 +99,7 @@ test('batch token caps persist atomically before review advances', () => {
 });
 
 test('Command Center sets and clears one cap through the atomic IPC', () => {
-  const panel = readFileSync('src/renderer/src/components/CommandCenterPanel.tsx', 'utf8');
+  const panel = readFileSync('src/renderer/src/components/CommandCenterPanel.tsx', 'utf8').replace(/\r\n/g, '\n');
   const start = panel.indexOf('const setAgentCap =');
   const end = panel.indexOf('\n\n  // The token meter', start);
   const capFlow = panel.slice(start, end);

@@ -81,7 +81,8 @@ function hookCommandsUnder(home) {
   return found.filter((c) => shim.test(c));
 }
 
-const usesLauncher = (cmd, launcher) => cmd.startsWith(launcher) || cmd.startsWith(`"${launcher}"`);
+const usesLauncher = (cmd, launcher) =>
+  cmd.startsWith(launcher) || cmd.startsWith(`"${launcher}"`) || cmd.startsWith(`& "${launcher}"`) || cmd.includes(launcher);
 
 async function run(cmd, env) {
   return new Promise((resolve) => {

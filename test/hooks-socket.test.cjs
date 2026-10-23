@@ -179,7 +179,10 @@ test('a hive with no root yet is not silent, and binds once the root appears', a
   const { home } = await floor(t);
   const logs = [];
   let root = null;
-  const hive = { sockPath: () => (root ? path.join(root, 'hooks.sock') : null), appendLog: (e) => logs.push(e) };
+  const hive = {
+    sockPath: () => (root ? (process.platform === 'win32' ? `\\\\.\\pipe\\mdh-test-${Date.now()}` : path.join(root, 'hooks.sock')) : null),
+    appendLog: (e) => logs.push(e)
+  };
   const a = new HookServer(hive, () => null, () => CONFIG, undefined, undefined);
   t.after(() => a.stop());
   const h = await a.ensureListening();

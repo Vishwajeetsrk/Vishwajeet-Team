@@ -32,6 +32,21 @@ const { getDiff } = loadTs('src/main/git.ts');
 
 const SECRET = 'external-secret-contents\n';
 
+const canSymlink = (() => {
+  try {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'symlink-test-'));
+    const t = path.join(tmp, 'file.txt');
+    const l = path.join(tmp, 'link.txt');
+    fs.writeFileSync(t, 'test');
+    fs.symlinkSync(t, l);
+    fs.rmSync(tmp, { recursive: true, force: true });
+    return true;
+  } catch {
+    return false;
+  }
+})();
+const symlinkOnly = { skip: !canSymlink ? 'symlinks require elevation on Windows' : false };
+
 /**
  * A throwaway workspace with an `outside` sibling standing in for the rest of
  * the user's filesystem. Every symlink here points at that sibling — no test
@@ -53,20 +68,22 @@ function makeWorkspace() {
   fs.writeFileSync(path.join(root, 'real.txt'), 'in-workspace\n');
   fs.writeFileSync(path.join(root, 'docs', 'shot.bin'), Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x00, 0x02]));
 
-  // (a) final-component symlinks to external targets
-  fs.symlinkSync(path.join(outside, 'secret.txt'), path.join(root, 'innocent.txt'));
-  fs.symlinkSync(path.join(outside, 'secret.bin'), path.join(root, 'innocent.bin'));
-  fs.symlinkSync(path.join(outside, 'overwrite-me.txt'), path.join(root, 'notes.txt'));
-  // (b) an intermediate directory symlink — the escape is a path COMPONENT
-  fs.symlinkSync(path.join(outside, 'dir'), path.join(root, 'sub'));
-  // (c) a DANGLING final symlink: its target does not exist yet, so a write
-  //     through it CREATES the external file.
-  fs.symlinkSync(path.join(outside, 'newly-created.txt'), path.join(root, 'dangling.txt'));
-  // (d) links that stay INSIDE the workspace and point at something that exists.
-  //     These are the legitimate case — node_modules and monorepo checkouts are
-  //     full of them — and they must keep working.
-  fs.symlinkSync(path.join(root, 'real.txt'), path.join(root, 'alias.txt'));
-  fs.symlinkSync(path.join(root, 'docs'), path.join(root, 'docs-link'));
+  if (canSymlink) {
+    // (a) final-component symlinks to external targets
+    fs.symlinkSync(path.join(outside, 'secret.txt'), path.join(root, 'innocent.txt'));
+    fs.symlinkSync(path.join(outside, 'secret.bin'), path.join(root, 'innocent.bin'));
+    fs.symlinkSync(path.join(outside, 'overwrite-me.txt'), path.join(root, 'notes.txt'));
+    // (b) an intermediate directory symlink — the escape is a path COMPONENT
+    fs.symlinkSync(path.join(outside, 'dir'), path.join(root, 'sub'));
+    // (c) a DANGLING final symlink: its target does not exist yet, so a write
+    //     through it CREATES the external file.
+    fs.symlinkSync(path.join(outside, 'newly-created.txt'), path.join(root, 'dangling.txt'));
+    // (d) links that stay INSIDE the workspace and point at something that exists.
+    //     These are the legitimate case — node_modules and monorepo checkouts are
+    //     full of them — and they must keep working.
+    fs.symlinkSync(path.join(root, 'real.txt'), path.join(root, 'alias.txt'));
+    fs.symlinkSync(path.join(root, 'docs'), path.join(root, 'docs-link'));
+  }
 
   return { dir, root, outside };
 }
@@ -78,25 +95,25 @@ function withWorkspace(fn) {
 
 // ─── reads ──────────────────────────────────────────────────────────────────
 
-test('a final-component symlink cannot be read as text', () => withWorkspace(async ({ root }) => {
+test('a final-component symlink cannot be read as text', symlinkOnly, () => withWorkspace(async ({ root }) => {
   const res = await readFileText(root, 'innocent.txt');
   assert.equal(res.ok, false, 'a symlink out of the workspace must not be readable');
   assert.equal(res.content, undefined);
 }));
 
-test('a final-component symlink cannot be read as bytes', () => withWorkspace(async ({ root }) => {
+test('a final-component symlink cannot be read as bytes', symlinkOnly, () => withWorkspace(async ({ root }) => {
   const res = await readFileBinary(root, 'innocent.bin');
   assert.equal(res.ok, false, 'the binary reader shares the boundary and must refuse too');
 }));
 
-test('an intermediate directory symlink cannot be read through', () => withWorkspace(async ({ root }) => {
+test('an intermediate directory symlink cannot be read through', symlinkOnly, () => withWorkspace(async ({ root }) => {
   const res = await readFileText(root, 'sub/deep.txt');
   assert.equal(res.ok, false, 'the escape can be any component, not just the last one');
 }));
 
 // ─── writes ─────────────────────────────────────────────────────────────────
 
-test('a final-component symlink cannot be written through', () => withWorkspace(async ({ root, outside }) => {
+test('a final-component symlink cannot be written through', symlinkOnly, () => withWorkspace(async ({ root, outside }) => {
   const target = path.join(outside, 'overwrite-me.txt');
   const before = fs.readFileSync(target, 'utf8');
   const res = await writeFileText(root, 'notes.txt', 'clobbered\n');
@@ -104,7 +121,7 @@ test('a final-component symlink cannot be written through', () => withWorkspace(
   assert.equal(fs.readFileSync(target, 'utf8'), before, 'the external file must be untouched');
 }));
 
-test('a dangling symlink cannot be used to create a file outside the workspace', () =>
+test('a dangling symlink cannot be used to create a file outside the workspace', symlinkOnly, () =>
   withWorkspace(async ({ root, outside }) => {
     // The link target does not exist, so `realpath` cannot see where this leads —
     // canonicalization alone would let the write through and CREATE the external
@@ -119,12 +136,12 @@ test('a dangling symlink cannot be used to create a file outside the workspace',
 
 // ─── the other consumers of the same guard ──────────────────────────────────
 
-test('listDir cannot list a directory outside the workspace', () => withWorkspace(async ({ root }) => {
+test('listDir cannot list a directory outside the workspace', symlinkOnly, () => withWorkspace(async ({ root }) => {
   const res = await listDir(root, 'sub');
   assert.equal(res.ok, false, 'the directory listing shares the boundary');
 }));
 
-test('the git diff path check refuses a symlink escape', () => withWorkspace(async ({ root }) => {
+test('the git diff path check refuses a symlink escape', symlinkOnly, () => withWorkspace(async ({ root }) => {
   const res = await getDiff(root, 'innocent.txt');
   assert.equal(res.ok, false, 'git path operations validate against the same boundary');
   assert.equal(res.working, undefined, 'the external file contents must never be returned');
@@ -154,7 +171,7 @@ test('ordinary in-workspace reads and writes still succeed', () => withWorkspace
   assert.ok(listed.entries.some((e) => e.name === 'shot.bin'));
 }));
 
-test('an in-workspace symlink to an in-workspace target is followed, not refused', () =>
+test('an in-workspace symlink to an in-workspace target is followed, not refused', symlinkOnly, () =>
   withWorkspace(async ({ root }) => {
     // The boundary is the workspace, not "no symlinks at all": a link whose
     // target is itself inside the workspace reaches nothing the caller could not

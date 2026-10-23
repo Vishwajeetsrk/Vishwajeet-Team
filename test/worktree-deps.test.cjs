@@ -75,7 +75,9 @@ test('does not replace an existing worktree node_modules entry', async () => {
   assert.equal(fs.readFileSync(path.join(worktreeNodeModules, 'own.txt'), 'utf8'), 'own\n');
 });
 
-test('does not follow the dependency symlink when removing a worktree', async () => {
+const posixOnly = { skip: process.platform === 'win32' ? 'arbitrary symlinks require elevation on Windows' : false };
+
+test('does not follow the dependency symlink when removing a worktree', posixOnly, async () => {
   const { repo, wtRoot } = makeHarness();
   const baseNodeModules = path.join(repo, 'node_modules');
   fs.mkdirSync(baseNodeModules);
@@ -92,7 +94,7 @@ test('does not follow the dependency symlink when removing a worktree', async ()
   assert.equal(fs.readFileSync(sentinel, 'utf8'), 'still here\n');
 });
 
-test('leaves a dangling worktree dependency symlink untouched', async () => {
+test('leaves a dangling worktree dependency symlink untouched', posixOnly, async () => {
   const { repo, wtRoot } = makeHarness();
   fs.mkdirSync(path.join(repo, 'node_modules'));
   const wtPath = addWorktree(repo, wtRoot, 'agent-e');
@@ -105,7 +107,7 @@ test('leaves a dangling worktree dependency symlink untouched', async () => {
   assert.equal(fs.readlinkSync(worktreeNodeModules), '/does-not-exist');
 });
 
-test('reports a failed link without throwing', async () => {
+test('reports a failed link without throwing', posixOnly, async () => {
   const { repo } = makeHarness();
   fs.mkdirSync(path.join(repo, 'node_modules'));
   const notADirectory = path.join(repo, 'not-a-directory');
@@ -117,7 +119,7 @@ test('reports a failed link without throwing', async () => {
   assert.match(result.error, /EEXIST|ENOTDIR/);
 });
 
-test('removes only the linked dependencies before checking worktree status', async () => {
+test('removes only the linked dependencies before checking worktree status', posixOnly, async () => {
   const { repo, wtRoot } = makeHarness();
   const baseNodeModules = path.join(repo, 'node_modules');
   fs.mkdirSync(baseNodeModules);
@@ -148,7 +150,7 @@ test('does not remove a real worktree node_modules directory', async () => {
   assert.deepEqual(result, { ok: true, removed: false });
 });
 
-test('does not remove a worktree node_modules link to another directory', async () => {
+test('does not remove a worktree node_modules link to another directory', posixOnly, async () => {
   const { repo, wtRoot } = makeHarness();
   fs.mkdirSync(path.join(repo, 'node_modules'));
   const foreignNodeModules = path.join(repo, 'foreign-node-modules');
